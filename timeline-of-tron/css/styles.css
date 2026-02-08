@@ -1,0 +1,719 @@
+/*
+ * THE TIMELINE OF TRON — Stylesheet
+ * A 22-Year Statistical Almanac · 2004–2025
+ *
+ * TABLE OF CONTENTS
+ * =================
+ * 1. Fonts & Variables
+ * 2. Reset & Base
+ * 3. Utilities & Shared Classes
+ * 4. Header
+ * 5. Filter Bar
+ * 6. Main Content Area
+ * 7. Entry / Section Styling
+ * 8. KPI Cards
+ * 9. Chart Containers
+ * 10. Career Timeline
+ * 11. Travel Table
+ * 12. Awards
+ * 13. Comeback Arcs
+ * 14. Recurring Cast
+ * 15. Callout Boxes & Badges
+ * 16. Traditions
+ * 17. Mood / Current
+ * 18. Footer
+ * 19. Responsive
+ * 20. Print
+ * 21. Animations
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Georgia&family=Courier+Prime:wght@400;700&family=Trebuchet+MS&display=swap');
+
+/* =============================
+   1. FONTS & VARIABLES
+   ============================= */
+:root {
+    --font-serif: Georgia, 'Times New Roman', serif;
+    --font-mono: 'Courier Prime', 'Courier New', monospace;
+    --font-sans: 'Trebuchet MS', Arial, sans-serif;
+
+    --lj-bg: #e8e0d0;
+    --lj-panel: #f5f0e6;
+    --lj-border: #c4b8a0;
+    --lj-header-bg: #4a6741;
+    --lj-header-text: #e8e0d0;
+    --lj-link: #5c3d1a;
+    --lj-link-hover: #8b5e2b;
+    --lj-text: #2c2416;
+    --lj-text-secondary: #5a4e3c;
+    --lj-accent: #8b1a1a;
+    --lj-accent2: #1a4a8b;
+    --lj-accent3: #6b4a8b;
+    --lj-gold: #c9a84c;
+    --lj-shadow: rgba(90, 78, 60, 0.15);
+    --lj-input-bg: #faf7f0;
+    --card-radius: 3px;
+}
+
+/* =============================
+   2. RESET & BASE
+   ============================= */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: var(--font-serif);
+    background: var(--lj-bg);
+    color: var(--lj-text);
+    line-height: 1.6;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c4b8a0' fill-opacity='0.15'%3E%3Cpath d='M0 0h1v1H0zM20 0h1v1h-1zM0 20h1v1H0zM20 20h1v1h-1z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* =============================
+   3. UTILITIES & SHARED CLASSES
+   ============================= */
+.label-uppercase {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    font-weight: bold;
+}
+
+/* =============================
+   4. HEADER
+   ============================= */
+.lj-header {
+    background: var(--lj-header-bg);
+    border-bottom: 3px solid #3a5431;
+    padding: 0;
+}
+
+.lj-header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 24px;
+}
+
+.lj-nav {
+    display: flex;
+    gap: 16px;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(232, 224, 208, 0.6);
+    margin-bottom: 8px;
+}
+
+.lj-nav span { cursor: default; }
+.lj-nav span.active { color: var(--lj-header-text); font-weight: bold; }
+
+.lj-title-bar {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.lj-username {
+    font-family: var(--font-mono);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--lj-header-text);
+    letter-spacing: -0.5px;
+}
+
+.lj-username .pencil {
+    font-size: 14px;
+    margin-left: 4px;
+    opacity: 0.5;
+}
+
+.lj-subtitle {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: rgba(232, 224, 208, 0.7);
+    font-style: italic;
+}
+
+/* =============================
+   5. FILTER BAR
+   ============================= */
+.lj-filter-bar {
+    background: var(--lj-panel);
+    border-bottom: 1px solid var(--lj-border);
+    padding: 10px 24px;
+}
+
+.lj-filter-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.lj-filter-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    font-weight: bold;
+}
+
+.lj-filter-btn {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    padding: 4px 12px;
+    border: 1px solid var(--lj-border);
+    background: var(--lj-input-bg);
+    color: var(--lj-text);
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all 0.15s;
+}
+
+.lj-filter-btn:hover { background: #ede8dc; border-color: #a89c84; }
+.lj-filter-btn.active {
+    background: var(--lj-header-bg);
+    color: var(--lj-header-text);
+    border-color: var(--lj-header-bg);
+}
+
+/* =============================
+   6. MAIN CONTENT AREA
+   ============================= */
+.lj-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 24px;
+}
+
+/* =============================
+   7. ENTRY / SECTION STYLING
+   ============================= */
+.lj-entry {
+    background: var(--lj-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--card-radius);
+    margin-bottom: 20px;
+    box-shadow: 1px 2px 4px var(--lj-shadow);
+}
+
+.lj-entry-header {
+    background: linear-gradient(to bottom, #f0ece2, #e8e2d4);
+    border-bottom: 1px solid var(--lj-border);
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.lj-entry-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.lj-entry-title {
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--lj-link);
+    flex: 1;
+}
+
+.lj-entry-meta {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.lj-entry-body {
+    padding: 16px;
+}
+
+/* =============================
+   8. KPI CARDS
+   ============================= */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 12px;
+}
+
+.kpi-card {
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+    padding: 14px 12px;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: default;
+}
+
+.kpi-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 3px 8px var(--lj-shadow);
+}
+
+.kpi-value {
+    font-family: var(--font-mono);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--lj-accent);
+    line-height: 1.1;
+}
+
+.kpi-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    margin-top: 6px;
+    line-height: 1.3;
+}
+
+.kpi-card[data-category="wwe"] .kpi-value { color: var(--lj-accent); }
+.kpi-card[data-category="travel"] .kpi-value { color: var(--lj-accent2); }
+.kpi-card[data-category="career"] .kpi-value { color: var(--lj-header-bg); }
+.kpi-card[data-category="sports"] .kpi-value { color: var(--lj-accent3); }
+.kpi-card[data-category="food"] .kpi-value { color: #b8860b; }
+.kpi-card[data-category="general"] .kpi-value { color: var(--lj-text); }
+
+/* =============================
+   9. CHART CONTAINERS
+   ============================= */
+.chart-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+}
+
+.chart-full { grid-column: 1 / -1; }
+
+canvas { max-width: 100%; }
+
+/* =============================
+   10. CAREER TIMELINE
+   ============================= */
+.timeline {
+    position: relative;
+    padding: 10px 0 10px 40px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 16px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--lj-header-bg), var(--lj-gold));
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 18px;
+    padding: 10px 14px;
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+    border-left: 3px solid var(--lj-header-bg);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -31px;
+    top: 14px;
+    width: 11px;
+    height: 11px;
+    background: var(--lj-header-bg);
+    border: 2px solid var(--lj-panel);
+    border-radius: 50%;
+}
+
+.timeline-item.milestone::before {
+    background: var(--lj-gold);
+    width: 13px;
+    height: 13px;
+    left: -32px;
+}
+
+.timeline-item.milestone {
+    border-left-color: var(--lj-gold);
+    background: linear-gradient(to right, #faf5e6, var(--lj-input-bg));
+}
+
+.timeline-year {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--lj-header-bg);
+}
+
+.timeline-role {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--lj-text);
+    margin-top: 2px;
+}
+
+.timeline-detail {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+}
+
+/* =============================
+   11. TRAVEL TABLE
+   ============================= */
+.table-wrapper {
+    margin-top: 16px;
+}
+
+.travel-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.travel-table th {
+    background: var(--lj-header-bg);
+    color: var(--lj-header-text);
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 8px 10px;
+    text-align: left;
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+}
+
+.travel-table th:hover { background: #3a5431; }
+.travel-table th .sort-arrow { font-size: 10px; margin-left: 4px; opacity: 0.6; }
+.travel-table th.sorted .sort-arrow { opacity: 1; }
+
+.travel-table td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--lj-border);
+}
+
+.travel-table tr:nth-child(even) { background: rgba(196, 184, 160, 0.12); }
+.travel-table tr:hover { background: rgba(196, 184, 160, 0.25); }
+
+.travel-year {
+    font-family: var(--font-mono);
+    font-weight: 700;
+}
+
+.travel-highlight {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-accent2);
+}
+
+/* =============================
+   12. AWARDS
+   ============================= */
+.awards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.award-card {
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+    padding: 14px;
+}
+
+.award-category {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 8px;
+}
+
+.award-winner {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--lj-accent);
+}
+
+.award-detail {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+}
+
+/* =============================
+   13. COMEBACK ARCS
+   ============================= */
+.comeback-list { list-style: none; }
+
+.comeback-item {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding: 12px;
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+    border-left: 3px solid var(--lj-accent);
+}
+
+.comeback-year {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--lj-accent);
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.comeback-text { font-size: 13px; }
+.comeback-setback { color: var(--lj-text-secondary); }
+.comeback-arrow { color: var(--lj-header-bg); font-weight: bold; }
+.comeback-triumph { color: var(--lj-header-bg); font-weight: bold; }
+
+/* =============================
+   14. RECURRING CAST
+   ============================= */
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.cast-card {
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+    padding: 12px;
+}
+
+.cast-name {
+    font-weight: bold;
+    color: var(--lj-link);
+    font-size: 14px;
+}
+
+.cast-aka {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.cast-desc {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+/* =============================
+   15. CALLOUT BOXES & BADGES
+   ============================= */
+.callout-box {
+    margin-top: 16px;
+    padding: 12px;
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+}
+
+.callout-box--gold { border-left: 3px solid var(--lj-gold); }
+.callout-box--red { border-left: 3px solid var(--lj-accent); }
+.callout-box--purple { border-left: 3px solid var(--lj-accent3); }
+
+.callout-box--red + .callout-box--red,
+.callout-box--gold + .callout-box--red {
+    margin-top: 10px;
+}
+
+.callout-title {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.callout-title--gold { color: var(--lj-gold); }
+.callout-title--red { color: var(--lj-accent); }
+
+.callout-body {
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.callout-body strong {
+    font-family: var(--font-mono);
+}
+
+.callout-quote {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--lj-text-secondary);
+}
+
+.badge-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badge {
+    padding: 3px 10px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-family: var(--font-mono);
+    color: white;
+}
+
+.badge--red { background: var(--lj-accent); }
+.badge--blue { background: var(--lj-accent2); }
+
+.badge--outline {
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    padding: 4px 10px;
+    border-radius: 2px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text);
+}
+
+.badge-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* =============================
+   16. TRADITIONS & SIDEBAR CONTENT
+   ============================= */
+.sidebar-content {
+    padding: 10px;
+}
+
+.section-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.section-label--spaced { margin-bottom: 12px; }
+
+.tradition-list {
+    display: grid;
+    gap: 8px;
+}
+
+.tradition-item {
+    padding: 8px 12px;
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+    font-size: 13px;
+}
+
+.spacer-top { margin-top: 16px; }
+
+/* =============================
+   17. MOOD / CURRENT
+   ============================= */
+.lj-current {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    padding: 6px 16px;
+    border-top: 1px dotted var(--lj-border);
+    margin-top: 12px;
+}
+
+.lj-current strong {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* =============================
+   18. FOOTER
+   ============================= */
+.lj-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    font-family: var(--font-sans);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    text-align: center;
+    border-top: 1px solid var(--lj-border);
+}
+
+.lj-footer a {
+    color: var(--lj-link);
+    text-decoration: none;
+}
+
+.lj-footer-tagline {
+    margin-top: 4px;
+}
+
+.lj-footer-fine-print {
+    margin-top: 8px;
+    font-size: 9px;
+    opacity: 0.6;
+}
+
+/* =============================
+   19. RESPONSIVE
+   ============================= */
+@media (max-width: 768px) {
+    .chart-grid { grid-template-columns: 1fr; }
+    .awards-grid { grid-template-columns: 1fr; }
+    .kpi-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+    .cast-grid { grid-template-columns: 1fr; }
+    .lj-main { padding: 12px; }
+}
+
+/* =============================
+   20. PRINT
+   ============================= */
+@media print {
+    body { background: #fff; }
+    .lj-entry { break-inside: avoid; box-shadow: none; }
+    .lj-filter-bar { display: none; }
+}
+
+/* =============================
+   21. ANIMATIONS
+   ============================= */
+.lj-entry-body { transition: max-height 0.3s ease; overflow: hidden; }
+.section-hidden .lj-entry-body { max-height: 0; padding: 0 16px; }

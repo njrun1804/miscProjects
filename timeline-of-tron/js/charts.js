@@ -13,10 +13,46 @@ Chart.defaults.plugins.tooltip.bodyFont = { family: "Georgia, serif", size: 12 }
 Chart.defaults.plugins.tooltip.cornerRadius = 2;
 Chart.defaults.plugins.tooltip.padding = 10;
 
-// Initialize all charts
+// ===== HELPER FUNCTIONS =====
+
+function chartTitle(text) {
+    return {
+        display: true,
+        text: text,
+        font: CHART_STYLE.titleFont,
+        color: CHART_STYLE.titleColor,
+        padding: CHART_STYLE.titlePadding
+    };
+}
+
+function gridScale(extraOptions) {
+    var base = { grid: { color: CHART_STYLE.gridColor } };
+    return Object.assign(base, extraOptions || {});
+}
+
+function hiddenGridScale(extraOptions) {
+    var base = { grid: { display: false } };
+    return Object.assign(base, extraOptions || {});
+}
+
+function createChart(canvasId, config) {
+    var canvas = document.getElementById(canvasId);
+    if (!canvas) {
+        console.warn('Chart canvas not found: #' + canvasId);
+        return null;
+    }
+    return new Chart(canvas, config);
+}
+
+// ===== CHART REGISTRY =====
+
+var TronCharts = {};
+
+// ===== INITIALIZATION =====
+
 function initializeCharts() {
     // Sports Records: Stacked Bar
-    new Chart(document.getElementById('sportsChart'), {
+    TronCharts.sports = createChart('sportsChart', {
         type: 'bar',
         data: {
             labels: SPORTS_RECORDS.map(s => s.sport),
@@ -24,16 +60,16 @@ function initializeCharts() {
                 {
                     label: 'Wins',
                     data: SPORTS_RECORDS.map(s => s.wins),
-                    backgroundColor: '#4a6741',
+                    backgroundColor: CHART_STYLE.colors.green,
                     borderWidth: 0,
-                    borderRadius: 2
+                    borderRadius: CHART_STYLE.borderRadius
                 },
                 {
                     label: 'Losses',
                     data: SPORTS_RECORDS.map(s => s.losses),
-                    backgroundColor: '#8b1a1a',
+                    backgroundColor: CHART_STYLE.colors.red,
                     borderWidth: 0,
-                    borderRadius: 2
+                    borderRadius: CHART_STYLE.borderRadius
                 }
             ]
         },
@@ -41,64 +77,66 @@ function initializeCharts() {
             responsive: true,
             indexAxis: 'y',
             plugins: {
-                title: { display: true, text: 'Competitive Records (W–L)', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } },
+                title: chartTitle('Competitive Records (W\u2013L)'),
                 tooltip: {
                     callbacks: {
                         afterBody: function(items) {
-                            const idx = items[0].dataIndex;
-                            return `Win Rate: ${SPORTS_RECORDS[idx].winRate}%`;
+                            var idx = items[0].dataIndex;
+                            return 'Win Rate: ' + SPORTS_RECORDS[idx].winRate + '%';
                         }
                     }
                 }
             },
             scales: {
-                x: { stacked: true, grid: { color: 'rgba(196,184,160,0.3)' } },
-                y: { stacked: true, grid: { display: false } }
+                x: gridScale({ stacked: true }),
+                y: hiddenGridScale({ stacked: true })
             }
         }
     });
 
     // Epic Numbers: Bar
-    new Chart(document.getElementById('epicNumbersChart'), {
+    TronCharts.epicNumbers = createChart('epicNumbersChart', {
         type: 'bar',
         data: {
             labels: EPIC_NUMBERS.map(e => e.label),
             datasets: [{
                 label: 'Count / Amount',
                 data: EPIC_NUMBERS.map(e => e.value),
-                backgroundColor: EPIC_NUMBERS.map(e => e.color),
+                backgroundColor: EPIC_NUMBERS_COLORS,
                 borderWidth: 0,
-                borderRadius: 2
+                borderRadius: CHART_STYLE.borderRadius
             }]
         },
         options: {
             responsive: true,
             plugins: {
-                title: { display: true, text: 'Epic Single-Event Records', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } },
+                title: chartTitle('Epic Single-Event Records'),
                 legend: { display: false }
             },
             scales: {
-                y: { grid: { color: 'rgba(196,184,160,0.3)' }, beginAtZero: true },
-                x: { grid: { display: false }, ticks: { maxRotation: 45, font: { size: 10 } } }
+                y: gridScale({ beginAtZero: true }),
+                x: hiddenGridScale({ ticks: { maxRotation: 45, font: { size: 10 } } })
             }
         }
     });
 
     // Career: Line Chart
-    new Chart(document.getElementById('careerChart'), {
+    var careerLabels = CAREER_DATA.map(c => c.title);
+
+    TronCharts.career = createChart('careerChart', {
         type: 'line',
         data: {
             labels: CAREER_DATA.map(c => c.year),
             datasets: [{
                 label: 'Career Level',
                 data: CAREER_DATA.map(c => c.level),
-                borderColor: '#4a6741',
+                borderColor: CHART_STYLE.colors.green,
                 backgroundColor: 'rgba(74, 103, 65, 0.1)',
                 fill: true,
                 tension: 0.3,
                 pointRadius: 6,
-                pointBackgroundColor: CAREER_DATA.map(c => c.year === 2025 ? '#c9a84c' : '#4a6741'),
-                pointBorderColor: '#f5f0e6',
+                pointBackgroundColor: CAREER_DATA.map(c => c.year === 2025 ? CHART_STYLE.colors.gold : CHART_STYLE.colors.green),
+                pointBorderColor: CHART_STYLE.panelBg,
                 pointBorderWidth: 2,
                 borderWidth: 3
             }]
@@ -106,7 +144,7 @@ function initializeCharts() {
         options: {
             responsive: true,
             plugins: {
-                title: { display: true, text: 'Career Progression', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } },
+                title: chartTitle('Career Progression'),
                 legend: { display: false },
                 tooltip: {
                     callbacks: {
@@ -118,36 +156,36 @@ function initializeCharts() {
             },
             scales: {
                 y: {
-                    min: 0, max: 7,
-                    grid: { color: 'rgba(196,184,160,0.3)' },
+                    min: 0, max: CAREER_DATA.length + 1,
+                    grid: { color: CHART_STYLE.gridColor },
                     ticks: {
                         callback: function(val) {
-                            const labels = ['', 'Intern', 'Manager', 'Coordinator', 'ALM', 'Sr. Coord', 'Exec. Dir.', ''];
-                            return labels[val] || '';
+                            if (val === 0 || val > CAREER_DATA.length) return '';
+                            return careerLabels[val - 1] || '';
                         },
                         font: { size: 10 }
                     }
                 },
-                x: { grid: { display: false } }
+                x: hiddenGridScale()
             }
         }
     });
 
     // WWE Events: Line Chart with milestones
-    new Chart(document.getElementById('wweEventsChart'), {
+    TronCharts.wweEvents = createChart('wweEventsChart', {
         type: 'line',
         data: {
             labels: WWE_MILESTONES.map(w => w.year),
             datasets: [{
                 label: 'Cumulative WWE Events',
                 data: WWE_MILESTONES.map(w => w.events),
-                borderColor: '#8b1a1a',
+                borderColor: CHART_STYLE.colors.red,
                 backgroundColor: 'rgba(139, 26, 26, 0.08)',
                 fill: true,
                 tension: 0.3,
                 pointRadius: 7,
-                pointBackgroundColor: '#8b1a1a',
-                pointBorderColor: '#f5f0e6',
+                pointBackgroundColor: CHART_STYLE.colors.red,
+                pointBorderColor: CHART_STYLE.panelBg,
                 pointBorderWidth: 2,
                 borderWidth: 3
             }]
@@ -155,7 +193,7 @@ function initializeCharts() {
         options: {
             responsive: true,
             plugins: {
-                title: { display: true, text: 'WWE Events: The Climb to 91+', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } },
+                title: chartTitle('WWE Events: The Climb to 91+'),
                 legend: { display: false },
                 tooltip: {
                     callbacks: {
@@ -166,29 +204,31 @@ function initializeCharts() {
                 }
             },
             scales: {
-                y: { grid: { color: 'rgba(196,184,160,0.3)' }, beginAtZero: true, title: { display: true, text: 'Events', font: { size: 11 } } },
-                x: { grid: { display: false } }
+                y: gridScale({ beginAtZero: true, title: { display: true, text: 'Events', font: { size: 11 } } }),
+                x: hiddenGridScale()
             }
         }
     });
 
     // Travel: Scope over time
-    new Chart(document.getElementById('travelChart'), {
+    var DOMESTIC_BAR_HEIGHT = 0.5;
+
+    TronCharts.travel = createChart('travelChart', {
         type: 'bar',
         data: {
             labels: TRAVEL_DATA.map(t => t.year),
             datasets: [{
                 label: 'Countries Visited',
-                data: TRAVEL_DATA.map(t => t.countries || 0.5),
-                backgroundColor: TRAVEL_DATA.map(t => t.scope === 'International' ? '#1a4a8b' : '#4a6741'),
+                data: TRAVEL_DATA.map(t => t.countries !== null ? t.countries : DOMESTIC_BAR_HEIGHT),
+                backgroundColor: TRAVEL_DATA.map(t => t.scope === 'International' ? CHART_STYLE.colors.blue : CHART_STYLE.colors.green),
                 borderWidth: 0,
-                borderRadius: 2
+                borderRadius: CHART_STYLE.borderRadius
             }]
         },
         options: {
             responsive: true,
             plugins: {
-                title: { display: true, text: 'Travel Scope by Year (Countries per Trip)', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } },
+                title: chartTitle('Travel Scope by Year (Countries per Trip)'),
                 legend: { display: false },
                 tooltip: {
                     callbacks: {
@@ -196,8 +236,8 @@ function initializeCharts() {
                             return TRAVEL_DATA[items[0].dataIndex].destination;
                         },
                         label: function(item) {
-                            const d = TRAVEL_DATA[item.dataIndex];
-                            return d.scope === 'International' ? `${d.countries} countries` : 'Domestic';
+                            var d = TRAVEL_DATA[item.dataIndex];
+                            return d.scope === 'International' ? d.countries + ' countries' : 'Domestic';
                         },
                         afterLabel: function(item) {
                             return TRAVEL_DATA[item.dataIndex].highlight;
@@ -206,31 +246,31 @@ function initializeCharts() {
                 }
             },
             scales: {
-                y: { grid: { color: 'rgba(196,184,160,0.3)' }, beginAtZero: true, title: { display: true, text: 'Countries', font: { size: 11 } } },
-                x: { grid: { display: false } }
+                y: gridScale({ beginAtZero: true, title: { display: true, text: 'Countries', font: { size: 11 } } }),
+                x: hiddenGridScale()
             }
         }
     });
 
     // ECD: Bar + Line combo
-    new Chart(document.getElementById('ecdChart'), {
+    TronCharts.ecd = createChart('ecdChart', {
         type: 'bar',
         data: {
-            labels: ECD_DATA.labels,
+            labels: ECD_DATA.map(e => e.anniversary),
             datasets: [{
                 label: 'Participants',
-                data: ECD_DATA.participants,
-                backgroundColor: '#6b4a8b',
+                data: ECD_DATA.map(e => e.participants),
+                backgroundColor: CHART_STYLE.colors.purple,
                 borderWidth: 0,
-                borderRadius: 2,
+                borderRadius: CHART_STYLE.borderRadius,
                 yAxisID: 'y'
             }, {
                 label: 'Year',
-                data: ECD_DATA.milestoneYears,
+                data: ECD_DATA.map(e => e.year),
                 type: 'line',
-                borderColor: '#c9a84c',
+                borderColor: CHART_STYLE.colors.gold,
                 backgroundColor: 'transparent',
-                pointBackgroundColor: '#c9a84c',
+                pointBackgroundColor: CHART_STYLE.colors.gold,
                 pointRadius: 5,
                 borderWidth: 2,
                 yAxisID: 'y1'
@@ -239,36 +279,38 @@ function initializeCharts() {
         options: {
             responsive: true,
             plugins: {
-                title: { display: true, text: 'East Coast Dodgeball Growth', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } }
+                title: chartTitle('East Coast Dodgeball Growth')
             },
             scales: {
-                y: { position: 'left', grid: { color: 'rgba(196,184,160,0.3)' }, title: { display: true, text: 'Participants', font: { size: 11 } }, beginAtZero: true },
-                y1: { position: 'right', grid: { display: false }, title: { display: true, text: 'Year', font: { size: 11 } }, min: 2008, max: 2026 },
-                x: { grid: { display: false } }
+                y: gridScale({ position: 'left', title: { display: true, text: 'Participants', font: { size: 11 } }, beginAtZero: true }),
+                y1: hiddenGridScale({ position: 'right', title: { display: true, text: 'Year', font: { size: 11 } }, min: 2008, max: 2026 }),
+                x: hiddenGridScale()
             }
         }
     });
 
     // Awards: Doughnut
-    new Chart(document.getElementById('awardsChart'), {
+    var awards = computeAwardsSummary();
+
+    TronCharts.awards = createChart('awardsChart', {
         type: 'doughnut',
         data: {
-            labels: ['Janet Jackson (5)', 'Mariah Carey', 'Other'],
+            labels: awards.labels,
             datasets: [{
-                data: [5, 3, 2],
-                backgroundColor: ['#8b1a1a', '#c9a84c', '#c4b8a0'],
-                borderColor: '#f5f0e6',
+                data: awards.data,
+                backgroundColor: [CHART_STYLE.colors.red, CHART_STYLE.colors.gold, '#c4b8a0'],
+                borderColor: CHART_STYLE.panelBg,
                 borderWidth: 2
             }]
         },
         options: {
             responsive: true,
             plugins: {
-                title: { display: true, text: 'Music Artist of the Year Wins', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } },
+                title: chartTitle('Music Artist of the Year Wins'),
                 tooltip: {
                     callbacks: {
                         label: function(item) {
-                            return `${item.label}: ${item.raw} wins`;
+                            return item.label + ': ' + item.raw + ' wins';
                         }
                     }
                 }
@@ -278,28 +320,28 @@ function initializeCharts() {
     });
 
     // Traditions: Horizontal Bar
-    new Chart(document.getElementById('traditionsChart'), {
+    TronCharts.traditions = createChart('traditionsChart', {
         type: 'bar',
         data: {
-            labels: TRADITIONS_DATA.map(t => `${t.icon} ${t.tradition}`),
+            labels: TRADITIONS_DATA.map(t => t.icon + ' ' + t.tradition),
             datasets: [{
                 label: 'Years Running',
                 data: TRADITIONS_DATA.map(t => t.years),
                 backgroundColor: RETRO_COLORS.slice(0, TRADITIONS_DATA.length),
                 borderWidth: 0,
-                borderRadius: 2
+                borderRadius: CHART_STYLE.borderRadius
             }]
         },
         options: {
             responsive: true,
             indexAxis: 'y',
             plugins: {
-                title: { display: true, text: 'Tradition Longevity (Years)', font: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' }, color: '#5c3d1a', padding: { bottom: 12 } },
+                title: chartTitle('Tradition Longevity (Years)'),
                 legend: { display: false }
             },
             scales: {
-                x: { grid: { color: 'rgba(196,184,160,0.3)' }, beginAtZero: true, max: 25, title: { display: true, text: 'Years', font: { size: 11 } } },
-                y: { grid: { display: false } }
+                x: gridScale({ beginAtZero: true, max: 25, title: { display: true, text: 'Years', font: { size: 11 } } }),
+                y: hiddenGridScale()
             }
         }
     });

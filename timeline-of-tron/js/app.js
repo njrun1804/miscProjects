@@ -11,11 +11,15 @@ let sortAsc = true;
 // =============================
 function populateTravelTable() {
     const tbody = document.querySelector('#travelTable tbody');
+    if (!tbody) {
+        console.warn('#travelTable tbody not found');
+        return;
+    }
     tbody.innerHTML = '';
     TRAVEL_DATA.forEach(t => {
         const tr = document.createElement('tr');
         tr.innerHTML = `
-            <td style="font-family: 'Courier Prime', monospace; font-weight: 700;">${t.year}</td>
+            <td class="travel-year">${t.year}</td>
             <td>${t.destination}</td>
             <td><span class="travel-highlight">${t.highlight}</span></td>
             <td>${t.scope}</td>
@@ -57,12 +61,14 @@ function sortTable(colIndex) {
 // =============================
 // SECTION FILTER
 // =============================
-function showSection(section) {
+function showSection(section, clickedBtn) {
     const entries = document.querySelectorAll('.lj-entry');
     const buttons = document.querySelectorAll('.lj-filter-btn');
 
     buttons.forEach(btn => btn.classList.remove('active'));
-    event.target.classList.add('active');
+    if (clickedBtn) {
+        clickedBtn.classList.add('active');
+    }
 
     entries.forEach(entry => {
         if (section === 'all' || entry.dataset.section === section) {
@@ -74,12 +80,44 @@ function showSection(section) {
 }
 
 // =============================
+// CHART LIFECYCLE
+// =============================
+function destroyAllCharts() {
+    Object.keys(TronCharts).forEach(function(key) {
+        if (TronCharts[key]) {
+            TronCharts[key].destroy();
+            TronCharts[key] = null;
+        }
+    });
+}
+
+// =============================
 // INITIALIZATION
 // =============================
 document.addEventListener('DOMContentLoaded', function() {
-    // Populate travel table
     populateTravelTable();
 
-    // Initialize all charts
-    initializeCharts();
+    if (typeof Chart === 'undefined') {
+        console.error('Chart.js not loaded. Charts will not render.');
+    } else {
+        try {
+            initializeCharts();
+        } catch (err) {
+            console.error('Chart initialization failed:', err);
+        }
+    }
+
+    // Bind filter buttons
+    document.querySelectorAll('.lj-filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            showSection(this.dataset.section, this);
+        });
+    });
+
+    // Bind travel table sort headers
+    document.querySelectorAll('#travelTable th').forEach((th, i) => {
+        th.addEventListener('click', function() {
+            sortTable(i);
+        });
+    });
 });

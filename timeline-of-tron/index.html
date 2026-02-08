@@ -38,14 +38,14 @@
 <div class="lj-filter-bar">
     <div class="lj-filter-inner">
         <span class="lj-filter-label">Jump to:</span>
-        <button class="lj-filter-btn active" onclick="showSection('all')">All</button>
-        <button class="lj-filter-btn" onclick="showSection('stats')">Stats</button>
-        <button class="lj-filter-btn" onclick="showSection('career')">Career</button>
-        <button class="lj-filter-btn" onclick="showSection('wwe')">WWE</button>
-        <button class="lj-filter-btn" onclick="showSection('travel')">Travel</button>
-        <button class="lj-filter-btn" onclick="showSection('cast')">The Cast</button>
-        <button class="lj-filter-btn" onclick="showSection('awards')">Awards</button>
-        <button class="lj-filter-btn" onclick="showSection('comebacks')">Comebacks</button>
+        <button class="lj-filter-btn active" data-section="all">All</button>
+        <button class="lj-filter-btn" data-section="stats">Stats</button>
+        <button class="lj-filter-btn" data-section="career">Career</button>
+        <button class="lj-filter-btn" data-section="wwe">WWE</button>
+        <button class="lj-filter-btn" data-section="travel">Travel</button>
+        <button class="lj-filter-btn" data-section="cast">The Cast</button>
+        <button class="lj-filter-btn" data-section="awards">Awards</button>
+        <button class="lj-filter-btn" data-section="comebacks">Comebacks</button>
     </div>
 </div>
 
@@ -211,7 +211,7 @@
                     <canvas id="wweEventsChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <div class="kpi-grid" style="margin-top: 10px;">
+                    <div class="kpi-grid">
                         <div class="kpi-card" data-category="wwe">
                             <div class="kpi-value">91+</div>
                             <div class="kpi-label">Total Events</div>
@@ -229,13 +229,13 @@
                             <div class="kpi-label">Events with RL</div>
                         </div>
                     </div>
-                    <div style="margin-top: 16px; padding: 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-left: 3px solid var(--lj-gold); border-radius: 2px;">
-                        <div style="font-family: 'Courier Prime', monospace; font-size: 12px; color: var(--lj-gold); font-weight: 700;">&#x211A; CROWN JEWEL MOMENT</div>
-                        <div style="font-size: 13px; margin-top: 6px;">Met The Undertaker at WrestleMania XXX in New Orleans. Handshake timestamp: <strong style="font-family: 'Courier Prime', monospace;">4:10:18 PM CT</strong>. The same night the streak went to 21-1.</div>
+                    <div class="callout-box callout-box--gold">
+                        <div class="callout-title callout-title--gold">&#x211A; CROWN JEWEL MOMENT</div>
+                        <div class="callout-body">Met The Undertaker at WrestleMania XXX in New Orleans. Handshake timestamp: <strong>4:10:18 PM CT</strong>. The same night the streak went to 21-1.</div>
                     </div>
-                    <div style="margin-top: 10px; padding: 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-left: 3px solid var(--lj-accent); border-radius: 2px;">
-                        <div style="font-family: 'Courier Prime', monospace; font-size: 12px; color: var(--lj-accent); font-weight: 700;">&#x211A; MILESTONE</div>
-                        <div style="font-size: 13px; margin-top: 6px;">90th event attended: <strong>March 8, 2020</strong></div>
+                    <div class="callout-box callout-box--red">
+                        <div class="callout-title callout-title--red">&#x211A; MILESTONE</div>
+                        <div class="callout-body">90th event attended: <strong>March 8, 2020</strong></div>
                     </div>
                 </div>
             </div>
@@ -259,14 +259,14 @@
                     <canvas id="travelChart"></canvas>
                 </div>
             </div>
-            <div style="margin-top: 16px;">
+            <div class="table-wrapper">
                 <table class="travel-table" id="travelTable">
                     <thead>
                         <tr>
-                            <th onclick="sortTable(0)">Year <span class="sort-arrow">▼</span></th>
-                            <th onclick="sortTable(1)">Destination <span class="sort-arrow">▼</span></th>
-                            <th onclick="sortTable(2)">Highlight <span class="sort-arrow">▼</span></th>
-                            <th onclick="sortTable(3)">Scope <span class="sort-arrow">▼</span></th>
+                            <th data-col="0">Year <span class="sort-arrow">▼</span></th>
+                            <th data-col="1">Destination <span class="sort-arrow">▼</span></th>
+                            <th data-col="2">Highlight <span class="sort-arrow">▼</span></th>
+                            <th data-col="3">Scope <span class="sort-arrow">▼</span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -431,13 +431,13 @@
                     <canvas id="ecdChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <div style="padding: 10px;">
-                        <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--lj-text-secondary); margin-bottom: 10px; font-weight: bold;">Notable Event Names</div>
-                        <div style="display: flex; flex-wrap: wrap; gap: 6px;">
-                            <span style="background: var(--lj-accent); color: white; padding: 3px 10px; border-radius: 2px; font-size: 12px; font-family: 'Courier Prime', monospace;">Immaculate Redemption</span>
-                            <span style="background: var(--lj-accent2); color: white; padding: 3px 10px; border-radius: 2px; font-size: 12px; font-family: 'Courier Prime', monospace;">WrestleJohnMania XXVI</span>
+                    <div class="sidebar-content">
+                        <div class="section-label">Notable Event Names</div>
+                        <div class="badge-list">
+                            <span class="badge badge--red">Immaculate Redemption</span>
+                            <span class="badge badge--blue">WrestleJohnMania XXVI</span>
                         </div>
-                        <div style="margin-top: 16px;">
+                        <div class="spacer-top">
                             <div class="kpi-grid">
                                 <div class="kpi-card" data-category="sports">
                                     <div class="kpi-value">57</div>
@@ -449,17 +449,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div style="margin-top: 16px;">
-                            <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--lj-text-secondary); margin-bottom: 8px; font-weight: bold;">Documented Anniversaries</div>
-                            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
-                                <span style="background: var(--lj-input-bg); border: 1px solid var(--lj-border); padding: 4px 10px; border-radius: 2px; font-family: 'Courier Prime', monospace; font-size: 12px;">5th</span>
-                                <span style="background: var(--lj-input-bg); border: 1px solid var(--lj-border); padding: 4px 10px; border-radius: 2px; font-family: 'Courier Prime', monospace; font-size: 12px;">10th</span>
-                                <span style="background: var(--lj-input-bg); border: 1px solid var(--lj-border); padding: 4px 10px; border-radius: 2px; font-family: 'Courier Prime', monospace; font-size: 12px;">13th</span>
-                                <span style="background: var(--lj-input-bg); border: 1px solid var(--lj-border); padding: 4px 10px; border-radius: 2px; font-family: 'Courier Prime', monospace; font-size: 12px;">15th</span>
+                        <div class="spacer-top">
+                            <div class="section-label">Documented Anniversaries</div>
+                            <div class="badge-group">
+                                <span class="badge--outline">5th</span>
+                                <span class="badge--outline">10th</span>
+                                <span class="badge--outline">13th</span>
+                                <span class="badge--outline">15th</span>
                             </div>
                         </div>
-                        <div style="margin-top: 16px; padding: 10px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-left: 3px solid var(--lj-accent3); border-radius: 2px;">
-                            <div style="font-size: 12px; font-style: italic; color: var(--lj-text-secondary);">&#x211A; "It deserves its own documentary."</div>
+                        <div class="callout-box callout-box--purple">
+                            <div class="callout-quote">&#x211A; "It deserves its own documentary."</div>
                         </div>
                     </div>
                 </div>
@@ -480,25 +480,25 @@
                     <canvas id="traditionsChart"></canvas>
                 </div>
                 <div class="chart-container">
-                    <div style="padding: 10px;">
-                        <div style="font-family: 'Trebuchet MS', Arial, sans-serif; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--lj-text-secondary); margin-bottom: 12px; font-weight: bold;">Recurring Traditions Clocked</div>
-                        <div style="display: grid; gap: 8px;">
-                            <div style="padding: 8px 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-radius: 2px; font-size: 13px;">
+                    <div class="sidebar-content">
+                        <div class="section-label section-label--spaced">Recurring Traditions Clocked</div>
+                        <div class="tradition-list">
+                            <div class="tradition-item">
                                 ⛷️ <strong>Vermont Skiing</strong> — Stratton as "home away from home"
                             </div>
-                            <div style="padding: 8px 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-radius: 2px; font-size: 13px;">
+                            <div class="tradition-item">
                                 🤼 <strong>WWE Events</strong> — Through-line from earliest years
                             </div>
-                            <div style="padding: 8px 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-radius: 2px; font-size: 13px;">
+                            <div class="tradition-item">
                                 🏓 <strong>Competitive Stats</strong> — Cornhole / Table Tennis / Pickleball / Dodgeball
                             </div>
-                            <div style="padding: 8px 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-radius: 2px; font-size: 13px;">
+                            <div class="tradition-item">
                                 📅 <strong>January Publishing Ritual</strong> — Median drop: Jan 6–7
                             </div>
-                            <div style="padding: 8px 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-radius: 2px; font-size: 13px;">
+                            <div class="tradition-item">
                                 🏅 <strong>Annual Awards</strong> — Music, Comedy, personal superlatives
                             </div>
-                            <div style="padding: 8px 12px; background: var(--lj-input-bg); border: 1px solid var(--lj-border); border-radius: 2px; font-size: 13px;">
+                            <div class="tradition-item">
                                 &#x211A; <strong>Quote Callouts</strong> — Signature formatting in later years
                             </div>
                         </div>
@@ -513,8 +513,8 @@
 <!-- ===== LJ FOOTER ===== -->
 <div class="lj-footer">
     <p>The Timeline of Tron &middot; A 22-Year Statistical Almanac &middot; 2004–2025</p>
-    <p style="margin-top: 4px;">Keep counting everything, John.</p>
-    <p style="margin-top: 8px; font-size: 9px; opacity: 0.6;">This dashboard has outlived MySpace, Vine, Google+, and Friendster — just like the Timelines themselves.</p>
+    <p class="lj-footer-tagline">Keep counting everything, John.</p>
+    <p class="lj-footer-fine-print">This dashboard has outlived MySpace, Vine, Google+, and Friendster — just like the Timelines themselves.</p>
 </div>
 
 <!-- JavaScript Files (Load in correct order) -->

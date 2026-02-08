@@ -5,15 +5,15 @@ This is **The Timeline of Tron**, a personal statistics dashboard spanning 22 ye
 
 ## Architecture
 
-### Modular Structure (v2.0)
-The project was refactored from a monolithic HTML file into a modular architecture:
+### Modular Structure (v2.1)
+Refactored from monolithic HTML → modular architecture → cleaned up code:
 
 ```
 index.html          - Main entry point (load this)
-css/styles.css      - All styling (505 lines)
-js/data.js          - Data arrays and constants
-js/charts.js        - Chart.js configurations
-js/app.js           - Interactive functions
+css/styles.css      - All styling (organized with table of contents)
+js/data.js          - Data arrays, constants, and CHART_STYLE config
+js/charts.js        - Chart.js configurations (uses helpers, stores refs)
+js/app.js           - Interactive functions + error handling
 lib/chart.js        - Chart.js v4.5.1 (local)
 ```
 
@@ -27,7 +27,7 @@ Scripts MUST load in this order (already configured in index.html):
 **Breaking this order will cause errors!**
 
 ## Live URL
-- **Production**: https://njrun1804.github.io/miscProjects/
+- **Production**: https://njrun1804.github.io/miscProjects/timeline-of-tron/
 - **GitHub Repo**: https://github.com/njrun1804/miscProjects
 
 ## Dependencies
@@ -52,14 +52,22 @@ Scripts MUST load in this order (already configured in index.html):
 ## Data Structure
 
 ### Key Data Arrays (js/data.js)
-- `TRAVEL_DATA` - Travel destinations by year
+- `TRAVEL_DATA` - Travel destinations by year (`countries: null` for domestic)
 - `WWE_MILESTONES` - Wrestling event attendance
 - `CAREER_DATA` - Career progression timeline
 - `SPORTS_RECORDS` - Competitive sports statistics
-- `EPIC_NUMBERS` - Single-event records
-- `ECD_DATA` - East Coast Dodgeball history
-- `AWARDS_TIMELINE` - Annual awards tracking
+- `EPIC_NUMBERS` - Single-event records (colors in separate `EPIC_NUMBERS_COLORS`)
+- `ECD_DATA` - East Coast Dodgeball history (array of objects with `anniversary`, `year`, `participants`, `raised`)
+- `AWARDS_TIMELINE` - Annual awards tracking (use `computeAwardsSummary()` for chart data)
 - `TRADITIONS_DATA` - Recurring life traditions
+
+### Chart Infrastructure (js/data.js + js/charts.js)
+- `CHART_STYLE` - Centralized chart styling (fonts, colors, grid) — edit this to restyle all charts
+- `TronCharts` - Global registry of chart instances (access: `TronCharts.sports`, `.career`, etc.)
+- `chartTitle(text)` - Helper for consistent chart titles
+- `gridScale(opts)` / `hiddenGridScale(opts)` - Helpers for axis configuration
+- `createChart(canvasId, config)` - Safe wrapper that handles missing DOM elements
+- `destroyAllCharts()` - Destroys all chart instances for re-initialization
 
 ### Adding New Data
 1. Edit `js/data.js` to add/modify data arrays
@@ -110,7 +118,7 @@ Scripts MUST load in this order (already configured in index.html):
 
 ### Local Development
 ```bash
-cd ~/Projects/miscProjects
+cd ~/Projects/miscProjects/timeline-of-tron
 open index.html  # Opens in default browser
 ```
 
@@ -138,19 +146,37 @@ open index.html  # Opens in default browser
 ### Add New Chart
 1. Add data array to `js/data.js`
 2. Add canvas element to `index.html`: `<canvas id="newChart"></canvas>`
-3. Add chart config to `js/charts.js` inside `initializeCharts()`
-4. Follow existing chart patterns
+3. Add chart config to `js/charts.js` inside `initializeCharts()`:
+   ```javascript
+   TronCharts.newChart = createChart('newChartId', {
+       type: 'bar',
+       data: { ... },
+       options: {
+           responsive: true,
+           plugins: { title: chartTitle('My Chart Title') },
+           scales: { y: gridScale(), x: hiddenGridScale() }
+       }
+   });
+   ```
+4. Use `CHART_STYLE.colors.*` for colors, `CHART_STYLE.borderRadius` for bar radius
 
 ### Modify Styling
 **File**: `css/styles.css`
 - Use CSS variables for colors (defined in `:root`)
+- Use font variables: `--font-body`, `--font-mono`, `--font-sans`
 - Maintain retro LiveJournal aesthetic
 - Test responsive design (mobile breakpoint: 768px)
+- Reusable CSS classes for content blocks:
+  - `.callout-box` + `.callout-box--gold/--red/--purple` for highlight boxes
+  - `.badge` + `.badge--red/--blue` and `.badge--outline` for tags
+  - `.section-label` for uppercase category headings
+  - `.tradition-item` for list items in grids
+  - `.sidebar-content` for chart companion panels
 
 ### Add New Section
 1. Add HTML in `index.html` with `data-section="name"` attribute
-2. Add filter button in nav bar
-3. Section will auto-filter with existing `showSection()` function
+2. Add filter button: `<button class="lj-filter-btn" data-section="name">Label</button>`
+3. Section auto-filters — buttons are bound via `addEventListener` in `app.js`
 
 ## Important Notes
 
@@ -190,6 +216,15 @@ open index.html  # Opens in default browser
 
 ## Project History
 
+### Version 2.1 (Feb 8, 2026)
+- Code cleanup: eliminated chart config duplication, extracted CSS classes from inline styles
+- Added `CHART_STYLE` constants, `TronCharts` registry, chart helper functions
+- Restructured `ECD_DATA` to array of objects, separated `EPIC_NUMBERS_COLORS`
+- Added `computeAwardsSummary()` to replace hardcoded chart data
+- Moved event handlers from HTML onclick to JS addEventListener
+- Added error guards and `destroyAllCharts()` lifecycle utility
+- CSS: font variables, callout/badge/tradition component classes, organized with TOC
+
 ### Version 2.0 (Feb 8, 2025)
 - Refactored monolithic HTML into modular architecture
 - Downloaded Chart.js locally for offline support
@@ -226,6 +261,6 @@ This is a personal project. When making changes, preserve:
 ---
 
 *Generated on: Feb 8, 2025*
-*Last Updated: Feb 8, 2025*
+*Last Updated: Feb 8, 2026*
 
 **Remember**: This isn't just a dashboard—it's a 22-year life story told through statistics.

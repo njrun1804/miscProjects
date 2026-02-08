@@ -3,15 +3,15 @@
 // =============================
 
 const TRAVEL_DATA = [
-    { year: 2010, destination: "Arizona", highlight: "WrestleMania XXVI — 939 photos", scope: "Domestic", countries: 0 },
-    { year: 2017, destination: "Alaska & Seattle", highlight: "Mendenhall Glacier cruise", scope: "Domestic", countries: 0 },
+    { year: 2010, destination: "Arizona", highlight: "WrestleMania XXVI — 939 photos", scope: "Domestic", countries: null },
+    { year: 2017, destination: "Alaska & Seattle", highlight: "Mendenhall Glacier cruise", scope: "Domestic", countries: null },
     { year: 2018, destination: "Slovenia, Italy, Greece, Malta, Croatia", highlight: "5 countries, 2 weeks — Mediterranean", scope: "International", countries: 5 },
     { year: 2019, destination: "Australia & New Zealand", highlight: '"The best, the longest, and the greatest"', scope: "International", countries: 2 },
     { year: 2020, destination: "Singapore, Thailand, Cambodia, Vietnam, Hong Kong", highlight: "17-day Asian expedition", scope: "International", countries: 5 },
-    { year: 2021, destination: "Grand Canyon, Vegas, Utah, Colorado, Boston", highlight: "1,000+ photos in Utah alone", scope: "Domestic", countries: 0 },
-    { year: 2023, destination: "Phoenix / Arizona", highlight: 'Super Bowl LVII — "most spectacular day"', scope: "Domestic", countries: 0 },
+    { year: 2021, destination: "Grand Canyon, Vegas, Utah, Colorado, Boston", highlight: "1,000+ photos in Utah alone", scope: "Domestic", countries: null },
+    { year: 2023, destination: "Phoenix / Arizona", highlight: 'Super Bowl LVII — "most spectacular day"', scope: "Domestic", countries: null },
     { year: 2024, destination: "Portugal, Spain, Norway, Iceland, Toronto", highlight: "Multi-continent year", scope: "International", countries: 5 },
-    { year: 2025, destination: "Midwest Road Trip", highlight: "4,000 mi — Rushmore, Devils Tower, Gateway Arch, Badlands", scope: "Domestic", countries: 0 },
+    { year: 2025, destination: "Midwest Road Trip", highlight: "4,000 mi — Rushmore, Devils Tower, Gateway Arch, Badlands", scope: "Domestic", countries: null },
     { year: 2026, destination: "Japan", highlight: "Booked!", scope: "International", countries: 1 }
 ];
 
@@ -41,20 +41,23 @@ const SPORTS_RECORDS = [
 ];
 
 const EPIC_NUMBERS = [
-    { label: "Bowling Games\n(1 day, 2007)", value: 27, color: "#8b1a1a" },
-    { label: "Ping Pong Rounds\n(1 match, 2021)", value: 218, color: "#1a4a8b" },
-    { label: "Cornholios\n(2016 season)", value: 38, color: "#6b4a8b" },
-    { label: "Blue Claws\n(1 trip)", value: 30, color: "#4a6741" },
-    { label: "Shrimp (lbs)\n(1 event, 2021)", value: 8.6, color: "#b8860b" },
-    { label: "Crab Meat (lbs)\n(1 event, 2021)", value: 7.3, color: "#c9a84c" }
+    { label: "Bowling Games\n(1 day, 2007)", value: 27 },
+    { label: "Ping Pong Rounds\n(1 match, 2021)", value: 218 },
+    { label: "Cornholios\n(2016 season)", value: 38 },
+    { label: "Blue Claws\n(1 trip)", value: 30 },
+    { label: "Shrimp (lbs)\n(1 event, 2021)", value: 8.6 },
+    { label: "Crab Meat (lbs)\n(1 event, 2021)", value: 7.3 }
 ];
 
-const ECD_DATA = {
-    labels: ["5th", "10th", "13th", "15th", "18th+"],
-    milestoneYears: [2012, 2017, 2020, 2022, 2025],
-    participants: [20, 30, 35, 40, 57],
-    raised: [0, 0, 0, 0, 1700]
-};
+const EPIC_NUMBERS_COLORS = ['#8b1a1a', '#1a4a8b', '#6b4a8b', '#4a6741', '#b8860b', '#c9a84c'];
+
+const ECD_DATA = [
+    { anniversary: "5th", year: 2012, participants: 20, raised: 0 },
+    { anniversary: "10th", year: 2017, participants: 30, raised: 0 },
+    { anniversary: "13th", year: 2020, participants: 35, raised: 0 },
+    { anniversary: "15th", year: 2022, participants: 40, raised: 0 },
+    { anniversary: "18th+", year: 2025, participants: 57, raised: 1700 }
+];
 
 const AWARDS_TIMELINE = [
     { year: "≤2014", artist: "Mariah Carey", wins: 1 },
@@ -66,6 +69,20 @@ const AWARDS_TIMELINE = [
     { year: "2020", artist: "Other", wins: 0 },
     { year: "2021", artist: "Janet Jackson", wins: 5 }
 ];
+
+function computeAwardsSummary() {
+    var counts = {};
+    AWARDS_TIMELINE.forEach(function(entry) {
+        counts[entry.artist] = (counts[entry.artist] || 0) + 1;
+    });
+    var janet = counts['Janet Jackson'] || 0;
+    var mariah = counts['Mariah Carey'] || 0;
+    var other = counts['Other'] || 0;
+    return {
+        labels: ['Janet Jackson (' + janet + ')', 'Mariah Carey', 'Other'],
+        data: [janet, mariah, other]
+    };
+}
 
 const TRADITIONS_DATA = [
     { tradition: "WWE Events", years: 22, icon: "🤼" },
@@ -79,3 +96,22 @@ const TRADITIONS_DATA = [
 // Chart color palettes
 const RETRO_COLORS = ['#8b1a1a', '#4a6741', '#1a4a8b', '#6b4a8b', '#b8860b', '#c9a84c', '#5c3d1a', '#8b5e2b'];
 const RETRO_COLORS_ALPHA = RETRO_COLORS.map(c => c + '33');
+
+// Shared chart styling constants
+const CHART_STYLE = {
+    titleFont: { family: "'Courier Prime', monospace", size: 14, weight: 'bold' },
+    titleColor: '#5c3d1a',
+    titlePadding: { bottom: 12 },
+    gridColor: 'rgba(196,184,160,0.3)',
+    panelBg: '#f5f0e6',
+    borderRadius: 2,
+    colors: {
+        green: '#4a6741',
+        red: '#8b1a1a',
+        blue: '#1a4a8b',
+        purple: '#6b4a8b',
+        gold: '#c9a84c',
+        brown: '#b8860b',
+        darkBrown: '#5c3d1a'
+    }
+};
