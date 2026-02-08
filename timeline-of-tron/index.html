@@ -28,8 +28,11 @@
             <span>Memories</span>
         </div>
         <div class="lj-title-bar">
-            <span class="lj-username">📓 The Timeline of Tron<span class="pencil">✏️</span></span>
-            <span class="lj-subtitle">A 22-Year Statistical Almanac &middot; 2004 – 2025</span>
+            <div class="lj-userpic">JT</div>
+            <div class="lj-title-text">
+                <span class="lj-username">The Timeline of Tron<span class="pencil">✏️</span></span>
+                <span class="lj-subtitle">A 22-Year Statistical Almanac &middot; 2004 – 2025</span>
+            </div>
         </div>
     </div>
 </div>
@@ -58,6 +61,7 @@
             <div class="lj-entry-icon">📊</div>
             <span class="lj-entry-title">The Closing Stat Line</span>
             <span class="lj-entry-meta">Lifetime Numbers</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="kpi-grid">
@@ -119,8 +123,13 @@
                 </div>
             </div>
             <div class="lj-current">
-                <strong>Current Mood:</strong> statistically significant &nbsp;|&nbsp;
+                <span class="lj-mood"><span class="mood-icon mood-icon--nerdy"></span> <strong>Current Mood:</strong> statistically significant</span> &nbsp;|&nbsp;
                 <strong>Current Music:</strong> Janet Jackson — "All For You"
+            </div>
+            <div class="lj-comment-bar">
+                <a href="#" class="lj-comment-link" onclick="return false">(7 comments)</a>
+                <span class="lj-comment-sep">|</span>
+                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
             </div>
         </div>
     </div>
@@ -131,13 +140,22 @@
             <div class="lj-entry-icon">🏆</div>
             <span class="lj-entry-title">The Numbers Guy: Greatest Hits</span>
             <span class="lj-entry-meta">Key Records by Year</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
-            <div class="chart-grid">
-                <div class="chart-container">
-                    <canvas id="sportsChart"></canvas>
+            <div class="chart-grid chart-grid--thirds">
+                <div class="chart-container gauge-container">
+                    <canvas id="sportsGauge0"></canvas>
                 </div>
-                <div class="chart-container">
+                <div class="chart-container gauge-container">
+                    <canvas id="sportsGauge1"></canvas>
+                </div>
+                <div class="chart-container gauge-container">
+                    <canvas id="sportsGauge2"></canvas>
+                </div>
+            </div>
+            <div class="chart-grid" style="margin-top: 20px;">
+                <div class="chart-container chart-full">
                     <canvas id="epicNumbersChart"></canvas>
                 </div>
             </div>
@@ -150,6 +168,7 @@
             <div class="lj-entry-icon">💼</div>
             <span class="lj-entry-title">Career Arc: Intern to Executive Director</span>
             <span class="lj-entry-meta">15 Years in Senior Living</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="chart-grid">
@@ -188,12 +207,17 @@
                     </div>
                 </div>
                 <div class="chart-container">
-                    <canvas id="careerChart"></canvas>
+                    <canvas id="careerStaircaseChart"></canvas>
                 </div>
             </div>
             <div class="lj-current">
-                <strong>Current Mood:</strong> promoted &nbsp;|&nbsp;
+                <span class="lj-mood"><span class="mood-icon mood-icon--proud"></span> <strong>Current Mood:</strong> promoted</span> &nbsp;|&nbsp;
                 <strong>Tags:</strong> calling, not just a career
+            </div>
+            <div class="lj-comment-bar">
+                <a href="#" class="lj-comment-link" onclick="return false">(12 comments)</a>
+                <span class="lj-comment-sep">|</span>
+                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
             </div>
         </div>
     </div>
@@ -204,11 +228,12 @@
             <div class="lj-entry-icon">🤼</div>
             <span class="lj-entry-title">WWE: The Lifetime Stats</span>
             <span class="lj-entry-meta">The Username Says It All</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="chart-grid">
                 <div class="chart-container">
-                    <canvas id="wweEventsChart"></canvas>
+                    <canvas id="wweTimelineChart"></canvas>
                 </div>
                 <div class="chart-container">
                     <div class="kpi-grid">
@@ -240,8 +265,13 @@
                 </div>
             </div>
             <div class="lj-current">
-                <strong>Current Mood:</strong> electrified &nbsp;|&nbsp;
+                <span class="lj-mood"><span class="mood-icon mood-icon--excited"></span> <strong>Current Mood:</strong> electrified</span> &nbsp;|&nbsp;
                 <strong>Current Music:</strong> WWE entrance themes
+            </div>
+            <div class="lj-comment-bar">
+                <a href="#" class="lj-comment-link" onclick="return false">(25 comments)</a>
+                <span class="lj-comment-sep">|</span>
+                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
             </div>
         </div>
     </div>
@@ -252,11 +282,12 @@
             <div class="lj-entry-icon">🌍</div>
             <span class="lj-entry-title">Travel: The World Tour</span>
             <span class="lj-entry-meta">20+ Countries &middot; 5 Continents</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="chart-grid">
                 <div class="chart-container chart-full">
-                    <canvas id="travelChart"></canvas>
+                    <canvas id="travelBubbleChart"></canvas>
                 </div>
             </div>
             <div class="table-wrapper">
@@ -274,8 +305,13 @@
                 </table>
             </div>
             <div class="lj-current">
-                <strong>Current Mood:</strong> wanderlust &nbsp;|&nbsp;
+                <span class="lj-mood"><span class="mood-icon mood-icon--adventurous"></span> <strong>Current Mood:</strong> wanderlust</span> &nbsp;|&nbsp;
                 <strong>Up Next:</strong> Japan 2026 — booked!
+            </div>
+            <div class="lj-comment-bar">
+                <a href="#" class="lj-comment-link" onclick="return false">(9 comments)</a>
+                <span class="lj-comment-sep">|</span>
+                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
             </div>
         </div>
     </div>
@@ -286,6 +322,7 @@
             <div class="lj-entry-icon">🎭</div>
             <span class="lj-entry-title">The Cast: Recurring Characters Across Eras</span>
             <span class="lj-entry-meta">Lifers, Not Acquaintances</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="cast-grid">
@@ -321,7 +358,13 @@
                 </div>
             </div>
             <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--loved"></span> <strong>Current Mood:</strong> grateful</span> &nbsp;|&nbsp;
                 <strong>Tags:</strong> lifers, ensemble cast, multi-era
+            </div>
+            <div class="lj-comment-bar">
+                <a href="#" class="lj-comment-link" onclick="return false">(18 comments)</a>
+                <span class="lj-comment-sep">|</span>
+                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
             </div>
         </div>
     </div>
@@ -332,11 +375,12 @@
             <div class="lj-entry-icon">🏅</div>
             <span class="lj-entry-title">The Annual Awards</span>
             <span class="lj-entry-meta">A Personal Voting Tradition</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="chart-grid">
                 <div class="chart-container">
-                    <canvas id="awardsChart"></canvas>
+                    <canvas id="awardsDynastyChart"></canvas>
                 </div>
                 <div class="chart-container">
                     <div class="awards-grid">
@@ -364,7 +408,13 @@
                 </div>
             </div>
             <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--creative"></span> <strong>Current Mood:</strong> ceremonial</span> &nbsp;|&nbsp;
                 <strong>Current Music:</strong> Janet Jackson — "If"
+            </div>
+            <div class="lj-comment-bar">
+                <a href="#" class="lj-comment-link" onclick="return false">(5 comments)</a>
+                <span class="lj-comment-sep">|</span>
+                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
             </div>
         </div>
     </div>
@@ -375,6 +425,7 @@
             <div class="lj-entry-icon">💪</div>
             <span class="lj-entry-title">Resilience: The Comeback Arcs</span>
             <span class="lj-entry-meta">Setback → Triumph</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <ul class="comeback-list">
@@ -412,8 +463,13 @@
                 </li>
             </ul>
             <div class="lj-current">
-                <strong>Current Mood:</strong> unbreakable &nbsp;|&nbsp;
+                <span class="lj-mood"><span class="mood-icon mood-icon--determined"></span> <strong>Current Mood:</strong> unbreakable</span> &nbsp;|&nbsp;
                 <strong>Tags:</strong> comeback, resilience, movie-pitch-level recoveries
+            </div>
+            <div class="lj-comment-bar">
+                <a href="#" class="lj-comment-link" onclick="return false">(14 comments)</a>
+                <span class="lj-comment-sep">|</span>
+                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
             </div>
         </div>
     </div>
@@ -424,11 +480,12 @@
             <div class="lj-entry-icon">🔴</div>
             <span class="lj-entry-title">East Coast Dodgeball: The Dynasty</span>
             <span class="lj-entry-meta">18+ Consecutive Years</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="chart-grid">
                 <div class="chart-container">
-                    <canvas id="ecdChart"></canvas>
+                    <canvas id="ecdGrowthChart"></canvas>
                 </div>
                 <div class="chart-container">
                     <div class="sidebar-content">
@@ -473,11 +530,12 @@
             <div class="lj-entry-icon">🎯</div>
             <span class="lj-entry-title">Traditions & Side Quests</span>
             <span class="lj-entry-meta">The Annual Rituals</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
             <div class="chart-grid">
                 <div class="chart-container">
-                    <canvas id="traditionsChart"></canvas>
+                    <canvas id="traditionsPolarChart"></canvas>
                 </div>
                 <div class="chart-container">
                     <div class="sidebar-content">
@@ -512,6 +570,12 @@
 
 <!-- ===== LJ FOOTER ===== -->
 <div class="lj-footer">
+    <div class="lj-hit-counter">
+        <span class="hit-counter-label">page views:</span>
+        <span class="hit-counter-digits">
+            <span class="hit-digit">0</span><span class="hit-digit">0</span><span class="hit-digit">4</span><span class="hit-digit">,</span><span class="hit-digit">8</span><span class="hit-digit">4</span><span class="hit-digit">7</span>
+        </span>
+    </div>
     <p>The Timeline of Tron &middot; A 22-Year Statistical Almanac &middot; 2004–2025</p>
     <p class="lj-footer-tagline">Keep counting everything, John.</p>
     <p class="lj-footer-fine-print">This dashboard has outlived MySpace, Vine, Google+, and Friendster — just like the Timelines themselves.</p>
@@ -519,6 +583,7 @@
 
 <!-- JavaScript Files (Load in correct order) -->
 <script src="js/data.js"></script>
+<script src="js/plugins.js"></script>
 <script src="js/charts.js"></script>
 <script src="js/app.js"></script>
 

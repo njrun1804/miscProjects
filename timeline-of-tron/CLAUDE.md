@@ -11,7 +11,8 @@ Refactored from monolithic HTML → modular architecture → cleaned up code:
 ```
 index.html          - Main entry point (load this)
 css/styles.css      - All styling (organized with table of contents)
-js/data.js          - Data arrays, constants, and CHART_STYLE config
+js/data.js          - Data arrays, constants, CHART_STYLE config, computed helpers
+js/plugins.js       - Custom Chart.js plugins (centerText, barValue, milestoneLabels, steppedFillLabels)
 js/charts.js        - Chart.js configurations (uses helpers, stores refs)
 js/app.js           - Interactive functions + error handling
 lib/chart.js        - Chart.js v4.5.1 (local)
@@ -21,8 +22,9 @@ lib/chart.js        - Chart.js v4.5.1 (local)
 Scripts MUST load in this order (already configured in index.html):
 1. `lib/chart.js` - Chart.js library
 2. `js/data.js` - Data must exist before charts reference it
-3. `js/charts.js` - Charts need data to initialize
-4. `js/app.js` - App logic depends on charts being initialized
+3. `js/plugins.js` - Plugins must be registered before charts use them
+4. `js/charts.js` - Charts need data + plugins to initialize
+5. `js/app.js` - App logic depends on charts being initialized
 
 **Breaking this order will cause errors!**
 

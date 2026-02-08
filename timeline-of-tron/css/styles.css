@@ -111,6 +111,31 @@ body {
 
 .lj-title-bar {
     display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.lj-userpic {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, #5c3d1a 0%, #8b5e2b 100%);
+    border: 2px solid rgba(232, 224, 208, 0.4);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--lj-header-text);
+    flex-shrink: 0;
+    image-rendering: pixelated;
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+}
+
+.lj-title-text {
+    display: flex;
     align-items: baseline;
     gap: 12px;
     flex-wrap: wrap;
@@ -309,6 +334,21 @@ body {
 .chart-full { grid-column: 1 / -1; }
 
 canvas { max-width: 100%; }
+
+/* Three-column grid for gauge charts */
+.chart-grid--thirds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.gauge-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 220px;
+    margin: 0 auto;
+}
 
 /* =============================
    10. CAREER TIMELINE
@@ -663,6 +703,80 @@ canvas { max-width: 100%; }
     letter-spacing: 0.5px;
 }
 
+/* Mood Icons — retro pixel-style dots */
+.lj-mood {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mood-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,0.15);
+    flex-shrink: 0;
+}
+
+.mood-icon--nerdy { background: var(--lj-accent2); }
+.mood-icon--proud { background: var(--lj-gold); }
+.mood-icon--excited { background: var(--lj-accent); }
+.mood-icon--adventurous { background: var(--lj-accent2); }
+.mood-icon--loved { background: #d4618c; }
+.mood-icon--creative { background: var(--lj-accent3); }
+.mood-icon--determined { background: var(--lj-header-bg); }
+
+/* Comment Bar — classic LJ links */
+.lj-comment-bar {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    padding: 6px 16px;
+    border-top: 1px dotted var(--lj-border);
+    margin-top: 0;
+    text-align: right;
+}
+
+.lj-comment-link {
+    color: var(--lj-link);
+    text-decoration: none;
+    cursor: default;
+}
+
+.lj-comment-link:hover {
+    color: var(--lj-link-hover);
+    text-decoration: underline;
+}
+
+.lj-comment-sep {
+    color: var(--lj-border);
+    margin: 0 6px;
+}
+
+/* LJ-Cut Toggle */
+.lj-cut-toggle {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    color: rgba(232, 224, 208, 0.5);
+    text-decoration: none;
+    margin-left: auto;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: color 0.15s;
+}
+
+.lj-entry-header:hover .lj-cut-toggle {
+    color: rgba(232, 224, 208, 0.8);
+}
+
+.lj-entry.collapsed .lj-entry-body {
+    display: none;
+}
+
+.lj-entry.collapsed .lj-comment-bar {
+    display: none;
+}
+
 /* =============================
    18. FOOTER
    ============================= */
@@ -692,11 +806,54 @@ canvas { max-width: 100%; }
     opacity: 0.6;
 }
 
+/* Retro Hit Counter */
+.lj-hit-counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 2px;
+}
+
+.hit-counter-label {
+    font-family: var(--font-sans);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+}
+
+.hit-counter-digits {
+    display: flex;
+    gap: 1px;
+}
+
+.hit-digit {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: #4aff4a;
+    background: #0a0a0a;
+    padding: 2px 4px;
+    min-width: 14px;
+    text-align: center;
+    line-height: 1;
+    text-shadow: 0 0 4px rgba(74, 255, 74, 0.4);
+}
+
 /* =============================
    19. RESPONSIVE
    ============================= */
 @media (max-width: 768px) {
     .chart-grid { grid-template-columns: 1fr; }
+    .chart-grid--thirds {
+        grid-template-columns: 1fr;
+        max-width: 250px;
+        margin: 0 auto;
+    }
     .awards-grid { grid-template-columns: 1fr; }
     .kpi-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
     .cast-grid { grid-template-columns: 1fr; }

@@ -93,6 +93,61 @@ const TRADITIONS_DATA = [
     { tradition: "Famous Faces", years: 10, icon: "🎲" }
 ];
 
+// =============================
+// COMPUTED DATA HELPERS
+// =============================
+
+// Generate stepped career data with intermediate points for plateau visualization
+function computeCareerSteps() {
+    var steps = [];
+    for (var i = 0; i < CAREER_DATA.length; i++) {
+        steps.push({ x: CAREER_DATA[i].year, y: CAREER_DATA[i].level });
+        if (i < CAREER_DATA.length - 1) {
+            steps.push({ x: CAREER_DATA[i + 1].year, y: CAREER_DATA[i].level });
+        }
+    }
+    steps.push({ x: 2026, y: CAREER_DATA[CAREER_DATA.length - 1].level });
+    return steps;
+}
+
+// Generate career plateau durations for labels
+function computeCareerDurations() {
+    return CAREER_DATA.map(function(c, idx) {
+        var nextYear = (idx < CAREER_DATA.length - 1) ? CAREER_DATA[idx + 1].year : 2026;
+        return (nextYear - c.year) + 'yr';
+    });
+}
+
+// Transform TRAVEL_DATA into bubble chart format
+function computeTravelBubbles() {
+    return TRAVEL_DATA.map(function(t) {
+        return {
+            x: t.year,
+            y: t.scope === 'International' ? 2 : 1,
+            r: t.countries !== null ? Math.max(t.countries * 4, 8) : 6,
+            label: t.destination,
+            highlight: t.highlight,
+            scope: t.scope,
+            countries: t.countries
+        };
+    });
+}
+
+// Split AWARDS_TIMELINE into per-artist stacked bar arrays
+function computeAwardsDynastyData() {
+    var years = AWARDS_TIMELINE.map(function(a) { return a.year; });
+    var janet = AWARDS_TIMELINE.map(function(a) {
+        return a.artist === 'Janet Jackson' ? 1 : 0;
+    });
+    var mariah = AWARDS_TIMELINE.map(function(a) {
+        return a.artist === 'Mariah Carey' ? 1 : 0;
+    });
+    var other = AWARDS_TIMELINE.map(function(a) {
+        return a.artist === 'Other' ? 1 : 0;
+    });
+    return { years: years, janet: janet, mariah: mariah, other: other };
+}
+
 // Chart color palettes
 const RETRO_COLORS = ['#8b1a1a', '#4a6741', '#1a4a8b', '#6b4a8b', '#b8860b', '#c9a84c', '#5c3d1a', '#8b5e2b'];
 const RETRO_COLORS_ALPHA = RETRO_COLORS.map(c => c + '33');
