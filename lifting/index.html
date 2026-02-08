@@ -36,6 +36,7 @@ body {
   display: flex;
   gap: 8px;
   padding: 12px 12px 10px;
+  padding-top: calc(12px + env(safe-area-inset-top, 0px));
   position: sticky;
   top: 0;
   background: var(--bg);
@@ -109,13 +110,13 @@ body {
 /* Set checkboxes */
 .set-dots {
   display: flex;
-  gap: 3px;
+  gap: 4px;
 }
 .set-dot {
-  width: 8px;
-  height: 8px;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
-  border: 1.5px solid var(--text-dim);
+  border: 2px solid var(--text-dim);
   background: transparent;
   transition: all 0.2s;
   cursor: pointer;
@@ -140,6 +141,34 @@ body {
   color: var(--text-dim);
   margin-top: 1px;
 }
+.exercise .weight-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 3px;
+}
+.weight-input {
+  width: 48px;
+  font-size: 12px;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--card-alt);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 2px 5px;
+  text-align: center;
+  -webkit-appearance: none;
+  appearance: none;
+}
+.weight-input::placeholder { color: #444; }
+.weight-input:focus {
+  outline: none;
+  border-color: var(--accent-b);
+}
+.weight-label {
+  font-size: 11px;
+  color: #444;
+}
 
 .exercise .rpe-wrap {
   display: flex;
@@ -161,16 +190,17 @@ body {
 
 /* Timer button */
 .timer-btn {
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
   border: 1.5px solid var(--accent-b);
   background: transparent;
   color: var(--accent-b);
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s;
+  min-height: 32px;
 }
 .timer-btn:active { background: rgba(74,158,255,0.2); }
 
@@ -458,6 +488,10 @@ body {
     <div class="info" onclick="openDetail('trap-bar-dl')">
       <div class="name">Trap Bar Deadlift</div>
       <div class="meta">3&times;5 &middot; Rest 2-3 min</div>
+      <div class="weight-row" onclick="event.stopPropagation()">
+        <input class="weight-input" data-weight-key="trap-bar-dl" placeholder="—" inputmode="text">
+        <span class="weight-label">lbs</span>
+      </div>
     </div>
     <div class="rpe-wrap">
       <div class="rpe rpe-high">7-8</div>
@@ -473,6 +507,10 @@ body {
     <div class="info" onclick="openDetail('bss')">
       <div class="name">Bulgarian Split Squat (DB)</div>
       <div class="meta">3&times;8/side &middot; Rest 1:30-2:00</div>
+      <div class="weight-row" onclick="event.stopPropagation()">
+        <input class="weight-input" data-weight-key="bss" placeholder="—" inputmode="text">
+        <span class="weight-label">lbs ea</span>
+      </div>
     </div>
     <div class="rpe-wrap">
       <div class="rpe rpe-med">7</div>
@@ -503,6 +541,10 @@ body {
     <div class="info" onclick="openDetail('calf-raise-heavy')">
       <div class="name">Heavy Calf Raise</div>
       <div class="meta">3&times;10 &middot; 3s down, 2s pause &middot; Rest 1:30</div>
+      <div class="weight-row" onclick="event.stopPropagation()">
+        <input class="weight-input" data-weight-key="calf-raise-heavy" placeholder="—" inputmode="text">
+        <span class="weight-label">lbs</span>
+      </div>
     </div>
     <div class="rpe-wrap">
       <div class="rpe rpe-med">7</div>
@@ -626,6 +668,10 @@ body {
     <div class="info" onclick="openDetail('sl-rdl')">
       <div class="name">Single-Leg RDL (DB)</div>
       <div class="meta">3&times;8/side &middot; Rest 1-1:30</div>
+      <div class="weight-row" onclick="event.stopPropagation()">
+        <input class="weight-input" data-weight-key="sl-rdl" placeholder="—" inputmode="text">
+        <span class="weight-label">lbs</span>
+      </div>
     </div>
     <div class="rpe-wrap">
       <div class="rpe rpe-low">6-7</div>
@@ -641,6 +687,10 @@ body {
     <div class="info" onclick="openDetail('goblet-squat')">
       <div class="name">Goblet Squat (3-sec pause)</div>
       <div class="meta">3&times;8 &middot; Rest 1:30</div>
+      <div class="weight-row" onclick="event.stopPropagation()">
+        <input class="weight-input" data-weight-key="goblet-squat" placeholder="—" inputmode="text">
+        <span class="weight-label">lbs</span>
+      </div>
     </div>
     <div class="rpe-wrap">
       <div class="rpe rpe-low">6</div>
@@ -949,6 +999,19 @@ function resetSets(session) {
   });
 }
 
+// ── Wake Lock ──
+let wakeLock = null;
+async function requestWakeLock() {
+  try {
+    if ('wakeLock' in navigator) {
+      wakeLock = await navigator.wakeLock.request('screen');
+    }
+  } catch(e) {}
+}
+function releaseWakeLock() {
+  if (wakeLock) { wakeLock.release(); wakeLock = null; }
+}
+
 // ── Timer ──
 let timerInterval = null;
 let timerRemaining = 0;
@@ -957,6 +1020,7 @@ const CIRCUMFERENCE = 2 * Math.PI * 100; // 628.32
 
 function startTimer(seconds, label) {
   event.stopPropagation();
+  requestWakeLock();
   timerTotal = seconds;
   timerRemaining = seconds;
   document.getElementById('timer-label').textContent = label;
@@ -1016,6 +1080,7 @@ function updateTimerRing() {
 function cancelTimer() {
   clearInterval(timerInterval);
   timerInterval = null;
+  releaseWakeLock();
   document.getElementById('timer-overlay').classList.remove('open');
 }
 
@@ -1070,9 +1135,24 @@ document.getElementById('detail-sheet').addEventListener('touchmove', function(e
   }
 });
 
+// ── Weight logging ──
+function initWeights() {
+  document.querySelectorAll('.weight-input').forEach(function(input) {
+    var key = 'weight_' + input.dataset.weightKey;
+    var saved = localStorage.getItem(key);
+    if (saved) input.value = saved;
+    input.addEventListener('change', function() {
+      var val = this.value.trim();
+      if (val) localStorage.setItem(key, val);
+      else localStorage.removeItem(key);
+    });
+  });
+}
+
 // Init
 autoSelect();
 initDots();
+initWeights();
 </script>
 </body>
 </html>
