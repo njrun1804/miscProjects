@@ -134,6 +134,7 @@ function initScrubber(map, travel) {
     if (!slider || !display) return;
 
     const years = travel.map(t => t.year).filter(Boolean);
+    if (!years.length) return;
     const minYear = Math.min(...years);
     const maxYear = Math.max(...years);
 
@@ -161,7 +162,8 @@ function renderFrequency(frequency) {
     const grid = document.querySelector('.atlas-frequency-grid');
     if (!grid) return;
 
-    const sorted = [...frequency].sort((a, b) => b.visit_count - a.visit_count);
+    const repeats = frequency.filter(f => f.visit_count > 1);
+    const sorted = [...repeats].sort((a, b) => b.visit_count - a.visit_count);
 
     grid.innerHTML = sorted.map(f => `
         <div class="freq-card">

@@ -3,6 +3,7 @@
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
+import { plantClue } from './room0.js';
 
 const ERA_COLORS = {
     early: '#4a90d9',    // 2004-2008: blue
@@ -79,7 +80,7 @@ function renderForceGraph(constellation, profiles, quotes) {
         source: l.source,
         target: l.target,
         weight: l.weight || 1
-    }));
+    })).filter(l => l.source !== l.target);
 
     // Force simulation
     const simulation = d3.forceSimulation(nodes)
@@ -187,7 +188,7 @@ function renderForceGraph(constellation, profiles, quotes) {
                 return;
             }
             node.attr('opacity', d =>
-                d.name.toLowerCase().includes(q) ? 1 : 0.1
+                (d.name || '').toLowerCase().includes(q) ? 1 : 0.1
             );
         });
     }
@@ -304,12 +305,7 @@ function renderInnerCircleChart(milestones) {
             responsive: true,
             plugins: {
                 legend: { display: false },
-                title: {
-                    display: true,
-                    text: 'The Circle Over Time',
-                    color: '#d0d8e4',
-                    font: { family: "'Courier Prime', monospace", size: 14 }
-                }
+                title: { display: false }
             },
             scales: {
                 x: {
@@ -334,6 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Auto-init
 initConstellation()
     .then(() => initWormholes('constellation'))
+    .then(() => plantClue('clue2', document.querySelector('.constellation-annotation')))
     .catch(() => {
         const el = document.getElementById('constellationMount');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';

@@ -191,7 +191,7 @@ function renderKeywordCloud(keywords) {
 
     years.forEach(year => {
         const top = byYear[year]
-            .sort((a, b) => b.tfidf_score - a.tfidf_score)
+            .sort((a, b) => (b.tfidf_score || 0) - (a.tfidf_score || 0))
             .slice(0, 8);
 
         html += `

@@ -61,7 +61,8 @@
     "title": "Manager of the Year Award",
     "employer": "Sunrise Senior Living",
     "milestone": "Corporate recognition",
-    "career_level": 3
+    "career_level": 3,
+    "type": "award"
   },
   {
     "id": 9,

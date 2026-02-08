@@ -82,7 +82,7 @@ const WORMHOLES = [
     },
     // Comeback → Dynasty (what was built after)
     {
-        from: { room: 'comeback', selector: '.recovery-clock-section' },
+        from: { room: 'comeback', selector: '.comeback-clock-section' },
         to: { room: 'dynasty', url: 'dynasty.html', hash: '' },
         label: 'What was built after each comeback →',
         context: 'The Dynasty'

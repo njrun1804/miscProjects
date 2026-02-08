@@ -3,6 +3,7 @@
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
+import { plantClue } from './room0.js';
 
 export async function initRecords() {
     const data = await loadMultiple([
@@ -29,7 +30,7 @@ function renderObsessionIndex(epicNumbers) {
         value: item.value + (item.unit ? ' ' + item.unit : ''),
         label: item.stat,
         precision: item.unit || 'count',
-        context: item.context
+        context: item.year || item.note || ''
     }));
 
     grid.innerHTML = obsessions.map(o => `
@@ -177,6 +178,7 @@ function renderRecordWall(funFacts) {
 // Auto-init
 initRecords()
     .then(() => initWormholes('records'))
+    .then(() => plantClue('clue4', document.querySelector('.record-card')))
     .catch(() => {
         const el = document.querySelector('.obsession-grid');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';

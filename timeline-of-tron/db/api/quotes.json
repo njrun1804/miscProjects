@@ -14,7 +14,7 @@
     "year": 2007,
     "sentiment_score": -0.6,
     "vader_compound": -0.45,
-    "emotion": "neutral",
+    "emotion": "determination",
     "theme": "reflection"
   },
   {
@@ -32,7 +32,7 @@
     "year": 2007,
     "sentiment_score": 0.017,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "humor",
     "theme": "reflection"
   },
   {
@@ -41,7 +41,7 @@
     "year": 2007,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "wonder",
     "theme": "reflection"
   },
   {
@@ -50,7 +50,7 @@
     "year": 2007,
     "sentiment_score": 0.35,
     "vader_compound": -0.296,
-    "emotion": "neutral",
+    "emotion": "nostalgia",
     "theme": "growth"
   },
   {
@@ -86,7 +86,7 @@
     "year": 2008,
     "sentiment_score": 0.183,
     "vader_compound": 0.361,
-    "emotion": "neutral",
+    "emotion": "pride",
     "theme": "identity"
   },
   {
@@ -104,7 +104,7 @@
     "year": 2008,
     "sentiment_score": -0.15,
     "vader_compound": 0.459,
-    "emotion": "neutral",
+    "emotion": "determination",
     "theme": "reflection"
   },
   {
@@ -113,7 +113,7 @@
     "year": 2008,
     "sentiment_score": -0.219,
     "vader_compound": 0.141,
-    "emotion": "neutral",
+    "emotion": "humor",
     "theme": "reflection"
   },
   {
@@ -131,7 +131,7 @@
     "year": 2008,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "hope",
     "theme": "reflection"
   },
   {
@@ -149,7 +149,7 @@
     "year": 2008,
     "sentiment_score": 0.0,
     "vader_compound": 0.457,
-    "emotion": "neutral",
+    "emotion": "pride",
     "theme": "reflection"
   },
   {
@@ -158,7 +158,7 @@
     "year": 2008,
     "sentiment_score": -0.4,
     "vader_compound": -0.44,
-    "emotion": "neutral",
+    "emotion": "humor",
     "theme": "reflection"
   },
   {
@@ -176,7 +176,7 @@
     "year": 2008,
     "sentiment_score": -0.1,
     "vader_compound": -0.421,
-    "emotion": "neutral",
+    "emotion": "bittersweet",
     "theme": "reflection"
   },
   {
@@ -221,7 +221,7 @@
     "year": 2009,
     "sentiment_score": 0.0,
     "vader_compound": -0.318,
-    "emotion": "neutral",
+    "emotion": "determination",
     "theme": "reflection"
   },
   {
@@ -275,7 +275,7 @@
     "year": 2009,
     "sentiment_score": 0.0,
     "vader_compound": -0.226,
-    "emotion": "neutral",
+    "emotion": "nostalgia",
     "theme": "reflection"
   },
   {
@@ -302,7 +302,7 @@
     "year": 2010,
     "sentiment_score": -0.1,
     "vader_compound": -0.361,
-    "emotion": "neutral",
+    "emotion": "pride",
     "theme": "reflection"
   },
   {
@@ -347,7 +347,7 @@
     "year": 2013,
     "sentiment_score": 0.0,
     "vader_compound": -0.456,
-    "emotion": "neutral",
+    "emotion": "joy",
     "theme": "reflection"
   },
   {
@@ -365,7 +365,7 @@
     "year": 2013,
     "sentiment_score": 0.0,
     "vader_compound": 0.557,
-    "emotion": "anger",
+    "emotion": "pride",
     "theme": "reflection"
   },
   {
@@ -374,7 +374,7 @@
     "year": 2013,
     "sentiment_score": 0.4,
     "vader_compound": 0.494,
-    "emotion": "neutral",
+    "emotion": "love",
     "theme": "reflection"
   },
   {
@@ -392,7 +392,7 @@
     "year": 2014,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "humor",
     "theme": "reflection"
   },
   {
@@ -410,7 +410,7 @@
     "year": 2014,
     "sentiment_score": 0.25,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "nostalgia",
     "theme": "adventure"
   },
   {
@@ -419,7 +419,7 @@
     "year": 2014,
     "sentiment_score": 0.4,
     "vader_compound": 0.494,
-    "emotion": "neutral",
+    "emotion": "wonder",
     "theme": "adventure"
   },
   {
@@ -428,7 +428,7 @@
     "year": 2014,
     "sentiment_score": 0.1,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "pride",
     "theme": "reflection"
   },
   {
@@ -437,7 +437,7 @@
     "year": 2014,
     "sentiment_score": 0.35,
     "vader_compound": 0.71,
-    "emotion": "anger",
+    "emotion": "joy",
     "theme": "reflection"
   },
   {
@@ -464,7 +464,7 @@
     "year": 2015,
     "sentiment_score": 0.287,
     "vader_compound": 0.44,
-    "emotion": "neutral",
+    "emotion": "humor",
     "theme": "reflection"
   },
   {
@@ -482,7 +482,7 @@
     "year": 2016,
     "sentiment_score": 0.217,
     "vader_compound": 0.316,
-    "emotion": "neutral",
+    "emotion": "humor",
     "theme": "reflection"
   },
   {
@@ -491,7 +491,7 @@
     "year": 2017,
     "sentiment_score": 0.0,
     "vader_compound": 0.151,
-    "emotion": "neutral",
+    "emotion": "relief",
     "theme": "reflection"
   },
   {
@@ -500,7 +500,7 @@
     "year": 2017,
     "sentiment_score": 0.017,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "nostalgia",
     "theme": "reflection"
   },
   {
@@ -527,7 +527,7 @@
     "year": 2018,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "relief",
     "theme": "reflection"
   },
   {
@@ -545,7 +545,7 @@
     "year": 2019,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "wonder",
     "theme": "identity"
   },
   {
@@ -554,7 +554,7 @@
     "year": 2019,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "nostalgia",
     "theme": "reflection"
   },
   {
@@ -572,7 +572,7 @@
     "year": 2019,
     "sentiment_score": 0.0,
     "vader_compound": 0.34,
-    "emotion": "neutral",
+    "emotion": "determination",
     "theme": "reflection"
   },
   {
@@ -590,7 +590,7 @@
     "year": 2020,
     "sentiment_score": 0.0,
     "vader_compound": 0.445,
-    "emotion": "neutral",
+    "emotion": "determination",
     "theme": "resilience"
   },
   {
@@ -599,7 +599,7 @@
     "year": 2020,
     "sentiment_score": 0.25,
     "vader_compound": -0.325,
-    "emotion": "neutral",
+    "emotion": "determination",
     "theme": "adventure"
   },
   {
@@ -608,7 +608,7 @@
     "year": 2020,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "pride",
     "theme": "reflection"
   },
   {
@@ -644,7 +644,7 @@
     "year": 2020,
     "sentiment_score": 0.0,
     "vader_compound": 0.754,
-    "emotion": "anger",
+    "emotion": "joy",
     "theme": "reflection"
   },
   {
@@ -653,7 +653,7 @@
     "year": 2020,
     "sentiment_score": 0.075,
     "vader_compound": -0.155,
-    "emotion": "neutral",
+    "emotion": "wonder",
     "theme": "reflection"
   },
   {
@@ -662,7 +662,7 @@
     "year": 2021,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "pride",
     "theme": "reflection"
   },
   {
@@ -671,7 +671,7 @@
     "year": 2021,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "pride",
     "theme": "reflection"
   },
   {
@@ -680,7 +680,7 @@
     "year": 2021,
     "sentiment_score": 0.8,
     "vader_compound": 0.459,
-    "emotion": "neutral",
+    "emotion": "humor",
     "theme": "reflection"
   },
   {
@@ -689,7 +689,7 @@
     "year": 2021,
     "sentiment_score": 0.0,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "joy",
     "theme": "career"
   },
   {
@@ -707,7 +707,7 @@
     "year": 2023,
     "sentiment_score": 0.633,
     "vader_compound": 0.0,
-    "emotion": "neutral",
+    "emotion": "joy",
     "theme": "adventure"
   }
 ]

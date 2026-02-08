@@ -5,26 +5,33 @@ import { loadMultiple } from './data-loader.js';
 
 let fuseInstance = null;
 let searchIndex = [];
+let indexBuilding = false;
 
 export async function initSearch() {
     const input = document.querySelector('.room-nav-search input');
     const resultsEl = document.getElementById('searchResults');
     if (!input || !resultsEl) return;
 
-    // Build index on first focus (lazy load)
+    // Build index on focus — retry each time if not yet built
     input.addEventListener('focus', async () => {
-        if (!fuseInstance) {
+        if (!fuseInstance && !indexBuilding) {
             await buildIndex();
         }
-    }, { once: true });
+    });
 
-    input.addEventListener('input', () => {
+    input.addEventListener('input', async () => {
         const query = input.value.trim();
-        if (!query || query.length < 2 || !fuseInstance) {
+        if (!query || query.length < 2) {
             resultsEl.innerHTML = '';
             resultsEl.style.display = 'none';
             return;
         }
+
+        // If Fuse not ready yet, try building
+        if (!fuseInstance && !indexBuilding) {
+            await buildIndex();
+        }
+        if (!fuseInstance) return;
 
         const results = fuseInstance.search(query, { limit: 8 });
         if (!results.length) {
@@ -54,8 +61,27 @@ export async function initSearch() {
     });
 }
 
+function waitForFuse(timeout = 5000) {
+    return new Promise((resolve) => {
+        if (typeof Fuse !== 'undefined') { resolve(true); return; }
+        const start = Date.now();
+        const check = setInterval(() => {
+            if (typeof Fuse !== 'undefined') { clearInterval(check); resolve(true); }
+            else if (Date.now() - start > timeout) { clearInterval(check); resolve(false); }
+        }, 100);
+    });
+}
+
 async function buildIndex() {
+    indexBuilding = true;
     try {
+        // Wait for Fuse.js to be available
+        const fuseReady = await waitForFuse();
+        if (!fuseReady) {
+            console.warn('Search: Fuse.js not available');
+            return;
+        }
+
         const data = await loadMultiple([
             'milestones_enriched.json',
             'quotes.json',
@@ -133,18 +159,22 @@ async function buildIndex() {
         });
 
         // Build Fuse instance
-        if (typeof Fuse !== 'undefined') {
-            fuseInstance = new Fuse(searchIndex, {
-                keys: ['title', 'context', 'room'],
-                threshold: 0.35,
-                includeScore: true,
-                minMatchCharLength: 2
-            });
-        }
+        fuseInstance = new Fuse(searchIndex, {
+            keys: ['title', 'context', 'room'],
+            threshold: 0.35,
+            includeScore: true,
+            minMatchCharLength: 2
+        });
     } catch (e) {
         console.warn('Search index build failed:', e);
+    } finally {
+        indexBuilding = false;
     }
 }
 
-// Auto-init
-initSearch();
+// Auto-init after DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => initSearch());
+} else {
+    initSearch();
+}

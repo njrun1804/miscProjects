@@ -3,6 +3,7 @@
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
+import { plantClue } from './room0.js';
 
 const STAGE_SLUGS = [
     'ordinary-world',
@@ -265,6 +266,7 @@ function initScrollObserver() {
 // Auto-init
 initArc()
     .then(() => initWormholes('arc'))
+    .then(() => plantClue('clue1', document.querySelector('.arc-stage:last-child')))
     .catch(() => {
         const el = document.querySelector('.arc-stages');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';

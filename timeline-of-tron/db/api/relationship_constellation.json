@@ -131,7 +131,7 @@
       "relation": "",
       "first_year": 2005,
       "last_year": 2021,
-      "total_mentions": 7,
+      "total_mentions": 8,
       "peak_year": 2021,
       "highlight_count": 3,
       "has_timeline": true
@@ -473,18 +473,6 @@
       "has_timeline": false
     },
     {
-      "id": "person_59",
-      "name": "Danny Sponge",
-      "category": "other",
-      "relation": "",
-      "first_year": 2021,
-      "last_year": 2021,
-      "total_mentions": 1,
-      "peak_year": 2021,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
       "id": "person_113",
       "name": "Dave Eldracher",
       "category": "other",
@@ -722,18 +710,6 @@
       "total_mentions": 1,
       "peak_year": 2014,
       "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_48",
-      "name": "Juan Londono (Muffin Man)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 5,
       "has_timeline": false
     },
     {
@@ -1491,20 +1467,6 @@
     },
     {
       "source": "person_15",
-      "target": "person_59",
-      "weight": 5,
-      "first_year": 2015,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_15",
-      "target": "person_1",
-      "weight": 5,
-      "first_year": 2015,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_59",
       "target": "person_1",
       "weight": 5,
       "first_year": 2015,
@@ -1567,21 +1529,14 @@
       "co_occurrence_count": 1
     },
     {
-      "source": "person_48",
-      "target": "person_48",
-      "weight": 1,
-      "first_year": 2009,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_48",
+      "source": "person_19",
       "target": "person_47",
       "weight": 1,
       "first_year": 2009,
       "co_occurrence_count": 2
     },
     {
-      "source": "person_48",
+      "source": "person_19",
       "target": "person_31",
       "weight": 1,
       "first_year": 2009,
@@ -1735,20 +1690,6 @@
       "co_occurrence_count": 2
     },
     {
-      "source": "person_10",
-      "target": "person_10",
-      "weight": 1,
-      "first_year": 2021,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_100",
-      "target": "person_100",
-      "weight": 1,
-      "first_year": 2008,
-      "co_occurrence_count": 1
-    },
-    {
       "source": "person_47",
       "target": "person_31",
       "weight": 1,
@@ -1804,7 +1745,6 @@
       "Cousin Nick & Samantha",
       "D Turner",
       "Dan Farnkopf",
-      "Danny Sponge",
       "Dave Eldracher",
       "Dr. Wenslauskas",
       "Edwards",
@@ -1825,7 +1765,6 @@
       "Jill (Toilet Paper)",
       "Joe Corcione (Giuseppe NJ)",
       "Johnny Nash",
-      "Juan Londono (Muffin Man)",
       "Julia Dennabuam",
       "Justin Pierce",
       "Kathryn Kitty Nogueira",

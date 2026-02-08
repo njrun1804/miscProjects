@@ -3,6 +3,7 @@
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
+import { plantClue } from './room0.js';
 
 export async function initComeback() {
     const data = await loadMultiple([
@@ -288,6 +289,7 @@ function categorizeRecovery(c) {
 // Auto-init
 initComeback()
     .then(() => initWormholes('comeback'))
+    .then(() => plantClue('clue3', document.querySelector('.comeback-callout')))
     .catch(() => {
         const el = document.querySelector('.comeback-sankey');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';

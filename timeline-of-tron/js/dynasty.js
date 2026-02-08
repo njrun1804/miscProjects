@@ -3,6 +3,7 @@
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
+import { plantClue } from './room0.js';
 
 export async function initDynasty() {
     const data = await loadMultiple([
@@ -24,7 +25,8 @@ function renderStaircase(career) {
     const container = document.querySelector('.staircase-container');
     if (!container || !career.length) return;
 
-    const sorted = [...career].sort((a, b) => a.year - b.year);
+    const positions = career.filter(c => c.type !== 'award');
+    const sorted = [...positions].sort((a, b) => a.year - b.year);
 
     container.innerHTML = sorted.map(step => `
         <div class="staircase-step" style="margin-left: ${(step.career_level || 0) * 30}px;">
@@ -95,7 +97,7 @@ function renderECD(events) {
     // Extract yearly event counts from dates
     const yearCounts = {};
     events.forEach(e => {
-        const year = e.year || (e.date ? parseInt(e.date.slice(0, 4)) : null);
+        const year = e.year || (e.date && typeof e.date === 'string' ? parseInt(e.date.slice(0, 4)) : null);
         if (!year) return;
         yearCounts[year] = (yearCounts[year] || 0) + 1;
     });
@@ -199,6 +201,7 @@ function renderTraditions(traditions) {
 // Auto-init
 initDynasty()
     .then(() => initWormholes('dynasty'))
+    .then(() => plantClue('clue5', document.querySelector('.dynasty-callout')))
     .catch(() => {
         const el = document.querySelector('.staircase-container');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';

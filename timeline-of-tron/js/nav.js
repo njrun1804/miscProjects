@@ -38,11 +38,11 @@ function renderHeader(cfg) {
                 <nav class="lj-nav-bar" aria-label="LiveJournal navigation">
                     <a href="index.html">Recent Entries</a>
                     <span class="sep">|</span>
-                    <a href="index.html">Archive</a>
+                    <a href="arc.html">Archive</a>
                     <span class="sep">|</span>
                     <a href="constellation.html">Friends</a>
                     <span class="sep">|</span>
-                    <a href="index.html">User Info</a>
+                    <a href="dynasty.html">User Info</a>
                     <span class="sep">|</span>
                     <a href="vault.html">Memories</a>
                 </nav>

@@ -120,7 +120,7 @@ export function plantClue(clueId, element) {
 // Check if Room 0 should be revealed on lobby
 export function checkRoom0Reveal() {
     if (localStorage.getItem('tron_room0_unlocked') === 'true') {
-        const lobby = document.querySelector('.lobby-room-grid');
+        const lobby = document.querySelector('.room-grid');
         if (!lobby) return;
 
         // Check if already added

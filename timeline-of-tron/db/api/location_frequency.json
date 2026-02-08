@@ -1,8 +1,9 @@
 [
   {
     "destination": "Atlantic City",
-    "visit_count": 4,
+    "visit_count": 5,
     "years": [
+      2008,
       2009,
       2010,
       2011,
@@ -35,8 +36,8 @@
     "longitude": -72.9109334
   },
   {
-    "destination": "Wisconsin (2 trips)",
-    "visit_count": 1,
+    "destination": "Wisconsin",
+    "visit_count": 2,
     "years": [
       2019
     ],
@@ -263,16 +264,6 @@
     "avg_sentiment": 0.856,
     "latitude": -36.8622961,
     "longitude": 174.7190716
-  },
-  {
-    "destination": "Atlantic City (multiple)",
-    "visit_count": 1,
-    "years": [
-      2008
-    ],
-    "avg_sentiment": null,
-    "latitude": 39.3642852,
-    "longitude": -74.4229351
   },
   {
     "destination": "Arizona",

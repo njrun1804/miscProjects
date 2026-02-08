@@ -2,6 +2,7 @@
 // Draws a smooth sentiment line across the canvas, animating left-to-right
 
 import { loadData } from './data-loader.js';
+import { checkRoom0Reveal } from './room0.js';
 
 export async function initSeismograph() {
     const canvas = document.getElementById('seismograph');
@@ -11,13 +12,33 @@ export async function initSeismograph() {
     const data = await loadData('sentiment_timeline.json');
     if (!data || !data.length) return;
 
+    // Wait for canvas to have dimensions (fixes race condition where
+    // getBoundingClientRect returns 0 before layout is complete)
+    let rect = canvas.getBoundingClientRect();
+    if (rect.width < 10 || rect.height < 10) {
+        await new Promise(resolve => {
+            const observer = new ResizeObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.contentRect.width > 10) {
+                        observer.disconnect();
+                        resolve();
+                    }
+                }
+            });
+            observer.observe(canvas);
+            // Fallback timeout so we don't wait forever
+            setTimeout(() => { observer.disconnect(); resolve(); }, 2000);
+        });
+        rect = canvas.getBoundingClientRect();
+        if (rect.width < 10 || rect.height < 10) return;
+    }
+
     // Sort by year
     const sorted = [...data].sort((a, b) => a.year - b.year);
     const sentiments = sorted.map(d => d.avg_sentiment);
     const years = sorted.map(d => d.year);
 
     // High-DPI canvas
-    const rect = canvas.getBoundingClientRect();
     const dpr = window.devicePixelRatio || 1;
     canvas.width = rect.width * dpr;
     canvas.height = rect.height * dpr;
@@ -36,7 +57,7 @@ export async function initSeismograph() {
     }
 
     function xForIndex(i) {
-        return padding.left + (i / (sentiments.length - 1)) * plotW;
+        return padding.left + (sentiments.length > 1 ? (i / (sentiments.length - 1)) : 0.5) * plotW;
     }
 
     // Build points
@@ -166,6 +187,8 @@ export async function initSeismograph() {
         hoveredPoint = null;
         draw(1);
     });
+
+    checkRoom0Reveal();
 }
 
 // Auto-init when module loads
