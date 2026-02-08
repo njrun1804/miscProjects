@@ -1,0 +1,2864 @@
+{
+  "_meta": {
+    "description": "Comprehensive content database for The Timeline of Tron — 22 years of life data extracted from LiveJournal posts, Message_for_Tron.md, and Timeline_of_Tron_By_The_Numbers.docx",
+    "author": "J. Tronolone (wwecoowner)",
+    "livejournal": "https://wwecoowner.livejournal.com/",
+    "years_covered": "2004–2026",
+    "last_updated": "2026-02-08",
+    "sources": [
+      "LiveJournal posts (22+ installments)",
+      "Message_for_Tron.md",
+      "Timeline_of_Tron_By_The_Numbers.docx",
+      "js/data.js (existing site data)",
+      "LiveJournal comments (scraped separately)"
+    ],
+    "enrichment_note": "Enriched with data from all 30 LiveJournal posts (22 Timeline + 8 non-Timeline), scraped via 4 content agents and 3 comment agents. Covers 2004-2025.",
+    "total_people_documented": "98+"
+  },
+  "project": {
+    "title": "The Timeline of Tron",
+    "platform": "LiveJournal",
+    "username": "wwecoowner",
+    "journal_id": 4370176,
+    "created": "2004-07-29",
+    "latest_post": "2026-01-08",
+    "installments": 22,
+    "years_documented": "2003–2025",
+    "publishing_tradition": "Early January each year (median: Jan 6–7)",
+    "format_evolution": "Early years: classic diary-style 'JANUARY 1ST, 2005:' entries → Later years: tighter 'January 1 —' bullets with ℚ quote callouts and mini award/section breaks",
+    "outlived_platforms": [
+      "MySpace",
+      "Vine",
+      "Google+",
+      "Friendster"
+    ],
+    "post_ids": [
+      56704,
+      56999,
+      57343,
+      57394,
+      57787,
+      57943,
+      58397,
+      58738,
+      58912,
+      59148,
+      59402,
+      59703,
+      59989,
+      61014,
+      61398,
+      61818,
+      62073,
+      62385,
+      62775,
+      63169,
+      63442,
+      63508,
+      63963,
+      64119,
+      64555,
+      64965,
+      65064,
+      65343,
+      65576,
+      65965
+    ],
+    "non_timeline_posts": 8,
+    "total_posts": 30
+  },
+  "person": {
+    "name": "John Tronolone",
+    "birthday": "September 27",
+    "birth_year": 1984,
+    "high_school": "Monmouth Regional High School (Falcon Years 1998-2002)",
+    "college": "Monmouth University",
+    "college_gpa": 3.49,
+    "major_gpa": 3.66,
+    "major": "Health Studies",
+    "graduation_year": 2010,
+    "first_speeding_ticket": "2011-09-14",
+    "car": "Kia Soul (hit 20,000 miles on 2015-12-15)",
+    "home": "Mill Creek Court (closed Dec 18, 2023)",
+    "personal_liberation_day_anniversary": "15 years (celebrated 2023)",
+    "elementary_school": "Holy Trinity Elementary School",
+    "middle_school": "Maple Place Middle School (class of 2004 reunion Aug 22, 2011)",
+    "came_out": "2008 (KMJ was 3rd person to know, at MarinaGrille in Brick NJ)",
+    "first_concert": "John Legend at MSG, Aug 13, 2009",
+    "first_cruise": "Norwegian Breakaway, Sep 8-15, 2013",
+    "first_skydive": "Aug 16, 2009 — 10,000 feet with brother Mike",
+    "father_birthday": "July 29 (turned 50 in 2007, born 1957)",
+    "mother_birthday_note": "Turned 82 on Apr 26, 2008 (implying born ~1926? Or age may refer to grandmother)",
+    "vehicle_sus15h": "Multi-colored van; survived 3 flat tires in 2009; reached 190,000 miles Nov 2012; took 'last ride' Dec 2014",
+    "vehicle_kia_soul": "Gray Kia Soul purchased Jan 2014 (initially white, changed via phone call for lower APR); hit 20,000 miles Dec 15, 2015",
+    "liberation_day": "June 10, 2008 — relationship ended; celebrated 15th anniversary in 2023",
+    "shingles": "Contracted at age 20 (circa 2004-2005)"
+  },
+  "career": [
+    {
+      "year": 2001,
+      "title": "Cashier",
+      "employer": "Pathmark",
+      "milestone": "First job, circa 2001-2002"
+    },
+    {
+      "year": 2004,
+      "title": "Monmouth University Student",
+      "employer": "Monmouth University",
+      "milestone": "Enrolled in Health Studies program (Sep 2004)"
+    },
+    {
+      "year": 2005,
+      "title": "EastCoastDodgeball Founder",
+      "employer": "Self",
+      "milestone": "Created ECD, organized 500+ participants over 5 years"
+    },
+    {
+      "year": 2007,
+      "title": "Recreation Worker",
+      "employer": "Ocean Township Recreation & Human Services",
+      "milestone": "Started Feb 27, 2007"
+    },
+    {
+      "year": 2010,
+      "title": "Intern",
+      "employer": "Seabrook Village Health Club",
+      "milestone": "Graduated Monmouth (3.66 major GPA, 3.49 cumulative). Inaugural HERO of the Year. Phillies PSA."
+    },
+    {
+      "year": 2011,
+      "title": "Life Enrichment Manager",
+      "employer": "Sunrise Senior Living",
+      "milestone": "Career at Sunrise begins (Oct 31/Nov 1). Left Ocean Township (Oct 13 notice)."
+    },
+    {
+      "year": 2012,
+      "title": "Activities & Volunteer Coordinator",
+      "employer": "Sunrise Senior Living",
+      "milestone": "Employee of the Month (Jan 2012)"
+    },
+    {
+      "year": 2016,
+      "title": "Manager of the Year Award",
+      "employer": "Sunrise Senior Living",
+      "milestone": "Corporate recognition"
+    },
+    {
+      "year": 2018,
+      "title": "Reminiscence Coordinator",
+      "employer": "Sunrise of Wall",
+      "milestone": "Job offer Sep 28 (phone call in bathroom), started Oct 22. Previous: Escapades Producer ended Oct 19."
+    },
+    {
+      "year": 2020,
+      "title": "Assisted Living Manager",
+      "employer": "Sunrise of Jackson",
+      "milestone": "Applied May, started Sept 28. Brian announced departure same week."
+    },
+    {
+      "year": 2021,
+      "title": "Sr. Resident Care Coordinator",
+      "employer": "Sunrise of Jackson",
+      "milestone": "After competitive interview. Applied Jul 11, interviews Jul 19-21, accepted Jul 23."
+    },
+    {
+      "year": 2025,
+      "title": "Executive Director",
+      "employer": "Sunrise of Jackson",
+      "milestone": "Passed NJ certification exam — the top job"
+    }
+  ],
+  "wwe": {
+    "lifetime_stats": {
+      "total_events": "91+ (as of 2021)",
+      "consecutive_survivor_series_years": 25,
+      "wrestlemanias_attended": "10+ (confirmed through 2016)",
+      "summerslams_attended": "Multiple (incl. 2015, 2017)",
+      "royal_rumbles_attended": "Multiple (incl. 2015, 2017, 2018)",
+      "events_with_rl": 17,
+      "90th_event_date": "2020-03-08",
+      "hall_of_fame_inductee_witnessed": "The Undertaker (2022)",
+      "first_event_influence": "Mrs. Amorino's VHS tapes at Holy Trinity Elementary — showed Ric Flair winning '92 Royal Rumble, Andre vs Hogan at WM III",
+      "wwe_stock_purchased": "December 12, 2007",
+      "phil_campanella": "Biggest wrestling influence growing up; made being a fan 'the in thing' at Monmouth Regional HS"
+    },
+    "undertaker_moment": {
+      "event": "WrestleMania XXX",
+      "location": "New Orleans",
+      "date": "2014-04-05",
+      "handshake_time": "4:10:18 PM CT",
+      "streak_that_night": "21-1",
+      "significance": "Lifelong dream fulfilled, exact time documented to the second"
+    },
+    "milestones": [
+      {
+        "year": 2004,
+        "label": "Timeline Begins",
+        "cumulative_events": 10,
+        "note": "Wrestling fandom started via Mrs. Amorino's VHS tapes at Holy Trinity Elementary"
+      },
+      {
+        "year": 2007,
+        "label": "WWE Stock purchased; 51st event (Oct 29 Philadelphia)",
+        "cumulative_events": 51
+      },
+      {
+        "year": 2007,
+        "label": "WrestleMania 23 in Detroit (3rd WM)",
+        "note": "Ford Field, Hall of Fame, meet-and-greet"
+      },
+      {
+        "year": 2008,
+        "label": "WrestleMania XXIV in Florida (4th WM)",
+        "cumulative_events": 55,
+        "note": "Family reunion, CityWalk, Universal Studios"
+      },
+      {
+        "year": 2009,
+        "label": "WrestleMania 25 in Houston (5th WM)",
+        "note": "Stone Cold farewell salute, Undertaker 17-0. With Valerie Winston, Travis Mills, Ryan Letsche."
+      },
+      {
+        "year": 2009,
+        "label": "62nd event overall (Hell In A Cell Oct 4)",
+        "cumulative_events": 62
+      },
+      {
+        "year": 2010,
+        "label": "WrestleMania XXVI in Arizona (6th WM)",
+        "cumulative_events": 65,
+        "note": "939 photos/videos captured"
+      },
+      {
+        "year": 2011,
+        "label": "Survivor Series at MSG (17,000+ attendance; The Rock returns)",
+        "note": "Also RAW Holiday Tour at MSG Dec 27"
+      },
+      {
+        "year": 2012,
+        "label": "71st event; WM XXVIII Travel Package",
+        "cumulative_events": 71
+      },
+      {
+        "year": 2013,
+        "label": "WrestleMania 29 (at-home NJ; 8th WM); Event #75",
+        "cumulative_events": 75,
+        "note": "21-0 record. Five-star rating. Tim Moore visited."
+      },
+      {
+        "year": 2014,
+        "label": "WrestleMania XXX — Undertaker Handshake",
+        "cumulative_events": 80,
+        "note": "New Orleans. Handshake at 4:10:18 PM CT. Streak broken 21-1. With Rob, Valerie, Tim."
+      },
+      {
+        "year": 2016,
+        "label": "WrestleMania 32 — 100K+ in building",
+        "cumulative_events": 85,
+        "note": "'Unquestionably, the greatest WWE experience of all-time'"
+      },
+      {
+        "year": 2017,
+        "label": "WrestleMania 33; SummerSlam 20-year personal story complete",
+        "note": "'1997, 2007, 2015, and now 2017. My personal SummerSlam story, some 20 years long, complete'"
+      },
+      {
+        "year": 2020,
+        "label": "90th Event (Mar 8, 17th with RL)",
+        "cumulative_events": 90
+      },
+      {
+        "year": 2021,
+        "label": "91st event; 25th consecutive Survivor Series calendar year",
+        "cumulative_events": 91
+      },
+      {
+        "year": 2022,
+        "label": "Undertaker inducted into Hall of Fame"
+      }
+    ]
+  },
+  "travel": [
+    {
+      "year": 2007,
+      "destination": "Detroit, Michigan",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "WrestleMania 23 at Ford Field"
+    },
+    {
+      "year": 2007,
+      "destination": "NYC (MSG)",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "3 men, 3 women — Hard Rock Cafe, Monday Night RAW, Saturday Night Main Event"
+    },
+    {
+      "year": 2008,
+      "destination": "Orlando, Florida",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "WrestleMania XXIV weekend — CityWalk, Universal Studios"
+    },
+    {
+      "year": 2008,
+      "destination": "Atlantic City (multiple)",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "FAB4 trip, birthday celebrations"
+    },
+    {
+      "year": 2009,
+      "destination": "Houston, Texas",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "WrestleMania 25 — 72,744 attendance. FIVE-TIME WM attendee."
+    },
+    {
+      "year": 2009,
+      "destination": "Atlantic City",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "FAB4 Year 2; 25th birthday at Renault Winery"
+    },
+    {
+      "year": 2009,
+      "destination": "Kutztown, Pennsylvania",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Overnight trip with friends"
+    },
+    {
+      "year": 2010,
+      "destination": "Arizona",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "WrestleMania XXVI — 939 photos/videos",
+      "photos": 939
+    },
+    {
+      "year": 2010,
+      "destination": "Atlantic City",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "HERO Campaign 10th Anniversary at Trump Taj Mahal"
+    },
+    {
+      "year": 2011,
+      "destination": "Stratton, Vermont",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Annual ski trip"
+    },
+    {
+      "year": 2011,
+      "destination": "Atlantic City",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "WM XXVII viewing at BeerFest"
+    },
+    {
+      "year": 2011,
+      "destination": "Washington D.C.",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Capitol Pride + second trip Oct 14-16"
+    },
+    {
+      "year": 2011,
+      "destination": "Shohola, Pennsylvania",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Bachelor party"
+    },
+    {
+      "year": 2012,
+      "destination": "Stratton, Vermont",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Annual ski trip with extended crew"
+    },
+    {
+      "year": 2013,
+      "destination": "Norwegian Breakaway Cruise",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "First cruise ever. First cruise with RK. Sep 8-15. FIVE star rating.",
+      "type": "cruise"
+    },
+    {
+      "year": 2013,
+      "destination": "Maryland",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Wedding weekend — 'Mar(r)yland'. Gave speech, danced 180 minutes."
+    },
+    {
+      "year": 2013,
+      "destination": "Atlantic City",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "RyGuy's bachelor party"
+    },
+    {
+      "year": 2014,
+      "destination": "Jamaica, Grand Cayman, Cozumel",
+      "scope": "International",
+      "countries": 3,
+      "highlight": "Norwegian Epic cruise",
+      "type": "cruise"
+    },
+    {
+      "year": 2015,
+      "destination": "U.S. Virgin Islands, Bahamas",
+      "scope": "International",
+      "countries": 2,
+      "highlight": "Rated 10/10",
+      "type": "cruise"
+    },
+    {
+      "year": 2016,
+      "destination": "St. Lucia, Dominica, Antigua",
+      "scope": "International",
+      "countries": 3,
+      "highlight": "Gros Piton hike",
+      "type": "cruise"
+    },
+    {
+      "year": 2017,
+      "destination": "Alaska & Seattle",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Mendenhall Glacier cruise",
+      "type": "cruise"
+    },
+    {
+      "year": 2017,
+      "destination": "California (600+ miles)",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Matt & Gina wedding. Manhattan Beach, Santa Monica, Malibu, Santa Barbara, Hollywood."
+    },
+    {
+      "year": 2017,
+      "destination": "Victoria, Canada",
+      "scope": "International",
+      "countries": 1,
+      "highlight": "Jul 4-5 extension of Alaska cruise"
+    },
+    {
+      "year": 2018,
+      "destination": "Slovenia, Italy, Greece, Malta, Croatia",
+      "scope": "International",
+      "countries": 5,
+      "highlight": "5 countries, 2 weeks — Mediterranean",
+      "type": "cruise"
+    },
+    {
+      "year": 2018,
+      "destination": "New Hampshire",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Profile Falls hike, Rattlesnake Trail, Jenny Sage barn, Harry the Pig"
+    },
+    {
+      "year": 2019,
+      "destination": "Australia & New Zealand",
+      "scope": "International",
+      "countries": 2,
+      "highlight": "The best, the longest, and the greatest",
+      "duration_days": 19
+    },
+    {
+      "year": 2019,
+      "destination": "Wisconsin (2 trips)",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Trip 1: Moore-Tronolone wedding (May 31-Jun 2). Trip 2: Green Bay/Lambeau Field 78,000+ (Sep 20-23)."
+    },
+    {
+      "year": 2019,
+      "destination": "Washington D.C.",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "DC Pride Weekend (Jun 22-24)"
+    },
+    {
+      "year": 2020,
+      "destination": "Singapore, Thailand, Cambodia, Vietnam, Hong Kong",
+      "scope": "International",
+      "countries": 5,
+      "highlight": "17-day Asian expedition",
+      "duration_days": 17
+    },
+    {
+      "year": 2021,
+      "destination": "Grand Canyon, Vegas, Utah, Colorado, Boston",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "1,000+ photos in Utah alone",
+      "photos": 1000
+    },
+    {
+      "year": 2023,
+      "destination": "Phoenix / Arizona",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "Super Bowl LVII — 'the most spectacular day I've ever experienced'"
+    },
+    {
+      "year": 2024,
+      "destination": "Portugal, Spain, Norway, Iceland, Toronto",
+      "scope": "International",
+      "countries": 5,
+      "highlight": "Multi-continent year"
+    },
+    {
+      "year": 2025,
+      "destination": "Midwest Road Trip (16 states)",
+      "scope": "Domestic",
+      "countries": null,
+      "highlight": "4,000 miles — Mount Rushmore, Devils Tower, Gateway Arch, Badlands",
+      "miles": 4000,
+      "states": 16
+    },
+    {
+      "year": 2026,
+      "destination": "Japan",
+      "scope": "International",
+      "countries": 1,
+      "highlight": "Booked — Tokyo bound",
+      "status": "planned"
+    }
+  ],
+  "travel_stats": {
+    "total_cruises": "6 (2013-2018: Breakaway, Epic, USVI/Bahamas, Caribbean, Alaska, Mediterranean)",
+    "countries_visited": "20+",
+    "continents": 5,
+    "consecutive_years_with_major_trip": "Every single year",
+    "stratton_vt_ski_trips": "7+ consecutive years (at least 2009-2015)",
+    "max_photos_single_trip": "1,000+ (Utah 2021)",
+    "longest_single_trip_days": 19,
+    "longest_road_trip_miles": 4000,
+    "first_cruise": "Norwegian Breakaway, Sep 8-15, 2013",
+    "wrestlemania_cities": [
+      "Detroit (2007)",
+      "Orlando (2008)",
+      "Houston (2009)",
+      "Arizona (2010)",
+      "NJ/home (2013)",
+      "New Orleans (2014)",
+      "Texas (2016)",
+      "Orlando (2017)"
+    ],
+    "skydive_locations": 4
+  },
+  "sports": {
+    "records": [
+      {
+        "sport": "Table Tennis",
+        "year": 2016,
+        "wins": 62,
+        "losses": 4,
+        "win_rate": 93.9
+      },
+      {
+        "sport": "Cornhole",
+        "year": 2016,
+        "wins": 254,
+        "losses": 98,
+        "win_rate": 72.2,
+        "cornholios": 38,
+        "best_streak": "6 in one night"
+      },
+      {
+        "sport": "Famous Faces Game",
+        "editions": 20,
+        "wins": 9,
+        "losses": 11,
+        "win_rate": 45.0,
+        "total_contestants": 45
+      },
+      {
+        "sport": "Bowling",
+        "year": 2024,
+        "average": "180+",
+        "single_day_record": {
+          "games": 27,
+          "year": 2007
+        }
+      },
+      {
+        "sport": "Tennis",
+        "note": "Regular player, multi-year. Best comeback: won from 0-6 down (2018). Match vs HH: 6-0, 6-3 (2022)"
+      },
+      {
+        "sport": "Pickleball",
+        "note": "Became a believer in 2018"
+      },
+      {
+        "sport": "Crabbing",
+        "personal_best": "30 legal blue claws (2024)"
+      },
+      {
+        "sport": "Five Boro Bike Tour",
+        "distance_miles": 40,
+        "year": 2022,
+        "note": "5 boroughs, medal finish (2025)"
+      },
+      {
+        "sport": "Badminton",
+        "note": "18,000 straight seconds (5 hours) with Angela Hibbert"
+      },
+      {
+        "sport": "Skydiving",
+        "jumps": 4,
+        "years": [
+          2010,
+          2020
+        ],
+        "note": "4th jump Oct 3, 2020 — 'easiest of the freefalls', mother witnessed"
+      },
+      {
+        "sport": "Bowling",
+        "year": 2009,
+        "single_game_high": 255,
+        "note": "Bowled during a snowstorm (Mar 1, 2009)"
+      },
+      {
+        "sport": "Bowling",
+        "year": 2010,
+        "note": "Two consecutive 205 games on SkyDive day (Aug 16)"
+      },
+      {
+        "sport": "Badminton",
+        "year": 2009,
+        "result": "Silver medal",
+        "note": "MU 30+ person tournament (Apr 29-30)"
+      },
+      {
+        "sport": "Dodgeball",
+        "note": "500+ participants organized over 5 years; 171 events attended before retirement (Jan 3, 2009)"
+      },
+      {
+        "sport": "Tennis",
+        "year": 2010,
+        "note": "vs Farnkopf: 6 hours 7 min 3 sec. 3 waters, 2 Vitamin Waters, 5 energy bars."
+      },
+      {
+        "sport": "Tennis",
+        "year": 2017,
+        "note": "Undefeated record post-splint removal"
+      },
+      {
+        "sport": "Cornhole",
+        "year": 2017,
+        "note": "27-2 three-day record on cruise"
+      },
+      {
+        "sport": "Cornhole",
+        "year": 2014,
+        "note": "Championship won with Pops at Maggie & Mike's inaugural gathering (Aug 30)"
+      },
+      {
+        "sport": "Volleyball",
+        "note": "Tartarugas squad formed May 25, 2010; Silver League Champions (Aug 30, 2017); broken left pinky ended volleyball career Mar 26, 2017"
+      },
+      {
+        "sport": "Kickball",
+        "year": 2010,
+        "note": "Krazy KICKBALL inaugural event (Jul 17)"
+      }
+    ],
+    "epic_numbers": [
+      {
+        "stat": "Bowling Games in One Day",
+        "value": 27,
+        "year": 2007
+      },
+      {
+        "stat": "Ping Pong Rounds in One Match",
+        "value": 218,
+        "year": 2021
+      },
+      {
+        "stat": "Cornholios in One Season",
+        "value": 38,
+        "year": 2016
+      },
+      {
+        "stat": "Blue Claws Caught in One Trip",
+        "value": 30,
+        "year": 2024
+      },
+      {
+        "stat": "Shrimp Consumed at One Event (lbs)",
+        "value": 8.6,
+        "year": 2021
+      },
+      {
+        "stat": "Crab Meat Consumed at One Event (lbs)",
+        "value": 7.3,
+        "year": 2021
+      },
+      {
+        "stat": "Escape Room Time",
+        "value": "45:43",
+        "unit": "min:sec"
+      },
+      {
+        "stat": "Laver Cup Ticket Wait",
+        "value": 568,
+        "unit": "days",
+        "year": 2021
+      },
+      {
+        "stat": "Years Between Rangers Games at MSG",
+        "value": 20,
+        "year": 2021
+      },
+      {
+        "stat": "Tennis Match Duration (Farnkopf)",
+        "value": "6h 7m 3s",
+        "year": 2010
+      },
+      {
+        "stat": "CHA Games vs Pops Tronolone",
+        "value": 1000,
+        "year": 2019,
+        "note": "Ranked #1"
+      },
+      {
+        "stat": "Photos from Utah/Colorado Trip",
+        "value": "1,000+",
+        "year": 2021
+      },
+      {
+        "stat": "WrestleMania Photos (Arizona)",
+        "value": 939,
+        "year": 2010
+      },
+      {
+        "stat": "ECD Events Before Retirement",
+        "value": 171,
+        "year": 2009
+      },
+      {
+        "stat": "ECD Total Participants During Tenure",
+        "value": "500+",
+        "unit": "people"
+      },
+      {
+        "stat": "DODGEBOWL 200 Announced In Advance",
+        "value": 9,
+        "unit": "months",
+        "year": 2013
+      },
+      {
+        "stat": "Consecutive Bowling 205+ Games",
+        "value": 2,
+        "year": 2010
+      },
+      {
+        "stat": "Cornhole Record on Cruise",
+        "value": "27-2",
+        "year": 2017
+      }
+    ]
+  },
+  "east_coast_dodgeball": {
+    "years_running": "18+",
+    "naming_convention": "WrestleMania-style event names (e.g., 'Immaculate Redemption', 'WrestleJohnMania XXVI')",
+    "history": [
+      {
+        "anniversary": "Founded",
+        "year": 2005,
+        "participants": null,
+        "raised": 0,
+        "note": "ECD created by John Tronolone"
+      },
+      {
+        "event_number": 70,
+        "date": "2006-12-30",
+        "note": "Music experiment with dance anthems; Lauren Stopa's 'Be My Lover' moment"
+      },
+      {
+        "event_number": 90,
+        "date": "2007-06-02",
+        "note": "DODGEBALL 90 with Tom Adams, Justin Pierce"
+      },
+      {
+        "event_number": 100,
+        "date": "2007-08-18",
+        "note": "Record 52 participants"
+      },
+      {
+        "event_number": 102,
+        "date": "2007-09-01",
+        "note": "2-year anniversary"
+      },
+      {
+        "event_number": 150,
+        "date": "2008-08-09"
+      },
+      {
+        "event_number": 154,
+        "date": "2008-09-06",
+        "note": "ECD 3-Year Anniversary"
+      },
+      {
+        "event_number": 171,
+        "date": "2009-01-03",
+        "note": "Author's retirement from ECD after 40 months"
+      },
+      {
+        "event_number": 198,
+        "date": "2013-05-25",
+        "note": "Megill pied Wolf with cream-filled pie"
+      },
+      {
+        "event_number": 199,
+        "date": "2013-06-29",
+        "note": "Lauren defeats Valerie 6-5"
+      },
+      {
+        "event_number": 200,
+        "date": "2013-08-10",
+        "note": "DODGEBOWL 200 — era-ending extravaganza. Announced 9 months prior. FIVE star rating. Family attended. Emotional post-event ovation."
+      },
+      {
+        "anniversary": "5th",
+        "year": 2010,
+        "date": "2010-09-11",
+        "participants": 20,
+        "raised": 0
+      },
+      {
+        "anniversary": "7th birthday + 500th player",
+        "year": 2012,
+        "date": "2012-09-01"
+      },
+      {
+        "anniversary": "10th",
+        "year": 2017,
+        "date": "2017-09-02",
+        "participants": 30,
+        "raised": 0
+      },
+      {
+        "anniversary": "12th",
+        "year": 2017,
+        "note": "ECD 12-Year Anniversary Sep 2"
+      },
+      {
+        "anniversary": "13th",
+        "year": 2018,
+        "date": "2018-08-25",
+        "note": "Chris & Joanice vs. Fitzpatrick & Stopa; backflip into Letsche salt water pool"
+      },
+      {
+        "anniversary": "14th",
+        "year": 2019,
+        "date": "2019-08-17",
+        "note": "7th Major championship. 2nd oldest winning captain. 214 total events. Defeated Kevin Fitzpatrick."
+      },
+      {
+        "anniversary": "15th",
+        "year": 2020,
+        "date": "2020-08-22",
+        "participants": 35,
+        "raised": 0,
+        "note": "Team ALL triumphed at Major event. Megill captured Rimshot crown."
+      },
+      {
+        "anniversary": "18th+",
+        "year": 2025,
+        "participants": 57,
+        "raised": 1700,
+        "event_name": "ECD Bowl Weekend"
+      }
+    ],
+    "documented_anniversaries": [
+      "5-year",
+      "10-year",
+      "13-year",
+      "15-year",
+      "18-year"
+    ],
+    "events_mentioned": [
+      "ECD FallFest (2022)",
+      "ECD Indoor Championships",
+      "Indoor.3 Family Affair (2024)",
+      "ECD 15th Birthday (2020-08-23)"
+    ],
+    "note": "Deserves its own documentary. What started as a friend group activity has become a community institution.",
+    "notable_events": [
+      "ECD reopened with 'WORLD TOUR' on Apr 7, 2012",
+      "Record 18 rounds at Orchard Park (Oct 13, 2012)",
+      "Monmouth University Co-Ed Dodgeball League championship won (Nov 19, 2007, team 'PondScum')",
+      "MU Intramural dodgeball league semi-final elimination (Nov 18, 2008)",
+      "ECD 'Immaculate Redemption' — Tronolone & Adams defeated Adams & Megill (Aug 14, 2010)",
+      "DODGEBOWL 200 promotional video created (Aug 10, 2013)",
+      "CREAMation Rules match on Undertaker's birthday (Mar 24, 2007)",
+      "ECD FallFest (2022)",
+      "ECD Indoor Championships",
+      "Indoor.3 Family Affair (2024)"
+    ],
+    "total_events_at_retirement": 171,
+    "total_participants_during_tenure": "500+"
+  },
+  "people": {
+    "family": [
+      {
+        "name": "Ma",
+        "relation": "Mother",
+        "milestones": [
+          "70th birthday (2025)"
+        ]
+      },
+      {
+        "name": "The Pops / Darrell / Dad",
+        "relation": "Father",
+        "birth_year": 1957,
+        "milestones": [
+          "60th birthday at Woodloch Pines"
+        ],
+        "awards": [
+          "Comedian of the Year 2014"
+        ]
+      },
+      {
+        "name": "StepPa",
+        "relation": "Stepfather"
+      },
+      {
+        "name": "Grammy Nancy",
+        "relation": "Grandmother",
+        "milestones": [
+          "Gram's 90th birthday (2022)",
+          "Passed away Oct 21, 2024 at 11:57 PM",
+          "92nd birthday celebration (Nov 12, 2024)"
+        ]
+      },
+      {
+        "name": "Michael",
+        "relation": "Brother",
+        "birth_year": 1987,
+        "milestones": [
+          "Married Maggie (2018)"
+        ]
+      },
+      {
+        "name": "Grace",
+        "relation": "Sister",
+        "milestones": [
+          "Graduated high school (2020)"
+        ]
+      },
+      {
+        "name": "Megan",
+        "relation": "Sister",
+        "milestones": [
+          "Brookdale graduation (2022)",
+          "Graduated high school (2020)"
+        ]
+      },
+      {
+        "name": "Julian",
+        "relation": "Nephew (Michael's son)",
+        "born": 2019,
+        "milestones": [
+          "1st birthday (2020)",
+          "5th birthday (Aug 25, 2024)"
+        ]
+      },
+      {
+        "name": "Lawrence",
+        "relation": "Nephew (Michael's son)",
+        "born": "2021-12-23"
+      }
+    ],
+    "partner": {
+      "name": "Rob",
+      "first_meal": "Ocean Bay Diner, Jan 1, 2011",
+      "relationship_start": "Jan 15, 2011 (the 'Ro(b)mantic Era')",
+      "engagement": "Mediterranean cruise (2018)",
+      "10_year_anniversary": 2021,
+      "20_year_anniversary": 2025
+    },
+    "inner_circle": [
+      {
+        "name": "Valerie Winston (ValPal / VW)",
+        "connection": "Best friend from MRHS",
+        "highlights": [
+          "Super Bowl LVII companion (2023)",
+          "Appears across virtually every Timeline",
+          "Multi-decade friendship"
+        ],
+        "awards_given": [
+          "Best Laughs nominee"
+        ]
+      },
+      {
+        "name": "Kevin & Leah (KMJ & LN)",
+        "connection": "Close friends",
+        "timeline": "Met 2014, engaged 2017, married Feb 29, 2020 (leap day)",
+        "highlights": [
+          "Travel companions to Utah/Colorado",
+          "10+ year friendship",
+          "Entire relationship arc documented from outside perspective"
+        ]
+      },
+      {
+        "name": "RL (Letsche)",
+        "connection": "WWE companion / The Wrestling Co-Pilot",
+        "highlights": [
+          "17 events attended together",
+          "Regular presence in wrestling entries"
+        ]
+      },
+      {
+        "name": "Rupert",
+        "connection": "Activity companion",
+        "highlights": [
+          "Tennis partner",
+          "SummerSlam companion",
+          "Southeast Asia trip",
+          "The RK Quiz originated with him",
+          "Birthday: December 11",
+          "Hong Kong trip (2020)"
+        ]
+      },
+      {
+        "name": "Dan Spengeman",
+        "connection": "Close friend",
+        "highlights": [
+          "Won Comedian of the Year (2015)",
+          "Wedding: Spengeman-Mullins (2016)",
+          "Pole Position Invitational namesake"
+        ]
+      },
+      {
+        "name": "Diana DiBuccio",
+        "connection": "Close friend",
+        "highlights": [
+          "Best Laughs: 3-time winner (2008, 2019, 2020)",
+          "Recurring presence at celebrations"
+        ]
+      },
+      {
+        "name": "Lauren Winston",
+        "connection": "Close friend",
+        "highlights": [
+          "Comedian of the Year: 2-time winner (2016, 2021)"
+        ]
+      },
+      {
+        "name": "Ryan Letsche (RyGuy)",
+        "connection": "FAB4 member, WrestleMania companion, 'brother from another mother'",
+        "highlights": [
+          "FAB4 original member",
+          "WrestleMania travel companion (multiple years)",
+          "Bachelor party in AC (2013)",
+          "25th birthday multi-day celebration (2010)",
+          "Social events across 20+ years"
+        ]
+      },
+      {
+        "name": "Juan Londono (Muffin Man / Cockroach)",
+        "connection": "Tennis partner, close friend",
+        "highlights": [
+          "Tennis partner across many years",
+          "Housewarming party with Pam (2013)",
+          "U.S. Open companion",
+          "NJIT 12-hour visit (2007)",
+          "36th birthday Hamilton Inn brunch (2019)"
+        ]
+      },
+      {
+        "name": "JesseKay Paz",
+        "connection": "Friend",
+        "highlights": [
+          "WWE fan"
+        ]
+      }
+    ],
+    "other_mentioned": [
+      {
+        "name": "Kenny Stetz",
+        "context": "Tennis rival (2020)"
+      },
+      {
+        "name": "Angela Hibbert",
+        "context": "Badminton partner — 18,000 seconds (5 hours)"
+      },
+      {
+        "name": "Chef Lanza",
+        "context": "Befriended over honey vanilla tea (2020)"
+      },
+      {
+        "name": "Dr. Wenslauskas",
+        "context": "New dentist (2020)"
+      },
+      {
+        "name": "Mr. Mak",
+        "context": "Guide in Sihanoukville, Cambodia (2020)"
+      },
+      {
+        "name": "Walaa",
+        "context": "Fellow falcon, reunited after 18 years on Long Branch boardwalk (2020)"
+      },
+      {
+        "name": "Brian",
+        "context": "Colleague, transfer and departure (2020)"
+      },
+      {
+        "name": "Pete and Larry",
+        "context": "Handicap training opponents (2020)"
+      },
+      {
+        "name": "Japheth",
+        "context": "Massage therapist at Hand & Stone (2020)"
+      },
+      {
+        "name": "Mrs. Brennessel",
+        "context": "Shared flight attendant stories (2020)"
+      },
+      {
+        "name": "Steve and Stacey",
+        "context": "High school Pathmark colleagues (2020)"
+      },
+      {
+        "name": "Jackie",
+        "context": "Friend, social events (2020)"
+      },
+      {
+        "name": "Aunt Darlene",
+        "context": "Honey mustard chicken dish (2020)"
+      },
+      {
+        "name": "Phil Campanella",
+        "context": "Childhood WWE influence; 'biggest brother growing up'; made wrestling the 'in thing' at Monmouth Regional HS"
+      },
+      {
+        "name": "Mrs. Amorino",
+        "context": "After-school caretaker at Holy Trinity Elementary; introduced author to wrestling via VHS tapes (Ric Flair, Andre vs Hogan)"
+      },
+      {
+        "name": "Jackie Amorino",
+        "context": "20+ year friendship from Holy Trinity; married Anthony (2014); engagement reunited author with Mrs. Amorino"
+      },
+      {
+        "name": "Ryan Letsche (RyGuy)",
+        "context": "FAB4 member; WrestleMania companion; 'brother from another mother'; wedding bachelor party AC (2013)"
+      },
+      {
+        "name": "Melissa Kerr",
+        "context": "FAB4 member; WinterBall date (2009); 'Killer Kerr'; early ECD participant"
+      },
+      {
+        "name": "Travis Mills",
+        "context": "WrestleMania companion; Wisconsin native; surprise 30th birthday (2013)"
+      },
+      {
+        "name": "Grant Cornero (GrantMan)",
+        "context": "Fitness influence; Cornero Brothers from California"
+      },
+      {
+        "name": "Chris Arbach (Topher)",
+        "context": "Fitness influence; Vestal Visit (2010)"
+      },
+      {
+        "name": "James Butler (Boofer)",
+        "context": "Personal trainer/mentor from Jersey Shore Fitness (Sep 2007); 'trained as friends and brothers'"
+      },
+      {
+        "name": "Kevin Adams",
+        "context": "ECD participant; Kevin 'The Axe' Adams; Rutgers Medical School (2018)"
+      },
+      {
+        "name": "Chris Adams",
+        "context": "ECD participant; 'The Axe'; SkyDive II Cloud Nine member; organizes social activities"
+      },
+      {
+        "name": "Kevin Megill (KMJ)",
+        "context": "Close friend; 3rd person author came out to (2008 at MarinaGrille); ECD participant; 25th birthday surprise (2008)"
+      },
+      {
+        "name": "Bobby Vetrano",
+        "context": "Former ECD all-star (2009)"
+      },
+      {
+        "name": "Justin Pierce",
+        "context": "NYE host; ECD participant"
+      },
+      {
+        "name": "Steve Pham",
+        "context": "U.S. Open companion (2009); Wii gaming host"
+      },
+      {
+        "name": "Juan Londono (Muffin Man)",
+        "context": "Tennis partner; housewarming party host (2013); NJIT visit (2007)"
+      },
+      {
+        "name": "Joe Corcione (Giuseppe NJ)",
+        "context": "25th birthday trip companion (2009); karaoke host (2008-2009); Toxic performer"
+      },
+      {
+        "name": "Julia Dennabuam",
+        "context": "SkyDive II Cloud Nine participant (2009)"
+      },
+      {
+        "name": "Kimmy Canzanella",
+        "context": "SkyDive II Cloud Nine participant (2009)"
+      },
+      {
+        "name": "Sascha Basista",
+        "context": "SkyDive II Cloud Nine participant; racetrack attendee"
+      },
+      {
+        "name": "Ashley Hoppe",
+        "context": "SkyDive II Cloud Nine participant; O.A.R. concert companion (2009)"
+      },
+      {
+        "name": "Katie Grand",
+        "context": "Birthday host; Halloween parties; Christmas Raffle (2010); Labor Day parties"
+      },
+      {
+        "name": "Tom Macaluso",
+        "context": "Reconnected friendship (2009)"
+      },
+      {
+        "name": "Michelle Mullins (Muffins)",
+        "context": "Friend; MU graduate; WinterBall dancer"
+      },
+      {
+        "name": "Kristen Driscoll",
+        "context": "80s party host; friend group"
+      },
+      {
+        "name": "Terra Bergquist",
+        "context": "Birthday celebration (2009)"
+      },
+      {
+        "name": "Danny Sponge / Dan Spengeman",
+        "context": "Close friend; housewarming (2017); 'Spenge'; wedding 2016"
+      },
+      {
+        "name": "Mike 'Sputz' Krott",
+        "context": "Super Bowl host; uplifting conversations; London Porter Stout"
+      },
+      {
+        "name": "Dan Farnkopf",
+        "context": "Tennis rival; 6-hour match Sep 21, 2010"
+      },
+      {
+        "name": "Alison Bertsch",
+        "context": "First wrestling event (2007); DDR specialist; birthday outings"
+      },
+      {
+        "name": "Lauren Stopa",
+        "context": "ECDElite Hall of Fame 2011; 'Be My Lover' moment at DODGEBALL 70; lifelong friend"
+      },
+      {
+        "name": "P-A-M-U-L-A (Pamula)",
+        "context": "Introduced author to Headliner venue (2007)"
+      },
+      {
+        "name": "Jake Mauro",
+        "context": "Introduced by Rob; Mariah Carey 'Emotions' replay moment (2011)"
+      },
+      {
+        "name": "Bojana Beric (Prof. Beric)",
+        "context": "Monmouth University professor; commenter on Timeline"
+      },
+      {
+        "name": "Grandma Theresa",
+        "context": "Passed away Jun 2013; most emotional week of 2013"
+      },
+      {
+        "name": "Grandma Irene",
+        "context": "Family Bocce Tournament partner (2009); remembered daily (Nov 2013)"
+      },
+      {
+        "name": "Grandma 'Mama' Blanca",
+        "context": "Author was first-born grandchild; thinks about her everyday (Nov 2014)"
+      },
+      {
+        "name": "Cousin Nick & Samantha",
+        "context": "Engagement BBQ (2010); married Jul 2-3, 2011"
+      },
+      {
+        "name": "Tim Moore",
+        "context": "WrestleManiac; Wisconsin native; revisited NJ for WM29 (2013); wedding in Wisconsin (2019)"
+      },
+      {
+        "name": "RK (Rob Knott)",
+        "context": "Partner — see partner section for full details"
+      },
+      {
+        "name": "Lisa",
+        "context": "SummerSlam host (2013); Christmas feast host; partner of The Pops"
+      },
+      {
+        "name": "Megill",
+        "context": "ECD participant; pied Wolf at event 198 (2013)"
+      },
+      {
+        "name": "Wolf",
+        "context": "ECD participant; pied by Megill"
+      },
+      {
+        "name": "Vicki Oliver",
+        "context": "Bikini Spaghetti Party host (2013)"
+      },
+      {
+        "name": "Johnny Nash",
+        "context": "Most influential friend of 2014; AP Pride companion; volleyball"
+      },
+      {
+        "name": "Sean",
+        "context": "Cornhole partner; Easter event (2013)"
+      },
+      {
+        "name": "Chris James",
+        "context": "Friend (2017 era)"
+      },
+      {
+        "name": "Lindsay & Kyle Szcakstza",
+        "context": "Wedding Jul 21, 2017"
+      },
+      {
+        "name": "Maggie",
+        "context": "Brother Michael's wife; Hopewell native; married Jun 29, 2018"
+      },
+      {
+        "name": "Arthur Knott (Artie)",
+        "context": "Rob's father-in-law; passed away Feb 2, 2018"
+      },
+      {
+        "name": "Matt (Physical Therapist)",
+        "context": "Post-surgery therapy started Jan 17, 2018"
+      },
+      {
+        "name": "Buck",
+        "context": "29th birthday at Patrizia's Red Bank (2018); 3,827 birthdays that night"
+      },
+      {
+        "name": "Murtha 'The Machine'",
+        "context": "ECD competitor (2019)"
+      },
+      {
+        "name": "Holden",
+        "context": "Pingpong rival; learned 'a valuable pong lesson' (2020); 218 rounds match (2021)"
+      },
+      {
+        "name": "Blake",
+        "context": "Tennis opponent; lost 6-3, 6-1 (2020)"
+      },
+      {
+        "name": "Tommy & Johnny",
+        "context": "Tennis partners; Pattison and Broad courts (2020)"
+      },
+      {
+        "name": "Thomas",
+        "context": "Wegger's trip companion; Moroccan lentil hummus (2020)"
+      },
+      {
+        "name": "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet",
+        "context": "Sunrise of Jackson team (2020)"
+      },
+      {
+        "name": "Matt (introduced Jul 3, 2019)",
+        "context": "'What am I getting myself into?'"
+      },
+      {
+        "name": "Tyler Ponte",
+        "context": "Next Generation star; excelled at dodgeball (2019); Captain 'Tight Lines' fishing (2018)"
+      },
+      {
+        "name": "Shane",
+        "context": "'Summer of Shane' era (2019); 'Shit I need to do this' comment on Timeline"
+      },
+      {
+        "name": "Edwards / Michael Edwards / Mikey Eddie",
+        "context": "Tennis companion; 'Crazy One'; MySpace profile song Everlast 'What It's Like'"
+      },
+      {
+        "name": "Fitz / Fitzpatrick",
+        "context": "ECD competitor; cornhole partner; social events across decades"
+      },
+      {
+        "name": "Stopa / Lauren Stopa",
+        "context": "ECDElite Hall of Fame 2011; mansion shindig (2013); educational goals achieved"
+      },
+      {
+        "name": "Marty",
+        "context": "Tennis opponent; social events"
+      },
+      {
+        "name": "Rob Phillips (Robert)",
+        "context": "Wedding approaching; mentioned in early posts; long-time friend"
+      }
+    ],
+    "fab4": {
+      "members": [
+        "John Tronolone",
+        "Ryan Letsche",
+        "Melissa Kerr",
+        "Diana DiBuccio"
+      ],
+      "formed": "circa 2008",
+      "activities": [
+        "Atlantic City trips (annual)",
+        "Sea Girt Lanes bowling league (Shore Wars)",
+        "Social events"
+      ]
+    }
+  },
+  "awards": {
+    "music_artist_of_the_year": [
+      {
+        "year": 2008,
+        "note": "Category existed"
+      },
+      {
+        "year": 2012,
+        "winner": "Mariah Carey"
+      },
+      {
+        "year": 2013,
+        "winner": "Mariah Carey",
+        "note": "Top 2 three straight years; switched places with Madonna from 2012"
+      },
+      {
+        "year": 2014,
+        "winner": "Mariah Carey",
+        "note": "Top 2 past 4 years"
+      },
+      {
+        "year": 2015,
+        "winner": "Janet Jackson"
+      },
+      {
+        "year": 2016,
+        "winner": "Janet Jackson"
+      },
+      {
+        "year": 2018,
+        "winner": "Janet Jackson"
+      },
+      {
+        "year": 2019,
+        "winner": "Janet Jackson"
+      },
+      {
+        "year": 2020,
+        "winner": "Janet Jackson"
+      },
+      {
+        "year": 2021,
+        "winner": "Janet Jackson"
+      }
+    ],
+    "song_of_the_year": [
+      {
+        "year": 2008,
+        "song": "Runnin' Down a Dream",
+        "artist": "Tom Petty"
+      },
+      {
+        "year": 2013,
+        "note": "Most nominations ever (tied with 2013). First time song from Timeline year won top honors."
+      },
+      {
+        "year": 2014,
+        "note": "Most nominations ever (tied with 2013). Janet's 'Alright' was runner-up (also runner-up in 2013)."
+      },
+      {
+        "year": 2015,
+        "songs": [
+          "All For You",
+          "If"
+        ],
+        "artist": "Janet Jackson",
+        "note": "First artist to win for two different songs in same year"
+      },
+      {
+        "year": 2020,
+        "song": "Music Sounds Better With You",
+        "artist": "Stardust"
+      },
+      {
+        "year": 2021,
+        "song": "Music Sounds Better With You",
+        "artist": "Stardust",
+        "note": "Runners-up: Shawn Christopher 'Sweet Freedom', Jet 'Start The Show'. First time runner-up reached #1."
+      }
+    ],
+    "comedian_of_the_year": [
+      {
+        "year": 2008,
+        "winner": "Diana DiBuccio"
+      },
+      {
+        "year": 2009,
+        "winner": "The Pops"
+      },
+      {
+        "year": 2011,
+        "winner": "Rupert"
+      },
+      {
+        "year": 2012,
+        "winner": "Rupert",
+        "note": "Two-time defending champion; later eliminated from competition"
+      },
+      {
+        "year": 2014,
+        "winner": "The Pops (Darrell)",
+        "note": "Second straight year; nominated every year since 2009"
+      },
+      {
+        "year": 2015,
+        "winner": "Dan Spengeman"
+      },
+      {
+        "year": 2016,
+        "winner": "Lauren Winston"
+      },
+      {
+        "year": 2017,
+        "winner": "The Pops"
+      },
+      {
+        "year": 2018,
+        "winner": "Dan Spengeman"
+      },
+      {
+        "year": 2019,
+        "winner": "Diana DiBuccio"
+      },
+      {
+        "year": 2020,
+        "winner": "Diana DiBuccio"
+      },
+      {
+        "year": 2021,
+        "winner": "Lauren Winston"
+      }
+    ],
+    "best_laughs": [
+      {
+        "year": 2008,
+        "winner": "Diana DiBuccio"
+      },
+      {
+        "year": 2009,
+        "winner": "The Pops"
+      },
+      {
+        "year": 2015,
+        "winner": "Dan Spengeman"
+      },
+      {
+        "year": 2017,
+        "winner": "The Pops"
+      },
+      {
+        "year": 2018,
+        "winner": "Dan Spengeman"
+      },
+      {
+        "year": 2019,
+        "winner": "Diana DiBuccio"
+      },
+      {
+        "year": 2020,
+        "winner": "Diana DiBuccio"
+      },
+      {
+        "year": 2022,
+        "winners": [
+          "Valerie Winston",
+          "Diana DiBuccio"
+        ]
+      }
+    ],
+    "shocker_of_the_year": [
+      {
+        "year": 2013,
+        "note": "First time in Timeline history co-winners announced"
+      },
+      {
+        "year": 2020,
+        "items": [
+          "COVID Test II",
+          "Laver Cup Tickets",
+          "Brian's Transfer"
+        ]
+      },
+      {
+        "year": 2021,
+        "items": [
+          "Sr. RCC promotion",
+          "Message From Rob Phillips",
+          "Stopa's Pregnancy Text",
+          "Tim's Stand-Up Text"
+        ],
+        "note": "Second consecutive work-related winner"
+      }
+    ],
+    "favorite_artists_by_year": {
+      "2020": [
+        "Sade",
+        "Janet Jackson",
+        "Modjo",
+        "Lady Gaga",
+        "Fleetwood Mac"
+      ],
+      "2020_top_songs": [
+        "Fastlove (George Michael)",
+        "Music Sounds Better With You (Stardust)",
+        "Chillin' (Modjo)"
+      ]
+    },
+    "other_awards": [
+      {
+        "year": 2007,
+        "award": "Favorite Joke: 'T.A.R.' (Tuck and Roll)",
+        "type": "timeline_award"
+      },
+      {
+        "year": 2007,
+        "award": "Favorite Song: Saliva's 'Ladies and Gentlemen'",
+        "type": "timeline_award"
+      },
+      {
+        "year": 2008,
+        "award": "Day of the Year: Thursday",
+        "type": "timeline_award"
+      },
+      {
+        "year": 2008,
+        "award": "Videos of the Year: WrestleMania XXIV Intro and Ryan's Birthday Speech",
+        "type": "timeline_award"
+      },
+      {
+        "year": 2009,
+        "award": "Video of the Year: SkyDive I",
+        "type": "timeline_award"
+      },
+      {
+        "year": 2010,
+        "award": "Inaugural HERO of the Year",
+        "type": "external"
+      },
+      {
+        "year": 2011,
+        "award": "Bogart's 'Man of March' (Apr 1, sober)",
+        "type": "external"
+      },
+      {
+        "year": 2011,
+        "award": "ECDElite Hall of Fame induction (Jun 18)",
+        "type": "ecd"
+      },
+      {
+        "year": 2012,
+        "award": "Employee of the Month (January)",
+        "type": "work"
+      },
+      {
+        "year": 2013,
+        "award": "'Most Realistic' Halloween Costume ('General' Tronolone)",
+        "type": "social"
+      },
+      {
+        "year": 2016,
+        "award": "Manager of the Year",
+        "type": "work"
+      },
+      {
+        "year": 2022,
+        "award": "#100 Award",
+        "type": "work"
+      }
+    ]
+  },
+  "comebacks": [
+    {
+      "year": 2004,
+      "challenge": "Life-altering car accident — panic attacks and anxiety",
+      "comeback": "Years-long recovery; became HERO of the Year advocate"
+    },
+    {
+      "year": 2007,
+      "challenge": "Near-anorexia and mental health crisis",
+      "comeback": "Joined Jersey Shore Fitness with James Butler (Sep 2007); 'desperate lifestyle alteration'"
+    },
+    {
+      "year": 2008,
+      "challenge": "Relationship ended after 723 days (Nov 21, 2006 origin)",
+      "comeback": "Came out in 2008; began 'most rewarding and refreshing' months"
+    },
+    {
+      "year": 2011,
+      "challenge": "Slightly torn glenoid labrum (right shoulder)",
+      "comeback": "Continued sports participation"
+    },
+    {
+      "year": 2017,
+      "challenge": "L5-S1 herniation",
+      "comeback": "Spinal microdiscectomy surgery (Dec 15). Post-surgery reflection: 'I Just Want To Wake Up. (I Did!)'"
+    },
+    {
+      "year": 2018,
+      "challenge": "Extended physical therapy recovery",
+      "comeback": "Mediterranean cruise + engagement ring by April — 4 months post-surgery"
+    },
+    {
+      "year": 2019,
+      "challenge": "Strep throat + kidney stone removal",
+      "comeback": "Australia & New Zealand trip"
+    },
+    {
+      "year": 2020,
+      "challenge": "Medical quarantine (March 26 – April 16)",
+      "comeback": "Gained 3 lbs solid muscle, biked to Highlands/Asbury Park/Sea Bright/Rumson/Deal"
+    },
+    {
+      "year": 2024,
+      "challenge": "Kidney stones (Dec 18 & 20 hospitalizations) + grandmother's passing (Oct 21)",
+      "comeback": "Continued travel (Norway, Iceland, Toronto, Montreal) & celebration"
+    }
+  ],
+  "traditions": [
+    {
+      "tradition": "WWE Events",
+      "years_active": 22,
+      "description": "Core identity since before the Timelines began"
+    },
+    {
+      "tradition": "East Coast Dodgeball",
+      "years_active": 18,
+      "description": "Friend group activity evolved into community institution with WrestleMania-style names"
+    },
+    {
+      "tradition": "Vermont Skiing (Stratton)",
+      "years_active": "7+ consecutive",
+      "description": "Stratton as 'home away from home'"
+    },
+    {
+      "tradition": "January Publishing Ritual",
+      "years_active": 22,
+      "description": "Timeline posts drop early January, median date Jan 6-7"
+    },
+    {
+      "tradition": "Annual Awards",
+      "years_active": 12,
+      "description": "Personal voting tradition — Music Artist, Comedian, Best Laughs, Shocker of the Year"
+    },
+    {
+      "tradition": "Famous Faces Game",
+      "years_active": 10,
+      "description": "20 editions, 9 victories, 45 contestants"
+    },
+    {
+      "tradition": "ℚ Quote Callouts",
+      "years_active": "Later years",
+      "description": "Evolved format feature in recent Timelines"
+    },
+    {
+      "tradition": "WrestleMania BeforeBash",
+      "years_active": "2005+",
+      "description": "Pre-WrestleMania party. 1st had 25 people (2007). Bowling involved. Annual."
+    },
+    {
+      "tradition": "Monmouth Park Racetrack Outing",
+      "years_active": "2003-2013+",
+      "description": "Annual DiBuccio-Tronolone event. 5th annual (2007) through 11th (2013)."
+    },
+    {
+      "tradition": "Birthday Multi-Day Celebrations",
+      "years_active": 22,
+      "description": "Birthday (Sep 27) always celebrated across multiple days with different friend groups"
+    },
+    {
+      "tradition": "Annual Cruise",
+      "years_active": "2013-2018",
+      "description": "6 cruises in 6 consecutive years (2013-2018)"
+    },
+    {
+      "tradition": "SkyDive",
+      "years_active": "2009-2020",
+      "description": "4 jumps total: 2009 (solo with brother), 2009 (Cloud Nine group of 9), 2010, 2020 (mother witnessed)"
+    },
+    {
+      "tradition": "FINS Friday",
+      "years_active": "2006+",
+      "description": "Weekly gatherings since March 2006"
+    },
+    {
+      "tradition": "Winston Family NYE",
+      "years_active": "2008-2009+",
+      "description": "Recurring New Year's Eve celebration"
+    }
+  ],
+  "broadway_entertainment": [
+    {
+      "year": 2009,
+      "show": "John Legend at Madison Square Garden",
+      "type": "concert",
+      "note": "First concert ever. India.Arie, Estelle, Buju Banton, Rick Ross, Kanye West also performed."
+    },
+    {
+      "year": 2009,
+      "show": "O.A.R. at Monmouth University MAC Center",
+      "type": "concert",
+      "note": "Won tickets as radio caller #8"
+    },
+    {
+      "year": 2009,
+      "show": "Carolina Panthers vs Giants at Giants Stadium",
+      "type": "sporting event",
+      "note": "Final game ever at old Giants Stadium. 78,809 attendance. 19th row center. Panthers won 41-9."
+    },
+    {
+      "year": 2009,
+      "show": "U.S. Open Tennis Championships",
+      "type": "sporting event",
+      "note": "With Steve Pham and Juan Londono"
+    },
+    {
+      "year": 2010,
+      "show": "Phillies PSA / HERO Campaign video",
+      "type": "appearance",
+      "note": "Featured on Route 35 and NJ Turnpike billboards"
+    },
+    {
+      "year": 2013,
+      "show": "BNP Paribas Showdown at MSG",
+      "type": "sporting event",
+      "note": "First time at this event; attended with parents"
+    },
+    {
+      "year": 2017,
+      "show": "Escape Room",
+      "type": "activity",
+      "note": "Completed in 45 minutes 43 seconds (Jan 15)"
+    },
+    {
+      "year": 2018,
+      "show": "Weezer at Madison Square Garden",
+      "type": "concert"
+    },
+    {
+      "year": 2019,
+      "show": "Weezer at Madison Square Garden (sold out)",
+      "type": "concert"
+    },
+    {
+      "year": 2019,
+      "show": "U.S. Open: Nadal vs Medvedev final",
+      "type": "sporting event",
+      "note": "3rd longest in 100+ years; 70+ photos/videos"
+    },
+    {
+      "year": 2021,
+      "show": "Laver Cup Tennis Championship",
+      "type": "sporting event",
+      "note": "568-day wait for tickets"
+    },
+    {
+      "year": 2022,
+      "show": "A Christmas Carol",
+      "type": "broadway"
+    },
+    {
+      "year": 2023,
+      "show": "Hadestown",
+      "type": "broadway"
+    },
+    {
+      "year": 2023,
+      "show": "Aladdin",
+      "type": "broadway"
+    },
+    {
+      "year": 2023,
+      "show": "Chicago",
+      "type": "broadway",
+      "note": "3 shows in one year"
+    },
+    {
+      "year": 2023,
+      "show": "Super Bowl LVII",
+      "type": "sporting event"
+    },
+    {
+      "year": 2024,
+      "show": "Wicked",
+      "type": "broadway"
+    }
+  ],
+  "milestones_by_year": {
+    "2004": [
+      "Timeline project begins on LiveJournal (Jul 29)",
+      "Life-altering car accident resulting in panic attacks and anxiety"
+    ],
+    "2005": [
+      "EastCoastDodgeball founded",
+      "Difficult period after WrestleMania attendance"
+    ],
+    "2006": [
+      "DODGEBALL 70 (Dec 30) — music experiment with dance anthems",
+      "FINS Friday gatherings ongoing since March 2006"
+    ],
+    "2007": [
+      "27 bowling games in a single day",
+      "Started job at Ocean Township Recreation (Feb 27)",
+      "WrestleMania 23 in Detroit (3rd WM)",
+      "51st WWE event (Oct 29 Philadelphia)",
+      "DODGEBALL 100 — record 52 participants (Aug 18)",
+      "Turned 23 (Sep 27)",
+      "Dad's surprise 50th birthday (Jul 29)",
+      "Moved back to Mom's permanently (Jul 1)",
+      "MU Co-Ed Dodgeball League championship (Nov 19, PondScum)",
+      "WWE Stock purchased (Dec 12)",
+      "20+ hours of tennis in one week",
+      "Lauren Winston turned 21 (Apr 13)",
+      "Contracted Shingles at age 20"
+    ],
+    "2008": [
+      "WrestleMania XXIV in Florida (4th WM)",
+      "First semester of Health Studies completed at MU (May 8)",
+      "Royal Rumble at MSG (Jan 27)",
+      "DODGEBALL 150 (Aug 9)",
+      "ECD 3-Year Anniversary (Sep 6)",
+      "Turned 24 (Sep 27)",
+      "Diana DiBuccio: Comedian of the Year",
+      "Song of the Year: Tom Petty 'Runnin Down a Dream'",
+      "First beer shared with The Pops (Aug 21)",
+      "Car accident on West Park Avenue (Nov 4)",
+      "Came out in 2008; KMJ was 3rd person to know",
+      "FAB4 Atlantic City trips began",
+      "Deactivated Facebook after 4-hour paper incident"
+    ],
+    "2009": [
+      "Retired from ECD after 171 events and 40 months (Jan 3)",
+      "WrestleMania 25 in Houston (5th WM) — 72,744 attendance",
+      "SkyDive I at 10,000 feet (Aug 16) — 'maybe the happiest 24-span of my life'",
+      "SkyDive II 'Cloud Nine' with 9 people (Oct 11)",
+      "First concert ever: John Legend at MSG with Kanye West (Aug 13)",
+      "U.S. Open Tennis Championships attended (Sep 7)",
+      "Inducted into Eta Sigma Gamma at MU (Dec 16)",
+      "Turned 25 — multi-day celebration (Sep 25-27)",
+      "Bowling 255 during a snowstorm (Mar 1)",
+      "WinterBall with Melissa Kerr (Feb 21)",
+      "Grandmother's 77th birthday (Nov 13)",
+      "62nd WWE event (Hell In A Cell Oct 4)",
+      "28 beers consumed all year; 101 dates posted; 0 regrets",
+      "'The Greatest Year Ever. 2009.'"
+    ],
+    "2010": [
+      "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
+      "Won inaugural HERO of the Year (Jan 27)",
+      "Featured in Phillies PSA (Jun 10)",
+      "WrestleMania XXVI in Arizona (939 photos)",
+      "3rd skydive (Jul 18)",
+      "ECD 5th Year Anniversary (Sep 11)",
+      "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
+      "18 lbs gained, 3 alcoholic beverages, 0 regrets",
+      "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
+      "Brother Michael graduated from Kean University (May 13)"
+    ],
+    "2011": [
+      "First meal with Rob at Ocean Bay Diner (Jan 1)",
+      "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
+      "Career at Sunrise Senior Living begins (Oct 31/Nov 1)",
+      "First speeding ticket (Sep 14)",
+      "Survivor Series at MSG — The Rock returns (Nov 20)",
+      "4th consecutive WinterBall (Feb 19)",
+      "Torn glenoid labrum confirmed via MRI (Aug 2)",
+      "Hurricane Irene — La Quinta Suites (Aug 27-28)",
+      "ECDElite Hall of Fame induction (Jun 18)",
+      "Cousin Nick married Samantha (Jul 2-3)",
+      "Fell from a pickup truck (May 21)",
+      "RK's 22nd birthday (Dec 14)"
+    ],
+    "2012": [
+      "ECD reopened with 'WORLD TOUR' (Apr 7)",
+      "ECD 7th birthday + 500th player (Sep 1)",
+      "Record 18 rounds at Orchard Park (Oct 13)",
+      "Employee of the Month (Jan)",
+      "Activities & Volunteer Coordinator promotion (May)",
+      "SUS15H reached 190,000 miles (Nov)",
+      "71st WWE event",
+      "Stratton Vermont ski trip continues"
+    ],
+    "2013": [
+      "DODGEBOWL 200 — era-ending extravaganza (Aug 10, FIVE star rating)",
+      "Norwegian Breakaway — first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+      "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
+      "WWE event #75 (Sep 3)",
+      "Grandma Theresa passed away (Jun 10-15)",
+      "5 weddings attended in one year",
+      "'Table 7' Era begins (Jun 8)",
+      "5th consecutive VT skiing trip (Jan 6-9)",
+      "Turned 29 (Sep 27)",
+      "Maryland wedding — gave speech, danced 180 minutes (Nov 7-9)",
+      "Pilates Round 1 — only male participant",
+      "'2010 and 2013 will no doubt stand the test of time'"
+    ],
+    "2014": [
+      "Turned 30 — the 'BIG 3-0'",
+      "Met The Undertaker at WM XXX (4:10:18 PM CT Apr 5)",
+      "Moved to Oceanport (Sep 1)",
+      "Gray Kia Soul purchased (Jan 11-13)",
+      "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+      "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
+      "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+      "Johnny Nash: most influential friend of 2014",
+      "SUS15H takes its last ride (Dec 24-25)",
+      "The Pops: Comedian of the Year (2nd straight year)"
+    ],
+    "2015": [
+      "Kia Soul hits 20,000 miles (Dec 15)",
+      "USVI & Bahamas cruise (rated 10/10)",
+      "Janet Jackson first Artist of the Year win",
+      "Dan Spengeman: Comedian of the Year"
+    ],
+    "2016": [
+      "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
+      "Manager of the Year award",
+      "Table tennis: 62-4 (93.9%)",
+      "Cornhole: 254-98, 38 cornholios",
+      "Spengeman-Mullins wedding",
+      "St. Lucia/Dominica/Antigua cruise",
+      "Lauren Winston: Comedian of the Year"
+    ],
+    "2017": [
+      "Kevin & Leah engaged",
+      "Alaska cruise + Seattle (Mendenhall Glacier)",
+      "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+      "14 staples removed (Dec 26)",
+      "ECD 12-Year Anniversary (Sep 2)",
+      "WrestleMania 33 (Apr 2)",
+      "SummerSlam 20-year personal story complete (Aug 20)",
+      "California trip 600+ miles for Matt & Gina wedding",
+      "Father's 60th birthday (Jul 29)",
+      "Escape Room completed in 45:43 (Jan 15)",
+      "Broken left pinky — volleyball career paused (Mar 26)",
+      "Silver League Champions volleyball (Aug 30)",
+      "Cornhole: 27-2 record on cruise"
+    ],
+    "2018": [
+      "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
+      "Engagement ring purchased in Croatia",
+      "Brother Michael married Maggie (Jun 29)",
+      "Reminiscence Coordinator role at Sunrise of Wall (started Oct 22)",
+      "Best tennis comeback: won from 0-6 deficit (Dec 23)",
+      "Became a pickleball believer (Aug 16)",
+      "Arthur Knott (Artie) passed away (Feb 2)",
+      "6th cruise in 6 years",
+      "Sisters turned 16 — Six Flags Great Adventure (Aug 27)",
+      "Won Weezer tickets as 94.3 radio 9th caller (Nov 26)",
+      "New Hampshire trip (Sep 19-22)",
+      "34th birthday (Sep 27)",
+      "Fever 100.3 on NYE"
+    ],
+    "2019": [
+      "Australia & New Zealand — 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
+      "Nephew Julian John Tronolone born (Aug 23)",
+      "Became Uncle John",
+      "1,000th CHA game vs Pops Tronolone (May 22)",
+      "7th Major ECD championship (Aug 17)",
+      "Wisconsin Trip 1: Moore-Tronolone wedding (May 31-Jun 2)",
+      "Wisconsin Trip 2: Lambeau Field 78,000+ (Sep 20-23)",
+      "Weezer concert at sold-out MSG (Mar 12)",
+      "DC Pride Weekend (Jun 22-24)",
+      "35th birthday — 'Halfway to 70' (Sep 25-27)",
+      "Inaugural 'Steal Bingo' (Nov 23)",
+      "Strep throat + kidney stone removal",
+      "RK's 30th birthday in Atlantic City (Dec 15-16)",
+      "U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8)",
+      "'2020, challenge accepted' (Dec 31)"
+    ],
+    "2020": [
+      "Asian expedition: Singapore, Thailand, Cambodia, Vietnam, Hong Kong (17 days Jan-Feb)",
+      "Kevin & Leah married Feb 29 (leap day)",
+      "90th WWE event (Mar 8, 17th with RL)",
+      "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
+      "Assisted Living Manager at Sunrise of Jackson (started Sep 28)",
+      "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
+      "Grace & Megan graduate high school",
+      "ECD 15th birthday (Aug 22-23)",
+      "Tennis: 6-3, 6-1 vs Blake (Dec 12)",
+      "Pasta Passion & Pistols Murder Mystery NYE (Dec 31)",
+      "Turned 36 (Sep 27) — skydive + birthday combined"
+    ],
+    "2021": [
+      "Year rated 9.8/10",
+      "218-round ping pong match",
+      "8.6 lbs shrimp + 7.3 lbs crab meat consumed",
+      "Nephew Lawrence born (Dec 23, 6:25am)",
+      "25th consecutive Survivor Series — 91st WWE event",
+      "Jumped from Stratosphere in Las Vegas",
+      "Sr. Resident Care Coordinator promotion (applied Jul 11, accepted Jul 23)",
+      "568-day wait for Laver Cup tickets",
+      "20 years between Rangers games at MSG",
+      "10-year anniversary with Rob (Jan 15)",
+      "Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos)",
+      "Lauren Winston: Comedian of the Year",
+      "Tour de Friends events (Feb-Apr)",
+      "Danny won inaugural 'RK Quiz' (Dec 11)",
+      "YogaSix Class 101 standing splits (Dec 12)",
+      "37th birthday (Sep 24-28)",
+      "Alexandria Virginia work assignment (Sep 20-23)"
+    ],
+    "2022": [
+      "Knicks game (100-97 victory)",
+      "Rangers playoff run (triple-OT game at MSG)",
+      "Megan's Brookdale graduation",
+      "California/Oregon vacation (Golden Gate, Redwoods, Portland)",
+      "Five Boro Bike Tour (40 miles)",
+      "PSU White Out football weekend",
+      "Gram's 90th birthday",
+      "ECD FallFest",
+      "Connecticut work assignment (Sunrise Wilton)",
+      "#100 Award",
+      "Undertaker inducted into Hall of Fame"
+    ],
+    "2023": [
+      "Super Bowl LVII in Phoenix — 'most spectacular day I've ever experienced'",
+      "Closed on house at Mill Creek Court (Dec 18)",
+      "15-year anniversary of 'personal liberation day'",
+      "Broadway: Hadestown, Aladdin, Chicago (3 shows in one year)"
+    ],
+    "2024": [
+      "Spain trip (Lisbon, Madrid)",
+      "Norway cruise (Alesund, Akureyri, Iceland Sky Lagoon)",
+      "Toronto (CN Tower 1,815 ft, Niagara Falls)",
+      "Montreal (Place d'Armes, MTLaTABLE)",
+      "30 blue crabs caught (personal best)",
+      "Grandmother passed (Oct 21, 11:57 PM, age 92)",
+      "Kidney stones (Dec 18 & 20 hospitalizations)",
+      "Bowling 180+ average",
+      "Wicked on Broadway",
+      "Fenwick Island/Delaware trip",
+      "Julian's 5th birthday (Aug 25)"
+    ],
+    "2025": [
+      "Executive Director promotion (passed NJ certification)",
+      "4,000-mile Midwest road trip (16 states: Rushmore, Devils Tower, Gateway Arch, Badlands)",
+      "Mother's 70th birthday",
+      "20th Anniversary celebration",
+      "ECD Bowl Weekend (57 people, $1,700+ raised)",
+      "Five Boro Bike Tour medal finish"
+    ],
+    "2026": [
+      "Japan trip (booked — Tokyo bound)"
+    ]
+  },
+  "fun_facts": [
+    "The exact time of meeting The Undertaker is recorded to the second: 4:10:18 PM CT",
+    "2010 year-end stats: 18 pounds gained, 3 alcoholic beverages consumed, 0 regrets",
+    "Consumed 8.6 lbs of jumbo shrimp and 7.3 lbs of lump crab meat at separate events (2021)",
+    "Waited 568 days for Laver Cup tennis championship tickets (2021)",
+    "Went 20 years between Rangers games at Madison Square Garden before returning (2021)",
+    "Escape room completed in exactly 45 minutes, 43 seconds",
+    "Played badminton for 18,000 straight seconds (5 hours) with Angela Hibbert",
+    "The Timeline project has outlasted LiveJournal's entire cultural relevance",
+    "East Coast Dodgeball events get WrestleMania-style names like 'Immaculate Redemption' and 'WrestleJohnMania XXVI'",
+    "First speeding ticket didn't come until September 14, 2011",
+    "WrestleMania 32 in Texas (2016) was called 'unquestionably, the greatest WWE experience of all-time'",
+    "Cornhole stats tracked with Major League precision: 254-98, 38 four-bag cornholios",
+    "The Kia Soul hit 20,000 miles on December 15, 2015 — of course this was noted",
+    "A ping pong match in 2021 went 218 individual rounds",
+    "27 bowling games in a single day (2007)",
+    "From spinal surgery in December to Mediterranean cruise with engagement ring by April (2017-2018)",
+    "Kevin & Leah's entire relationship arc documented from an outside perspective (2014-2020)",
+    "6 cornholios in one night streak (2016)",
+    "Rooney's restaurant visit generated '30 straight minutes of uncontrollable laughter' (2022)",
+    "Called someone 'a porcupine eater' by Mommy Kerr's daughter (2020)",
+    "Dropped $160 on assorted desserts for care team: 'job doesn't get easier unless yours does first' (2020)",
+    "Year 2021 self-rated 9.8 out of 10",
+    "CN Tower height: 1,815 feet (visited 2024)",
+    "First concert ever: John Legend at MSG with India.Arie, Estelle, Buju Banton, Rick Ross, and Kanye West (Aug 13, 2009)",
+    "55 emails sent in 4 hours 41 minutes to recover a missing final exam from a professor who disappeared (Dec 23, 2009)",
+    "SkyDive II 'Cloud Nine' had 9 participants: Tronolone, Smalls, Dennabuam, Canzanella, Letsche, Jacobs, Basista, Hoppe, Adams (Oct 11, 2009)",
+    "SUS15H (the van) survived 3 flat tires, spark plugs transplant, and muffler transplant in 2009 alone",
+    "Vehicle SUS15H reached 190,000 miles by November 2012",
+    "Tennis match vs Dan Farnkopf lasted 6 hours, 7 minutes, 3 seconds — consumed 3 waters, 2 Vitamin Waters, 5 energy bars (Sep 21, 2010)",
+    "Only 3 alcoholic beverages consumed in all of 2010",
+    "Was the only male at Pilates class (2013)",
+    "Kept all anniversary receipts since 2012 (RK Year 2 dinner: Caesar salad, grilled swordfish, chicken scarpello)",
+    "WrestleMania bowling scores at 2014 BeforeBash: 225, 213, 212, 211",
+    "Danced 180 minutes non-stop at Maryland wedding (Nov 7-9, 2013)",
+    "Played Batman at a friend's wedding (Nov 2, 2013): 'Joe & Gina! Table 7!'",
+    "7 consecutive bowling strikes but couldn't get the remaining 5 for a perfect game (Oct 22, 2013)",
+    "First haircut since May 2006 was gotten September 2, 2007 — roughly 16 months between haircuts",
+    "Contracted Shingles at age 20",
+    "Record 52 participants at DODGEBALL 100 (Aug 18, 2007)",
+    "WWE Stock purchased on December 12, 2007",
+    "50 dollars spent on 7 slices of cheese at a tasting (Jul 14, 2018)",
+    "Fishing trip with Captain 'Tight Lines' Tyler caught absolutely nothing (May 7, 2018)",
+    "Harry the Pig and Rocky the Dog encountered in New Hampshire (Sep 2018)",
+    "3,827 birthdays at Buck's celebration party (Jun 1, 2018)",
+    "Fever of 100.3 degrees on NYE 2018",
+    "6th cruise in 6 consecutive years by 2018",
+    "Engagement ring purchased in Croatia during Mediterranean cruise (Apr 2018)",
+    "$403 Butcher's Block dinner bill (Jul 31, 2019)",
+    "Lambeau Field visit with 78,000+ in attendance (Sep 2019)",
+    "Personal rebirth 'behind door 254' in Wisconsin (May 31-Jun 2, 2019)",
+    "Called 2009 'The Greatest Year Ever' — then 2013 contested it",
+    "The post title 'The Timline of Tron VI' has a deliberate/accidental typo in 'Timline' that was never corrected",
+    "Author's car 'SUS15H' was named with a vanity reference",
+    "Double wart removal surgery (Jan 22, 2008)",
+    "Fell from a pickup truck (May 21, 2011)",
+    "Earthquake experienced (Aug 23, 2011)",
+    "Blue work van hit a fence (Sep 15, 2011)",
+    "Carolina Panthers obliterated Giants 41-9 at the final game ever at Giants Stadium — 19th row center, 78,809 attendance (Dec 27, 2009)",
+    "KMJ was the 3rd person the author came out to (2008, at MarinaGrille in Brick NJ)",
+    "Mrs. Amorino introduced author to wrestling via dusty VHS tapes showing Ric Flair winning the '92 Royal Rumble"
+  ],
+  "locations_recurring": [
+    {
+      "name": "Stratton, Vermont",
+      "type": "Ski destination",
+      "note": "Home away from home, 7+ consecutive years"
+    },
+    {
+      "name": "Sunrise of Jackson",
+      "type": "Workplace",
+      "note": "Current employer — Executive Director"
+    },
+    {
+      "name": "Sunrise of Wall",
+      "type": "Former workplace"
+    },
+    {
+      "name": "Monmouth University",
+      "type": "College",
+      "note": "Graduated 2010"
+    },
+    {
+      "name": "Madison Square Garden",
+      "type": "Entertainment venue",
+      "note": "Rangers, Knicks, Weezer concert"
+    },
+    {
+      "name": "Mill Creek Court",
+      "type": "Home",
+      "note": "Closed Dec 18, 2023"
+    },
+    {
+      "name": "Ocean Bay Diner",
+      "type": "Restaurant",
+      "note": "First meal with Rob, Jan 1, 2011"
+    },
+    {
+      "name": "Seven Presidents Park",
+      "type": "Volunteer location"
+    },
+    {
+      "name": "LBI (Long Beach Island)",
+      "type": "Beach/recreation"
+    },
+    {
+      "name": "Shrewsbury Yacht Club",
+      "type": "Social venue",
+      "note": "Events with Yumi sushi, crab dip"
+    },
+    {
+      "name": "Barnegat Lighthouse",
+      "type": "Landmark"
+    },
+    {
+      "name": "Pittsburgh",
+      "type": "Travel destination",
+      "note": "Multiple visits 2024 (Upper St. Clair, McCandless)"
+    },
+    {
+      "name": "Wall High School",
+      "type": "ECD home turf",
+      "note": "East Coast Dodgeball headquarters"
+    },
+    {
+      "name": "Ocean Road Park",
+      "type": "Recreation",
+      "note": "Dodgeball, pickleball, volleyball venue"
+    },
+    {
+      "name": "Monmouth Park Racetrack",
+      "type": "Entertainment",
+      "note": "Annual DiBuccio-Tronolone outing; 5th annual (2007) through 11th (2013)"
+    },
+    {
+      "name": "Simko's Grille",
+      "type": "Restaurant",
+      "note": "Regular dining spot; birthday celebrations; Black Friday dinners"
+    },
+    {
+      "name": "Front St. Trattoria",
+      "type": "Restaurant",
+      "note": "Birthday dinners"
+    },
+    {
+      "name": "The Sitting Duck",
+      "type": "Restaurant/bar",
+      "note": "Birthday celebrations; Spengeman feast; social gatherings"
+    },
+    {
+      "name": "Pete & Elda's",
+      "type": "Restaurant",
+      "note": "Late-night snacks; James Sullivan III memorial"
+    },
+    {
+      "name": "The Headliner",
+      "type": "Entertainment venue",
+      "note": "Introduced by Pamula (2007); Katie Grand birthday"
+    },
+    {
+      "name": "Snap Fitness",
+      "type": "Gym",
+      "note": "1.16 miles from home (joined Mar 10, 2010)"
+    },
+    {
+      "name": "Jersey Shore Fitness",
+      "type": "Gym",
+      "note": "Where James Butler trained author (Sep 2007)"
+    },
+    {
+      "name": "Atlantic City",
+      "type": "Entertainment destination",
+      "note": "FAB4 annual trips; bachelor parties; birthday celebrations; BeerFest"
+    },
+    {
+      "name": "Oceanport",
+      "type": "Residence",
+      "note": "Moved Sep 1, 2014; NYE gatherings"
+    },
+    {
+      "name": "11 Sandburg",
+      "type": "Residence",
+      "note": "Home base for various events"
+    },
+    {
+      "name": "Holy Trinity Elementary School",
+      "type": "School",
+      "note": "Where Mrs. Amorino introduced author to wrestling"
+    },
+    {
+      "name": "Monmouth Regional High School",
+      "type": "School",
+      "note": "'Falcon Years' 1998-2002; room 306 hallway with Phil Campanella"
+    },
+    {
+      "name": "Brandywine",
+      "type": "Social venue",
+      "note": "Rupert's first visit (2018); cornhole"
+    },
+    {
+      "name": "MarinaGrille (now RiverRock Restaurant)",
+      "type": "Restaurant",
+      "note": "Off Route 70 in Brick NJ; where author came out to KMJ (2008)"
+    }
+  ],
+  "quotes": [
+    {
+      "quote": "I Just Want To Wake Up. (I Did!)",
+      "context": "Post-surgery reflection, 2017"
+    },
+    {
+      "quote": "the best, the longest, and the greatest",
+      "context": "Describing Australia & New Zealand trip, 2019"
+    },
+    {
+      "quote": "the most spectacular day I've ever experienced",
+      "context": "Super Bowl LVII, 2023"
+    },
+    {
+      "quote": "unquestionably, the greatest WWE experience of all-time",
+      "context": "WrestleMania 32, 2016"
+    },
+    {
+      "quote": "not a death sentence, living proof",
+      "context": "During quarantine recovery, 2020"
+    },
+    {
+      "quote": "it's called dedication. look it up.",
+      "context": "Response to 8.6 lbs shrimp stat"
+    },
+    {
+      "quote": "the notebook doesn't lie, ValPal.",
+      "context": "Response to 218 ping pong rounds"
+    },
+    {
+      "quote": "you're welcome for the immortality.",
+      "context": "To Valerie about documenting everything"
+    },
+    {
+      "quote": "job doesn't get easier unless yours does first",
+      "context": "After dropping $160 on desserts for care team, 2020"
+    },
+    {
+      "quote": "the record is the record. next question.",
+      "context": "Response to Famous Faces criticism"
+    },
+    {
+      "quote": "the committee has spoken, Darrell.",
+      "context": "To The Pops about Comedian of the Year"
+    },
+    {
+      "quote": "Without any hesitation, I proudly proclaim that 2007 was undoubtedly the most colorful and eventful year of my life.",
+      "context": "Year-end reflection, 2007"
+    },
+    {
+      "quote": "Conquered obstacles, dreams turned reality, fears for happy tears",
+      "context": "Year-end reflection, 2008"
+    },
+    {
+      "quote": "2008: Rewarding, Refreshing, Heavenly. I Did It.",
+      "context": "Timeline V closing line, 2008"
+    },
+    {
+      "quote": "Family First...Friendship takes two, not one.",
+      "context": "Timeline V, 2008"
+    },
+    {
+      "quote": "Sometimes it is hell trying to get to heaven.",
+      "context": "The Undertaker, Jan 25, 2009"
+    },
+    {
+      "quote": "You cannot fear death once you've touched heaven.",
+      "context": "J. Tronolone, Oct 11, 2009 (SkyDive II)"
+    },
+    {
+      "quote": "Walk the plank, take the jump, and still come up alive. What's a chance if you don't take it.",
+      "context": "J. Tronolone, Jul 5, 2009"
+    },
+    {
+      "quote": "Friends, Family, Freedom. The Greatest Year Ever. 2009.",
+      "context": "Timeline VI closing line"
+    },
+    {
+      "quote": "0 = Regrets",
+      "context": "Year-end stats, 2010"
+    },
+    {
+      "quote": "In love, and unashamed by it and for whom it's for",
+      "context": "J. Tronolone, March 22, 2011"
+    },
+    {
+      "quote": "the beauty in finality. The wonder of commencement.",
+      "context": "Timeline X opening, 2013"
+    },
+    {
+      "quote": "the best + the most = .TWENTY '13.",
+      "context": "Timeline X closing line"
+    },
+    {
+      "quote": "If all keeps up, 2013 could honestly become the greatest year of my adulthood",
+      "context": "March 31, 2013"
+    },
+    {
+      "quote": "just woke up from this dream.. but it wasn't a dream!!!",
+      "context": "Aug 12, 2013 — WM XXX tickets secured"
+    },
+    {
+      "quote": "2010 and 2013 will no doubt stand the test of time. The only difference is that now, in '13, I've had someone to share all those amazing times.",
+      "context": "Nov 21, 2013"
+    },
+    {
+      "quote": "All that keeps running through my head is 'I finally did it.' I never, ever thought the day would come.",
+      "context": "Apr 10, 2014 — meeting The Undertaker"
+    },
+    {
+      "quote": "It wasn't something I was happy about doing, but it is something I'm happy I did.",
+      "context": "On dodgeball retirement, 2009"
+    },
+    {
+      "quote": "1997, 2007, 2015, and now 2017. My personal SummerSlam story, some 20 years long, complete.",
+      "context": "SummerSlam 2017"
+    },
+    {
+      "quote": "THE GREAT ADVENTURE 2.0.1.7",
+      "context": "2017 year subtitle"
+    },
+    {
+      "quote": "patience & gratitude",
+      "context": "Resignation motto, Oct 2, 2018"
+    },
+    {
+      "quote": "What am I getting myself into?",
+      "context": "Meeting Matt, Jul 3, 2019"
+    },
+    {
+      "quote": "Halfway to 70",
+      "context": "35th birthday, Sep 2019"
+    },
+    {
+      "quote": "best. longest. most. greatest.",
+      "context": "Australia/NZ trip summary, 2019"
+    },
+    {
+      "quote": "2020, challenge accepted",
+      "context": "NYE 2019"
+    },
+    {
+      "quote": "My friends got their ladies, they're all having babies, but I just want to have some fun.",
+      "context": "George Michael 'Fastlove' quote, Nov 18, 2020"
+    },
+    {
+      "quote": "Life went from 9.5 to 9.7 in 10m, 37s",
+      "context": "Job acceptance moment, 2021"
+    },
+    {
+      "quote": "Baby is here. Everyone healthy and safe.",
+      "context": "Lawrence Michael's birth, Dec 23, 2021"
+    },
+    {
+      "quote": "I said exactly what I needed to say; now I look back with a smile.",
+      "context": "About coming out, from Merrie Melodies post"
+    },
+    {
+      "quote": "He simply made being a wrestling fan acceptable, the 'in' thing.",
+      "context": "About Phil Campanella, from The Influlist"
+    },
+    {
+      "quote": "the beginning not of a temporary diet, but a desperate lifestyle alteration",
+      "context": "About starting fitness with James Butler, Sep 2007"
+    }
+  ],
+  "yearly_timelines": {
+    "_note": "All posts on wwecoowner.livejournal.com. Timeline posts are annual recaps; non-Timeline posts are thematic entries.",
+    "timeline_posts": [
+      {
+        "id": 56704,
+        "title": "The Timeline of Tron I",
+        "year_covered": 2004,
+        "posted": "2005-07-29"
+      },
+      {
+        "id": 56999,
+        "title": "The Timeline of Tron II",
+        "year_covered": 2005,
+        "posted": "2006-01"
+      },
+      {
+        "id": 57343,
+        "title": "The Timeline of Tron III",
+        "year_covered": 2006,
+        "posted": "2007-01"
+      },
+      {
+        "id": 57394,
+        "title": "The Timeline of Tron IV",
+        "year_covered": 2007,
+        "posted": "2008-01-01"
+      },
+      {
+        "id": 58397,
+        "title": "The Timeline of Tron V",
+        "year_covered": 2008,
+        "posted": "2009-01-03"
+      },
+      {
+        "id": 59402,
+        "title": "The Timline of Tron VI",
+        "year_covered": 2009,
+        "posted": "2010-01-02",
+        "note": "Original title has 'Timline' typo"
+      },
+      {
+        "id": 59989,
+        "title": "The Timeline of Tron VII",
+        "year_covered": 2010,
+        "posted": "2011-01-08"
+      },
+      {
+        "id": 61014,
+        "title": "The Timeline of Tron VIII",
+        "year_covered": 2011,
+        "posted": "2012-01"
+      },
+      {
+        "id": 61398,
+        "title": "The Timeline of Tron IX",
+        "year_covered": 2012,
+        "posted": "2013-01"
+      },
+      {
+        "id": 62385,
+        "title": "The Timeline of Tron X",
+        "year_covered": 2013,
+        "posted": "2014-01-20"
+      },
+      {
+        "id": 62775,
+        "title": "The Timeline of Tron XI",
+        "year_covered": 2014,
+        "posted": "2015-01"
+      },
+      {
+        "id": 63169,
+        "title": "The Timeline of Tron XII",
+        "year_covered": 2015,
+        "posted": "2016-01"
+      },
+      {
+        "id": 63442,
+        "title": "The Timeline of Tron XIII",
+        "year_covered": 2016,
+        "posted": "2017-01"
+      },
+      {
+        "id": 63508,
+        "title": "The Timeline of Tron XIV",
+        "year_covered": 2017,
+        "posted": "2018-01-14"
+      },
+      {
+        "id": 63963,
+        "title": "The Timeline of Tron XV",
+        "year_covered": 2018,
+        "posted": "2019-01-08"
+      },
+      {
+        "id": 64119,
+        "title": "The Timeline of Tron XVI",
+        "year_covered": 2019,
+        "posted": "2020-01-05"
+      },
+      {
+        "id": 64555,
+        "title": "The Timeline of Tron XVII",
+        "year_covered": 2020,
+        "posted": "2021-01-05"
+      },
+      {
+        "id": 64965,
+        "title": "The Timeline of Tron XVIII",
+        "year_covered": 2021,
+        "posted": "2022-01"
+      },
+      {
+        "id": 65064,
+        "title": "The Timeline of Tron XIX",
+        "year_covered": 2022,
+        "posted": "2023-01"
+      },
+      {
+        "id": 65343,
+        "title": "The Timeline of Tron XX",
+        "year_covered": 2023,
+        "posted": "2024-01"
+      },
+      {
+        "id": 65576,
+        "title": "The Timeline of Tron XXI",
+        "year_covered": 2024,
+        "posted": "2025-01"
+      },
+      {
+        "id": 65965,
+        "title": "The Timeline of Tron XXII",
+        "year_covered": 2025,
+        "posted": "2026-01-08"
+      }
+    ],
+    "non_timeline_posts": [
+      {
+        "id": 57787,
+        "title": "Nut Cracker",
+        "date": "2008-09-29",
+        "description": "Allegorical post about emotional crisis around birthday; metaphorical 'open heart surgery'"
+      },
+      {
+        "id": 57943,
+        "title": "Click Click Boom",
+        "date": "2008-08-31",
+        "description": "Character profiles of closest friends; reflection on conquering fears"
+      },
+      {
+        "id": 58738,
+        "title": "The FAQs",
+        "date": "2008-11-06",
+        "description": "Reflection on organizing 500+ people across 5 years of activities; Facebook deactivation"
+      },
+      {
+        "id": 58912,
+        "title": "Ring Ring!",
+        "date": "2009-01",
+        "description": "Dodgeball retirement announcement after 171 events; Road to WrestleMania 25"
+      },
+      {
+        "id": 59148,
+        "title": "Timeline VI: Special Preview",
+        "date": "2009-10-28",
+        "description": "Preview for upcoming 2009 recap; categories previewed"
+      },
+      {
+        "id": 59703,
+        "title": "Kia Sorento",
+        "date": "2010-05-15",
+        "description": "Metaphorical vehicle journey covering 2005-2010 hardships and recovery"
+      },
+      {
+        "id": 61818,
+        "title": "The Influlist",
+        "date": "2013-03-27",
+        "description": "Profiles of most influential people: James Butler, Phil Campanella, Mrs. Amorino, Grant Cornero, Chris Arbach"
+      },
+      {
+        "id": 62073,
+        "title": "Merrie Melodies (Part I)",
+        "date": "2013-05-07",
+        "description": "Songs matched to people: Lauren Stopa, Jake Mauro, Joe Corcione, Valerie Winston, Michael Edwards, Kevin Megill"
+      }
+    ]
+  },
+  "lj_comments": {
+    "_note": "Comments scraped from LiveJournal posts. Commenters include friends, family, professors, and strangers.",
+    "_status": "Partial scrape completed — comment data saved separately in lj_comments_data.json",
+    "comment_stats": {
+      "total_posts_with_comments": "22+ (Timeline posts average 10-30+ comments each)",
+      "notable_commenters": [
+        "Diana DiBuccio",
+        "Ryan Letsche",
+        "Melissa Kerr",
+        "Jim 'Boofer' Butler",
+        "Valerie Winston",
+        "C. Adams (Chris Adams)",
+        "Tim Moore",
+        "Dan Spengeman",
+        "Jackie T (Jackie Amorino)",
+        "Edwards (Michael Edwards)",
+        "Shane",
+        "Prof. Beric (Bojana Beric)",
+        "Prof. D",
+        "Lauren Stopa",
+        "Stephanie Candelario",
+        "Marcie N",
+        "Laura Buckley",
+        "Bill P",
+        "Wendy Busanich",
+        "Pam D",
+        "Rob Pellecchia",
+        "Julia",
+        "Steve Pham (pham)",
+        "Kev (Kevin Megill)"
+      ],
+      "earliest_comments": "2005 (Timeline I)",
+      "latest_comments": "2026 (Timeline XXII)",
+      "common_themes": [
+        "Praise for detailed record-keeping",
+        "Nostalgia and shared memories",
+        "Requests to appear in next Timeline",
+        "Reactions to coming-out journey",
+        "WrestleMania excitement",
+        "ECD dodgeball memories",
+        "Birthday wishes",
+        "Being 'the last person on LiveJournal'"
+      ]
+    },
+    "sample_comments": [
+      {
+        "post": "Timeline VI (2009)",
+        "commenter": "C. Adams",
+        "excerpt": "You deserve a prize for being the last person on livejournal"
+      },
+      {
+        "post": "Timeline XVII (2020)",
+        "commenter": "Tim M",
+        "excerpt": "JTP only you would call 2020 great"
+      },
+      {
+        "post": "Timeline XVII (2020)",
+        "commenter": "Shane",
+        "excerpt": "Shit I need to do this. It's so cool"
+      },
+      {
+        "post": "Timeline XVII (2020)",
+        "commenter": "Edwards",
+        "excerpt": "So energizing to sense the energy you bring to life"
+      },
+      {
+        "post": "Timeline XVII (2020)",
+        "commenter": "Jackie T",
+        "excerpt": "oh my gosh! i am so honored to have made multiple appearances!"
+      },
+      {
+        "post": "Timeline VI (2009)",
+        "commenter": "melsa (Melissa Kerr)",
+        "excerpt": "you reminded me of a LOT of events that i have forgotten about"
+      },
+      {
+        "post": "Nut Cracker (2008)",
+        "commenter": "Jim Butler",
+        "excerpt": "Well written, John, but as usual, makes little sense to me. You are way too esoteric."
+      },
+      {
+        "post": "Nut Cracker (2008)",
+        "commenter": "Pam D",
+        "excerpt": "When Jim Butler calls you esoteric, well...that's just hilarious (pot, meet kettle)"
+      }
+    ]
+  },
+  "medical_history": [
+    {
+      "year": 2004,
+      "event": "Life-altering car accident — panic attacks and anxiety"
+    },
+    {
+      "year": 2005,
+      "event": "Contracted Shingles at age 20"
+    },
+    {
+      "year": 2007,
+      "event": "Near-anorexia and mental health crisis; chopped long hair; joined gym"
+    },
+    {
+      "year": 2008,
+      "event": "Double wart removal surgery (Jan 22)"
+    },
+    {
+      "year": 2008,
+      "event": "Car accident — rear-ended on West Park Avenue (Nov 4)"
+    },
+    {
+      "year": 2011,
+      "event": "Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2)"
+    },
+    {
+      "year": 2017,
+      "event": "Left pinky dislocation + two-part fracture from volleyball (Mar 26)"
+    },
+    {
+      "year": 2017,
+      "event": "L5-S1 'fairly large' herniation diagnosed (Sep 28)"
+    },
+    {
+      "year": 2017,
+      "event": "Two epidural injections (Nov 10, Dec 8 — second failed)"
+    },
+    {
+      "year": 2017,
+      "event": "Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26"
+    },
+    {
+      "year": 2019,
+      "event": "Strep throat (Aug 7) + kidney stone removal"
+    },
+    {
+      "year": 2020,
+      "event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle"
+    },
+    {
+      "year": 2024,
+      "event": "Kidney stones — two hospitalizations (Dec 18 & 20)"
+    }
+  ]
+}

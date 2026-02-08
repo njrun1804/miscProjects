@@ -16,6 +16,8 @@ js/plugins.js       - Custom Chart.js plugins (centerText, barValue, milestoneLa
 js/charts.js        - Chart.js configurations (uses helpers, stores refs)
 js/app.js           - Interactive functions + error handling
 lib/chart.js        - Chart.js v4.5.1 (local)
+data/               - Content database and scraped data (not served to site visitors)
+archive/            - Original source files (Message_for_Tron.md, Timeline_of_Tron_By_The_Numbers.docx)
 ```
 
 ### Critical Load Order
@@ -71,12 +73,46 @@ Scripts MUST load in this order (already configured in index.html):
 - `createChart(canvasId, config)` - Safe wrapper that handles missing DOM elements
 - `destroyAllCharts()` - Destroys all chart instances for re-initialization
 
+### Content Database (data/)
+The `data/` directory contains a comprehensive content database scraped and consolidated from three sources: the LiveJournal blog (wwecoowner.livejournal.com), Message_for_Tron.md, and Timeline_of_Tron_By_The_Numbers.docx.
+
+- **`tron-content-db.json`** (~89KB) - Master content database with 21 top-level keys:
+  - `_meta` - Provenance and source tracking
+  - `person` - Core biographical data (name, aliases, tagline)
+  - `career` - 12 career entries (Intern → Executive Director)
+  - `wwe` - 16 WWE milestones, venue stats, streak data
+  - `travel` / `travel_stats` - 34 destinations, passport stats, country counts
+  - `sports` - Table tennis, dodgeball, and other competitive records
+  - `east_coast_dodgeball` - 19-year ECD history with fundraising totals
+  - `people` - 79 mentioned people with context (plus Fab 4 group)
+  - `awards` - Annual awards timeline
+  - `comebacks` - Injury/comeback narratives
+  - `traditions` - Recurring life traditions
+  - `broadway_entertainment` - 17 shows/entertainment entries
+  - `milestones_by_year` - 23 years of key milestones
+  - `fun_facts` - 60 fun facts extracted from all sources
+  - `locations_recurring` - 29 recurring locations with significance
+  - `quotes` - 41 notable quotes with attribution
+  - `yearly_timelines` - Year-by-year narrative summaries
+  - `medical_history` - 13 medical events
+  - `lj_comments` - Summary of LiveJournal comment activity
+
+- **`lj_comments_data.json`** (~40KB) - Raw scraped LiveJournal comments with per-post breakdowns
+
+This database is a content reservoir — use it to source new sections, enrich existing data arrays in `js/data.js`, or generate new visualizations without re-scraping.
+
+### Archive (archive/)
+Original source documents moved here after content was extracted into the database:
+- `Message_for_Tron.md` - 149-line detailed analysis of the Timeline project
+- `Timeline_of_Tron_By_The_Numbers.docx` - 18 structured data tables
+
 ### Adding New Data
 1. Edit `js/data.js` to add/modify data arrays
 2. If adding new charts, edit `js/charts.js`
 3. If adding new HTML sections, edit `index.html`
 4. Test locally by opening `index.html` in browser
 5. Commit and push to GitHub (auto-deploys to GitHub Pages)
+6. To source new content, check `data/tron-content-db.json` first
 
 ## Style Guide
 
@@ -217,6 +253,14 @@ open index.html  # Opens in default browser
 - Hard refresh: Cmd+Shift+R (Mac) / Ctrl+Shift+R (Windows)
 
 ## Project History
+
+### Version 2.2 (Feb 8, 2026)
+- Created `data/tron-content-db.json` — comprehensive content database (89KB, 21 top-level keys)
+- Scraped all 30 LiveJournal posts from wwecoowner.livejournal.com (22 timeline + 8 non-timeline)
+- Scraped LiveJournal comments into `data/lj_comments_data.json`
+- Consolidated content from Message_for_Tron.md and Timeline_of_Tron_By_The_Numbers.docx
+- Extracted: 79 people, 41 quotes, 60 fun facts, 34 travel entries, 29 locations, 17 entertainment entries
+- Archived original source files to `archive/`
 
 ### Version 2.1 (Feb 8, 2026)
 - Code cleanup: eliminated chart config duplication, extracted CSS classes from inline styles
