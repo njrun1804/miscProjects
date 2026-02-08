@@ -76,6 +76,7 @@
 
 .milestone-card {
     background: var(--room-panel);
+    color: #2c2416;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: var(--radius);
     padding: 14px;
@@ -93,7 +94,7 @@
     font-family: var(--font-mono);
     font-size: 12px;
     font-weight: 700;
-    opacity: 0.6;
+    color: #8b6914;
 }
 
 .milestone-card__text {
@@ -122,7 +123,7 @@
 .turning-point--contaminated .turning-point__diamond { background: #8b1a1a; }
 .turning-point--stable .turning-point__diamond { background: #c9a84c; }
 
-/* Stage quotes */
+/* Stage quotes — inherit stage-text color for readability on stage bg */
 .stage-quote {
     font-family: var(--font-body);
     font-style: italic;
