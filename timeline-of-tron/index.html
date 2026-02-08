@@ -30,8 +30,8 @@
         <div class="lj-title-bar">
             <div class="lj-userpic">JT</div>
             <div class="lj-title-text">
-                <span class="lj-username">The Timeline of Tron<span class="pencil">✏️</span></span>
-                <span class="lj-subtitle">A 22-Year Statistical Almanac &middot; 2004 – 2025</span>
+                <span class="lj-username">J . T R O N O L O N E</span>
+                <span class="lj-subtitle">To Tokyo, 2026.</span>
             </div>
         </div>
     </div>
@@ -56,7 +56,7 @@
 <div class="lj-main">
 
     <!-- ===== KPI CARDS ===== -->
-    <div class="lj-entry" data-section="stats">
+    <div class="lj-entry" data-section="stats" data-comments="stats">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">📊</div>
             <span class="lj-entry-title">The Closing Stat Line</span>
@@ -126,16 +126,11 @@
                 <span class="lj-mood"><span class="mood-icon mood-icon--nerdy"></span> <strong>Current Mood:</strong> statistically significant</span> &nbsp;|&nbsp;
                 <strong>Current Music:</strong> Janet Jackson — "All For You"
             </div>
-            <div class="lj-comment-bar">
-                <a href="#" class="lj-comment-link" onclick="return false">(7 comments)</a>
-                <span class="lj-comment-sep">|</span>
-                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
-            </div>
         </div>
     </div>
 
     <!-- ===== GREATEST HITS CHARTS ===== -->
-    <div class="lj-entry" data-section="stats">
+    <div class="lj-entry" data-section="stats" data-comments="greatest">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">🏆</div>
             <span class="lj-entry-title">The Numbers Guy: Greatest Hits</span>
@@ -154,16 +149,15 @@
                     <canvas id="sportsGauge2"></canvas>
                 </div>
             </div>
-            <div class="chart-grid" style="margin-top: 20px;">
-                <div class="chart-container chart-full">
-                    <canvas id="epicNumbersChart"></canvas>
-                </div>
+            <div class="epic-records-header">
+                <span class="section-label">Epic Single-Event Records</span>
             </div>
+            <div id="epicRecordsGrid" class="epic-records-grid"></div>
         </div>
     </div>
 
     <!-- ===== CAREER ARC ===== -->
-    <div class="lj-entry" data-section="career">
+    <div class="lj-entry" data-section="career" data-comments="career">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">💼</div>
             <span class="lj-entry-title">Career Arc: Intern to Executive Director</span>
@@ -214,16 +208,11 @@
                 <span class="lj-mood"><span class="mood-icon mood-icon--proud"></span> <strong>Current Mood:</strong> promoted</span> &nbsp;|&nbsp;
                 <strong>Tags:</strong> calling, not just a career
             </div>
-            <div class="lj-comment-bar">
-                <a href="#" class="lj-comment-link" onclick="return false">(12 comments)</a>
-                <span class="lj-comment-sep">|</span>
-                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
-            </div>
         </div>
     </div>
 
     <!-- ===== WWE LIFETIME STATS ===== -->
-    <div class="lj-entry" data-section="wwe">
+    <div class="lj-entry" data-section="wwe" data-comments="wwe">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">🤼</div>
             <span class="lj-entry-title">WWE: The Lifetime Stats</span>
@@ -231,53 +220,46 @@
             <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
         </div>
         <div class="lj-entry-body">
-            <div class="chart-grid">
-                <div class="chart-container">
-                    <canvas id="wweTimelineChart"></canvas>
+            <div class="kpi-grid kpi-grid--4col">
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">91+</div>
+                    <div class="kpi-label">Total Events</div>
                 </div>
-                <div class="chart-container">
-                    <div class="kpi-grid">
-                        <div class="kpi-card" data-category="wwe">
-                            <div class="kpi-value">91+</div>
-                            <div class="kpi-label">Total Events</div>
-                        </div>
-                        <div class="kpi-card" data-category="wwe">
-                            <div class="kpi-value">25</div>
-                            <div class="kpi-label">Consecutive Survivor Series Years</div>
-                        </div>
-                        <div class="kpi-card" data-category="wwe">
-                            <div class="kpi-value">10+</div>
-                            <div class="kpi-label">WrestleManias</div>
-                        </div>
-                        <div class="kpi-card" data-category="wwe">
-                            <div class="kpi-value">17</div>
-                            <div class="kpi-label">Events with RL</div>
-                        </div>
-                    </div>
-                    <div class="callout-box callout-box--gold">
-                        <div class="callout-title callout-title--gold">&#x211A; CROWN JEWEL MOMENT</div>
-                        <div class="callout-body">Met The Undertaker at WrestleMania XXX in New Orleans. Handshake timestamp: <strong>4:10:18 PM CT</strong>. The same night the streak went to 21-1.</div>
-                    </div>
-                    <div class="callout-box callout-box--red">
-                        <div class="callout-title callout-title--red">&#x211A; MILESTONE</div>
-                        <div class="callout-body">90th event attended: <strong>March 8, 2020</strong></div>
-                    </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">25</div>
+                    <div class="kpi-label">Consecutive Survivor Series Years</div>
+                </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">10+</div>
+                    <div class="kpi-label">WrestleManias</div>
+                </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">17</div>
+                    <div class="kpi-label">Events with RL</div>
+                </div>
+            </div>
+            <div style="margin-top: 16px;">
+                <canvas id="wweTimelineChart"></canvas>
+            </div>
+            <div class="callout-row">
+                <div class="callout-box callout-box--gold">
+                    <div class="callout-title callout-title--gold">&#x211A; CROWN JEWEL MOMENT</div>
+                    <div class="callout-body">Met The Undertaker at WrestleMania XXX in New Orleans. Handshake timestamp: <strong>4:10:18 PM CT</strong>. The same night the streak went to 21-1.</div>
+                </div>
+                <div class="callout-box callout-box--red">
+                    <div class="callout-title callout-title--red">&#x211A; MILESTONE</div>
+                    <div class="callout-body">90th event attended: <strong>March 8, 2020</strong></div>
                 </div>
             </div>
             <div class="lj-current">
                 <span class="lj-mood"><span class="mood-icon mood-icon--excited"></span> <strong>Current Mood:</strong> electrified</span> &nbsp;|&nbsp;
                 <strong>Current Music:</strong> WWE entrance themes
             </div>
-            <div class="lj-comment-bar">
-                <a href="#" class="lj-comment-link" onclick="return false">(25 comments)</a>
-                <span class="lj-comment-sep">|</span>
-                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
-            </div>
         </div>
     </div>
 
     <!-- ===== TRAVEL ===== -->
-    <div class="lj-entry" data-section="travel">
+    <div class="lj-entry" data-section="travel" data-comments="travel">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">🌍</div>
             <span class="lj-entry-title">Travel: The World Tour</span>
@@ -308,16 +290,11 @@
                 <span class="lj-mood"><span class="mood-icon mood-icon--adventurous"></span> <strong>Current Mood:</strong> wanderlust</span> &nbsp;|&nbsp;
                 <strong>Up Next:</strong> Japan 2026 — booked!
             </div>
-            <div class="lj-comment-bar">
-                <a href="#" class="lj-comment-link" onclick="return false">(9 comments)</a>
-                <span class="lj-comment-sep">|</span>
-                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
-            </div>
         </div>
     </div>
 
     <!-- ===== THE CAST ===== -->
-    <div class="lj-entry" data-section="cast">
+    <div class="lj-entry" data-section="cast" data-comments="cast">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">🎭</div>
             <span class="lj-entry-title">The Cast: Recurring Characters Across Eras</span>
@@ -361,16 +338,11 @@
                 <span class="lj-mood"><span class="mood-icon mood-icon--loved"></span> <strong>Current Mood:</strong> grateful</span> &nbsp;|&nbsp;
                 <strong>Tags:</strong> lifers, ensemble cast, multi-era
             </div>
-            <div class="lj-comment-bar">
-                <a href="#" class="lj-comment-link" onclick="return false">(18 comments)</a>
-                <span class="lj-comment-sep">|</span>
-                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
-            </div>
         </div>
     </div>
 
     <!-- ===== ANNUAL AWARDS ===== -->
-    <div class="lj-entry" data-section="awards">
+    <div class="lj-entry" data-section="awards" data-comments="awards">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">🏅</div>
             <span class="lj-entry-title">The Annual Awards</span>
@@ -411,16 +383,11 @@
                 <span class="lj-mood"><span class="mood-icon mood-icon--creative"></span> <strong>Current Mood:</strong> ceremonial</span> &nbsp;|&nbsp;
                 <strong>Current Music:</strong> Janet Jackson — "If"
             </div>
-            <div class="lj-comment-bar">
-                <a href="#" class="lj-comment-link" onclick="return false">(5 comments)</a>
-                <span class="lj-comment-sep">|</span>
-                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
-            </div>
         </div>
     </div>
 
     <!-- ===== COMEBACK ARCS ===== -->
-    <div class="lj-entry" data-section="comebacks">
+    <div class="lj-entry" data-section="comebacks" data-comments="comebacks">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">💪</div>
             <span class="lj-entry-title">Resilience: The Comeback Arcs</span>
@@ -466,16 +433,11 @@
                 <span class="lj-mood"><span class="mood-icon mood-icon--determined"></span> <strong>Current Mood:</strong> unbreakable</span> &nbsp;|&nbsp;
                 <strong>Tags:</strong> comeback, resilience, movie-pitch-level recoveries
             </div>
-            <div class="lj-comment-bar">
-                <a href="#" class="lj-comment-link" onclick="return false">(14 comments)</a>
-                <span class="lj-comment-sep">|</span>
-                <a href="#" class="lj-comment-link" onclick="return false">leave a comment</a>
-            </div>
         </div>
     </div>
 
     <!-- ===== EAST COAST DODGEBALL ===== -->
-    <div class="lj-entry" data-section="stats">
+    <div class="lj-entry" data-section="stats" data-comments="ecd">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">🔴</div>
             <span class="lj-entry-title">East Coast Dodgeball: The Dynasty</span>
@@ -525,7 +487,7 @@
     </div>
 
     <!-- ===== FAMOUS FACES & TRADITIONS ===== -->
-    <div class="lj-entry" data-section="stats">
+    <div class="lj-entry" data-section="stats" data-comments="traditions">
         <div class="lj-entry-header">
             <div class="lj-entry-icon">🎯</div>
             <span class="lj-entry-title">Traditions & Side Quests</span>

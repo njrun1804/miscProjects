@@ -99,54 +99,7 @@ function initializeCharts() {
     });
 
     // =============================
-    // 2. EPIC NUMBERS — Sorted Horizontal Bar with Value Labels
-    // =============================
-    var epicSorted = EPIC_NUMBERS.map(function(e, i) {
-        return { label: e.label.replace('\n', ' '), value: e.value, color: EPIC_NUMBERS_COLORS[i] };
-    }).sort(function(a, b) { return b.value - a.value; });
-
-    TronCharts.epicNumbers = createChart('epicNumbersChart', {
-        type: 'bar',
-        data: {
-            labels: epicSorted.map(function(e) { return e.label; }),
-            datasets: [{
-                label: 'Record',
-                data: epicSorted.map(function(e) { return e.value; }),
-                backgroundColor: epicSorted.map(function(e) { return e.color; }),
-                borderWidth: 0,
-                borderRadius: CHART_STYLE.borderRadius,
-                barPercentage: 0.7
-            }]
-        },
-        options: {
-            responsive: true,
-            indexAxis: 'y',
-            plugins: {
-                title: chartTitle('Epic Single-Event Records'),
-                legend: { display: false },
-                barValue: {
-                    color: '#5c3d1a',
-                    insideColor: '#faf7f0'
-                }
-            },
-            scales: {
-                x: gridScale({
-                    beginAtZero: true,
-                    ticks: { display: false },
-                    grid: { color: CHART_STYLE.gridColor }
-                }),
-                y: hiddenGridScale({
-                    ticks: {
-                        font: { size: 10, family: "'Courier Prime', monospace" },
-                        color: CHART_STYLE.titleColor
-                    }
-                })
-            }
-        }
-    });
-
-    // =============================
-    // 3. CAREER PROGRESSION — Staircase Plateau Chart
+    // 2. CAREER PROGRESSION — Staircase Plateau Chart
     // =============================
     var careerSteps = computeCareerSteps();
     var careerTitles = CAREER_DATA.map(function(c) { return c.title; });

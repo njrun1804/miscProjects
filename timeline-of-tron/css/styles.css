@@ -324,6 +324,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    align-items: start;
 }
 
 .chart-container {
@@ -346,8 +347,82 @@ canvas { max-width: 100%; }
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 220px;
+    max-width: 260px;
     margin: 0 auto;
+}
+
+/* Epic Record Cards */
+.epic-records-header {
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.epic-records-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.epic-record-card {
+    background: var(--lj-input-bg);
+    border: 1px solid var(--lj-border);
+    border-left: 4px solid var(--lj-text);
+    border-radius: 2px;
+    padding: 16px 14px;
+    text-align: center;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.epic-record-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 1px 3px 8px var(--lj-shadow);
+}
+
+.epic-record-value {
+    font-family: var(--font-mono);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.epic-record-unit {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+.epic-record-stat {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--lj-text);
+    margin-top: 8px;
+}
+
+.epic-record-context {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+}
+
+/* KPI Grid Variants */
+.kpi-grid--4col {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Callout Row (side-by-side callouts) */
+.callout-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.callout-row .callout-box {
+    margin-top: 0;
 }
 
 /* =============================
@@ -727,53 +802,139 @@ canvas { max-width: 100%; }
 .mood-icon--creative { background: var(--lj-accent3); }
 .mood-icon--determined { background: var(--lj-header-bg); }
 
-/* Comment Bar — classic LJ links */
+/* Comment Bar — real LJ style */
 .lj-comment-bar {
     font-family: var(--font-sans);
-    font-size: 11px;
-    padding: 6px 16px;
+    font-size: 12px;
+    padding: 8px 16px;
     border-top: 1px dotted var(--lj-border);
     margin-top: 0;
     text-align: right;
+    color: var(--lj-text-secondary);
 }
 
-.lj-comment-link {
+.lj-comment-toggle {
     color: var(--lj-link);
     text-decoration: none;
-    cursor: default;
+    cursor: pointer;
+    font-weight: bold;
 }
 
-.lj-comment-link:hover {
+.lj-comment-toggle:hover {
     color: var(--lj-link-hover);
     text-decoration: underline;
 }
 
-.lj-comment-sep {
-    color: var(--lj-border);
-    margin: 0 6px;
+/* Comment Thread */
+.lj-comment-thread {
+    border-top: 1px solid var(--lj-border);
+    margin-top: 4px;
+    padding: 8px 16px 16px;
+}
+
+.lj-comment {
+    margin-bottom: 2px;
+}
+
+.lj-comment-header {
+    background: #e8e2d4;
+    border: 1px solid var(--lj-border);
+    border-bottom: none;
+    padding: 6px 10px;
+    font-size: 12px;
+}
+
+.lj-comment-author {
+    font-weight: bold;
+    color: var(--lj-text);
+}
+
+.lj-comment-author--op {
+    color: var(--lj-accent2);
+}
+
+.lj-comment-userpic {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: linear-gradient(135deg, #5c3d1a 0%, #8b5e2b 100%);
+    border-radius: 1px;
+    font-family: var(--font-mono);
+    font-size: 8px;
+    font-weight: 700;
+    color: var(--lj-header-text);
+    text-align: center;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.lj-comment-anon {
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-left: 4px;
+}
+
+.lj-comment-date {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-left: 8px;
+}
+
+.lj-comment-body {
+    border: 1px solid var(--lj-border);
+    border-top: none;
+    padding: 8px 12px;
+    font-size: 13px;
+    background: var(--lj-input-bg);
+    line-height: 1.5;
+}
+
+.lj-comment--op .lj-comment-body {
+    background: #f5f0e0;
+}
+
+.lj-comment-actions {
+    text-align: right;
+    font-family: var(--font-sans);
+    font-size: 10px;
+    padding: 3px 0 10px;
+    color: var(--lj-text-secondary);
+}
+
+.lj-comment-actions a {
+    color: var(--lj-link);
+    text-decoration: none;
+}
+
+.lj-comment-actions a:hover {
+    text-decoration: underline;
 }
 
 /* LJ-Cut Toggle */
 .lj-cut-toggle {
     font-family: var(--font-sans);
     font-size: 10px;
-    color: rgba(232, 224, 208, 0.5);
+    color: var(--lj-text-secondary);
     text-decoration: none;
     margin-left: auto;
     cursor: pointer;
     flex-shrink: 0;
     transition: color 0.15s;
+    opacity: 0.5;
 }
 
 .lj-entry-header:hover .lj-cut-toggle {
-    color: rgba(232, 224, 208, 0.8);
+    opacity: 1;
 }
 
 .lj-entry.collapsed .lj-entry-body {
     display: none;
 }
 
-.lj-entry.collapsed .lj-comment-bar {
+.lj-entry.collapsed .lj-comment-bar,
+.lj-entry.collapsed .lj-comment-thread {
     display: none;
 }
 
@@ -857,6 +1018,9 @@ canvas { max-width: 100%; }
     .awards-grid { grid-template-columns: 1fr; }
     .kpi-grid { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
     .cast-grid { grid-template-columns: 1fr; }
+    .epic-records-grid { grid-template-columns: repeat(2, 1fr); }
+    .kpi-grid--4col { grid-template-columns: repeat(2, 1fr); }
+    .callout-row { grid-template-columns: 1fr; }
     .lj-main { padding: 12px; }
 }
 

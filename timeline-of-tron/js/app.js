@@ -59,6 +59,30 @@ function sortTable(colIndex) {
 }
 
 // =============================
+// EPIC RECORDS CARDS
+// =============================
+function populateEpicRecords() {
+    const grid = document.getElementById('epicRecordsGrid');
+    if (!grid) {
+        console.warn('#epicRecordsGrid not found');
+        return;
+    }
+    grid.innerHTML = '';
+    EPIC_NUMBERS.forEach(function(rec, i) {
+        var color = EPIC_NUMBERS_COLORS[i] || '#5c3d1a';
+        var unitHtml = rec.unit ? '<span class="epic-record-unit">' + rec.unit + '</span>' : '';
+        var card = document.createElement('div');
+        card.className = 'epic-record-card';
+        card.style.borderLeftColor = color;
+        card.innerHTML =
+            '<div class="epic-record-value" style="color:' + color + '">' + rec.value + unitHtml + '</div>' +
+            '<div class="epic-record-stat">' + rec.stat + '</div>' +
+            '<div class="epic-record-context">' + rec.context + '</div>';
+        grid.appendChild(card);
+    });
+}
+
+// =============================
 // SECTION FILTER
 // =============================
 function showSection(section, clickedBtn) {
@@ -92,10 +116,71 @@ function destroyAllCharts() {
 }
 
 // =============================
+// LJ COMMENTS
+// =============================
+function buildCommentSections() {
+    document.querySelectorAll('.lj-entry[data-comments]').forEach(entry => {
+        const key = entry.dataset.comments;
+        const comments = SECTION_COMMENTS[key];
+        if (!comments || !comments.length) return;
+
+        const body = entry.querySelector('.lj-entry-body');
+        if (!body) return;
+
+        // Build the comment bar (like real LJ: "N Readers Responded - Share Your Thoughts HERE")
+        const bar = document.createElement('div');
+        bar.className = 'lj-comment-bar';
+        bar.innerHTML = '(<a href="#" class="lj-comment-toggle">' +
+            comments.length + ' Readers Responded</a>' +
+            ' - <a href="#" class="lj-comment-toggle">Share Your Thoughts HERE</a>)';
+        body.appendChild(bar);
+
+        // Build the comment thread (hidden by default)
+        const thread = document.createElement('div');
+        thread.className = 'lj-comment-thread';
+        thread.style.display = 'none';
+
+        comments.forEach(c => {
+            const comment = document.createElement('div');
+            comment.className = 'lj-comment' + (c.isOP ? ' lj-comment--op' : '');
+            comment.innerHTML =
+                '<div class="lj-comment-header">' +
+                    '<span class="lj-comment-author' + (c.isOP ? ' lj-comment-author--op' : '') + '">' +
+                        (c.isOP ? '<span class="lj-comment-userpic">JT</span> ' : '') +
+                        c.name +
+                    '</span>' +
+                    '<span class="lj-comment-anon">' + (c.isOP ? '' : '(Anonymous):') + '</span> ' +
+                    '<span class="lj-comment-date">' + c.date + ' (UTC)</span>' +
+                '</div>' +
+                '<div class="lj-comment-body">' + c.text + '</div>' +
+                '<div class="lj-comment-actions">' +
+                    '(<a href="#" onclick="return false">Reply</a>' +
+                    (c.isOP ? '' : ' - <a href="#" onclick="return false">Thread</a>') +
+                    ')' +
+                '</div>';
+            thread.appendChild(comment);
+        });
+
+        body.appendChild(thread);
+
+        // Wire up the toggle
+        bar.querySelectorAll('.lj-comment-toggle').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const isVisible = thread.style.display !== 'none';
+                thread.style.display = isVisible ? 'none' : 'block';
+            });
+        });
+    });
+}
+
+// =============================
 // INITIALIZATION
 // =============================
 document.addEventListener('DOMContentLoaded', function() {
     populateTravelTable();
+    populateEpicRecords();
+    buildCommentSections();
 
     if (typeof Chart === 'undefined') {
         console.error('Chart.js not loaded. Charts will not render.');
@@ -118,6 +203,21 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('#travelTable th').forEach((th, i) => {
         th.addEventListener('click', function() {
             sortTable(i);
+        });
+    });
+
+    // Bind lj-cut collapse/expand toggles
+    document.querySelectorAll('.lj-cut-toggle').forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const entry = this.closest('.lj-entry');
+            if (entry.classList.contains('collapsed')) {
+                entry.classList.remove('collapsed');
+                this.textContent = '(collapse)';
+            } else {
+                entry.classList.add('collapsed');
+                this.textContent = '(expand — lj-cut)';
+            }
         });
     });
 });

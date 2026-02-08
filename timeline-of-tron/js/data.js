@@ -41,12 +41,12 @@ const SPORTS_RECORDS = [
 ];
 
 const EPIC_NUMBERS = [
-    { label: "Bowling Games\n(1 day, 2007)", value: 27 },
-    { label: "Ping Pong Rounds\n(1 match, 2021)", value: 218 },
-    { label: "Cornholios\n(2016 season)", value: 38 },
-    { label: "Blue Claws\n(1 trip)", value: 30 },
-    { label: "Shrimp (lbs)\n(1 event, 2021)", value: 8.6 },
-    { label: "Crab Meat (lbs)\n(1 event, 2021)", value: 7.3 }
+    { stat: "Bowling Games", value: 27, unit: "", context: "1 day \u00b7 2007" },
+    { stat: "Ping Pong Rounds", value: 218, unit: "", context: "1 match \u00b7 2021" },
+    { stat: "Cornholios", value: 38, unit: "", context: "2016 season" },
+    { stat: "Blue Claws Games", value: 30, unit: "", context: "1 trip" },
+    { stat: "Shrimp Consumed", value: 8.6, unit: "lbs", context: "1 event \u00b7 2021" },
+    { stat: "Crab Meat", value: 7.3, unit: "lbs", context: "1 event \u00b7 2021" }
 ];
 
 const EPIC_NUMBERS_COLORS = ['#8b1a1a', '#1a4a8b', '#6b4a8b', '#4a6741', '#b8860b', '#c9a84c'];
@@ -147,6 +147,80 @@ function computeAwardsDynastyData() {
     });
     return { years: years, janet: janet, mariah: mariah, other: other };
 }
+
+// =============================
+// FAKE LJ COMMENTS (per section)
+// =============================
+const SECTION_COMMENTS = {
+    stats: [
+        { name: "VW", date: "1/07/26 08:12 pm", text: "218 rounds of ping pong in one match?? I was THERE and I still don't believe it." },
+        { name: "wwecoowner", date: "1/07/26 08:14 pm", text: "the notebook doesn't lie, ValPal.", isOP: true },
+        { name: "Dan Spengeman", date: "1/07/26 08:30 pm", text: "8.6 lbs of shrimp is not a stat. it's a cry for help." },
+        { name: "wwecoowner", date: "1/07/26 08:31 pm", text: "it's called dedication. look it up.", isOP: true },
+        { name: "Lauren W.", date: "1/07/26 09:01 pm", text: "Zero regrets is WILD and also clearly wrong" },
+        { name: "RL", date: "1/07/26 09:15 pm", text: "93.9% table tennis win rate but conveniently leaves out who he ducked" },
+        { name: "wwecoowner", date: "1/07/26 09:16 pm", text: "i ducked nobody. the record speaks for itself.", isOP: true }
+    ],
+    greatest: [
+        { name: "Rupert", date: "1/07/26 08:45 pm", text: "The Famous Faces 45% win rate is generous. I've watched you lose." },
+        { name: "wwecoowner", date: "1/07/26 08:47 pm", text: "we don't talk about famous faces.", isOP: true },
+        { name: "Diana", date: "1/07/26 09:02 pm", text: "cornholios is not a real word and I will die on this hill" }
+    ],
+    career: [
+        { name: "Ma", date: "1/07/26 07:30 pm", text: "So proud of you, John. Executive Director!!! Love, Ma" },
+        { name: "wwecoowner", date: "1/07/26 07:32 pm", text: "thanks Ma. you know you don't have to sign your comments right?", isOP: true },
+        { name: "The Pops", date: "1/07/26 07:45 pm", text: "Intern to ED in 15 years. Not bad, kid. Not bad at all." },
+        { name: "Michael", date: "1/07/26 08:00 pm", text: "congrats bro. Julian says hi. Lawrence says nothing because he's 4." }
+    ],
+    wwe: [
+        { name: "RL", date: "1/07/26 08:00 pm", text: "17 events together and you still haven't bought me a beer" },
+        { name: "wwecoowner", date: "1/07/26 08:02 pm", text: "18 if you count the parking lot tailgate. and you owe ME a beer.", isOP: true },
+        { name: "VW", date: "1/07/26 08:20 pm", text: "25 consecutive Survivor Series years is actually insane. do you have a problem?" },
+        { name: "wwecoowner", date: "1/07/26 08:21 pm", text: "it's called a STREAK, Valerie. and yes probably.", isOP: true },
+        { name: "Dan Spengeman", date: "1/07/26 09:00 pm", text: "you shook the Undertaker's hand and your entire personality became this" },
+        { name: "JesseKay Paz", date: "1/07/26 09:30 pm", text: "91+ events and counting!! When's 100?? I want an invite!!" }
+    ],
+    travel: [
+        { name: "VW", date: "1/07/26 08:15 pm", text: "JAPAN 2026!!! finally!!!" },
+        { name: "wwecoowner", date: "1/07/26 08:16 pm", text: "booked and locked. the suitcase is already packed.", isOP: true },
+        { name: "Ryan", date: "1/07/26 08:45 pm", text: "1,000 photos in Utah ALONE? bro they have deserts not content" },
+        { name: "wwecoowner", date: "1/07/26 08:46 pm", text: "you clearly haven't seen Arches at sunset.", isOP: true },
+        { name: "Lauren W.", date: "1/07/26 09:10 pm", text: "\"the best, the longest, and the greatest\" is a lot of confidence for someone who got a kidney stone that year" }
+    ],
+    cast: [
+        { name: "VW", date: "1/07/26 07:00 pm", text: "\"appears across virtually every Timeline\" — yeah because someone keeps DOCUMENTING everything" },
+        { name: "wwecoowner", date: "1/07/26 07:02 pm", text: "you're welcome for the immortality.", isOP: true },
+        { name: "Dan Spengeman", date: "1/07/26 07:15 pm", text: "\"Comedian of the Year\" is my greatest achievement and I have a real job" },
+        { name: "Kevin", date: "1/07/26 07:30 pm", text: "our entire relationship documented from an outside perspective is either sweet or a federal offense" },
+        { name: "Leah", date: "1/07/26 07:31 pm", text: "both. it's both." },
+        { name: "RL", date: "1/07/26 08:00 pm", text: "\"The Wrestling Co-Pilot\" is going on my gravestone" }
+    ],
+    awards: [
+        { name: "Dan Spengeman", date: "1/07/26 09:00 pm", text: "The Pops won Comedian of the Year ONE TIME and you gave the dynasty to ME? respect." },
+        { name: "The Pops", date: "1/07/26 09:05 pm", text: "I was robbed." },
+        { name: "wwecoowner", date: "1/07/26 09:06 pm", text: "the committee has spoken, Darrell.", isOP: true },
+        { name: "Lauren W.", date: "1/07/26 09:20 pm", text: "2-time winner here. just saying." },
+        { name: "VW", date: "1/07/26 09:30 pm", text: "Janet Jackson winning 5 times tells you everything about John's personality" }
+    ],
+    comebacks: [
+        { name: "Ma", date: "1/07/26 07:00 pm", text: "The surgery section still makes me cry. Love you, John." },
+        { name: "wwecoowner", date: "1/07/26 07:02 pm", text: "Ma, I literally woke up and booked a Mediterranean cruise. I'm fine.", isOP: true },
+        { name: "VW", date: "1/07/26 07:15 pm", text: "\"that's a movie pitch\" is CORRECT and I want producer credit" },
+        { name: "RL", date: "1/07/26 07:30 pm", text: "from spinal surgery to engagement ring in 4 months. absolute psychopath behavior." },
+        { name: "Juan", date: "1/07/26 08:00 pm", text: "kidney stones AND family loss in the same year and you went to FOUR COUNTRIES? I can't even go to the gym after a bad Monday" }
+    ],
+    ecd: [
+        { name: "Diana", date: "1/07/26 08:00 pm", text: "57 people at one dodgeball event is honestly alarming" },
+        { name: "wwecoowner", date: "1/07/26 08:02 pm", text: "it's called COMMUNITY, Diana.", isOP: true },
+        { name: "Ryan", date: "1/07/26 08:15 pm", text: "the Brown brothers were definitely on something at the last one" },
+        { name: "Lauren W.", date: "1/07/26 08:30 pm", text: "\"it deserves its own documentary\" — I wasn't kidding" }
+    ],
+    traditions: [
+        { name: "VW", date: "1/07/26 09:00 pm", text: "the fact that \"January Publishing Ritual\" is a tradition tells you everything" },
+        { name: "Dan Spengeman", date: "1/07/26 09:15 pm", text: "Famous Faces having only 10 years tracked is because he keeps losing and wants to forget" },
+        { name: "wwecoowner", date: "1/07/26 09:16 pm", text: "the record is the record. next question.", isOP: true }
+    ]
+};
 
 // Chart color palettes
 const RETRO_COLORS = ['#8b1a1a', '#4a6741', '#1a4a8b', '#6b4a8b', '#b8860b', '#c9a84c', '#5c3d1a', '#8b5e2b'];
