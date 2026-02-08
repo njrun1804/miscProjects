@@ -38,11 +38,100 @@
     height: 100%;
 }
 
-/* Search box above constellation */
-.constellation-search {
-    padding: 12px 24px;
+/* ─── Featured People Cards ──────────────────────────────────── */
+
+.featured-mount {
     max-width: 1100px;
     margin: 0 auto;
+    padding: 20px 24px 8px;
+}
+
+.featured-header {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 12px;
+}
+
+.featured-row {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--lj-border) transparent;
+}
+
+.featured-row::-webkit-scrollbar { height: 4px; }
+.featured-row::-webkit-scrollbar-track { background: transparent; }
+.featured-row::-webkit-scrollbar-thumb { background: var(--lj-border); border-radius: 2px; }
+
+.featured-card {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    padding: 10px 14px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    min-width: 120px;
+    text-align: left;
+    color: var(--room-text);
+}
+
+.featured-card:hover {
+    border-color: var(--card-accent, var(--room-accent));
+    background: rgba(74, 144, 217, 0.08);
+}
+
+.featured-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
+.featured-name {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--room-accent);
+    font-weight: 600;
+}
+
+.featured-relation {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.featured-years {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    opacity: 0.7;
+}
+
+.featured-depth {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--room-accent);
+    opacity: 0.6;
+}
+
+/* ─── Search ─────────────────────────────────────────────────── */
+
+.constellation-search {
+    padding: 12px 24px 4px;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .constellation-search input {
@@ -53,12 +142,157 @@
     border: 1px solid var(--lj-border);
     border-radius: var(--radius);
     color: var(--room-text);
-    width: 260px;
+    width: 300px;
 }
 
 .constellation-search input::placeholder { color: var(--lj-text-secondary); }
 
-/* Person sidebar */
+.constellation-search input:focus {
+    outline: none;
+    border-color: var(--room-accent);
+}
+
+/* Search autocomplete dropdown */
+.search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 24px;
+    width: 300px;
+    max-height: 320px;
+    overflow-y: auto;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-top: none;
+    border-radius: 0 0 var(--radius) var(--radius);
+    z-index: 40;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.search-result {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+    padding: 8px 14px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid rgba(30, 58, 95, 0.3);
+    color: var(--room-text);
+    cursor: pointer;
+    text-align: left;
+    font-family: var(--font-sans);
+    font-size: 13px;
+}
+
+.search-result:hover,
+.search-result.active {
+    background: rgba(74, 144, 217, 0.12);
+}
+
+.search-result-name {
+    color: var(--room-text);
+}
+
+.search-result-name mark {
+    background: rgba(74, 144, 217, 0.3);
+    color: var(--room-accent);
+    border-radius: 1px;
+    padding: 0 1px;
+}
+
+.search-result-meta {
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.search-no-results {
+    padding: 12px 14px;
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+}
+
+/* ─── Filter Pills + Era Legend ───────────────────────────────── */
+
+.filters-mount {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 4px 24px 0;
+}
+
+.filter-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.filter-pill {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    padding: 4px 12px;
+    background: transparent;
+    border: 1px solid var(--lj-border);
+    border-radius: 14px;
+    color: var(--lj-text-secondary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-pill:hover {
+    border-color: var(--room-accent);
+    color: var(--room-text);
+}
+
+.filter-pill.active {
+    background: rgba(74, 144, 217, 0.15);
+    border-color: var(--room-accent);
+    color: var(--room-accent);
+}
+
+.filter-count {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    opacity: 0.6;
+}
+
+.era-legend {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-sans);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+}
+
+.legend-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* ─── Stats Bar ──────────────────────────────────────────────── */
+
+.stats-bar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 8px 24px 4px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    letter-spacing: 0.5px;
+}
+
+/* ─── Person sidebar ─────────────────────────────────────────── */
+
 .constellation-sidebar {
     position: fixed;
     right: -400px;
@@ -131,12 +365,19 @@
     font-size: 11px;
     padding: 3px 10px;
     background: rgba(74, 144, 217, 0.15);
+    border: 1px solid rgba(74, 144, 217, 0.2);
     border-radius: 12px;
     color: var(--room-accent);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.connection-tag:hover {
+    background: rgba(74, 144, 217, 0.3);
 }
 
 .person-milestones {
-    margin-top: 12px;
+    margin-top: 4px;
 }
 
 .person-milestone-item {
@@ -144,20 +385,57 @@
     padding: 6px 0;
     border-bottom: 1px solid rgba(30, 58, 95, 0.5);
     color: var(--room-text);
+    line-height: 1.4;
 }
 
 .person-milestone-year {
     font-family: var(--font-mono);
     font-size: 11px;
-    color: var(--lj-text-secondary);
+    color: var(--room-accent);
+    margin-right: 6px;
 }
 
-.person-quotes blockquote {
-    border-left-color: var(--room-accent);
-    color: var(--room-text);
+.sidebar-empty {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+}
+
+/* Highlights section */
+.person-highlight-item {
     font-size: 13px;
-    padding: 8px 14px;
-    margin-top: 8px;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(30, 58, 95, 0.3);
+    color: var(--room-text);
+    line-height: 1.4;
+}
+
+/* Co-occurrence shared moments */
+.person-co-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(30, 58, 95, 0.3);
+}
+
+.person-co-year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--room-accent);
+    margin-right: 6px;
+}
+
+.person-co-with {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-left: 4px;
+}
+
+.person-co-context {
+    display: block;
+    font-size: 12px;
+    color: var(--room-text);
+    margin-top: 3px;
+    line-height: 1.4;
 }
 
 /* D3 tooltip */
@@ -173,6 +451,7 @@
     pointer-events: none;
     z-index: 30;
     white-space: nowrap;
+    line-height: 1.5;
 }
 
 /* Inner circle timeline section */
@@ -204,7 +483,16 @@
     padding: 0 24px;
 }
 
-/* Responsive */
+/* Load error */
+.load-error {
+    text-align: center;
+    color: var(--lj-text-secondary);
+    padding: 40px;
+    font-style: italic;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+
 @media (max-width: 768px) {
     .constellation-sidebar {
         width: 100%;
@@ -212,4 +500,7 @@
     }
     .constellation-sky { height: 60vh; min-height: 350px; }
     .constellation-search input { width: 100%; }
+    .search-dropdown { width: calc(100% - 48px); }
+    .featured-card { min-width: 100px; }
+    .featured-row { gap: 8px; }
 }

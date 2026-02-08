@@ -14,10 +14,19 @@
     <div id="lj-header-mount"></div>
 
     <main class="constellation-container">
+        <!-- Featured People Cards -->
+        <div id="featuredMount" class="featured-mount"></div>
+
         <!-- Search -->
         <div class="constellation-search">
-            <input type="search" placeholder="Search for a person..." aria-label="Search people">
+            <input type="search" placeholder="Search for a person..." aria-label="Search people" autocomplete="off">
         </div>
+
+        <!-- Filters + Legend -->
+        <div id="filtersMount" class="filters-mount"></div>
+
+        <!-- Stats -->
+        <div id="statsMount" class="stats-bar"></div>
 
         <!-- D3 force simulation renders here -->
         <div class="constellation-sky" id="constellationMount"></div>
@@ -30,9 +39,10 @@
             <p class="person-highlight"></p>
             <div class="person-section-label">Connections</div>
             <div class="person-connections"></div>
-            <div class="person-section-label">Key Milestones</div>
+            <div class="person-section-label">Key Moments</div>
             <div class="person-milestones"></div>
-            <div class="person-quotes"></div>
+            <div class="person-highlights"></div>
+            <div class="person-co-occurrences"></div>
         </aside>
     </main>
 
@@ -60,7 +70,7 @@
         initNav({
             room: 'constellation',
             mood: 'contemplative',
-            music: 'Coldplay \u2014 "The Scientist"',
+            music: 'Coldplay — "The Scientist"',
             subtitle: 'The People'
         });
     </script>
