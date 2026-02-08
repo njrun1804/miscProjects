@@ -469,6 +469,16 @@ blockquote {
     opacity: 0.6;
 }
 
+/* Load Error */
+.load-error {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--lj-text-secondary, #6b5b47);
+    text-align: center;
+    padding: 2rem;
+    opacity: 0.7;
+}
+
 /* Retro Hit Counter */
 .lj-hit-counter {
     display: inline-flex;
@@ -543,10 +553,6 @@ blockquote {
 /* =============================
    11B. SEARCH RESULTS
    ============================= */
-.room-nav-search {
-    position: relative;
-}
-
 .search-results {
     display: none;
     position: absolute;

@@ -1,0 +1,5 @@
+.DS_Store
+db/.fuse_hidden*
+db/tron.db-wal
+db/tron.db-shm
+*.pyc

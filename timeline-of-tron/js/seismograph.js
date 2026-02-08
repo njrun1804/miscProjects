@@ -169,4 +169,4 @@ export async function initSeismograph() {
 }
 
 // Auto-init when module loads
-initSeismograph();
+initSeismograph().catch(() => {});

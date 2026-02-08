@@ -211,4 +211,9 @@ function renderKeywordCloud(keywords) {
 }
 
 // Auto-init
-initVault().then(() => initWormholes('vault'));
+initVault()
+    .then(() => initWormholes('vault'))
+    .catch(() => {
+        const el = document.querySelector('.vault-quote-wall');
+        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
+    });

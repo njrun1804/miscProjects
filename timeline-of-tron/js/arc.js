@@ -263,4 +263,9 @@ function initScrollObserver() {
 }
 
 // Auto-init
-initArc().then(() => initWormholes('arc'));
+initArc()
+    .then(() => initWormholes('arc'))
+    .catch(() => {
+        const el = document.querySelector('.arc-stages');
+        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
+    });

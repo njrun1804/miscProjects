@@ -175,4 +175,9 @@ function renderRecordWall(funFacts) {
 }
 
 // Auto-init
-initRecords().then(() => initWormholes('records'));
+initRecords()
+    .then(() => initWormholes('records'))
+    .catch(() => {
+        const el = document.querySelector('.obsession-grid');
+        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
+    });

@@ -56,13 +56,18 @@ function renderTrophyCase(awards, categories) {
 
     const catNames = Object.keys(grouped).sort();
 
+    container.addEventListener('click', (e) => {
+        const header = e.target.closest('.trophy-category__header');
+        if (header) header.parentElement.classList.toggle('open');
+    });
+
     container.innerHTML = catNames.map(cat => {
         const items = grouped[cat];
         const displayName = cat.replace(/_/g, ' ');
 
         return `
             <div class="trophy-category">
-                <div class="trophy-category__header" onclick="this.parentElement.classList.toggle('open')">
+                <div class="trophy-category__header">
                     <div>
                         <span class="trophy-category__name">${displayName}</span>
                         <span class="trophy-category__count">${items.length} award${items.length > 1 ? 's' : ''}</span>
@@ -192,4 +197,9 @@ function renderTraditions(traditions) {
 }
 
 // Auto-init
-initDynasty().then(() => initWormholes('dynasty'));
+initDynasty()
+    .then(() => initWormholes('dynasty'))
+    .catch(() => {
+        const el = document.querySelector('.staircase-container');
+        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
+    });

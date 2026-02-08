@@ -173,4 +173,9 @@ function renderFrequency(frequency) {
 }
 
 // Auto-init
-initAtlas().then(() => initWormholes('atlas'));
+initAtlas()
+    .then(() => initWormholes('atlas'))
+    .catch(() => {
+        const el = document.getElementById('atlasMap');
+        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
+    });

@@ -11,7 +11,6 @@ export async function initComeback() {
     ]);
 
     const comebacks = data.comeback_narrative;
-    const medical = data.medical_events;
 
     if (!comebacks || !comebacks.length) return;
 
@@ -287,4 +286,9 @@ function categorizeRecovery(c) {
 }
 
 // Auto-init
-initComeback().then(() => initWormholes('comeback'));
+initComeback()
+    .then(() => initWormholes('comeback'))
+    .catch(() => {
+        const el = document.querySelector('.comeback-sankey');
+        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
+    });

@@ -29,12 +29,11 @@ export async function initConstellation() {
     const constellation = data.relationship_constellation;
     const profiles = data.people_profiles;
     const quotes = data.quotes;
-    const milestones = data.milestones_enriched;
 
     if (!constellation || !constellation.nodes) return;
 
     renderForceGraph(constellation, profiles, quotes);
-    renderInnerCircleChart(milestones);
+    renderInnerCircleChart(data.milestones_enriched);
 }
 
 function renderForceGraph(constellation, profiles, quotes) {
@@ -333,4 +332,9 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Auto-init
-initConstellation().then(() => initWormholes('constellation'));
+initConstellation()
+    .then(() => initWormholes('constellation'))
+    .catch(() => {
+        const el = document.getElementById('constellationMount');
+        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
+    });
