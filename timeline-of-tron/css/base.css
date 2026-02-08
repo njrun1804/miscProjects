@@ -513,22 +513,104 @@ blockquote {
 .wormhole-link {
     display: inline-flex;
     align-items: center;
-    gap: 4px;
+    gap: 6px;
     font-family: var(--font-sans);
-    font-size: 11px;
+    font-size: 12px;
     color: var(--room-accent);
     text-decoration: none;
-    padding: 2px 6px;
+    padding: 6px 12px;
+    margin-top: 12px;
+    border: 1px solid rgba(201, 168, 76, 0.25);
     border-radius: var(--radius);
-    transition: background 0.15s;
+    transition: background 0.2s, border-color 0.2s;
 }
 
 .wormhole-link:hover {
-    background: rgba(201, 168, 76, 0.1);
+    background: rgba(201, 168, 76, 0.12);
+    border-color: var(--room-accent);
     text-decoration: none;
 }
 
-.wormhole-icon { font-size: 12px; }
+.wormhole-icon { font-size: 13px; }
+.wormhole-label { opacity: 0.85; }
+.wormhole-dest {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    opacity: 0.6;
+    margin-left: 4px;
+}
+
+/* =============================
+   11B. SEARCH RESULTS
+   ============================= */
+.room-nav-search {
+    position: relative;
+}
+
+.search-results {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 320px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: var(--room-panel, var(--lj-panel));
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    border-radius: var(--radius);
+    box-shadow: 0 4px 16px var(--lj-shadow, rgba(0,0,0,0.15));
+    z-index: 1000;
+    margin-top: 4px;
+}
+
+.search-result {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.08);
+    transition: background 0.15s;
+}
+
+.search-result:hover {
+    background: rgba(201, 168, 76, 0.08);
+    text-decoration: none;
+}
+
+.search-result__room {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--room-accent, #c9a84c);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 2px;
+}
+
+.search-result__title {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--room-text, var(--lj-text));
+    line-height: 1.4;
+}
+
+.search-result__context {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--room-text, var(--lj-text));
+    opacity: 0.5;
+    margin-top: 2px;
+}
+
+.search-no-results {
+    padding: 12px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--room-text, var(--lj-text));
+    opacity: 0.5;
+    text-align: center;
+}
 
 /* =============================
    12. RESPONSIVE

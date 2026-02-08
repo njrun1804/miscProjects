@@ -4,23 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Atlas — Timeline of Tron</title>
+    <meta name="description" content="34 trips. 20+ countries. 5 continents. An interactive map colored by sentiment with recovery trip tracking.">
+    <meta property="og:title" content="The Atlas — Timeline of Tron">
+    <meta property="og:description" content="34 trips. 20+ countries. 5 continents. Recovery by travel.">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="lib/leaflet.css">
     <link rel="stylesheet" href="css/atlas.css">
 </head>
 <body class="room-atlas">
     <div id="lj-header-mount"></div>
 
-    <main class="room-main" style="text-align:center; padding-top:4rem;">
-        <h1>The Atlas</h1>
-        <p style="font-style:italic; margin-top:1rem; color:var(--lj-text-secondary);">34 trips. 20+ countries. Recovery by travel. Coming soon.</p>
-        <p style="margin-top:2rem;"><a href="index.html">&larr; Back to Lobby</a></p>
+    <main class="room-main">
+        <section class="atlas-hero">
+            <h1 class="room-title">The Atlas</h1>
+            <p class="room-subtitle">34 trips. 20+ countries. 5 continents. Recovery by travel.</p>
+        </section>
+
+        <!-- Stats Bar -->
+        <div class="atlas-stats-bar"></div>
+
+        <!-- Map Controls -->
+        <div class="atlas-controls">
+            <button id="recoveryToggle" class="atlas-recovery-toggle">
+                Recovery Trips
+            </button>
+            <div class="atlas-scrubber">
+                <label for="yearSlider">Timeline:</label>
+                <input type="range" id="yearSlider" min="2004" max="2026" value="2026">
+                <span id="yearDisplay">2004–2026</span>
+            </div>
+        </div>
+
+        <!-- Leaflet Map -->
+        <div id="atlasMap" class="atlas-map"></div>
+
+        <!-- Callout -->
+        <div class="atlas-callout">
+            <p><em>"The travel radius expands with each comeback. Domestic to international. Weekend to weeks. Solo to shared."</em></p>
+        </div>
+
+        <!-- Frequency Grid -->
+        <section class="atlas-frequency">
+            <h2 class="section-heading">Repeat Destinations</h2>
+            <div class="atlas-frequency-grid"></div>
+        </section>
     </main>
 
     <div id="lj-footer-mount"></div>
 
+    <script src="lib/leaflet.js"></script>
+    <script src="lib/chart.js"></script>
+    <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        initNav({ room: 'atlas', mood: 'wandering', music: 'Fleetwood Mac \u2014 "Everywhere"', subtitle: 'The World Tour' });
+        import './js/search.js';
+        initNav({ room: 'atlas', mood: 'wandering', music: 'Fleetwood Mac — "Everywhere"', subtitle: 'The World Tour' });
     </script>
+    <script type="module" src="js/atlas.js"></script>
 </body>
 </html>

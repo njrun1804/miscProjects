@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Record Book — Timeline of Tron</title>
     <meta name="description" content="The obsessive precision of measurement as a character trait. 60 records, to the decimal.">
+    <meta property="og:title" content="The Record Book — Timeline of Tron">
+    <meta property="og:description" content="The obsessive precision of measurement as a character trait. 60 records, to the decimal.">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/records.css">
 </head>
@@ -73,8 +75,10 @@
     <div id="lj-footer-mount"></div>
 
     <script src="lib/chart.js"></script>
+    <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
+        import './js/search.js';
         import './js/records.js';
 
         initNav({

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Timeline of Tron</title>
     <meta name="description" content="22 years. 227 milestones. One obsessively documented life. A data autobiography told through seven rooms.">
+    <meta property="og:title" content="The Timeline of Tron">
+    <meta property="og:description" content="22 years. 227 milestones. One obsessively documented life.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/lobby.css">
 </head>
@@ -82,6 +85,8 @@
     <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
+        import { checkRoom0Reveal } from './js/room0.js';
+        import './js/search.js';
         import './js/seismograph.js';
 
         initNav({
@@ -90,6 +95,9 @@
             music: 'Janet Jackson \u2014 "All For You"',
             subtitle: 'To Tokyo, 2026.'
         });
+
+        // Check if all 5 clues found — reveal Room 0 link
+        checkRoom0Reveal();
     </script>
 </body>
 </html>

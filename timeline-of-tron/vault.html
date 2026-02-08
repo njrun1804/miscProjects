@@ -4,23 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Vault — Timeline of Tron</title>
+    <meta name="description" content="79 quotes. 22 years of evolving voice. The words that mattered, filtered by emotion.">
+    <meta property="og:title" content="The Vault — Timeline of Tron">
+    <meta property="og:description" content="79 quotes. 22 years of evolving voice. The words that mattered.">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vault.css">
 </head>
 <body class="room-vault">
     <div id="lj-header-mount"></div>
 
-    <main class="room-main" style="text-align:center; padding-top:4rem;">
-        <h1>The Vault</h1>
-        <p style="font-style:italic; margin-top:1rem; color:var(--lj-text-secondary);">79 quotes. 22 years of evolving voice. Coming soon.</p>
-        <p style="margin-top:2rem;"><a href="index.html">&larr; Back to Lobby</a></p>
+    <main class="room-main">
+        <section class="vault-hero">
+            <h1 class="room-title">The Vault</h1>
+            <p class="room-subtitle">79 quotes. 22 years of evolving voice. The words that mattered.</p>
+        </section>
+
+        <!-- Emotion Filters -->
+        <div class="vault-filters"></div>
+        <div class="vault-filter-count"></div>
+
+        <!-- Quote Wall -->
+        <div class="vault-quote-wall"></div>
+
+        <!-- Voice Timeline Annotation -->
+        <div class="vault-callout">
+            <p><em>"In 2011, the sentences got shorter but the words got bigger. Something changed."</em></p>
+        </div>
+
+        <!-- Voice Timeline Chart -->
+        <section class="vault-voice-section">
+            <h2 class="section-heading">The Evolving Voice</h2>
+            <div class="vault-chart-container">
+                <canvas id="voiceChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Keyword River -->
+        <section class="vault-keyword-section">
+            <h2 class="section-heading">Keyword River</h2>
+            <p class="section-subtitle">Top keywords by TF-IDF score, flowing through the years</p>
+            <div class="vault-keyword-river"></div>
+        </section>
     </main>
 
     <div id="lj-footer-mount"></div>
 
+    <script src="lib/chart.js"></script>
+    <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        initNav({ room: 'vault', mood: 'intimate', music: 'Bon Iver \u2014 "Skinny Love"', subtitle: 'The Words' });
+        import './js/search.js';
+        initNav({ room: 'vault', mood: 'intimate', music: 'Bon Iver — "Skinny Love"', subtitle: 'The Words' });
     </script>
+    <script type="module" src="js/vault.js"></script>
 </body>
 </html>

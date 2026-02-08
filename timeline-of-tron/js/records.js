@@ -2,6 +2,7 @@
 // Obsession Index, Sports Gauges, Streak Tracker, Record Wall
 
 import { loadMultiple } from './data-loader.js';
+import { initWormholes } from './wormholes.js';
 
 export async function initRecords() {
     const data = await loadMultiple([
@@ -174,4 +175,4 @@ function renderRecordWall(funFacts) {
 }
 
 // Auto-init
-initRecords();
+initRecords().then(() => initWormholes('records'));

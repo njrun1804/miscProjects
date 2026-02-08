@@ -2,6 +2,7 @@
 // D3 Sankey diagram + Recovery Clock + detail panels
 
 import { loadMultiple } from './data-loader.js';
+import { initWormholes } from './wormholes.js';
 
 export async function initComeback() {
     const data = await loadMultiple([
@@ -286,4 +287,4 @@ function categorizeRecovery(c) {
 }
 
 // Auto-init
-initComeback();
+initComeback().then(() => initWormholes('comeback'));

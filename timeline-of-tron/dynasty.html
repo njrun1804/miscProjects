@@ -4,23 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dynasty — Timeline of Tron</title>
+    <meta name="description" content="Career. Awards. Dodgeball. What was built over 22 years of obsessive documentation.">
+    <meta property="og:title" content="The Dynasty — Timeline of Tron">
+    <meta property="og:description" content="Career. Awards. Dodgeball. What was built.">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/dynasty.css">
 </head>
 <body class="room-dynasty">
     <div id="lj-header-mount"></div>
 
-    <main class="room-main" style="text-align:center; padding-top:4rem;">
-        <h1>The Dynasty</h1>
-        <p style="font-style:italic; margin-top:1rem; color:var(--lj-text-secondary);">Career. Awards. Dodgeball. What was built. Coming soon.</p>
-        <p style="margin-top:2rem;"><a href="index.html">&larr; Back to Lobby</a></p>
+    <main class="room-main">
+        <section class="dynasty-hero">
+            <h1 class="room-title">The Dynasty</h1>
+            <p class="room-subtitle">Career. Awards. Dodgeball. What was built.</p>
+        </section>
+
+        <!-- Career Staircase -->
+        <section class="dynasty-section">
+            <h2 class="section-heading">The Staircase</h2>
+            <p class="section-subtitle">Cashier to Executive Director — 15 years of climb</p>
+            <div class="staircase-container"></div>
+            <div class="dynasty-callout">
+                <p><em>"Seven years learning. Then the climb began."</em></p>
+            </div>
+        </section>
+
+        <!-- Trophy Case -->
+        <section class="dynasty-section">
+            <h2 class="section-heading">Trophy Case</h2>
+            <p class="section-subtitle">51 awards across 10 categories — click to expand</p>
+            <div class="trophy-categories"></div>
+        </section>
+
+        <!-- ECD Chart -->
+        <section class="dynasty-section">
+            <h2 class="section-heading">The Dodgeball Dynasty</h2>
+            <p class="section-subtitle">EastCoastDodgeball: events and growth over the years</p>
+            <div class="dynasty-chart-container">
+                <canvas id="ecdChart"></canvas>
+            </div>
+            <div class="dynasty-callout">
+                <p><em>"Some people journal. Some people run. Tron started a dodgeball tournament."</em></p>
+            </div>
+        </section>
+
+        <!-- Traditions Grid -->
+        <section class="dynasty-section">
+            <h2 class="section-heading">Traditions</h2>
+            <p class="section-subtitle">The rituals that define the calendar</p>
+            <div class="traditions-grid"></div>
+        </section>
     </main>
 
     <div id="lj-footer-mount"></div>
 
+    <script src="lib/chart.js"></script>
+    <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        initNav({ room: 'dynasty', mood: 'accomplished', music: 'Jay-Z \u2014 "Empire State of Mind"', subtitle: 'What Was Built' });
+        import './js/search.js';
+        initNav({ room: 'dynasty', mood: 'accomplished', music: 'Jay-Z — "Empire State of Mind"', subtitle: 'What Was Built' });
     </script>
+    <script type="module" src="js/dynasty.js"></script>
 </body>
 </html>

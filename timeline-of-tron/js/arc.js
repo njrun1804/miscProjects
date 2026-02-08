@@ -2,6 +2,7 @@
 // Scroll-driven narrative through 9 hero's journey stages
 
 import { loadMultiple } from './data-loader.js';
+import { initWormholes } from './wormholes.js';
 
 const STAGE_SLUGS = [
     'ordinary-world',
@@ -262,4 +263,4 @@ function initScrollObserver() {
 }
 
 // Auto-init
-initArc();
+initArc().then(() => initWormholes('arc'));

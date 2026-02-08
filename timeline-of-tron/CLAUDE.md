@@ -24,9 +24,9 @@ The site is being rebuilt per `REBUILD_IDEAS_V2.md`. The architecture is:
 | Phase 2 | Room 1: The Arc (hero's journey + sentiment scroll) | Complete |
 | Phase 3 | Room 2: The Constellation (D3 people graph) | Complete |
 | Phase 4 | Room 3: Comeback Lab + Room 4: Record Book | Complete |
-| Phase 5 | Room 5: The Atlas (map) + Room 6: The Vault (quotes) | Not started |
-| Phase 6 | Room 7: The Dynasty + cross-room wormholes | Not started |
-| Phase 7 | Room 0 (hidden) + search + polish | Not started |
+| Phase 5 | Room 5: The Atlas (map) + Room 6: The Vault (quotes) | Complete |
+| Phase 6 | Room 7: The Dynasty + cross-room wormholes | Complete |
+| Phase 7 | Room 0 (hidden) + search + polish | Complete |
 
 **Always check the phase status above before building. Update it after completing a phase.**
 

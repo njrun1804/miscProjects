@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Arc — Timeline of Tron</title>
     <meta name="description" content="The hero's journey from 2004 to now. 9 stages, 22 years, one emotional arc.">
+    <meta property="og:title" content="The Arc — Timeline of Tron">
+    <meta property="og:description" content="The hero's journey from 2004 to now. 9 stages, 22 years, one emotional arc.">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/arc.css">
 </head>
@@ -24,8 +26,10 @@
 
     <div id="lj-footer-mount"></div>
 
+    <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
+        import './js/search.js';
         import './js/arc.js';
 
         initNav({

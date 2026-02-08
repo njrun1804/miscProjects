@@ -2,6 +2,7 @@
 // D3 force graph of 124 people as stars on a dark background
 
 import { loadMultiple } from './data-loader.js';
+import { initWormholes } from './wormholes.js';
 
 const ERA_COLORS = {
     early: '#4a90d9',    // 2004-2008: blue
@@ -332,4 +333,4 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Auto-init
-initConstellation();
+initConstellation().then(() => initWormholes('constellation'));
