@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "year": 2009,
+    "show_name": "John Legend at Madison Square Garden",
+    "event_type": "concert",
+    "note": "First concert ever. India.Arie, Estelle, Buju Banton, Rick Ross, Kanye West also performed."
+  },
+  {
+    "id": 2,
+    "year": 2009,
+    "show_name": "O.A.R. at Monmouth University MAC Center",
+    "event_type": "concert",
+    "note": "Won tickets as radio caller #8"
+  },
+  {
+    "id": 3,
+    "year": 2009,
+    "show_name": "Carolina Panthers vs Giants at Giants Stadium",
+    "event_type": "sporting event",
+    "note": "Final game ever at old Giants Stadium. 78,809 attendance. 19th row center. Panthers won 41-9."
+  },
+  {
+    "id": 4,
+    "year": 2009,
+    "show_name": "U.S. Open Tennis Championships",
+    "event_type": "sporting event",
+    "note": "With Steve Pham and Juan Londono"
+  },
+  {
+    "id": 5,
+    "year": 2010,
+    "show_name": "Phillies PSA / HERO Campaign video",
+    "event_type": "appearance",
+    "note": "Featured on Route 35 and NJ Turnpike billboards"
+  },
+  {
+    "id": 6,
+    "year": 2013,
+    "show_name": "BNP Paribas Showdown at MSG",
+    "event_type": "sporting event",
+    "note": "First time at this event; attended with parents"
+  },
+  {
+    "id": 7,
+    "year": 2017,
+    "show_name": "Escape Room",
+    "event_type": "activity",
+    "note": "Completed in 45 minutes 43 seconds (Jan 15)"
+  },
+  {
+    "id": 8,
+    "year": 2018,
+    "show_name": "Weezer at Madison Square Garden",
+    "event_type": "concert",
+    "note": null
+  },
+  {
+    "id": 9,
+    "year": 2019,
+    "show_name": "Weezer at Madison Square Garden (sold out)",
+    "event_type": "concert",
+    "note": null
+  },
+  {
+    "id": 10,
+    "year": 2019,
+    "show_name": "U.S. Open: Nadal vs Medvedev final",
+    "event_type": "sporting event",
+    "note": "3rd longest in 100+ years; 70+ photos/videos"
+  },
+  {
+    "id": 11,
+    "year": 2021,
+    "show_name": "Laver Cup Tennis Championship",
+    "event_type": "sporting event",
+    "note": "568-day wait for tickets"
+  },
+  {
+    "id": 12,
+    "year": 2022,
+    "show_name": "A Christmas Carol",
+    "event_type": "broadway",
+    "note": null
+  },
+  {
+    "id": 13,
+    "year": 2023,
+    "show_name": "Hadestown",
+    "event_type": "broadway",
+    "note": null
+  },
+  {
+    "id": 14,
+    "year": 2023,
+    "show_name": "Aladdin",
+    "event_type": "broadway",
+    "note": null
+  },
+  {
+    "id": 15,
+    "year": 2023,
+    "show_name": "Chicago",
+    "event_type": "broadway",
+    "note": "3 shows in one year"
+  },
+  {
+    "id": 16,
+    "year": 2023,
+    "show_name": "Super Bowl LVII",
+    "event_type": "sporting event",
+    "note": null
+  },
+  {
+    "id": 17,
+    "year": 2024,
+    "show_name": "Wicked",
+    "event_type": "broadway",
+    "note": null
+  }
+]

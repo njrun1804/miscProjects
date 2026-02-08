@@ -1,0 +1,297 @@
+[
+  {
+    "destination": "Atlantic City",
+    "visit_count": 4,
+    "years": [
+      2009,
+      2010,
+      2011,
+      2013
+    ],
+    "avg_sentiment": 0.264,
+    "latitude": 39.3642852,
+    "longitude": -74.4229351
+  },
+  {
+    "destination": "Washington D.C.",
+    "visit_count": 2,
+    "years": [
+      2011,
+      2019
+    ],
+    "avg_sentiment": 0.34,
+    "latitude": 38.8950368,
+    "longitude": -77.0365427
+  },
+  {
+    "destination": "Stratton, Vermont",
+    "visit_count": 2,
+    "years": [
+      2011,
+      2012
+    ],
+    "avg_sentiment": null,
+    "latitude": 43.0428562,
+    "longitude": -72.9109334
+  },
+  {
+    "destination": "Wisconsin (2 trips)",
+    "visit_count": 1,
+    "years": [
+      2019
+    ],
+    "avg_sentiment": null,
+    "latitude": 44.4308975,
+    "longitude": -89.6884637
+  },
+  {
+    "destination": "Victoria, Canada",
+    "visit_count": 1,
+    "years": [
+      2017
+    ],
+    "avg_sentiment": null,
+    "latitude": 48.4283182,
+    "longitude": -123.364953
+  },
+  {
+    "destination": "U.S. Virgin Islands, Bahamas",
+    "visit_count": 1,
+    "years": [
+      2015
+    ],
+    "avg_sentiment": null,
+    "latitude": 17.985,
+    "longitude": -64.7674
+  },
+  {
+    "destination": "St. Lucia, Dominica, Antigua",
+    "visit_count": 1,
+    "years": [
+      2016
+    ],
+    "avg_sentiment": null,
+    "latitude": 14.5557414,
+    "longitude": -90.7379184
+  },
+  {
+    "destination": "Slovenia, Italy, Greece, Malta, Croatia",
+    "visit_count": 1,
+    "years": [
+      2018
+    ],
+    "avg_sentiment": null,
+    "latitude": 46.0421679,
+    "longitude": 14.5136681
+  },
+  {
+    "destination": "Singapore, Thailand, Cambodia, Vietnam, Hong Kong",
+    "visit_count": 1,
+    "years": [
+      2020
+    ],
+    "avg_sentiment": null,
+    "latitude": 1.3167575,
+    "longitude": 103.9016742
+  },
+  {
+    "destination": "Shohola, Pennsylvania",
+    "visit_count": 1,
+    "years": [
+      2011
+    ],
+    "avg_sentiment": 0.402,
+    "latitude": 41.4731533,
+    "longitude": -74.9162423
+  },
+  {
+    "destination": "Portugal, Spain, Norway, Iceland, Toronto",
+    "visit_count": 1,
+    "years": [
+      2024
+    ],
+    "avg_sentiment": null,
+    "latitude": 43.647221,
+    "longitude": -79.4313252
+  },
+  {
+    "destination": "Phoenix / Arizona",
+    "visit_count": 1,
+    "years": [
+      2023
+    ],
+    "avg_sentiment": 0.599,
+    "latitude": 33.4484367,
+    "longitude": -112.074141
+  },
+  {
+    "destination": "Orlando, Florida",
+    "visit_count": 1,
+    "years": [
+      2008
+    ],
+    "avg_sentiment": null,
+    "latitude": 28.5421218,
+    "longitude": -81.379045
+  },
+  {
+    "destination": "Norwegian Breakaway Cruise",
+    "visit_count": 1,
+    "years": [
+      2013
+    ],
+    "avg_sentiment": null,
+    "latitude": 32.3792,
+    "longitude": -64.2008
+  },
+  {
+    "destination": "New Hampshire",
+    "visit_count": 1,
+    "years": [
+      2018
+    ],
+    "avg_sentiment": null,
+    "latitude": 43.4849133,
+    "longitude": -71.6553992
+  },
+  {
+    "destination": "NYC (MSG)",
+    "visit_count": 1,
+    "years": [
+      2007
+    ],
+    "avg_sentiment": -0.103,
+    "latitude": 40.7505129,
+    "longitude": -73.9935159
+  },
+  {
+    "destination": "Midwest Road Trip (16 states)",
+    "visit_count": 1,
+    "years": [
+      2025
+    ],
+    "avg_sentiment": -0.572,
+    "latitude": 41.6765,
+    "longitude": -93.0896
+  },
+  {
+    "destination": "Maryland",
+    "visit_count": 1,
+    "years": [
+      2013
+    ],
+    "avg_sentiment": null,
+    "latitude": 39.5162401,
+    "longitude": -76.9382069
+  },
+  {
+    "destination": "Kutztown, Pennsylvania",
+    "visit_count": 1,
+    "years": [
+      2009
+    ],
+    "avg_sentiment": 0.477,
+    "latitude": 40.5173165,
+    "longitude": -75.7774177
+  },
+  {
+    "destination": "Japan",
+    "visit_count": 1,
+    "years": [
+      2026
+    ],
+    "avg_sentiment": null,
+    "latitude": 36.5748441,
+    "longitude": 139.2394179
+  },
+  {
+    "destination": "Jamaica, Grand Cayman, Cozumel",
+    "visit_count": 1,
+    "years": [
+      2014
+    ],
+    "avg_sentiment": null,
+    "latitude": 19.0896,
+    "longitude": -77.035
+  },
+  {
+    "destination": "Houston, Texas",
+    "visit_count": 1,
+    "years": [
+      2009
+    ],
+    "avg_sentiment": null,
+    "latitude": 29.7589382,
+    "longitude": -95.3676974
+  },
+  {
+    "destination": "Grand Canyon, Vegas, Utah, Colorado, Boston",
+    "visit_count": 1,
+    "years": [
+      2021
+    ],
+    "avg_sentiment": -0.25,
+    "latitude": 39.5501,
+    "longitude": -105.7821
+  },
+  {
+    "destination": "Detroit, Michigan",
+    "visit_count": 1,
+    "years": [
+      2007
+    ],
+    "avg_sentiment": null,
+    "latitude": 42.3315509,
+    "longitude": -83.0466403
+  },
+  {
+    "destination": "California (600+ miles)",
+    "visit_count": 1,
+    "years": [
+      2017
+    ],
+    "avg_sentiment": null,
+    "latitude": 34.89495,
+    "longitude": -120.428511
+  },
+  {
+    "destination": "Australia & New Zealand",
+    "visit_count": 1,
+    "years": [
+      2019
+    ],
+    "avg_sentiment": 0.856,
+    "latitude": -36.8622961,
+    "longitude": 174.7190716
+  },
+  {
+    "destination": "Atlantic City (multiple)",
+    "visit_count": 1,
+    "years": [
+      2008
+    ],
+    "avg_sentiment": null,
+    "latitude": 39.3642852,
+    "longitude": -74.4229351
+  },
+  {
+    "destination": "Arizona",
+    "visit_count": 1,
+    "years": [
+      2010
+    ],
+    "avg_sentiment": null,
+    "latitude": 34.395342,
+    "longitude": -111.763275
+  },
+  {
+    "destination": "Alaska & Seattle",
+    "visit_count": 1,
+    "years": [
+      2017
+    ],
+    "avg_sentiment": null,
+    "latitude": 47.6503736,
+    "longitude": -122.301976
+  }
+]

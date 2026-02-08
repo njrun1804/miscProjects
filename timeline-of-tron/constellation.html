@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Constellation — Timeline of Tron</title>
+    <meta name="description" content="124 people across 22 years. An interactive star map of who connects to whom.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/constellation.css">
+</head>
+<body class="room-constellation">
+    <div id="lj-header-mount"></div>
+
+    <main class="constellation-container">
+        <!-- Search -->
+        <div class="constellation-search">
+            <input type="search" placeholder="Search for a person..." aria-label="Search people">
+        </div>
+
+        <!-- D3 force simulation renders here -->
+        <div class="constellation-sky" id="constellationMount"></div>
+
+        <!-- Person detail sidebar -->
+        <aside class="constellation-sidebar" id="personPanel">
+            <button class="sidebar-close">&times;</button>
+            <h2 class="person-name"></h2>
+            <p class="person-years"></p>
+            <p class="person-highlight"></p>
+            <div class="person-section-label">Connections</div>
+            <div class="person-connections"></div>
+            <div class="person-section-label">Key Milestones</div>
+            <div class="person-milestones"></div>
+            <div class="person-quotes"></div>
+        </aside>
+    </main>
+
+    <!-- Annotation -->
+    <p class="constellation-annotation">
+        Some people are so woven into the fabric that the fabric forgets to name them.
+    </p>
+
+    <!-- Inner Circle Timeline -->
+    <section class="inner-circle-timeline">
+        <h2>The Circle Over Time</h2>
+        <canvas id="innerCircleChart"></canvas>
+    </section>
+
+    <div id="lj-footer-mount"></div>
+
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/chart.js"></script>
+    <script type="module">
+        import { initNav } from './js/nav.js';
+        import './js/constellation.js';
+
+        initNav({
+            room: 'constellation',
+            mood: 'contemplative',
+            music: 'Coldplay \u2014 "The Scientist"',
+            subtitle: 'The People'
+        });
+    </script>
+</body>
+</html>

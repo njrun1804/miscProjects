@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Comeback Lab — Timeline of Tron</title>
+    <meta name="description" content="Every crisis has a recovery pattern. 14 medical events, 100% comeback rate, 7.1-month average recovery.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/comeback.css">
+</head>
+<body class="room-comeback">
+    <div id="lj-header-mount"></div>
+
+    <main class="comeback-main">
+        <!-- Hero -->
+        <section class="comeback-hero">
+            <h1>The Comeback Lab</h1>
+            <p class="comeback-headline-label">Average Recovery Time (months)</p>
+            <div class="comeback-headline-stat">7.1</div>
+            <p class="comeback-headline-label">14 medical events &middot; 100% comeback rate</p>
+        </section>
+
+        <!-- Sankey Diagram -->
+        <section>
+            <h2 style="text-align:center; margin-bottom:var(--space-md);">Crisis &rarr; Recovery Pattern</h2>
+            <div class="comeback-sankey" id="comebackSankey"></div>
+        </section>
+
+        <!-- Detail Panel -->
+        <div class="comeback-detail">
+            <h3 class="comeback-detail__title"></h3>
+            <div class="comeback-detail__narrative"></div>
+        </div>
+
+        <!-- Tongue-in-cheek callout -->
+        <p class="comeback-callout">
+            Based on 22 years of data: if you break a bone, book a cruise.
+            If you're having an existential crisis, start a dodgeball tournament.
+        </p>
+
+        <!-- Recovery Clock -->
+        <section class="comeback-clock-section">
+            <h2>Recovery Clock</h2>
+            <div class="comeback-clock">
+                <canvas id="recoveryClock"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <div id="lj-footer-mount"></div>
+
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/d3-sankey.min.js"></script>
+    <script src="lib/chart.js"></script>
+    <script type="module">
+        import { initNav } from './js/nav.js';
+        import './js/comeback.js';
+
+        initNav({
+            room: 'comeback',
+            mood: 'hopeful',
+            music: 'Eminem \u2014 "Not Afraid"',
+            subtitle: '100% Comeback Rate'
+        });
+    </script>
+</body>
+</html>

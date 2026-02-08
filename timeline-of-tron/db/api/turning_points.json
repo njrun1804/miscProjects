@@ -1,0 +1,106 @@
+[
+  {
+    "year": 2004,
+    "event": "Car accident causing panic attacks and anxiety",
+    "type": "contaminated",
+    "domain": "health",
+    "from_state": "carefree youth",
+    "to_state": "anxiety and physical recovery"
+  },
+  {
+    "year": 2005,
+    "event": "Family estrangement, near-anorexia",
+    "type": "contaminated",
+    "domain": "family",
+    "from_state": "family stability",
+    "to_state": "temporary orphan, mental health crisis"
+  },
+  {
+    "year": 2006,
+    "event": "723-day relationship begins (Nov 21)",
+    "type": "stable",
+    "domain": "relationship",
+    "from_state": "single",
+    "to_state": "partnered"
+  },
+  {
+    "year": 2007,
+    "event": "Family reconciliation, ECD golden age",
+    "type": "redemptive",
+    "domain": "family",
+    "from_state": "estranged",
+    "to_state": "rebuilt family bonds"
+  },
+  {
+    "year": 2008,
+    "event": "Coming out \u2014 'The power of an internal desire liberated!'",
+    "type": "redemptive",
+    "domain": "identity",
+    "from_state": "concealed identity",
+    "to_state": "authentic self"
+  },
+  {
+    "year": 2008,
+    "event": "Relationship ends (Jun 10), liberation follows",
+    "type": "redemptive",
+    "domain": "relationship",
+    "from_state": "723-day relationship",
+    "to_state": "freedom and self-discovery"
+  },
+  {
+    "year": 2009,
+    "event": "ECD retirement after 171 events",
+    "type": "redemptive",
+    "domain": "community",
+    "from_state": "dodgeball leader",
+    "to_state": "legacy secured, new freedom"
+  },
+  {
+    "year": 2011,
+    "event": "Torn glenoid labrum / surgery",
+    "type": "contaminated",
+    "domain": "health",
+    "from_state": "physical peak",
+    "to_state": "surgical recovery"
+  },
+  {
+    "year": 2014,
+    "event": "Undertaker handshake \u2014 20-year dream fulfilled",
+    "type": "redemptive",
+    "domain": "identity",
+    "from_state": "lifelong dream",
+    "to_state": "dream realized through friendship"
+  },
+  {
+    "year": 2017,
+    "event": "Spinal surgery",
+    "type": "contaminated",
+    "domain": "health",
+    "from_state": "active lifestyle",
+    "to_state": "forced stillness and recovery"
+  },
+  {
+    "year": 2018,
+    "event": "Mediterranean cruise post-surgery",
+    "type": "redemptive",
+    "domain": "health",
+    "from_state": "surgical recovery",
+    "to_state": "adventure resumes"
+  },
+  {
+    "year": 2022,
+    "event": "Engagement",
+    "type": "redemptive",
+    "domain": "relationship",
+    "from_state": "single",
+    "to_state": "committed partnership"
+  },
+  {
+    "year": 2025,
+    "event": "Relationship transition",
+    "type": "contaminated",
+    "domain": "relationship",
+    "from_state": "engaged",
+    "to_state": "single (resilient)"
+  }
+]

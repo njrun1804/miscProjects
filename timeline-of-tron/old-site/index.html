@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Timeline of Tron — A 22-Year Statistical Almanac</title>
+
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Chart.js Library (Local Copy) -->
+    <script src="lib/chart.js"></script>
+</head>
+<body>
+
+<!-- ===== LJ HEADER ===== -->
+<div class="lj-header">
+    <div class="lj-header-inner">
+        <div class="lj-nav">
+            <span class="active">Recent Entries</span>
+            <span>|</span>
+            <span>Archive</span>
+            <span>|</span>
+            <span>Friends</span>
+            <span>|</span>
+            <span>User Info</span>
+            <span>|</span>
+            <span>Memories</span>
+        </div>
+        <div class="lj-title-bar">
+            <div class="lj-userpic">JT</div>
+            <div class="lj-title-text">
+                <span class="lj-username">J . T R O N O L O N E</span>
+                <span class="lj-subtitle">To Tokyo, 2026.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== SECTION FILTER BAR ===== -->
+<div class="lj-filter-bar">
+    <div class="lj-filter-inner">
+        <span class="lj-filter-label">Jump to:</span>
+        <button class="lj-filter-btn active" data-section="all">All</button>
+        <button class="lj-filter-btn" data-section="stats">Stats</button>
+        <button class="lj-filter-btn" data-section="career">Career</button>
+        <button class="lj-filter-btn" data-section="wwe">WWE</button>
+        <button class="lj-filter-btn" data-section="travel">Travel</button>
+        <button class="lj-filter-btn" data-section="cast">The Cast</button>
+        <button class="lj-filter-btn" data-section="awards">Awards</button>
+        <button class="lj-filter-btn" data-section="comebacks">Comebacks</button>
+    </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<div class="lj-main">
+
+    <!-- ===== KPI CARDS ===== -->
+    <div class="lj-entry" data-section="stats" data-comments="stats">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">📊</div>
+            <span class="lj-entry-title">The Closing Stat Line</span>
+            <span class="lj-entry-meta">Lifetime Numbers</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="kpi-grid">
+                <div class="kpi-card" data-category="general">
+                    <div class="kpi-value">22+</div>
+                    <div class="kpi-label">Years of Timelines</div>
+                </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">91+</div>
+                    <div class="kpi-label">WWE Events Attended</div>
+                </div>
+                <div class="kpi-card" data-category="travel">
+                    <div class="kpi-value">20+</div>
+                    <div class="kpi-label">Countries Visited</div>
+                </div>
+                <div class="kpi-card" data-category="travel">
+                    <div class="kpi-value">6+</div>
+                    <div class="kpi-label">Cruises Taken</div>
+                </div>
+                <div class="kpi-card" data-category="sports">
+                    <div class="kpi-value">93.9%</div>
+                    <div class="kpi-label">Table Tennis Win Rate</div>
+                </div>
+                <div class="kpi-card" data-category="sports">
+                    <div class="kpi-value">254+</div>
+                    <div class="kpi-label">Cornhole Games Won</div>
+                </div>
+                <div class="kpi-card" data-category="sports">
+                    <div class="kpi-value">18+</div>
+                    <div class="kpi-label">Years of ECD</div>
+                </div>
+                <div class="kpi-card" data-category="career">
+                    <div class="kpi-value">6</div>
+                    <div class="kpi-label">Career Title Changes</div>
+                </div>
+                <div class="kpi-card" data-category="general">
+                    <div class="kpi-value">4</div>
+                    <div class="kpi-label">Skydiving Jumps</div>
+                </div>
+                <div class="kpi-card" data-category="general">
+                    <div class="kpi-value">27</div>
+                    <div class="kpi-label">Bowling Games (1 Day)</div>
+                </div>
+                <div class="kpi-card" data-category="general">
+                    <div class="kpi-value">218</div>
+                    <div class="kpi-label">Ping Pong Rounds (1 Match)</div>
+                </div>
+                <div class="kpi-card" data-category="food">
+                    <div class="kpi-value">8.6 lbs</div>
+                    <div class="kpi-label">Shrimp (One Event)</div>
+                </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">5</div>
+                    <div class="kpi-label">Janet Jackson AOTY</div>
+                </div>
+                <div class="kpi-card" data-category="general">
+                    <div class="kpi-value">0</div>
+                    <div class="kpi-label">Regrets (2010 Count)</div>
+                </div>
+            </div>
+            <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--nerdy"></span> <strong>Current Mood:</strong> statistically significant</span> &nbsp;|&nbsp;
+                <strong>Current Music:</strong> Janet Jackson — "All For You"
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== GREATEST HITS CHARTS ===== -->
+    <div class="lj-entry" data-section="stats" data-comments="greatest">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">🏆</div>
+            <span class="lj-entry-title">The Numbers Guy: Greatest Hits</span>
+            <span class="lj-entry-meta">Key Records by Year</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="chart-grid chart-grid--thirds">
+                <div class="chart-container gauge-container">
+                    <canvas id="sportsGauge0"></canvas>
+                </div>
+                <div class="chart-container gauge-container">
+                    <canvas id="sportsGauge1"></canvas>
+                </div>
+                <div class="chart-container gauge-container">
+                    <canvas id="sportsGauge2"></canvas>
+                </div>
+            </div>
+            <div class="epic-records-header">
+                <span class="section-label">Epic Single-Event Records</span>
+            </div>
+            <div id="epicRecordsGrid" class="epic-records-grid"></div>
+        </div>
+    </div>
+
+    <!-- ===== CAREER ARC ===== -->
+    <div class="lj-entry" data-section="career" data-comments="career">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">💼</div>
+            <span class="lj-entry-title">Career Arc: Intern to Executive Director</span>
+            <span class="lj-entry-meta">15 Years in Senior Living</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2010</div>
+                            <div class="timeline-role">Intern</div>
+                            <div class="timeline-detail">Seabrook Village Health Club &middot; Fresh out of Monmouth</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2011</div>
+                            <div class="timeline-role">Life Enrichment Manager</div>
+                            <div class="timeline-detail">Sunrise Senior Living &middot; Held for 10 years</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2018</div>
+                            <div class="timeline-role">Reminiscence Coordinator</div>
+                            <div class="timeline-detail">Sunrise of Wall &middot; New chapter post-surgery</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2020</div>
+                            <div class="timeline-role">Assisted Living Manager</div>
+                            <div class="timeline-detail">Sunrise of Jackson</div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021</div>
+                            <div class="timeline-role">Sr. Resident Care Coordinator</div>
+                            <div class="timeline-detail">After competitive interview</div>
+                        </div>
+                        <div class="timeline-item milestone">
+                            <div class="timeline-year">2025 ★</div>
+                            <div class="timeline-role">Executive Director</div>
+                            <div class="timeline-detail">Sunrise of Jackson &middot; Passed NJ certification exam &middot; The top job</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <canvas id="careerStaircaseChart"></canvas>
+                </div>
+            </div>
+            <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--proud"></span> <strong>Current Mood:</strong> promoted</span> &nbsp;|&nbsp;
+                <strong>Tags:</strong> calling, not just a career
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== WWE LIFETIME STATS ===== -->
+    <div class="lj-entry" data-section="wwe" data-comments="wwe">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">🤼</div>
+            <span class="lj-entry-title">WWE: The Lifetime Stats</span>
+            <span class="lj-entry-meta">The Username Says It All</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="kpi-grid kpi-grid--4col">
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">91+</div>
+                    <div class="kpi-label">Total Events</div>
+                </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">25</div>
+                    <div class="kpi-label">Consecutive Survivor Series Years</div>
+                </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">10+</div>
+                    <div class="kpi-label">WrestleManias</div>
+                </div>
+                <div class="kpi-card" data-category="wwe">
+                    <div class="kpi-value">17</div>
+                    <div class="kpi-label">Events with RL</div>
+                </div>
+            </div>
+            <div style="margin-top: 16px;">
+                <canvas id="wweTimelineChart"></canvas>
+            </div>
+            <div class="callout-row">
+                <div class="callout-box callout-box--gold">
+                    <div class="callout-title callout-title--gold">&#x211A; CROWN JEWEL MOMENT</div>
+                    <div class="callout-body">Met The Undertaker at WrestleMania XXX in New Orleans. Handshake timestamp: <strong>4:10:18 PM CT</strong>. The same night the streak went to 21-1.</div>
+                </div>
+                <div class="callout-box callout-box--red">
+                    <div class="callout-title callout-title--red">&#x211A; MILESTONE</div>
+                    <div class="callout-body">90th event attended: <strong>March 8, 2020</strong></div>
+                </div>
+            </div>
+            <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--excited"></span> <strong>Current Mood:</strong> electrified</span> &nbsp;|&nbsp;
+                <strong>Current Music:</strong> WWE entrance themes
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== TRAVEL ===== -->
+    <div class="lj-entry" data-section="travel" data-comments="travel">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">🌍</div>
+            <span class="lj-entry-title">Travel: The World Tour</span>
+            <span class="lj-entry-meta">20+ Countries &middot; 5 Continents</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="chart-grid">
+                <div class="chart-container chart-full">
+                    <canvas id="travelBubbleChart"></canvas>
+                </div>
+            </div>
+            <div class="table-wrapper">
+                <table class="travel-table" id="travelTable">
+                    <thead>
+                        <tr>
+                            <th data-col="0">Year <span class="sort-arrow">▼</span></th>
+                            <th data-col="1">Destination <span class="sort-arrow">▼</span></th>
+                            <th data-col="2">Highlight <span class="sort-arrow">▼</span></th>
+                            <th data-col="3">Scope <span class="sort-arrow">▼</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--adventurous"></span> <strong>Current Mood:</strong> wanderlust</span> &nbsp;|&nbsp;
+                <strong>Up Next:</strong> Japan 2026 — booked!
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== THE CAST ===== -->
+    <div class="lj-entry" data-section="cast" data-comments="cast">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">🎭</div>
+            <span class="lj-entry-title">The Cast: Recurring Characters Across Eras</span>
+            <span class="lj-entry-meta">Lifers, Not Acquaintances</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="cast-grid">
+                <div class="cast-card">
+                    <div class="cast-name">Valerie</div>
+                    <div class="cast-aka">(ValPal)</div>
+                    <div class="cast-desc">Best friend from MRHS. Super Bowl LVII companion. Appears across virtually every Timeline. Multi-decade friendship.</div>
+                </div>
+                <div class="cast-card">
+                    <div class="cast-name">Kevin & Leah</div>
+                    <div class="cast-aka">(The Love Story)</div>
+                    <div class="cast-desc">Met 2014, engaged 2017, married Feb 29, 2020 (leap day!). Entire relationship arc documented from an outside perspective.</div>
+                </div>
+                <div class="cast-card">
+                    <div class="cast-name">RL (Letsche)</div>
+                    <div class="cast-aka">(The Wrestling Co-Pilot)</div>
+                    <div class="cast-desc">17 WWE events together. The ultimate tag team partner for live shows.</div>
+                </div>
+                <div class="cast-card">
+                    <div class="cast-name">Dan Spengeman</div>
+                    <div class="cast-aka">(Comedian of the Year)</div>
+                    <div class="cast-desc">Comedian of the Year winner. Wedding documented. Pole Position Invitational namesake.</div>
+                </div>
+                <div class="cast-card">
+                    <div class="cast-name">The Ensemble</div>
+                    <div class="cast-aka">(Diana, Lauren, Rupert, Ryan, Juan)</div>
+                    <div class="cast-desc">Recurring cast across years and eras. The 2023 "MOST LAUGHS" roster reads like an all-time lineup.</div>
+                </div>
+                <div class="cast-card">
+                    <div class="cast-name">The Family</div>
+                    <div class="cast-aka">(Ma, The Pops, Grace, Megan, Michael)</div>
+                    <div class="cast-desc">Ma (70th birthday, 2025), The Pops/Dad (60th at Woodloch Pines), StepPa, Grammy Nancy, brother Michael (married Maggie, 2018), nephews Julian (2019) & Lawrence (2021).</div>
+                </div>
+            </div>
+            <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--loved"></span> <strong>Current Mood:</strong> grateful</span> &nbsp;|&nbsp;
+                <strong>Tags:</strong> lifers, ensemble cast, multi-era
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== ANNUAL AWARDS ===== -->
+    <div class="lj-entry" data-section="awards" data-comments="awards">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">🏅</div>
+            <span class="lj-entry-title">The Annual Awards</span>
+            <span class="lj-entry-meta">A Personal Voting Tradition</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <canvas id="awardsDynastyChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="awards-grid">
+                        <div class="award-card">
+                            <div class="award-category">Music Artist of the Year &middot; GOAT</div>
+                            <div class="award-winner">Janet Jackson</div>
+                            <div class="award-detail">5-time winner (2015, 2016, 2018, 2019, 2021). First artist to win Song of the Year for two different songs in the same year.</div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-category">Pre-Janet Era</div>
+                            <div class="award-winner">Mariah Carey</div>
+                            <div class="award-detail">Held the throne through 2014. The original dynasty before Janet's takeover.</div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-category">Comedian of the Year &middot; 2014</div>
+                            <div class="award-winner">The Pops</div>
+                            <div class="award-detail">Darrell. The original. Regular presence in the Timelines.</div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-category">Comedian of the Year &middot; 2015+</div>
+                            <div class="award-winner">Dan Spengeman</div>
+                            <div class="award-detail">First win 2015. Lauren Winston is a 2-time winner.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--creative"></span> <strong>Current Mood:</strong> ceremonial</span> &nbsp;|&nbsp;
+                <strong>Current Music:</strong> Janet Jackson — "If"
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== COMEBACK ARCS ===== -->
+    <div class="lj-entry" data-section="comebacks" data-comments="comebacks">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">💪</div>
+            <span class="lj-entry-title">Resilience: The Comeback Arcs</span>
+            <span class="lj-entry-meta">Setback → Triumph</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <ul class="comeback-list">
+                <li class="comeback-item">
+                    <span class="comeback-year">2017</span>
+                    <div class="comeback-text">
+                        <span class="comeback-setback">L5-S1 herniation → spinal microdiscectomy surgery (Dec 15)</span><br>
+                        <span class="comeback-arrow">→</span>
+                        <span class="comeback-triumph">"I Just Want To Wake Up. (I Did!)"</span>
+                    </div>
+                </li>
+                <li class="comeback-item">
+                    <span class="comeback-year">2018</span>
+                    <div class="comeback-text">
+                        <span class="comeback-setback">Spinal surgery in December...</span><br>
+                        <span class="comeback-arrow">→</span>
+                        <span class="comeback-triumph">2-week Mediterranean cruise with an engagement ring by April. That's a movie pitch.</span>
+                    </div>
+                </li>
+                <li class="comeback-item">
+                    <span class="comeback-year">2019</span>
+                    <div class="comeback-text">
+                        <span class="comeback-setback">Strep throat + kidney stone removal</span><br>
+                        <span class="comeback-arrow">→</span>
+                        <span class="comeback-triumph">Australia & New Zealand — "the best, the longest, and the greatest"</span>
+                    </div>
+                </li>
+                <li class="comeback-item">
+                    <span class="comeback-year">2024</span>
+                    <div class="comeback-text">
+                        <span class="comeback-setback">Kidney stones + family loss</span><br>
+                        <span class="comeback-arrow">→</span>
+                        <span class="comeback-triumph">Portugal, Spain, Norway, Iceland, Toronto — multi-continent year</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="lj-current">
+                <span class="lj-mood"><span class="mood-icon mood-icon--determined"></span> <strong>Current Mood:</strong> unbreakable</span> &nbsp;|&nbsp;
+                <strong>Tags:</strong> comeback, resilience, movie-pitch-level recoveries
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== EAST COAST DODGEBALL ===== -->
+    <div class="lj-entry" data-section="stats" data-comments="ecd">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">🔴</div>
+            <span class="lj-entry-title">East Coast Dodgeball: The Dynasty</span>
+            <span class="lj-entry-meta">18+ Consecutive Years</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <canvas id="ecdGrowthChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="sidebar-content">
+                        <div class="section-label">Notable Event Names</div>
+                        <div class="badge-list">
+                            <span class="badge badge--red">Immaculate Redemption</span>
+                            <span class="badge badge--blue">WrestleJohnMania XXVI</span>
+                        </div>
+                        <div class="spacer-top">
+                            <div class="kpi-grid">
+                                <div class="kpi-card" data-category="sports">
+                                    <div class="kpi-value">57</div>
+                                    <div class="kpi-label">People at 2025 ECD Bowl</div>
+                                </div>
+                                <div class="kpi-card" data-category="food">
+                                    <div class="kpi-value">$1,700+</div>
+                                    <div class="kpi-label">Raised at 2025 ECD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="spacer-top">
+                            <div class="section-label">Documented Anniversaries</div>
+                            <div class="badge-group">
+                                <span class="badge--outline">5th</span>
+                                <span class="badge--outline">10th</span>
+                                <span class="badge--outline">13th</span>
+                                <span class="badge--outline">15th</span>
+                            </div>
+                        </div>
+                        <div class="callout-box callout-box--purple">
+                            <div class="callout-quote">&#x211A; "It deserves its own documentary."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FAMOUS FACES & TRADITIONS ===== -->
+    <div class="lj-entry" data-section="stats" data-comments="traditions">
+        <div class="lj-entry-header">
+            <div class="lj-entry-icon">🎯</div>
+            <span class="lj-entry-title">Traditions & Side Quests</span>
+            <span class="lj-entry-meta">The Annual Rituals</span>
+            <a href="#" class="lj-cut-toggle" onclick="return false">(collapse)</a>
+        </div>
+        <div class="lj-entry-body">
+            <div class="chart-grid">
+                <div class="chart-container">
+                    <canvas id="traditionsPolarChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="sidebar-content">
+                        <div class="section-label section-label--spaced">Recurring Traditions Clocked</div>
+                        <div class="tradition-list">
+                            <div class="tradition-item">
+                                ⛷️ <strong>Vermont Skiing</strong> — Stratton as "home away from home"
+                            </div>
+                            <div class="tradition-item">
+                                🤼 <strong>WWE Events</strong> — Through-line from earliest years
+                            </div>
+                            <div class="tradition-item">
+                                🏓 <strong>Competitive Stats</strong> — Cornhole / Table Tennis / Pickleball / Dodgeball
+                            </div>
+                            <div class="tradition-item">
+                                📅 <strong>January Publishing Ritual</strong> — Median drop: Jan 6–7
+                            </div>
+                            <div class="tradition-item">
+                                🏅 <strong>Annual Awards</strong> — Music, Comedy, personal superlatives
+                            </div>
+                            <div class="tradition-item">
+                                &#x211A; <strong>Quote Callouts</strong> — Signature formatting in later years
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ===== LJ FOOTER ===== -->
+<div class="lj-footer">
+    <div class="lj-hit-counter">
+        <span class="hit-counter-label">page views:</span>
+        <span class="hit-counter-digits">
+            <span class="hit-digit">0</span><span class="hit-digit">0</span><span class="hit-digit">4</span><span class="hit-digit">,</span><span class="hit-digit">8</span><span class="hit-digit">4</span><span class="hit-digit">7</span>
+        </span>
+    </div>
+    <p>The Timeline of Tron &middot; A 22-Year Statistical Almanac &middot; 2004–2025</p>
+    <p class="lj-footer-tagline">Keep counting everything, John.</p>
+    <p class="lj-footer-fine-print">This dashboard has outlived MySpace, Vine, Google+, and Friendster — just like the Timelines themselves.</p>
+</div>
+
+<!-- JavaScript Files (Load in correct order) -->
+<script src="js/data.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

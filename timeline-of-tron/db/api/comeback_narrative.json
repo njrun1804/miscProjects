@@ -1,0 +1,398 @@
+[
+  {
+    "medical_event": "Life-altering car accident \u2014 panic attacks and anxiety",
+    "medical_year": 2004,
+    "severity": "major",
+    "comeback_event": "Years-long recovery; became HERO of the Year advocate",
+    "comeback_year": 2004,
+    "gap_months": 0,
+    "comeback_type": "community creation",
+    "medical_sentiment": -0.688,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2004,
+        "milestone": "Timeline project begins on LiveJournal (Jul 29)"
+      },
+      {
+        "year": 2004,
+        "milestone": "Life-altering car accident resulting in panic attacks and anxiety"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "Near-anorexia and mental health crisis",
+    "medical_year": 2005,
+    "severity": "major",
+    "comeback_event": "Joined Jersey Shore Fitness with James Butler; family reconciliation",
+    "comeback_year": 2007,
+    "gap_months": 18,
+    "comeback_type": "physical + family",
+    "medical_sentiment": 0.0,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2005,
+        "milestone": "EastCoastDodgeball founded"
+      },
+      {
+        "year": 2005,
+        "milestone": "Difficult period after WrestleMania attendance"
+      },
+      {
+        "year": 2006,
+        "milestone": "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems"
+      },
+      {
+        "year": 2006,
+        "milestone": "FINS Friday gatherings ongoing since March 2006"
+      },
+      {
+        "year": 2007,
+        "milestone": "27 bowling games in a single day"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "Car accident \u2014 rear-ended on West Park Avenue",
+    "medical_year": 2008,
+    "severity": "major",
+    "comeback_event": "Came out in 2008; began 'most rewarding and refreshing' months",
+    "comeback_year": 2008,
+    "gap_months": 0,
+    "comeback_type": "adventure",
+    "medical_sentiment": 0.151,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2008,
+        "milestone": "WrestleMania XXIV in Florida (4th WM)"
+      },
+      {
+        "year": 2008,
+        "milestone": "First semester of Health Studies completed at MU (May 8)"
+      },
+      {
+        "year": 2008,
+        "milestone": "Royal Rumble at MSG (Jan 27)"
+      },
+      {
+        "year": 2008,
+        "milestone": "DODGEBALL 150 (Aug 9)"
+      },
+      {
+        "year": 2008,
+        "milestone": "ECD 3-Year Anniversary (Sep 6)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "Car accident \u2014 rear-ended on West Park Avenue",
+    "medical_year": 2008,
+    "severity": "major",
+    "comeback_event": "Came out in 2008; began 'most rewarding and refreshing' months",
+    "comeback_year": 2008,
+    "gap_months": 0,
+    "comeback_type": "adventure",
+    "medical_sentiment": 0.571,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2008,
+        "milestone": "WrestleMania XXIV in Florida (4th WM)"
+      },
+      {
+        "year": 2008,
+        "milestone": "First semester of Health Studies completed at MU (May 8)"
+      },
+      {
+        "year": 2008,
+        "milestone": "Royal Rumble at MSG (Jan 27)"
+      },
+      {
+        "year": 2008,
+        "milestone": "DODGEBALL 150 (Aug 9)"
+      },
+      {
+        "year": 2008,
+        "milestone": "ECD 3-Year Anniversary (Sep 6)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "Torn glenoid labrum confirmed via MRI",
+    "medical_year": 2011,
+    "severity": "moderate",
+    "comeback_event": "Continued sports participation",
+    "comeback_year": 2011,
+    "gap_months": 0,
+    "comeback_type": "resilience",
+    "medical_sentiment": -0.18,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2011,
+        "milestone": "First meal with Rob at Ocean Bay Diner (Jan 1)"
+      },
+      {
+        "year": 2011,
+        "milestone": "Relationship begins Jan 15 (the 'Ro(b)mantic Era')"
+      },
+      {
+        "year": 2011,
+        "milestone": "Career at Sunrise Senior Living begins (Oct 31/Nov 1)"
+      },
+      {
+        "year": 2011,
+        "milestone": "First speeding ticket (Sep 14)"
+      },
+      {
+        "year": 2011,
+        "milestone": "Survivor Series at MSG \u2014 The Rock returns (Nov 20)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "L5-S1 herniation + microdiscectomy surgery (Dec 15)",
+    "medical_year": 2017,
+    "severity": "major",
+    "comeback_event": "Mediterranean cruise (Croatia, Montenegro, Italy); 'Back on the road'",
+    "comeback_year": 2018,
+    "gap_months": 6,
+    "comeback_type": "travel",
+    "medical_sentiment": -0.509,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2017,
+        "milestone": "Kevin & Leah engaged"
+      },
+      {
+        "year": 2017,
+        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)"
+      },
+      {
+        "year": 2017,
+        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital"
+      },
+      {
+        "year": 2017,
+        "milestone": "14 staples removed (Dec 26)"
+      },
+      {
+        "year": 2017,
+        "milestone": "ECD 12-Year Anniversary (Sep 2)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "L5-S1 herniation + microdiscectomy surgery (Dec 15)",
+    "medical_year": 2017,
+    "severity": "major",
+    "comeback_event": "Mediterranean cruise (Croatia, Montenegro, Italy); 'Back on the road'",
+    "comeback_year": 2018,
+    "gap_months": 6,
+    "comeback_type": "travel",
+    "medical_sentiment": 0.151,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2017,
+        "milestone": "Kevin & Leah engaged"
+      },
+      {
+        "year": 2017,
+        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)"
+      },
+      {
+        "year": 2017,
+        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital"
+      },
+      {
+        "year": 2017,
+        "milestone": "14 staples removed (Dec 26)"
+      },
+      {
+        "year": 2017,
+        "milestone": "ECD 12-Year Anniversary (Sep 2)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "L5-S1 herniation + microdiscectomy surgery (Dec 15)",
+    "medical_year": 2017,
+    "severity": "major",
+    "comeback_event": "Mediterranean cruise (Croatia, Montenegro, Italy); 'Back on the road'",
+    "comeback_year": 2018,
+    "gap_months": 6,
+    "comeback_type": "travel",
+    "medical_sentiment": 0.151,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2017,
+        "milestone": "Kevin & Leah engaged"
+      },
+      {
+        "year": 2017,
+        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)"
+      },
+      {
+        "year": 2017,
+        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital"
+      },
+      {
+        "year": 2017,
+        "milestone": "14 staples removed (Dec 26)"
+      },
+      {
+        "year": 2017,
+        "milestone": "ECD 12-Year Anniversary (Sep 2)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "L5-S1 herniation + microdiscectomy surgery (Dec 15)",
+    "medical_year": 2017,
+    "severity": "major",
+    "comeback_event": "Mediterranean cruise (Croatia, Montenegro, Italy); 'Back on the road'",
+    "comeback_year": 2018,
+    "gap_months": 6,
+    "comeback_type": "travel",
+    "medical_sentiment": 0.151,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2017,
+        "milestone": "Kevin & Leah engaged"
+      },
+      {
+        "year": 2017,
+        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)"
+      },
+      {
+        "year": 2017,
+        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital"
+      },
+      {
+        "year": 2017,
+        "milestone": "14 staples removed (Dec 26)"
+      },
+      {
+        "year": 2017,
+        "milestone": "ECD 12-Year Anniversary (Sep 2)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "Strep throat + kidney stone removal",
+    "medical_year": 2019,
+    "severity": "minor",
+    "comeback_event": "Australia & New Zealand trip",
+    "comeback_year": 2019,
+    "gap_months": 2,
+    "comeback_type": "travel",
+    "medical_sentiment": 0.0,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2019,
+        "milestone": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)"
+      },
+      {
+        "year": 2019,
+        "milestone": "Nephew Julian John Tronolone born (Aug 23)"
+      },
+      {
+        "year": 2019,
+        "milestone": "Became Uncle John"
+      },
+      {
+        "year": 2019,
+        "milestone": "1,000th CHA game vs Pops Tronolone (May 22)"
+      },
+      {
+        "year": 2019,
+        "milestone": "7th Major ECD championship (Aug 17)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "COVID medical quarantine (Mar 26 - Apr 16)",
+    "medical_year": 2020,
+    "severity": "moderate",
+    "comeback_event": "Gained 3 lbs muscle; biked to Highlands/Asbury Park/Sea Bright",
+    "comeback_year": 2020,
+    "gap_months": 1,
+    "comeback_type": "fitness",
+    "medical_sentiment": 0.751,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2020,
+        "milestone": "Asian expedition: Singapore, Thailand, Cambodia, Vietnam, Hong Kong (17 days Jan-Feb)"
+      },
+      {
+        "year": 2020,
+        "milestone": "Kevin & Leah married Feb 29 (leap day)"
+      },
+      {
+        "year": 2020,
+        "milestone": "90th WWE event (Mar 8, 17th with RL)"
+      },
+      {
+        "year": 2020,
+        "milestone": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback"
+      },
+      {
+        "year": 2020,
+        "milestone": "Assisted Living Manager at Sunrise of Jackson (started Sep 28)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  },
+  {
+    "medical_event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
+    "medical_year": 2024,
+    "severity": "moderate",
+    "comeback_event": "Continued travel (Norway, Iceland, Toronto, Montreal) & celebration",
+    "comeback_year": 2024,
+    "gap_months": 0,
+    "comeback_type": "travel",
+    "medical_sentiment": 0.0,
+    "comeback_sentiment": 0.5,
+    "related_milestones": [
+      {
+        "year": 2024,
+        "milestone": "Spain trip (Lisbon, Madrid)"
+      },
+      {
+        "year": 2024,
+        "milestone": "Norway cruise (Alesund, Akureyri, Iceland Sky Lagoon)"
+      },
+      {
+        "year": 2024,
+        "milestone": "Toronto (CN Tower 1,815 ft, Niagara Falls)"
+      },
+      {
+        "year": 2024,
+        "milestone": "Montreal (Place d'Armes, MTLaTABLE)"
+      },
+      {
+        "year": 2024,
+        "milestone": "30 blue crabs caught (personal best)"
+      }
+    ],
+    "arc": "valley_to_peak"
+  }
+]

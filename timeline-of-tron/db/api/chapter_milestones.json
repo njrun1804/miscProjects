@@ -1,0 +1,1341 @@
+[
+  {
+    "chapter_number": 1,
+    "chapter_name": "Chapter 1: 2004-2006",
+    "start_year": 2004,
+    "end_year": 2006,
+    "theme": "The Beginning \u2014 Car Accident & Recovery | ECD Founded \u2014 Finding Community | Dance Anthems & FINS Fridays",
+    "milestones": [
+      {
+        "year": 2004,
+        "milestone": "Timeline project begins on LiveJournal (Jul 29)",
+        "sentiment": null
+      },
+      {
+        "year": 2004,
+        "milestone": "Life-altering car accident resulting in panic attacks and anxiety",
+        "sentiment": -0.875
+      },
+      {
+        "year": 2005,
+        "milestone": "EastCoastDodgeball founded",
+        "sentiment": null
+      },
+      {
+        "year": 2005,
+        "milestone": "Difficult period after WrestleMania attendance",
+        "sentiment": -0.361
+      },
+      {
+        "year": 2006,
+        "milestone": "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
+        "sentiment": null
+      },
+      {
+        "year": 2006,
+        "milestone": "FINS Friday gatherings ongoing since March 2006",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 6,
+    "avg_sentiment": -0.206
+  },
+  {
+    "chapter_number": 2,
+    "chapter_name": "Chapter 2: 2007-2007",
+    "start_year": 2007,
+    "end_year": 2007,
+    "theme": "The Most Colorful Year \u2014 27 Bowling Games, WWE Stock, Shingles at 20",
+    "milestones": [
+      {
+        "year": 2007,
+        "milestone": "27 bowling games in a single day",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "Started job at Ocean Township Recreation (Feb 27)",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "WrestleMania 23 in Detroit (3rd WM)",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "51st WWE event (Oct 29 Philadelphia)",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2007,
+        "milestone": "Turned 23 (Sep 27)",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "Dad's surprise 50th birthday (Jul 29)",
+        "sentiment": 0.273
+      },
+      {
+        "year": 2007,
+        "milestone": "Moved back to Mom's permanently (Jul 1)",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "MU Co-Ed Dodgeball League championship (Nov 19, PondScum)",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2007,
+        "milestone": "WWE Stock purchased (Dec 12)",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "20+ hours of tennis in one week",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "Lauren Winston turned 21 (Apr 13)",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "Contracted Shingles at age 20",
+        "sentiment": null
+      },
+      {
+        "year": 2007,
+        "milestone": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'",
+        "sentiment": 0.052
+      }
+    ],
+    "milestone_count": 14,
+    "avg_sentiment": 0.069
+  },
+  {
+    "chapter_number": 3,
+    "chapter_name": "Chapter 3: 2008-2008",
+    "start_year": 2008,
+    "end_year": 2008,
+    "theme": "Coming Out \u2014 Liberation Day \u2014 Conquered Obstacles",
+    "milestones": [
+      {
+        "year": 2008,
+        "milestone": "WrestleMania XXIV in Florida (4th WM)",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "First semester of Health Studies completed at MU (May 8)",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2008,
+        "milestone": "Royal Rumble at MSG (Jan 27)",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "DODGEBALL 150 (Aug 9)",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "ECD 3-Year Anniversary (Sep 6)",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "Turned 24 (Sep 27)",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "Diana DiBuccio: Comedian of the Year",
+        "sentiment": 0.382
+      },
+      {
+        "year": 2008,
+        "milestone": "Song of the Year: Tom Petty 'Runnin Down a Dream'",
+        "sentiment": 0.052
+      },
+      {
+        "year": 2008,
+        "milestone": "First beer shared with The Pops (Aug 21)",
+        "sentiment": 0.34
+      },
+      {
+        "year": 2008,
+        "milestone": "Car accident on West Park Avenue (Nov 4)",
+        "sentiment": -0.477
+      },
+      {
+        "year": 2008,
+        "milestone": "Came out in 2008; KMJ was 3rd person to know",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "FAB4 Atlantic City trips began",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "Deactivated Facebook after 4-hour paper incident",
+        "sentiment": null
+      },
+      {
+        "year": 2008,
+        "milestone": "Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 near-anorexia. Letsche friendship repaired at Rumble '08. First appearance of 'The power of an internal desire liberated!' \u2014 March 2008.",
+        "sentiment": 0.271
+      }
+    ],
+    "milestone_count": 14,
+    "avg_sentiment": 0.072
+  },
+  {
+    "chapter_number": 4,
+    "chapter_name": "Chapter 4: 2009-2009",
+    "start_year": 2009,
+    "end_year": 2009,
+    "theme": "The Greatest Year Ever \u2014 SkyDiving, Concerts, 0 Regrets",
+    "milestones": [
+      {
+        "year": 2009,
+        "milestone": "Retired from ECD after 171 events and 40 months (Jan 3)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
+        "sentiment": 0.637
+      },
+      {
+        "year": 2009,
+        "milestone": "SkyDive II 'Cloud Nine' with 9 people (Oct 11)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "First concert ever: John Legend at MSG with Kanye West (Aug 13)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "U.S. Open Tennis Championships attended (Sep 7)",
+        "sentiment": 0.494
+      },
+      {
+        "year": 2009,
+        "milestone": "Inducted into Eta Sigma Gamma at MU (Dec 16)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "Turned 25 \u2014 multi-day celebration (Sep 25-27)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "Bowling 255 during a snowstorm (Mar 1)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "WinterBall with Melissa Kerr (Feb 21)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "Grandmother's 77th birthday (Nov 13)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "62nd WWE event (Hell In A Cell Oct 4)",
+        "sentiment": null
+      },
+      {
+        "year": 2009,
+        "milestone": "28 beers consumed all year; 101 dates posted; 0 regrets",
+        "sentiment": -0.361
+      },
+      {
+        "year": 2009,
+        "milestone": "'The Greatest Year Ever. 2009.'",
+        "sentiment": 0.637
+      }
+    ],
+    "milestone_count": 14,
+    "avg_sentiment": 0.1
+  },
+  {
+    "chapter_number": 5,
+    "chapter_name": "Chapter 5: 2010-2011",
+    "start_year": 2010,
+    "end_year": 2011,
+    "theme": "Graduation \u2014 HERO of the Year \u2014 0 Regrets Redux | The Ro(b)mantic Era Begins \u2014 Sunrise Career Launch",
+    "milestones": [
+      {
+        "year": 2010,
+        "milestone": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2010,
+        "milestone": "Won inaugural HERO of the Year (Jan 27)",
+        "sentiment": 0.842
+      },
+      {
+        "year": 2010,
+        "milestone": "Featured in Phillies PSA (Jun 10)",
+        "sentiment": null
+      },
+      {
+        "year": 2010,
+        "milestone": "WrestleMania XXVI in Arizona (939 photos)",
+        "sentiment": null
+      },
+      {
+        "year": 2010,
+        "milestone": "3rd skydive (Jul 18)",
+        "sentiment": null
+      },
+      {
+        "year": 2010,
+        "milestone": "ECD 5th Year Anniversary (Sep 11)",
+        "sentiment": null
+      },
+      {
+        "year": 2010,
+        "milestone": "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
+        "sentiment": null
+      },
+      {
+        "year": 2010,
+        "milestone": "18 lbs gained, 3 alcoholic beverages, 0 regrets",
+        "sentiment": 0.026
+      },
+      {
+        "year": 2010,
+        "milestone": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
+        "sentiment": 0.652
+      },
+      {
+        "year": 2010,
+        "milestone": "Brother Michael graduated from Kean University (May 13)",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2011,
+        "milestone": "First meal with Rob at Ocean Bay Diner (Jan 1)",
+        "sentiment": -0.557
+      },
+      {
+        "year": 2011,
+        "milestone": "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
+        "sentiment": null
+      },
+      {
+        "year": 2011,
+        "milestone": "Career at Sunrise Senior Living begins (Oct 31/Nov 1)",
+        "sentiment": null
+      },
+      {
+        "year": 2011,
+        "milestone": "First speeding ticket (Sep 14)",
+        "sentiment": null
+      },
+      {
+        "year": 2011,
+        "milestone": "Survivor Series at MSG \u2014 The Rock returns (Nov 20)",
+        "sentiment": 0.361
+      },
+      {
+        "year": 2011,
+        "milestone": "4th consecutive WinterBall (Feb 19)",
+        "sentiment": null
+      },
+      {
+        "year": 2011,
+        "milestone": "Torn glenoid labrum confirmed via MRI (Aug 2)",
+        "sentiment": -0.25
+      },
+      {
+        "year": 2011,
+        "milestone": "Hurricane Irene \u2014 La Quinta Suites (Aug 27-28)",
+        "sentiment": null
+      },
+      {
+        "year": 2011,
+        "milestone": "ECDElite Hall of Fame induction (Jun 18)",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2011,
+        "milestone": "Cousin Nick married Samantha (Jul 2-3)",
+        "sentiment": null
+      },
+      {
+        "year": 2011,
+        "milestone": "Fell from a pickup truck (May 21)",
+        "sentiment": null
+      },
+      {
+        "year": 2011,
+        "milestone": "RK's 22nd birthday (Dec 14)",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 22,
+    "avg_sentiment": 0.087
+  },
+  {
+    "chapter_number": 6,
+    "chapter_name": "Chapter 6: 2012-2012",
+    "start_year": 2012,
+    "end_year": 2012,
+    "theme": "ECD World Tour \u2014 Employee of the Month",
+    "milestones": [
+      {
+        "year": 2012,
+        "milestone": "ECD reopened with 'WORLD TOUR' (Apr 7)",
+        "sentiment": null
+      },
+      {
+        "year": 2012,
+        "milestone": "ECD 7th birthday + 500th player (Sep 1)",
+        "sentiment": null
+      },
+      {
+        "year": 2012,
+        "milestone": "Record 18 rounds at Orchard Park (Oct 13)",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2012,
+        "milestone": "Employee of the Month (Jan)",
+        "sentiment": null
+      },
+      {
+        "year": 2012,
+        "milestone": "Activities & Volunteer Coordinator promotion (May)",
+        "sentiment": null
+      },
+      {
+        "year": 2012,
+        "milestone": "SUS15H reached 190,000 miles (Nov)",
+        "sentiment": 0.103
+      },
+      {
+        "year": 2012,
+        "milestone": "71st WWE event",
+        "sentiment": null
+      },
+      {
+        "year": 2012,
+        "milestone": "Stratton Vermont ski trip continues",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 8,
+    "avg_sentiment": 0.038
+  },
+  {
+    "chapter_number": 7,
+    "chapter_name": "Chapter 7: 2013-2013",
+    "start_year": 2013,
+    "end_year": 2013,
+    "theme": "DODGEBOWL 200 \u2014 First Cruise \u2014 5 Weddings \u2014 Loss of Grandma Theresa",
+    "milestones": [
+      {
+        "year": 2013,
+        "milestone": "DODGEBOWL 200 \u2014 era-ending extravaganza (Aug 10, FIVE star rating)",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2013,
+        "milestone": "WWE event #75 (Sep 3)",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "Grandma Theresa passed away (Jun 10-15)",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "5 weddings attended in one year",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "'Table 7' Era begins (Jun 8)",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2013,
+        "milestone": "5th consecutive VT skiing trip (Jan 6-9)",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "Turned 29 (Sep 27)",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "Pilates Round 1 \u2014 only male participant",
+        "sentiment": null
+      },
+      {
+        "year": 2013,
+        "milestone": "'2010 and 2013 will no doubt stand the test of time'",
+        "sentiment": -0.572
+      }
+    ],
+    "milestone_count": 12,
+    "avg_sentiment": 0.006
+  },
+  {
+    "chapter_number": 8,
+    "chapter_name": "Chapter 8: 2014-2014",
+    "start_year": 2014,
+    "end_year": 2014,
+    "theme": "The Undertaker Handshake \u2014 Turning 30 \u2014 Norwegian Epic",
+    "milestones": [
+      {
+        "year": 2014,
+        "milestone": "Turned 30 \u2014 the 'BIG 3-0'",
+        "sentiment": null
+      },
+      {
+        "year": 2014,
+        "milestone": "Met The Undertaker at WM XXX (4:10:18 PM CT Apr 5)",
+        "sentiment": null
+      },
+      {
+        "year": 2014,
+        "milestone": "Moved to Oceanport (Sep 1)",
+        "sentiment": null
+      },
+      {
+        "year": 2014,
+        "milestone": "Gray Kia Soul purchased (Jan 11-13)",
+        "sentiment": -0.637
+      },
+      {
+        "year": 2014,
+        "milestone": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2014,
+        "milestone": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "sentiment": null
+      },
+      {
+        "year": 2014,
+        "milestone": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+        "sentiment": 0.765
+      },
+      {
+        "year": 2014,
+        "milestone": "Johnny Nash: most influential friend of 2014",
+        "sentiment": 0.77
+      },
+      {
+        "year": 2014,
+        "milestone": "SUS15H takes its last ride (Dec 24-25)",
+        "sentiment": null
+      },
+      {
+        "year": 2014,
+        "milestone": "The Pops: Comedian of the Year (2nd straight year)",
+        "sentiment": 0.542
+      }
+    ],
+    "milestone_count": 10,
+    "avg_sentiment": 0.19
+  },
+  {
+    "chapter_number": 9,
+    "chapter_name": "Chapter 9: 2015-2015",
+    "start_year": 2015,
+    "end_year": 2015,
+    "theme": "Janet Jackson Dynasty Begins \u2014 Kia Soul Hits 20K",
+    "milestones": [
+      {
+        "year": 2015,
+        "milestone": "Kia Soul hits 20,000 miles (Dec 15)",
+        "sentiment": -0.637
+      },
+      {
+        "year": 2015,
+        "milestone": "USVI & Bahamas cruise (rated 10/10)",
+        "sentiment": null
+      },
+      {
+        "year": 2015,
+        "milestone": "Janet Jackson first Artist of the Year win",
+        "sentiment": 0.586
+      },
+      {
+        "year": 2015,
+        "milestone": "Dan Spengeman: Comedian of the Year",
+        "sentiment": 0.382
+      }
+    ],
+    "milestone_count": 4,
+    "avg_sentiment": 0.083
+  },
+  {
+    "chapter_number": 10,
+    "chapter_name": "Chapter 10: 2016-2016",
+    "start_year": 2016,
+    "end_year": 2016,
+    "theme": "Greatest WWE Experience \u2014 93.9% Table Tennis \u2014 Manager of the Year",
+    "milestones": [
+      {
+        "year": 2016,
+        "milestone": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
+        "sentiment": 0.637
+      },
+      {
+        "year": 2016,
+        "milestone": "Manager of the Year award",
+        "sentiment": 0.542
+      },
+      {
+        "year": 2016,
+        "milestone": "Table tennis: 62-4 (93.9%)",
+        "sentiment": null
+      },
+      {
+        "year": 2016,
+        "milestone": "Cornhole: 254-98, 38 cornholios",
+        "sentiment": null
+      },
+      {
+        "year": 2016,
+        "milestone": "Spengeman-Mullins wedding",
+        "sentiment": null
+      },
+      {
+        "year": 2016,
+        "milestone": "St. Lucia/Dominica/Antigua cruise",
+        "sentiment": null
+      },
+      {
+        "year": 2016,
+        "milestone": "Lauren Winston: Comedian of the Year",
+        "sentiment": 0.382
+      }
+    ],
+    "milestone_count": 7,
+    "avg_sentiment": 0.223
+  },
+  {
+    "chapter_number": 11,
+    "chapter_name": "Chapter 11: 2017-2017",
+    "start_year": 2017,
+    "end_year": 2017,
+    "theme": "Spinal Surgery \u2014 Alaska Cruise \u2014 SummerSlam 20-Year Arc Complete",
+    "milestones": [
+      {
+        "year": 2017,
+        "milestone": "Kevin & Leah engaged",
+        "sentiment": 0.402
+      },
+      {
+        "year": 2017,
+        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)",
+        "sentiment": null
+      },
+      {
+        "year": 2017,
+        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
+        "sentiment": -0.2
+      },
+      {
+        "year": 2017,
+        "milestone": "14 staples removed (Dec 26)",
+        "sentiment": null
+      },
+      {
+        "year": 2017,
+        "milestone": "ECD 12-Year Anniversary (Sep 2)",
+        "sentiment": null
+      },
+      {
+        "year": 2017,
+        "milestone": "WrestleMania 33 (Apr 2)",
+        "sentiment": null
+      },
+      {
+        "year": 2017,
+        "milestone": "SummerSlam 20-year personal story complete (Aug 20)",
+        "sentiment": null
+      },
+      {
+        "year": 2017,
+        "milestone": "California trip 600+ miles for Matt & Gina wedding",
+        "sentiment": null
+      },
+      {
+        "year": 2017,
+        "milestone": "Father's 60th birthday (Jul 29)",
+        "sentiment": null
+      },
+      {
+        "year": 2017,
+        "milestone": "Escape Room completed in 45:43 (Jan 15)",
+        "sentiment": 0.178
+      },
+      {
+        "year": 2017,
+        "milestone": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
+        "sentiment": -0.477
+      },
+      {
+        "year": 2017,
+        "milestone": "Silver League Champions volleyball (Aug 30)",
+        "sentiment": 0.527
+      },
+      {
+        "year": 2017,
+        "milestone": "Cornhole: 27-2 record on cruise",
+        "sentiment": 0.2
+      }
+    ],
+    "milestone_count": 13,
+    "avg_sentiment": 0.048
+  },
+  {
+    "chapter_number": 12,
+    "chapter_name": "Chapter 12: 2018-2019",
+    "start_year": 2018,
+    "end_year": 2019,
+    "theme": "Mediterranean 5-Country Cruise \u2014 Engagement Ring \u2014 6th Cruise in 6 Years | Australia/NZ Best Trip Ever \u2014 Uncle John \u2014 Halfway to 70",
+    "milestones": [
+      {
+        "year": 2018,
+        "milestone": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "Engagement ring purchased in Croatia",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2018,
+        "milestone": "Brother Michael married Maggie (Jun 29)",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "Reminiscence Coordinator role at Sunrise of Wall (started Oct 22)",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "Best tennis comeback: won from 0-6 deficit (Dec 23)",
+        "sentiment": 0.735
+      },
+      {
+        "year": 2018,
+        "milestone": "Became a pickleball believer (Aug 16)",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "Arthur Knott (Artie) passed away (Feb 2)",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "6th cruise in 6 years",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
+        "sentiment": 0.751
+      },
+      {
+        "year": 2018,
+        "milestone": "Won Weezer tickets as 94.3 radio 9th caller (Nov 26)",
+        "sentiment": 0.572
+      },
+      {
+        "year": 2018,
+        "milestone": "New Hampshire trip (Sep 19-22)",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "34th birthday (Sep 27)",
+        "sentiment": null
+      },
+      {
+        "year": 2018,
+        "milestone": "Fever 100.3 on NYE",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
+        "sentiment": 0.856
+      },
+      {
+        "year": 2019,
+        "milestone": "Nephew Julian John Tronolone born (Aug 23)",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "Became Uncle John",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "1,000th CHA game vs Pops Tronolone (May 22)",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "7th Major ECD championship (Aug 17)",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2019,
+        "milestone": "Wisconsin Trip 1: Moore-Tronolone wedding (May 31-Jun 2)",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "Wisconsin Trip 2: Lambeau Field 78,000+ (Sep 20-23)",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "Weezer concert at sold-out MSG (Mar 12)",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "DC Pride Weekend (Jun 22-24)",
+        "sentiment": 0.34
+      },
+      {
+        "year": 2019,
+        "milestone": "35th birthday \u2014 'Halfway to 70' (Sep 25-27)",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "Inaugural 'Steal Bingo' (Nov 23)",
+        "sentiment": -0.494
+      },
+      {
+        "year": 2019,
+        "milestone": "Strep throat + kidney stone removal",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "RK's 30th birthday in Atlantic City (Dec 15-16)",
+        "sentiment": null
+      },
+      {
+        "year": 2019,
+        "milestone": "U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8)",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2019,
+        "milestone": "'2020, challenge accepted' (Dec 31)",
+        "sentiment": 0.34
+      }
+    ],
+    "milestone_count": 28,
+    "avg_sentiment": 0.159
+  },
+  {
+    "chapter_number": 13,
+    "chapter_name": "Chapter 13: 2020-2020",
+    "start_year": 2020,
+    "end_year": 2020,
+    "theme": "Asia Expedition \u2014 COVID Quarantine \u2014 4th Skydive \u2014 Leap Day Wedding",
+    "milestones": [
+      {
+        "year": 2020,
+        "milestone": "Asian expedition: Singapore, Thailand, Cambodia, Vietnam, Hong Kong (17 days Jan-Feb)",
+        "sentiment": null
+      },
+      {
+        "year": 2020,
+        "milestone": "Kevin & Leah married Feb 29 (leap day)",
+        "sentiment": null
+      },
+      {
+        "year": 2020,
+        "milestone": "90th WWE event (Mar 8, 17th with RL)",
+        "sentiment": null
+      },
+      {
+        "year": 2020,
+        "milestone": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
+        "sentiment": 0.527
+      },
+      {
+        "year": 2020,
+        "milestone": "Assisted Living Manager at Sunrise of Jackson (started Sep 28)",
+        "sentiment": null
+      },
+      {
+        "year": 2020,
+        "milestone": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
+        "sentiment": 0.421
+      },
+      {
+        "year": 2020,
+        "milestone": "Grace & Megan graduate high school",
+        "sentiment": 0.421
+      },
+      {
+        "year": 2020,
+        "milestone": "ECD 15th birthday (Aug 22-23)",
+        "sentiment": null
+      },
+      {
+        "year": 2020,
+        "milestone": "Tennis: 6-3, 6-1 vs Blake (Dec 12)",
+        "sentiment": null
+      },
+      {
+        "year": 2020,
+        "milestone": "Pasta Passion & Pistols Murder Mystery NYE (Dec 31)",
+        "sentiment": -0.402
+      },
+      {
+        "year": 2020,
+        "milestone": "Turned 36 (Sep 27) \u2014 skydive + birthday combined",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 11,
+    "avg_sentiment": 0.088
+  },
+  {
+    "chapter_number": 14,
+    "chapter_name": "Chapter 14: 2021-2021",
+    "start_year": 2021,
+    "end_year": 2021,
+    "theme": "9.8/10 Year \u2014 218 Ping Pong Rounds \u2014 8.6 lbs Shrimp \u2014 Nephew Lawrence",
+    "milestones": [
+      {
+        "year": 2021,
+        "milestone": "Year rated 9.8/10",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "218-round ping pong match",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "8.6 lbs shrimp + 7.3 lbs crab meat consumed",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "Nephew Lawrence born (Dec 23, 6:25am)",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "25th consecutive Survivor Series \u2014 91st WWE event",
+        "sentiment": 0.361
+      },
+      {
+        "year": 2021,
+        "milestone": "Jumped from Stratosphere in Las Vegas",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "Sr. Resident Care Coordinator promotion (applied Jul 11, accepted Jul 23)",
+        "sentiment": 0.649
+      },
+      {
+        "year": 2021,
+        "milestone": "568-day wait for Laver Cup tickets",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "20 years between Rangers games at MSG",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "10-year anniversary with Rob (Jan 15)",
+        "sentiment": -0.557
+      },
+      {
+        "year": 2021,
+        "milestone": "Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos)",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2021,
+        "milestone": "Tour de Friends events (Feb-Apr)",
+        "sentiment": 0.477
+      },
+      {
+        "year": 2021,
+        "milestone": "Danny won inaugural 'RK Quiz' (Dec 11)",
+        "sentiment": 0.572
+      },
+      {
+        "year": 2021,
+        "milestone": "YogaSix Class 101 standing splits (Dec 12)",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "37th birthday (Sep 24-28)",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "Alexandria Virginia work assignment (Sep 20-23)",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "Arizona trip: Grand Canyon, Sedona, Flagstaff",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2021,
+        "milestone": "Death Valley visited (Mar 16-20)",
+        "sentiment": -0.599
+      },
+      {
+        "year": 2021,
+        "milestone": "Ft. Lauderdale wedding attendance (May 13-18)",
+        "sentiment": null
+      },
+      {
+        "year": 2021,
+        "milestone": "Washington D.C. visit (October)",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 20,
+    "avg_sentiment": 0.091
+  },
+  {
+    "chapter_number": 15,
+    "chapter_name": "Chapter 15: 2022-2022",
+    "start_year": 2022,
+    "end_year": 2022,
+    "theme": "Five Boro Bike Tour \u2014 Rangers Playoff Run \u2014 Gram's 90th",
+    "milestones": [
+      {
+        "year": 2022,
+        "milestone": "Knicks game (100-97 victory)",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "Rangers playoff run (triple-OT game at MSG)",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "Megan's Brookdale graduation",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "California/Oregon vacation (Golden Gate, Redwoods, Portland)",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "Five Boro Bike Tour (40 miles)",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "PSU White Out football weekend",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "Gram's 90th birthday",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "ECD FallFest",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "Connecticut work assignment (Sunrise Wilton)",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "#100 Award",
+        "sentiment": 0.542
+      },
+      {
+        "year": 2022,
+        "milestone": "Undertaker inducted into Hall of Fame",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2022,
+        "milestone": "Hunter Mountain NY ski trip (winter)",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "North Carolina/Tennessee road trip (March)",
+        "sentiment": null
+      },
+      {
+        "year": 2022,
+        "milestone": "Yankees game attended",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 14,
+    "avg_sentiment": 0.07
+  },
+  {
+    "chapter_number": 16,
+    "chapter_name": "Chapter 16: 2023-2023",
+    "start_year": 2023,
+    "end_year": 2023,
+    "theme": "Super Bowl LVII \u2014 House Closing \u2014 3 Broadway Shows",
+    "milestones": [
+      {
+        "year": 2023,
+        "milestone": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced'",
+        "sentiment": 0.599
+      },
+      {
+        "year": 2023,
+        "milestone": "Closed on house at Mill Creek Court (Dec 18)",
+        "sentiment": null
+      },
+      {
+        "year": 2023,
+        "milestone": "15-year anniversary of 'personal liberation day'",
+        "sentiment": null
+      },
+      {
+        "year": 2023,
+        "milestone": "Broadway: Hadestown, Aladdin, Chicago (3 shows in one year)",
+        "sentiment": null
+      },
+      {
+        "year": 2023,
+        "milestone": "Executive Director role began at Media, PA location (July)",
+        "sentiment": null
+      },
+      {
+        "year": 2023,
+        "milestone": "Six Flags Great Adventure visits (multiple)",
+        "sentiment": 0.751
+      }
+    ],
+    "milestone_count": 6,
+    "avg_sentiment": 0.225
+  },
+  {
+    "chapter_number": 17,
+    "chapter_name": "Chapter 17: 2024-2024",
+    "start_year": 2024,
+    "end_year": 2024,
+    "theme": "Norway/Iceland \u2014 Grandmother's Passing \u2014 30 Blue Claws",
+    "milestones": [
+      {
+        "year": 2024,
+        "milestone": "Spain trip (Lisbon, Madrid)",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Norway cruise (Alesund, Akureyri, Iceland Sky Lagoon)",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Toronto (CN Tower 1,815 ft, Niagara Falls)",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Montreal (Place d'Armes, MTLaTABLE)",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "30 blue crabs caught (personal best)",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Grandmother passed (Oct 21, 11:57 PM, age 92)",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Kidney stones (Dec 18 & 20 hospitalizations)",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Bowling 180+ average",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Wicked on Broadway",
+        "sentiment": -0.527
+      },
+      {
+        "year": 2024,
+        "milestone": "Fenwick Island/Delaware trip",
+        "sentiment": null
+      },
+      {
+        "year": 2024,
+        "milestone": "Julian's 5th birthday (Aug 25)",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 11,
+    "avg_sentiment": -0.048
+  },
+  {
+    "chapter_number": 18,
+    "chapter_name": "Chapter 18: 2025-2025",
+    "start_year": 2025,
+    "end_year": 2025,
+    "theme": "Executive Director \u2014 4,000-Mile Road Trip \u2014 Ma's 70th",
+    "milestones": [
+      {
+        "year": 2025,
+        "milestone": "Executive Director promotion (passed NJ certification)",
+        "sentiment": null
+      },
+      {
+        "year": 2025,
+        "milestone": "4,000-mile Midwest road trip (16 states: Rushmore, Devils Tower, Gateway Arch, Badlands)",
+        "sentiment": -0.572
+      },
+      {
+        "year": 2025,
+        "milestone": "Mother's 70th birthday",
+        "sentiment": null
+      },
+      {
+        "year": 2025,
+        "milestone": "20th Anniversary celebration",
+        "sentiment": null
+      },
+      {
+        "year": 2025,
+        "milestone": "ECD Bowl Weekend (57 people, $1,700+ raised)",
+        "sentiment": null
+      },
+      {
+        "year": 2025,
+        "milestone": "Five Boro Bike Tour medal finish",
+        "sentiment": 0.477
+      },
+      {
+        "year": 2025,
+        "milestone": "Influenza confirmed (February)",
+        "sentiment": null
+      },
+      {
+        "year": 2025,
+        "milestone": "Emotional crisis and relationship transition (late May-early June)",
+        "sentiment": -0.542
+      },
+      {
+        "year": 2025,
+        "milestone": "Anniversary XX celebration \u2014 20-year Timeline milestone (Sep 27)",
+        "sentiment": null
+      },
+      {
+        "year": 2025,
+        "milestone": "Coastal cruise getaway (Sep 28 - Oct 5)",
+        "sentiment": null
+      },
+      {
+        "year": 2025,
+        "milestone": "NJ Executive Director certification passed",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 11,
+    "avg_sentiment": -0.058
+  },
+  {
+    "chapter_number": 19,
+    "chapter_name": "Chapter 19: 2026",
+    "start_year": 2026,
+    "end_year": 2026,
+    "theme": "Japan \u2014 To Tokyo",
+    "milestones": [
+      {
+        "year": 2026,
+        "milestone": "Japan trip (booked \u2014 Tokyo bound)",
+        "sentiment": null
+      }
+    ],
+    "milestone_count": 1,
+    "avg_sentiment": 0.0
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "stage": "Approach to Inmost Cave",
+    "stage_number": 5,
+    "year_start": 2012,
+    "year_end": 2013,
+    "milestone_count": 20,
+    "people_count": 3,
+    "quote_count": 8,
+    "avg_sentiment": 0.304
+  },
+  {
+    "stage": "Call to Adventure",
+    "stage_number": 2,
+    "year_start": 2007,
+    "year_end": 2007,
+    "milestone_count": 14,
+    "people_count": 3,
+    "quote_count": 6,
+    "avg_sentiment": 0.117
+  },
+  {
+    "stage": "Crossing the Threshold",
+    "stage_number": 3,
+    "year_start": 2008,
+    "year_end": 2008,
+    "milestone_count": 14,
+    "people_count": 5,
+    "quote_count": 18,
+    "avg_sentiment": 0.191
+  },
+  {
+    "stage": "Ordinary World",
+    "stage_number": 1,
+    "year_start": 2004,
+    "year_end": 2006,
+    "milestone_count": 6,
+    "people_count": 1,
+    "quote_count": 0,
+    "avg_sentiment": null
+  },
+  {
+    "stage": "Resurrection",
+    "stage_number": 8,
+    "year_start": 2018,
+    "year_end": 2020,
+    "milestone_count": 39,
+    "people_count": 6,
+    "quote_count": 16,
+    "avg_sentiment": 0.168
+  },
+  {
+    "stage": "Return with the Elixir",
+    "stage_number": 9,
+    "year_start": 2021,
+    "year_end": 2026,
+    "milestone_count": 63,
+    "people_count": 4,
+    "quote_count": 6,
+    "avg_sentiment": 0.322
+  },
+  {
+    "stage": "Tests, Allies & Enemies",
+    "stage_number": 4,
+    "year_start": 2009,
+    "year_end": 2011,
+    "milestone_count": 36,
+    "people_count": 3,
+    "quote_count": 11,
+    "avg_sentiment": 0.152
+  },
+  {
+    "stage": "The Ordeal",
+    "stage_number": 6,
+    "year_start": 2014,
+    "year_end": 2014,
+    "milestone_count": 10,
+    "people_count": 4,
+    "quote_count": 8,
+    "avg_sentiment": 0.138
+  },
+  {
+    "stage": "The Road Back",
+    "stage_number": 7,
+    "year_start": 2015,
+    "year_end": 2017,
+    "milestone_count": 24,
+    "people_count": 4,
+    "quote_count": 6,
+    "avg_sentiment": 0.387
+  }
+]

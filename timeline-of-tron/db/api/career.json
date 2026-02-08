@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "year": 2001,
+    "title": "Cashier",
+    "employer": "Pathmark",
+    "milestone": "First job, circa 2001-2002",
+    "career_level": 0
+  },
+  {
+    "id": 2,
+    "year": 2004,
+    "title": "Monmouth University Student",
+    "employer": "Monmouth University",
+    "milestone": "Enrolled in Health Studies program (Sep 2004)",
+    "career_level": 0
+  },
+  {
+    "id": 3,
+    "year": 2005,
+    "title": "EastCoastDodgeball Founder",
+    "employer": "Self",
+    "milestone": "Created ECD, organized 500+ participants over 5 years",
+    "career_level": 0
+  },
+  {
+    "id": 4,
+    "year": 2007,
+    "title": "Recreation Worker",
+    "employer": "Ocean Township Recreation & Human Services",
+    "milestone": "Started Feb 27, 2007",
+    "career_level": 1
+  },
+  {
+    "id": 5,
+    "year": 2010,
+    "title": "Intern",
+    "employer": "Seabrook Village Health Club",
+    "milestone": "Graduated Monmouth (3.66 major GPA, 3.49 cumulative). Inaugural HERO of the Year. Phillies PSA.",
+    "career_level": 1
+  },
+  {
+    "id": 6,
+    "year": 2011,
+    "title": "Life Enrichment Manager",
+    "employer": "Sunrise Senior Living",
+    "milestone": "Career at Sunrise begins (Oct 31/Nov 1). Left Ocean Township (Oct 13 notice).",
+    "career_level": 2
+  },
+  {
+    "id": 7,
+    "year": 2012,
+    "title": "Activities & Volunteer Coordinator",
+    "employer": "Sunrise Senior Living",
+    "milestone": "Employee of the Month (Jan 2012)",
+    "career_level": 2
+  },
+  {
+    "id": 8,
+    "year": 2016,
+    "title": "Manager of the Year Award",
+    "employer": "Sunrise Senior Living",
+    "milestone": "Corporate recognition",
+    "career_level": 3
+  },
+  {
+    "id": 9,
+    "year": 2018,
+    "title": "Reminiscence Coordinator",
+    "employer": "Sunrise of Wall",
+    "milestone": "Job offer Sep 28 (phone call in bathroom), started Oct 22. Previous: Escapades Producer ended Oct 19.",
+    "career_level": 2
+  },
+  {
+    "id": 10,
+    "year": 2020,
+    "title": "Assisted Living Manager",
+    "employer": "Sunrise of Jackson",
+    "milestone": "Applied May, started Sept 28. Brian announced departure same week.",
+    "career_level": 3
+  },
+  {
+    "id": 11,
+    "year": 2021,
+    "title": "Sr. Resident Care Coordinator",
+    "employer": "Sunrise of Jackson",
+    "milestone": "After competitive interview. Applied Jul 11, interviews Jul 19-21, accepted Jul 23.",
+    "career_level": 4
+  },
+  {
+    "id": 12,
+    "year": 2025,
+    "title": "Executive Director",
+    "employer": "Sunrise of Jackson",
+    "milestone": "Passed NJ certification exam \u2014 the top job",
+    "career_level": 5
+  }
+]

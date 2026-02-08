@@ -1,0 +1,110 @@
+/*
+ * THE TIMELINE OF TRON — Room 3: The Comeback Lab
+ * Clinical white + recovery green
+ */
+
+.room-comeback {
+    --room-bg: #f8f9fa;
+    --room-text: #1a1a2e;
+    --room-accent: #2e7d32;
+    --room-panel: #ffffff;
+    --lj-border: #d0d0d0;
+    --lj-text-secondary: #5a5a6e;
+}
+
+.comeback-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-lg) 24px;
+}
+
+.comeback-hero {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.comeback-hero h1 { color: var(--room-accent); }
+
+.comeback-headline-stat {
+    font-family: var(--font-mono);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--room-accent);
+    margin: var(--space-md) 0;
+}
+
+.comeback-headline-label {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+}
+
+/* Sankey diagram */
+.comeback-sankey {
+    width: 100%;
+    min-height: 400px;
+    margin: var(--space-lg) 0;
+}
+
+.comeback-sankey svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Detail panel */
+.comeback-detail {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-left: 4px solid var(--room-accent);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-top: var(--space-lg);
+    display: none;
+}
+
+.comeback-detail.active { display: block; }
+
+.comeback-detail__title {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    color: var(--room-accent);
+}
+
+.comeback-detail__narrative {
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Recovery clock */
+.comeback-clock-section {
+    margin-top: var(--space-xl);
+    text-align: center;
+}
+
+.comeback-clock-section h2 {
+    margin-bottom: var(--space-md);
+}
+
+.comeback-clock {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Callout */
+.comeback-callout {
+    max-width: 700px;
+    margin: var(--space-xl) auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--lj-text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .comeback-sankey { min-height: 300px; }
+    .comeback-headline-stat { font-size: 2rem; }
+}

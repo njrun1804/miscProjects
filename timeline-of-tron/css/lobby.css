@@ -1,0 +1,153 @@
+/*
+ * THE TIMELINE OF TRON — Lobby Styles
+ * The landing page: hero, seismograph, room cards
+ */
+
+.room-lobby {
+    --room-bg: #e8e0d0;
+    --room-text: #2c2416;
+    --room-accent: #c9a84c;
+    --room-panel: #f5f0e6;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c4b8a0' fill-opacity='0.15'%3E%3Cpath d='M0 0h1v1H0zM20 0h1v1h-1zM0 20h1v1H0zM20 20h1v1h-1z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* =============================
+   HERO
+   ============================= */
+.lobby-hero {
+    text-align: center;
+    padding: var(--space-xl) var(--space-lg) var(--space-lg);
+}
+
+.lobby-title {
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--lj-text);
+    letter-spacing: -1px;
+}
+
+.lobby-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--lj-text-secondary);
+    margin-top: var(--space-sm);
+    font-style: italic;
+}
+
+/* =============================
+   SEISMOGRAPH
+   ============================= */
+.lobby-seismograph {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+}
+
+.lobby-seismograph canvas {
+    width: 100%;
+    height: 120px;
+    display: block;
+}
+
+.seismograph-label {
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: var(--space-sm);
+    letter-spacing: 0.5px;
+}
+
+/* =============================
+   ROOM CARDS
+   ============================= */
+.lobby-rooms {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.lobby-rooms-title {
+    text-align: center;
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    color: var(--lj-text-secondary);
+    margin-bottom: var(--space-lg);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.room-card {
+    display: block;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    text-decoration: none;
+    color: var(--lj-text);
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    box-shadow: 1px 2px 4px var(--lj-shadow);
+}
+
+.room-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 2px 4px 12px var(--lj-shadow);
+    text-decoration: none;
+}
+
+.room-card__icon {
+    font-size: 28px;
+    display: block;
+    margin-bottom: var(--space-sm);
+}
+
+.room-card h3 {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    color: var(--lj-text);
+    margin-bottom: var(--space-xs);
+}
+
+.room-card p {
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    line-height: 1.4;
+}
+
+.room-card__mood {
+    display: block;
+    margin-top: var(--space-sm);
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--lj-text-secondary);
+    opacity: 0.7;
+}
+
+/* Room-specific card borders */
+.room-card--arc:hover { border-color: #d4a24e; }
+.room-card--constellation:hover { border-color: #4a90d9; }
+.room-card--comeback:hover { border-color: #2e7d32; }
+.room-card--records:hover { border-color: #8b6914; }
+.room-card--atlas:hover { border-color: #1a5c8b; }
+.room-card--vault:hover { border-color: #c9a84c; }
+.room-card--dynasty:hover { border-color: #4a6741; }
+
+/* =============================
+   RESPONSIVE
+   ============================= */
+@media (max-width: 768px) {
+    .lobby-hero { padding: var(--space-lg) var(--space-md); }
+    .lobby-title { font-size: 1.8rem; }
+    .lobby-subtitle { font-size: 0.95rem; }
+    .room-grid { grid-template-columns: 1fr; }
+    .lobby-rooms { padding: var(--space-lg) var(--space-md); }
+}

@@ -1,0 +1,191 @@
+[
+  {
+    "year": 2004,
+    "active_people": 1,
+    "new_people": 1,
+    "lost_people": 0,
+    "network_density": 0.0,
+    "top_person": "Tim Moore",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2005,
+    "active_people": 2,
+    "new_people": 2,
+    "lost_people": 1,
+    "network_density": 1.0,
+    "top_person": "Dan Farnkopf",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2006,
+    "active_people": 3,
+    "new_people": 1,
+    "lost_people": 0,
+    "network_density": 1.0,
+    "top_person": "The Pops",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2007,
+    "active_people": 5,
+    "new_people": 3,
+    "lost_people": 2,
+    "network_density": 0.2,
+    "top_person": "Phil Campanella",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2008,
+    "active_people": 3,
+    "new_people": 2,
+    "lost_people": 4,
+    "network_density": 0.6667,
+    "top_person": "The Pops",
+    "top_person_mentions": 4
+  },
+  {
+    "year": 2009,
+    "active_people": 5,
+    "new_people": 2,
+    "lost_people": 2,
+    "network_density": 0.1,
+    "top_person": "The Pops",
+    "top_person_mentions": 3
+  },
+  {
+    "year": 2010,
+    "active_people": 3,
+    "new_people": 1,
+    "lost_people": 4,
+    "network_density": 0.3333,
+    "top_person": "The Pops",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2011,
+    "active_people": 4,
+    "new_people": 3,
+    "lost_people": 2,
+    "network_density": 0.1667,
+    "top_person": "The Pops",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2012,
+    "active_people": 1,
+    "new_people": 0,
+    "lost_people": 3,
+    "network_density": 0.0,
+    "top_person": "The Pops",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2013,
+    "active_people": 7,
+    "new_people": 3,
+    "lost_people": 0,
+    "network_density": 0.381,
+    "top_person": "The Pops",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2014,
+    "active_people": 9,
+    "new_people": 6,
+    "lost_people": 6,
+    "network_density": 0.1389,
+    "top_person": "The Pops",
+    "top_person_mentions": 3
+  },
+  {
+    "year": 2015,
+    "active_people": 3,
+    "new_people": 0,
+    "lost_people": 8,
+    "network_density": 1.0,
+    "top_person": "The Pops",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2016,
+    "active_people": 4,
+    "new_people": 0,
+    "lost_people": 2,
+    "network_density": 0.5,
+    "top_person": "The Pops",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2017,
+    "active_people": 9,
+    "new_people": 7,
+    "lost_people": 3,
+    "network_density": 0.3056,
+    "top_person": "Kevin & Leah (KMJ & LN)",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2018,
+    "active_people": 5,
+    "new_people": 2,
+    "lost_people": 8,
+    "network_density": 0.3,
+    "top_person": "Terra Bergquist",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2019,
+    "active_people": 4,
+    "new_people": 2,
+    "lost_people": 4,
+    "network_density": 0.5,
+    "top_person": "John Tronolone",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2020,
+    "active_people": 9,
+    "new_people": 3,
+    "lost_people": 3,
+    "network_density": 0.3056,
+    "top_person": "Kevin & Leah (KMJ & LN)",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2021,
+    "active_people": 9,
+    "new_people": 2,
+    "lost_people": 8,
+    "network_density": 0.1944,
+    "top_person": "Dan Farnkopf",
+    "top_person_mentions": 2
+  },
+  {
+    "year": 2022,
+    "active_people": 1,
+    "new_people": 0,
+    "lost_people": 9,
+    "network_density": 0.0,
+    "top_person": "Megan",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2024,
+    "active_people": 3,
+    "new_people": 0,
+    "lost_people": 1,
+    "network_density": 0.3333,
+    "top_person": "The Pops",
+    "top_person_mentions": 1
+  },
+  {
+    "year": 2025,
+    "active_people": 2,
+    "new_people": 0,
+    "lost_people": 2,
+    "network_density": 0.0,
+    "top_person": "The Pops",
+    "top_person_mentions": 1
+  }
+]

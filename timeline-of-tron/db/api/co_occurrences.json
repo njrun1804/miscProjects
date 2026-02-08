@@ -1,0 +1,394 @@
+[
+  {
+    "person_a": "2",
+    "person_b": "17",
+    "year": 2007,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Lauren Stopa",
+    "person_b": "Lauren Winston",
+    "year": 2007,
+    "context": "Lauren Winston turned 21 (Apr 13); Lauren Winston: Comedian of the Year",
+    "co_occurrence_count": 5
+  },
+  {
+    "person_a": "1",
+    "person_b": "2",
+    "year": 2008,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "2",
+    "person_b": "10",
+    "year": 2008,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Ryan Letsche",
+    "year": 2008,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Ryan Letsche (RyGuy)",
+    "year": 2008,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Ryan Letsche",
+    "person_b": "Ryan Letsche (RyGuy)",
+    "year": 2008,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Juan Londono (Muffin Man)",
+    "person_b": "Steve Pham",
+    "year": 2009,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Juan Londono (Muffin Man)",
+    "person_b": "Steve and Stacey",
+    "year": 2009,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Steve Pham",
+    "person_b": "Steve and Stacey",
+    "year": 2009,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "1",
+    "person_b": "5",
+    "year": 2010,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Michael",
+    "year": 2010,
+    "context": "Brother Michael graduated from Kean University (May 13); Brother Michael married Maggie (Jun 29)",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "1",
+    "person_b": "10",
+    "year": 2011,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Cousin Nick & Samantha",
+    "person_b": "Ma",
+    "year": 2011,
+    "context": "Cousin Nick married Samantha (Jul 2-3)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "1",
+    "person_b": "13",
+    "year": 2012,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "10",
+    "person_b": "13",
+    "year": 2012,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Grandma 'Mama' Blanca",
+    "person_b": "Grandma Irene",
+    "year": 2013,
+    "context": "Grandma Theresa passed away (Jun 10-15)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Grandma 'Mama' Blanca",
+    "person_b": "Grandma Theresa",
+    "year": 2013,
+    "context": "Grandma Theresa passed away (Jun 10-15)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Grandma 'Mama' Blanca",
+    "person_b": "Ma",
+    "year": 2013,
+    "context": "Grandma Theresa passed away (Jun 10-15)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Grandma Irene",
+    "person_b": "Grandma Theresa",
+    "year": 2013,
+    "context": "Grandma Theresa passed away (Jun 10-15)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Grandma Irene",
+    "person_b": "Ma",
+    "year": 2013,
+    "context": "Grandma Theresa passed away (Jun 10-15)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Grandma Theresa",
+    "person_b": "Ma",
+    "year": 2013,
+    "context": "Grandma Theresa passed away (Jun 10-15)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Diana DiBuccio",
+    "person_b": "Valerie Winston (ValPal)",
+    "year": 2014,
+    "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "John Tronolone",
+    "person_b": "Johnny Nash",
+    "year": 2014,
+    "context": "Johnny Nash: most influential friend of 2014",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Maggie",
+    "year": 2014,
+    "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30); Brother Michael married Maggie (Jun 29)",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Mike 'Sputz' Krott",
+    "year": 2014,
+    "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Maggie",
+    "person_b": "Mike 'Sputz' Krott",
+    "year": 2014,
+    "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "1",
+    "person_b": "15",
+    "year": 2015,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Dan Spengeman",
+    "person_b": "Danny Sponge",
+    "year": 2015,
+    "context": "Dan Spengeman: Comedian of the Year",
+    "co_occurrence_count": 5
+  },
+  {
+    "person_a": "Dan Spengeman",
+    "person_b": "Ma",
+    "year": 2015,
+    "context": "Dan Spengeman: Comedian of the Year",
+    "co_occurrence_count": 5
+  },
+  {
+    "person_a": "Danny Sponge",
+    "person_b": "Ma",
+    "year": 2015,
+    "context": "Dan Spengeman: Comedian of the Year",
+    "co_occurrence_count": 5
+  },
+  {
+    "person_a": "15",
+    "person_b": "17",
+    "year": 2016,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Kevin & Leah (KMJ & LN)",
+    "person_b": "Kevin Adams",
+    "year": 2017,
+    "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Kevin & Leah (KMJ & LN)",
+    "person_b": "Kevin Megill (KMJ)",
+    "year": 2017,
+    "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Kevin Adams",
+    "person_b": "Kevin Megill (KMJ)",
+    "year": 2017,
+    "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Matt (Physical Therapist)",
+    "year": 2017,
+    "context": "California trip 600+ miles for Matt & Gina wedding",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Matt (introduced Jul 3, 2019)",
+    "year": 2017,
+    "context": "California trip 600+ miles for Matt & Gina wedding",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Matt (Physical Therapist)",
+    "person_b": "Matt (introduced Jul 3, 2019)",
+    "year": 2017,
+    "context": "California trip 600+ miles for Matt & Gina wedding",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Ma",
+    "person_b": "Terra Bergquist",
+    "year": 2018,
+    "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Maggie",
+    "person_b": "Michael",
+    "year": 2018,
+    "context": "Brother Michael married Maggie (Jun 29)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "John Tronolone",
+    "person_b": "Julia Dennabuam",
+    "year": 2019,
+    "context": "Nephew Julian John Tronolone born (Aug 23)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "John Tronolone",
+    "person_b": "Julian",
+    "year": 2019,
+    "context": "Nephew Julian John Tronolone born (Aug 23)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Julia Dennabuam",
+    "person_b": "Julian",
+    "year": 2019,
+    "context": "Nephew Julian John Tronolone born (Aug 23); Julian's 5th birthday (Aug 25)",
+    "co_occurrence_count": 2
+  },
+  {
+    "person_a": "Grace",
+    "person_b": "Megan",
+    "year": 2020,
+    "context": "Grace & Megan graduate high school",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Kevin & Leah (KMJ & LN)",
+    "person_b": "Ma",
+    "year": 2020,
+    "context": "Kevin & Leah married Feb 29 (leap day)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Kevin Adams",
+    "person_b": "Ma",
+    "year": 2020,
+    "context": "Kevin & Leah married Feb 29 (leap day)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Kevin Megill (KMJ)",
+    "person_b": "Ma",
+    "year": 2020,
+    "context": "Kevin & Leah married Feb 29 (leap day)",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "1",
+    "person_b": "17",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "10",
+    "person_b": "17",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Phil Campanella",
+    "person_b": "Lauren Stopa",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Phil Campanella",
+    "person_b": "Rob",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Phil Campanella",
+    "person_b": "Rob Phillips (Robert)",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Rob",
+    "person_b": "Lauren Stopa",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Rob",
+    "person_b": "Rob Phillips (Robert)",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "Rob Phillips (Robert)",
+    "person_b": "Lauren Stopa",
+    "year": 2021,
+    "context": "",
+    "co_occurrence_count": 1
+  },
+  {
+    "person_a": "4",
+    "person_b": "10",
+    "year": 2022,
+    "context": "",
+    "co_occurrence_count": 1
+  }
+]

@@ -1,0 +1,5456 @@
+{
+  "2004": {
+    "summary": {
+      "milestone_count": 2,
+      "travel_count": 0,
+      "wwe_events": 1,
+      "people_mentioned": 0,
+      "entertainment_count": 0,
+      "comeback_count": 1,
+      "award_count": 0,
+      "quote_count": 0,
+      "intensity_score": 6.5,
+      "year_theme": "The Beginning \u2014 Car Accident & Recovery",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 1: 2004-2006",
+      "theme": "The Beginning \u2014 Car Accident & Recovery | ECD Founded \u2014 Finding Community | Dance Anthems & FINS Fridays"
+    },
+    "heros_journey_stage": "Ordinary World",
+    "milestones": [
+      {
+        "year": 2004,
+        "milestone": "Life-altering car accident resulting in panic attacks and anxiety",
+        "category": "vehicle",
+        "sentiment": -0.875
+      },
+      {
+        "year": 2004,
+        "milestone": "Timeline project begins on LiveJournal (Jul 29)",
+        "category": "other",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore"
+    ],
+    "quotes": [],
+    "travel": [],
+    "awards": [],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "Monmouth University Student",
+        "employer": "Monmouth University",
+        "milestone": "Enrolled in Health Studies program (Sep 2004)",
+        "career_level": 0,
+        "sentiment": 0.0
+      }
+    ],
+    "medical": [
+      {
+        "event": "Life-altering car accident \u2014 panic attacks and anxiety",
+        "category": "trauma",
+        "severity": "major",
+        "sentiment": -0.688
+      }
+    ],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "Timeline Begins",
+        "cumulative_events": 10,
+        "note": "Wrestling fandom started via Mrs. Amorino's VHS tapes at Holy Trinity Elementary"
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "project begins",
+        "tfidf_score": 0.302
+      },
+      {
+        "keyword": "panic",
+        "tfidf_score": 0.302
+      },
+      {
+        "keyword": "panic attacks",
+        "tfidf_score": 0.302
+      },
+      {
+        "keyword": "resulting panic",
+        "tfidf_score": 0.302
+      },
+      {
+        "keyword": "resulting",
+        "tfidf_score": 0.302
+      },
+      {
+        "keyword": "project",
+        "tfidf_score": 0.302
+      },
+      {
+        "keyword": "car accident",
+        "tfidf_score": 0.267
+      },
+      {
+        "keyword": "accident",
+        "tfidf_score": 0.267
+      },
+      {
+        "keyword": "car",
+        "tfidf_score": 0.267
+      },
+      {
+        "keyword": "begins",
+        "tfidf_score": 0.242
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 14.25,
+      "avg_word_count": 8.0,
+      "vocabulary_richness": 1.0,
+      "avg_sentence_length": 16.0,
+      "total_words": 16
+    },
+    "fun_facts": [],
+    "network": {
+      "active_people": 1,
+      "new_people": 1,
+      "lost_people": 0,
+      "network_density": 0.0,
+      "top_person": "Tim Moore",
+      "top_person_mentions": 1
+    }
+  },
+  "2005": {
+    "summary": {
+      "milestone_count": 2,
+      "travel_count": 0,
+      "wwe_events": 0,
+      "people_mentioned": 0,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 0,
+      "quote_count": 0,
+      "intensity_score": 2.0,
+      "year_theme": "ECD Founded \u2014 Finding Community",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 1: 2004-2006",
+      "theme": "The Beginning \u2014 Car Accident & Recovery | ECD Founded \u2014 Finding Community | Dance Anthems & FINS Fridays"
+    },
+    "heros_journey_stage": "Ordinary World",
+    "milestones": [
+      {
+        "year": 2005,
+        "milestone": "Difficult period after WrestleMania attendance",
+        "category": "wwe",
+        "sentiment": -0.361
+      },
+      {
+        "year": 2005,
+        "milestone": "EastCoastDodgeball founded",
+        "category": "ecd",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman"
+    ],
+    "quotes": [],
+    "travel": [],
+    "awards": [],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "EastCoastDodgeball Founder",
+        "employer": "Self",
+        "milestone": "Created ECD, organized 500+ participants over 5 years",
+        "career_level": 0,
+        "sentiment": 0.25
+      }
+    ],
+    "medical": [
+      {
+        "event": "Contracted Shingles at age 20",
+        "category": "illness",
+        "severity": "moderate",
+        "sentiment": 0.0
+      }
+    ],
+    "ecd": [
+      {
+        "anniversary": "Founded",
+        "event_name": null,
+        "participants": null,
+        "raised": 0.0,
+        "sentiment": 0.25
+      }
+    ],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "period wrestlemania",
+        "tfidf_score": 0.568
+      },
+      {
+        "keyword": "period",
+        "tfidf_score": 0.568
+      },
+      {
+        "keyword": "attendance",
+        "tfidf_score": 0.502
+      },
+      {
+        "keyword": "wrestlemania",
+        "tfidf_score": 0.323
+      }
+    ],
+    "writing_stats": {},
+    "fun_facts": [],
+    "network": {
+      "active_people": 2,
+      "new_people": 2,
+      "lost_people": 1,
+      "network_density": 1.0,
+      "top_person": "Dan Farnkopf",
+      "top_person_mentions": 1
+    }
+  },
+  "2006": {
+    "summary": {
+      "milestone_count": 2,
+      "travel_count": 0,
+      "wwe_events": 0,
+      "people_mentioned": 0,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 0,
+      "quote_count": 0,
+      "intensity_score": 2.0,
+      "year_theme": "Dance Anthems & FINS Fridays",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 1: 2004-2006",
+      "theme": "The Beginning \u2014 Car Accident & Recovery | ECD Founded \u2014 Finding Community | Dance Anthems & FINS Fridays"
+    },
+    "heros_journey_stage": "Ordinary World",
+    "milestones": [
+      {
+        "year": 2006,
+        "milestone": "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2006,
+        "milestone": "FINS Friday gatherings ongoing since March 2006",
+        "category": "other",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops"
+    ],
+    "quotes": [],
+    "travel": [],
+    "awards": [],
+    "entertainment": [],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "ongoing",
+        "tfidf_score": 0.49
+      },
+      {
+        "keyword": "ongoing march",
+        "tfidf_score": 0.49
+      },
+      {
+        "keyword": "70",
+        "tfidf_score": 0.433
+      },
+      {
+        "keyword": "dodgeball",
+        "tfidf_score": 0.393
+      },
+      {
+        "keyword": "30",
+        "tfidf_score": 0.361
+      },
+      {
+        "keyword": "dec",
+        "tfidf_score": 0.216
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 15.15,
+      "avg_word_count": 11.0,
+      "vocabulary_richness": 0.909,
+      "avg_sentence_length": 31.0,
+      "total_words": 33
+    },
+    "fun_facts": [
+      {
+        "fact": "First haircut since May 2006 was gotten September 2, 2007 \u2014 roughly 16 months between haircuts",
+        "category": "misc",
+        "sentiment": 0.075
+      }
+    ],
+    "network": {
+      "active_people": 3,
+      "new_people": 1,
+      "lost_people": 0,
+      "network_density": 1.0,
+      "top_person": "The Pops",
+      "top_person_mentions": 2
+    }
+  },
+  "2007": {
+    "summary": {
+      "milestone_count": 14,
+      "travel_count": 2,
+      "wwe_events": 2,
+      "people_mentioned": 1,
+      "entertainment_count": 0,
+      "comeback_count": 1,
+      "award_count": 2,
+      "quote_count": 4,
+      "intensity_score": 26.0,
+      "year_theme": "The Most Colorful Year \u2014 27 Bowling Games, WWE Stock, Shingles at 20",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 2: 2007-2007",
+      "theme": "The Most Colorful Year \u2014 27 Bowling Games, WWE Stock, Shingles at 20"
+    },
+    "heros_journey_stage": "Call to Adventure",
+    "milestones": [
+      {
+        "year": 2007,
+        "milestone": "20+ hours of tennis in one week",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "27 bowling games in a single day",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "51st WWE event (Oct 29 Philadelphia)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "Contracted Shingles at age 20",
+        "category": "health",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'",
+        "category": "writing",
+        "sentiment": 0.052
+      },
+      {
+        "year": 2007,
+        "milestone": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
+        "category": "ecd",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2007,
+        "milestone": "Dad's surprise 50th birthday (Jul 29)",
+        "category": "family",
+        "sentiment": 0.273
+      },
+      {
+        "year": 2007,
+        "milestone": "Lauren Winston turned 21 (Apr 13)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "MU Co-Ed Dodgeball League championship (Nov 19, PondScum)",
+        "category": "ecd",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2007,
+        "milestone": "Moved back to Mom's permanently (Jul 1)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "Started job at Ocean Township Recreation (Feb 27)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "Turned 23 (Sep 27)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "WWE Stock purchased (Dec 12)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2007,
+        "milestone": "WrestleMania 23 in Detroit (3rd WM)",
+        "category": "wwe",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Phil Campanella",
+      "Lauren Stopa",
+      "Lauren Winston"
+    ],
+    "quotes": [
+      {
+        "quote": "Without any hesitation, I proudly proclaim that 2007 was undoubtedly the most colorful and eventful year of my life.",
+        "emotion": "pride",
+        "theme": "reflection",
+        "sentiment": -0.276
+      },
+      {
+        "quote": "the beginning not of a temporary diet, but a desperate lifestyle alteration",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.45
+      },
+      {
+        "quote": "Some day you're gonna look back and be happy you recorded all of this stuff",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.572
+      },
+      {
+        "quote": "half of these entries don't make any sense to the reader [or the writer, haha]",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "Sometimes the door without a sign is the sign",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "My oh my, how the times have changed. A full tank. No Angel. Triple digits. Reconciliation.",
+        "emotion": "neutral",
+        "theme": "growth",
+        "sentiment": -0.296
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Detroit, Michigan",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "NYC (MSG)",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": -0.103
+      }
+    ],
+    "awards": [
+      {
+        "category": "timeline_award",
+        "year": 2007,
+        "winner": "Favorite Joke: 'T.A.R.' (Tuck and Roll)",
+        "note": ""
+      },
+      {
+        "category": "timeline_award",
+        "year": 2007,
+        "winner": "Favorite Song: Saliva's 'Ladies and Gentlemen'",
+        "note": ""
+      }
+    ],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "Recreation Worker",
+        "employer": "Ocean Township Recreation & Human Services",
+        "milestone": "Started Feb 27, 2007",
+        "career_level": 1,
+        "sentiment": 0.0
+      }
+    ],
+    "medical": [
+      {
+        "event": "Near-anorexia and mental health crisis; chopped long hair; joined gym",
+        "category": "mental_health",
+        "severity": "major",
+        "sentiment": -0.649
+      }
+    ],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "WWE Stock purchased; 51st event (Oct 29 Philadelphia)",
+        "cumulative_events": 51,
+        "note": ""
+      },
+      {
+        "label": "WrestleMania 23 in Detroit (3rd WM)",
+        "cumulative_events": null,
+        "note": "Ford Field, Hall of Fame, meet-and-greet"
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "dodgeball",
+        "tfidf_score": 0.213
+      },
+      {
+        "keyword": "27",
+        "tfidf_score": 0.204
+      },
+      {
+        "keyword": "23",
+        "tfidf_score": 0.182
+      },
+      {
+        "keyword": "29",
+        "tfidf_score": 0.171
+      },
+      {
+        "keyword": "jul",
+        "tfidf_score": 0.171
+      },
+      {
+        "keyword": "20",
+        "tfidf_score": 0.161
+      },
+      {
+        "keyword": "wwe",
+        "tfidf_score": 0.161
+      },
+      {
+        "keyword": "turned",
+        "tfidf_score": 0.161
+      },
+      {
+        "keyword": "oct 29",
+        "tfidf_score": 0.133
+      },
+      {
+        "keyword": "philadelphia dodgeball",
+        "tfidf_score": 0.133
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 16.81,
+      "avg_word_count": 9.5,
+      "vocabulary_richness": 0.739,
+      "avg_sentence_length": 36.0,
+      "total_words": 218
+    },
+    "fun_facts": [
+      {
+        "fact": "27 bowling games in a single day (2007)",
+        "category": "sports",
+        "sentiment": -0.071
+      },
+      {
+        "fact": "Record 52 participants at DODGEBALL 100 (Aug 18, 2007)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "WWE Stock purchased on December 12, 2007",
+        "category": "wwe",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 5,
+      "new_people": 3,
+      "lost_people": 2,
+      "network_density": 0.2,
+      "top_person": "Phil Campanella",
+      "top_person_mentions": 1
+    }
+  },
+  "2008": {
+    "summary": {
+      "milestone_count": 14,
+      "travel_count": 2,
+      "wwe_events": 1,
+      "people_mentioned": 2,
+      "entertainment_count": 0,
+      "comeback_count": 1,
+      "award_count": 6,
+      "quote_count": 9,
+      "intensity_score": 29.0,
+      "year_theme": "Coming Out \u2014 Liberation Day \u2014 Conquered Obstacles",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 3: 2008-2008",
+      "theme": "Coming Out \u2014 Liberation Day \u2014 Conquered Obstacles"
+    },
+    "heros_journey_stage": "Crossing the Threshold",
+    "milestones": [
+      {
+        "year": 2008,
+        "milestone": "Came out in 2008; KMJ was 3rd person to know",
+        "category": "personal",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "Car accident on West Park Avenue (Nov 4)",
+        "category": "relationship",
+        "sentiment": -0.477
+      },
+      {
+        "year": 2008,
+        "milestone": "DODGEBALL 150 (Aug 9)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "Deactivated Facebook after 4-hour paper incident",
+        "category": "personal",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "Diana DiBuccio: Comedian of the Year",
+        "category": "music_awards",
+        "sentiment": 0.382
+      },
+      {
+        "year": 2008,
+        "milestone": "ECD 3-Year Anniversary (Sep 6)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "FAB4 Atlantic City trips began",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "First beer shared with The Pops (Aug 21)",
+        "category": "family",
+        "sentiment": 0.34
+      },
+      {
+        "year": 2008,
+        "milestone": "First semester of Health Studies completed at MU (May 8)",
+        "category": "education",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2008,
+        "milestone": "Royal Rumble at MSG (Jan 27)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "Song of the Year: Tom Petty 'Runnin Down a Dream'",
+        "category": "music_awards",
+        "sentiment": 0.052
+      },
+      {
+        "year": 2008,
+        "milestone": "Turned 24 (Sep 27)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "WrestleMania XXIV in Florida (4th WM)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2008,
+        "milestone": "Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 near-anorexia. Letsche friendship repaired at Rumble '08. First appearance of 'The power of an internal desire liberated!' \u2014 March 2008.",
+        "category": "personal",
+        "sentiment": 0.271
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Phil Campanella",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Diana DiBuccio",
+      "Tom Macaluso"
+    ],
+    "quotes": [
+      {
+        "quote": "Conquered obstacles, dreams turned reality, fears for happy tears",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.026
+      },
+      {
+        "quote": "2008: Rewarding, Refreshing, Heavenly. I Did It.",
+        "emotion": "pride",
+        "theme": "reflection",
+        "sentiment": 0.813
+      },
+      {
+        "quote": "Family First...Friendship takes two, not one.",
+        "emotion": "love",
+        "theme": "relationships",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "I said exactly what I needed to say; now I look back with a smile.",
+        "emotion": "neutral",
+        "theme": "identity",
+        "sentiment": 0.361
+      },
+      {
+        "quote": "Life is Beautiful",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.599
+      },
+      {
+        "quote": "I cannot and will not pass any negative sanction upon anything I've ever said because I know at one time, at that specific time, it's how I felt.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.459
+      },
+      {
+        "quote": "Well written, John, but as usual, makes little sense to me. You are way too esoteric.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.141
+      },
+      {
+        "quote": "When Jim Butler calls you esoteric, well...that's just hilarious (pot, meet kettle)",
+        "emotion": "humor",
+        "theme": "reflection",
+        "sentiment": 0.402
+      },
+      {
+        "quote": "Keep on evolving John!",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "the best yet...showcased all the cool times...and gave every true friend their moment",
+        "emotion": "joy",
+        "theme": "relationships",
+        "sentiment": 0.91
+      },
+      {
+        "quote": "The power of an internal desire liberated!",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.457
+      },
+      {
+        "quote": "Can't a guy just get tired?",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.44
+      },
+      {
+        "quote": "The feeling of being in that spotlight was truly very special",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.75
+      },
+      {
+        "quote": "someone crushed his acorn",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.421
+      },
+      {
+        "quote": "regret ever regretting",
+        "emotion": "sadness",
+        "theme": "reflection",
+        "sentiment": -0.67
+      },
+      {
+        "quote": "Inner joy. Endless privilege and pleasure. I've never felt happier to be alive than here and now.",
+        "emotion": "joy",
+        "theme": "identity",
+        "sentiment": 0.87
+      },
+      {
+        "quote": "I really love how you are who you are regardless of what others think. You really possess something that many strive to obtain but are never able to, due to insecurities and expectations.",
+        "emotion": "defiance",
+        "theme": "relationships",
+        "sentiment": -0.239
+      },
+      {
+        "quote": "I love your writing style...it's like, you say what you wanna say and you don't care what anyone thinks.",
+        "emotion": "love",
+        "theme": "relationships",
+        "sentiment": 0.621
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Orlando, Florida",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Atlantic City (multiple)",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2008,
+        "winner": "",
+        "note": "Category existed"
+      },
+      {
+        "category": "song_of_the_year",
+        "year": 2008,
+        "winner": "Runnin' Down a Dream",
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2008,
+        "winner": "Diana DiBuccio",
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2008,
+        "winner": "Diana DiBuccio",
+        "note": ""
+      },
+      {
+        "category": "timeline_award",
+        "year": 2008,
+        "winner": "Day of the Year: Thursday",
+        "note": ""
+      },
+      {
+        "category": "timeline_award",
+        "year": 2008,
+        "winner": "Videos of the Year: WrestleMania XXIV Intro and Ryan's Birthday Speech",
+        "note": ""
+      }
+    ],
+    "entertainment": [],
+    "career": [],
+    "medical": [
+      {
+        "event": "Double wart removal surgery (Jan 22)",
+        "category": "minor_procedure",
+        "severity": "minor",
+        "sentiment": 0.571
+      },
+      {
+        "event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
+        "category": "trauma",
+        "severity": "major",
+        "sentiment": 0.151
+      }
+    ],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "WrestleMania XXIV in Florida (4th WM)",
+        "cumulative_events": 55,
+        "note": "Family reunion, CityWalk, Universal Studios"
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "2008",
+        "tfidf_score": 0.299
+      },
+      {
+        "keyword": "year",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "turned",
+        "tfidf_score": 0.18
+      },
+      {
+        "keyword": "27",
+        "tfidf_score": 0.153
+      },
+      {
+        "keyword": "refreshing",
+        "tfidf_score": 0.149
+      },
+      {
+        "keyword": "petty",
+        "tfidf_score": 0.149
+      },
+      {
+        "keyword": "pops aug",
+        "tfidf_score": 0.149
+      },
+      {
+        "keyword": "person",
+        "tfidf_score": 0.149
+      },
+      {
+        "keyword": "person know",
+        "tfidf_score": 0.149
+      },
+      {
+        "keyword": "refreshing heavenly",
+        "tfidf_score": 0.149
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 8.15,
+      "avg_word_count": 10.5,
+      "vocabulary_richness": 0.745,
+      "avg_sentence_length": 14.3,
+      "total_words": 345
+    },
+    "fun_facts": [
+      {
+        "fact": "Double wart removal surgery (Jan 22, 2008)",
+        "category": "medical",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "KMJ was the 3rd person the author came out to (2008, at MarinaGrille in Brick NJ)",
+        "category": "misc",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 3,
+      "new_people": 2,
+      "lost_people": 4,
+      "network_density": 0.667,
+      "top_person": "The Pops",
+      "top_person_mentions": 4
+    }
+  },
+  "2009": {
+    "summary": {
+      "milestone_count": 14,
+      "travel_count": 3,
+      "wwe_events": 2,
+      "people_mentioned": 1,
+      "entertainment_count": 4,
+      "comeback_count": 0,
+      "award_count": 3,
+      "quote_count": 6,
+      "intensity_score": 31.5,
+      "year_theme": "The Greatest Year Ever \u2014 SkyDiving, Concerts, 0 Regrets",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 4: 2009-2009",
+      "theme": "The Greatest Year Ever \u2014 SkyDiving, Concerts, 0 Regrets"
+    },
+    "heros_journey_stage": "Tests, Allies & Enemies",
+    "milestones": [
+      {
+        "year": 2009,
+        "milestone": "'The Greatest Year Ever. 2009.'",
+        "category": "other",
+        "sentiment": 0.637
+      },
+      {
+        "year": 2009,
+        "milestone": "28 beers consumed all year; 101 dates posted; 0 regrets",
+        "category": "other",
+        "sentiment": -0.361
+      },
+      {
+        "year": 2009,
+        "milestone": "62nd WWE event (Hell In A Cell Oct 4)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "Bowling 255 during a snowstorm (Mar 1)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "First concert ever: John Legend at MSG with Kanye West (Aug 13)",
+        "category": "entertainment",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "Grandmother's 77th birthday (Nov 13)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "Inducted into Eta Sigma Gamma at MU (Dec 16)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "Retired from ECD after 171 events and 40 months (Jan 3)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
+        "category": "sports",
+        "sentiment": 0.637
+      },
+      {
+        "year": 2009,
+        "milestone": "SkyDive II 'Cloud Nine' with 9 people (Oct 11)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "Turned 25 \u2014 multi-day celebration (Sep 25-27)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "U.S. Open Tennis Championships attended (Sep 7)",
+        "category": "sports",
+        "sentiment": 0.494
+      },
+      {
+        "year": 2009,
+        "milestone": "WinterBall with Melissa Kerr (Feb 21)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2009,
+        "milestone": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
+        "category": "wwe",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Phil Campanella",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Diana DiBuccio",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Melissa Kerr"
+    ],
+    "quotes": [
+      {
+        "quote": "Sometimes it is hell trying to get to heaven.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.318
+      },
+      {
+        "quote": "You cannot fear death once you've touched heaven.",
+        "emotion": "fear",
+        "theme": "reflection",
+        "sentiment": 0.843
+      },
+      {
+        "quote": "Walk the plank, take the jump, and still come up alive. What's a chance if you don't take it.",
+        "emotion": "determination",
+        "theme": "reflection",
+        "sentiment": 0.557
+      },
+      {
+        "quote": "Friends, Family, Freedom. The Greatest Year Ever. 2009.",
+        "emotion": "joy",
+        "theme": "relationships",
+        "sentiment": 0.91
+      },
+      {
+        "quote": "It wasn't something I was happy about doing, but it is something I'm happy I did.",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": -0.718
+      },
+      {
+        "quote": "You deserve a prize for being the last person on livejournal",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.511
+      },
+      {
+        "quote": "you reminded me of a LOT of events that i have forgotten about",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.226
+      },
+      {
+        "quote": "I finally came to the realization that I needed to move away from something that simply didn't make me happy anymore",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": -0.459
+      },
+      {
+        "quote": "I got tired of kissin' ass",
+        "emotion": "sadness",
+        "theme": "growth",
+        "sentiment": -0.751
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Houston, Texas",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Atlantic City",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Kutztown, Pennsylvania",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.477
+      }
+    ],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2009,
+        "winner": "The Pops",
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2009,
+        "winner": "The Pops",
+        "note": ""
+      },
+      {
+        "category": "timeline_award",
+        "year": 2009,
+        "winner": "Video of the Year: SkyDive I",
+        "note": ""
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "John Legend at Madison Square Garden",
+        "event_type": "concert",
+        "note": "First concert ever. India.Arie, Estelle, Buju Banton, Rick Ross, Kanye West also performed."
+      },
+      {
+        "show_name": "O.A.R. at Monmouth University MAC Center",
+        "event_type": "concert",
+        "note": "Won tickets as radio caller #8"
+      },
+      {
+        "show_name": "Carolina Panthers vs Giants at Giants Stadium",
+        "event_type": "sporting event",
+        "note": "Final game ever at old Giants Stadium. 78,809 attendance. 19th row center. Panthers won 41-9."
+      },
+      {
+        "show_name": "U.S. Open Tennis Championships",
+        "event_type": "sporting event",
+        "note": "With Steve Pham and Juan Londono"
+      }
+    ],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "WrestleMania 25 in Houston (5th WM)",
+        "cumulative_events": null,
+        "note": "Stone Cold farewell salute, Undertaker 17-0. With Valerie Winston, Travis Mills, Ryan Letsche."
+      },
+      {
+        "label": "62nd event overall (Hell In A Cell Oct 4)",
+        "cumulative_events": 62,
+        "note": ""
+      }
+    ],
+    "sports": [
+      {
+        "sport": "Bowling",
+        "stat_type": "note",
+        "stat_value": "Bowled during a snowstorm (Mar 1, 2009)",
+        "note": "Bowled during a snowstorm (Mar 1, 2009)"
+      },
+      {
+        "sport": "Badminton",
+        "stat_type": "result",
+        "stat_value": "Silver medal",
+        "note": "MU 30+ person tournament (Apr 29-30)"
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "25",
+        "tfidf_score": 0.258
+      },
+      {
+        "keyword": "hell",
+        "tfidf_score": 0.233
+      },
+      {
+        "keyword": "heaven",
+        "tfidf_score": 0.233
+      },
+      {
+        "keyword": "happy",
+        "tfidf_score": 0.206
+      },
+      {
+        "keyword": "skydive",
+        "tfidf_score": 0.187
+      },
+      {
+        "keyword": "16",
+        "tfidf_score": 0.16
+      },
+      {
+        "keyword": "13",
+        "tfidf_score": 0.149
+      },
+      {
+        "keyword": "oct",
+        "tfidf_score": 0.141
+      },
+      {
+        "keyword": "171",
+        "tfidf_score": 0.117
+      },
+      {
+        "keyword": "16 maybe",
+        "tfidf_score": 0.117
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 16.24,
+      "avg_word_count": 11.9,
+      "vocabulary_richness": 0.716,
+      "avg_sentence_length": 36.6,
+      "total_words": 334
+    },
+    "fun_facts": [
+      {
+        "fact": "First concert ever: John Legend at MSG with India.Arie, Estelle, Buju Banton, Rick Ross, and Kanye West (Aug 13, 2009)",
+        "category": "misc",
+        "sentiment": 0.25
+      },
+      {
+        "fact": "55 emails sent in 4 hours 41 minutes to recover a missing final exam from a professor who disappeared (Dec 23, 2009)",
+        "category": "misc",
+        "sentiment": -0.1
+      },
+      {
+        "fact": "SkyDive II 'Cloud Nine' had 9 participants: Tronolone, Smalls, Dennabuam, Canzanella, Letsche, Jacobs, Basista, Hoppe, Adams (Oct 11, 2009)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "SUS15H (the van) survived 3 flat tires, spark plugs transplant, and muffler transplant in 2009 alone",
+        "category": "vehicle",
+        "sentiment": -0.025
+      },
+      {
+        "fact": "Called 2009 'The Greatest Year Ever' \u2014 then 2013 contested it",
+        "category": "misc",
+        "sentiment": 1.0
+      },
+      {
+        "fact": "Carolina Panthers obliterated Giants 41-9 at the final game ever at Giants Stadium \u2014 19th row center, 78,809 attendance (Dec 27, 2009)",
+        "category": "misc",
+        "sentiment": -0.167
+      }
+    ],
+    "network": {
+      "active_people": 5,
+      "new_people": 2,
+      "lost_people": 2,
+      "network_density": 0.1,
+      "top_person": "The Pops",
+      "top_person_mentions": 3
+    }
+  },
+  "2010": {
+    "summary": {
+      "milestone_count": 10,
+      "travel_count": 2,
+      "wwe_events": 1,
+      "people_mentioned": 1,
+      "entertainment_count": 1,
+      "comeback_count": 0,
+      "award_count": 1,
+      "quote_count": 1,
+      "intensity_score": 17.5,
+      "year_theme": "Graduation \u2014 HERO of the Year \u2014 0 Regrets Redux",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 5: 2010-2011",
+      "theme": "Graduation \u2014 HERO of the Year \u2014 0 Regrets Redux | The Ro(b)mantic Era Begins \u2014 Sunrise Career Launch"
+    },
+    "heros_journey_stage": "Tests, Allies & Enemies",
+    "milestones": [
+      {
+        "year": 2010,
+        "milestone": "18 lbs gained, 3 alcoholic beverages, 0 regrets",
+        "category": "other",
+        "sentiment": 0.026
+      },
+      {
+        "year": 2010,
+        "milestone": "3rd skydive (Jul 18)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2010,
+        "milestone": "Brother Michael graduated from Kean University (May 13)",
+        "category": "family",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2010,
+        "milestone": "ECD 5th Year Anniversary (Sep 11)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2010,
+        "milestone": "Featured in Phillies PSA (Jun 10)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2010,
+        "milestone": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
+        "category": "education",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2010,
+        "milestone": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
+        "category": "relationship",
+        "sentiment": 0.652
+      },
+      {
+        "year": 2010,
+        "milestone": "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2010,
+        "milestone": "Won inaugural HERO of the Year (Jan 27)",
+        "category": "other",
+        "sentiment": 0.842
+      },
+      {
+        "year": 2010,
+        "milestone": "WrestleMania XXVI in Arizona (939 photos)",
+        "category": "wwe",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Phil Campanella",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Diana DiBuccio",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael"
+    ],
+    "quotes": [
+      {
+        "quote": "0 = Regrets",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.361
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Arizona",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Atlantic City",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.652
+      }
+    ],
+    "awards": [
+      {
+        "category": "external",
+        "year": 2010,
+        "winner": "Inaugural HERO of the Year",
+        "note": ""
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "Phillies PSA / HERO Campaign video",
+        "event_type": "appearance",
+        "note": "Featured on Route 35 and NJ Turnpike billboards"
+      }
+    ],
+    "career": [
+      {
+        "title": "Intern",
+        "employer": "Seabrook Village Health Club",
+        "milestone": "Graduated Monmouth (3.66 major GPA, 3.49 cumulative). Inaugural HERO of the Year. Phillies PSA.",
+        "career_level": 1,
+        "sentiment": 0.652
+      }
+    ],
+    "medical": [],
+    "ecd": [
+      {
+        "anniversary": "5th",
+        "event_name": null,
+        "participants": 20,
+        "raised": 0.0,
+        "sentiment": 0.0
+      }
+    ],
+    "wwe": [
+      {
+        "label": "WrestleMania XXVI in Arizona (6th WM)",
+        "cumulative_events": 65,
+        "note": "939 photos/videos captured"
+      }
+    ],
+    "sports": [
+      {
+        "sport": "Bowling",
+        "stat_type": "note",
+        "stat_value": "Two consecutive 205 games on SkyDive day (Aug 16)",
+        "note": "Two consecutive 205 games on SkyDive day (Aug 16)"
+      },
+      {
+        "sport": "Tennis",
+        "stat_type": "note",
+        "stat_value": "vs Farnkopf: 6 hours 7 min 3 sec. 3 waters, 2 Vitamin Waters, 5 energy bars.",
+        "note": "vs Farnkopf: 6 hours 7 min 3 sec. 3 waters, 2 Vitamin Waters, 5 energy bars."
+      },
+      {
+        "sport": "Kickball",
+        "stat_type": "note",
+        "stat_value": "Krazy KICKBALL inaugural event (Jul 17)",
+        "note": "Krazy KICKBALL inaugural event (Jul 17)"
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "hero",
+        "tfidf_score": 0.292
+      },
+      {
+        "keyword": "graduated",
+        "tfidf_score": 0.292
+      },
+      {
+        "keyword": "university",
+        "tfidf_score": 0.292
+      },
+      {
+        "keyword": "regrets",
+        "tfidf_score": 0.258
+      },
+      {
+        "keyword": "anniversary",
+        "tfidf_score": 0.187
+      },
+      {
+        "keyword": "jul",
+        "tfidf_score": 0.187
+      },
+      {
+        "keyword": "18",
+        "tfidf_score": 0.176
+      },
+      {
+        "keyword": "regrets hero",
+        "tfidf_score": 0.146
+      },
+      {
+        "keyword": "18 ecd",
+        "tfidf_score": 0.146
+      },
+      {
+        "keyword": "phillies",
+        "tfidf_score": 0.146
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 20.35,
+      "avg_word_count": 8.9,
+      "vocabulary_richness": 0.728,
+      "avg_sentence_length": 41.0,
+      "total_words": 125
+    },
+    "fun_facts": [
+      {
+        "fact": "2010 year-end stats: 18 pounds gained, 3 alcoholic beverages consumed, 0 regrets",
+        "category": "misc",
+        "sentiment": -0.175
+      },
+      {
+        "fact": "Tennis match vs Dan Farnkopf lasted 6 hours, 7 minutes, 3 seconds \u2014 consumed 3 waters, 2 Vitamin Waters, 5 energy bars (Sep 21, 2010)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Only 3 alcoholic beverages consumed in all of 2010",
+        "category": "misc",
+        "sentiment": -0.125
+      }
+    ],
+    "network": {
+      "active_people": 3,
+      "new_people": 1,
+      "lost_people": 4,
+      "network_density": 0.333,
+      "top_person": "The Pops",
+      "top_person_mentions": 2
+    }
+  },
+  "2011": {
+    "summary": {
+      "milestone_count": 12,
+      "travel_count": 4,
+      "wwe_events": 1,
+      "people_mentioned": 1,
+      "entertainment_count": 0,
+      "comeback_count": 1,
+      "award_count": 3,
+      "quote_count": 1,
+      "intensity_score": 26.5,
+      "year_theme": "The Ro(b)mantic Era Begins \u2014 Sunrise Career Launch",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 5: 2010-2011",
+      "theme": "Graduation \u2014 HERO of the Year \u2014 0 Regrets Redux | The Ro(b)mantic Era Begins \u2014 Sunrise Career Launch"
+    },
+    "heros_journey_stage": "Tests, Allies & Enemies",
+    "milestones": [
+      {
+        "year": 2011,
+        "milestone": "4th consecutive WinterBall (Feb 19)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "Career at Sunrise Senior Living begins (Oct 31/Nov 1)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "Cousin Nick married Samantha (Jul 2-3)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "ECDElite Hall of Fame induction (Jun 18)",
+        "category": "wwe",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2011,
+        "milestone": "Fell from a pickup truck (May 21)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "First meal with Rob at Ocean Bay Diner (Jan 1)",
+        "category": "relationship",
+        "sentiment": -0.557
+      },
+      {
+        "year": 2011,
+        "milestone": "First speeding ticket (Sep 14)",
+        "category": "personal",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "Hurricane Irene \u2014 La Quinta Suites (Aug 27-28)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "RK's 22nd birthday (Dec 14)",
+        "category": "relationship",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
+        "category": "relationship",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2011,
+        "milestone": "Survivor Series at MSG \u2014 The Rock returns (Nov 20)",
+        "category": "wwe",
+        "sentiment": 0.361
+      },
+      {
+        "year": 2011,
+        "milestone": "Torn glenoid labrum confirmed via MRI (Aug 2)",
+        "category": "health",
+        "sentiment": -0.25
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Diana DiBuccio",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Cousin Nick & Samantha"
+    ],
+    "quotes": [
+      {
+        "quote": "In love, and unashamed by it and for whom it's for",
+        "emotion": "pride",
+        "theme": "relationships",
+        "sentiment": 0.637
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Stratton, Vermont",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Atlantic City",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Washington D.C.",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.34
+      },
+      {
+        "destination": "Shohola, Pennsylvania",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.402
+      }
+    ],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2011,
+        "winner": "Rupert",
+        "note": ""
+      },
+      {
+        "category": "external",
+        "year": 2011,
+        "winner": "Bogart's 'Man of March' (Apr 1, sober)",
+        "note": ""
+      },
+      {
+        "category": "ecd",
+        "year": 2011,
+        "winner": "ECDElite Hall of Fame induction (Jun 18)",
+        "note": ""
+      }
+    ],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "Life Enrichment Manager",
+        "employer": "Sunrise Senior Living",
+        "milestone": "Career at Sunrise begins (Oct 31/Nov 1). Left Ocean Township (Oct 13 notice).",
+        "career_level": 2,
+        "sentiment": 0.0
+      }
+    ],
+    "medical": [
+      {
+        "event": "Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2)",
+        "category": "injury",
+        "severity": "moderate",
+        "sentiment": -0.18
+      }
+    ],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "Survivor Series at MSG (17,000+ attendance; The Rock returns)",
+        "cumulative_events": null,
+        "note": "Also RAW Holiday Tour at MSG Dec 27"
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "14",
+        "tfidf_score": 0.267
+      },
+      {
+        "keyword": "begins",
+        "tfidf_score": 0.242
+      },
+      {
+        "keyword": "nov",
+        "tfidf_score": 0.172
+      },
+      {
+        "keyword": "rock",
+        "tfidf_score": 0.151
+      },
+      {
+        "keyword": "rock returns",
+        "tfidf_score": 0.151
+      },
+      {
+        "keyword": "18 cousin",
+        "tfidf_score": 0.151
+      },
+      {
+        "keyword": "rk 22nd",
+        "tfidf_score": 0.151
+      },
+      {
+        "keyword": "rob ocean",
+        "tfidf_score": 0.151
+      },
+      {
+        "keyword": "relationship begins",
+        "tfidf_score": 0.151
+      },
+      {
+        "keyword": "ro",
+        "tfidf_score": 0.151
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 51.5,
+      "avg_word_count": 7.6,
+      "vocabulary_richness": 0.814,
+      "avg_sentence_length": 127.0,
+      "total_words": 129
+    },
+    "fun_facts": [
+      {
+        "fact": "First speeding ticket didn't come until September 14, 2011",
+        "category": "misc",
+        "sentiment": 0.25
+      },
+      {
+        "fact": "Fell from a pickup truck (May 21, 2011)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Earthquake experienced (Aug 23, 2011)",
+        "category": "misc",
+        "sentiment": 0.8
+      },
+      {
+        "fact": "Blue work van hit a fence (Sep 15, 2011)",
+        "category": "vehicle",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 4,
+      "new_people": 3,
+      "lost_people": 2,
+      "network_density": 0.167,
+      "top_person": "The Pops",
+      "top_person_mentions": 2
+    }
+  },
+  "2012": {
+    "summary": {
+      "milestone_count": 8,
+      "travel_count": 1,
+      "wwe_events": 1,
+      "people_mentioned": 0,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 3,
+      "quote_count": 0,
+      "intensity_score": 13.0,
+      "year_theme": "ECD World Tour \u2014 Employee of the Month",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 6: 2012-2012",
+      "theme": "ECD World Tour \u2014 Employee of the Month"
+    },
+    "heros_journey_stage": "Approach to Inmost Cave",
+    "milestones": [
+      {
+        "year": 2012,
+        "milestone": "71st WWE event",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2012,
+        "milestone": "Activities & Volunteer Coordinator promotion (May)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2012,
+        "milestone": "ECD 7th birthday + 500th player (Sep 1)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2012,
+        "milestone": "ECD reopened with 'WORLD TOUR' (Apr 7)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2012,
+        "milestone": "Employee of the Month (Jan)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2012,
+        "milestone": "Record 18 rounds at Orchard Park (Oct 13)",
+        "category": "relationship",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2012,
+        "milestone": "SUS15H reached 190,000 miles (Nov)",
+        "category": "travel",
+        "sentiment": 0.103
+      },
+      {
+        "year": 2012,
+        "milestone": "Stratton Vermont ski trip continues",
+        "category": "travel",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Diana DiBuccio",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)"
+    ],
+    "quotes": [],
+    "travel": [
+      {
+        "destination": "Stratton, Vermont",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2012,
+        "winner": "Mariah Carey",
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2012,
+        "winner": "Rupert",
+        "note": "Two-time defending champion; later eliminated from competition"
+      },
+      {
+        "category": "work",
+        "year": 2012,
+        "winner": "Employee of the Month (January)",
+        "note": ""
+      }
+    ],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "Activities & Volunteer Coordinator",
+        "employer": "Sunrise Senior Living",
+        "milestone": "Employee of the Month (Jan 2012)",
+        "career_level": 2,
+        "sentiment": 0.0
+      }
+    ],
+    "medical": [],
+    "ecd": [
+      {
+        "anniversary": "7th birthday + 500th player",
+        "event_name": null,
+        "participants": null,
+        "raised": null,
+        "sentiment": 0.0
+      }
+    ],
+    "wwe": [
+      {
+        "label": "71st event; WM XXVIII Travel Package",
+        "cumulative_events": 71,
+        "note": ""
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "ecd",
+        "tfidf_score": 0.219
+      },
+      {
+        "keyword": "oct 13",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "reopened world",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "reached",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "record 18",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "park oct",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "promotion sus15h",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "reopened",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "reached 190",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "orchard park",
+        "tfidf_score": 0.203
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 30.64,
+      "avg_word_count": 7.1,
+      "vocabulary_richness": 0.915,
+      "avg_sentence_length": 69.0,
+      "total_words": 71
+    },
+    "fun_facts": [
+      {
+        "fact": "Vehicle SUS15H reached 190,000 miles by November 2012",
+        "category": "vehicle",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Kept all anniversary receipts since 2012 (RK Year 2 dinner: Caesar salad, grilled swordfish, chicken scarpello)",
+        "category": "misc",
+        "sentiment": -0.6
+      }
+    ],
+    "network": {
+      "active_people": 1,
+      "new_people": 0,
+      "lost_people": 3,
+      "network_density": 0.0,
+      "top_person": "The Pops",
+      "top_person_mentions": 1
+    }
+  },
+  "2013": {
+    "summary": {
+      "milestone_count": 12,
+      "travel_count": 3,
+      "wwe_events": 1,
+      "people_mentioned": 1,
+      "entertainment_count": 1,
+      "comeback_count": 0,
+      "award_count": 4,
+      "quote_count": 5,
+      "intensity_score": 25.0,
+      "year_theme": "DODGEBOWL 200 \u2014 First Cruise \u2014 5 Weddings \u2014 Loss of Grandma Theresa",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 7: 2013-2013",
+      "theme": "DODGEBOWL 200 \u2014 First Cruise \u2014 5 Weddings \u2014 Loss of Grandma Theresa"
+    },
+    "heros_journey_stage": "Approach to Inmost Cave",
+    "milestones": [
+      {
+        "year": 2013,
+        "milestone": "'2010 and 2013 will no doubt stand the test of time'",
+        "category": "other",
+        "sentiment": -0.572
+      },
+      {
+        "year": 2013,
+        "milestone": "'Table 7' Era begins (Jun 8)",
+        "category": "other",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2013,
+        "milestone": "5 weddings attended in one year",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "5th consecutive VT skiing trip (Jan 6-9)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "DODGEBOWL 200 \u2014 era-ending extravaganza (Aug 10, FIVE star rating)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "Grandma Theresa passed away (Jun 10-15)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "Pilates Round 1 \u2014 only male participant",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "Turned 29 (Sep 27)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "WWE event #75 (Sep 3)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2013,
+        "milestone": "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
+        "category": "wwe",
+        "sentiment": 0.2
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Diana DiBuccio",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Grandma 'Mama' Blanca",
+      "Grandma Irene",
+      "Grandma Theresa"
+    ],
+    "quotes": [
+      {
+        "quote": "the beauty in finality. The wonder of commencement.",
+        "emotion": "joy",
+        "theme": "celebration",
+        "sentiment": 0.586
+      },
+      {
+        "quote": "the best + the most = .TWENTY '13.",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.637
+      },
+      {
+        "quote": "If all keeps up, 2013 could honestly become the greatest year of my adulthood",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.802
+      },
+      {
+        "quote": "just woke up from this dream.. but it wasn't a dream!!!",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.456
+      },
+      {
+        "quote": "2010 and 2013 will no doubt stand the test of time. The only difference is that now, in '13, I've had someone to share all those amazing times.",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.318
+      },
+      {
+        "quote": "He simply made being a wrestling fan acceptable, the 'in' thing.",
+        "emotion": "anger",
+        "theme": "reflection",
+        "sentiment": 0.557
+      },
+      {
+        "quote": "I enjoy reading this every year",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.494
+      },
+      {
+        "quote": "Our time is precious and should occasionally be used to credit certain individuals who may have simply made even the smallest difference",
+        "emotion": "nostalgia",
+        "theme": "reflection",
+        "sentiment": 0.813
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Norwegian Breakaway Cruise",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Maryland",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Atlantic City",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.402
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2013,
+        "winner": "Mariah Carey",
+        "note": "Top 2 three straight years; switched places with Madonna from 2012"
+      },
+      {
+        "category": "song_of_the_year",
+        "year": 2013,
+        "winner": "",
+        "note": "Most nominations ever (tied with 2013). First time song from Timeline year won top honors."
+      },
+      {
+        "category": "shocker_of_the_year",
+        "year": 2013,
+        "winner": "",
+        "note": "First time in Timeline history co-winners announced"
+      },
+      {
+        "category": "social",
+        "year": 2013,
+        "winner": "'Most Realistic' Halloween Costume ('General' Tronolone)",
+        "note": ""
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "BNP Paribas Showdown at MSG",
+        "event_type": "sporting event",
+        "note": "First time at this event; attended with parents"
+      }
+    ],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "WrestleMania 29 (at-home NJ; 8th WM); Event #75",
+        "cumulative_events": 75,
+        "note": "21-0 record. Five-star rating. Tim Moore visited."
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "2013",
+        "tfidf_score": 0.293
+      },
+      {
+        "keyword": "stand test",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "doubt",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "rating",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "2013 doubt",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "2010 2013",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "2010",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "stand",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "star",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "star rating",
+        "tfidf_score": 0.195
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 13.1,
+      "avg_word_count": 10.5,
+      "vocabulary_richness": 0.741,
+      "avg_sentence_length": 28.4,
+      "total_words": 232
+    },
+    "fun_facts": [
+      {
+        "fact": "Was the only male at Pilates class (2013)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Danced 180 minutes non-stop at Maryland wedding (Nov 7-9, 2013)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Played Batman at a friend's wedding (Nov 2, 2013): 'Joe & Gina! Table 7!'",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "7 consecutive bowling strikes but couldn't get the remaining 5 for a perfect game (Oct 22, 2013)",
+        "category": "sports",
+        "sentiment": 0.3
+      }
+    ],
+    "network": {
+      "active_people": 7,
+      "new_people": 3,
+      "lost_people": 0,
+      "network_density": 0.381,
+      "top_person": "The Pops",
+      "top_person_mentions": 2
+    }
+  },
+  "2014": {
+    "summary": {
+      "milestone_count": 10,
+      "travel_count": 1,
+      "wwe_events": 1,
+      "people_mentioned": 3,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 3,
+      "quote_count": 2,
+      "intensity_score": 16.0,
+      "year_theme": "The Undertaker Handshake \u2014 Turning 30 \u2014 Norwegian Epic",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 8: 2014-2014",
+      "theme": "The Undertaker Handshake \u2014 Turning 30 \u2014 Norwegian Epic"
+    },
+    "heros_journey_stage": "The Ordeal",
+    "milestones": [
+      {
+        "year": 2014,
+        "milestone": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+        "category": "sports",
+        "sentiment": 0.765
+      },
+      {
+        "year": 2014,
+        "milestone": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2014,
+        "milestone": "Gray Kia Soul purchased (Jan 11-13)",
+        "category": "vehicle",
+        "sentiment": -0.637
+      },
+      {
+        "year": 2014,
+        "milestone": "Johnny Nash: most influential friend of 2014",
+        "category": "other",
+        "sentiment": 0.77
+      },
+      {
+        "year": 2014,
+        "milestone": "Met The Undertaker at WM XXX (4:10:18 PM CT Apr 5)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2014,
+        "milestone": "Moved to Oceanport (Sep 1)",
+        "category": "personal",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2014,
+        "milestone": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+        "category": "travel",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2014,
+        "milestone": "SUS15H takes its last ride (Dec 24-25)",
+        "category": "vehicle",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2014,
+        "milestone": "The Pops: Comedian of the Year (2nd straight year)",
+        "category": "family",
+        "sentiment": 0.542
+      },
+      {
+        "year": 2014,
+        "milestone": "Turned 30 \u2014 the 'BIG 3-0'",
+        "category": "other",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Diana DiBuccio",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Ray Marzarella",
+      "Valerie Winston (ValPal",
+      "Maggie",
+      "Mike 'Sputz' Krott",
+      "Mike Krott",
+      "Johnny Nash"
+    ],
+    "quotes": [
+      {
+        "quote": "the committee has spoken, Darrell.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "All that keeps running through my head is 'I finally did it.' I never, ever thought the day would come.",
+        "emotion": "pride",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "10 Years After The First .. 20 Years To Meet The Man.",
+        "emotion": "neutral",
+        "theme": "adventure",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "When you enjoy the journeys, the destinations magnify",
+        "emotion": "neutral",
+        "theme": "adventure",
+        "sentiment": 0.494
+      },
+      {
+        "quote": "The Epic Handshake, and then some.. 2|0'1|4.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "Well you guys just made his dream come true.",
+        "emotion": "anger",
+        "theme": "reflection",
+        "sentiment": 0.71
+      },
+      {
+        "quote": "He's gonna have a heart attack and die on stage.",
+        "emotion": "love",
+        "theme": "reflection",
+        "sentiment": -0.791
+      },
+      {
+        "quote": "OMG. Pam, if you got it, he will DIE!",
+        "emotion": "sadness",
+        "theme": "reflection",
+        "sentiment": -0.712
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Jamaica, Grand Cayman, Cozumel",
+        "scope": "International",
+        "countries": 3,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2014,
+        "winner": "Mariah Carey",
+        "note": "Top 2 past 4 years"
+      },
+      {
+        "category": "song_of_the_year",
+        "year": 2014,
+        "winner": "",
+        "note": "Most nominations ever (tied with 2013). Janet's 'Alright' was runner-up (also runner-up in 2013)."
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2014,
+        "winner": "The Pops (Darrell)",
+        "note": "Second straight year; nominated every year since 2009"
+      }
+    ],
+    "entertainment": [],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "WrestleMania XXX \u2014 Undertaker Handshake",
+        "cumulative_events": 80,
+        "note": "New Orleans. Handshake at 4:10:18 PM CT. Streak broken 21-1. With Rob, Valerie, Tim."
+      }
+    ],
+    "sports": [
+      {
+        "sport": "Cornhole",
+        "stat_type": "note",
+        "stat_value": "Championship won with Pops at Maggie & Mike's inaugural gathering (Aug 30)",
+        "note": "Championship won with Pops at Maggie & Mike's inaugural gathering (Aug 30)"
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "30th",
+        "tfidf_score": 0.492
+      },
+      {
+        "keyword": "pops",
+        "tfidf_score": 0.223
+      },
+      {
+        "keyword": "30",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "pam",
+        "tfidf_score": 0.139
+      },
+      {
+        "keyword": "pops maggie",
+        "tfidf_score": 0.139
+      },
+      {
+        "keyword": "oceanport",
+        "tfidf_score": 0.139
+      },
+      {
+        "keyword": "oceanport sep",
+        "tfidf_score": 0.139
+      },
+      {
+        "keyword": "pam 30th",
+        "tfidf_score": 0.139
+      },
+      {
+        "keyword": "pm ct",
+        "tfidf_score": 0.139
+      },
+      {
+        "keyword": "ride dec",
+        "tfidf_score": 0.139
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 7.77,
+      "avg_word_count": 9.4,
+      "vocabulary_richness": 0.856,
+      "avg_sentence_length": 18.1,
+      "total_words": 187
+    },
+    "fun_facts": [
+      {
+        "fact": "Kevin & Leah's entire relationship arc documented from an outside perspective (2014-2020)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "WrestleMania bowling scores at 2014 BeforeBash: 225, 213, 212, 211",
+        "category": "sports",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 9,
+      "new_people": 6,
+      "lost_people": 6,
+      "network_density": 0.139,
+      "top_person": "The Pops",
+      "top_person_mentions": 3
+    }
+  },
+  "2015": {
+    "summary": {
+      "milestone_count": 4,
+      "travel_count": 1,
+      "wwe_events": 0,
+      "people_mentioned": 1,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 4,
+      "quote_count": 1,
+      "intensity_score": 8.5,
+      "year_theme": "Janet Jackson Dynasty Begins \u2014 Kia Soul Hits 20K",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 9: 2015-2015",
+      "theme": "Janet Jackson Dynasty Begins \u2014 Kia Soul Hits 20K"
+    },
+    "heros_journey_stage": "The Road Back",
+    "milestones": [
+      {
+        "year": 2015,
+        "milestone": "Dan Spengeman: Comedian of the Year",
+        "category": "music_awards",
+        "sentiment": 0.382
+      },
+      {
+        "year": 2015,
+        "milestone": "Janet Jackson first Artist of the Year win",
+        "category": "music_awards",
+        "sentiment": 0.586
+      },
+      {
+        "year": 2015,
+        "milestone": "Kia Soul hits 20,000 miles (Dec 15)",
+        "category": "travel",
+        "sentiment": -0.637
+      },
+      {
+        "year": 2015,
+        "milestone": "USVI & Bahamas cruise (rated 10/10)",
+        "category": "travel",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Maggie"
+    ],
+    "quotes": [
+      {
+        "quote": "having kids would be a good idea, except that I'm not willing to give up my life",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.44
+      }
+    ],
+    "travel": [
+      {
+        "destination": "U.S. Virgin Islands, Bahamas",
+        "scope": "International",
+        "countries": 2,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2015,
+        "winner": "Janet Jackson",
+        "note": ""
+      },
+      {
+        "category": "song_of_the_year",
+        "year": 2015,
+        "winner": "All For You, If (Janet Jackson)",
+        "note": "First artist to win for two different songs in same year"
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2015,
+        "winner": "Dan Spengeman",
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2015,
+        "winner": "Dan Spengeman",
+        "note": ""
+      }
+    ],
+    "entertainment": [],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "10",
+        "tfidf_score": 0.363
+      },
+      {
+        "keyword": "year",
+        "tfidf_score": 0.275
+      },
+      {
+        "keyword": "000 miles",
+        "tfidf_score": 0.25
+      },
+      {
+        "keyword": "rated",
+        "tfidf_score": 0.25
+      },
+      {
+        "keyword": "rated 10",
+        "tfidf_score": 0.25
+      },
+      {
+        "keyword": "jackson",
+        "tfidf_score": 0.25
+      },
+      {
+        "keyword": "kia",
+        "tfidf_score": 0.25
+      },
+      {
+        "keyword": "kia soul",
+        "tfidf_score": 0.25
+      },
+      {
+        "keyword": "soul",
+        "tfidf_score": 0.25
+      },
+      {
+        "keyword": "spengeman",
+        "tfidf_score": 0.25
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 22.9,
+      "avg_word_count": 10.0,
+      "vocabulary_richness": 0.85,
+      "avg_sentence_length": 58.0,
+      "total_words": 60
+    },
+    "fun_facts": [
+      {
+        "fact": "The Kia Soul hit 20,000 miles on December 15, 2015 \u2014 of course this was noted",
+        "category": "vehicle",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 3,
+      "new_people": 0,
+      "lost_people": 8,
+      "network_density": 1.0,
+      "top_person": "The Pops",
+      "top_person_mentions": 2
+    }
+  },
+  "2016": {
+    "summary": {
+      "milestone_count": 7,
+      "travel_count": 1,
+      "wwe_events": 1,
+      "people_mentioned": 1,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 3,
+      "quote_count": 2,
+      "intensity_score": 13.0,
+      "year_theme": "Greatest WWE Experience \u2014 93.9% Table Tennis \u2014 Manager of the Year",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 10: 2016-2016",
+      "theme": "Greatest WWE Experience \u2014 93.9% Table Tennis \u2014 Manager of the Year"
+    },
+    "heros_journey_stage": "The Road Back",
+    "milestones": [
+      {
+        "year": 2016,
+        "milestone": "Cornhole: 254-98, 38 cornholios",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2016,
+        "milestone": "Lauren Winston: Comedian of the Year",
+        "category": "music_awards",
+        "sentiment": 0.382
+      },
+      {
+        "year": 2016,
+        "milestone": "Manager of the Year award",
+        "category": "career",
+        "sentiment": 0.542
+      },
+      {
+        "year": 2016,
+        "milestone": "Spengeman-Mullins wedding",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2016,
+        "milestone": "St. Lucia/Dominica/Antigua cruise",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2016,
+        "milestone": "Table tennis: 62-4 (93.9%)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2016,
+        "milestone": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
+        "category": "wwe",
+        "sentiment": 0.637
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Maggie"
+    ],
+    "quotes": [
+      {
+        "quote": "unquestionably, the greatest WWE experience of all-time",
+        "emotion": "joy",
+        "theme": "adventure",
+        "sentiment": 0.637
+      },
+      {
+        "quote": "Oh my god you're such a huge dork. I read the whole blog!",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.316
+      }
+    ],
+    "travel": [
+      {
+        "destination": "St. Lucia, Dominica, Antigua",
+        "scope": "International",
+        "countries": 3,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2016,
+        "winner": "Janet Jackson",
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2016,
+        "winner": "Lauren Winston",
+        "note": ""
+      },
+      {
+        "category": "work",
+        "year": 2016,
+        "winner": "Manager of the Year",
+        "note": ""
+      }
+    ],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "Manager of the Year Award",
+        "employer": "Sunrise Senior Living",
+        "milestone": "Corporate recognition",
+        "career_level": 3,
+        "sentiment": 0.0
+      }
+    ],
+    "medical": [],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "WrestleMania 32 \u2014 100K+ in building",
+        "cumulative_events": 85,
+        "note": "'Unquestionably, the greatest WWE experience of all-time'"
+      }
+    ],
+    "sports": [
+      {
+        "sport": "Table Tennis",
+        "stat_type": "wins",
+        "stat_value": "62",
+        "note": ""
+      },
+      {
+        "sport": "Table Tennis",
+        "stat_type": "losses",
+        "stat_value": "4",
+        "note": ""
+      },
+      {
+        "sport": "Table Tennis",
+        "stat_type": "win_rate",
+        "stat_value": "93.9",
+        "note": ""
+      },
+      {
+        "sport": "Cornhole",
+        "stat_type": "wins",
+        "stat_value": "254",
+        "note": ""
+      },
+      {
+        "sport": "Cornhole",
+        "stat_type": "losses",
+        "stat_value": "98",
+        "note": ""
+      },
+      {
+        "sport": "Cornhole",
+        "stat_type": "win_rate",
+        "stat_value": "72.2",
+        "note": ""
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "wwe experience",
+        "tfidf_score": 0.345
+      },
+      {
+        "keyword": "experience",
+        "tfidf_score": 0.345
+      },
+      {
+        "keyword": "experience time",
+        "tfidf_score": 0.345
+      },
+      {
+        "keyword": "greatest wwe",
+        "tfidf_score": 0.345
+      },
+      {
+        "keyword": "time",
+        "tfidf_score": 0.305
+      },
+      {
+        "keyword": "greatest",
+        "tfidf_score": 0.254
+      },
+      {
+        "keyword": "wwe",
+        "tfidf_score": 0.208
+      },
+      {
+        "keyword": "year",
+        "tfidf_score": 0.168
+      },
+      {
+        "keyword": "award",
+        "tfidf_score": 0.152
+      },
+      {
+        "keyword": "winston comedian",
+        "tfidf_score": 0.152
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 10.15,
+      "avg_word_count": 6.7,
+      "vocabulary_richness": 0.73,
+      "avg_sentence_length": 14.6,
+      "total_words": 74
+    },
+    "fun_facts": [
+      {
+        "fact": "WrestleMania 32 in Texas (2016) was called 'unquestionably, the greatest WWE experience of all-time'",
+        "category": "wwe",
+        "sentiment": 1.0
+      },
+      {
+        "fact": "6 cornholios in one night streak (2016)",
+        "category": "misc",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 4,
+      "new_people": 0,
+      "lost_people": 2,
+      "network_density": 0.5,
+      "top_person": "The Pops",
+      "top_person_mentions": 2
+    }
+  },
+  "2017": {
+    "summary": {
+      "milestone_count": 13,
+      "travel_count": 3,
+      "wwe_events": 1,
+      "people_mentioned": 3,
+      "entertainment_count": 1,
+      "comeback_count": 1,
+      "award_count": 2,
+      "quote_count": 3,
+      "intensity_score": 27.0,
+      "year_theme": "Spinal Surgery \u2014 Alaska Cruise \u2014 SummerSlam 20-Year Arc Complete",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 11: 2017-2017",
+      "theme": "Spinal Surgery \u2014 Alaska Cruise \u2014 SummerSlam 20-Year Arc Complete"
+    },
+    "heros_journey_stage": "The Road Back",
+    "milestones": [
+      {
+        "year": 2017,
+        "milestone": "14 staples removed (Dec 26)",
+        "category": "personal",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2017,
+        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2017,
+        "milestone": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
+        "category": "career",
+        "sentiment": -0.477
+      },
+      {
+        "year": 2017,
+        "milestone": "California trip 600+ miles for Matt & Gina wedding",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2017,
+        "milestone": "Cornhole: 27-2 record on cruise",
+        "category": "travel",
+        "sentiment": 0.2
+      },
+      {
+        "year": 2017,
+        "milestone": "ECD 12-Year Anniversary (Sep 2)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2017,
+        "milestone": "Escape Room completed in 45:43 (Jan 15)",
+        "category": "entertainment",
+        "sentiment": 0.178
+      },
+      {
+        "year": 2017,
+        "milestone": "Father's 60th birthday (Jul 29)",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2017,
+        "milestone": "Kevin & Leah engaged",
+        "category": "other",
+        "sentiment": 0.402
+      },
+      {
+        "year": 2017,
+        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
+        "category": "health",
+        "sentiment": -0.2
+      },
+      {
+        "year": 2017,
+        "milestone": "Silver League Champions volleyball (Aug 30)",
+        "category": "sports",
+        "sentiment": 0.527
+      },
+      {
+        "year": 2017,
+        "milestone": "SummerSlam 20-year personal story complete (Aug 20)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2017,
+        "milestone": "WrestleMania 33 (Apr 2)",
+        "category": "wwe",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Tom Macaluso",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Maggie",
+      "Kevin & Leah (KMJ & LN)",
+      "Kevin Abrams",
+      "Kevin Adams",
+      "Kevin Grand",
+      "Kevin Megill (KMJ)",
+      "Matt (Physical Therapist)",
+      "Matt (introduced Jul 3, 2019)"
+    ],
+    "quotes": [
+      {
+        "quote": "I Just Want To Wake Up. (I Did!)",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.151
+      },
+      {
+        "quote": "1997, 2007, 2015, and now 2017. My personal SummerSlam story, some 20 years long, complete.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "THE GREAT ADVENTURE 2.0.1.7",
+        "emotion": "joy",
+        "theme": "adventure",
+        "sentiment": 0.835
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Alaska & Seattle",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "California (600+ miles)",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Victoria, Canada",
+        "scope": "International",
+        "countries": 1,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2017,
+        "winner": "The Pops",
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2017,
+        "winner": "The Pops",
+        "note": ""
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "Escape Room",
+        "event_type": "activity",
+        "note": "Completed in 45 minutes 43 seconds (Jan 15)"
+      }
+    ],
+    "career": [],
+    "medical": [
+      {
+        "event": "Left pinky dislocation + two-part fracture from volleyball (Mar 26)",
+        "category": "injury",
+        "severity": "minor",
+        "sentiment": 0.151
+      },
+      {
+        "event": "L5-S1 'fairly large' herniation diagnosed (Sep 28)",
+        "category": "spinal",
+        "severity": "major",
+        "sentiment": 0.151
+      },
+      {
+        "event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
+        "category": "spinal",
+        "severity": "moderate",
+        "sentiment": -0.509
+      },
+      {
+        "event": "Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26",
+        "category": "spinal",
+        "severity": "major",
+        "sentiment": 0.151
+      }
+    ],
+    "ecd": [
+      {
+        "anniversary": "10th",
+        "event_name": null,
+        "participants": 30,
+        "raised": 0.0,
+        "sentiment": 0.0
+      },
+      {
+        "anniversary": "12th",
+        "event_name": null,
+        "participants": null,
+        "raised": null,
+        "sentiment": 0.0
+      }
+    ],
+    "wwe": [
+      {
+        "label": "WrestleMania 33; SummerSlam 20-year personal story complete",
+        "cumulative_events": null,
+        "note": "'1997, 2007, 2015, and now 2017. My personal SummerSlam story, some 20 years long, complete'"
+      }
+    ],
+    "sports": [
+      {
+        "sport": "Tennis",
+        "stat_type": "note",
+        "stat_value": "Undefeated record post-splint removal",
+        "note": "Undefeated record post-splint removal"
+      },
+      {
+        "sport": "Cornhole",
+        "stat_type": "note",
+        "stat_value": "27-2 three-day record on cruise",
+        "note": "27-2 three-day record on cruise"
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "story",
+        "tfidf_score": 0.243
+      },
+      {
+        "keyword": "summerslam",
+        "tfidf_score": 0.243
+      },
+      {
+        "keyword": "complete",
+        "tfidf_score": 0.243
+      },
+      {
+        "keyword": "volleyball",
+        "tfidf_score": 0.243
+      },
+      {
+        "keyword": "20",
+        "tfidf_score": 0.22
+      },
+      {
+        "keyword": "26",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "personal",
+        "tfidf_score": 0.195
+      },
+      {
+        "keyword": "cruise",
+        "tfidf_score": 0.146
+      },
+      {
+        "keyword": "15",
+        "tfidf_score": 0.138
+      },
+      {
+        "keyword": "paused mar",
+        "tfidf_score": 0.121
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 13.41,
+      "avg_word_count": 7.2,
+      "vocabulary_richness": 0.886,
+      "avg_sentence_length": 23.6,
+      "total_words": 123
+    },
+    "fun_facts": [
+      {
+        "fact": "From spinal surgery in December to Mediterranean cruise with engagement ring by April (2017-2018)",
+        "category": "travel",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 9,
+      "new_people": 7,
+      "lost_people": 3,
+      "network_density": 0.306,
+      "top_person": "Kevin & Leah (KMJ & LN)",
+      "top_person_mentions": 1
+    }
+  },
+  "2018": {
+    "summary": {
+      "milestone_count": 13,
+      "travel_count": 2,
+      "wwe_events": 0,
+      "people_mentioned": 3,
+      "entertainment_count": 1,
+      "comeback_count": 1,
+      "award_count": 3,
+      "quote_count": 2,
+      "intensity_score": 23.5,
+      "year_theme": "Mediterranean 5-Country Cruise \u2014 Engagement Ring \u2014 6th Cruise in 6 Years",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 12: 2018-2019",
+      "theme": "Mediterranean 5-Country Cruise \u2014 Engagement Ring \u2014 6th Cruise in 6 Years | Australia/NZ Best Trip Ever \u2014 Uncle John \u2014 Halfway to 70"
+    },
+    "heros_journey_stage": "Resurrection",
+    "milestones": [
+      {
+        "year": 2018,
+        "milestone": "34th birthday (Sep 27)",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "6th cruise in 6 years",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "Arthur Knott (Artie) passed away (Feb 2)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "Became a pickleball believer (Aug 16)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "Best tennis comeback: won from 0-6 deficit (Dec 23)",
+        "category": "sports",
+        "sentiment": 0.735
+      },
+      {
+        "year": 2018,
+        "milestone": "Brother Michael married Maggie (Jun 29)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "Engagement ring purchased in Croatia",
+        "category": "relationship",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2018,
+        "milestone": "Fever 100.3 on NYE",
+        "category": "health",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "New Hampshire trip (Sep 19-22)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "Reminiscence Coordinator role at Sunrise of Wall (started Oct 22)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2018,
+        "milestone": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
+        "category": "family",
+        "sentiment": 0.751
+      },
+      {
+        "year": 2018,
+        "milestone": "Won Weezer tickets as 94.3 radio 9th caller (Nov 26)",
+        "category": "entertainment",
+        "sentiment": 0.572
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "John Tronolone",
+      "Michael",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Maggie",
+      "Kevin & Leah (KMJ & LN)",
+      "Kevin Abrams",
+      "Kevin Adams",
+      "Kevin Grand",
+      "Kevin Megill (KMJ)",
+      "Terra Bergquist",
+      "Arthur Knott (Artie)"
+    ],
+    "quotes": [
+      {
+        "quote": "patience & gratitude",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.511
+      },
+      {
+        "quote": "Life, Rejoined. . M M 1 8 .",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Slovenia, Italy, Greece, Malta, Croatia",
+        "scope": "International",
+        "countries": 5,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "New Hampshire",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2018,
+        "winner": "Janet Jackson",
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2018,
+        "winner": "Dan Spengeman",
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2018,
+        "winner": "Dan Spengeman",
+        "note": ""
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "Weezer at Madison Square Garden",
+        "event_type": "concert",
+        "note": ""
+      }
+    ],
+    "career": [
+      {
+        "title": "Reminiscence Coordinator",
+        "employer": "Sunrise of Wall",
+        "milestone": "Job offer Sep 28 (phone call in bathroom), started Oct 22. Previous: Escapades Producer ended Oct 19.",
+        "career_level": 2,
+        "sentiment": 0.0
+      }
+    ],
+    "medical": [],
+    "ecd": [
+      {
+        "anniversary": "13th",
+        "event_name": null,
+        "participants": null,
+        "raised": null,
+        "sentiment": 0.0
+      }
+    ],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "croatia",
+        "tfidf_score": 0.274
+      },
+      {
+        "keyword": "22",
+        "tfidf_score": 0.202
+      },
+      {
+        "keyword": "won",
+        "tfidf_score": 0.202
+      },
+      {
+        "keyword": "16",
+        "tfidf_score": 0.188
+      },
+      {
+        "keyword": "cruise",
+        "tfidf_score": 0.165
+      },
+      {
+        "keyword": "27",
+        "tfidf_score": 0.14
+      },
+      {
+        "keyword": "16 arthur",
+        "tfidf_score": 0.137
+      },
+      {
+        "keyword": "pickleball",
+        "tfidf_score": 0.137
+      },
+      {
+        "keyword": "ring purchased",
+        "tfidf_score": 0.137
+      },
+      {
+        "keyword": "ring",
+        "tfidf_score": 0.137
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 14.55,
+      "avg_word_count": 8.1,
+      "vocabulary_richness": 0.753,
+      "avg_sentence_length": 28.8,
+      "total_words": 178
+    },
+    "fun_facts": [
+      {
+        "fact": "50 dollars spent on 7 slices of cheese at a tasting (Jul 14, 2018)",
+        "category": "food",
+        "sentiment": -0.1
+      },
+      {
+        "fact": "Fishing trip with Captain 'Tight Lines' Tyler caught absolutely nothing (May 7, 2018)",
+        "category": "misc",
+        "sentiment": 0.011
+      },
+      {
+        "fact": "Harry the Pig and Rocky the Dog encountered in New Hampshire (Sep 2018)",
+        "category": "misc",
+        "sentiment": 0.136
+      },
+      {
+        "fact": "3,827 birthdays at Buck's celebration party (Jun 1, 2018)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Fever of 100.3 degrees on NYE 2018",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "6th cruise in 6 consecutive years by 2018",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Engagement ring purchased in Croatia during Mediterranean cruise (Apr 2018)",
+        "category": "travel",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 5,
+      "new_people": 2,
+      "lost_people": 8,
+      "network_density": 0.3,
+      "top_person": "Terra Bergquist",
+      "top_person_mentions": 1
+    }
+  },
+  "2019": {
+    "summary": {
+      "milestone_count": 15,
+      "travel_count": 3,
+      "wwe_events": 0,
+      "people_mentioned": 2,
+      "entertainment_count": 2,
+      "comeback_count": 1,
+      "award_count": 3,
+      "quote_count": 6,
+      "intensity_score": 30.5,
+      "year_theme": "Australia/NZ Best Trip Ever \u2014 Uncle John \u2014 Halfway to 70",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 12: 2018-2019",
+      "theme": "Mediterranean 5-Country Cruise \u2014 Engagement Ring \u2014 6th Cruise in 6 Years | Australia/NZ Best Trip Ever \u2014 Uncle John \u2014 Halfway to 70"
+    },
+    "heros_journey_stage": "Resurrection",
+    "milestones": [
+      {
+        "year": 2019,
+        "milestone": "'2020, challenge accepted' (Dec 31)",
+        "category": "other",
+        "sentiment": 0.34
+      },
+      {
+        "year": 2019,
+        "milestone": "1,000th CHA game vs Pops Tronolone (May 22)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "35th birthday \u2014 'Halfway to 70' (Sep 25-27)",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "7th Major ECD championship (Aug 17)",
+        "category": "ecd",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2019,
+        "milestone": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
+        "category": "travel",
+        "sentiment": 0.856
+      },
+      {
+        "year": 2019,
+        "milestone": "Became Uncle John",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "DC Pride Weekend (Jun 22-24)",
+        "category": "other",
+        "sentiment": 0.34
+      },
+      {
+        "year": 2019,
+        "milestone": "Inaugural 'Steal Bingo' (Nov 23)",
+        "category": "other",
+        "sentiment": -0.494
+      },
+      {
+        "year": 2019,
+        "milestone": "Nephew Julian John Tronolone born (Aug 23)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "RK's 30th birthday in Atlantic City (Dec 15-16)",
+        "category": "relationship",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "Strep throat + kidney stone removal",
+        "category": "health",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8)",
+        "category": "entertainment",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2019,
+        "milestone": "Weezer concert at sold-out MSG (Mar 12)",
+        "category": "entertainment",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "Wisconsin Trip 1: Moore-Tronolone wedding (May 31-Jun 2)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2019,
+        "milestone": "Wisconsin Trip 2: Lambeau Field 78,000+ (Sep 20-23)",
+        "category": "travel",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "John Tronolone",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Kevin & Leah (KMJ & LN)",
+      "Kevin Abrams",
+      "Kevin Adams",
+      "Kevin Grand",
+      "Kevin Megill (KMJ)",
+      "Julia Dennabuam",
+      "Julian"
+    ],
+    "quotes": [
+      {
+        "quote": "the best, the longest, and the greatest",
+        "emotion": "joy",
+        "theme": "adventure",
+        "sentiment": 0.856
+      },
+      {
+        "quote": "What am I getting myself into?",
+        "emotion": "neutral",
+        "theme": "identity",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "Halfway to 70",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "best. longest. most. greatest.",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.866
+      },
+      {
+        "quote": "2020, challenge accepted",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.34
+      },
+      {
+        "quote": "a lot of people say dont think of the past, but i feel like the past totally motivates to outdo it",
+        "emotion": "nostalgia",
+        "theme": "reflection",
+        "sentiment": 0.502
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Australia & New Zealand",
+        "scope": "International",
+        "countries": 2,
+        "duration_days": 19,
+        "sentiment": 0.856
+      },
+      {
+        "destination": "Wisconsin (2 trips)",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.0
+      },
+      {
+        "destination": "Washington D.C.",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.34
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2019,
+        "winner": "Janet Jackson",
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2019,
+        "winner": "Diana DiBuccio",
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2019,
+        "winner": "Diana DiBuccio",
+        "note": ""
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "Weezer at Madison Square Garden (sold out)",
+        "event_type": "concert",
+        "note": ""
+      },
+      {
+        "show_name": "U.S. Open: Nadal vs Medvedev final",
+        "event_type": "sporting event",
+        "note": "3rd longest in 100+ years; 70+ photos/videos"
+      }
+    ],
+    "career": [],
+    "medical": [
+      {
+        "event": "Strep throat (Aug 7) + kidney stone removal",
+        "category": "illness",
+        "severity": "minor",
+        "sentiment": 0.0
+      }
+    ],
+    "ecd": [
+      {
+        "anniversary": "14th",
+        "event_name": null,
+        "participants": null,
+        "raised": null,
+        "sentiment": 0.496
+      }
+    ],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "longest",
+        "tfidf_score": 0.32
+      },
+      {
+        "keyword": "tronolone",
+        "tfidf_score": 0.24
+      },
+      {
+        "keyword": "longest greatest",
+        "tfidf_score": 0.24
+      },
+      {
+        "keyword": "best longest",
+        "tfidf_score": 0.24
+      },
+      {
+        "keyword": "best",
+        "tfidf_score": 0.193
+      },
+      {
+        "keyword": "31",
+        "tfidf_score": 0.193
+      },
+      {
+        "keyword": "greatest",
+        "tfidf_score": 0.177
+      },
+      {
+        "keyword": "23",
+        "tfidf_score": 0.165
+      },
+      {
+        "keyword": "wisconsin",
+        "tfidf_score": 0.16
+      },
+      {
+        "keyword": "halfway 70",
+        "tfidf_score": 0.16
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 19.2,
+      "avg_word_count": 7.7,
+      "vocabulary_richness": 0.789,
+      "avg_sentence_length": 45.2,
+      "total_words": 185
+    },
+    "fun_facts": [
+      {
+        "fact": "$403 Butcher's Block dinner bill (Jul 31, 2019)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Lambeau Field visit with 78,000+ in attendance (Sep 2019)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Personal rebirth 'behind door 254' in Wisconsin (May 31-Jun 2, 2019)",
+        "category": "misc",
+        "sentiment": -0.2
+      }
+    ],
+    "network": {
+      "active_people": 4,
+      "new_people": 2,
+      "lost_people": 4,
+      "network_density": 0.5,
+      "top_person": "John Tronolone",
+      "top_person_mentions": 2
+    }
+  },
+  "2020": {
+    "summary": {
+      "milestone_count": 11,
+      "travel_count": 1,
+      "wwe_events": 1,
+      "people_mentioned": 4,
+      "entertainment_count": 0,
+      "comeback_count": 1,
+      "award_count": 5,
+      "quote_count": 8,
+      "intensity_score": 24.0,
+      "year_theme": "Asia Expedition \u2014 COVID Quarantine \u2014 4th Skydive \u2014 Leap Day Wedding",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 13: 2020-2020",
+      "theme": "Asia Expedition \u2014 COVID Quarantine \u2014 4th Skydive \u2014 Leap Day Wedding"
+    },
+    "heros_journey_stage": "Resurrection",
+    "milestones": [
+      {
+        "year": 2020,
+        "milestone": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
+        "category": "sports",
+        "sentiment": 0.421
+      },
+      {
+        "year": 2020,
+        "milestone": "90th WWE event (Mar 8, 17th with RL)",
+        "category": "wwe",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2020,
+        "milestone": "Asian expedition: Singapore, Thailand, Cambodia, Vietnam, Hong Kong (17 days Jan-Feb)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2020,
+        "milestone": "Assisted Living Manager at Sunrise of Jackson (started Sep 28)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2020,
+        "milestone": "ECD 15th birthday (Aug 22-23)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2020,
+        "milestone": "Grace & Megan graduate high school",
+        "category": "family",
+        "sentiment": 0.421
+      },
+      {
+        "year": 2020,
+        "milestone": "Kevin & Leah married Feb 29 (leap day)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2020,
+        "milestone": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
+        "category": "health",
+        "sentiment": 0.527
+      },
+      {
+        "year": 2020,
+        "milestone": "Pasta Passion & Pistols Murder Mystery NYE (Dec 31)",
+        "category": "social",
+        "sentiment": -0.402
+      },
+      {
+        "year": 2020,
+        "milestone": "Tennis: 6-3, 6-1 vs Blake (Dec 12)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2020,
+        "milestone": "Turned 36 (Sep 27) \u2014 skydive + birthday combined",
+        "category": "sports",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Kevin & Leah (KMJ & LN)",
+      "Kevin Abrams",
+      "Kevin Adams",
+      "Kevin Grand",
+      "Kevin Megill (KMJ)",
+      "Julia Dennabuam",
+      "Julian",
+      "Grace",
+      "Megan",
+      "Blake"
+    ],
+    "quotes": [
+      {
+        "quote": "not a death sentence, living proof",
+        "emotion": "neutral",
+        "theme": "resilience",
+        "sentiment": 0.445
+      },
+      {
+        "quote": "job doesn't get easier unless yours does first",
+        "emotion": "neutral",
+        "theme": "adventure",
+        "sentiment": -0.325
+      },
+      {
+        "quote": "the record is the record. next question.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "My friends got their ladies, they're all having babies, but I just want to have some fun.",
+        "emotion": "sadness",
+        "theme": "relationships",
+        "sentiment": 0.788
+      },
+      {
+        "quote": "JTP only you would call 2020 great",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.625
+      },
+      {
+        "quote": "So energizing to sense the energy you bring to life",
+        "emotion": "joy",
+        "theme": "reflection",
+        "sentiment": 0.659
+      },
+      {
+        "quote": "oh my gosh! i am so honored to have made multiple appearances!",
+        "emotion": "anger",
+        "theme": "reflection",
+        "sentiment": 0.754
+      },
+      {
+        "quote": "Shit I need to do this. It's so cool",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": -0.155
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Singapore, Thailand, Cambodia, Vietnam, Hong Kong",
+        "scope": "International",
+        "countries": 5,
+        "duration_days": 17,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2020,
+        "winner": "Janet Jackson",
+        "note": ""
+      },
+      {
+        "category": "song_of_the_year",
+        "year": 2020,
+        "winner": "Music Sounds Better With You",
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2020,
+        "winner": "Diana DiBuccio",
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2020,
+        "winner": "Diana DiBuccio",
+        "note": ""
+      },
+      {
+        "category": "shocker_of_the_year",
+        "year": 2020,
+        "winner": "COVID Test II; Laver Cup Tickets; Brian's Transfer",
+        "note": ""
+      }
+    ],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "Assisted Living Manager",
+        "employer": "Sunrise of Jackson",
+        "milestone": "Applied May, started Sept 28. Brian announced departure same week.",
+        "career_level": 3,
+        "sentiment": 0.0
+      }
+    ],
+    "medical": [
+      {
+        "event": "Medical quarantine (Mar 26 \u2013 Apr 16); gained 3 lbs solid muscle",
+        "category": "illness",
+        "severity": "moderate",
+        "sentiment": 0.751
+      }
+    ],
+    "ecd": [
+      {
+        "anniversary": "15th",
+        "event_name": null,
+        "participants": 35,
+        "raised": 0.0,
+        "sentiment": 0.494
+      }
+    ],
+    "wwe": [
+      {
+        "label": "90th Event (Mar 8, 17th with RL)",
+        "cumulative_events": 90,
+        "note": ""
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "living",
+        "tfidf_score": 0.216
+      },
+      {
+        "keyword": "skydive",
+        "tfidf_score": 0.196
+      },
+      {
+        "keyword": "mar",
+        "tfidf_score": 0.18
+      },
+      {
+        "keyword": "record",
+        "tfidf_score": 0.167
+      },
+      {
+        "keyword": "feb",
+        "tfidf_score": 0.156
+      },
+      {
+        "keyword": "16 muscle",
+        "tfidf_score": 0.122
+      },
+      {
+        "keyword": "passion pistols",
+        "tfidf_score": 0.122
+      },
+      {
+        "keyword": "pasta",
+        "tfidf_score": 0.122
+      },
+      {
+        "keyword": "pasta passion",
+        "tfidf_score": 0.122
+      },
+      {
+        "keyword": "question friends",
+        "tfidf_score": 0.122
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 14.46,
+      "avg_word_count": 9.4,
+      "vocabulary_richness": 0.843,
+      "avg_sentence_length": 31.7,
+      "total_words": 198
+    },
+    "fun_facts": [
+      {
+        "fact": "Called someone 'a porcupine eater' by Mommy Kerr's daughter (2020)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Dropped $160 on assorted desserts for care team: 'job doesn't get easier unless yours does first' (2020)",
+        "category": "food",
+        "sentiment": 0.25
+      }
+    ],
+    "network": {
+      "active_people": 9,
+      "new_people": 3,
+      "lost_people": 3,
+      "network_density": 0.306,
+      "top_person": "Kevin & Leah (KMJ & LN)",
+      "top_person_mentions": 1
+    }
+  },
+  "2021": {
+    "summary": {
+      "milestone_count": 21,
+      "travel_count": 1,
+      "wwe_events": 1,
+      "people_mentioned": 3,
+      "entertainment_count": 1,
+      "comeback_count": 0,
+      "award_count": 4,
+      "quote_count": 5,
+      "intensity_score": 30.0,
+      "year_theme": "9.8/10 Year \u2014 218 Ping Pong Rounds \u2014 8.6 lbs Shrimp \u2014 Nephew Lawrence",
+      "self_rating": 9.8
+    },
+    "chapter": {
+      "name": "Chapter 14: 2021-2021",
+      "theme": "9.8/10 Year \u2014 218 Ping Pong Rounds \u2014 8.6 lbs Shrimp \u2014 Nephew Lawrence"
+    },
+    "heros_journey_stage": "Return with the Elixir",
+    "milestones": [
+      {
+        "year": 2021,
+        "milestone": "10-year anniversary with Rob (Jan 15)",
+        "category": "relationship",
+        "sentiment": -0.557
+      },
+      {
+        "year": 2021,
+        "milestone": "20 years between Rangers games at MSG",
+        "category": "entertainment",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "218-round ping pong match",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "25th consecutive Survivor Series \u2014 91st WWE event",
+        "category": "wwe",
+        "sentiment": 0.361
+      },
+      {
+        "year": 2021,
+        "milestone": "37th birthday (Sep 24-28)",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "568-day wait for Laver Cup tickets",
+        "category": "entertainment",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "8.6 lbs shrimp + 7.3 lbs crab meat consumed",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "Alexandria Virginia work assignment (Sep 20-23)",
+        "category": "relationship",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "Arizona trip: Grand Canyon, Sedona, Flagstaff",
+        "category": "travel",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2021,
+        "milestone": "Danny won inaugural 'RK Quiz' (Dec 11)",
+        "category": "relationship",
+        "sentiment": 0.572
+      },
+      {
+        "year": 2021,
+        "milestone": "Death Valley visited (Mar 16-20)",
+        "category": "travel",
+        "sentiment": -0.599
+      },
+      {
+        "year": 2021,
+        "milestone": "Ft. Lauderdale wedding attendance (May 13-18)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos)",
+        "category": "travel",
+        "sentiment": 0.459
+      },
+      {
+        "year": 2021,
+        "milestone": "Jumped from Stratosphere in Las Vegas",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "Nephew Lawrence born (Dec 23, 6:25am)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "Sr. Resident Care Coordinator promotion (applied Jul 11, accepted Jul 23)",
+        "category": "career",
+        "sentiment": 0.649
+      },
+      {
+        "year": 2021,
+        "milestone": "Tour de Friends events (Feb-Apr)",
+        "category": "other",
+        "sentiment": 0.477
+      },
+      {
+        "year": 2021,
+        "milestone": "Washington D.C. visit (October)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "Year rated 9.8/10",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2021,
+        "milestone": "YogaSix Class 101 standing splits (Dec 12)",
+        "category": "other",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "Dan Farnkopf",
+      "Dan Spengeman",
+      "The Pops",
+      "Lauren Stopa",
+      "Lauren Winston",
+      "Rob",
+      "Rob Phillips (Robert)",
+      "Julia Dennabuam",
+      "Julian",
+      "Megan",
+      "Lawrence",
+      "Danny Sponge"
+    ],
+    "quotes": [
+      {
+        "quote": "it's called dedication. look it up.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "the notebook doesn't lie, ValPal.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "you're welcome for the immortality.",
+        "emotion": "neutral",
+        "theme": "reflection",
+        "sentiment": 0.459
+      },
+      {
+        "quote": "Life went from 9.5 to 9.7 in 10m, 37s",
+        "emotion": "neutral",
+        "theme": "career",
+        "sentiment": 0.0
+      },
+      {
+        "quote": "Baby is here. Everyone healthy and safe.",
+        "emotion": "joy",
+        "theme": "health",
+        "sentiment": 0.681
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Grand Canyon, Vegas, Utah, Colorado, Boston",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": -0.25
+      }
+    ],
+    "awards": [
+      {
+        "category": "music_artist_of_the_year",
+        "year": 2021,
+        "winner": "Janet Jackson",
+        "note": ""
+      },
+      {
+        "category": "song_of_the_year",
+        "year": 2021,
+        "winner": "Music Sounds Better With You",
+        "note": "Runners-up: Shawn Christopher 'Sweet Freedom', Jet 'Start The Show'. First time runner-up reached #1."
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2021,
+        "winner": "Lauren Winston",
+        "note": ""
+      },
+      {
+        "category": "shocker_of_the_year",
+        "year": 2021,
+        "winner": "Sr. RCC promotion; Message From Rob Phillips; Stopa's Pregnancy Text; Tim's Stand-Up Text",
+        "note": "Second consecutive work-related winner"
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "Laver Cup Tennis Championship",
+        "event_type": "sporting event",
+        "note": "568-day wait for tickets"
+      }
+    ],
+    "career": [
+      {
+        "title": "Sr. Resident Care Coordinator",
+        "employer": "Sunrise of Jackson",
+        "milestone": "After competitive interview. Applied Jul 11, interviews Jul 19-21, accepted Jul 23.",
+        "career_level": 4,
+        "sentiment": 0.421
+      }
+    ],
+    "medical": [],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "91st event; 25th consecutive Survivor Series calendar year",
+        "cumulative_events": 91,
+        "note": ""
+      }
+    ],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "23",
+        "tfidf_score": 0.236
+      },
+      {
+        "keyword": "vegas",
+        "tfidf_score": 0.23
+      },
+      {
+        "keyword": "lbs",
+        "tfidf_score": 0.203
+      },
+      {
+        "keyword": "year",
+        "tfidf_score": 0.168
+      },
+      {
+        "keyword": "11",
+        "tfidf_score": 0.158
+      },
+      {
+        "keyword": "dec",
+        "tfidf_score": 0.152
+      },
+      {
+        "keyword": "10",
+        "tfidf_score": 0.147
+      },
+      {
+        "keyword": "jul",
+        "tfidf_score": 0.147
+      },
+      {
+        "keyword": "20",
+        "tfidf_score": 0.139
+      },
+      {
+        "keyword": "pong",
+        "tfidf_score": 0.115
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 8.12,
+      "avg_word_count": 7.0,
+      "vocabulary_richness": 0.787,
+      "avg_sentence_length": 12.6,
+      "total_words": 216
+    },
+    "fun_facts": [
+      {
+        "fact": "Consumed 8.6 lbs of jumbo shrimp and 7.3 lbs of lump crab meat at separate events (2021)",
+        "category": "food",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Waited 568 days for Laver Cup tennis championship tickets (2021)",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Went 20 years between Rangers games at Madison Square Garden before returning (2021)",
+        "category": "misc",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "A ping pong match in 2021 went 218 individual rounds",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "fact": "Year 2021 self-rated 9.8 out of 10",
+        "category": "misc",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 9,
+      "new_people": 2,
+      "lost_people": 8,
+      "network_density": 0.194,
+      "top_person": "Dan Farnkopf",
+      "top_person_mentions": 2
+    }
+  },
+  "2022": {
+    "summary": {
+      "milestone_count": 14,
+      "travel_count": 0,
+      "wwe_events": 1,
+      "people_mentioned": 1,
+      "entertainment_count": 1,
+      "comeback_count": 0,
+      "award_count": 2,
+      "quote_count": 0,
+      "intensity_score": 17.5,
+      "year_theme": "Five Boro Bike Tour \u2014 Rangers Playoff Run \u2014 Gram's 90th",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 15: 2022-2022",
+      "theme": "Five Boro Bike Tour \u2014 Rangers Playoff Run \u2014 Gram's 90th"
+    },
+    "heros_journey_stage": "Return with the Elixir",
+    "milestones": [
+      {
+        "year": 2022,
+        "milestone": "#100 Award",
+        "category": "other",
+        "sentiment": 0.542
+      },
+      {
+        "year": 2022,
+        "milestone": "California/Oregon vacation (Golden Gate, Redwoods, Portland)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Connecticut work assignment (Sunrise Wilton)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "ECD FallFest",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Five Boro Bike Tour (40 miles)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Gram's 90th birthday",
+        "category": "social",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Hunter Mountain NY ski trip (winter)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Knicks game (100-97 victory)",
+        "category": "entertainment",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Megan's Brookdale graduation",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "North Carolina/Tennessee road trip (March)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "PSU White Out football weekend",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Rangers playoff run (triple-OT game at MSG)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2022,
+        "milestone": "Undertaker inducted into Hall of Fame",
+        "category": "wwe",
+        "sentiment": 0.44
+      },
+      {
+        "year": 2022,
+        "milestone": "Yankees game attended",
+        "category": "other",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "The Pops",
+      "Julia Dennabuam",
+      "Julian",
+      "Megan"
+    ],
+    "quotes": [],
+    "travel": [],
+    "awards": [
+      {
+        "category": "best_laughs",
+        "year": 2022,
+        "winner": "Valerie Winston, Diana DiBuccio",
+        "note": ""
+      },
+      {
+        "category": "work",
+        "year": 2022,
+        "winner": "#100 Award",
+        "note": ""
+      }
+    ],
+    "entertainment": [
+      {
+        "show_name": "A Christmas Carol",
+        "event_type": "broadway",
+        "note": ""
+      }
+    ],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [
+      {
+        "label": "Undertaker inducted into Hall of Fame",
+        "cumulative_events": null,
+        "note": ""
+      }
+    ],
+    "sports": [
+      {
+        "sport": "Five Boro Bike Tour",
+        "stat_type": "note",
+        "stat_value": "5 boroughs, medal finish (2025)",
+        "note": "5 boroughs, medal finish (2025)"
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "game",
+        "tfidf_score": 0.298
+      },
+      {
+        "keyword": "100",
+        "tfidf_score": 0.231
+      },
+      {
+        "keyword": "playoff run",
+        "tfidf_score": 0.169
+      },
+      {
+        "keyword": "oregon",
+        "tfidf_score": 0.169
+      },
+      {
+        "keyword": "rangers playoff",
+        "tfidf_score": 0.169
+      },
+      {
+        "keyword": "psu",
+        "tfidf_score": 0.169
+      },
+      {
+        "keyword": "psu white",
+        "tfidf_score": 0.169
+      },
+      {
+        "keyword": "ot",
+        "tfidf_score": 0.169
+      },
+      {
+        "keyword": "oregon vacation",
+        "tfidf_score": 0.169
+      },
+      {
+        "keyword": "ot game",
+        "tfidf_score": 0.169
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 34.32,
+      "avg_word_count": 4.9,
+      "vocabulary_richness": 0.946,
+      "avg_sentence_length": 74.0,
+      "total_words": 74
+    },
+    "fun_facts": [
+      {
+        "fact": "Rooney's restaurant visit generated '30 straight minutes of uncontrollable laughter' (2022)",
+        "category": "misc",
+        "sentiment": 0.2
+      }
+    ],
+    "network": {
+      "active_people": 1,
+      "new_people": 0,
+      "lost_people": 9,
+      "network_density": 0.0,
+      "top_person": "Megan",
+      "top_person_mentions": 1
+    }
+  },
+  "2023": {
+    "summary": {
+      "milestone_count": 6,
+      "travel_count": 1,
+      "wwe_events": 0,
+      "people_mentioned": 0,
+      "entertainment_count": 4,
+      "comeback_count": 0,
+      "award_count": 0,
+      "quote_count": 1,
+      "intensity_score": 12.5,
+      "year_theme": "Super Bowl LVII \u2014 House Closing \u2014 3 Broadway Shows",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 16: 2023-2023",
+      "theme": "Super Bowl LVII \u2014 House Closing \u2014 3 Broadway Shows"
+    },
+    "heros_journey_stage": "Return with the Elixir",
+    "milestones": [
+      {
+        "year": 2023,
+        "milestone": "15-year anniversary of 'personal liberation day'",
+        "category": "relationship",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2023,
+        "milestone": "Broadway: Hadestown, Aladdin, Chicago (3 shows in one year)",
+        "category": "entertainment",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2023,
+        "milestone": "Closed on house at Mill Creek Court (Dec 18)",
+        "category": "personal",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2023,
+        "milestone": "Executive Director role began at Media, PA location (July)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2023,
+        "milestone": "Six Flags Great Adventure visits (multiple)",
+        "category": "other",
+        "sentiment": 0.751
+      },
+      {
+        "year": 2023,
+        "milestone": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced'",
+        "category": "entertainment",
+        "sentiment": 0.599
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "The Pops",
+      "Julia Dennabuam",
+      "Julian"
+    ],
+    "quotes": [
+      {
+        "quote": "the most spectacular day I've ever experienced",
+        "emotion": "neutral",
+        "theme": "adventure",
+        "sentiment": 0.0
+      }
+    ],
+    "travel": [
+      {
+        "destination": "Phoenix / Arizona",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": 0.599
+      }
+    ],
+    "awards": [],
+    "entertainment": [
+      {
+        "show_name": "Hadestown",
+        "event_type": "broadway",
+        "note": ""
+      },
+      {
+        "show_name": "Aladdin",
+        "event_type": "broadway",
+        "note": ""
+      },
+      {
+        "show_name": "Chicago",
+        "event_type": "broadway",
+        "note": "3 shows in one year"
+      },
+      {
+        "show_name": "Super Bowl LVII",
+        "event_type": "sporting event",
+        "note": ""
+      }
+    ],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "day ve",
+        "tfidf_score": 0.334
+      },
+      {
+        "keyword": "spectacular day",
+        "tfidf_score": 0.334
+      },
+      {
+        "keyword": "experienced",
+        "tfidf_score": 0.334
+      },
+      {
+        "keyword": "ve experienced",
+        "tfidf_score": 0.334
+      },
+      {
+        "keyword": "spectacular",
+        "tfidf_score": 0.334
+      },
+      {
+        "keyword": "day",
+        "tfidf_score": 0.321
+      },
+      {
+        "keyword": "ve",
+        "tfidf_score": 0.267
+      },
+      {
+        "keyword": "phoenix spectacular",
+        "tfidf_score": 0.167
+      },
+      {
+        "keyword": "phoenix",
+        "tfidf_score": 0.167
+      },
+      {
+        "keyword": "personal liberation",
+        "tfidf_score": 0.167
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 27.96,
+      "avg_word_count": 8.3,
+      "vocabulary_richness": 0.897,
+      "avg_sentence_length": 57.0,
+      "total_words": 58
+    },
+    "fun_facts": [],
+    "network": {}
+  },
+  "2024": {
+    "summary": {
+      "milestone_count": 11,
+      "travel_count": 1,
+      "wwe_events": 0,
+      "people_mentioned": 1,
+      "entertainment_count": 1,
+      "comeback_count": 1,
+      "award_count": 0,
+      "quote_count": 0,
+      "intensity_score": 17.0,
+      "year_theme": "Norway/Iceland \u2014 Grandmother's Passing \u2014 30 Blue Claws",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 17: 2024-2024",
+      "theme": "Norway/Iceland \u2014 Grandmother's Passing \u2014 30 Blue Claws"
+    },
+    "heros_journey_stage": "Return with the Elixir",
+    "milestones": [
+      {
+        "year": 2024,
+        "milestone": "30 blue crabs caught (personal best)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Bowling 180+ average",
+        "category": "sports",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Fenwick Island/Delaware trip",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Grandmother passed (Oct 21, 11:57 PM, age 92)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Julian's 5th birthday (Aug 25)",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Kidney stones (Dec 18 & 20 hospitalizations)",
+        "category": "health",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Montreal (Place d'Armes, MTLaTABLE)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Norway cruise (Alesund, Akureyri, Iceland Sky Lagoon)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Spain trip (Lisbon, Madrid)",
+        "category": "travel",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Toronto (CN Tower 1,815 ft, Niagara Falls)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2024,
+        "milestone": "Wicked on Broadway",
+        "category": "entertainment",
+        "sentiment": -0.527
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "The Pops",
+      "Julia Dennabuam",
+      "Julian"
+    ],
+    "quotes": [],
+    "travel": [
+      {
+        "destination": "Portugal, Spain, Norway, Iceland, Toronto",
+        "scope": "International",
+        "countries": 5,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [],
+    "entertainment": [
+      {
+        "show_name": "Wicked",
+        "event_type": "broadway",
+        "note": ""
+      }
+    ],
+    "career": [],
+    "medical": [
+      {
+        "event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
+        "category": "illness",
+        "severity": "moderate",
+        "sentiment": 0.0
+      }
+    ],
+    "ecd": [],
+    "wwe": [],
+    "sports": [
+      {
+        "sport": "Bowling",
+        "stat_type": "note",
+        "stat_value": "",
+        "note": ""
+      }
+    ],
+    "keywords": [
+      {
+        "keyword": "trip",
+        "tfidf_score": 0.221
+      },
+      {
+        "keyword": "oct 21",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "place armes",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "place",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "passed oct",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "personal best",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "18 20",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "pm age",
+        "tfidf_score": 0.205
+      },
+      {
+        "keyword": "julian",
+        "tfidf_score": 0.181
+      },
+      {
+        "keyword": "tower",
+        "tfidf_score": 0.181
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 28.65,
+      "avg_word_count": 5.3,
+      "vocabulary_richness": 0.953,
+      "avg_sentence_length": 63.0,
+      "total_words": 64
+    },
+    "fun_facts": [
+      {
+        "fact": "CN Tower height: 1,815 feet (visited 2024)",
+        "category": "misc",
+        "sentiment": 0.0
+      }
+    ],
+    "network": {
+      "active_people": 3,
+      "new_people": 0,
+      "lost_people": 1,
+      "network_density": 0.333,
+      "top_person": "The Pops",
+      "top_person_mentions": 1
+    }
+  },
+  "2025": {
+    "summary": {
+      "milestone_count": 11,
+      "travel_count": 1,
+      "wwe_events": 0,
+      "people_mentioned": 0,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 0,
+      "quote_count": 0,
+      "intensity_score": 13.0,
+      "year_theme": "Executive Director \u2014 4,000-Mile Road Trip \u2014 Ma's 70th",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 18: 2025-2025",
+      "theme": "Executive Director \u2014 4,000-Mile Road Trip \u2014 Ma's 70th"
+    },
+    "heros_journey_stage": "Return with the Elixir",
+    "milestones": [
+      {
+        "year": 2025,
+        "milestone": "20th Anniversary celebration",
+        "category": "relationship",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2025,
+        "milestone": "4,000-mile Midwest road trip (16 states: Rushmore, Devils Tower, Gateway Arch, Badlands)",
+        "category": "travel",
+        "sentiment": -0.572
+      },
+      {
+        "year": 2025,
+        "milestone": "Anniversary XX celebration \u2014 20-year Timeline milestone (Sep 27)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2025,
+        "milestone": "Coastal cruise getaway (Sep 28 - Oct 5)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2025,
+        "milestone": "ECD Bowl Weekend (57 people, $1,700+ raised)",
+        "category": "ecd",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2025,
+        "milestone": "Emotional crisis and relationship transition (late May-early June)",
+        "category": "other",
+        "sentiment": -0.542
+      },
+      {
+        "year": 2025,
+        "milestone": "Executive Director promotion (passed NJ certification)",
+        "category": "career",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2025,
+        "milestone": "Five Boro Bike Tour medal finish",
+        "category": "sports",
+        "sentiment": 0.477
+      },
+      {
+        "year": 2025,
+        "milestone": "Influenza confirmed (February)",
+        "category": "other",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2025,
+        "milestone": "Mother's 70th birthday",
+        "category": "family",
+        "sentiment": 0.0
+      },
+      {
+        "year": 2025,
+        "milestone": "NJ Executive Director certification passed",
+        "category": "other",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [
+      "Tim Moore",
+      "The Pops"
+    ],
+    "quotes": [],
+    "travel": [
+      {
+        "destination": "Midwest Road Trip (16 states)",
+        "scope": "Domestic",
+        "countries": null,
+        "duration_days": null,
+        "sentiment": -0.572
+      }
+    ],
+    "awards": [],
+    "entertainment": [],
+    "career": [
+      {
+        "title": "Executive Director",
+        "employer": "Sunrise of Jackson",
+        "milestone": "Passed NJ certification exam \u2014 the top job",
+        "career_level": 5,
+        "sentiment": 0.202
+      }
+    ],
+    "medical": [
+      {
+        "event": "Influenza confirmed by medical visit (February)",
+        "category": "illness",
+        "severity": "minor",
+        "sentiment": 0.0
+      }
+    ],
+    "ecd": [
+      {
+        "anniversary": "18th+",
+        "event_name": "ECD Bowl Weekend",
+        "participants": 57,
+        "raised": 1700.0,
+        "sentiment": 0.0
+      }
+    ],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "road trip",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "passed nj",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "raised",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "raised boro",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "promotion passed",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "16 states",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "people 700",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "road",
+        "tfidf_score": 0.218
+      },
+      {
+        "keyword": "tower",
+        "tfidf_score": 0.193
+      },
+      {
+        "keyword": "mother",
+        "tfidf_score": 0.193
+      }
+    ],
+    "writing_stats": {
+      "avg_grade_level": 35.05,
+      "avg_word_count": 6.4,
+      "vocabulary_richness": 0.914,
+      "avg_sentence_length": 68.0,
+      "total_words": 70
+    },
+    "fun_facts": [],
+    "network": {
+      "active_people": 2,
+      "new_people": 0,
+      "lost_people": 2,
+      "network_density": 0.0,
+      "top_person": "The Pops",
+      "top_person_mentions": 1
+    }
+  },
+  "2026": {
+    "summary": {
+      "milestone_count": 1,
+      "travel_count": 1,
+      "wwe_events": 0,
+      "people_mentioned": 0,
+      "entertainment_count": 0,
+      "comeback_count": 0,
+      "award_count": 0,
+      "quote_count": 0,
+      "intensity_score": 3.0,
+      "year_theme": "Japan \u2014 To Tokyo",
+      "self_rating": null
+    },
+    "chapter": {
+      "name": "Chapter 19: 2026",
+      "theme": "Japan \u2014 To Tokyo"
+    },
+    "heros_journey_stage": "Return with the Elixir",
+    "milestones": [
+      {
+        "year": 2026,
+        "milestone": "Japan trip (booked \u2014 Tokyo bound)",
+        "category": "travel",
+        "sentiment": 0.0
+      }
+    ],
+    "people_active": [],
+    "quotes": [],
+    "travel": [
+      {
+        "destination": "Japan",
+        "scope": "International",
+        "countries": 1,
+        "duration_days": null,
+        "sentiment": 0.0
+      }
+    ],
+    "awards": [],
+    "entertainment": [],
+    "career": [],
+    "medical": [],
+    "ecd": [],
+    "wwe": [],
+    "sports": [],
+    "keywords": [
+      {
+        "keyword": "trip",
+        "tfidf_score": 1.0
+      }
+    ],
+    "writing_stats": {},
+    "fun_facts": [],
+    "network": {}
+  }
+}

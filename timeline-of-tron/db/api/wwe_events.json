@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "year": 2004,
+    "label": "Timeline Begins",
+    "cumulative_events": 10,
+    "note": "Wrestling fandom started via Mrs. Amorino's VHS tapes at Holy Trinity Elementary"
+  },
+  {
+    "id": 2,
+    "year": 2007,
+    "label": "WWE Stock purchased; 51st event (Oct 29 Philadelphia)",
+    "cumulative_events": 51,
+    "note": null
+  },
+  {
+    "id": 3,
+    "year": 2007,
+    "label": "WrestleMania 23 in Detroit (3rd WM)",
+    "cumulative_events": null,
+    "note": "Ford Field, Hall of Fame, meet-and-greet"
+  },
+  {
+    "id": 4,
+    "year": 2008,
+    "label": "WrestleMania XXIV in Florida (4th WM)",
+    "cumulative_events": 55,
+    "note": "Family reunion, CityWalk, Universal Studios"
+  },
+  {
+    "id": 5,
+    "year": 2009,
+    "label": "WrestleMania 25 in Houston (5th WM)",
+    "cumulative_events": null,
+    "note": "Stone Cold farewell salute, Undertaker 17-0. With Valerie Winston, Travis Mills, Ryan Letsche."
+  },
+  {
+    "id": 6,
+    "year": 2009,
+    "label": "62nd event overall (Hell In A Cell Oct 4)",
+    "cumulative_events": 62,
+    "note": null
+  },
+  {
+    "id": 7,
+    "year": 2010,
+    "label": "WrestleMania XXVI in Arizona (6th WM)",
+    "cumulative_events": 65,
+    "note": "939 photos/videos captured"
+  },
+  {
+    "id": 8,
+    "year": 2011,
+    "label": "Survivor Series at MSG (17,000+ attendance; The Rock returns)",
+    "cumulative_events": null,
+    "note": "Also RAW Holiday Tour at MSG Dec 27"
+  },
+  {
+    "id": 9,
+    "year": 2012,
+    "label": "71st event; WM XXVIII Travel Package",
+    "cumulative_events": 71,
+    "note": null
+  },
+  {
+    "id": 10,
+    "year": 2013,
+    "label": "WrestleMania 29 (at-home NJ; 8th WM); Event #75",
+    "cumulative_events": 75,
+    "note": "21-0 record. Five-star rating. Tim Moore visited."
+  },
+  {
+    "id": 11,
+    "year": 2014,
+    "label": "WrestleMania XXX \u2014 Undertaker Handshake",
+    "cumulative_events": 80,
+    "note": "New Orleans. Handshake at 4:10:18 PM CT. Streak broken 21-1. With Rob, Valerie, Tim."
+  },
+  {
+    "id": 12,
+    "year": 2016,
+    "label": "WrestleMania 32 \u2014 100K+ in building",
+    "cumulative_events": 85,
+    "note": "'Unquestionably, the greatest WWE experience of all-time'"
+  },
+  {
+    "id": 13,
+    "year": 2017,
+    "label": "WrestleMania 33; SummerSlam 20-year personal story complete",
+    "cumulative_events": null,
+    "note": "'1997, 2007, 2015, and now 2017. My personal SummerSlam story, some 20 years long, complete'"
+  },
+  {
+    "id": 14,
+    "year": 2020,
+    "label": "90th Event (Mar 8, 17th with RL)",
+    "cumulative_events": 90,
+    "note": null
+  },
+  {
+    "id": 15,
+    "year": 2021,
+    "label": "91st event; 25th consecutive Survivor Series calendar year",
+    "cumulative_events": 91,
+    "note": null
+  },
+  {
+    "id": 16,
+    "year": 2022,
+    "label": "Undertaker inducted into Hall of Fame",
+    "cumulative_events": null,
+    "note": null
+  }
+]

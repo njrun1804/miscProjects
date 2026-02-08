@@ -1,0 +1,212 @@
+/*
+ * THE TIMELINE OF TRON — Room 4: The Record Book
+ * Warm parchment + wood tones
+ */
+
+.room-records {
+    --room-bg: #f5efe0;
+    --room-text: #2c1810;
+    --room-accent: #8b6914;
+    --room-panel: #faf5e8;
+    --lj-border: #d4c8a8;
+    --lj-text-secondary: #6b5840;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c4b8a0' fill-opacity='0.1'%3E%3Cpath d='M0 0h1v1H0zM20 0h1v1h-1zM0 20h1v1H0zM20 20h1v1h-1z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.records-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-lg) 24px;
+}
+
+.records-hero {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.records-hero h1 { color: var(--room-accent); }
+
+/* Obsession Index */
+.obsession-index {
+    margin-bottom: var(--space-xl);
+}
+
+.obsession-index h2 {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.obsession-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 14px;
+}
+
+.obsession-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 16px;
+    text-align: center;
+    box-shadow: 1px 2px 4px rgba(90,78,60,0.1);
+}
+
+.obsession-value {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--room-accent);
+    line-height: 1.1;
+}
+
+.obsession-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--lj-text-secondary);
+    margin-top: 6px;
+}
+
+.obsession-precision {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--room-accent);
+    opacity: 0.7;
+    margin-top: 4px;
+}
+
+.obsession-annotation {
+    font-style: italic;
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    text-align: center;
+    margin-top: var(--space-md);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Sports Gauges */
+.gauges-section {
+    margin-bottom: var(--space-xl);
+}
+
+.gauges-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.gauges-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.gauge-wrap {
+    text-align: center;
+}
+
+.gauge-wrap canvas {
+    max-width: 220px;
+    margin: 0 auto;
+    display: block;
+}
+
+.gauge-label {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--room-text);
+    margin-top: 8px;
+}
+
+.gauge-record {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+/* Streak Tracker */
+.streak-section {
+    margin-bottom: var(--space-xl);
+}
+
+.streak-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.streak-chart-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Record Wall */
+.record-wall {
+    margin-bottom: var(--space-xl);
+}
+
+.record-wall h2 {
+    text-align: center;
+    margin-bottom: var(--space-lg);
+}
+
+.record-wall-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 12px;
+}
+
+.record-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-left: 3px solid var(--room-accent);
+    border-radius: var(--radius);
+    padding: 14px;
+}
+
+.record-card__stat {
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--room-text);
+    line-height: 1.2;
+}
+
+.record-card__context {
+    font-style: italic;
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+    line-height: 1.3;
+}
+
+.record-card__year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--room-accent);
+    margin-top: 4px;
+}
+
+/* Special callout */
+.records-callout {
+    max-width: 700px;
+    margin: var(--space-xl) auto;
+    padding: 20px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-left: 4px solid var(--room-accent);
+    border-radius: var(--radius);
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--lj-text-secondary);
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .gauges-grid { grid-template-columns: 1fr; max-width: 250px; margin: 0 auto; }
+    .obsession-grid { grid-template-columns: repeat(2, 1fr); }
+    .record-wall-grid { grid-template-columns: 1fr; }
+}

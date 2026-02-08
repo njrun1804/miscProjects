@@ -1,0 +1,74 @@
+[
+  {
+    "stage": "Ordinary World",
+    "year_start": 2004,
+    "year_end": 2006,
+    "years": "[2004, 2005, 2006]",
+    "description": "Pre-transformation John. HS \u2192 early college. Family tension, 723-day relationship, early ECD involvement. Building the foundation.",
+    "avg_sentiment": -0.1977
+  },
+  {
+    "stage": "Call to Adventure",
+    "year_start": 2007,
+    "year_end": 2007,
+    "years": "[2007]",
+    "description": "Reconciliation begins. 'My oh my, how the times have changed.' Crazy Chili Dog post signals inner restlessness.",
+    "avg_sentiment": 0.0868
+  },
+  {
+    "stage": "Crossing the Threshold",
+    "year_start": 2008,
+    "year_end": 2008,
+    "years": "[2008]",
+    "description": "The year everything changed. Coming out ('the power of an internal desire liberated!'). ECD peak. New identity forged. Yeah I Said It: 'I've never felt happier to be alive.'",
+    "avg_sentiment": 0.0827
+  },
+  {
+    "stage": "Tests, Allies & Enemies",
+    "year_start": 2009,
+    "year_end": 2011,
+    "years": "[2009, 2010, 2011]",
+    "description": "Post-threshold navigation. ECD retirement (171 events, legacy secured). College graduation. Career launch at Sunrise. Torn labrum surgery. New friendships forming.",
+    "avg_sentiment": 0.1075
+  },
+  {
+    "stage": "Approach to Inmost Cave",
+    "year_start": 2012,
+    "year_end": 2013,
+    "years": "[2012, 2013]",
+    "description": "Deepening identity. The Influlist (crediting origins). Merrie Melodies (mapping friendships to music). Career advancing. WrestleMania streaks continuing.",
+    "avg_sentiment": 0.0436
+  },
+  {
+    "stage": "The Ordeal",
+    "year_start": 2014,
+    "year_end": 2014,
+    "years": "[2014]",
+    "description": "The most documented year. Undertaker handshake (20-year dream fulfilled through 5 friends). Peak joy. But also peak vulnerability \u2014 everything desired has been achieved. Now what?",
+    "avg_sentiment": 0.2099
+  },
+  {
+    "stage": "The Road Back",
+    "year_start": 2015,
+    "year_end": 2017,
+    "years": "[2015, 2016, 2017]",
+    "description": "Quieter years. 2015 under-documented. 2017: spinal surgery \u2014 the body rebels. Physical ordeal forces reassessment.",
+    "avg_sentiment": 0.1259
+  },
+  {
+    "stage": "Resurrection",
+    "year_start": 2018,
+    "year_end": 2020,
+    "years": "[2018, 2019, 2020]",
+    "description": "Post-surgery comeback. Mediterranean cruise. 1,000th CHA game. COVID forces universal pause. Inner strength tested differently.",
+    "avg_sentiment": 0.1489
+  },
+  {
+    "stage": "Return with the Elixir",
+    "year_start": 2021,
+    "year_end": 2026,
+    "years": "[2021, 2022, 2023, 2024, 2025, 2026]",
+    "description": "The mature chapter. Engagement. Executive Director promotion. 20th WrestleMania. Relationship transition in 2025. The elixir is wisdom: 'When you enjoy the journeys, the destinations magnify.'",
+    "avg_sentiment": 0.0636
+  }
+]

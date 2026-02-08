@@ -1,0 +1,1469 @@
+{
+  "canonical_people": [
+    {
+      "canonical_name": "Aimee",
+      "people_table_id": 118,
+      "aliases": [
+        "Aimee"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Alison Bertsch",
+      "people_table_id": 62,
+      "aliases": [
+        "Alison Bertsch"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Angela Hibbert",
+      "people_table_id": 22,
+      "aliases": [
+        "Angela Hibbert"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Arthur Knott (Artie)",
+      "people_table_id": 82,
+      "aliases": [
+        "Arthur Knott",
+        "Arthur Knott (Artie)",
+        "Artie"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Ashley Hoppe",
+      "people_table_id": 53,
+      "aliases": [
+        "Ashley Hoppe"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Aunt Darlene",
+      "people_table_id": 33,
+      "aliases": [
+        "Aunt Darlene"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Bethany Schon",
+      "people_table_id": 106,
+      "aliases": [
+        "Bethany Schon"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Blake",
+      "people_table_id": 87,
+      "aliases": [
+        "Blake"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Bobby Vetrano",
+      "people_table_id": 45,
+      "aliases": [
+        "Bobby Vetrano"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Bojana Beric (Prof. Beric)",
+      "people_table_id": 66,
+      "aliases": [
+        "Bojana Beric",
+        "Bojana Beric (Prof. Beric)",
+        "Prof. Beric"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Brian",
+      "people_table_id": 27,
+      "aliases": [
+        "Brian"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Buck",
+      "people_table_id": 84,
+      "aliases": [
+        "Buck"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Chef Lanza",
+      "people_table_id": 23,
+      "aliases": [
+        "Chef Lanza"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Chris Adams",
+      "people_table_id": 43,
+      "aliases": [
+        "Chris Adams"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Chris Arbach (Topher)",
+      "people_table_id": 40,
+      "aliases": [
+        "Chris Arbach",
+        "Chris Arbach (Topher)",
+        "Topher"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Chris James",
+      "people_table_id": 79,
+      "aliases": [
+        "Chris James"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Cousin Nick & Samantha",
+      "people_table_id": 70,
+      "aliases": [
+        "Cousin Nick & Samantha"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "D Turner",
+      "people_table_id": 115,
+      "aliases": [
+        "D Turner"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Dan Farnkopf",
+      "people_table_id": 61,
+      "aliases": [
+        "Dan Farnkopf"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Dan Spengeman",
+      "people_table_id": 15,
+      "aliases": [
+        "Dan Spengeman",
+        "Danny Sponge",
+        "Sponge"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Danny Sponge",
+      "people_table_id": 59,
+      "aliases": [
+        "Danny Sponge"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Dave Eldracher",
+      "people_table_id": 113,
+      "aliases": [
+        "Dave Eldracher"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Diana DiBuccio",
+      "people_table_id": 16,
+      "aliases": [
+        "Diana DiBuccio"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Dr. Wenslauskas",
+      "people_table_id": 24,
+      "aliases": [
+        "Dr. Wenslauskas"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Edwards",
+      "people_table_id": 94,
+      "aliases": [
+        "Edwards"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Ellen Carter",
+      "people_table_id": 105,
+      "aliases": [
+        "Ellen Carter"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Fitz",
+      "people_table_id": 95,
+      "aliases": [
+        "Fitz"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Gerald Lewis",
+      "people_table_id": 102,
+      "aliases": [
+        "Gerald Lewis"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Grace",
+      "people_table_id": 6,
+      "aliases": [
+        "Grace"
+      ],
+      "category": "family",
+      "relation": "Sister",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Grammy Nancy",
+      "people_table_id": 4,
+      "aliases": [
+        "Grammy Nancy"
+      ],
+      "category": "family",
+      "relation": "Grandmother",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Grandma 'Mama' Blanca",
+      "people_table_id": 69,
+      "aliases": [
+        "Grandma 'Mama' Blanca"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Grandma Irene",
+      "people_table_id": 68,
+      "aliases": [
+        "Grandma Irene"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Grandma Theresa",
+      "people_table_id": 67,
+      "aliases": [
+        "Grandma Theresa"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Grant Cornero (GrantMan)",
+      "people_table_id": 39,
+      "aliases": [
+        "Grant Cornero",
+        "Grant Cornero (GrantMan)",
+        "GrantMan"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Greg",
+      "people_table_id": 110,
+      "aliases": [
+        "Greg"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Holden",
+      "people_table_id": 86,
+      "aliases": [
+        "Holden"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Jackie Amorino",
+      "people_table_id": 36,
+      "aliases": [
+        "Jackie Amorino"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Jake Mauro",
+      "people_table_id": 65,
+      "aliases": [
+        "Jake Mauro"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "James Butler (Boofer)",
+      "people_table_id": 41,
+      "aliases": [
+        "Boofer",
+        "James Butler",
+        "James Butler (Boofer)"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Japheth",
+      "people_table_id": 29,
+      "aliases": [
+        "Japheth"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Jesse D",
+      "people_table_id": 111,
+      "aliases": [
+        "Jesse D"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "JesseKay Paz",
+      "people_table_id": 20,
+      "aliases": [
+        "JesseKay Paz"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Jill (Toilet Paper)",
+      "people_table_id": 119,
+      "aliases": [
+        "Jill",
+        "Jill (Toilet Paper)",
+        "Toilet Paper"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Joe Corcione (Giuseppe NJ)",
+      "people_table_id": 49,
+      "aliases": [
+        "Giuseppe NJ",
+        "Joe Corcione",
+        "Joe Corcione (Giuseppe NJ)"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "John Tronolone",
+      "people_table_id": 99,
+      "aliases": [
+        "John Tronolone"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Johnny Nash",
+      "people_table_id": 77,
+      "aliases": [
+        "Johnny Nash"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Juan Londono (Muffin Man)",
+      "people_table_id": 48,
+      "aliases": [
+        "Juan Londono",
+        "Juan Londono (Muffin Man)",
+        "Muffin Man",
+        "Muffins"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Julia Dennabuam",
+      "people_table_id": 50,
+      "aliases": [
+        "Julia Dennabuam"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Julian",
+      "people_table_id": 8,
+      "aliases": [
+        "Julian"
+      ],
+      "category": "family",
+      "relation": "Nephew (Michael's son)",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Justin Pierce",
+      "people_table_id": 46,
+      "aliases": [
+        "Justin Pierce"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kathryn Kitty Nogueira",
+      "people_table_id": 117,
+      "aliases": [
+        "Kathryn Kitty Nogueira"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Katie Grand",
+      "people_table_id": 54,
+      "aliases": [
+        "Katie Grand"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kenny Stetz",
+      "people_table_id": 21,
+      "aliases": [
+        "Kenny Stetz"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kevin & Leah (KMJ & LN)",
+      "people_table_id": 12,
+      "aliases": [
+        "KMJ & LN",
+        "Kevin & Leah",
+        "Kevin & Leah (KMJ & LN)"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kevin Abrams",
+      "people_table_id": 107,
+      "aliases": [
+        "Kevin Abrams"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kevin Adams",
+      "people_table_id": 42,
+      "aliases": [
+        "Kevin Adams"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kevin Grand",
+      "people_table_id": 127,
+      "aliases": [
+        "Kevin Grand"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kevin Megill (KMJ)",
+      "people_table_id": 44,
+      "aliases": [
+        "KMJ",
+        "Kevin Megill",
+        "Kevin Megill (KMJ)"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kimmy Canzanella",
+      "people_table_id": 51,
+      "aliases": [
+        "Kimmy Canzanella"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kristen (Cocoa's Mommy)",
+      "people_table_id": 124,
+      "aliases": [
+        "Cocoa's Mommy",
+        "Kristen",
+        "Kristen (Cocoa's Mommy)"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Kristen Driscoll",
+      "people_table_id": 57,
+      "aliases": [
+        "Kristen Driscoll"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Lauren Stopa",
+      "people_table_id": 63,
+      "aliases": [
+        "Lauren Stopa"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Lauren Winston",
+      "people_table_id": 17,
+      "aliases": [
+        "Lauren Winston"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Lawrence",
+      "people_table_id": 9,
+      "aliases": [
+        "Lawrence"
+      ],
+      "category": "family",
+      "relation": "Nephew (Michael's son)",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Lenny",
+      "people_table_id": 120,
+      "aliases": [
+        "Lenny"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Liam Yochum",
+      "people_table_id": 114,
+      "aliases": [
+        "Liam Yochum"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Lindsay & Kyle Szcakstza",
+      "people_table_id": 80,
+      "aliases": [
+        "Lindsay & Kyle Szcakstza"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Lisa",
+      "people_table_id": 73,
+      "aliases": [
+        "Lisa"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Ma",
+      "people_table_id": 1,
+      "aliases": [
+        "Ma"
+      ],
+      "category": "family",
+      "relation": "Mother",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Maggie",
+      "people_table_id": 81,
+      "aliases": [
+        "Maggie"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Marty",
+      "people_table_id": 97,
+      "aliases": [
+        "Marty"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Matt (Physical Therapist)",
+      "people_table_id": 83,
+      "aliases": [
+        "Matt",
+        "Matt (Physical Therapist)",
+        "Physical Therapist"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Matt (introduced Jul 3, 2019)",
+      "people_table_id": 91,
+      "aliases": [
+        "Matt",
+        "Matt (introduced Jul 3, 2019)",
+        "introduced Jul 3, 2019"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Megan",
+      "people_table_id": 7,
+      "aliases": [
+        "Megan"
+      ],
+      "category": "family",
+      "relation": "Sister",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Megill",
+      "people_table_id": 74,
+      "aliases": [
+        "Megill"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Melissa Kerr",
+      "people_table_id": 37,
+      "aliases": [
+        "Melissa Kerr"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Michael",
+      "people_table_id": 5,
+      "aliases": [
+        "Michael"
+      ],
+      "category": "family",
+      "relation": "Brother",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Michelle (Olive Garden Route 35)",
+      "people_table_id": 125,
+      "aliases": [
+        "Michelle",
+        "Michelle (Olive Garden Route 35)",
+        "Olive Garden Route 35"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Michelle Mullins (Muffins)",
+      "people_table_id": 56,
+      "aliases": [
+        "Michelle Mullins",
+        "Michelle Mullins (Muffins)",
+        "Muffins"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Mike Krott",
+      "people_table_id": 109,
+      "aliases": [
+        "Mike Krott",
+        "Mike Sputz Krott",
+        "Sputz"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Mr. Mak",
+      "people_table_id": 25,
+      "aliases": [
+        "Mr. Mak"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Mrs. Amorino",
+      "people_table_id": 35,
+      "aliases": [
+        "Mrs. Amorino"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Mrs. Brennessel",
+      "people_table_id": 30,
+      "aliases": [
+        "Mrs. Brennessel"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Murtha 'The Machine'",
+      "people_table_id": 85,
+      "aliases": [
+        "Murtha 'The Machine'"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "NeonGreen Johnnie",
+      "people_table_id": 104,
+      "aliases": [
+        "NeonGreen Johnnie"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "P-A-M-U-L-A (Pamula)",
+      "people_table_id": 64,
+      "aliases": [
+        "P-A-M-U-L-A",
+        "P-A-M-U-L-A (Pamula)",
+        "Pamula"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Pancho",
+      "people_table_id": 121,
+      "aliases": [
+        "Pancho"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Pete and Larry",
+      "people_table_id": 28,
+      "aliases": [
+        "Pete and Larry"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Phil Campanella",
+      "people_table_id": 34,
+      "aliases": [
+        "Phil Campanella"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Punter Wolf",
+      "people_table_id": 128,
+      "aliases": [
+        "Punter Wolf"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "RK (Rob Knott)",
+      "people_table_id": 72,
+      "aliases": [
+        "RK",
+        "RK (Rob Knott)",
+        "Rob Knott"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "RL (Letsche)",
+      "people_table_id": 13,
+      "aliases": [
+        "Letsche",
+        "RL",
+        "RL (Letsche)"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Ray Marzarella",
+      "people_table_id": 101,
+      "aliases": [
+        "Ray Marzarella"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Rob",
+      "people_table_id": 10,
+      "aliases": [
+        "Rob",
+        "Rob Phillips"
+      ],
+      "category": "partner",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Robert Phillips",
+      "people_table_id": 116,
+      "aliases": [
+        "Robert Phillips"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Rupert",
+      "people_table_id": 14,
+      "aliases": [
+        "Rupert"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "RyGuy (Brody's Big Brother)",
+      "people_table_id": 112,
+      "aliases": [
+        "Brody's Big Brother",
+        "RyGuy",
+        "RyGuy (Brody's Big Brother)"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Ryan Letsche",
+      "people_table_id": 100,
+      "aliases": [
+        "Brody's Big Brother",
+        "RyGuy",
+        "Ryan Letsche"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Sabu Avakian",
+      "people_table_id": 123,
+      "aliases": [
+        "Sabu Avakian"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Sascha Basista",
+      "people_table_id": 52,
+      "aliases": [
+        "Sascha Basista"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Sean",
+      "people_table_id": 78,
+      "aliases": [
+        "Sean"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Shane",
+      "people_table_id": 93,
+      "aliases": [
+        "Shane"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "StepPa",
+      "people_table_id": 3,
+      "aliases": [
+        "StepPa"
+      ],
+      "category": "family",
+      "relation": "Stepfather",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Steph (Otis Spunkmeyer Cookies)",
+      "people_table_id": 103,
+      "aliases": [
+        "Otis Spunkmeyer Cookies",
+        "Steph",
+        "Steph (Otis Spunkmeyer Cookies)"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet",
+      "people_table_id": 90,
+      "aliases": [
+        "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Steve Kass",
+      "people_table_id": 122,
+      "aliases": [
+        "Steve Kass"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Steve Pham",
+      "people_table_id": 47,
+      "aliases": [
+        "Steve Pham"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Steve and Stacey",
+      "people_table_id": 31,
+      "aliases": [
+        "Steve and Stacey"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "T. Adams (Greek)",
+      "people_table_id": 129,
+      "aliases": [
+        "Greek",
+        "T. Adams",
+        "T. Adams (Greek)"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "TJ Auchinleck",
+      "people_table_id": 108,
+      "aliases": [
+        "TJ Auchinleck"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Terra Bergquist",
+      "people_table_id": 58,
+      "aliases": [
+        "Terra Bergquist"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "The Pops",
+      "people_table_id": 2,
+      "aliases": [
+        "Dad",
+        "Darrell",
+        "Pops",
+        "The Pops"
+      ],
+      "category": "family",
+      "relation": "Father",
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Thomas",
+      "people_table_id": 89,
+      "aliases": [
+        "Thomas"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Tim Moore",
+      "people_table_id": 71,
+      "aliases": [
+        "Tim Moore"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Tom Macaluso",
+      "people_table_id": 55,
+      "aliases": [
+        "Tom Macaluso"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Tommy & Johnny",
+      "people_table_id": 88,
+      "aliases": [
+        "Tommy & Johnny"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Travis Mills",
+      "people_table_id": 38,
+      "aliases": [
+        "Travis Mills"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Tyler Ponte",
+      "people_table_id": 92,
+      "aliases": [
+        "Tyler Ponte"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Valerie Winston (ValPal)",
+      "people_table_id": 11,
+      "aliases": [
+        "ValPal",
+        "Valerie Winston",
+        "Valerie Winston (ValPal)"
+      ],
+      "category": "inner_circle",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Vicki Oliver",
+      "people_table_id": 76,
+      "aliases": [
+        "Vicki Oliver"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Victoria Grace Tronolone",
+      "people_table_id": 126,
+      "aliases": [
+        "Victoria Grace Tronolone"
+      ],
+      "category": "family",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Walaa",
+      "people_table_id": 26,
+      "aliases": [
+        "Walaa"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    },
+    {
+      "canonical_name": "Wolf",
+      "people_table_id": 75,
+      "aliases": [
+        "Wolf"
+      ],
+      "category": "other",
+      "relation": null,
+      "notes": "From people table"
+    }
+  ],
+  "alias_lookup": {
+    "Aimee": "Aimee",
+    "Alison Bertsch": "Alison Bertsch",
+    "Angela Hibbert": "Angela Hibbert",
+    "Arthur Knott (Artie)": "Arthur Knott (Artie)",
+    "Artie": "Arthur Knott (Artie)",
+    "Arthur Knott": "Arthur Knott (Artie)",
+    "Ashley Hoppe": "Ashley Hoppe",
+    "Aunt Darlene": "Aunt Darlene",
+    "Bethany Schon": "Bethany Schon",
+    "Blake": "Blake",
+    "Bobby Vetrano": "Bobby Vetrano",
+    "Prof. Beric": "Bojana Beric (Prof. Beric)",
+    "Bojana Beric (Prof. Beric)": "Bojana Beric (Prof. Beric)",
+    "Bojana Beric": "Bojana Beric (Prof. Beric)",
+    "Brian": "Brian",
+    "Buck": "Buck",
+    "Chef Lanza": "Chef Lanza",
+    "Chris Adams": "Chris Adams",
+    "Topher": "Chris Arbach (Topher)",
+    "Chris Arbach (Topher)": "Chris Arbach (Topher)",
+    "Chris Arbach": "Chris Arbach (Topher)",
+    "Chris James": "Chris James",
+    "Cousin Nick & Samantha": "Cousin Nick & Samantha",
+    "D Turner": "D Turner",
+    "Dan Farnkopf": "Dan Farnkopf",
+    "Sponge": "Dan Spengeman",
+    "Danny Sponge": "Dan Spengeman",
+    "Dan Spengeman": "Dan Spengeman",
+    "Dave Eldracher": "Dave Eldracher",
+    "Diana DiBuccio": "Diana DiBuccio",
+    "Dr. Wenslauskas": "Dr. Wenslauskas",
+    "Edwards": "Edwards",
+    "Ellen Carter": "Ellen Carter",
+    "Fitz": "Fitz",
+    "Gerald Lewis": "Gerald Lewis",
+    "Grace": "Grace",
+    "Grammy Nancy": "Grammy Nancy",
+    "Grandma 'Mama' Blanca": "Grandma 'Mama' Blanca",
+    "Grandma Irene": "Grandma Irene",
+    "Grandma Theresa": "Grandma Theresa",
+    "GrantMan": "Grant Cornero (GrantMan)",
+    "Grant Cornero (GrantMan)": "Grant Cornero (GrantMan)",
+    "Grant Cornero": "Grant Cornero (GrantMan)",
+    "Greg": "Greg",
+    "Holden": "Holden",
+    "Jackie Amorino": "Jackie Amorino",
+    "Jake Mauro": "Jake Mauro",
+    "Boofer": "James Butler (Boofer)",
+    "James Butler (Boofer)": "James Butler (Boofer)",
+    "James Butler": "James Butler (Boofer)",
+    "Japheth": "Japheth",
+    "Jesse D": "Jesse D",
+    "JesseKay Paz": "JesseKay Paz",
+    "Jill": "Jill (Toilet Paper)",
+    "Jill (Toilet Paper)": "Jill (Toilet Paper)",
+    "Toilet Paper": "Jill (Toilet Paper)",
+    "Giuseppe NJ": "Joe Corcione (Giuseppe NJ)",
+    "Joe Corcione (Giuseppe NJ)": "Joe Corcione (Giuseppe NJ)",
+    "Joe Corcione": "Joe Corcione (Giuseppe NJ)",
+    "John Tronolone": "John Tronolone",
+    "Johnny Nash": "Johnny Nash",
+    "Muffins": "Juan Londono (Muffin Man)",
+    "Juan Londono (Muffin Man)": "Juan Londono (Muffin Man)",
+    "Muffin Man": "Juan Londono (Muffin Man)",
+    "Juan Londono": "Juan Londono (Muffin Man)",
+    "Julia Dennabuam": "Julia Dennabuam",
+    "Julian": "Julian",
+    "Justin Pierce": "Justin Pierce",
+    "Kathryn Kitty Nogueira": "Kathryn Kitty Nogueira",
+    "Katie Grand": "Katie Grand",
+    "Kenny Stetz": "Kenny Stetz",
+    "KMJ & LN": "Kevin & Leah (KMJ & LN)",
+    "Kevin & Leah": "Kevin & Leah (KMJ & LN)",
+    "Kevin & Leah (KMJ & LN)": "Kevin & Leah (KMJ & LN)",
+    "Kevin Abrams": "Kevin Abrams",
+    "Kevin Adams": "Kevin Adams",
+    "Kevin Grand": "Kevin Grand",
+    "Kevin Megill": "Kevin Megill (KMJ)",
+    "KMJ": "Kevin Megill (KMJ)",
+    "Kevin Megill (KMJ)": "Kevin Megill (KMJ)",
+    "Kimmy Canzanella": "Kimmy Canzanella",
+    "Kristen": "Kristen (Cocoa's Mommy)",
+    "Cocoa's Mommy": "Kristen (Cocoa's Mommy)",
+    "Kristen (Cocoa's Mommy)": "Kristen (Cocoa's Mommy)",
+    "Kristen Driscoll": "Kristen Driscoll",
+    "Lauren Stopa": "Lauren Stopa",
+    "Lauren Winston": "Lauren Winston",
+    "Lawrence": "Lawrence",
+    "Lenny": "Lenny",
+    "Liam Yochum": "Liam Yochum",
+    "Lindsay & Kyle Szcakstza": "Lindsay & Kyle Szcakstza",
+    "Lisa": "Lisa",
+    "Ma": "Ma",
+    "Maggie": "Maggie",
+    "Marty": "Marty",
+    "Matt": "Matt (introduced Jul 3, 2019)",
+    "Physical Therapist": "Matt (Physical Therapist)",
+    "Matt (Physical Therapist)": "Matt (Physical Therapist)",
+    "Matt (introduced Jul 3, 2019)": "Matt (introduced Jul 3, 2019)",
+    "introduced Jul 3, 2019": "Matt (introduced Jul 3, 2019)",
+    "Megan": "Megan",
+    "Megill": "Megill",
+    "Melissa Kerr": "Melissa Kerr",
+    "Michael": "Michael",
+    "Olive Garden Route 35": "Michelle (Olive Garden Route 35)",
+    "Michelle (Olive Garden Route 35)": "Michelle (Olive Garden Route 35)",
+    "Michelle": "Michelle (Olive Garden Route 35)",
+    "Michelle Mullins": "Michelle Mullins (Muffins)",
+    "Michelle Mullins (Muffins)": "Michelle Mullins (Muffins)",
+    "Mike Sputz Krott": "Mike Krott",
+    "Mike Krott": "Mike Krott",
+    "Sputz": "Mike Krott",
+    "Mr. Mak": "Mr. Mak",
+    "Mrs. Amorino": "Mrs. Amorino",
+    "Mrs. Brennessel": "Mrs. Brennessel",
+    "Murtha 'The Machine'": "Murtha 'The Machine'",
+    "NeonGreen Johnnie": "NeonGreen Johnnie",
+    "P-A-M-U-L-A": "P-A-M-U-L-A (Pamula)",
+    "Pamula": "P-A-M-U-L-A (Pamula)",
+    "P-A-M-U-L-A (Pamula)": "P-A-M-U-L-A (Pamula)",
+    "Pancho": "Pancho",
+    "Pete and Larry": "Pete and Larry",
+    "Phil Campanella": "Phil Campanella",
+    "Punter Wolf": "Punter Wolf",
+    "RK (Rob Knott)": "RK (Rob Knott)",
+    "Rob Knott": "RK (Rob Knott)",
+    "RK": "RK (Rob Knott)",
+    "RL": "RL (Letsche)",
+    "Letsche": "RL (Letsche)",
+    "RL (Letsche)": "RL (Letsche)",
+    "Ray Marzarella": "Ray Marzarella",
+    "Rob": "Rob",
+    "Rob Phillips": "Rob",
+    "Robert Phillips": "Robert Phillips",
+    "Rupert": "Rupert",
+    "RyGuy (Brody's Big Brother)": "RyGuy (Brody's Big Brother)",
+    "RyGuy": "Ryan Letsche",
+    "Brody's Big Brother": "Ryan Letsche",
+    "Ryan Letsche": "Ryan Letsche",
+    "Sabu Avakian": "Sabu Avakian",
+    "Sascha Basista": "Sascha Basista",
+    "Sean": "Sean",
+    "Shane": "Shane",
+    "StepPa": "StepPa",
+    "Otis Spunkmeyer Cookies": "Steph (Otis Spunkmeyer Cookies)",
+    "Steph (Otis Spunkmeyer Cookies)": "Steph (Otis Spunkmeyer Cookies)",
+    "Steph": "Steph (Otis Spunkmeyer Cookies)",
+    "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet": "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet",
+    "Steve Kass": "Steve Kass",
+    "Steve Pham": "Steve Pham",
+    "Steve and Stacey": "Steve and Stacey",
+    "T. Adams (Greek)": "T. Adams (Greek)",
+    "T. Adams": "T. Adams (Greek)",
+    "Greek": "T. Adams (Greek)",
+    "TJ Auchinleck": "TJ Auchinleck",
+    "Terra Bergquist": "Terra Bergquist",
+    "Darrell": "The Pops",
+    "Pops": "The Pops",
+    "The Pops": "The Pops",
+    "Dad": "The Pops",
+    "Thomas": "Thomas",
+    "Tim Moore": "Tim Moore",
+    "Tom Macaluso": "Tom Macaluso",
+    "Tommy & Johnny": "Tommy & Johnny",
+    "Travis Mills": "Travis Mills",
+    "Tyler Ponte": "Tyler Ponte",
+    "Valerie Winston": "Valerie Winston (ValPal)",
+    "ValPal": "Valerie Winston (ValPal)",
+    "Valerie Winston (ValPal)": "Valerie Winston (ValPal)",
+    "Vicki Oliver": "Vicki Oliver",
+    "Victoria Grace Tronolone": "Victoria Grace Tronolone",
+    "Walaa": "Walaa",
+    "Wolf": "Wolf"
+  },
+  "metadata": {
+    "total_canonical_people": 123,
+    "total_aliases": 173,
+    "known_aliases_from_audit": 20
+  }
+}

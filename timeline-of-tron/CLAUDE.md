@@ -1,34 +1,107 @@
 # CLAUDE.md - Project Context for AI Assistants
 
 ## Project Overview
-This is **The Timeline of Tron**, a personal statistics dashboard spanning 22 years (2004-2025). It's a LiveJournal-styled web application showcasing life milestones, statistics, and achievements.
+This is **The Timeline of Tron**, a personal data autobiography spanning 22+ years (2004-2026). It is being rebuilt from a single-page LiveJournal-styled dashboard into a **multi-room interactive experience** — 7 themed rooms + a lobby, each offering a different lens on the same 22-year arc.
+
+**The rebuild spec lives in `REBUILD_IDEAS_V2.md`.** That is the implementation guide. Read it before making changes.
+
+## Current State
+
+### V2 Rebuild (In Progress)
+The site is being rebuilt per `REBUILD_IDEAS_V2.md`. The architecture is:
+- **9 HTML pages total**: `index.html` (lobby) + 7 room pages + `room0.html` (hidden)
+- **Shared design system**: `css/base.css` with per-room overrides
+- **Shared JS modules**: `data-loader.js`, `nav.js`, `wormholes.js`
+- **Per-room JS**: `arc.js`, `constellation.js`, `comeback.js`, `records.js`, `atlas.js`, `vault.js`, `dynasty.js`, `room0.js`
+- **Data layer**: All 60+ JSON endpoints in `db/api/` consumed via `data-loader.js`
+- **Libraries**: Chart.js v4.5.1, D3.js v7, D3 Sankey, Leaflet.js, Fuse.js — all vendored in `lib/`
+
+### Build Phases (from REBUILD_IDEAS_V2.md)
+| Phase | Scope | Status |
+|-------|-------|--------|
+| Phase 0 | Prep: backup old site, vendor libs, fix data issues | Complete |
+| Phase 1 | Base CSS + shared nav + lobby page + placeholder rooms | Complete |
+| Phase 2 | Room 1: The Arc (hero's journey + sentiment scroll) | Complete |
+| Phase 3 | Room 2: The Constellation (D3 people graph) | Complete |
+| Phase 4 | Room 3: Comeback Lab + Room 4: Record Book | Complete |
+| Phase 5 | Room 5: The Atlas (map) + Room 6: The Vault (quotes) | Not started |
+| Phase 6 | Room 7: The Dynasty + cross-room wormholes | Not started |
+| Phase 7 | Room 0 (hidden) + search + polish | Not started |
+
+**Always check the phase status above before building. Update it after completing a phase.**
+
+### Old Site (Pre-Rebuild)
+The original single-page dashboard lives in `old-site/` after Phase 0 backup. The monolithic v1.0 backup is `tron_timeline_dashboard.html` (keep in root, never delete).
 
 ## Architecture
 
-### Modular Structure (v2.1)
-Refactored from monolithic HTML → modular architecture → cleaned up code:
-
+### Target File Structure (V2)
 ```
-index.html          - Main entry point (load this)
-css/styles.css      - All styling (organized with table of contents)
-js/data.js          - Data arrays, constants, CHART_STYLE config, computed helpers
-js/plugins.js       - Custom Chart.js plugins (centerText, barValue, milestoneLabels, steppedFillLabels)
-js/charts.js        - Chart.js configurations (uses helpers, stores refs)
-js/app.js           - Interactive functions + error handling
-lib/chart.js        - Chart.js v4.5.1 (local)
-data/               - Content database and scraped data (not served to site visitors)
-archive/            - Original source files (Message_for_Tron.md, Timeline_of_Tron_By_The_Numbers.docx)
+timeline-of-tron/
+├── index.html                    # The Lobby
+├── arc.html                      # Room 1: The Arc
+├── constellation.html            # Room 2: The Constellation
+├── comeback.html                 # Room 3: The Comeback Lab
+├── records.html                  # Room 4: The Record Book
+├── atlas.html                    # Room 5: The Atlas
+├── vault.html                    # Room 6: The Vault
+├── dynasty.html                  # Room 7: The Dynasty
+├── room0.html                    # Hidden Room: The Before
+├── css/
+│   ├── base.css                  # Shared: variables, reset, typography, nav, footer
+│   ├── lobby.css                 # Lobby styles
+│   ├── arc.css                   # Room 1: stage palettes, scroll animations
+│   ├── constellation.css         # Room 2: dark sky, star nodes
+│   ├── comeback.css              # Room 3: clinical + recovery colors
+│   ├── records.css               # Room 4: warm wood, parchment
+│   ├── atlas.css                 # Room 5: ocean blue, map
+│   ├── vault.css                 # Room 6: charcoal, glowing quotes
+│   ├── dynasty.css               # Room 7: deep green, trophy gold
+│   └── room0.css                 # Room 0: near-black
+├── js/
+│   ├── data-loader.js            # Shared: fetch + cache JSON from db/api/
+│   ├── nav.js                    # Shared: LJ header, room nav, search, footer
+│   ├── wormholes.js              # Shared: cross-room contextual links
+│   ├── seismograph.js            # Lobby: animated sentiment line
+│   ├── arc.js                    # Room 1: IntersectionObserver scroll, sentiment line
+│   ├── constellation.js          # Room 2: D3 force simulation
+│   ├── comeback.js               # Room 3: D3 Sankey, recovery clock
+│   ├── records.js                # Room 4: Chart.js gauges, streak bars
+│   ├── atlas.js                  # Room 5: Leaflet map + markers
+│   ├── vault.js                  # Room 6: quote grid, D3 stream graph
+│   ├── dynasty.js                # Room 7: staircase, trophies, ECD chart, year-wheel
+│   └── room0.js                  # Room 0: clue tracking (localStorage)
+├── lib/
+│   ├── chart.js                  # Chart.js v4.5.1 (existing, do NOT update)
+│   ├── d3.min.js                 # D3.js v7 (vendor)
+│   ├── d3-sankey.min.js          # D3 Sankey plugin (vendor)
+│   ├── leaflet.js                # Leaflet.js v1.9 (vendor)
+│   ├── leaflet.css               # Leaflet styles (vendor)
+│   └── fuse.min.js               # Fuse.js v7 (vendor)
+├── db/
+│   ├── tron.db                   # SQLite database (44 tables, source of truth)
+│   ├── api/                      # 60+ JSON endpoints (exported from tron.db)
+│   └── viz/                      # Pre-generated visualization PNGs
+├── data/
+│   ├── tron-content-db.json      # Master content database (89KB, 21 keys)
+│   └── lj_comments_data.json     # Raw LiveJournal comments (40KB)
+├── old-site/                     # Pre-rebuild backup of original dashboard
+├── archive/                      # Original source documents
+├── CLAUDE.md                     # This file
+├── README.md                     # User-facing documentation
+├── REBUILD_IDEAS_V2.md           # Implementation guide (THE BUILD SPEC)
+├── REBUILD_IDEAS.md              # V1 ideas (archived reference, not the active spec)
+└── tron_timeline_dashboard.html  # Original monolithic backup (NEVER DELETE)
 ```
 
-### Critical Load Order
-Scripts MUST load in this order (already configured in index.html):
-1. `lib/chart.js` - Chart.js library
-2. `js/data.js` - Data must exist before charts reference it
-3. `js/plugins.js` - Plugins must be registered before charts use them
-4. `js/charts.js` - Charts need data + plugins to initialize
-5. `js/app.js` - App logic depends on charts being initialized
+### Script Loading (Per Room)
+Each room HTML page loads:
+1. Room-specific vendored libs (e.g., `lib/d3.min.js` for constellation)
+2. `js/data-loader.js` (ES module)
+3. `js/nav.js` (ES module — injects header/footer)
+4. Room-specific JS (ES module — e.g., `js/arc.js`)
 
-**Breaking this order will cause errors!**
+**All scripts use `type="module"`.** No global script order dependency like the old site.
 
 ## Live URL
 - **Production**: https://njrun1804.github.io/miscProjects/timeline-of-tron/
@@ -36,277 +109,210 @@ Scripts MUST load in this order (already configured in index.html):
 
 ## Dependencies
 
-### External (CDN)
-- **Google Fonts**: Courier Prime, Georgia, Trebuchet MS
-  - Has fallback to system fonts
-  - Only external dependency that requires internet
+### Vendored Libraries (in `lib/`)
+| Library | Version | Size | Used In |
+|---------|---------|------|---------|
+| Chart.js | v4.5.1 | 204KB | Record Book, Dynasty, Atlas, Vault, Lobby |
+| D3.js | v7 | ~280KB | Constellation, Comeback Lab, Vault, Dynasty |
+| D3 Sankey | v0.12.3 | ~15KB | Comeback Lab |
+| Leaflet.js | v1.9.4 | ~170KB | Atlas |
+| Fuse.js | v7.0.0 | ~25KB | Lobby (search), all rooms |
 
-### Local (Vendored)
-- **Chart.js v4.5.1**: Stored in `lib/chart.js` (204KB)
-  - Downloaded from jsdelivr CDN
-  - Works fully offline
-  - Do NOT update without testing - v4.5.1 is stable
+### External (CDN, with fallbacks)
+- **Google Fonts**: Courier Prime, Georgia, Trebuchet MS — falls back to system fonts
 
-### None
-- All CSS is inline in styles.css
-- All JavaScript is local
-- No npm/package.json needed
-- No build process required
+### No Build Process
+- No npm, no package.json, no webpack/vite
+- Open any HTML file in browser to test
+- Deploy by pushing to `main` branch (GitHub Pages auto-deploys)
 
-## Data Structure
+## Data Layer
 
-### Key Data Arrays (js/data.js)
-- `TRAVEL_DATA` - Travel destinations by year (`countries: null` for domestic)
-- `WWE_MILESTONES` - Wrestling event attendance
-- `CAREER_DATA` - Career progression timeline
-- `SPORTS_RECORDS` - Competitive sports statistics
-- `EPIC_NUMBERS` - Single-event records (colors in separate `EPIC_NUMBERS_COLORS`)
-- `ECD_DATA` - East Coast Dodgeball history (array of objects with `anniversary`, `year`, `participants`, `raised`)
-- `AWARDS_TIMELINE` - Annual awards tracking (use `computeAwardsSummary()` for chart data)
-- `TRADITIONS_DATA` - Recurring life traditions
+### JSON API Endpoints (`db/api/`)
+All data is pre-exported as static JSON. The `data-loader.js` module fetches and caches these.
 
-### Chart Infrastructure (js/data.js + js/charts.js)
-- `CHART_STYLE` - Centralized chart styling (fonts, colors, grid) — edit this to restyle all charts
-- `TronCharts` - Global registry of chart instances (access: `TronCharts.sports`, `.career`, etc.)
-- `chartTitle(text)` - Helper for consistent chart titles
-- `gridScale(opts)` / `hiddenGridScale(opts)` - Helpers for axis configuration
-- `createChart(canvasId, config)` - Safe wrapper that handles missing DOM elements
-- `destroyAllCharts()` - Destroys all chart instances for re-initialization
+**Key files by room:**
 
-### Content Database (data/)
-The `data/` directory contains a comprehensive content database scraped and consolidated from three sources: the LiveJournal blog (wwecoowner.livejournal.com), Message_for_Tron.md, and Timeline_of_Tron_By_The_Numbers.docx.
+| Room | Primary Data Files |
+|------|--------------------|
+| Lobby | `sentiment_timeline.json` |
+| The Arc | `heros_journey_narrative.json`, `sentiment_timeline.json`, `turning_points.json`, `quotes.json`, `milestones_enriched.json` |
+| Constellation | `relationship_constellation.json`, `co_occurrences.json`, `people_profiles.json`, `quotes.json` |
+| Comeback Lab | `comeback_narrative.json`, `medical_events.json`, `turning_points.json`, `sentiment_timeline.json` |
+| Record Book | `fun_facts.json`, `streaks.json`, `traditions.json`, `sports.json`, `epic_numbers.json` |
+| Atlas | `travel.json`, `travel_sentiment_by_location.json`, `medical_events.json`, `location_frequency.json` |
+| Vault | `quotes.json`, `writing_evolution.json`, `year_keywords.json`, `emotion_distribution.json` |
+| Dynasty | `career.json`, `awards_enriched.json`, `awards_categories.json`, `ecd_events.json`, `traditions.json`, `streaks.json` |
 
-- **`tron-content-db.json`** (~89KB) - Master content database with 21 top-level keys:
-  - `_meta` - Provenance and source tracking
-  - `person` - Core biographical data (name, aliases, tagline)
-  - `career` - 12 career entries (Intern → Executive Director)
-  - `wwe` - 16 WWE milestones, venue stats, streak data
-  - `travel` / `travel_stats` - 34 destinations, passport stats, country counts
-  - `sports` - Table tennis, dodgeball, and other competitive records
-  - `east_coast_dodgeball` - 19-year ECD history with fundraising totals
-  - `people` - 79 mentioned people with context (plus Fab 4 group)
-  - `awards` - Annual awards timeline
-  - `comebacks` - Injury/comeback narratives
-  - `traditions` - Recurring life traditions
-  - `broadway_entertainment` - 17 shows/entertainment entries
-  - `milestones_by_year` - 23 years of key milestones
-  - `fun_facts` - 60 fun facts extracted from all sources
-  - `locations_recurring` - 29 recurring locations with significance
-  - `quotes` - 41 notable quotes with attribution
-  - `yearly_timelines` - Year-by-year narrative summaries
-  - `medical_history` - 13 medical events
-  - `lj_comments` - Summary of LiveJournal comment activity
+**Full API index**: See `db/api/INDEX.md` for all 60+ endpoints.
 
-- **`lj_comments_data.json`** (~40KB) - Raw scraped LiveJournal comments with per-post breakdowns
+### Content Database (`data/`)
+- **`tron-content-db.json`** (~89KB) — Master content reservoir with 21 top-level keys. Use to source new content without re-scraping.
+- **`lj_comments_data.json`** (~40KB) — Raw LiveJournal comments.
 
-This database is a content reservoir — use it to source new sections, enrich existing data arrays in `js/data.js`, or generate new visualizations without re-scraping.
+### SQLite Database (`db/tron.db`)
+- 44 tables, ~2,500+ records, 23 years of data
+- Source of truth — JSON exports derive from this
+- **Known issues**: Zero indexes (add before any query optimization), 2 sentiment mis-scores, 8 orphaned timeline_posts with NULL year
 
-### Archive (archive/)
-Original source documents moved here after content was extracted into the database:
-- `Message_for_Tron.md` - 149-line detailed analysis of the Timeline project
-- `Timeline_of_Tron_By_The_Numbers.docx` - 18 structured data tables
+## Design System
 
-### Adding New Data
-1. Edit `js/data.js` to add/modify data arrays
-2. If adding new charts, edit `js/charts.js`
-3. If adding new HTML sections, edit `index.html`
-4. Test locally by opening `index.html` in browser
-5. Commit and push to GitHub (auto-deploys to GitHub Pages)
-6. To source new content, check `data/tron-content-db.json` first
+### Room Palettes
+Each room overrides CSS custom properties for its own emotional register:
 
-## Style Guide
-
-### Color Palette (Retro LiveJournal Theme)
-```css
---lj-bg: #e8e0d0           /* Warm cream background */
---lj-panel: #f5f0e6        /* Panel/card background */
---lj-header-bg: #4a6741    /* Forest green header */
---lj-accent: #8b1a1a       /* Red (WWE/sports) */
---lj-accent2: #1a4a8b      /* Blue (travel) */
---lj-gold: #c9a84c         /* Gold (milestones) */
-```
+| Room | `--room-bg` | `--room-text` | `--room-accent` | Mood |
+|------|-------------|---------------|------------------|------|
+| Lobby | `#e8e0d0` cream | `#2c2416` brown | `#c9a84c` gold | nostalgic |
+| The Arc | Per-stage (see arc.css) | Per-stage | Per-stage | cinematic |
+| Constellation | `#0a1628` navy | `#d0d8e4` light | `#4a90d9` blue | contemplative |
+| Comeback Lab | `#f8f9fa` clinical | `#1a1a2e` dark | `#2e7d32` green | hopeful |
+| Record Book | `#f5efe0` parchment | `#2c1810` brown | `#8b6914` gold | proud |
+| Atlas | `#f0f4f8` light blue | `#1a2a3a` navy | `#1a5c8b` blue | wandering |
+| Vault | `#1a1a2e` charcoal | `#d4d0c8` warm grey | `#c9a84c` gold | intimate |
+| Dynasty | `#1a2e1a` forest | `#d4dcd0` light green | `#c9a84c` gold | accomplished |
+| Room 0 | `#0d0d0d` near-black | `#a09080` muted | `#c9a84c` gold | raw |
 
 ### Typography
-- **Body**: Georgia, serif (classic)
-- **Monospace**: Courier Prime (stats, years)
-- **Sans**: Trebuchet MS (headers, labels)
+- **Body**: Georgia, serif
+- **Monospace** (stats, years, headers): Courier Prime
+- **Sans** (UI labels, nav): Trebuchet MS
+- **Quotes**: Georgia italic, larger than body
+
+### LiveJournal Signatures (Present on Every Page)
+- **Mood indicator**: `Current Mood: [room-specific mood]` with emoji
+- **Music tag**: `Current Music: [room-specific song]`
+- **LJ-cut toggles**: `(expand — lj-cut)` for long content
+- **Hit counter**: Retro digital counter in footer
+- **Userpic**: Small avatar in header
+- **Nav bar**: "Recent Entries | Archive | Friends | User Info | Memories"
 
 ### Design Philosophy
-- Nostalgic LiveJournal aesthetic (circa 2004-2008)
-- Subtle textures and shadows
-- Rounded corners: 2-3px (not modern large radii)
-- Muted, earthy color palette
-
-## Features
-
-### Interactive Elements
-1. **Section Filtering**: Click top navigation to filter sections
-2. **Sortable Table**: Click travel table headers to sort
-3. **Responsive Charts**: All charts adjust to screen size
-4. **Hover States**: KPI cards and rows have hover effects
-
-### Chart Types Used
-- Line charts: Career progression, WWE timeline
-- Bar charts: Sports records, epic numbers, travel scope
-- Stacked bar: Win/loss records
-- Doughnut: Awards distribution
-- Combo bar+line: ECD growth
-
-## Development Workflow
-
-### Local Development
-```bash
-cd ~/Projects/miscProjects/timeline-of-tron
-open index.html  # Opens in default browser
-```
-
-### Making Changes
-1. Edit relevant files (css/js/index.html)
-2. Refresh browser to test (no build step!)
-3. Commit changes: `git add . && git commit -m "description"`
-4. Push to GitHub: `git push origin main`
-5. Changes auto-deploy to GitHub Pages (1-2 min delay)
-
-### Git Workflow
-- Branch: `main` (default)
-- Auto-deploy: GitHub Pages builds on every push
-- Backup: `tron_timeline_dashboard.html` (original monolithic version)
+- LiveJournal DNA always present (serif fonts, mood tags, warm base tones, monospace stats)
+- Each room adapts the palette to its emotional register
+- Nostalgic but not ironic — sincere retro aesthetic
+- Minimal border radius (2-3px), subtle shadows
+- Charts styled to match room palette, not default Chart.js styling
 
 ## Common Tasks
 
-### Update Statistics
-**File**: `js/data.js`
-```javascript
-// Example: Add new travel destination
-{ year: 2027, destination: "Italy", highlight: "Description", scope: "International", countries: 1 }
+### Implementing a New Room
+1. Read the room spec in `REBUILD_IDEAS_V2.md`
+2. Create `[room].html` following the shared HTML template pattern
+3. Create `css/[room].css` with room-specific palette overrides
+4. Create `js/[room].js` as ES module
+5. Import from `data-loader.js` for data, `nav.js` for shared UI
+6. Add the room to `js/nav.js` room list
+7. Test locally by opening the HTML file
+8. Update Phase status table in this file
+
+### Adding Data
+1. If modifying SQLite: edit `db/tron.db`, then re-export relevant JSON to `db/api/`
+2. If adding JSON directly: add to `db/api/`, update `db/api/INDEX.md`
+3. Import in room JS via `data-loader.js`: `const data = await loadData('filename.json')`
+
+### Adding Cross-Room Wormholes
+1. Edit `js/wormholes.js` — add entry to `WORMHOLES` array
+2. Specify `from` (room + element selector) and `to` (room + section hash)
+3. Wormhole icons render automatically via the shared module
+
+### Deploying
+```bash
+git add . && git commit -m "description" && git push origin main
 ```
+GitHub Pages auto-deploys in 1-2 minutes.
 
-### Add New Chart
-1. Add data array to `js/data.js`
-2. Add canvas element to `index.html`: `<canvas id="newChart"></canvas>`
-3. Add chart config to `js/charts.js` inside `initializeCharts()`:
-   ```javascript
-   TronCharts.newChart = createChart('newChartId', {
-       type: 'bar',
-       data: { ... },
-       options: {
-           responsive: true,
-           plugins: { title: chartTitle('My Chart Title') },
-           scales: { y: gridScale(), x: hiddenGridScale() }
-       }
-   });
-   ```
-4. Use `CHART_STYLE.colors.*` for colors, `CHART_STYLE.borderRadius` for bar radius
-
-### Modify Styling
-**File**: `css/styles.css`
-- Use CSS variables for colors (defined in `:root`)
-- Use font variables: `--font-body`, `--font-mono`, `--font-sans`
-- Maintain retro LiveJournal aesthetic
-- Test responsive design (mobile breakpoint: 768px)
-- Reusable CSS classes for content blocks:
-  - `.callout-box` + `.callout-box--gold/--red/--purple` for highlight boxes
-  - `.badge` + `.badge--red/--blue` and `.badge--outline` for tags
-  - `.section-label` for uppercase category headings
-  - `.tradition-item` for list items in grids
-  - `.sidebar-content` for chart companion panels
-
-### Add New Section
-1. Add HTML in `index.html` with `data-section="name"` attribute
-2. Add filter button: `<button class="lj-filter-btn" data-section="name">Label</button>`
-3. Section auto-filters — buttons are bound via `addEventListener` in `app.js`
-
-## Important Notes
+## Important Rules
 
 ### DO NOT:
-- ❌ Break the script load order (will break charts)
+- ❌ Introduce npm, webpack, vite, or any build process
+- ❌ Use React, Vue, Svelte, or any JS framework
+- ❌ Add a backend server or API
+- ❌ Create more than 9 HTML pages (lobby + 7 rooms + Room 0)
+- ❌ Remove the LiveJournal aesthetic DNA
+- ❌ Delete `old-site/` or `tron_timeline_dashboard.html`
 - ❌ Update Chart.js without thorough testing
-- ❌ Remove `tron_timeline_dashboard.html` (it's the backup)
-- ❌ Use external JS CDNs (keep offline-capable)
-- ❌ Modernize the design (nostalgic aesthetic is intentional)
+- ❌ Use CDN links for JS libraries (keep everything vendored/offline-capable)
 
 ### DO:
-- ✅ Keep the LiveJournal retro aesthetic
-- ✅ Test in browser after changes
-- ✅ Maintain data arrays in chronological order
-- ✅ Use existing color variables for consistency
-- ✅ Write descriptive commit messages
+- ✅ Read `REBUILD_IDEAS_V2.md` before starting any phase
+- ✅ Build phases in order (Phase 0 → 1 → 2 → ... → 7)
+- ✅ Deploy after each phase (each phase is self-contained)
+- ✅ Use ES modules (`type="module"`) for all new JS
+- ✅ Import data via `data-loader.js`, not direct fetch calls
+- ✅ Match room palette/mood in all visual elements
+- ✅ Keep LiveJournal signatures on every page (mood, music, hit counter)
+- ✅ Test in browser after changes (no build step!)
+- ✅ Update Phase status table in this file after completing each phase
 - ✅ Preserve the personal, nostalgic tone
 
 ## Troubleshooting
 
-### Charts Not Rendering
-- Check browser console for errors
-- Verify load order in index.html
-- Ensure data arrays exist before charts initialize
-- Check Chart.js loaded: `typeof Chart !== 'undefined'`
+### Data Not Loading
+- Check browser console for fetch errors
+- Verify `db/api/` JSON files exist and are valid JSON
+- Check `data-loader.js` API_BASE path matches file structure
+- For CORS issues in local dev: use `python -m http.server 8000`
 
-### Styles Not Applying
-- Check `css/styles.css` linked correctly in `<head>`
-- Verify CSS variables defined in `:root`
-- Clear browser cache
+### Charts Not Rendering
+- Verify Chart.js loaded: `typeof Chart !== 'undefined'`
+- Check canvas element exists in DOM before initialization
+- Check room-specific JS runs after DOM is ready (`DOMContentLoaded` or module execution order)
+
+### D3 Visualizations Not Rendering
+- Verify D3 loaded: `typeof d3 !== 'undefined'`
+- Check SVG container has width/height set (D3 needs dimensions)
+- For force simulations: ensure data has `id` fields on nodes matching link `source`/`target`
 
 ### GitHub Pages Not Updating
 - Check GitHub Actions tab for build status
 - Wait 1-2 minutes after push
-- Verify `main` branch is set as Pages source
 - Hard refresh: Cmd+Shift+R (Mac) / Ctrl+Shift+R (Windows)
+- Verify `main` branch is set as Pages source
 
 ## Project History
 
+### V2 Rebuild (Feb 8, 2026 → In Progress)
+- Created `REBUILD_IDEAS_V2.md` — implementation guide for 7-room architecture
+- Vision: transform single-page dashboard into museum-like multi-room experience
+- Each room = different lens on the same 22-year arc
+- Target: ~16 weeks across 8 phases
+
 ### Version 2.2 (Feb 8, 2026)
-- Created `data/tron-content-db.json` — comprehensive content database (89KB, 21 top-level keys)
-- Scraped all 30 LiveJournal posts from wwecoowner.livejournal.com (22 timeline + 8 non-timeline)
-- Scraped LiveJournal comments into `data/lj_comments_data.json`
-- Consolidated content from Message_for_Tron.md and Timeline_of_Tron_By_The_Numbers.docx
-- Extracted: 79 people, 41 quotes, 60 fun facts, 34 travel entries, 29 locations, 17 entertainment entries
-- Archived original source files to `archive/`
+- Created `data/tron-content-db.json` — comprehensive content database (89KB, 21 keys)
+- Scraped all 30 LiveJournal posts, consolidated content from 3 sources
+- Built 60+ JSON API endpoints in `db/api/`
+- Enriched SQLite database to 44 tables with sentiment analysis, hero's journey mapping, relationship network
 
 ### Version 2.1 (Feb 8, 2026)
-- Code cleanup: eliminated chart config duplication, extracted CSS classes from inline styles
-- Added `CHART_STYLE` constants, `TronCharts` registry, chart helper functions
-- Restructured `ECD_DATA` to array of objects, separated `EPIC_NUMBERS_COLORS`
-- Added `computeAwardsSummary()` to replace hardcoded chart data
-- Moved event handlers from HTML onclick to JS addEventListener
-- Added error guards and `destroyAllCharts()` lifecycle utility
-- CSS: font variables, callout/badge/tradition component classes, organized with TOC
+- Code cleanup: modular JS architecture, CHART_STYLE constants, TronCharts registry
+- CSS: font variables, component classes, organized with TOC
 
 ### Version 2.0 (Feb 8, 2025)
 - Refactored monolithic HTML into modular architecture
 - Downloaded Chart.js locally for offline support
-- Created comprehensive README.md
 - Enabled GitHub Pages
-- Created CLAUDE.md for AI context
 
 ### Version 1.0 (Jan 2025)
 - Original single-file dashboard
-- CDN-based Chart.js
-- All code in one HTML file
 
 ## Personal Context
 
-This is a deeply personal project tracking:
-- Career progression (Intern → Executive Director)
-- WWE event attendance (91+ events, 25-year streak)
-- Travel adventures (20+ countries)
-- Sports achievements (93.9% table tennis win rate)
-- Life milestones and comeback stories
+This is a deeply personal project tracking 22+ years of one person's life:
+- Career: Intern → Executive Director (15 years)
+- WWE: 91+ events, 25-year Survivor Series streak
+- Travel: 20+ countries, 5 continents
+- Sports: 93.9% table tennis win rate, 254 cornhole wins
+- Medical: 14 events, 100% comeback rate, 7.1-month average recovery
+- People: 124 documented relationships across the full arc
+- The obsessive precision of measurement IS the character trait — 8.6 lbs of shrimp, 4:10:18 PM CT, 218 ping pong rounds
 
-**Tone**: Nostalgic, detailed, numbers-focused, proud but humble
-**Aesthetic**: Early 2000s web (LiveJournal/blog era)
-**Audience**: Personal reflection + sharing with friends
-
-## Contact & Attribution
-
-This is a personal project. When making changes, preserve:
-- The nostalgic LiveJournal aesthetic
-- The detailed statistical tracking
-- The personal narrative voice
-- Attribution to original structure
+**Tone**: Nostalgic, detailed, proud but self-aware. The data obsession is treated as a feature, not a bug.
+**Aesthetic**: LiveJournal DNA (2004-2008 era) that evolves per room.
+**Audience**: Personal reflection + sharing with friends + anyone who's ever kept a list too long.
 
 ---
 
-*Generated on: Feb 8, 2025*
-*Last Updated: Feb 8, 2026*
+*Last Updated: February 8, 2026*
+*Active Spec: REBUILD_IDEAS_V2.md*
 
-**Remember**: This isn't just a dashboard—it's a 22-year life story told through statistics.
+**Remember**: This isn't a dashboard — it's a 22-year autobiography told through seven rooms, each with its own mood, palette, and story to tell.

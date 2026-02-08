@@ -1,0 +1,15 @@
+{
+  "phase": "Phase 6b Complete \u2014 Data cleanup & enrichment",
+  "total_tables": 44,
+  "total_milestones": 227,
+  "total_people": 124,
+  "total_quotes": 79,
+  "total_insights": 28,
+  "total_medical_comeback_pairs": 8,
+  "comeback_rate": "100%",
+  "avg_comeback_months": 7.1,
+  "active_streaks": 6,
+  "sentiment_engine": "VADER + category adjustments + 5 manual overrides",
+  "narrative_type": "Predominantly Redemptive (7:5)",
+  "api_endpoints": 31
+}

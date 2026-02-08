@@ -1,0 +1,16 @@
+/*
+ * THE TIMELINE OF TRON — Room 6: The Vault
+ * Charcoal, glowing quotes (placeholder — full build in Phase 5)
+ */
+
+.room-vault {
+    --room-bg: #1a1a2e;
+    --room-text: #d4d0c8;
+    --room-accent: #c9a84c;
+    --room-panel: #252540;
+    --lj-border: #3a3a5a;
+    --lj-text-secondary: #8a8a9a;
+    --lj-header-bg: #1a1a2e;
+    --lj-link: #c9a84c;
+    --lj-link-hover: #e0c070;
+}

@@ -1,0 +1,13 @@
+/*
+ * THE TIMELINE OF TRON — Room 5: The Atlas
+ * Ocean blue, map styles (placeholder — full build in Phase 5)
+ */
+
+.room-atlas {
+    --room-bg: #f0f4f8;
+    --room-text: #1a2a3a;
+    --room-accent: #1a5c8b;
+    --room-panel: #ffffff;
+    --lj-border: #c8d4e0;
+    --lj-text-secondary: #5a6a7a;
+}

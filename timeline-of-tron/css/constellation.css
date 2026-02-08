@@ -1,0 +1,210 @@
+/*
+ * THE TIMELINE OF TRON — Room 2: The Constellation
+ * Dark sky, star nodes, sidebar panel
+ */
+
+.room-constellation {
+    --room-bg: #0a1628;
+    --room-text: #d0d8e4;
+    --room-accent: #4a90d9;
+    --room-panel: #122240;
+    --lj-border: #1e3a5f;
+    --lj-text-secondary: #7a8fa6;
+    --lj-header-bg: #0e1e38;
+    --lj-link: #4a90d9;
+    --lj-link-hover: #6ab0f9;
+}
+
+/* Constellation sky */
+.constellation-container {
+    position: relative;
+    min-height: calc(100vh - 120px);
+}
+
+.constellation-sky {
+    width: 100%;
+    height: calc(100vh - 180px);
+    min-height: 500px;
+    position: relative;
+}
+
+.constellation-sky svg {
+    width: 100%;
+    height: 100%;
+}
+
+/* Search box above constellation */
+.constellation-search {
+    padding: 12px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.constellation-search input {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    padding: 8px 14px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    color: var(--room-text);
+    width: 260px;
+}
+
+.constellation-search input::placeholder { color: var(--lj-text-secondary); }
+
+/* Person sidebar */
+.constellation-sidebar {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 380px;
+    height: 100vh;
+    background: var(--room-panel);
+    border-left: 1px solid var(--lj-border);
+    z-index: 50;
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    padding: 24px;
+}
+
+.constellation-sidebar.open { right: 0; }
+
+.sidebar-close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    color: var(--room-text);
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.sidebar-close:hover { opacity: 1; }
+
+.person-name {
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    color: var(--room-accent);
+    margin-top: 8px;
+}
+
+.person-years {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+}
+
+.person-highlight {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 12px;
+    color: var(--room-text);
+}
+
+.person-section-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.person-connections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.connection-tag {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    padding: 3px 10px;
+    background: rgba(74, 144, 217, 0.15);
+    border-radius: 12px;
+    color: var(--room-accent);
+}
+
+.person-milestones {
+    margin-top: 12px;
+}
+
+.person-milestone-item {
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(30, 58, 95, 0.5);
+    color: var(--room-text);
+}
+
+.person-milestone-year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.person-quotes blockquote {
+    border-left-color: var(--room-accent);
+    color: var(--room-text);
+    font-size: 13px;
+    padding: 8px 14px;
+    margin-top: 8px;
+}
+
+/* D3 tooltip */
+.constellation-tooltip {
+    position: absolute;
+    padding: 6px 10px;
+    background: rgba(10, 22, 40, 0.95);
+    border: 1px solid var(--room-accent);
+    border-radius: var(--radius);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--room-text);
+    pointer-events: none;
+    z-index: 30;
+    white-space: nowrap;
+}
+
+/* Inner circle timeline section */
+.inner-circle-timeline {
+    max-width: 900px;
+    margin: var(--space-xl) auto;
+    padding: 0 24px;
+}
+
+.inner-circle-timeline h2 {
+    color: var(--room-text);
+    font-size: 1.2rem;
+    margin-bottom: var(--space-md);
+    text-align: center;
+}
+
+.inner-circle-timeline canvas {
+    max-width: 100%;
+}
+
+/* Annotation quote */
+.constellation-annotation {
+    max-width: 600px;
+    margin: var(--space-lg) auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--lj-text-secondary);
+    padding: 0 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .constellation-sidebar {
+        width: 100%;
+        right: -100%;
+    }
+    .constellation-sky { height: 60vh; min-height: 350px; }
+    .constellation-search input { width: 100%; }
+}

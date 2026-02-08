@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "stat": "Bowling Games in One Day",
+    "value": "27",
+    "unit": null,
+    "year": 2007,
+    "note": null
+  },
+  {
+    "id": 2,
+    "stat": "Ping Pong Rounds in One Match",
+    "value": "218",
+    "unit": null,
+    "year": 2021,
+    "note": null
+  },
+  {
+    "id": 3,
+    "stat": "Cornholios in One Season",
+    "value": "38",
+    "unit": null,
+    "year": 2016,
+    "note": null
+  },
+  {
+    "id": 4,
+    "stat": "Blue Claws Caught in One Trip",
+    "value": "30",
+    "unit": null,
+    "year": 2024,
+    "note": null
+  },
+  {
+    "id": 5,
+    "stat": "Shrimp Consumed at One Event (lbs)",
+    "value": "8.6",
+    "unit": null,
+    "year": 2021,
+    "note": null
+  },
+  {
+    "id": 6,
+    "stat": "Crab Meat Consumed at One Event (lbs)",
+    "value": "7.3",
+    "unit": null,
+    "year": 2021,
+    "note": null
+  },
+  {
+    "id": 7,
+    "stat": "Escape Room Time",
+    "value": "45:43",
+    "unit": "min:sec",
+    "year": null,
+    "note": null
+  },
+  {
+    "id": 8,
+    "stat": "Laver Cup Ticket Wait",
+    "value": "568",
+    "unit": "days",
+    "year": 2021,
+    "note": null
+  },
+  {
+    "id": 9,
+    "stat": "Years Between Rangers Games at MSG",
+    "value": "20",
+    "unit": null,
+    "year": 2021,
+    "note": null
+  },
+  {
+    "id": 10,
+    "stat": "Tennis Match Duration (Farnkopf)",
+    "value": "6h 7m 3s",
+    "unit": null,
+    "year": 2010,
+    "note": null
+  },
+  {
+    "id": 11,
+    "stat": "CHA Games vs Pops Tronolone",
+    "value": "1000",
+    "unit": null,
+    "year": 2019,
+    "note": "Ranked #1"
+  },
+  {
+    "id": 12,
+    "stat": "Photos from Utah/Colorado Trip",
+    "value": "1,000+",
+    "unit": null,
+    "year": 2021,
+    "note": null
+  },
+  {
+    "id": 13,
+    "stat": "WrestleMania Photos (Arizona)",
+    "value": "939",
+    "unit": null,
+    "year": 2010,
+    "note": null
+  },
+  {
+    "id": 14,
+    "stat": "ECD Events Before Retirement",
+    "value": "171",
+    "unit": null,
+    "year": 2009,
+    "note": null
+  },
+  {
+    "id": 15,
+    "stat": "ECD Total Participants During Tenure",
+    "value": "500+",
+    "unit": "people",
+    "year": null,
+    "note": null
+  },
+  {
+    "id": 16,
+    "stat": "DODGEBOWL 200 Announced In Advance",
+    "value": "9",
+    "unit": "months",
+    "year": 2013,
+    "note": null
+  },
+  {
+    "id": 17,
+    "stat": "Consecutive Bowling 205+ Games",
+    "value": "2",
+    "unit": null,
+    "year": 2010,
+    "note": null
+  },
+  {
+    "id": 18,
+    "stat": "Cornhole Record on Cruise",
+    "value": "27-2",
+    "unit": null,
+    "year": 2017,
+    "note": null
+  }
+]

@@ -1,0 +1,388 @@
+{
+  "categories": [
+    {
+      "category": "comedian_of_the_year",
+      "count": 12,
+      "years": [
+        2008,
+        2009,
+        2011,
+        2012,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "winners": [
+        {
+          "winner": "Diana DiBuccio",
+          "year": 2008,
+          "note": null
+        },
+        {
+          "winner": "The Pops",
+          "year": 2009,
+          "note": null
+        },
+        {
+          "winner": "Rupert",
+          "year": 2011,
+          "note": null
+        },
+        {
+          "winner": "Rupert",
+          "year": 2012,
+          "note": "Two-time defending champion; later eliminated from competition"
+        },
+        {
+          "winner": "The Pops (Darrell)",
+          "year": 2014,
+          "note": "Second straight year; nominated every year since 2009"
+        },
+        {
+          "winner": "Dan Spengeman",
+          "year": 2015,
+          "note": null
+        },
+        {
+          "winner": "Lauren Winston",
+          "year": 2016,
+          "note": null
+        },
+        {
+          "winner": "The Pops",
+          "year": 2017,
+          "note": null
+        },
+        {
+          "winner": "Dan Spengeman",
+          "year": 2018,
+          "note": null
+        },
+        {
+          "winner": "Diana DiBuccio",
+          "year": 2019,
+          "note": null
+        },
+        {
+          "winner": "Diana DiBuccio",
+          "year": 2020,
+          "note": null
+        },
+        {
+          "winner": "Lauren Winston",
+          "year": 2021,
+          "note": null
+        }
+      ]
+    },
+    {
+      "category": "music_artist_of_the_year",
+      "count": 10,
+      "years": [
+        2008,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2018,
+        2019,
+        2020,
+        2021
+      ],
+      "winners": [
+        {
+          "winner": "",
+          "year": 2008,
+          "note": "Category existed"
+        },
+        {
+          "winner": "Mariah Carey",
+          "year": 2012,
+          "note": null
+        },
+        {
+          "winner": "Mariah Carey",
+          "year": 2013,
+          "note": "Top 2 three straight years; switched places with Madonna from 2012"
+        },
+        {
+          "winner": "Mariah Carey",
+          "year": 2014,
+          "note": "Top 2 past 4 years"
+        },
+        {
+          "winner": "Janet Jackson",
+          "year": 2015,
+          "note": null
+        },
+        {
+          "winner": "Janet Jackson",
+          "year": 2016,
+          "note": null
+        },
+        {
+          "winner": "Janet Jackson",
+          "year": 2018,
+          "note": null
+        },
+        {
+          "winner": "Janet Jackson",
+          "year": 2019,
+          "note": null
+        },
+        {
+          "winner": "Janet Jackson",
+          "year": 2020,
+          "note": null
+        },
+        {
+          "winner": "Janet Jackson",
+          "year": 2021,
+          "note": null
+        }
+      ]
+    },
+    {
+      "category": "best_laughs",
+      "count": 8,
+      "years": [
+        2008,
+        2009,
+        2015,
+        2017,
+        2018,
+        2019,
+        2020,
+        2022
+      ],
+      "winners": [
+        {
+          "winner": "Diana DiBuccio",
+          "year": 2008,
+          "note": null
+        },
+        {
+          "winner": "The Pops",
+          "year": 2009,
+          "note": null
+        },
+        {
+          "winner": "Dan Spengeman",
+          "year": 2015,
+          "note": null
+        },
+        {
+          "winner": "The Pops",
+          "year": 2017,
+          "note": null
+        },
+        {
+          "winner": "Dan Spengeman",
+          "year": 2018,
+          "note": null
+        },
+        {
+          "winner": "Diana DiBuccio",
+          "year": 2019,
+          "note": null
+        },
+        {
+          "winner": "Diana DiBuccio",
+          "year": 2020,
+          "note": null
+        },
+        {
+          "winner": "Valerie Winston, Diana DiBuccio",
+          "year": 2022,
+          "note": null
+        }
+      ]
+    },
+    {
+      "category": "song_of_the_year",
+      "count": 6,
+      "years": [
+        2008,
+        2013,
+        2014,
+        2015,
+        2020,
+        2021
+      ],
+      "winners": [
+        {
+          "winner": "Runnin' Down a Dream",
+          "year": 2008,
+          "note": null
+        },
+        {
+          "winner": "",
+          "year": 2013,
+          "note": "Most nominations ever (tied with 2013). First time song from Timeline year won top honors."
+        },
+        {
+          "winner": "",
+          "year": 2014,
+          "note": "Most nominations ever (tied with 2013). Janet's 'Alright' was runner-up (also runner-up in 2013)."
+        },
+        {
+          "winner": "All For You, If (Janet Jackson)",
+          "year": 2015,
+          "note": "First artist to win for two different songs in same year"
+        },
+        {
+          "winner": "Music Sounds Better With You",
+          "year": 2020,
+          "note": null
+        },
+        {
+          "winner": "Music Sounds Better With You",
+          "year": 2021,
+          "note": "Runners-up: Shawn Christopher 'Sweet Freedom', Jet 'Start The Show'. First time runner-up reached #1."
+        }
+      ]
+    },
+    {
+      "category": "timeline_award",
+      "count": 5,
+      "years": [
+        2007,
+        2008,
+        2009
+      ],
+      "winners": [
+        {
+          "winner": "Favorite Joke: 'T.A.R.' (Tuck and Roll)",
+          "year": 2007,
+          "note": null
+        },
+        {
+          "winner": "Favorite Song: Saliva's 'Ladies and Gentlemen'",
+          "year": 2007,
+          "note": null
+        },
+        {
+          "winner": "Day of the Year: Thursday",
+          "year": 2008,
+          "note": null
+        },
+        {
+          "winner": "Videos of the Year: WrestleMania XXIV Intro and Ryan's Birthday Speech",
+          "year": 2008,
+          "note": null
+        },
+        {
+          "winner": "Video of the Year: SkyDive I",
+          "year": 2009,
+          "note": null
+        }
+      ]
+    },
+    {
+      "category": "work",
+      "count": 3,
+      "years": [
+        2012,
+        2016,
+        2022
+      ],
+      "winners": [
+        {
+          "winner": "Employee of the Month (January)",
+          "year": 2012,
+          "note": null
+        },
+        {
+          "winner": "Manager of the Year",
+          "year": 2016,
+          "note": null
+        },
+        {
+          "winner": "#100 Award",
+          "year": 2022,
+          "note": null
+        }
+      ]
+    },
+    {
+      "category": "shocker_of_the_year",
+      "count": 3,
+      "years": [
+        2013,
+        2020,
+        2021
+      ],
+      "winners": [
+        {
+          "winner": "",
+          "year": 2013,
+          "note": "First time in Timeline history co-winners announced"
+        },
+        {
+          "winner": "COVID Test II; Laver Cup Tickets; Brian's Transfer",
+          "year": 2020,
+          "note": null
+        },
+        {
+          "winner": "Sr. RCC promotion; Message From Rob Phillips; Stopa's Pregnancy Text; Tim's Stand-Up Text",
+          "year": 2021,
+          "note": "Second consecutive work-related winner"
+        }
+      ]
+    },
+    {
+      "category": "external",
+      "count": 2,
+      "years": [
+        2010,
+        2011
+      ],
+      "winners": [
+        {
+          "winner": "Inaugural HERO of the Year",
+          "year": 2010,
+          "note": null
+        },
+        {
+          "winner": "Bogart's 'Man of March' (Apr 1, sober)",
+          "year": 2011,
+          "note": null
+        }
+      ]
+    },
+    {
+      "category": "social",
+      "count": 1,
+      "years": [
+        2013
+      ],
+      "winners": [
+        {
+          "winner": "'Most Realistic' Halloween Costume ('General' Tronolone)",
+          "year": 2013,
+          "note": null
+        }
+      ]
+    },
+    {
+      "category": "ecd",
+      "count": 1,
+      "years": [
+        2011
+      ],
+      "winners": [
+        {
+          "winner": "ECDElite Hall of Fame induction (Jun 18)",
+          "year": 2011,
+          "note": null
+        }
+      ]
+    }
+  ]
+}

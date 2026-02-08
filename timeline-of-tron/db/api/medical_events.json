@@ -1,0 +1,156 @@
+[
+  {
+    "id": 1,
+    "year": 2004,
+    "event": "Life-altering car accident \u2014 panic attacks and anxiety",
+    "category": "trauma",
+    "severity": "major",
+    "recovery_note": "Years-long recovery; became HERO of the Year advocate",
+    "vader_compound": -0.6875,
+    "vader_pos": 0.165,
+    "vader_neg": 0.418
+  },
+  {
+    "id": 2,
+    "year": 2005,
+    "event": "Contracted Shingles at age 20",
+    "category": "illness",
+    "severity": "moderate",
+    "recovery_note": null,
+    "vader_compound": 0.0,
+    "vader_pos": 0.0,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 3,
+    "year": 2007,
+    "event": "Near-anorexia and mental health crisis; chopped long hair; joined gym",
+    "category": "mental_health",
+    "severity": "major",
+    "recovery_note": "Joined Jersey Shore Fitness with James Butler (Sep 2007); 'desperate lifestyle alteration'",
+    "vader_compound": -0.6486,
+    "vader_pos": 0.076,
+    "vader_neg": 0.233
+  },
+  {
+    "id": 4,
+    "year": 2008,
+    "event": "Double wart removal surgery (Jan 22)",
+    "category": "minor_procedure",
+    "severity": "minor",
+    "recovery_note": "Came out in 2008; began 'most rewarding and refreshing' months",
+    "vader_compound": 0.5709,
+    "vader_pos": 0.198,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 5,
+    "year": 2008,
+    "event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
+    "category": "trauma",
+    "severity": "major",
+    "recovery_note": "Came out in 2008; began 'most rewarding and refreshing' months",
+    "vader_compound": 0.1513,
+    "vader_pos": 0.149,
+    "vader_neg": 0.125
+  },
+  {
+    "id": 6,
+    "year": 2011,
+    "event": "Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2)",
+    "category": "injury",
+    "severity": "moderate",
+    "recovery_note": "Continued sports participation",
+    "vader_compound": -0.1796,
+    "vader_pos": 0.0,
+    "vader_neg": 0.116
+  },
+  {
+    "id": 7,
+    "year": 2017,
+    "event": "Left pinky dislocation + two-part fracture from volleyball (Mar 26)",
+    "category": "injury",
+    "severity": "minor",
+    "recovery_note": "Spinal microdiscectomy surgery (Dec 15). Post-surgery reflection: 'I Just Want To Wake Up. (I Did!)'",
+    "vader_compound": 0.1511,
+    "vader_pos": 0.062,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 8,
+    "year": 2017,
+    "event": "L5-S1 'fairly large' herniation diagnosed (Sep 28)",
+    "category": "spinal",
+    "severity": "major",
+    "recovery_note": "Spinal microdiscectomy surgery (Dec 15). Post-surgery reflection: 'I Just Want To Wake Up. (I Did!)'",
+    "vader_compound": 0.1511,
+    "vader_pos": 0.07,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 9,
+    "year": 2017,
+    "event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
+    "category": "spinal",
+    "severity": "moderate",
+    "recovery_note": "Spinal microdiscectomy surgery (Dec 15). Post-surgery reflection: 'I Just Want To Wake Up. (I Did!)'",
+    "vader_compound": -0.5093,
+    "vader_pos": 0.047,
+    "vader_neg": 0.129
+  },
+  {
+    "id": 10,
+    "year": 2017,
+    "event": "Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26",
+    "category": "spinal",
+    "severity": "major",
+    "recovery_note": "Spinal microdiscectomy surgery (Dec 15). Post-surgery reflection: 'I Just Want To Wake Up. (I Did!)'",
+    "vader_compound": 0.1511,
+    "vader_pos": 0.058,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 11,
+    "year": 2019,
+    "event": "Strep throat (Aug 7) + kidney stone removal",
+    "category": "illness",
+    "severity": "minor",
+    "recovery_note": "Australia & New Zealand trip",
+    "vader_compound": 0.0,
+    "vader_pos": 0.0,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 12,
+    "year": 2020,
+    "event": "Medical quarantine (Mar 26 \u2013 Apr 16); gained 3 lbs solid muscle",
+    "category": "illness",
+    "severity": "moderate",
+    "recovery_note": "Gained 3 lbs solid muscle, biked to Highlands/Asbury Park/Sea Bright/Rumson/Deal",
+    "vader_compound": 0.7506,
+    "vader_pos": 0.318,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 13,
+    "year": 2024,
+    "event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
+    "category": "illness",
+    "severity": "moderate",
+    "recovery_note": "Continued travel (Norway, Iceland, Toronto, Montreal) & celebration",
+    "vader_compound": 0.0,
+    "vader_pos": 0.0,
+    "vader_neg": 0.0
+  },
+  {
+    "id": 14,
+    "year": 2025,
+    "event": "Influenza confirmed by medical visit (February)",
+    "category": "illness",
+    "severity": "minor",
+    "recovery_note": null,
+    "vader_compound": 0.0,
+    "vader_pos": 0.0,
+    "vader_neg": 0.0
+  }
+]

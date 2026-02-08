@@ -1,0 +1,441 @@
+[
+  {
+    "chapter_number": 1,
+    "chapter_name": "Chapter 1: 2004-2006",
+    "start_year": 2004,
+    "end_year": 2006,
+    "years": "[2004, 2005, 2006]",
+    "theme": "The Beginning \u2014 Car Accident & Recovery | ECD Founded \u2014 Finding Community | Dance Anthems & FINS Fridays",
+    "defining_moments": [
+      "[\"Timeline project begins on LiveJournal (Jul 29)\"",
+      "\"Life-altering car accident resulting in panic attacks and anxiety\"",
+      "\"EastCoastDodgeball founded\"",
+      "\"DODGEBALL 70 (Dec 30) \\u2014 music experiment with dance anthems\"",
+      "\"FINS Friday gatherings ongoing since March 2006\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"]"
+    ],
+    "sentiment_avg": -0.0833,
+    "intensity_avg": 3.5
+  },
+  {
+    "chapter_number": 2,
+    "chapter_name": "Chapter 2: 2007-2007",
+    "start_year": 2007,
+    "end_year": 2007,
+    "years": "[2007]",
+    "theme": "The Most Colorful Year \u2014 27 Bowling Games, WWE Stock, Shingles at 20",
+    "defining_moments": [
+      "[\"Started job at Ocean Township Recreation (Feb 27)\"",
+      "\"WrestleMania 23 in Detroit (3rd WM)\"",
+      "\"51st WWE event (Oct 29 Philadelphia)\"",
+      "\"DODGEBALL 100 \\u2014 record 52 participants (Aug 18)\"",
+      "\"Turned 23 (Sep 27)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"The Pops\"",
+      "\"Lauren Winston\"]"
+    ],
+    "sentiment_avg": -0.0055,
+    "intensity_avg": 25.0
+  },
+  {
+    "chapter_number": 3,
+    "chapter_name": "Chapter 3: 2008-2008",
+    "start_year": 2008,
+    "end_year": 2008,
+    "years": "[2008]",
+    "theme": "Coming Out \u2014 Liberation Day \u2014 Conquered Obstacles",
+    "defining_moments": [
+      "[\"First semester of Health Studies completed at MU (May 8)\"",
+      "\"First beer shared with The Pops (Aug 21)\"",
+      "\"WrestleMania XXIV in Florida (4th WM)\"",
+      "\"Royal Rumble at MSG (Jan 27)\"",
+      "\"DODGEBALL 150 (Aug 9)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"The Pops\"",
+      "\"Rob\"",
+      "\"Kevin & Leah\"",
+      "\"Diana\"]"
+    ],
+    "sentiment_avg": 0.0361,
+    "intensity_avg": 26.0
+  },
+  {
+    "chapter_number": 4,
+    "chapter_name": "Chapter 4: 2009-2009",
+    "start_year": 2009,
+    "end_year": 2009,
+    "years": "[2009]",
+    "theme": "The Greatest Year Ever \u2014 SkyDiving, Concerts, 0 Regrets",
+    "defining_moments": [
+      "[\"'The Greatest Year Ever. 2009.'\"",
+      "\"First concert ever: John Legend at MSG with Kanye West (Aug 13)\"",
+      "\"Retired from ECD after 171 events and 40 months (Jan 3)\"",
+      "\"WrestleMania 25 in Houston (5th WM) \\u2014 72",
+      "744 attendance\"",
+      "\"SkyDive I at 10",
+      "000 feet (Aug 16) \\u2014 'maybe the happiest 24-span of my life'\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"]"
+    ],
+    "sentiment_avg": 0.0821,
+    "intensity_avg": 30.5
+  },
+  {
+    "chapter_number": 5,
+    "chapter_name": "Chapter 5: 2010-2011",
+    "start_year": 2010,
+    "end_year": 2011,
+    "years": "[2010, 2011]",
+    "theme": "Graduation \u2014 HERO of the Year \u2014 0 Regrets Redux | The Ro(b)mantic Era Begins \u2014 Sunrise Career Launch",
+    "defining_moments": [
+      "[\"Torn glenoid labrum confirmed via MRI (Aug 2)\"",
+      "\"First meal with Rob at Ocean Bay Diner (Jan 1)\"",
+      "\"First speeding ticket (Sep 14)\"",
+      "\"Cousin Nick married Samantha (Jul 2-3)\"",
+      "\"Graduated Monmouth University (3.66 major GPA",
+      "3.49 cumulative)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"Rob\"",
+      "\"Michael\"]"
+    ],
+    "sentiment_avg": 0.0472,
+    "intensity_avg": 22.0
+  },
+  {
+    "chapter_number": 6,
+    "chapter_name": "Chapter 6: 2012-2012",
+    "start_year": 2012,
+    "end_year": 2012,
+    "years": "[2012]",
+    "theme": "ECD World Tour \u2014 Employee of the Month",
+    "defining_moments": [
+      "[\"ECD reopened with 'WORLD TOUR' (Apr 7)\"",
+      "\"ECD 7th birthday + 500th player (Sep 1)\"",
+      "\"Record 18 rounds at Orchard Park (Oct 13)\"",
+      "\"Employee of the Month (Jan)\"",
+      "\"Activities & Volunteer Coordinator promotion (May)\"]"
+    ],
+    "key_people": [
+      "[\"Rob\"",
+      "\"RL (Letsche)\"",
+      "\"Ma\"]"
+    ],
+    "sentiment_avg": 0.0,
+    "intensity_avg": 13.0
+  },
+  {
+    "chapter_number": 7,
+    "chapter_name": "Chapter 7: 2013-2013",
+    "start_year": 2013,
+    "end_year": 2013,
+    "years": "[2013]",
+    "theme": "DODGEBOWL 200 \u2014 First Cruise \u2014 5 Weddings \u2014 Loss of Grandma Theresa",
+    "defining_moments": [
+      "[\"'Table 7' Era begins (Jun 8)\"",
+      "\"Norwegian Breakaway \\u2014 first cruise ever",
+      "first with RK (Sep 8-15",
+      "FIVE star rating)\"",
+      "\"DODGEBOWL 200 \\u2014 era-ending extravaganza (Aug 10",
+      "FIVE star rating)\"",
+      "\"WrestleMania 29 at-home NJ (8th WM); 21-0 record\"",
+      "\"WWE event #75 (Sep 3)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"Rob\"]"
+    ],
+    "sentiment_avg": 0.05,
+    "intensity_avg": 24.5
+  },
+  {
+    "chapter_number": 8,
+    "chapter_name": "Chapter 8: 2014-2014",
+    "start_year": 2014,
+    "end_year": 2014,
+    "years": "[2014]",
+    "theme": "The Undertaker Handshake \u2014 Turning 30 \u2014 Norwegian Epic",
+    "defining_moments": [
+      "[\"Johnny Nash: most influential friend of 2014\"",
+      "\"Norwegian Epic cruise II \\u2014 Jamaica",
+      "Grand Cayman",
+      "Cozumel (Dec 6-15)\"",
+      "\"The Pops: Comedian of the Year (2nd straight year)\"",
+      "\"Turned 30 \\u2014 the 'BIG 3-0'\"",
+      "\"Met The Undertaker at WM XXX (4:10:18 PM CT Apr 5)\"]"
+    ],
+    "key_people": [
+      "[\"The Pops\"",
+      "\"Ma\"",
+      "\"Valerie\"",
+      "\"Diana\"]"
+    ],
+    "sentiment_avg": 0.08,
+    "intensity_avg": 15.5
+  },
+  {
+    "chapter_number": 9,
+    "chapter_name": "Chapter 9: 2015-2015",
+    "start_year": 2015,
+    "end_year": 2015,
+    "years": "[2015]",
+    "theme": "Janet Jackson Dynasty Begins \u2014 Kia Soul Hits 20K",
+    "defining_moments": [
+      "[\"Janet Jackson first Artist of the Year win\"",
+      "\"Kia Soul hits 20",
+      "000 miles (Dec 15)\"",
+      "\"USVI & Bahamas cruise (rated 10/10)\"",
+      "\"Dan Spengeman: Comedian of the Year\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"Dan Spengeman\"]"
+    ],
+    "sentiment_avg": 0.1313,
+    "intensity_avg": 8.0
+  },
+  {
+    "chapter_number": 10,
+    "chapter_name": "Chapter 10: 2016-2016",
+    "start_year": 2016,
+    "end_year": 2016,
+    "years": "[2016]",
+    "theme": "Greatest WWE Experience \u2014 93.9% Table Tennis \u2014 Manager of the Year",
+    "defining_moments": [
+      "[\"WrestleMania 32 (100",
+      "000+) \\u2014 'greatest WWE experience of all-time'\"",
+      "\"Manager of the Year award\"",
+      "\"Table tennis: 62-4 (93.9%)\"",
+      "\"Cornhole: 254-98",
+      "38 cornholios\"",
+      "\"Spengeman-Mullins wedding\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"Lauren Winston\"",
+      "\"Dan Spengeman\"]"
+    ],
+    "sentiment_avg": 0.1429,
+    "intensity_avg": 12.5
+  },
+  {
+    "chapter_number": 11,
+    "chapter_name": "Chapter 11: 2017-2017",
+    "start_year": 2017,
+    "end_year": 2017,
+    "years": "[2017]",
+    "theme": "Spinal Surgery \u2014 Alaska Cruise \u2014 SummerSlam 20-Year Arc Complete",
+    "defining_moments": [
+      "[\"SummerSlam 20-year personal story complete (Aug 20)\"",
+      "\"Kevin & Leah engaged\"",
+      "\"Alaska cruise + Seattle (Mendenhall Glacier)\"",
+      "\"L5-S1 herniation \\u2192 microdiscectomy surgery (Dec 15) at Riverview hospital\"",
+      "\"14 staples removed (Dec 26)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"Kevin & Leah\"]"
+    ],
+    "sentiment_avg": -0.0115,
+    "intensity_avg": 27.0
+  },
+  {
+    "chapter_number": 12,
+    "chapter_name": "Chapter 12: 2018-2019",
+    "start_year": 2018,
+    "end_year": 2019,
+    "years": "[2018, 2019]",
+    "theme": "Mediterranean 5-Country Cruise \u2014 Engagement Ring \u2014 6th Cruise in 6 Years | Australia/NZ Best Trip Ever \u2014 Uncle John \u2014 Halfway to 70",
+    "defining_moments": [
+      "[\"Best tennis comeback: won from 0-6 deficit (Dec 23)\"",
+      "\"Sisters turned 16 \\u2014 Six Flags Great Adventure (Aug 27)\"",
+      "\"Australia & New Zealand \\u2014 'the best",
+      "the longest",
+      "and the greatest' (19 days",
+      "Jan 12-31)\"",
+      "\"Brother Michael married Maggie (Jun 29)\"",
+      "\"New Hampshire trip (Sep 19-22)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"The Pops\"",
+      "\"Rob\"",
+      "\"Michael\"]"
+    ],
+    "sentiment_avg": 0.0959,
+    "intensity_avg": 26.5
+  },
+  {
+    "chapter_number": 13,
+    "chapter_name": "Chapter 13: 2020-2020",
+    "start_year": 2020,
+    "end_year": 2020,
+    "years": "[2020]",
+    "theme": "Asia Expedition \u2014 COVID Quarantine \u2014 4th Skydive \u2014 Leap Day Wedding",
+    "defining_moments": [
+      "[\"Kevin & Leah married Feb 29 (leap day)\"",
+      "\"Grace & Megan graduate high school\"",
+      "\"Asian expedition: Singapore",
+      "Thailand",
+      "Cambodia",
+      "Vietnam",
+      "Hong Kong (17 days Jan-Feb)\"",
+      "\"90th WWE event (Mar 8",
+      "17th with RL)\"",
+      "\"Medical quarantine (Mar 26 \\u2013 Apr 16) + muscle gain comeback\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"",
+      "\"RL (Letsche)\"",
+      "\"Kevin & Leah\"]"
+    ],
+    "sentiment_avg": 0.0373,
+    "intensity_avg": 21.5
+  },
+  {
+    "chapter_number": 14,
+    "chapter_name": "Chapter 14: 2021-2021",
+    "start_year": 2021,
+    "end_year": 2021,
+    "years": "[2021]",
+    "theme": "9.8/10 Year \u2014 218 Ping Pong Rounds \u2014 8.6 lbs Shrimp \u2014 Nephew Lawrence",
+    "defining_moments": [
+      "[\"Grand Canyon/Vegas/Utah/Colorado/Boston trip (1",
+      "000+ photos)\"",
+      "\"Year rated 9.8/10\"",
+      "\"218-round ping pong match\"",
+      "\"8.6 lbs shrimp + 7.3 lbs crab meat consumed\"",
+      "\"Nephew Lawrence born (Dec 23",
+      "6:25am)\"]"
+    ],
+    "key_people": [
+      "[\"Rob\"",
+      "\"Ma\"",
+      "\"Lauren Winston\"]"
+    ],
+    "sentiment_avg": 0.0294,
+    "intensity_avg": 24.5
+  },
+  {
+    "chapter_number": 15,
+    "chapter_name": "Chapter 15: 2022-2022",
+    "start_year": 2022,
+    "end_year": 2022,
+    "years": "[2022]",
+    "theme": "Five Boro Bike Tour \u2014 Rangers Playoff Run \u2014 Gram's 90th",
+    "defining_moments": [
+      "[\"California/Oregon vacation (Golden Gate",
+      "Redwoods",
+      "Portland)\"",
+      "\"Megan's Brookdale graduation\"",
+      "\"Five Boro Bike Tour (40 miles)\"",
+      "\"PSU White Out football weekend\"",
+      "\"Gram's 90th birthday\"]"
+    ],
+    "key_people": [
+      "[\"Rob\"",
+      "\"Grammy Nancy\"]"
+    ],
+    "sentiment_avg": -0.0455,
+    "intensity_avg": 14.5
+  },
+  {
+    "chapter_number": 16,
+    "chapter_name": "Chapter 16: 2023-2023",
+    "start_year": 2023,
+    "end_year": 2023,
+    "years": "[2023]",
+    "theme": "Super Bowl LVII \u2014 House Closing \u2014 3 Broadway Shows",
+    "defining_moments": [
+      "[\"Super Bowl LVII in Phoenix \\u2014 'most spectacular day I've ever experienced'\"",
+      "\"15-year anniversary of 'personal liberation day'\"",
+      "\"Broadway: Hadestown",
+      "Aladdin",
+      "Chicago (3 shows in one year)\"",
+      "\"Closed on house at Mill Creek Court (Dec 18)\"]"
+    ],
+    "key_people": [
+      "[]"
+    ],
+    "sentiment_avg": 0.1146,
+    "intensity_avg": 10.5
+  },
+  {
+    "chapter_number": 17,
+    "chapter_name": "Chapter 17: 2024-2024",
+    "start_year": 2024,
+    "end_year": 2024,
+    "years": "[2024]",
+    "theme": "Norway/Iceland \u2014 Grandmother's Passing \u2014 30 Blue Claws",
+    "defining_moments": [
+      "[\"30 blue crabs caught (personal best)\"",
+      "\"Spain trip (Lisbon",
+      "Madrid)\"",
+      "\"Norway cruise (Alesund",
+      "Akureyri",
+      "Iceland Sky Lagoon)\"",
+      "\"Toronto (CN Tower 1",
+      "815 ft",
+      "Niagara Falls)\"",
+      "\"Montreal (Place d'Armes",
+      "MTLaTABLE)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"]"
+    ],
+    "sentiment_avg": 0.0167,
+    "intensity_avg": 17.0
+  },
+  {
+    "chapter_number": 18,
+    "chapter_name": "Chapter 18: 2025-2025",
+    "start_year": 2025,
+    "end_year": 2025,
+    "years": "[2025]",
+    "theme": "Executive Director \u2014 4,000-Mile Road Trip \u2014 Ma's 70th",
+    "defining_moments": [
+      "[\"Executive Director promotion (passed NJ certification)\"",
+      "\"4",
+      "000-mile Midwest road trip (16 states: Rushmore",
+      "Devils Tower",
+      "Gateway Arch",
+      "Badlands)\"",
+      "\"Mother's 70th birthday\"",
+      "\"20th Anniversary celebration\"",
+      "\"ECD Bowl Weekend (57 people",
+      "$1",
+      "700+ raised)\"]"
+    ],
+    "key_people": [
+      "[\"Ma\"]"
+    ],
+    "sentiment_avg": 0.0,
+    "intensity_avg": 8.0
+  },
+  {
+    "chapter_number": 19,
+    "chapter_name": "Chapter 19: 2026",
+    "start_year": 2026,
+    "end_year": 2026,
+    "years": "2026-2026",
+    "theme": "Japan \u2014 To Tokyo",
+    "defining_moments": [
+      "Japan trip (booked \u2014 Tokyo bound)"
+    ],
+    "key_people": [
+      "Friends",
+      "Family",
+      "Travel Companions"
+    ],
+    "sentiment_avg": 0.05,
+    "intensity_avg": 3.0
+  }
+]

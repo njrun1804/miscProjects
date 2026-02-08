@@ -1,0 +1,114 @@
+[
+  {
+    "phase": "valley",
+    "year": 2004,
+    "event": "Life-altering car accident \u2014 panic attacks and anxiety",
+    "sentiment": -0.688,
+    "gap_to_next_phase_months": 0
+  },
+  {
+    "phase": "peak",
+    "year": 2004,
+    "event": "Years-long recovery; became HERO of the Year advocate",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  },
+  {
+    "phase": "valley",
+    "year": 2005,
+    "event": "Near-anorexia and mental health crisis",
+    "sentiment": null,
+    "gap_to_next_phase_months": 18
+  },
+  {
+    "phase": "peak",
+    "year": 2007,
+    "event": "Joined Jersey Shore Fitness with James Butler; family reconciliation",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  },
+  {
+    "phase": "valley",
+    "year": 2008,
+    "event": "Car accident \u2014 rear-ended on West Park Avenue",
+    "sentiment": null,
+    "gap_to_next_phase_months": 0
+  },
+  {
+    "phase": "peak",
+    "year": 2008,
+    "event": "Came out in 2008; began 'most rewarding and refreshing' months",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  },
+  {
+    "phase": "valley",
+    "year": 2011,
+    "event": "Torn glenoid labrum confirmed via MRI",
+    "sentiment": null,
+    "gap_to_next_phase_months": 0
+  },
+  {
+    "phase": "peak",
+    "year": 2011,
+    "event": "Continued sports participation",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  },
+  {
+    "phase": "valley",
+    "year": 2017,
+    "event": "L5-S1 herniation + microdiscectomy surgery (Dec 15)",
+    "sentiment": null,
+    "gap_to_next_phase_months": 6
+  },
+  {
+    "phase": "peak",
+    "year": 2018,
+    "event": "Mediterranean cruise (Croatia, Montenegro, Italy); 'Back on the road'",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  },
+  {
+    "phase": "valley",
+    "year": 2019,
+    "event": "Strep throat + kidney stone removal",
+    "sentiment": null,
+    "gap_to_next_phase_months": 2
+  },
+  {
+    "phase": "peak",
+    "year": 2019,
+    "event": "Australia & New Zealand trip",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  },
+  {
+    "phase": "valley",
+    "year": 2020,
+    "event": "COVID medical quarantine (Mar 26 - Apr 16)",
+    "sentiment": null,
+    "gap_to_next_phase_months": 1
+  },
+  {
+    "phase": "peak",
+    "year": 2020,
+    "event": "Gained 3 lbs muscle; biked to Highlands/Asbury Park/Sea Bright",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  },
+  {
+    "phase": "valley",
+    "year": 2024,
+    "event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
+    "sentiment": null,
+    "gap_to_next_phase_months": 0
+  },
+  {
+    "phase": "peak",
+    "year": 2024,
+    "event": "Continued travel (Norway, Iceland, Toronto, Montreal) & celebration",
+    "sentiment": null,
+    "gap_to_next_phase_months": null
+  }
+]

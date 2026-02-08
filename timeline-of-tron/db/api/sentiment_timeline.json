@@ -1,0 +1,598 @@
+[
+  {
+    "year": 2004,
+    "avg_sentiment": -0.438,
+    "milestone_sentiments": [
+      0.0,
+      -0.875
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 6.5,
+    "life_stage": "Chapter 1: 2004-2006",
+    "is_turning_point": true,
+    "turning_point_type": "contaminated"
+  },
+  {
+    "year": 2005,
+    "avg_sentiment": -0.18,
+    "milestone_sentiments": [
+      0.0,
+      -0.361
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 2.0,
+    "life_stage": "Chapter 1: 2004-2006",
+    "is_turning_point": true,
+    "turning_point_type": "contaminated"
+  },
+  {
+    "year": 2006,
+    "avg_sentiment": 0.0,
+    "milestone_sentiments": [
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 2.0,
+    "life_stage": "Chapter 1: 2004-2006",
+    "is_turning_point": true,
+    "turning_point_type": null
+  },
+  {
+    "year": 2007,
+    "avg_sentiment": 0.026,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.2,
+      0.0,
+      0.273,
+      0.0,
+      0.44,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.052
+    ],
+    "quote_sentiments": [
+      -0.276,
+      -0.45,
+      0.572,
+      0.0,
+      0.0,
+      -0.296
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 26.0,
+    "life_stage": "Chapter 2: 2007-2007",
+    "is_turning_point": true,
+    "turning_point_type": "redemptive"
+  },
+  {
+    "year": 2008,
+    "avg_sentiment": 0.176,
+    "milestone_sentiments": [
+      0.0,
+      0.44,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.382,
+      0.052,
+      0.34,
+      -0.477,
+      0.0,
+      0.0,
+      0.0,
+      0.271
+    ],
+    "quote_sentiments": [
+      0.026,
+      0.813,
+      0.0,
+      0.361,
+      0.599,
+      0.459,
+      0.141,
+      0.402,
+      0.0,
+      0.91,
+      0.457,
+      -0.44,
+      0.75,
+      -0.421,
+      -0.67,
+      0.87,
+      -0.239,
+      0.621
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 29.0,
+    "life_stage": "Chapter 3: 2008-2008",
+    "is_turning_point": true,
+    "turning_point_type": "redemptive"
+  },
+  {
+    "year": 2009,
+    "avg_sentiment": 0.076,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.637,
+      0.0,
+      0.0,
+      0.494,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.361,
+      0.637
+    ],
+    "quote_sentiments": [
+      -0.318,
+      0.843,
+      0.557,
+      0.91,
+      -0.718,
+      0.511,
+      -0.226,
+      -0.459,
+      -0.751
+    ],
+    "dominant_emotion": "joy",
+    "intensity_score": 31.5,
+    "life_stage": "Chapter 4: 2009-2009",
+    "is_turning_point": true,
+    "turning_point_type": "redemptive"
+  },
+  {
+    "year": 2010,
+    "avg_sentiment": 0.142,
+    "milestone_sentiments": [
+      0.2,
+      0.842,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.026,
+      0.652,
+      0.2
+    ],
+    "quote_sentiments": [
+      -0.361
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 17.5,
+    "life_stage": "Chapter 5: 2010-2011",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2011,
+    "avg_sentiment": 0.049,
+    "milestone_sentiments": [
+      -0.557,
+      0.0,
+      0.0,
+      0.0,
+      0.361,
+      0.0,
+      -0.25,
+      0.0,
+      0.44,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [
+      0.637
+    ],
+    "dominant_emotion": "pride",
+    "intensity_score": 26.5,
+    "life_stage": "Chapter 5: 2010-2011",
+    "is_turning_point": true,
+    "turning_point_type": "contaminated"
+  },
+  {
+    "year": 2012,
+    "avg_sentiment": 0.038,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.2,
+      0.0,
+      0.0,
+      0.103,
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 13.0,
+    "life_stage": "Chapter 6: 2012-2012",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2013,
+    "avg_sentiment": 0.191,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.2,
+      0.0,
+      0.0,
+      0.0,
+      0.44,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.572
+    ],
+    "quote_sentiments": [
+      0.586,
+      0.637,
+      0.802,
+      -0.456,
+      0.318,
+      0.557,
+      0.494,
+      0.813
+    ],
+    "dominant_emotion": "joy",
+    "intensity_score": 25.0,
+    "life_stage": "Chapter 7: 2013-2013",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2014,
+    "avg_sentiment": 0.089,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.0,
+      -0.637,
+      0.459,
+      0.0,
+      0.765,
+      0.77,
+      0.0,
+      0.542
+    ],
+    "quote_sentiments": [
+      0.0,
+      0.0,
+      0.0,
+      0.494,
+      0.0,
+      0.71,
+      -0.791,
+      -0.712
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 16.0,
+    "life_stage": "Chapter 8: 2014-2014",
+    "is_turning_point": true,
+    "turning_point_type": "redemptive"
+  },
+  {
+    "year": 2015,
+    "avg_sentiment": 0.154,
+    "milestone_sentiments": [
+      -0.637,
+      0.0,
+      0.586,
+      0.382
+    ],
+    "quote_sentiments": [
+      0.44
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 8.5,
+    "life_stage": "Chapter 9: 2015-2015",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2016,
+    "avg_sentiment": 0.279,
+    "milestone_sentiments": [
+      0.637,
+      0.542,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.382
+    ],
+    "quote_sentiments": [
+      0.637,
+      0.316
+    ],
+    "dominant_emotion": "joy",
+    "intensity_score": 13.0,
+    "life_stage": "Chapter 10: 2016-2016",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2017,
+    "avg_sentiment": 0.101,
+    "milestone_sentiments": [
+      0.402,
+      0.0,
+      -0.2,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.178,
+      -0.477,
+      0.527,
+      0.2
+    ],
+    "quote_sentiments": [
+      0.151,
+      0.0,
+      0.835
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 27.0,
+    "life_stage": "Chapter 11: 2017-2017",
+    "is_turning_point": true,
+    "turning_point_type": "contaminated"
+  },
+  {
+    "year": 2018,
+    "avg_sentiment": 0.202,
+    "milestone_sentiments": [
+      0.0,
+      0.459,
+      0.0,
+      0.0,
+      0.735,
+      0.0,
+      0.0,
+      0.0,
+      0.751,
+      0.572,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [
+      0.511,
+      0.0
+    ],
+    "dominant_emotion": "joy",
+    "intensity_score": 23.5,
+    "life_stage": "Chapter 12: 2018-2019",
+    "is_turning_point": true,
+    "turning_point_type": "redemptive"
+  },
+  {
+    "year": 2019,
+    "avg_sentiment": 0.214,
+    "milestone_sentiments": [
+      0.856,
+      0.0,
+      0.0,
+      0.0,
+      0.44,
+      0.0,
+      0.0,
+      0.0,
+      0.34,
+      0.0,
+      -0.494,
+      0.0,
+      0.0,
+      0.44,
+      0.34
+    ],
+    "quote_sentiments": [
+      0.856,
+      0.0,
+      0.0,
+      0.866,
+      0.34,
+      0.502
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 30.5,
+    "life_stage": "Chapter 12: 2018-2019",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2020,
+    "avg_sentiment": 0.198,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.0,
+      0.527,
+      0.0,
+      0.421,
+      0.421,
+      0.0,
+      0.0,
+      -0.402,
+      0.0
+    ],
+    "quote_sentiments": [
+      0.445,
+      -0.325,
+      0.0,
+      0.788,
+      0.625,
+      0.659,
+      0.754,
+      -0.155
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 24.0,
+    "life_stage": "Chapter 13: 2020-2020",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2021,
+    "avg_sentiment": 0.118,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.361,
+      0.0,
+      0.649,
+      0.0,
+      0.0,
+      -0.557,
+      0.459,
+      0.477,
+      0.572,
+      0.0,
+      0.0,
+      0.0,
+      0.459,
+      -0.599,
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [
+      0.0,
+      0.0,
+      0.459,
+      0.0,
+      0.681
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 30.0,
+    "life_stage": "Chapter 14: 2021-2021",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2022,
+    "avg_sentiment": 0.07,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.542,
+      0.44,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 17.5,
+    "life_stage": "Chapter 15: 2022-2022",
+    "is_turning_point": true,
+    "turning_point_type": "redemptive"
+  },
+  {
+    "year": 2023,
+    "avg_sentiment": 0.193,
+    "milestone_sentiments": [
+      0.599,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.751
+    ],
+    "quote_sentiments": [
+      0.0
+    ],
+    "dominant_emotion": "neutral",
+    "intensity_score": 12.5,
+    "life_stage": "Chapter 16: 2023-2023",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2024,
+    "avg_sentiment": -0.048,
+    "milestone_sentiments": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      -0.527,
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 17.0,
+    "life_stage": "Chapter 17: 2024-2024",
+    "is_turning_point": false,
+    "turning_point_type": null
+  },
+  {
+    "year": 2025,
+    "avg_sentiment": -0.058,
+    "milestone_sentiments": [
+      0.0,
+      -0.572,
+      0.0,
+      0.0,
+      0.0,
+      0.477,
+      0.0,
+      -0.542,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 13.0,
+    "life_stage": "Chapter 18: 2025-2025",
+    "is_turning_point": true,
+    "turning_point_type": "contaminated"
+  },
+  {
+    "year": 2026,
+    "avg_sentiment": 0.0,
+    "milestone_sentiments": [
+      0.0
+    ],
+    "quote_sentiments": [],
+    "dominant_emotion": "",
+    "intensity_score": 3.0,
+    "life_stage": "Chapter 19: 2026",
+    "is_turning_point": false,
+    "turning_point_type": null
+  }
+]

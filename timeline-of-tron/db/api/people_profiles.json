@@ -1,0 +1,4017 @@
+{
+  "Aimee": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Alison Bertsch": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Angela Hibbert": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Arthur Knott (Artie)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2018,
+      "last_year": 2018,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2018
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Ashley Hoppe": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Aunt Darlene": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Bethany Schon": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Blake": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2020,
+      "last_year": 2020,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2020
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Bobby Vetrano": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Bojana Beric (Prof. Beric)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Brian": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Buck": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Chef Lanza": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Chris Adams": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Chris Arbach (Topher)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Chris James": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Cousin Nick & Samantha": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2011,
+      "last_year": 2011,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2011
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2011,
+        "context": "Cousin Nick married Samantha (Jul 2-3)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "D Turner": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Dan Farnkopf": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2005,
+      "last_year": 2021,
+      "span": 16,
+      "total_mentions": 7,
+      "peak_year": 2021
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Dan Spengeman": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2005,
+      "last_year": 2021,
+      "span": 16,
+      "total_mentions": 7,
+      "peak_year": 2021
+    },
+    "timeline": [
+      {
+        "year": 2015,
+        "event": "Dan Spengeman: Comedian of the Year",
+        "event_type": "award"
+      },
+      {
+        "year": 2016,
+        "event": "Spengeman-Mullins wedding",
+        "event_type": "social"
+      }
+    ],
+    "highlights": [
+      "Won Comedian of the Year (2015)",
+      "Wedding: Spengeman-Mullins (2016)",
+      "Pole Position Invitational namesake"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "inner_circle",
+        "weight": 2
+      },
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 5
+      },
+      {
+        "connected_to": "Danny Sponge",
+        "relationship_type": "co-occurrence",
+        "weight": 5
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2015,
+        "context": "Dan Spengeman: Comedian of the Year",
+        "count": 5
+      },
+      {
+        "with": "Danny Sponge",
+        "year": 2015,
+        "context": "Dan Spengeman: Comedian of the Year",
+        "count": 5
+      }
+    ],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2015,
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2018,
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2015,
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2018,
+        "note": ""
+      }
+    ],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Danny Sponge": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2021,
+      "last_year": 2021,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2021
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 2
+      },
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 5
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2015,
+        "context": "Dan Spengeman: Comedian of the Year",
+        "count": 5
+      },
+      {
+        "with": "Dan Spengeman",
+        "year": 2015,
+        "context": "Dan Spengeman: Comedian of the Year",
+        "count": 5
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Dave Eldracher": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Diana DiBuccio": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2008,
+      "last_year": 2014,
+      "span": 6,
+      "total_mentions": 2,
+      "peak_year": 2008
+    },
+    "timeline": [],
+    "highlights": [
+      "Best Laughs: 3-time winner (2008, 2019, 2020)",
+      "Recurring presence at celebrations"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "inner_circle",
+        "weight": 4
+      },
+      {
+        "connected_to": "Valerie Winston (ValPal)",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Valerie Winston (ValPal)",
+        "year": 2014,
+        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "count": 2
+      }
+    ],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2008,
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2019,
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2020,
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2008,
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2019,
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2020,
+        "note": ""
+      }
+    ],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Dr. Wenslauskas": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Edwards": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": [
+      {
+        "post_title": "Timeline XVII (2020)",
+        "excerpt": "So energizing to sense the energy you bring to life",
+        "year": 2020
+      }
+    ]
+  },
+  "Ellen Carter": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Fitz": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Gerald Lewis": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Grace": {
+    "basic": {
+      "category": "family",
+      "relation": "Sister",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2020,
+      "last_year": 2020,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2020
+    },
+    "timeline": [],
+    "highlights": [
+      "Graduated high school (2020)"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "family",
+        "weight": 1
+      },
+      {
+        "connected_to": "Megan",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Megan",
+        "year": 2020,
+        "context": "Grace & Megan graduate high school",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Grammy Nancy": {
+    "basic": {
+      "category": "family",
+      "relation": "Grandmother",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [
+      {
+        "year": 2022,
+        "event": "Gram's 90th birthday",
+        "event_type": "milestone"
+      }
+    ],
+    "highlights": [
+      "Gram's 90th birthday (2022)",
+      "Passed away Oct 21, 2024 at 11:57 PM",
+      "92nd birthday celebration (Nov 12, 2024)"
+    ],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Grandma 'Mama' Blanca": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2013,
+      "last_year": 2013,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2013
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Grandma Theresa",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Grandma Irene",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma Theresa",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma Irene",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Grandma Irene": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2013,
+      "last_year": 2013,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2013
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Grandma Theresa",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma Theresa",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma 'Mama' Blanca",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Grandma Theresa": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2013,
+      "last_year": 2013,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2013
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      },
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma Irene",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma 'Mama' Blanca",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Grant Cornero (GrantMan)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Greg": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Holden": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Jackie Amorino": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Jake Mauro": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [
+      {
+        "song": "Emotions",
+        "artist": "Mariah Carey",
+        "story": "Introduced by Rob 'Rupert' Knott, one of the first times with Jake was near a computer. He replayed the live version of 'Emotions' over a dozen times. A personal revival in Mariah Carey's music commenced.",
+        "year": 2011
+      }
+    ],
+    "lj_comments": []
+  },
+  "James Butler (Boofer)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Japheth": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Jesse D": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "JesseKay Paz": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [
+      "WWE fan"
+    ],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Jill (Toilet Paper)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Joe Corcione (Giuseppe NJ)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Johnny Nash": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2014
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "John Tronolone",
+        "year": 2014,
+        "context": "Johnny Nash: most influential friend of 2014",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Juan Londono (Muffin Man)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [
+      "Tennis partner across many years",
+      "Housewarming party with Pam (2013)",
+      "U.S. Open companion",
+      "NJIT 12-hour visit (2007)",
+      "36th birthday Hamilton Inn brunch (2019)"
+    ],
+    "connections": [
+      {
+        "connected_to": "Steve and Stacey",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Steve Pham",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Juan Londono (Muffin Man)",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Steve and Stacey",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Steve Pham",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Steve and Stacey",
+        "year": 2009,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Steve Pham",
+        "year": 2009,
+        "context": "",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Julia Dennabuam": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2019,
+      "last_year": 2024,
+      "span": 5,
+      "total_mentions": 2,
+      "peak_year": 2019
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Julian",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Julian",
+        "year": 2019,
+        "context": "Nephew Julian John Tronolone born (Aug 23); Julian's 5th birthday (Aug 25)",
+        "count": 2
+      },
+      {
+        "with": "John Tronolone",
+        "year": 2019,
+        "context": "Nephew Julian John Tronolone born (Aug 23)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Julian": {
+    "basic": {
+      "category": "family",
+      "relation": "Nephew (Michael's son)",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2019,
+      "last_year": 2024,
+      "span": 5,
+      "total_mentions": 2,
+      "peak_year": 2019
+    },
+    "timeline": [],
+    "highlights": [
+      "1st birthday (2020)",
+      "5th birthday (Aug 25, 2024)"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "family",
+        "weight": 2
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Julia Dennabuam",
+        "year": 2019,
+        "context": "Nephew Julian John Tronolone born (Aug 23); Julian's 5th birthday (Aug 25)",
+        "count": 2
+      },
+      {
+        "with": "John Tronolone",
+        "year": 2019,
+        "context": "Nephew Julian John Tronolone born (Aug 23)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Justin Pierce": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kathryn Kitty Nogueira": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Katie Grand": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kenny Stetz": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kevin & Leah (KMJ & LN)": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2017,
+      "last_year": 2020,
+      "span": 3,
+      "total_mentions": 2,
+      "peak_year": 2017
+    },
+    "timeline": [],
+    "highlights": [
+      "Travel companions to Utah/Colorado",
+      "10+ year friendship",
+      "Entire relationship arc documented from outside perspective"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "inner_circle",
+        "weight": 2
+      },
+      {
+        "connected_to": "Kevin Adams",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      },
+      {
+        "connected_to": "Kevin Megill (KMJ)",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      },
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Kevin Adams",
+        "year": 2017,
+        "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "count": 2
+      },
+      {
+        "with": "Kevin Megill (KMJ)",
+        "year": 2017,
+        "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "count": 2
+      },
+      {
+        "with": "Ma",
+        "year": 2020,
+        "context": "Kevin & Leah married Feb 29 (leap day)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kevin Abrams": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2017,
+      "last_year": 2020,
+      "span": 3,
+      "total_mentions": 2,
+      "peak_year": 2017
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kevin Adams": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2017,
+      "last_year": 2020,
+      "span": 3,
+      "total_mentions": 2,
+      "peak_year": 2017
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Kevin Megill (KMJ)",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      },
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Kevin Megill (KMJ)",
+        "year": 2017,
+        "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "count": 2
+      },
+      {
+        "with": "Kevin & Leah (KMJ & LN)",
+        "year": 2017,
+        "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "count": 2
+      },
+      {
+        "with": "Ma",
+        "year": 2020,
+        "context": "Kevin & Leah married Feb 29 (leap day)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kevin Grand": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2017,
+      "last_year": 2020,
+      "span": 3,
+      "total_mentions": 2,
+      "peak_year": 2017
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kevin Megill (KMJ)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2017,
+      "last_year": 2020,
+      "span": 3,
+      "total_mentions": 2,
+      "peak_year": 2017
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Ma",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Kevin & Leah (KMJ & LN)",
+        "year": 2017,
+        "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "count": 2
+      },
+      {
+        "with": "Kevin Adams",
+        "year": 2017,
+        "context": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "count": 2
+      },
+      {
+        "with": "Ma",
+        "year": 2020,
+        "context": "Kevin & Leah married Feb 29 (leap day)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [
+      {
+        "song": "Say",
+        "artist": "John Mayer",
+        "story": "During a pre-dodgeball meal at MarinaGrille off Route 70 in Brick, KMJ became the 3rd person to find out. Once the check was paid, the car radio played 'Say' with its perfect chorus. 'I said exactly what I needed to say; now I look back with a smile.'",
+        "year": 2008
+      }
+    ],
+    "lj_comments": []
+  },
+  "Kimmy Canzanella": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kristen (Cocoa's Mommy)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Kristen Driscoll": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Lauren Stopa": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2007,
+      "last_year": 2021,
+      "span": 14,
+      "total_mentions": 3,
+      "peak_year": 2007
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      },
+      {
+        "connected_to": "Lauren Winston",
+        "relationship_type": "co-occurrence",
+        "weight": 5
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Lauren Winston",
+        "year": 2007,
+        "context": "Lauren Winston turned 21 (Apr 13); Lauren Winston: Comedian of the Year",
+        "count": 5
+      },
+      {
+        "with": "Rob",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Phil Campanella",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Rob Phillips (Robert)",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [
+      {
+        "song": "Be My Lover",
+        "artist": "La Bouche",
+        "story": "At DODGEBALL 70 (Dec 30, 2006), 'Be My Lover' filled the speakers; Stopa immediately took to the court with a glowing smile exclaiming 'I love this song!' Fellow 2011 ECDElite Hall of Fame classmate.",
+        "year": 2006
+      }
+    ],
+    "lj_comments": []
+  },
+  "Lauren Winston": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2007,
+      "last_year": 2021,
+      "span": 14,
+      "total_mentions": 3,
+      "peak_year": 2007
+    },
+    "timeline": [
+      {
+        "year": 2007,
+        "event": "Lauren Winston turned 21 (Apr 13)",
+        "event_type": "social"
+      },
+      {
+        "year": 2016,
+        "event": "Lauren Winston: Comedian of the Year",
+        "event_type": "award"
+      },
+      {
+        "year": 2021,
+        "event": "Lauren Winston: Comedian of the Year",
+        "event_type": "award"
+      }
+    ],
+    "highlights": [
+      "Comedian of the Year: 2-time winner (2016, 2021)"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "inner_circle",
+        "weight": 3
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Lauren Stopa",
+        "year": 2007,
+        "context": "Lauren Winston turned 21 (Apr 13); Lauren Winston: Comedian of the Year",
+        "count": 5
+      }
+    ],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2016,
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2021,
+        "note": ""
+      }
+    ],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Lawrence": {
+    "basic": {
+      "category": "family",
+      "relation": "Nephew (Michael's son)",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2021,
+      "last_year": 2021,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2021
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "family",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Lenny": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Liam Yochum": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Lindsay & Kyle Szcakstza": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Lisa": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Ma": {
+    "basic": {
+      "category": "family",
+      "relation": "Mother",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [
+      {
+        "year": 2005,
+        "event": "Difficult period after WrestleMania attendance",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2006,
+        "event": "FINS Friday gatherings ongoing since March 2006",
+        "event_type": "social"
+      },
+      {
+        "year": 2007,
+        "event": "WrestleMania 23 in Detroit (3rd WM)",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2007,
+        "event": "Moved back to Mom's permanently (Jul 1)",
+        "event_type": "social"
+      },
+      {
+        "year": 2008,
+        "event": "WrestleMania XXIV in Florida (4th WM)",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2008,
+        "event": "First semester of Health Studies completed at MU (May 8)",
+        "event_type": "social"
+      },
+      {
+        "year": 2009,
+        "event": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2009,
+        "event": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
+        "event_type": "social"
+      },
+      {
+        "year": 2009,
+        "event": "Inducted into Eta Sigma Gamma at MU (Dec 16)",
+        "event_type": "social"
+      },
+      {
+        "year": 2009,
+        "event": "Bowling 255 during a snowstorm (Mar 1)",
+        "event_type": "social"
+      },
+      {
+        "year": 2009,
+        "event": "Grandmother's 77th birthday (Nov 13)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2010,
+        "event": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2010,
+        "event": "WrestleMania XXVI in Arizona (939 photos)",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2010,
+        "event": "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
+        "event_type": "social"
+      },
+      {
+        "year": 2010,
+        "event": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
+        "event_type": "social"
+      },
+      {
+        "year": 2010,
+        "event": "Brother Michael graduated from Kean University (May 13)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2011,
+        "event": "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
+        "event_type": "social"
+      },
+      {
+        "year": 2011,
+        "event": "Cousin Nick married Samantha (Jul 2-3)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2011,
+        "event": "Fell from a pickup truck (May 21)",
+        "event_type": "social"
+      },
+      {
+        "year": 2012,
+        "event": "Activities & Volunteer Coordinator promotion (May)",
+        "event_type": "social"
+      },
+      {
+        "year": 2013,
+        "event": "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2013,
+        "event": "Grandma Theresa passed away (Jun 10-15)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2013,
+        "event": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
+        "event_type": "social"
+      },
+      {
+        "year": 2013,
+        "event": "Pilates Round 1 \u2014 only male participant",
+        "event_type": "social"
+      },
+      {
+        "year": 2014,
+        "event": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+        "event_type": "travel"
+      },
+      {
+        "year": 2014,
+        "event": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+        "event_type": "social"
+      },
+      {
+        "year": 2015,
+        "event": "USVI & Bahamas cruise (rated 10/10)",
+        "event_type": "travel"
+      },
+      {
+        "year": 2015,
+        "event": "Dan Spengeman: Comedian of the Year",
+        "event_type": "award"
+      },
+      {
+        "year": 2016,
+        "event": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2016,
+        "event": "Manager of the Year award",
+        "event_type": "award"
+      },
+      {
+        "year": 2016,
+        "event": "Spengeman-Mullins wedding",
+        "event_type": "social"
+      },
+      {
+        "year": 2017,
+        "event": "WrestleMania 33 (Apr 2)",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2017,
+        "event": "California trip 600+ miles for Matt & Gina wedding",
+        "event_type": "travel"
+      },
+      {
+        "year": 2017,
+        "event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
+        "event_type": "social"
+      },
+      {
+        "year": 2018,
+        "event": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "event_type": "travel"
+      },
+      {
+        "year": 2018,
+        "event": "Brother Michael married Maggie (Jun 29)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2019,
+        "event": "1,000th CHA game vs Pops Tronolone (May 22)",
+        "event_type": "social"
+      },
+      {
+        "year": 2019,
+        "event": "7th Major ECD championship (Aug 17)",
+        "event_type": "ecd"
+      },
+      {
+        "year": 2019,
+        "event": "Wisconsin Trip 1: Moore-Tronolone wedding (May 31-Jun 2)",
+        "event_type": "travel"
+      },
+      {
+        "year": 2019,
+        "event": "Weezer concert at sold-out MSG (Mar 12)",
+        "event_type": "social"
+      },
+      {
+        "year": 2020,
+        "event": "Kevin & Leah married Feb 29 (leap day)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2020,
+        "event": "90th WWE event (Mar 8, 17th with RL)",
+        "event_type": "wwe"
+      },
+      {
+        "year": 2020,
+        "event": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
+        "event_type": "social"
+      },
+      {
+        "year": 2020,
+        "event": "Assisted Living Manager at Sunrise of Jackson (started Sep 28)",
+        "event_type": "social"
+      },
+      {
+        "year": 2020,
+        "event": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
+        "event_type": "social"
+      },
+      {
+        "year": 2021,
+        "event": "218-round ping pong match",
+        "event_type": "social"
+      },
+      {
+        "year": 2024,
+        "event": "Spain trip (Lisbon, Madrid)",
+        "event_type": "travel"
+      },
+      {
+        "year": 2024,
+        "event": "Grandmother passed (Oct 21, 11:57 PM, age 92)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2025,
+        "event": "Mother's 70th birthday",
+        "event_type": "milestone"
+      }
+    ],
+    "highlights": [
+      "70th birthday (2025)"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "family",
+        "weight": 8
+      },
+      {
+        "connected_to": "Michael",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      },
+      {
+        "connected_to": "Mike Krott",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Maggie",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      },
+      {
+        "connected_to": "Matt (Physical Therapist)",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      },
+      {
+        "connected_to": "Matt (introduced Jul 3, 2019)",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      },
+      {
+        "connected_to": "Terra Bergquist",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Ryan Letsche",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Ryan Letsche",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ryan Letsche (RyGuy)",
+        "year": 2008,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Ryan Letsche",
+        "year": 2008,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Michael",
+        "year": 2010,
+        "context": "Brother Michael graduated from Kean University (May 13); Brother Michael married Maggie (Jun 29)",
+        "count": 2
+      },
+      {
+        "with": "Cousin Nick & Samantha",
+        "year": 2011,
+        "context": "Cousin Nick married Samantha (Jul 2-3)",
+        "count": 1
+      },
+      {
+        "with": "Grandma Theresa",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma Irene",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Grandma 'Mama' Blanca",
+        "year": 2013,
+        "context": "Grandma Theresa passed away (Jun 10-15)",
+        "count": 1
+      },
+      {
+        "with": "Mike 'Sputz' Krott",
+        "year": 2014,
+        "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+        "count": 1
+      },
+      {
+        "with": "Maggie",
+        "year": 2014,
+        "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30); Brother Michael married Maggie (Jun 29)",
+        "count": 2
+      },
+      {
+        "with": "Dan Spengeman",
+        "year": 2015,
+        "context": "Dan Spengeman: Comedian of the Year",
+        "count": 5
+      },
+      {
+        "with": "Danny Sponge",
+        "year": 2015,
+        "context": "Dan Spengeman: Comedian of the Year",
+        "count": 5
+      },
+      {
+        "with": "Matt (Physical Therapist)",
+        "year": 2017,
+        "context": "California trip 600+ miles for Matt & Gina wedding",
+        "count": 2
+      },
+      {
+        "with": "Matt (introduced Jul 3, 2019)",
+        "year": 2017,
+        "context": "California trip 600+ miles for Matt & Gina wedding",
+        "count": 2
+      },
+      {
+        "with": "Terra Bergquist",
+        "year": 2018,
+        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "count": 1
+      },
+      {
+        "with": "Kevin & Leah (KMJ & LN)",
+        "year": 2020,
+        "context": "Kevin & Leah married Feb 29 (leap day)",
+        "count": 1
+      },
+      {
+        "with": "Kevin Adams",
+        "year": 2020,
+        "context": "Kevin & Leah married Feb 29 (leap day)",
+        "count": 1
+      },
+      {
+        "with": "Kevin Megill (KMJ)",
+        "year": 2020,
+        "context": "Kevin & Leah married Feb 29 (leap day)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Maggie": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2014,
+      "last_year": 2018,
+      "span": 4,
+      "total_mentions": 2,
+      "peak_year": 2014
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 2
+      },
+      {
+        "connected_to": "Mike Krott",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Michael",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Mike 'Sputz' Krott",
+        "year": 2014,
+        "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+        "count": 1
+      },
+      {
+        "with": "Ma",
+        "year": 2014,
+        "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30); Brother Michael married Maggie (Jun 29)",
+        "count": 2
+      },
+      {
+        "with": "Michael",
+        "year": 2018,
+        "context": "Brother Michael married Maggie (Jun 29)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Marty": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Matt (Physical Therapist)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2017,
+      "last_year": 2017,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2017
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      },
+      {
+        "connected_to": "Matt (introduced Jul 3, 2019)",
+        "relationship_type": "co-occurrence",
+        "weight": 2
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Matt (introduced Jul 3, 2019)",
+        "year": 2017,
+        "context": "California trip 600+ miles for Matt & Gina wedding",
+        "count": 2
+      },
+      {
+        "with": "Ma",
+        "year": 2017,
+        "context": "California trip 600+ miles for Matt & Gina wedding",
+        "count": 2
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Matt (introduced Jul 3, 2019)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2017,
+      "last_year": 2017,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2017
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2017,
+        "context": "California trip 600+ miles for Matt & Gina wedding",
+        "count": 2
+      },
+      {
+        "with": "Matt (Physical Therapist)",
+        "year": 2017,
+        "context": "California trip 600+ miles for Matt & Gina wedding",
+        "count": 2
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Megan": {
+    "basic": {
+      "category": "family",
+      "relation": "Sister",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2020,
+      "last_year": 2022,
+      "span": 2,
+      "total_mentions": 2,
+      "peak_year": 2020
+    },
+    "timeline": [],
+    "highlights": [
+      "Brookdale graduation (2022)",
+      "Graduated high school (2020)"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "family",
+        "weight": 2
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Grace",
+        "year": 2020,
+        "context": "Grace & Megan graduate high school",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Megill": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Melissa Kerr": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2009,
+      "last_year": 2009,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2009
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Michael": {
+    "basic": {
+      "category": "family",
+      "relation": "Brother",
+      "birth_year": 1987
+    },
+    "arc": {
+      "first_year": 2010,
+      "last_year": 2018,
+      "span": 8,
+      "total_mentions": 2,
+      "peak_year": 2010
+    },
+    "timeline": [
+      {
+        "year": 2010,
+        "event": "Brother Michael graduated from Kean University (May 13)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2018,
+        "event": "Brother Michael married Maggie (Jun 29)",
+        "event_type": "milestone"
+      }
+    ],
+    "highlights": [
+      "Married Maggie (2018)"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "family",
+        "weight": 2
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2010,
+        "context": "Brother Michael graduated from Kean University (May 13); Brother Michael married Maggie (Jun 29)",
+        "count": 2
+      },
+      {
+        "with": "Maggie",
+        "year": 2018,
+        "context": "Brother Michael married Maggie (Jun 29)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Michelle (Olive Garden Route 35)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Michelle Mullins (Muffins)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Mike Krott": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2014
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Mr. Mak": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Mrs. Amorino": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Mrs. Brennessel": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Murtha 'The Machine'": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "NeonGreen Johnnie": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "P-A-M-U-L-A (Pamula)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Pancho": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Pete and Larry": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Phil Campanella": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2007,
+      "last_year": 2010,
+      "span": 3,
+      "total_mentions": 2,
+      "peak_year": 2007
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Rob",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Lauren Stopa",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Rob",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Rob",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Lauren Stopa",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Rob Phillips (Robert)",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Punter Wolf": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "RK (Rob Knott)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "RL (Letsche)": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [
+      {
+        "year": 2012,
+        "event": "ECD reopened with 'WORLD TOUR' (Apr 7)",
+        "event_type": "ecd"
+      },
+      {
+        "year": 2020,
+        "event": "90th WWE event (Mar 8, 17th with RL)",
+        "event_type": "wwe"
+      }
+    ],
+    "highlights": [
+      "17 events attended together",
+      "Regular presence in wrestling entries"
+    ],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Ray Marzarella": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2014
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Rob": {
+    "basic": {
+      "category": "partner",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2011,
+      "last_year": 2021,
+      "span": 10,
+      "total_mentions": 2,
+      "peak_year": 2011
+    },
+    "timeline": [
+      {
+        "year": 2008,
+        "event": "Car accident on West Park Avenue (Nov 4)",
+        "event_type": "social"
+      },
+      {
+        "year": 2011,
+        "event": "First meal with Rob at Ocean Bay Diner (Jan 1)",
+        "event_type": "social"
+      },
+      {
+        "year": 2011,
+        "event": "RK's 22nd birthday (Dec 14)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2012,
+        "event": "Record 18 rounds at Orchard Park (Oct 13)",
+        "event_type": "social"
+      },
+      {
+        "year": 2013,
+        "event": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+        "event_type": "travel"
+      },
+      {
+        "year": 2019,
+        "event": "RK's 30th birthday in Atlantic City (Dec 15-16)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2021,
+        "event": "10-year anniversary with Rob (Jan 15)",
+        "event_type": "social"
+      },
+      {
+        "year": 2021,
+        "event": "Danny won inaugural 'RK Quiz' (Dec 11)",
+        "event_type": "social"
+      },
+      {
+        "year": 2021,
+        "event": "Alexandria Virginia work assignment (Sep 20-23)",
+        "event_type": "social"
+      },
+      {
+        "year": 2022,
+        "event": "Connecticut work assignment (Sunrise Wilton)",
+        "event_type": "social"
+      }
+    ],
+    "highlights": [
+      "10-year anniversary: 2021",
+      "20-year anniversary: 2025"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "partner",
+        "weight": 12
+      },
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "other",
+        "weight": 1
+      },
+      {
+        "connected_to": "Lauren Stopa",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Rob",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      },
+      {
+        "connected_to": "Lauren Stopa",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Lauren Stopa",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Rob Phillips (Robert)",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Phil Campanella",
+        "year": 2021,
+        "context": "",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Robert Phillips": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Rupert": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [
+      "Tennis partner",
+      "SummerSlam companion",
+      "Southeast Asia trip",
+      "The RK Quiz originated with him",
+      "Birthday: December 11",
+      "Hong Kong trip (2020)"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "inner_circle",
+        "weight": 2
+      }
+    ],
+    "co_occurrences": [],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2011,
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2012,
+        "note": "Two-time defending champion; later eliminated from competition"
+      }
+    ],
+    "songs": [],
+    "lj_comments": []
+  },
+  "RyGuy (Brody's Big Brother)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Ryan Letsche": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [
+      "FAB4 original member",
+      "WrestleMania travel companion (multiple years)",
+      "Bachelor party in AC (2013)",
+      "25th birthday multi-day celebration (2010)",
+      "Social events across 20+ years"
+    ],
+    "connections": [
+      {
+        "connected_to": "Ryan Letsche",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Ryan Letsche (RyGuy)",
+        "year": 2008,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Ma",
+        "year": 2008,
+        "context": "",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Sabu Avakian": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Sascha Basista": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Sean": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Shane": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": [
+      {
+        "post_title": "Timeline XVII (2020)",
+        "excerpt": "Shit I need to do this. It's so cool",
+        "year": 2020
+      }
+    ]
+  },
+  "StepPa": {
+    "basic": {
+      "category": "family",
+      "relation": "Stepfather",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Steph (Otis Spunkmeyer Cookies)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Steve Kass": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Steve Pham": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [
+      {
+        "connected_to": "Steve and Stacey",
+        "relationship_type": "co-occurrence",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Steve and Stacey",
+        "year": 2009,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Juan Londono (Muffin Man)",
+        "year": 2009,
+        "context": "",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Steve and Stacey": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [
+      {
+        "with": "Juan Londono (Muffin Man)",
+        "year": 2009,
+        "context": "",
+        "count": 1
+      },
+      {
+        "with": "Steve Pham",
+        "year": 2009,
+        "context": "",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "T. Adams (Greek)": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "TJ Auchinleck": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Terra Bergquist": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2018,
+      "last_year": 2018,
+      "span": 0,
+      "total_mentions": 1,
+      "peak_year": 2018
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [
+      {
+        "with": "Ma",
+        "year": 2018,
+        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "count": 1
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "The Pops": {
+    "basic": {
+      "category": "family",
+      "relation": "Father",
+      "birth_year": 1957
+    },
+    "arc": {
+      "first_year": 2006,
+      "last_year": 2025,
+      "span": 19,
+      "total_mentions": 31,
+      "peak_year": 2008
+    },
+    "timeline": [
+      {
+        "year": 2007,
+        "event": "Dad's surprise 50th birthday (Jul 29)",
+        "event_type": "milestone"
+      },
+      {
+        "year": 2008,
+        "event": "First beer shared with The Pops (Aug 21)",
+        "event_type": "social"
+      },
+      {
+        "year": 2014,
+        "event": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+        "event_type": "social"
+      },
+      {
+        "year": 2014,
+        "event": "The Pops: Comedian of the Year (2nd straight year)",
+        "event_type": "award"
+      },
+      {
+        "year": 2019,
+        "event": "1,000th CHA game vs Pops Tronolone (May 22)",
+        "event_type": "social"
+      }
+    ],
+    "highlights": [
+      "60th birthday at Woodloch Pines",
+      "Award: Comedian of the Year 2014"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "family",
+        "weight": 5
+      }
+    ],
+    "co_occurrences": [],
+    "awards": [
+      {
+        "category": "comedian_of_the_year",
+        "year": 2009,
+        "note": ""
+      },
+      {
+        "category": "comedian_of_the_year",
+        "year": 2017,
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2009,
+        "note": ""
+      },
+      {
+        "category": "best_laughs",
+        "year": 2017,
+        "note": ""
+      }
+    ],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Thomas": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Tim Moore": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2004,
+      "last_year": 2025,
+      "span": 21,
+      "total_mentions": 5,
+      "peak_year": 2004
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Tom Macaluso": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": 2008,
+      "last_year": 2017,
+      "span": 9,
+      "total_mentions": 2,
+      "peak_year": 2008
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Tommy & Johnny": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Travis Mills": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Tyler Ponte": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Valerie Winston (ValPal)": {
+    "basic": {
+      "category": "inner_circle",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [
+      "Super Bowl LVII companion (2023)",
+      "Appears across virtually every Timeline",
+      "Multi-decade friendship",
+      "Award: Best Laughs nominee"
+    ],
+    "connections": [
+      {
+        "connected_to": "John Tronolone",
+        "relationship_type": "inner_circle",
+        "weight": 1
+      }
+    ],
+    "co_occurrences": [
+      {
+        "with": "Diana DiBuccio",
+        "year": 2014,
+        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "count": 2
+      }
+    ],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Vicki Oliver": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Victoria Grace Tronolone": {
+    "basic": {
+      "category": "family",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Walaa": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  },
+  "Wolf": {
+    "basic": {
+      "category": "other",
+      "relation": "",
+      "birth_year": null
+    },
+    "arc": {
+      "first_year": null,
+      "last_year": null,
+      "span": 0,
+      "total_mentions": 0,
+      "peak_year": null
+    },
+    "timeline": [],
+    "highlights": [],
+    "connections": [],
+    "co_occurrences": [],
+    "awards": [],
+    "songs": [],
+    "lj_comments": []
+  }
+}

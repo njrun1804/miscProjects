@@ -1,0 +1,146 @@
+[
+  {
+    "category": "other",
+    "count": 50,
+    "avg_sentiment": 0.072,
+    "max_sentiment": 0.842,
+    "min_sentiment": -0.572,
+    "example_positive": "Won inaugural HERO of the Year (Jan 27)",
+    "example_negative": "'2010 and 2013 will no doubt stand the test of time'"
+  },
+  {
+    "category": "travel",
+    "count": 31,
+    "avg_sentiment": 0.023,
+    "max_sentiment": 0.856,
+    "min_sentiment": -0.637,
+    "example_positive": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
+    "example_negative": "Kia Soul hits 20,000 miles (Dec 15)"
+  },
+  {
+    "category": "wwe",
+    "count": 21,
+    "avg_sentiment": 0.099,
+    "max_sentiment": 0.637,
+    "min_sentiment": -0.361,
+    "example_positive": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
+    "example_negative": "Difficult period after WrestleMania attendance"
+  },
+  {
+    "category": "sports",
+    "count": 20,
+    "avg_sentiment": 0.203,
+    "max_sentiment": 0.765,
+    "min_sentiment": null,
+    "example_positive": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+    "example_negative": "27 bowling games in a single day"
+  },
+  {
+    "category": "family",
+    "count": 19,
+    "avg_sentiment": 0.133,
+    "max_sentiment": 0.751,
+    "min_sentiment": null,
+    "example_positive": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
+    "example_negative": "Moved back to Mom's permanently (Jul 1)"
+  },
+  {
+    "category": "ecd",
+    "count": 16,
+    "avg_sentiment": 0.068,
+    "max_sentiment": 0.44,
+    "min_sentiment": null,
+    "example_positive": "MU Co-Ed Dodgeball League championship (Nov 19, PondScum)",
+    "example_negative": "EastCoastDodgeball founded"
+  },
+  {
+    "category": "relationship",
+    "count": 13,
+    "avg_sentiment": 0.022,
+    "max_sentiment": 0.652,
+    "min_sentiment": -0.557,
+    "example_positive": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
+    "example_negative": "First meal with Rob at Ocean Bay Diner (Jan 1)"
+  },
+  {
+    "category": "entertainment",
+    "count": 11,
+    "avg_sentiment": 0.115,
+    "max_sentiment": 0.599,
+    "min_sentiment": -0.527,
+    "example_positive": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced'",
+    "example_negative": "Wicked on Broadway"
+  },
+  {
+    "category": "career",
+    "count": 11,
+    "avg_sentiment": 0.065,
+    "max_sentiment": 0.649,
+    "min_sentiment": -0.477,
+    "example_positive": "Sr. Resident Care Coordinator promotion (applied Jul 11, accepted Jul 23)",
+    "example_negative": "Broken left pinky \u2014 volleyball career paused (Mar 26)"
+  },
+  {
+    "category": "social",
+    "count": 9,
+    "avg_sentiment": -0.045,
+    "max_sentiment": null,
+    "min_sentiment": -0.402,
+    "example_positive": "5 weddings attended in one year",
+    "example_negative": "Pasta Passion & Pistols Murder Mystery NYE (Dec 31)"
+  },
+  {
+    "category": "personal",
+    "count": 7,
+    "avg_sentiment": 0.039,
+    "max_sentiment": 0.271,
+    "min_sentiment": null,
+    "example_positive": "Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 near-anorexia. Letsche friendship repaired at Rumble '08. First appearance of 'The power of an internal desire liberated!' \u2014 March 2008.",
+    "example_negative": "Came out in 2008; KMJ was 3rd person to know"
+  },
+  {
+    "category": "health",
+    "count": 7,
+    "avg_sentiment": 0.011,
+    "max_sentiment": 0.527,
+    "min_sentiment": -0.25,
+    "example_positive": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
+    "example_negative": "Torn glenoid labrum confirmed via MRI (Aug 2)"
+  },
+  {
+    "category": "music_awards",
+    "count": 5,
+    "avg_sentiment": 0.357,
+    "max_sentiment": 0.586,
+    "min_sentiment": 0.052,
+    "example_positive": "Janet Jackson first Artist of the Year win",
+    "example_negative": "Song of the Year: Tom Petty 'Runnin Down a Dream'"
+  },
+  {
+    "category": "vehicle",
+    "count": 3,
+    "avg_sentiment": -0.504,
+    "max_sentiment": null,
+    "min_sentiment": -0.875,
+    "example_positive": "SUS15H takes its last ride (Dec 24-25)",
+    "example_negative": "Life-altering car accident resulting in panic attacks and anxiety"
+  },
+  {
+    "category": "education",
+    "count": 2,
+    "avg_sentiment": 0.32,
+    "max_sentiment": 0.44,
+    "min_sentiment": 0.2,
+    "example_positive": "First semester of Health Studies completed at MU (May 8)",
+    "example_negative": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)"
+  },
+  {
+    "category": "writing",
+    "count": 1,
+    "avg_sentiment": 0.052,
+    "max_sentiment": 0.052,
+    "min_sentiment": 0.052,
+    "example_positive": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'",
+    "example_negative": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'"
+  }
+]

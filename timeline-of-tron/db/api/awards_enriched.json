@@ -1,0 +1,486 @@
+[
+  {
+    "id": 36,
+    "category": "best_laughs",
+    "year": 2022,
+    "winner": "Valerie Winston, Diana DiBuccio",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 51,
+    "category": "work",
+    "year": 2022,
+    "winner": "#100 Award",
+    "note": null,
+    "related_milestones": [
+      "[\"#100 Award\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 10,
+    "category": "music_artist_of_the_year",
+    "year": 2021,
+    "winner": "Janet Jackson",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 16,
+    "category": "song_of_the_year",
+    "year": 2021,
+    "winner": "Music Sounds Better With You",
+    "note": "Runners-up: Shawn Christopher 'Sweet Freedom', Jet 'Start The Show'. First time runner-up reached #1.",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 28,
+    "category": "comedian_of_the_year",
+    "year": 2021,
+    "winner": "Lauren Winston",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 39,
+    "category": "shocker_of_the_year",
+    "year": 2021,
+    "winner": "Sr. RCC promotion; Message From Rob Phillips; Stopa's Pregnancy Text; Tim's Stand-Up Text",
+    "note": "Second consecutive work-related winner",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 9,
+    "category": "music_artist_of_the_year",
+    "year": 2020,
+    "winner": "Janet Jackson",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 15,
+    "category": "song_of_the_year",
+    "year": 2020,
+    "winner": "Music Sounds Better With You",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 27,
+    "category": "comedian_of_the_year",
+    "year": 2020,
+    "winner": "Diana DiBuccio",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 35,
+    "category": "best_laughs",
+    "year": 2020,
+    "winner": "Diana DiBuccio",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 38,
+    "category": "shocker_of_the_year",
+    "year": 2020,
+    "winner": "COVID Test II; Laver Cup Tickets; Brian's Transfer",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 8,
+    "category": "music_artist_of_the_year",
+    "year": 2019,
+    "winner": "Janet Jackson",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 26,
+    "category": "comedian_of_the_year",
+    "year": 2019,
+    "winner": "Diana DiBuccio",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 34,
+    "category": "best_laughs",
+    "year": 2019,
+    "winner": "Diana DiBuccio",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 7,
+    "category": "music_artist_of_the_year",
+    "year": 2018,
+    "winner": "Janet Jackson",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 25,
+    "category": "comedian_of_the_year",
+    "year": 2018,
+    "winner": "Dan Spengeman",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 33,
+    "category": "best_laughs",
+    "year": 2018,
+    "winner": "Dan Spengeman",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 24,
+    "category": "comedian_of_the_year",
+    "year": 2017,
+    "winner": "The Pops",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 32,
+    "category": "best_laughs",
+    "year": 2017,
+    "winner": "The Pops",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 6,
+    "category": "music_artist_of_the_year",
+    "year": 2016,
+    "winner": "Janet Jackson",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 23,
+    "category": "comedian_of_the_year",
+    "year": 2016,
+    "winner": "Lauren Winston",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 50,
+    "category": "work",
+    "year": 2016,
+    "winner": "Manager of the Year",
+    "note": null,
+    "related_milestones": [
+      "[\"Manager of the Year award\"",
+      "\"Lauren Winston: Comedian of the Year\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 5,
+    "category": "music_artist_of_the_year",
+    "year": 2015,
+    "winner": "Janet Jackson",
+    "note": null,
+    "related_milestones": [
+      "[\"Janet Jackson first Artist of the Year win\"]"
+    ],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 14,
+    "category": "song_of_the_year",
+    "year": 2015,
+    "winner": "All For You, If (Janet Jackson)",
+    "note": "First artist to win for two different songs in same year",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 22,
+    "category": "comedian_of_the_year",
+    "year": 2015,
+    "winner": "Dan Spengeman",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 31,
+    "category": "best_laughs",
+    "year": 2015,
+    "winner": "Dan Spengeman",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 4,
+    "category": "music_artist_of_the_year",
+    "year": 2014,
+    "winner": "Mariah Carey",
+    "note": "Top 2 past 4 years",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 13,
+    "category": "song_of_the_year",
+    "year": 2014,
+    "winner": "",
+    "note": "Most nominations ever (tied with 2013). Janet's 'Alright' was runner-up (also runner-up in 2013).",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 21,
+    "category": "comedian_of_the_year",
+    "year": 2014,
+    "winner": "The Pops (Darrell)",
+    "note": "Second straight year; nominated every year since 2009",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 3,
+    "category": "music_artist_of_the_year",
+    "year": 2013,
+    "winner": "Mariah Carey",
+    "note": "Top 2 three straight years; switched places with Madonna from 2012",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 12,
+    "category": "song_of_the_year",
+    "year": 2013,
+    "winner": "",
+    "note": "Most nominations ever (tied with 2013). First time song from Timeline year won top honors.",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 37,
+    "category": "shocker_of_the_year",
+    "year": 2013,
+    "winner": "",
+    "note": "First time in Timeline history co-winners announced",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 49,
+    "category": "social",
+    "year": 2013,
+    "winner": "'Most Realistic' Halloween Costume ('General' Tronolone)",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 2,
+    "category": "music_artist_of_the_year",
+    "year": 2012,
+    "winner": "Mariah Carey",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 20,
+    "category": "comedian_of_the_year",
+    "year": 2012,
+    "winner": "Rupert",
+    "note": "Two-time defending champion; later eliminated from competition",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 48,
+    "category": "work",
+    "year": 2012,
+    "winner": "Employee of the Month (January)",
+    "note": null,
+    "related_milestones": [
+      "[\"Employee of the Month (Jan)\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 19,
+    "category": "comedian_of_the_year",
+    "year": 2011,
+    "winner": "Rupert",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 46,
+    "category": "external",
+    "year": 2011,
+    "winner": "Bogart's 'Man of March' (Apr 1, sober)",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 47,
+    "category": "ecd",
+    "year": 2011,
+    "winner": "ECDElite Hall of Fame induction (Jun 18)",
+    "note": null,
+    "related_milestones": [
+      "[\"ECDElite Hall of Fame induction (Jun 18)\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 45,
+    "category": "external",
+    "year": 2010,
+    "winner": "Inaugural HERO of the Year",
+    "note": null,
+    "related_milestones": [
+      "[\"Won inaugural HERO of the Year (Jan 27)\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 18,
+    "category": "comedian_of_the_year",
+    "year": 2009,
+    "winner": "The Pops",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 30,
+    "category": "best_laughs",
+    "year": 2009,
+    "winner": "The Pops",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 44,
+    "category": "timeline_award",
+    "year": 2009,
+    "winner": "Video of the Year: SkyDive I",
+    "note": null,
+    "related_milestones": [
+      "[\"SkyDive I at 10",
+      "000 feet (Aug 16) \\u2014 'maybe the happiest 24-span of my life'\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 1,
+    "category": "music_artist_of_the_year",
+    "year": 2008,
+    "winner": "",
+    "note": "Category existed",
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 11,
+    "category": "song_of_the_year",
+    "year": 2008,
+    "winner": "Runnin' Down a Dream",
+    "note": null,
+    "related_milestones": [
+      "[\"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]"
+    ],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 17,
+    "category": "comedian_of_the_year",
+    "year": 2008,
+    "winner": "Diana DiBuccio",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "achievement"
+  },
+  {
+    "id": 29,
+    "category": "best_laughs",
+    "year": 2008,
+    "winner": "Diana DiBuccio",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 42,
+    "category": "timeline_award",
+    "year": 2008,
+    "winner": "Day of the Year: Thursday",
+    "note": null,
+    "related_milestones": [
+      "[\"Diana DiBuccio: Comedian of the Year\"",
+      "\"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 43,
+    "category": "timeline_award",
+    "year": 2008,
+    "winner": "Videos of the Year: WrestleMania XXIV Intro and Ryan's Birthday Speech",
+    "note": null,
+    "related_milestones": [
+      "[\"WrestleMania XXIV in Florida (4th WM)\"",
+      "\"Diana DiBuccio: Comedian of the Year\"",
+      "\"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]"
+    ],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 40,
+    "category": "timeline_award",
+    "year": 2007,
+    "winner": "Favorite Joke: 'T.A.R.' (Tuck and Roll)",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  },
+  {
+    "id": 41,
+    "category": "timeline_award",
+    "year": 2007,
+    "winner": "Favorite Song: Saliva's 'Ladies and Gentlemen'",
+    "note": null,
+    "related_milestones": [],
+    "award_sentiment": "general"
+  }
+]

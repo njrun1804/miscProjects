@@ -1,0 +1,922 @@
+[
+  {
+    "year": 2004,
+    "topic_id": 0,
+    "weight": 0.0
+  },
+  {
+    "year": 2004,
+    "topic_id": 1,
+    "weight": 0.0076
+  },
+  {
+    "year": 2004,
+    "topic_id": 2,
+    "weight": 0.0027
+  },
+  {
+    "year": 2004,
+    "topic_id": 3,
+    "weight": 0.0
+  },
+  {
+    "year": 2004,
+    "topic_id": 4,
+    "weight": 0.0
+  },
+  {
+    "year": 2004,
+    "topic_id": 5,
+    "weight": 0.0
+  },
+  {
+    "year": 2004,
+    "topic_id": 6,
+    "weight": 0.0567
+  },
+  {
+    "year": 2004,
+    "topic_id": 7,
+    "weight": 0.9331
+  },
+  {
+    "year": 2005,
+    "topic_id": 0,
+    "weight": 0.0
+  },
+  {
+    "year": 2005,
+    "topic_id": 1,
+    "weight": 0.0
+  },
+  {
+    "year": 2005,
+    "topic_id": 2,
+    "weight": 0.0286
+  },
+  {
+    "year": 2005,
+    "topic_id": 3,
+    "weight": 0.0
+  },
+  {
+    "year": 2005,
+    "topic_id": 4,
+    "weight": 0.0
+  },
+  {
+    "year": 2005,
+    "topic_id": 5,
+    "weight": 0.128
+  },
+  {
+    "year": 2005,
+    "topic_id": 6,
+    "weight": 0.5288
+  },
+  {
+    "year": 2005,
+    "topic_id": 7,
+    "weight": 0.3146
+  },
+  {
+    "year": 2006,
+    "topic_id": 0,
+    "weight": 0.0156
+  },
+  {
+    "year": 2006,
+    "topic_id": 1,
+    "weight": 0.0
+  },
+  {
+    "year": 2006,
+    "topic_id": 2,
+    "weight": 0.1221
+  },
+  {
+    "year": 2006,
+    "topic_id": 3,
+    "weight": 0.0
+  },
+  {
+    "year": 2006,
+    "topic_id": 4,
+    "weight": 0.5871
+  },
+  {
+    "year": 2006,
+    "topic_id": 5,
+    "weight": 0.0
+  },
+  {
+    "year": 2006,
+    "topic_id": 6,
+    "weight": 0.2752
+  },
+  {
+    "year": 2006,
+    "topic_id": 7,
+    "weight": 0.0
+  },
+  {
+    "year": 2007,
+    "topic_id": 0,
+    "weight": 0.1536
+  },
+  {
+    "year": 2007,
+    "topic_id": 1,
+    "weight": 0.0258
+  },
+  {
+    "year": 2007,
+    "topic_id": 2,
+    "weight": 0.007
+  },
+  {
+    "year": 2007,
+    "topic_id": 3,
+    "weight": 0.0034
+  },
+  {
+    "year": 2007,
+    "topic_id": 4,
+    "weight": 0.1246
+  },
+  {
+    "year": 2007,
+    "topic_id": 5,
+    "weight": 0.1925
+  },
+  {
+    "year": 2007,
+    "topic_id": 6,
+    "weight": 0.1901
+  },
+  {
+    "year": 2007,
+    "topic_id": 7,
+    "weight": 0.303
+  },
+  {
+    "year": 2008,
+    "topic_id": 0,
+    "weight": 0.1825
+  },
+  {
+    "year": 2008,
+    "topic_id": 1,
+    "weight": 0.427
+  },
+  {
+    "year": 2008,
+    "topic_id": 2,
+    "weight": 0.01
+  },
+  {
+    "year": 2008,
+    "topic_id": 3,
+    "weight": 0.0001
+  },
+  {
+    "year": 2008,
+    "topic_id": 4,
+    "weight": 0.035
+  },
+  {
+    "year": 2008,
+    "topic_id": 5,
+    "weight": 0.009
+  },
+  {
+    "year": 2008,
+    "topic_id": 6,
+    "weight": 0.3007
+  },
+  {
+    "year": 2008,
+    "topic_id": 7,
+    "weight": 0.0356
+  },
+  {
+    "year": 2009,
+    "topic_id": 0,
+    "weight": 0.1317
+  },
+  {
+    "year": 2009,
+    "topic_id": 1,
+    "weight": 0.1863
+  },
+  {
+    "year": 2009,
+    "topic_id": 2,
+    "weight": 0.0136
+  },
+  {
+    "year": 2009,
+    "topic_id": 3,
+    "weight": 0.0179
+  },
+  {
+    "year": 2009,
+    "topic_id": 4,
+    "weight": 0.1018
+  },
+  {
+    "year": 2009,
+    "topic_id": 5,
+    "weight": 0.2172
+  },
+  {
+    "year": 2009,
+    "topic_id": 6,
+    "weight": 0.2557
+  },
+  {
+    "year": 2009,
+    "topic_id": 7,
+    "weight": 0.0759
+  },
+  {
+    "year": 2010,
+    "topic_id": 0,
+    "weight": 0.1202
+  },
+  {
+    "year": 2010,
+    "topic_id": 1,
+    "weight": 0.297
+  },
+  {
+    "year": 2010,
+    "topic_id": 2,
+    "weight": 0.0345
+  },
+  {
+    "year": 2010,
+    "topic_id": 3,
+    "weight": 0.0242
+  },
+  {
+    "year": 2010,
+    "topic_id": 4,
+    "weight": 0.112
+  },
+  {
+    "year": 2010,
+    "topic_id": 5,
+    "weight": 0.0089
+  },
+  {
+    "year": 2010,
+    "topic_id": 6,
+    "weight": 0.0919
+  },
+  {
+    "year": 2010,
+    "topic_id": 7,
+    "weight": 0.3114
+  },
+  {
+    "year": 2011,
+    "topic_id": 0,
+    "weight": 0.1193
+  },
+  {
+    "year": 2011,
+    "topic_id": 1,
+    "weight": 0.0289
+  },
+  {
+    "year": 2011,
+    "topic_id": 2,
+    "weight": 0.0254
+  },
+  {
+    "year": 2011,
+    "topic_id": 3,
+    "weight": 0.0139
+  },
+  {
+    "year": 2011,
+    "topic_id": 4,
+    "weight": 0.235
+  },
+  {
+    "year": 2011,
+    "topic_id": 5,
+    "weight": 0.0563
+  },
+  {
+    "year": 2011,
+    "topic_id": 6,
+    "weight": 0.2993
+  },
+  {
+    "year": 2011,
+    "topic_id": 7,
+    "weight": 0.222
+  },
+  {
+    "year": 2012,
+    "topic_id": 0,
+    "weight": 0.0911
+  },
+  {
+    "year": 2012,
+    "topic_id": 1,
+    "weight": 0.0683
+  },
+  {
+    "year": 2012,
+    "topic_id": 2,
+    "weight": 0.2408
+  },
+  {
+    "year": 2012,
+    "topic_id": 3,
+    "weight": 0.013
+  },
+  {
+    "year": 2012,
+    "topic_id": 4,
+    "weight": 0.0806
+  },
+  {
+    "year": 2012,
+    "topic_id": 5,
+    "weight": 0.3164
+  },
+  {
+    "year": 2012,
+    "topic_id": 6,
+    "weight": 0.0852
+  },
+  {
+    "year": 2012,
+    "topic_id": 7,
+    "weight": 0.1047
+  },
+  {
+    "year": 2013,
+    "topic_id": 0,
+    "weight": 0.1443
+  },
+  {
+    "year": 2013,
+    "topic_id": 1,
+    "weight": 0.1366
+  },
+  {
+    "year": 2013,
+    "topic_id": 2,
+    "weight": 0.1039
+  },
+  {
+    "year": 2013,
+    "topic_id": 3,
+    "weight": 0.1076
+  },
+  {
+    "year": 2013,
+    "topic_id": 4,
+    "weight": 0.0741
+  },
+  {
+    "year": 2013,
+    "topic_id": 5,
+    "weight": 0.1942
+  },
+  {
+    "year": 2013,
+    "topic_id": 6,
+    "weight": 0.1277
+  },
+  {
+    "year": 2013,
+    "topic_id": 7,
+    "weight": 0.1115
+  },
+  {
+    "year": 2014,
+    "topic_id": 0,
+    "weight": 0.1315
+  },
+  {
+    "year": 2014,
+    "topic_id": 1,
+    "weight": 0.2351
+  },
+  {
+    "year": 2014,
+    "topic_id": 2,
+    "weight": 0.0104
+  },
+  {
+    "year": 2014,
+    "topic_id": 3,
+    "weight": 0.1172
+  },
+  {
+    "year": 2014,
+    "topic_id": 4,
+    "weight": 0.2784
+  },
+  {
+    "year": 2014,
+    "topic_id": 5,
+    "weight": 0.0105
+  },
+  {
+    "year": 2014,
+    "topic_id": 6,
+    "weight": 0.1865
+  },
+  {
+    "year": 2014,
+    "topic_id": 7,
+    "weight": 0.0304
+  },
+  {
+    "year": 2015,
+    "topic_id": 0,
+    "weight": 0.0
+  },
+  {
+    "year": 2015,
+    "topic_id": 1,
+    "weight": 0.5355
+  },
+  {
+    "year": 2015,
+    "topic_id": 2,
+    "weight": 0.0264
+  },
+  {
+    "year": 2015,
+    "topic_id": 3,
+    "weight": 0.1902
+  },
+  {
+    "year": 2015,
+    "topic_id": 4,
+    "weight": 0.1994
+  },
+  {
+    "year": 2015,
+    "topic_id": 5,
+    "weight": 0.0
+  },
+  {
+    "year": 2015,
+    "topic_id": 6,
+    "weight": 0.0485
+  },
+  {
+    "year": 2015,
+    "topic_id": 7,
+    "weight": 0.0
+  },
+  {
+    "year": 2016,
+    "topic_id": 0,
+    "weight": 0.0056
+  },
+  {
+    "year": 2016,
+    "topic_id": 1,
+    "weight": 0.3985
+  },
+  {
+    "year": 2016,
+    "topic_id": 2,
+    "weight": 0.0369
+  },
+  {
+    "year": 2016,
+    "topic_id": 3,
+    "weight": 0.3402
+  },
+  {
+    "year": 2016,
+    "topic_id": 4,
+    "weight": 0.0404
+  },
+  {
+    "year": 2016,
+    "topic_id": 5,
+    "weight": 0.1201
+  },
+  {
+    "year": 2016,
+    "topic_id": 6,
+    "weight": 0.0577
+  },
+  {
+    "year": 2016,
+    "topic_id": 7,
+    "weight": 0.0007
+  },
+  {
+    "year": 2017,
+    "topic_id": 0,
+    "weight": 0.0475
+  },
+  {
+    "year": 2017,
+    "topic_id": 1,
+    "weight": 0.1325
+  },
+  {
+    "year": 2017,
+    "topic_id": 2,
+    "weight": 0.0678
+  },
+  {
+    "year": 2017,
+    "topic_id": 3,
+    "weight": 0.1889
+  },
+  {
+    "year": 2017,
+    "topic_id": 4,
+    "weight": 0.2304
+  },
+  {
+    "year": 2017,
+    "topic_id": 5,
+    "weight": 0.0157
+  },
+  {
+    "year": 2017,
+    "topic_id": 6,
+    "weight": 0.1601
+  },
+  {
+    "year": 2017,
+    "topic_id": 7,
+    "weight": 0.157
+  },
+  {
+    "year": 2018,
+    "topic_id": 0,
+    "weight": 0.1601
+  },
+  {
+    "year": 2018,
+    "topic_id": 1,
+    "weight": 0.0006
+  },
+  {
+    "year": 2018,
+    "topic_id": 2,
+    "weight": 0.0779
+  },
+  {
+    "year": 2018,
+    "topic_id": 3,
+    "weight": 0.2455
+  },
+  {
+    "year": 2018,
+    "topic_id": 4,
+    "weight": 0.1177
+  },
+  {
+    "year": 2018,
+    "topic_id": 5,
+    "weight": 0.0354
+  },
+  {
+    "year": 2018,
+    "topic_id": 6,
+    "weight": 0.2467
+  },
+  {
+    "year": 2018,
+    "topic_id": 7,
+    "weight": 0.116
+  },
+  {
+    "year": 2019,
+    "topic_id": 0,
+    "weight": 0.152
+  },
+  {
+    "year": 2019,
+    "topic_id": 1,
+    "weight": 0.0232
+  },
+  {
+    "year": 2019,
+    "topic_id": 2,
+    "weight": 0.1751
+  },
+  {
+    "year": 2019,
+    "topic_id": 3,
+    "weight": 0.0111
+  },
+  {
+    "year": 2019,
+    "topic_id": 4,
+    "weight": 0.2919
+  },
+  {
+    "year": 2019,
+    "topic_id": 5,
+    "weight": 0.023
+  },
+  {
+    "year": 2019,
+    "topic_id": 6,
+    "weight": 0.2519
+  },
+  {
+    "year": 2019,
+    "topic_id": 7,
+    "weight": 0.0718
+  },
+  {
+    "year": 2020,
+    "topic_id": 0,
+    "weight": 0.1634
+  },
+  {
+    "year": 2020,
+    "topic_id": 1,
+    "weight": 0.0281
+  },
+  {
+    "year": 2020,
+    "topic_id": 2,
+    "weight": 0.0083
+  },
+  {
+    "year": 2020,
+    "topic_id": 3,
+    "weight": 0.0093
+  },
+  {
+    "year": 2020,
+    "topic_id": 4,
+    "weight": 0.2504
+  },
+  {
+    "year": 2020,
+    "topic_id": 5,
+    "weight": 0.2086
+  },
+  {
+    "year": 2020,
+    "topic_id": 6,
+    "weight": 0.154
+  },
+  {
+    "year": 2020,
+    "topic_id": 7,
+    "weight": 0.178
+  },
+  {
+    "year": 2021,
+    "topic_id": 0,
+    "weight": 0.0762
+  },
+  {
+    "year": 2021,
+    "topic_id": 1,
+    "weight": 0.2141
+  },
+  {
+    "year": 2021,
+    "topic_id": 2,
+    "weight": 0.1329
+  },
+  {
+    "year": 2021,
+    "topic_id": 3,
+    "weight": 0.0328
+  },
+  {
+    "year": 2021,
+    "topic_id": 4,
+    "weight": 0.2446
+  },
+  {
+    "year": 2021,
+    "topic_id": 5,
+    "weight": 0.0935
+  },
+  {
+    "year": 2021,
+    "topic_id": 6,
+    "weight": 0.0993
+  },
+  {
+    "year": 2021,
+    "topic_id": 7,
+    "weight": 0.1067
+  },
+  {
+    "year": 2022,
+    "topic_id": 0,
+    "weight": 0.0642
+  },
+  {
+    "year": 2022,
+    "topic_id": 1,
+    "weight": 0.0962
+  },
+  {
+    "year": 2022,
+    "topic_id": 2,
+    "weight": 0.4826
+  },
+  {
+    "year": 2022,
+    "topic_id": 3,
+    "weight": 0.0
+  },
+  {
+    "year": 2022,
+    "topic_id": 4,
+    "weight": 0.0283
+  },
+  {
+    "year": 2022,
+    "topic_id": 5,
+    "weight": 0.0485
+  },
+  {
+    "year": 2022,
+    "topic_id": 6,
+    "weight": 0.1606
+  },
+  {
+    "year": 2022,
+    "topic_id": 7,
+    "weight": 0.1196
+  },
+  {
+    "year": 2023,
+    "topic_id": 0,
+    "weight": 0.0268
+  },
+  {
+    "year": 2023,
+    "topic_id": 1,
+    "weight": 0.5108
+  },
+  {
+    "year": 2023,
+    "topic_id": 2,
+    "weight": 0.0001
+  },
+  {
+    "year": 2023,
+    "topic_id": 3,
+    "weight": 0.0063
+  },
+  {
+    "year": 2023,
+    "topic_id": 4,
+    "weight": 0.3882
+  },
+  {
+    "year": 2023,
+    "topic_id": 5,
+    "weight": 0.0022
+  },
+  {
+    "year": 2023,
+    "topic_id": 6,
+    "weight": 0.043
+  },
+  {
+    "year": 2023,
+    "topic_id": 7,
+    "weight": 0.0224
+  },
+  {
+    "year": 2024,
+    "topic_id": 0,
+    "weight": 0.0206
+  },
+  {
+    "year": 2024,
+    "topic_id": 1,
+    "weight": 0.0296
+  },
+  {
+    "year": 2024,
+    "topic_id": 2,
+    "weight": 0.4081
+  },
+  {
+    "year": 2024,
+    "topic_id": 3,
+    "weight": 0.1941
+  },
+  {
+    "year": 2024,
+    "topic_id": 4,
+    "weight": 0.1356
+  },
+  {
+    "year": 2024,
+    "topic_id": 5,
+    "weight": 0.0234
+  },
+  {
+    "year": 2024,
+    "topic_id": 6,
+    "weight": 0.1388
+  },
+  {
+    "year": 2024,
+    "topic_id": 7,
+    "weight": 0.0498
+  },
+  {
+    "year": 2025,
+    "topic_id": 0,
+    "weight": 0.1945
+  },
+  {
+    "year": 2025,
+    "topic_id": 1,
+    "weight": 0.1942
+  },
+  {
+    "year": 2025,
+    "topic_id": 2,
+    "weight": 0.1372
+  },
+  {
+    "year": 2025,
+    "topic_id": 3,
+    "weight": 0.1513
+  },
+  {
+    "year": 2025,
+    "topic_id": 4,
+    "weight": 0.0102
+  },
+  {
+    "year": 2025,
+    "topic_id": 5,
+    "weight": 0.0471
+  },
+  {
+    "year": 2025,
+    "topic_id": 6,
+    "weight": 0.1235
+  },
+  {
+    "year": 2025,
+    "topic_id": 7,
+    "weight": 0.1418
+  },
+  {
+    "year": 2026,
+    "topic_id": 0,
+    "weight": 0.0
+  },
+  {
+    "year": 2026,
+    "topic_id": 1,
+    "weight": 0.0
+  },
+  {
+    "year": 2026,
+    "topic_id": 2,
+    "weight": 1.0
+  },
+  {
+    "year": 2026,
+    "topic_id": 3,
+    "weight": 0.0
+  },
+  {
+    "year": 2026,
+    "topic_id": 4,
+    "weight": 0.0
+  },
+  {
+    "year": 2026,
+    "topic_id": 5,
+    "weight": 0.0
+  },
+  {
+    "year": 2026,
+    "topic_id": 6,
+    "weight": 0.0
+  },
+  {
+    "year": 2026,
+    "topic_id": 7,
+    "weight": 0.0
+  }
+]

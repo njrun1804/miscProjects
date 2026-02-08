@@ -1,0 +1,16 @@
+/*
+ * THE TIMELINE OF TRON — Room 7: The Dynasty
+ * Deep green, trophy gold (placeholder — full build in Phase 6)
+ */
+
+.room-dynasty {
+    --room-bg: #1a2e1a;
+    --room-text: #d4dcd0;
+    --room-accent: #c9a84c;
+    --room-panel: #253025;
+    --lj-border: #3a5a3a;
+    --lj-text-secondary: #8a9a8a;
+    --lj-header-bg: #1a2e1a;
+    --lj-link: #c9a84c;
+    --lj-link-hover: #e0c070;
+}

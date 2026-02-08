@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Record Book — Timeline of Tron</title>
+    <meta name="description" content="The obsessive precision of measurement as a character trait. 60 records, to the decimal.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/records.css">
+</head>
+<body class="room-records">
+    <div id="lj-header-mount"></div>
+
+    <main class="records-main">
+        <!-- Hero -->
+        <section class="records-hero">
+            <h1>The Record Book</h1>
+            <p style="font-style:italic; color:var(--lj-text-secondary); margin-top:0.5rem;">
+                The obsessive precision of measurement IS the character trait.
+            </p>
+        </section>
+
+        <!-- Obsession Index -->
+        <section class="obsession-index">
+            <h2>The Obsession Index</h2>
+            <div class="obsession-grid"></div>
+            <p class="obsession-annotation">
+                Why track shrimp consumption to the decimal?
+                Because if you're going to eat 8.6 pounds of shrimp, you should know exactly how far you went.
+            </p>
+        </section>
+
+        <!-- Sports Gauges -->
+        <section class="gauges-section">
+            <h2>Win Rates</h2>
+            <div class="gauges-grid">
+                <div class="gauge-wrap">
+                    <canvas id="gauge0"></canvas>
+                    <div class="gauge-label">Table Tennis</div>
+                </div>
+                <div class="gauge-wrap">
+                    <canvas id="gauge1"></canvas>
+                    <div class="gauge-label">Cornhole</div>
+                </div>
+                <div class="gauge-wrap">
+                    <canvas id="gauge2"></canvas>
+                    <div class="gauge-label">Famous Faces</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Streak Tracker -->
+        <section class="streak-section">
+            <h2>Streak Tracker</h2>
+            <div class="streak-chart-container">
+                <canvas id="streakChart"></canvas>
+            </div>
+        </section>
+
+        <!-- 20-Year Gap callout -->
+        <div class="records-callout">
+            Some obsessions replace others. The seat at MSG waited 20 years.
+            Rangers game 2001, not again until 2021.
+        </div>
+
+        <!-- Record Wall -->
+        <section class="record-wall">
+            <h2>The Record Wall</h2>
+            <div class="record-wall-grid"></div>
+        </section>
+    </main>
+
+    <div id="lj-footer-mount"></div>
+
+    <script src="lib/chart.js"></script>
+    <script type="module">
+        import { initNav } from './js/nav.js';
+        import './js/records.js';
+
+        initNav({
+            room: 'records',
+            mood: 'proud',
+            music: 'Queen \u2014 "We Are the Champions"',
+            subtitle: 'The Numbers'
+        });
+    </script>
+</body>
+</html>

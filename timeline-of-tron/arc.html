@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Arc — Timeline of Tron</title>
+    <meta name="description" content="The hero's journey from 2004 to now. 9 stages, 22 years, one emotional arc.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/arc.css">
+</head>
+<body class="room-arc">
+    <div id="lj-header-mount"></div>
+
+    <!-- Persistent sentiment line (left edge on desktop) -->
+    <aside class="arc-sentiment-line">
+        <canvas id="sentimentLine"></canvas>
+    </aside>
+
+    <!-- Stages (populated by arc.js) -->
+    <main class="arc-stages"></main>
+
+    <!-- Chapter navigation (right sidebar dots) -->
+    <nav class="arc-chapter-nav" aria-label="Chapter navigation"></nav>
+
+    <div id="lj-footer-mount"></div>
+
+    <script type="module">
+        import { initNav } from './js/nav.js';
+        import './js/arc.js';
+
+        initNav({
+            room: 'arc',
+            mood: 'cinematic',
+            music: 'Mumford & Sons \u2014 "The Cave"',
+            subtitle: 'The Hero\u2019s Journey'
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+{
+  "overall": {
+    "neutral": 37,
+    "joy": 22,
+    "sadness": 4,
+    "pride": 4,
+    "love": 3,
+    "anger": 3,
+    "nostalgia": 2,
+    "humor": 1,
+    "fear": 1,
+    "determination": 1,
+    "defiance": 1
+  },
+  "by_life_stage": {
+    "Approach to Inmost Cave": {
+      "anger": 12,
+      "joy": 48,
+      "neutral": 24,
+      "nostalgia": 12
+    },
+    "Call to Adventure": {
+      "joy": 14,
+      "neutral": 56,
+      "pride": 14
+    },
+    "Crossing the Threshold": {
+      "defiance": 14,
+      "humor": 14,
+      "joy": 70,
+      "love": 28,
+      "neutral": 98,
+      "pride": 14,
+      "sadness": 14
+    },
+    "Resurrection": {
+      "anger": 11,
+      "joy": 65,
+      "neutral": 102,
+      "nostalgia": 15,
+      "sadness": 11
+    },
+    "Return with the Elixir": {
+      "joy": 20,
+      "neutral": 86
+    },
+    "Tests, Allies & Enemies": {
+      "determination": 14,
+      "fear": 14,
+      "joy": 56,
+      "neutral": 38,
+      "pride": 12,
+      "sadness": 14
+    },
+    "The Ordeal": {
+      "anger": 10,
+      "love": 10,
+      "neutral": 40,
+      "pride": 10,
+      "sadness": 10
+    },
+    "The Road Back": {
+      "joy": 20,
+      "neutral": 37
+    }
+  },
+  "by_decade": {
+    "2004-2010": {
+      "defiance": 1,
+      "determination": 1,
+      "fear": 1,
+      "humor": 1,
+      "joy": 10,
+      "love": 2,
+      "neutral": 14,
+      "pride": 2,
+      "sadness": 2
+    },
+    "2011-2020": {
+      "anger": 3,
+      "joy": 11,
+      "love": 1,
+      "neutral": 18,
+      "nostalgia": 2,
+      "pride": 2,
+      "sadness": 2
+    },
+    "2021-2026": {
+      "joy": 1,
+      "neutral": 5
+    }
+  }
+}
