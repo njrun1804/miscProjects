@@ -116,7 +116,8 @@ blockquote {
     font-size: 1.1em;
     padding: var(--space-md) var(--space-lg);
     border-left: 3px solid var(--room-accent);
-    color: var(--lj-text-secondary);
+    color: var(--room-text);
+    opacity: 0.85;
 }
 
 /* =============================
@@ -232,7 +233,7 @@ blockquote {
    6. ROOM NAVIGATION
    ============================= */
 .room-nav {
-    background: var(--lj-panel);
+    background: var(--room-panel, var(--lj-panel));
     border-bottom: 1px solid var(--lj-border);
     padding: 8px 0;
 }
@@ -262,16 +263,17 @@ blockquote {
     font-size: 12px;
     padding: 4px 12px;
     border: 1px solid var(--lj-border);
-    background: var(--lj-input-bg);
-    color: var(--lj-text);
+    background: var(--room-panel, var(--lj-input-bg));
+    color: var(--room-text, var(--lj-text));
     border-radius: 2px;
     text-decoration: none;
     transition: all 0.15s;
 }
 
 .room-nav-link:hover {
-    background: #ede8dc;
-    border-color: #a89c84;
+    background: var(--lj-header-bg);
+    color: var(--lj-header-text);
+    border-color: var(--lj-header-bg);
     text-decoration: none;
 }
 
@@ -292,10 +294,10 @@ blockquote {
     font-size: 12px;
     padding: 4px 10px;
     border: 1px solid var(--lj-border);
-    background: var(--lj-input-bg);
+    background: var(--room-panel, var(--lj-input-bg));
     border-radius: 2px;
     width: 160px;
-    color: var(--lj-text);
+    color: var(--room-text, var(--lj-text));
 }
 
 .room-nav-search input::placeholder { color: var(--lj-text-secondary); opacity: 0.6; }

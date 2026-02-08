@@ -8,11 +8,16 @@
     --room-text: #d0d8e4;
     --room-accent: #4a90d9;
     --room-panel: #122240;
+    --lj-panel: #122240;
     --lj-border: #1e3a5f;
+    --lj-text: #d0d8e4;
     --lj-text-secondary: #7a8fa6;
     --lj-header-bg: #0e1e38;
+    --lj-header-text: #d0d8e4;
     --lj-link: #4a90d9;
     --lj-link-hover: #6ab0f9;
+    --lj-input-bg: #1a3050;
+    --lj-shadow: rgba(0, 0, 0, 0.4);
 }
 
 /* Constellation sky */

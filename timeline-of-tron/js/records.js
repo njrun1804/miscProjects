@@ -64,7 +64,7 @@ function renderSportsGauges(sports) {
                 labels: ['Wins', 'Losses'],
                 datasets: [{
                     data: [rate, 100 - rate],
-                    backgroundColor: ['#8b6914', 'rgba(212,200,168,0.3)'],
+                    backgroundColor: ['#8b6914', 'rgba(180,168,140,0.5)'],
                     borderWidth: 0
                 }]
             },
@@ -141,7 +141,7 @@ function renderStreakTracker(streaks) {
             scales: {
                 x: {
                     ticks: { color: '#6b5840', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(212,200,168,0.3)' },
+                    grid: { color: 'rgba(180,168,140,0.4)' },
                     title: { display: true, text: 'Years', color: '#6b5840' }
                 },
                 y: {

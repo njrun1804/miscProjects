@@ -93,7 +93,7 @@ function renderForceGraph(constellation, profiles, quotes) {
         .selectAll('line')
         .data(links)
         .join('line')
-        .attr('stroke', 'rgba(255,255,255,0.12)')
+        .attr('stroke', 'rgba(255,255,255,0.3)')
         .attr('stroke-width', d => Math.min(d.weight, 3));
 
     // Draw nodes
@@ -103,8 +103,8 @@ function renderForceGraph(constellation, profiles, quotes) {
         .join('circle')
         .attr('r', d => d.radius)
         .attr('fill', d => d.color)
-        .attr('stroke', 'rgba(255,255,255,0.25)')
-        .attr('stroke-width', 1)
+        .attr('stroke', 'rgba(255,255,255,0.5)')
+        .attr('stroke-width', 1.5)
         .attr('cursor', 'pointer')
         .call(d3.drag()
             .on('start', dragstarted)

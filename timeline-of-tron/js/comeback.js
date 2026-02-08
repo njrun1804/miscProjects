@@ -109,7 +109,7 @@ function renderSankey(comebacks) {
         .attr('d', d3.sankeyLinkHorizontal())
         .attr('fill', 'none')
         .attr('stroke', '#2e7d32')
-        .attr('stroke-opacity', 0.35)
+        .attr('stroke-opacity', 0.55)
         .attr('stroke-width', d => Math.max(d.width, 2))
         .style('cursor', 'pointer')
         .on('click', (event, d) => showDetail(d, comebacks));

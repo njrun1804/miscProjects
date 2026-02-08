@@ -61,7 +61,7 @@ export async function initSeismograph() {
         ctx.clearRect(0, 0, w, h);
 
         // Faint zero line
-        ctx.strokeStyle = 'rgba(196, 184, 160, 0.3)';
+        ctx.strokeStyle = 'rgba(160, 148, 120, 0.5)';
         ctx.lineWidth = 1;
         ctx.setLineDash([4, 4]);
         ctx.beginPath();
