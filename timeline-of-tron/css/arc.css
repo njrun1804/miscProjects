@@ -57,13 +57,85 @@
     font-family: var(--font-mono);
     font-size: 1rem;
     opacity: 0.75;
-    margin-bottom: var(--space-lg);
+    margin-bottom: var(--space-md);
 }
 
 .stage-prose {
     font-size: 1.1rem;
     line-height: 1.8;
+    margin-bottom: var(--space-md);
+}
+
+/* Stage stats bar */
+.stage-stats-bar {
+    display: flex;
+    gap: 20px;
+    margin-bottom: var(--space-md);
+    padding: 10px 0;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.stage-stats-bar.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.stage-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+
+.stage-stat__value {
+    font-family: var(--font-mono);
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.stage-stat__label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.6;
+}
+
+.stage-stat--positive .stage-stat__value { color: #6adf6a; }
+.stage-stat--negative .stage-stat__value { color: #e04040; }
+
+/* Dark stage overrides for stats bar borders */
+.arc-stage[data-stage="ordinary-world"] .stage-stats-bar,
+.arc-stage[data-stage="resurrection"] .stage-stats-bar,
+.arc-stage[data-stage="return-elixir"] .stage-stats-bar {
+    border-color: rgba(0,0,0,0.1);
+}
+
+/* Career & era context */
+.stage-context {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-style: italic;
+    opacity: 0.7;
     margin-bottom: var(--space-lg);
+    line-height: 1.5;
+}
+
+.stage-context__career {
+    display: inline;
+}
+
+.stage-context__era {
+    display: inline;
+}
+
+.stage-context__career + .stage-context__era::before {
+    content: ' | ';
+    opacity: 0.4;
 }
 
 /* Milestone cards */
@@ -90,6 +162,18 @@
     transform: translateY(0);
 }
 
+.milestone-card__header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+}
+
+.milestone-card__category {
+    font-size: 14px;
+    line-height: 1;
+}
+
 .milestone-card__year {
     font-family: var(--font-mono);
     font-size: 12px;
@@ -103,13 +187,29 @@
     line-height: 1.4;
 }
 
-/* Turning point diamonds */
+/* Turning points — card layout with impact data */
+.stage-turning-points {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: var(--space-lg);
+}
+
 .turning-point {
-    display: inline-flex;
-    align-items: center;
+    background: rgba(0,0,0,0.1);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
     gap: 6px;
-    font-size: 12px;
-    margin: 4px 0;
+}
+
+.turning-point__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 .turning-point__diamond {
@@ -123,14 +223,118 @@
 .turning-point--contaminated .turning-point__diamond { background: #e04040; border: 1px solid rgba(0,0,0,0.2); }
 .turning-point--stable .turning-point__diamond { background: #f0d060; border: 1px solid rgba(0,0,0,0.2); }
 
-/* Stage quotes — inherit stage-text color for readability on stage bg */
+.turning-point__event {
+    flex: 1;
+}
+
+.turning-point__impact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+}
+
+.turning-point__domain {
+    font-family: var(--font-sans);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.turning-point__recovery {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    opacity: 0.8;
+}
+
+.turning-point__from-to {
+    font-style: italic;
+    font-size: 12px;
+    opacity: 0.75;
+    padding-left: 18px;
+}
+
+.turning-point__shock-bar {
+    height: 3px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 2px;
+}
+
+.turning-point__shock-bar::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: var(--shock-pct, 0%);
+    border-radius: 2px;
+}
+
+.turning-point--redemptive .turning-point__shock-bar::after { background: #6adf6a; }
+.turning-point--contaminated .turning-point__shock-bar::after { background: #e04040; }
+.turning-point--stable .turning-point__shock-bar::after { background: #f0d060; }
+
+/* Light stage overrides for turning point backgrounds */
+.arc-stage[data-stage="ordinary-world"] .turning-point,
+.arc-stage[data-stage="resurrection"] .turning-point,
+.arc-stage[data-stage="return-elixir"] .turning-point {
+    background: rgba(0,0,0,0.06);
+}
+
+.arc-stage[data-stage="ordinary-world"] .turning-point__shock-bar,
+.arc-stage[data-stage="resurrection"] .turning-point__shock-bar,
+.arc-stage[data-stage="return-elixir"] .turning-point__shock-bar {
+    background: rgba(0,0,0,0.08);
+}
+
+/* Stage people tags */
+.stage-people {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin: var(--space-md) 0;
+}
+
+.stage-person {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    padding: 3px 10px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.15);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: default;
+}
+
+.stage-person.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* People category color tints */
+.stage-person[data-category="family"]       { border-color: rgba(139,105,20,0.5); background: rgba(139,105,20,0.25); }
+.stage-person[data-category="partner"]      { border-color: rgba(212,162,78,0.5); background: rgba(212,162,78,0.25); }
+.stage-person[data-category="inner_circle"] { border-color: rgba(74,144,217,0.5); background: rgba(74,144,217,0.25); }
+.stage-person[data-category="friend"]       { border-color: rgba(106,75,139,0.5); background: rgba(106,75,139,0.25); }
+
+/* Stage quotes */
+.stage-quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .stage-quote {
     font-family: var(--font-body);
     font-style: italic;
-    font-size: 1.2rem;
-    padding: var(--space-md) var(--space-lg);
+    font-size: 1.1rem;
+    padding: var(--space-sm) var(--space-lg);
     border-left: 3px solid var(--room-accent);
-    margin: var(--space-lg) 0;
+    margin: var(--space-sm) 0;
     opacity: 0;
     transform: translateX(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -141,21 +345,33 @@
     transform: translateX(0);
 }
 
-/* Stage people */
-.stage-people {
-    display: flex;
-    gap: 8px;
-    flex-wrap: wrap;
-    margin-top: var(--space-md);
+.stage-quote p {
+    margin: 0;
+    line-height: 1.6;
 }
 
-.stage-person {
-    font-family: var(--font-sans);
+.stage-quote__meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
     font-size: 11px;
-    padding: 3px 10px;
-    background: rgba(0,0,0,0.2);
-    border-radius: 12px;
-    border: 1px solid rgba(255,255,255,0.15);
+    font-style: normal;
+}
+
+.stage-quote__emotion {
+    font-family: var(--font-sans);
+    padding: 2px 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
+}
+
+.stage-quote__context {
+    opacity: 0.6;
+    font-style: normal;
+    font-family: var(--font-sans);
 }
 
 /* Persistent sentiment line */
@@ -210,10 +426,17 @@
     background: rgba(0,0,0,0.15);
     border-radius: var(--radius);
     padding: 16px 20px;
-    margin: var(--space-lg) 0;
+    margin: var(--space-md) 0;
     font-style: italic;
     font-size: 0.95rem;
     line-height: 1.6;
+}
+
+/* Light stage overrides for callout */
+.arc-stage[data-stage="ordinary-world"] .arc-callout,
+.arc-stage[data-stage="resurrection"] .arc-callout,
+.arc-stage[data-stage="return-elixir"] .arc-callout {
+    background: rgba(0,0,0,0.06);
 }
 
 /* Responsive */
@@ -231,4 +454,7 @@
     .arc-stage { min-height: auto; padding: var(--space-lg) var(--space-md); }
     .stage-number { font-size: 2.5rem; }
     .stage-title { font-size: 1.5rem; }
+    .stage-stats-bar { gap: 12px; flex-wrap: wrap; }
+    .stage-quote { font-size: 1rem; padding: var(--space-sm) var(--space-md); }
+    .turning-point { padding: 10px 12px; }
 }
