@@ -68,7 +68,7 @@ timeline-of-tron/
 │   ├── comeback.js               # Room 3: D3 Sankey, recovery clock
 │   ├── records.js                # Room 4: Chart.js gauges, streak bars
 │   ├── atlas.js                  # Room 5: Leaflet map + markers
-│   ├── vault.js                  # Room 6: quote grid, D3 stream graph
+│   ├── vault.js                  # Room 6: quote wall, search, voice evolution, insights
 │   ├── dynasty.js                # Room 7: staircase, trophies, ECD chart, year-wheel
 │   └── room0.js                  # Room 0: clue tracking (localStorage)
 ├── lib/
@@ -141,7 +141,7 @@ All data is pre-exported as static JSON. The `data-loader.js` module fetches and
 | Comeback Lab | `comeback_narrative.json`, `medical_events.json`, `turning_points.json`, `sentiment_timeline.json` |
 | Record Book | `fun_facts.json`, `streaks.json`, `traditions.json`, `sports.json`, `epic_numbers.json` |
 | Atlas | `travel.json`, `travel_sentiment_by_location.json`, `medical_events.json`, `location_frequency.json` |
-| Vault | `quotes.json`, `writing_evolution.json`, `year_keywords.json`, `emotion_distribution.json` |
+| Vault | `quotes.json`, `song_person_map.json`, `writing_evolution.json`, `year_keywords.json`, `life_chapters.json`, `turning_points_detailed.json`, `insights_full.json` |
 | Dynasty | `career.json`, `awards_enriched.json`, `awards_categories.json`, `ecd_events.json`, `traditions.json`, `streaks.json` |
 
 **Full API index**: See `db/api/INDEX.md` for all 60+ endpoints.
@@ -270,6 +270,14 @@ GitHub Pages auto-deploys in 1-2 minutes.
 - Verify `main` branch is set as Pages source
 
 ## Project History
+
+### Vault Enrichment (Feb 8, 2026)
+- Rebuilt Vault page from flat quote grid into story-driven experience
+- Added 8 features: featured quote, Fuse.js search, theme filters, year chapters with keywords, Then & Now quote pairs, Voice Evolution timeline, People Behind the Words, Soundtrack (6 songs)
+- Enriched year headers with life chapter banners (19 chapters from `life_chapters.json`)
+- Added color-coded turning point markers (13 turning points from `turning_points_detailed.json`)
+- Added "What the Archive Reveals" section (12 curated insights from `insights_full.json`)
+- Vault now loads 7 JSON data files (up from 4)
 
 ### V2 Rebuild (Feb 8, 2026 → In Progress)
 - Created `REBUILD_IDEAS_V2.md` — implementation guide for 7-room architecture
