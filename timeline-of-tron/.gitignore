@@ -1,5 +1,9 @@
 .DS_Store
+../.DS_Store
 db/.fuse_hidden*
 db/tron.db-wal
 db/tron.db-shm
+db/tron.db.backup
+db/tron.db.backup-wal
 *.pyc
+.skills/
