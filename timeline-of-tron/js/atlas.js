@@ -8,21 +8,19 @@ export async function initAtlas() {
     const data = await loadMultiple([
         'travel.json',
         'medical_events.json',
-        'cruise_detail.json',
-        'travel_medical_correlations.json'
+        'cruise_detail.json'
     ]);
 
     const travel = data.travel || [];
     const medical = data.medical_events || [];
     const cruises = data.cruise_detail || [];
-    const correlations = data.travel_medical_correlations || [];
 
     renderStats(travel);
     renderEras(travel);
     const map = renderMap(travel);
     if (map) initScrubber(map, travel);
     renderCruiseStreak(cruises);
-    renderRecoveryStories(medical, travel, correlations);
+    renderRecoveryStories(medical, travel);
     renderBigTrips(travel);
 }
 
@@ -259,28 +257,11 @@ function renderCruiseStreak(cruises) {
 }
 
 // --- Recovery by Travel ---
-function renderRecoveryStories(medical, travel, correlations) {
+function renderRecoveryStories(medical, travel) {
     const container = document.querySelector('.recovery-stories');
     if (!container) return;
 
-    // Build meaningful recovery stories from correlations
-    // Group by medical event, find the post-recovery trips
-    const medMap = new Map();
-    medical.forEach(m => medMap.set(m.id, m));
-
-    const travelMap = new Map();
-    travel.forEach(t => travelMap.set(t.id, t));
-
-    // Group correlations by medical event
-    const byMedical = new Map();
-    correlations.forEach(c => {
-        if (c.correlation_type !== 'post_recovery') return;
-        const key = c.medical_id;
-        if (!byMedical.has(key)) byMedical.set(key, []);
-        byMedical.get(key).push(c);
-    });
-
-    // Build curated recovery stories — only major/meaningful ones
+    // Curated recovery stories — major setback → travel comeback
     const stories = [
         {
             medicalId: 3,
