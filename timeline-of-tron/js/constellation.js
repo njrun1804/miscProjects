@@ -19,12 +19,6 @@ const ERA_LABELS = {
     mature: '2017+'
 };
 
-// Featured people — the richest profiles, curated for first-click experience
-const FEATURED_PEOPLE = [
-    'Ma', 'Rob', 'The Pops', 'Dan Spengeman',
-    'Juan Londono (Muffin Man)', 'Lauren Winston', 'Diana DiBuccio', 'Rupert'
-];
-
 function getEraColor(firstYear) {
     if (!firstYear || firstYear <= 2008) return ERA_COLORS.early;
     if (firstYear <= 2012) return ERA_COLORS.growth;
@@ -37,6 +31,37 @@ function getEraKey(firstYear) {
     if (firstYear <= 2012) return 'growth';
     if (firstYear <= 2016) return 'peak';
     return 'mature';
+}
+
+// Compute how much content a person actually has
+function getDataRichness(name, profile) {
+    if (!profile) return { total: 0, timeline: 0, highlights: 0, awards: 0, connections: 0, coOccurrences: 0, songs: 0, ljComments: 0 };
+    const timeline = profile.timeline?.length || 0;
+    const highlights = profile.highlights?.length || 0;
+    const awards = profile.awards?.length || 0;
+    const connections = profile.connections?.length || 0;
+    const coOccurrences = profile.co_occurrences?.length || 0;
+    const songs = profile.songs?.length || 0;
+    const ljComments = profile.lj_comments?.length || 0;
+    return {
+        total: timeline + highlights + awards + connections + coOccurrences + songs + ljComments,
+        timeline, highlights, awards, connections, coOccurrences, songs, ljComments
+    };
+}
+
+// Build a human-readable summary of what content exists ("49 events, 6 awards")
+function richnessSummary(r) {
+    const parts = [];
+    if (r.timeline) parts.push(`${r.timeline} event${r.timeline > 1 ? 's' : ''}`);
+    if (r.highlights) parts.push(`${r.highlights} highlight${r.highlights > 1 ? 's' : ''}`);
+    if (r.awards) parts.push(`${r.awards} award${r.awards > 1 ? 's' : ''}`);
+    if (r.songs) parts.push(`${r.songs} song${r.songs > 1 ? 's' : ''}`);
+    return parts.join(', ');
+}
+
+// Format award category names nicely
+function formatAwardCategory(cat) {
+    return cat.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
 }
 
 // Module-level refs so features can cross-communicate
@@ -72,60 +97,50 @@ export async function initConstellation() {
 }
 
 // ─── Featured People Cards ───────────────────────────────────────
+// Only feature people who will deliver a rewarding click.
+// Dynamically selected by data richness, not a hardcoded list.
 
 function renderFeaturedCards(nodes, profiles) {
     const mount = document.getElementById('featuredMount');
     if (!mount) return;
 
-    const cards = FEATURED_PEOPLE.map(name => {
-        const node = nodes.find(n => n.name === name);
-        const profile = profiles[name];
-        if (!node && !profile) return null;
+    // Score every person by data richness
+    const scored = nodes.map(n => {
+        const profile = profiles[n.name];
+        const r = getDataRichness(n.name, profile);
+        return { node: n, profile, richness: r };
+    }).filter(s => s.richness.total >= 5) // Only people with real content
+      .sort((a, b) => b.richness.total - a.richness.total)
+      .slice(0, 8);
 
-        const relation = node?.relation || profile?.basic?.relation || '';
-        const firstYear = node?.first_year || profile?.arc?.first_year;
-        const lastYear = node?.last_year || profile?.arc?.last_year;
+    if (!scored.length) return;
+
+    const cards = scored.map(({ node: n, profile, richness }) => {
+        const relation = n.relation || profile?.basic?.relation || '';
+        const firstYear = n.first_year || profile?.arc?.first_year;
+        const lastYear = n.last_year || profile?.arc?.last_year;
         const yearSpan = firstYear && lastYear ? `${firstYear}–${lastYear}` :
                          firstYear ? `Since ${firstYear}` : '';
-
-        // Pick a highlight
-        let highlight = '';
-        if (profile?.highlights?.length) {
-            const h = profile.highlights[0];
-            highlight = typeof h === 'string' ? h : (h.text || h.highlight || '');
-        } else if (relation) {
-            highlight = relation;
-        }
-
-        // Truncate highlight
-        if (highlight.length > 80) highlight = highlight.slice(0, 77) + '...';
-
-        const eraKey = getEraKey(firstYear);
         const color = getEraColor(firstYear);
+        const summary = richnessSummary(richness);
 
-        // Count data richness for a subtle indicator
-        const timelineCount = profile?.timeline?.length || 0;
-        const connectionsCount = profile?.connections?.length || 0;
-
-        return `<button class="featured-card" data-name="${name}" style="--card-accent: ${color}">
+        return `<button class="featured-card" data-name="${n.name}" style="--card-accent: ${color}">
             <span class="featured-dot" style="background: ${color}"></span>
-            <span class="featured-name">${name}</span>
+            <span class="featured-name">${n.name}</span>
             <span class="featured-relation">${relation}</span>
             <span class="featured-years">${yearSpan}</span>
-            ${timelineCount > 0 ? `<span class="featured-depth">${timelineCount} events</span>` : ''}
+            ${summary ? `<span class="featured-depth">${summary}</span>` : ''}
         </button>`;
-    }).filter(Boolean);
+    });
 
     mount.innerHTML = `
         <div class="featured-header">Start here — people with the richest stories</div>
         <div class="featured-row">${cards.join('')}</div>
     `;
 
-    // Click handler — focus node in graph
     mount.querySelectorAll('.featured-card').forEach(card => {
         card.addEventListener('click', () => {
-            const name = card.dataset.name;
-            focusNodeByName(name);
+            focusNodeByName(card.dataset.name);
             document.getElementById('constellationMount')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     });
@@ -137,7 +152,6 @@ function renderFiltersAndLegend(nodes) {
     const mount = document.getElementById('filtersMount');
     if (!mount) return;
 
-    // Count categories
     const cats = {};
     nodes.forEach(n => {
         const cat = n.category || 'other';
@@ -163,14 +177,11 @@ function renderFiltersAndLegend(nodes) {
         <div class="era-legend">${legendItems.join('')}</div>
     `;
 
-    // Filter click handlers
-    let activeFilter = 'all';
     mount.querySelectorAll('.filter-pill').forEach(btn => {
         btn.addEventListener('click', () => {
             mount.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-            activeFilter = btn.dataset.cat;
-            applyFilter(activeFilter);
+            applyFilter(btn.dataset.cat);
         });
     });
 }
@@ -197,7 +208,7 @@ function applyFilter(cat) {
 function renderStatsBar(constellation) {
     const mount = document.getElementById('statsMount');
     if (!mount) return;
-    const nodeCount = constellation.nodes.length + 1; // +1 for John
+    const nodeCount = constellation.nodes.length + 1;
     const linkCount = (constellation.links || []).length;
     const years = constellation.nodes.filter(n => n.first_year).map(n => n.first_year);
     const minYear = years.length ? Math.min(...years) : 2004;
@@ -212,18 +223,19 @@ function initSearchAutocomplete(nodes, profiles) {
     const input = wrapper?.querySelector('input');
     if (!wrapper || !input) return;
 
-    // Build searchable list
+    // Build searchable list, sorted by richness so best results come first
     const searchList = nodes.map(n => {
         const profile = profiles[n.name];
+        const r = getDataRichness(n.name, profile);
         return {
             name: n.name,
             relation: n.relation || profile?.basic?.relation || '',
             category: n.category || profile?.basic?.category || '',
-            id: n.id
+            id: n.id,
+            richness: r.total
         };
-    });
+    }).sort((a, b) => b.richness - a.richness);
 
-    // Create dropdown
     const dropdown = document.createElement('div');
     dropdown.className = 'search-dropdown';
     dropdown.style.display = 'none';
@@ -244,10 +256,7 @@ function initSearchAutocomplete(nodes, profiles) {
         if (!matches.length) {
             dropdown.innerHTML = '<div class="search-no-results">No matches</div>';
             dropdown.style.display = 'block';
-            // Also fade non-matching nodes
-            if (svgNode) {
-                svgNode.attr('opacity', d => (d.name || '').toLowerCase().includes(q) ? 1 : 0.1);
-            }
+            if (svgNode) svgNode.attr('opacity', d => (d.name || '').toLowerCase().includes(q) ? 1 : 0.1);
             return;
         }
 
@@ -259,39 +268,31 @@ function initSearchAutocomplete(nodes, profiles) {
         ).join('');
         dropdown.style.display = 'block';
 
-        // Fade graph to match
         if (svgNode) {
-            const matchNames = new Set(matches.map(m => m.name.toLowerCase()));
             svgNode.attr('opacity', d =>
                 (d.name || '').toLowerCase().includes(q) ? 1 : 0.1
             );
         }
 
-        // Click on result
         dropdown.querySelectorAll('.search-result').forEach(btn => {
             btn.addEventListener('click', () => {
-                const name = btn.dataset.name;
-                input.value = name;
+                input.value = btn.dataset.name;
                 dropdown.style.display = 'none';
-                focusNodeByName(name);
+                focusNodeByName(btn.dataset.name);
             });
         });
     });
 
-    // Close dropdown on outside click
     document.addEventListener('click', (e) => {
-        if (!wrapper.contains(e.target)) {
-            dropdown.style.display = 'none';
-        }
+        if (!wrapper.contains(e.target)) dropdown.style.display = 'none';
     });
 
-    // Keyboard nav
     input.addEventListener('keydown', (e) => {
         const items = dropdown.querySelectorAll('.search-result');
         const active = dropdown.querySelector('.search-result.active');
         if (e.key === 'ArrowDown') {
             e.preventDefault();
-            if (!active && items.length) { items[0].classList.add('active'); }
+            if (!active && items.length) items[0].classList.add('active');
             else if (active?.nextElementSibling) {
                 active.classList.remove('active');
                 active.nextElementSibling.classList.add('active');
@@ -323,14 +324,13 @@ function highlightMatch(text, query) {
     return text.slice(0, idx) + '<mark>' + text.slice(idx, idx + query.length) + '</mark>' + text.slice(idx + query.length);
 }
 
-// ─── Focus a node by name (used by featured cards, search, deep links) ──
+// ─── Focus a node by name ────────────────────────────────────────
 
 function focusNodeByName(name) {
     if (!svgNode || !svgLink) return;
     const targetNode = allNodes.find(n => n.name === name);
     if (!targetNode) return;
 
-    // Visual focus
     const connected = new Set();
     allLinks.forEach(l => {
         const srcId = typeof l.source === 'object' ? l.source.id : l.source;
@@ -372,18 +372,26 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .attr('height', height)
         .attr('viewBox', `0 0 ${width} ${height}`);
 
-    // Tooltip
     const tooltip = d3.select(container)
         .append('div')
         .attr('class', 'constellation-tooltip')
         .style('display', 'none');
 
-    // Prepare nodes
-    const nodes = constellation.nodes.map(n => ({
-        ...n,
-        radius: Math.sqrt(Math.max(n.total_mentions, 1)) * 3 + 4,
-        color: getEraColor(n.first_year)
-    }));
+    // Prepare nodes — size and opacity based on data richness
+    const nodes = constellation.nodes.map(n => {
+        const profile = profiles[n.name];
+        const r = getDataRichness(n.name, profile);
+        const hasContent = r.total > 0;
+        // Nodes with content get normal sizing; empty shells are smaller and dimmer
+        const baseRadius = Math.sqrt(Math.max(n.total_mentions, 1)) * 3 + 4;
+        return {
+            ...n,
+            radius: hasContent ? Math.max(baseRadius, 6) : Math.max(baseRadius * 0.6, 3),
+            color: getEraColor(n.first_year),
+            richness: r,
+            hasContent
+        };
+    });
 
     // Add center node (John)
     nodes.unshift({
@@ -394,23 +402,23 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         radius: 18,
         color: '#c9a84c',
         fx: width / 2,
-        fy: height / 2
+        fy: height / 2,
+        richness: { total: 999 },
+        hasContent: true
     });
 
     // Build name→id map for co-occurrence enrichment
     const nameToId = {};
     nodes.forEach(n => { nameToId[n.name] = n.id; });
 
-    // Start with constellation links
     const links = (constellation.links || []).map(l => ({
         source: l.source,
         target: l.target,
         weight: l.weight || 1
     })).filter(l => l.source !== l.target);
 
-    // Enrich with co-occurrence links (only where both people exist as nodes)
+    // Enrich with co-occurrence links
     const existingLinkSet = new Set(links.map(l => [l.source, l.target].sort().join('|')));
-
     (coOccurrences || []).forEach(co => {
         const idA = nameToId[co.person_a];
         const idB = nameToId[co.person_b];
@@ -426,18 +434,15 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         });
     });
 
-    // Store module-level refs
     allNodes = nodes;
     allLinks = links;
 
-    // Force simulation
     simulation = d3.forceSimulation(nodes)
         .force('link', d3.forceLink(links).id(d => d.id).distance(80).strength(0.3))
         .force('charge', d3.forceManyBody().strength(-30))
         .force('center', d3.forceCenter(width / 2, height / 2))
         .force('collide', d3.forceCollide(d => d.radius + 2));
 
-    // Draw links
     svgLink = svg.append('g')
         .selectAll('line')
         .data(links)
@@ -446,29 +451,32 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .attr('stroke-width', d => Math.min(d.weight, 3))
         .attr('stroke-dasharray', d => d.fromCoOccurrence ? '3,3' : 'none');
 
-    // Draw nodes
     svgNode = svg.append('g')
         .selectAll('circle')
         .data(nodes)
         .join('circle')
         .attr('r', d => d.radius)
         .attr('fill', d => d.color)
-        .attr('stroke', 'rgba(255,255,255,0.5)')
-        .attr('stroke-width', 1.5)
+        .attr('stroke', d => d.hasContent ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.15)')
+        .attr('stroke-width', d => d.hasContent ? 1.5 : 0.5)
+        .attr('opacity', d => d.hasContent ? 1 : 0.35)
         .attr('cursor', 'pointer')
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
             .on('end', dragended));
 
-    // Hover — enhanced tooltip
+    // Hover — show richness signals
     svgNode.on('mouseover', (event, d) => {
-        const relation = d.relation || profiles[d.name]?.basic?.relation || '';
+        const profile = profiles[d.name];
+        const relation = d.relation || profile?.basic?.relation || '';
         const yearSpan = d.first_year && d.last_year ? `${d.first_year}–${d.last_year}` :
                          d.first_year ? `Since ${d.first_year}` : '';
         const parts = [`<strong>${d.name}</strong>`];
         if (relation) parts.push(relation);
         if (yearSpan) parts.push(yearSpan);
+        const summary = richnessSummary(d.richness);
+        if (summary) parts.push(`<span class="tooltip-richness">${summary}</span>`);
 
         tooltip
             .style('display', 'block')
@@ -478,19 +486,16 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     })
     .on('mouseout', () => tooltip.style('display', 'none'));
 
-    // Click
     svgNode.on('click', (event, d) => {
         event.stopPropagation();
         focusNodeByName(d.name);
     });
 
-    // Click background to reset
     svg.on('click', () => {
         resetGraphOpacity();
         closeSidebar();
     });
 
-    // Tick
     simulation.on('tick', () => {
         svgLink
             .attr('x1', d => d.source.x)
@@ -520,13 +525,14 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
 }
 
 // ─── Person Panel (Sidebar) ─────────────────────────────────────
+// Smart sidebar: only shows sections that have data. Adapts to what exists.
 
 function showPersonPanel(d) {
     const sidebar = document.getElementById('personPanel');
     if (!sidebar) return;
 
-    // Profile is an OBJECT keyed by name, not an array
     const profile = profilesData[d.name] || null;
+    const r = getDataRichness(d.name, profile);
 
     // Find connections from graph links
     const connected = [];
@@ -535,94 +541,127 @@ function showPersonPanel(d) {
         const tgtId = typeof l.target === 'object' ? l.target.id : l.target;
         if (srcId === d.id) {
             const target = allNodes.find(n => n.id === tgtId);
-            if (target) connected.push(target.name);
+            if (target && target.name !== d.name) connected.push(target.name);
         }
         if (tgtId === d.id) {
             const source = allNodes.find(n => n.id === srcId);
-            if (source) connected.push(source.name);
+            if (source && source.name !== d.name) connected.push(source.name);
         }
     });
 
     // Also pull connections from profile data
     if (profile?.connections?.length) {
         profile.connections.forEach(c => {
-            const name = typeof c === 'string' ? c : (c.name || c.person || '');
+            const name = typeof c === 'string' ? c : (c.connected_to || c.name || c.person || '');
             if (name && !connected.includes(name) && name !== d.name) {
                 connected.push(name);
             }
         });
     }
 
-    sidebar.querySelector('.person-name').textContent = d.name;
-    sidebar.querySelector('.person-years').textContent =
-        d.first_year && d.last_year ? `${d.first_year} – ${d.last_year}` :
-        d.first_year ? `Since ${d.first_year}` : '';
-
-    // Relation / category line
+    // Build the sidebar HTML dynamically — only sections with content
     const relation = d.relation || profile?.basic?.relation || '';
     const category = d.category || profile?.basic?.category || '';
-    sidebar.querySelector('.person-highlight').textContent = relation || category || '';
+    const yearText = d.first_year && d.last_year ? `${d.first_year} – ${d.last_year}` :
+                     d.first_year ? `Since ${d.first_year}` : '';
 
-    // Connections
-    const connHTML = connected.slice(0, 12).map(c =>
-        `<button class="connection-tag" data-name="${c}">${c}</button>`
-    ).join('');
-    const connSection = sidebar.querySelector('.person-connections');
-    connSection.innerHTML = connHTML || '<em>No documented connections</em>';
+    let html = `<button class="sidebar-close">&times;</button>`;
+    html += `<h2 class="person-name">${d.name}</h2>`;
+    if (yearText) html += `<p class="person-years">${yearText}</p>`;
+    if (relation) html += `<p class="person-highlight">${relation}</p>`;
+    else if (category && category !== 'other') html += `<p class="person-highlight">${category.replace('_', ' ')}</p>`;
 
-    // Make connection tags clickable
-    connSection.querySelectorAll('.connection-tag').forEach(tag => {
+    // Connections (always show if any exist)
+    if (connected.length) {
+        html += `<div class="person-section-label">Connections</div>`;
+        html += `<div class="person-connections">${connected.slice(0, 12).map(c =>
+            `<button class="connection-tag" data-name="${c}">${c}</button>`
+        ).join('')}</div>`;
+    }
+
+    // Timeline events
+    if (profile?.timeline?.length) {
+        html += `<div class="person-section-label">Key Moments</div>`;
+        html += `<div class="person-milestones">${profile.timeline.slice(0, 8).map(m =>
+            `<div class="person-milestone-item">
+                <span class="person-milestone-year">${m.year || ''}</span>
+                ${m.event || m.text || m.milestone || ''}
+            </div>`
+        ).join('')}</div>`;
+    }
+
+    // Awards
+    if (profile?.awards?.length) {
+        html += `<div class="person-section-label">Awards</div>`;
+        html += `<div class="person-awards">${profile.awards.map(a =>
+            `<div class="person-award-item">
+                <span class="person-milestone-year">${a.year}</span>
+                ${formatAwardCategory(a.category)}${a.note ? ` — ${a.note}` : ''}
+            </div>`
+        ).join('')}</div>`;
+    }
+
+    // Highlights
+    if (profile?.highlights?.length) {
+        html += `<div class="person-section-label">Highlights</div>`;
+        html += profile.highlights.map(h => {
+            const text = typeof h === 'string' ? h : (h.text || h.highlight || '');
+            return `<div class="person-highlight-item">${text}</div>`;
+        }).join('');
+    }
+
+    // Songs
+    if (profile?.songs?.length) {
+        html += `<div class="person-section-label">Associated Songs</div>`;
+        html += profile.songs.map(s => {
+            const text = typeof s === 'string' ? s : `${s.title || s.song || ''} ${s.artist ? `by ${s.artist}` : ''} ${s.year ? `(${s.year})` : ''}`;
+            return `<div class="person-highlight-item">${text}</div>`;
+        }).join('');
+    }
+
+    // Co-occurrence shared moments
+    const coMatches = coOccurrencesData.filter(co =>
+        (co.person_a === d.name || co.person_b === d.name) && co.context
+    );
+    if (coMatches.length) {
+        html += `<div class="person-section-label">Shared Moments</div>`;
+        html += coMatches.slice(0, 5).map(co => {
+            const other = co.person_a === d.name ? co.person_b : co.person_a;
+            return `<div class="person-co-item">
+                <span class="person-co-year">${co.year}</span>
+                <span class="person-co-with">with ${other}</span>
+                <span class="person-co-context">${co.context}</span>
+            </div>`;
+        }).join('');
+    }
+
+    // LJ Comments
+    if (profile?.lj_comments?.length) {
+        html += `<div class="person-section-label">LiveJournal Comments</div>`;
+        html += profile.lj_comments.map(c => {
+            const text = typeof c === 'string' ? c : (c.comment || c.text || '');
+            return `<blockquote class="person-lj-comment">&ldquo;${text}&rdquo;</blockquote>`;
+        }).join('');
+    }
+
+    // If absolutely nothing to show, say so gently
+    if (r.total === 0 && !connected.length) {
+        html += `<p class="sidebar-empty">This person appears in the timeline but doesn't have documented details yet.</p>`;
+    }
+
+    sidebar.innerHTML = html;
+    sidebar.classList.add('open');
+
+    // Wire up close button
+    sidebar.querySelector('.sidebar-close')?.addEventListener('click', closeSidebar);
+
+    // Wire up connection tags
+    sidebar.querySelectorAll('.connection-tag').forEach(tag => {
         tag.addEventListener('click', (e) => {
             e.stopPropagation();
             focusNodeByName(tag.dataset.name);
         });
     });
-
-    // Timeline (was incorrectly looking for "milestones")
-    const timelineEl = sidebar.querySelector('.person-milestones');
-    if (profile?.timeline?.length) {
-        timelineEl.innerHTML = profile.timeline.slice(0, 8).map(m =>
-            `<div class="person-milestone-item">
-                <span class="person-milestone-year">${m.year || ''}</span>
-                ${m.event || m.text || m.milestone || ''}
-            </div>`
-        ).join('');
-    } else {
-        timelineEl.innerHTML = '<em class="sidebar-empty">No timeline events documented</em>';
-    }
-
-    // Highlights (replaces broken quotes section)
-    const highlightsEl = sidebar.querySelector('.person-highlights');
-    if (profile?.highlights?.length) {
-        highlightsEl.innerHTML = '<div class="person-section-label">Highlights</div>' +
-            profile.highlights.map(h => {
-                const text = typeof h === 'string' ? h : (h.text || h.highlight || JSON.stringify(h));
-                return `<div class="person-highlight-item">${text}</div>`;
-            }).join('');
-    } else {
-        highlightsEl.innerHTML = '';
-    }
-
-    // Co-occurrence context
-    const coCtxEl = sidebar.querySelector('.person-co-occurrences');
-    const coMatches = coOccurrencesData.filter(co =>
-        (co.person_a === d.name || co.person_b === d.name) && co.context
-    );
-    if (coMatches.length) {
-        coCtxEl.innerHTML = '<div class="person-section-label">Shared Moments</div>' +
-            coMatches.slice(0, 5).map(co => {
-                const other = co.person_a === d.name ? co.person_b : co.person_a;
-                return `<div class="person-co-item">
-                    <span class="person-co-year">${co.year}</span>
-                    <span class="person-co-with">with ${other}</span>
-                    <span class="person-co-context">${co.context}</span>
-                </div>`;
-            }).join('');
-    } else {
-        coCtxEl.innerHTML = '';
-    }
-
-    sidebar.classList.add('open');
 }
 
 function closeSidebar() {
@@ -683,12 +722,6 @@ function renderInnerCircleChart(milestones) {
         }
     });
 }
-
-// Close sidebar on button click
-document.addEventListener('DOMContentLoaded', () => {
-    const closeBtn = document.querySelector('.sidebar-close');
-    if (closeBtn) closeBtn.addEventListener('click', closeSidebar);
-});
 
 // Auto-init
 initConstellation()

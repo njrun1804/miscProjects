@@ -399,6 +399,17 @@
     font-size: 12px;
     color: var(--lj-text-secondary);
     font-style: italic;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+/* Awards section */
+.person-award-item {
+    font-size: 13px;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(30, 58, 95, 0.5);
+    color: var(--room-text);
+    line-height: 1.4;
 }
 
 /* Highlights section */
@@ -408,6 +419,17 @@
     border-bottom: 1px solid rgba(30, 58, 95, 0.3);
     color: var(--room-text);
     line-height: 1.4;
+}
+
+/* LJ Comments */
+.person-lj-comment {
+    border-left: 2px solid var(--room-accent);
+    padding: 6px 12px;
+    margin: 8px 0;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--room-text);
+    line-height: 1.5;
 }
 
 /* Co-occurrence shared moments */
@@ -452,6 +474,12 @@
     z-index: 30;
     white-space: nowrap;
     line-height: 1.5;
+}
+
+.tooltip-richness {
+    font-size: 10px;
+    color: var(--room-accent);
+    opacity: 0.8;
 }
 
 /* Inner circle timeline section */
