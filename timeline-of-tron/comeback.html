@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Comeback Lab — Timeline of Tron</title>
-    <meta name="description" content="Every crisis has a recovery pattern. 14 medical events, 100% comeback rate, 7.1-month average recovery.">
+    <meta name="description" content="14 medical events. 0 defeats. Every setback became a story worth telling.">
     <meta property="og:title" content="The Comeback Lab — Timeline of Tron">
-    <meta property="og:description" content="Every crisis has a recovery pattern. 14 medical events, 100% comeback rate.">
+    <meta property="og:description" content="14 medical events. 0 defeats. 100% comeback rate.">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/comeback.css">
 </head>
@@ -17,22 +17,36 @@
         <!-- Hero -->
         <section class="comeback-hero">
             <h1>The Comeback Lab</h1>
-            <p class="comeback-headline-label">Average Recovery Time (months)</p>
-            <div class="comeback-headline-stat">...</div>
-            <p class="comeback-headline-label">14 medical events &middot; 100% comeback rate</p>
+            <div class="comeback-hero__stats">
+                <div class="comeback-hero__stat">
+                    <div class="comeback-hero__value">100%</div>
+                    <div class="comeback-hero__label">comeback rate</div>
+                </div>
+                <div class="comeback-hero__stat">
+                    <div class="comeback-hero__value comeback-hero__value--events">14</div>
+                    <div class="comeback-hero__label">medical events</div>
+                </div>
+                <div class="comeback-hero__stat">
+                    <div class="comeback-hero__value comeback-hero__value--avg">...</div>
+                    <div class="comeback-hero__label">avg months to recovery</div>
+                </div>
+            </div>
+            <p class="comeback-hero__subtitle">Your body breaks, you book a cruise. Your mind struggles, you build a community.</p>
         </section>
 
-        <!-- Sankey Diagram -->
-        <section>
-            <h2 style="text-align:center; margin-bottom:var(--space-md);">Crisis &rarr; Recovery Pattern</h2>
-            <div class="comeback-sankey" id="comebackSankey"></div>
+        <!-- Comeback Stories -->
+        <section class="comeback-stories-section">
+            <h2>The Comebacks</h2>
+            <p class="section-intro">8 documented setback-to-comeback arcs, each with its own recovery strategy.</p>
+            <div class="comeback-stories"></div>
         </section>
 
-        <!-- Detail Panel -->
-        <div class="comeback-detail">
-            <h3 class="comeback-detail__title"></h3>
-            <div class="comeback-detail__narrative"></div>
-        </div>
+        <!-- Pattern Insights -->
+        <section class="comeback-patterns-section">
+            <h2>The Pattern</h2>
+            <p class="section-intro">After 22 years, the data reveals how recovery actually works.</p>
+            <div class="pattern-insights"></div>
+        </section>
 
         <!-- Tongue-in-cheek callout -->
         <p class="comeback-callout">
@@ -40,20 +54,16 @@
             If you're having an existential crisis, start a dodgeball tournament.
         </p>
 
-        <!-- Recovery Patterns -->
-        <section class="comeback-patterns-section">
-            <h2>What Actually Works</h2>
-            <p style="text-align:center; color:var(--lj-text-secondary); font-size:13px; margin-bottom:var(--space-lg);">
-                Grouped by recovery type — the patterns that emerge over 22 years.
-            </p>
-            <div class="recovery-patterns"></div>
+        <!-- Medical Timeline -->
+        <section class="medical-timeline-section">
+            <h2>Full Medical Record</h2>
+            <p class="section-intro">Every event, every severity, every recovery note — 14 entries across 21 years.</p>
+            <div class="medical-timeline"></div>
         </section>
     </main>
 
     <div id="lj-footer-mount"></div>
 
-    <script src="lib/d3.min.js"></script>
-    <script src="lib/d3-sankey.min.js"></script>
     <script src="lib/chart.js"></script>
     <script src="lib/fuse.min.js"></script>
     <script type="module">

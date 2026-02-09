@@ -1,276 +1,181 @@
 // js/comeback.js — Room 3: The Comeback Lab
-// D3 Sankey diagram + Recovery Clock + detail panels
+// Story-driven comeback cards + pattern insights + medical timeline
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
 import { plantClue } from './room0.js';
 
+const TYPE_COLORS = {
+    'travel':             '#1a5c8b',
+    'community creation': '#2e7d32',
+    'physical + family':  '#8b6914',
+    'adventure':          '#6a4b8b',
+    'resilience':         '#5a5a6e',
+    'fitness':            '#c47a8a'
+};
+
+const SEVERITY_COLORS = {
+    'major':    '#c0392b',
+    'moderate': '#d4880f',
+    'minor':    '#7f8c8d'
+};
+
+const CATEGORY_LABELS = {
+    'trauma':          'Trauma',
+    'illness':         'Illness',
+    'mental_health':   'Mental Health',
+    'injury':          'Injury',
+    'spinal':          'Spinal',
+    'minor_procedure': 'Minor Procedure'
+};
+
 export async function initComeback() {
     const data = await loadMultiple([
-        'comeback_narrative.json',
+        'medical_comeback_pairs.json',
         'medical_events.json'
     ]);
 
-    const comebacks = data.comeback_narrative;
+    const pairs = data.medical_comeback_pairs || [];
+    const events = data.medical_events || [];
 
-    if (!comebacks || !comebacks.length) return;
+    if (!pairs.length && !events.length) return;
 
-    renderHeadlineStat(comebacks);
-    renderSankey(comebacks);
-    renderRecoveryPatterns(comebacks);
+    renderHeadlineStat(pairs);
+    renderComebackStories(pairs);
+    renderPatternInsights(pairs);
+    renderMedicalTimeline(events);
 }
 
-function renderHeadlineStat(comebacks) {
-    const el = document.querySelector('.comeback-headline-stat');
+function renderHeadlineStat(pairs) {
+    const el = document.querySelector('.comeback-hero__value--avg');
     if (!el) return;
 
-    // Calculate average gap_months
-    const withGap = comebacks.filter(c => c.gap_months > 0);
-    const avg = withGap.reduce((s, c) => s + c.gap_months, 0) / (withGap.length || 1);
+    const withGap = pairs.filter(p => p.gap_months > 0);
+    if (!withGap.length) { el.textContent = '0'; return; }
+
+    const avg = withGap.reduce((s, p) => s + p.gap_months, 0) / withGap.length;
     el.textContent = avg.toFixed(1);
 }
 
-function renderSankey(comebacks) {
-    const container = document.querySelector('.comeback-sankey');
-    if (!container || typeof d3 === 'undefined') return;
+function renderComebackStories(pairs) {
+    const container = document.querySelector('.comeback-stories');
+    if (!container || !pairs.length) return;
 
-    const width = container.clientWidth || 900;
-    const height = 450;
+    container.innerHTML = pairs.map(p => {
+        const type = (p.comeback_type || 'resilience').toLowerCase();
+        const color = TYPE_COLORS[type] || TYPE_COLORS['resilience'];
+        const sevColor = SEVERITY_COLORS[p.severity] || SEVERITY_COLORS['moderate'];
+        const gapLabel = p.gap_months === 0
+            ? 'Immediate'
+            : p.gap_months === 1 ? '1 month' : `${p.gap_months} months`;
 
-    // Build Sankey data from comeback narratives
-    // Left: Crisis types, Middle: Recovery behaviors, Right: Outcomes
-    const crisisTypes = new Set();
-    const recoveryTypes = new Set();
+        return `
+            <div class="comeback-story" style="--type-color: ${color}">
+                <div class="comeback-story__header">
+                    <span class="comeback-story__year">${p.medical_year}</span>
+                    <span class="comeback-story__severity" style="--sev-color: ${sevColor}" title="${p.severity}">${p.severity}</span>
+                </div>
+                <div class="comeback-story__crisis">${p.medical_event}</div>
+                <div class="comeback-story__arrow">
+                    <span class="comeback-story__arrow-line"></span>
+                    <span class="comeback-story__gap">${gapLabel}</span>
+                    <span class="comeback-story__arrow-line"></span>
+                </div>
+                <div class="comeback-story__recovery">${p.comeback_event}</div>
+                <div class="comeback-story__footer">
+                    <span class="comeback-story__type">${p.comeback_type}</span>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
 
-    comebacks.forEach(c => {
-        const crisis = categorizeCrisis(c);
-        const recovery = categorizeRecovery(c);
-        crisisTypes.add(crisis);
-        recoveryTypes.add(recovery);
+function renderPatternInsights(pairs) {
+    const container = document.querySelector('.pattern-insights');
+    if (!container || !pairs.length) return;
+
+    // Most common recovery type
+    const typeCounts = {};
+    pairs.forEach(p => {
+        const t = p.comeback_type || 'resilience';
+        typeCounts[t] = (typeCounts[t] || 0) + 1;
     });
+    const topType = Object.entries(typeCounts).sort((a, b) => b[1] - a[1])[0];
 
-    const crisisArr = [...crisisTypes];
-    const recoveryArr = [...recoveryTypes];
+    // Average recovery
+    const withGap = pairs.filter(p => p.gap_months > 0);
+    const avgMonths = withGap.length
+        ? (withGap.reduce((s, p) => s + p.gap_months, 0) / withGap.length).toFixed(1)
+        : '0';
 
-    // Nodes: crisis types + recovery types + outcome
-    const nodes = [
-        ...crisisArr.map(c => ({ name: c })),
-        ...recoveryArr.map(r => ({ name: r })),
-        { name: 'Recovery' }
+    // Longest comeback
+    const longest = [...pairs].sort((a, b) => b.gap_months - a.gap_months)[0];
+
+    // Fastest bounce (non-zero or instant)
+    const fastest = [...pairs].sort((a, b) => a.gap_months - b.gap_months)[0];
+
+    const insights = [
+        {
+            value: topType[0],
+            label: '#1 Recovery Strategy',
+            context: `${topType[1]} of ${pairs.length} comebacks`
+        },
+        {
+            value: `${avgMonths}mo`,
+            label: 'Average Recovery Time',
+            context: `across ${withGap.length} timed recoveries`
+        },
+        {
+            value: `${longest.gap_months}mo`,
+            label: 'Longest Comeback Arc',
+            context: `${longest.medical_year}: ${truncate(longest.medical_event, 40)}`
+        },
+        {
+            value: fastest.gap_months === 0 ? 'Instant' : `${fastest.gap_months}mo`,
+            label: 'Fastest Bounce Back',
+            context: `${fastest.medical_year}: ${truncate(fastest.medical_event, 40)}`
+        }
     ];
 
-    // Links: crisis → recovery, recovery → outcome
-    const linkMap = {};
-    comebacks.forEach(c => {
-        const crisis = categorizeCrisis(c);
-        const recovery = categorizeRecovery(c);
-        const crisisIdx = crisisArr.indexOf(crisis);
-        const recoveryIdx = crisisArr.length + recoveryArr.indexOf(recovery);
-        const outcomeIdx = nodes.length - 1;
-
-        const key1 = `${crisisIdx}-${recoveryIdx}`;
-        linkMap[key1] = (linkMap[key1] || 0) + 1;
-
-        const key2 = `${recoveryIdx}-${outcomeIdx}`;
-        linkMap[key2] = (linkMap[key2] || 0) + 1;
-    });
-
-    const links = Object.entries(linkMap).map(([key, val]) => {
-        const [s, t] = key.split('-').map(Number);
-        return { source: s, target: t, value: val };
-    });
-
-    // Check if d3-sankey is available
-    if (typeof d3.sankey === 'undefined') {
-        // Fallback: render a simple visual list
-        renderFallbackSankey(container, comebacks);
-        return;
-    }
-
-    const svg = d3.select(container)
-        .append('svg')
-        .attr('width', width)
-        .attr('height', height);
-
-    const sankey = d3.sankey()
-        .nodeWidth(20)
-        .nodePadding(12)
-        .extent([[20, 20], [width - 20, height - 20]]);
-
-    const graph = sankey({
-        nodes: nodes.map(d => ({ ...d })),
-        links: links.map(d => ({ ...d }))
-    });
-
-    // Draw links
-    svg.append('g')
-        .selectAll('path')
-        .data(graph.links)
-        .join('path')
-        .attr('d', d3.sankeyLinkHorizontal())
-        .attr('fill', 'none')
-        .attr('stroke', '#2e7d32')
-        .attr('stroke-opacity', 0.55)
-        .attr('stroke-width', d => Math.max(d.width, 2))
-        .style('cursor', 'pointer')
-        .on('click', (event, d) => showDetail(d, comebacks));
-
-    // Draw nodes
-    svg.append('g')
-        .selectAll('rect')
-        .data(graph.nodes)
-        .join('rect')
-        .attr('x', d => d.x0)
-        .attr('y', d => d.y0)
-        .attr('width', d => d.x1 - d.x0)
-        .attr('height', d => Math.max(d.y1 - d.y0, 2))
-        .attr('fill', '#2e7d32');
-
-    // Labels
-    svg.append('g')
-        .selectAll('text')
-        .data(graph.nodes)
-        .join('text')
-        .attr('x', d => d.x0 < width / 2 ? d.x0 - 6 : d.x1 + 6)
-        .attr('y', d => (d.y0 + d.y1) / 2)
-        .attr('dy', '0.35em')
-        .attr('text-anchor', d => d.x0 < width / 2 ? 'end' : 'start')
-        .attr('font-family', "'Courier Prime', monospace")
-        .attr('font-size', '12px')
-        .attr('fill', '#1a1a2e')
-        .text(d => d.name);
+    container.innerHTML = insights.map(i => `
+        <div class="pattern-card">
+            <div class="pattern-card__value">${i.value}</div>
+            <div class="pattern-card__label">${i.label}</div>
+            <div class="pattern-card__context">${i.context}</div>
+        </div>
+    `).join('');
 }
 
-function renderFallbackSankey(container, comebacks) {
-    // Fallback: display comeback arcs as styled cards
-    const html = comebacks.map(c => {
-        const crisis = categorizeCrisis(c);
-        const recovery = categorizeRecovery(c);
-        return `
-            <div class="comeback-flow-card" style="
-                display: flex; gap: 12px; align-items: center;
-                padding: 12px; margin: 8px 0;
-                background: white; border: 1px solid #d0d0d0;
-                border-left: 4px solid #2e7d32; border-radius: 3px;
-                font-size: 13px; cursor: pointer;
-            " data-year="${c.medical_year}">
-                <span style="font-family: var(--font-mono); font-weight:700; color:#8b1a1a; min-width:40px;">${c.medical_year}</span>
-                <span style="color:#5a5a6e;">${crisis}</span>
-                <span style="color:#2e7d32; font-weight:bold;">&rarr;</span>
-                <span style="color:#2e7d32;">${recovery}</span>
-                <span style="color:#5a5a6e; font-style:italic; margin-left:auto; font-size:11px;">${c.gap_months}mo</span>
-            </div>
-        `;
-    }).join('');
+function renderMedicalTimeline(events) {
+    const container = document.querySelector('.medical-timeline');
+    if (!container || !events.length) return;
 
-    container.innerHTML = html;
+    const sorted = [...events].sort((a, b) => a.year - b.year);
 
-    // Click handlers
-    container.querySelectorAll('.comeback-flow-card').forEach(card => {
-        card.addEventListener('click', () => {
-            const year = parseInt(card.dataset.year);
-            const cb = comebacks.find(c => c.medical_year === year);
-            if (cb) showDetailDirect(cb);
-        });
-    });
-}
-
-function showDetail(linkData, comebacks) {
-    // Show first matching comeback
-    if (comebacks.length) showDetailDirect(comebacks[0]);
-}
-
-function showDetailDirect(cb) {
-    const detail = document.querySelector('.comeback-detail');
-    if (!detail) return;
-
-    detail.querySelector('.comeback-detail__title').textContent =
-        `${cb.medical_year}: ${cb.medical_event}`;
-    detail.querySelector('.comeback-detail__narrative').innerHTML = `
-        <p><strong>Crisis:</strong> ${cb.medical_event} (${cb.medical_year})</p>
-        <p><strong>Recovery:</strong> ${cb.comeback_event} (${cb.comeback_year})</p>
-        <p><strong>Time to recovery:</strong> ${cb.gap_months} months</p>
-        <p><strong>Pattern:</strong> ${cb.comeback_type}</p>
-        ${cb.related_milestones ? `
-            <p style="margin-top:8px;"><strong>Key milestones:</strong></p>
-            <ul style="margin-left:20px; font-size:12px; color:var(--lj-text-secondary);">
-                ${cb.related_milestones.map(m => `<li>${m.year}: ${m.milestone}</li>`).join('')}
-            </ul>
-        ` : ''}
-    `;
-    detail.classList.add('active');
-}
-
-function renderRecoveryPatterns(comebacks) {
-    const container = document.querySelector('.recovery-patterns');
-    if (!container) return;
-
-    // Group by recovery type
-    const groups = {};
-    comebacks.forEach(c => {
-        const recovery = categorizeRecovery(c);
-        if (!groups[recovery]) groups[recovery] = [];
-        groups[recovery].push(c);
-    });
-
-    // Sort groups by count (most common recovery type first)
-    const sorted = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
-
-    const colorMap = {
-        'Travel/Adventure': '#1a5c8b',
-        'Community Creation': '#2e7d32',
-        'Physical Fitness': '#8b6914',
-        'Career Growth': '#6a4b8b',
-        'Family Bonds': '#c47a8a',
-        'Resilience': '#5a5a6e'
-    };
-
-    container.innerHTML = sorted.map(([type, items]) => {
-        const color = colorMap[type] || '#5a5a6e';
-        const avgMonths = items.reduce((s, c) => s + (c.gap_months || 0), 0) / items.length;
-
-        const itemsHTML = items.map(c => `
-            <div class="recovery-item">
-                <span class="recovery-item__year">${c.medical_year}</span>
-                <span class="recovery-item__crisis">${c.medical_event}</span>
-                <span class="recovery-item__arrow">&rarr;</span>
-                <span class="recovery-item__outcome">${c.comeback_event}</span>
-                <span class="recovery-item__gap">${c.gap_months}mo</span>
-            </div>
-        `).join('');
+    container.innerHTML = sorted.map(e => {
+        const sevColor = SEVERITY_COLORS[e.severity] || SEVERITY_COLORS['moderate'];
+        const catLabel = CATEGORY_LABELS[e.category] || e.category || '';
 
         return `
-            <div class="recovery-group" style="--group-color: ${color}">
-                <div class="recovery-group__header">
-                    <div class="recovery-group__type">${type}</div>
-                    <div class="recovery-group__stats">
-                        <span>${items.length} comeback${items.length > 1 ? 's' : ''}</span>
-                        <span>avg ${avgMonths.toFixed(1)}mo recovery</span>
+            <div class="timeline-item">
+                <div class="timeline-item__dot" style="--dot-color: ${sevColor}"></div>
+                <div class="timeline-item__content">
+                    <div class="timeline-item__header">
+                        <span class="timeline-item__year">${e.year}</span>
+                        ${catLabel ? `<span class="timeline-item__category">${catLabel}</span>` : ''}
+                        <span class="timeline-item__severity" style="color: ${sevColor}">${e.severity}</span>
                     </div>
+                    <div class="timeline-item__event">${e.event}</div>
+                    ${e.recovery_note ? `<div class="timeline-item__recovery">${e.recovery_note}</div>` : ''}
                 </div>
-                <div class="recovery-group__items">${itemsHTML}</div>
             </div>
         `;
     }).join('');
 }
 
-function categorizeCrisis(c) {
-    const event = (c.medical_event || '').toLowerCase();
-    if (event.includes('surgery') || event.includes('labrum') || event.includes('herniat') || event.includes('fracture') || event.includes('pinky') || event.includes('wart')) return 'Physical Trauma';
-    if (event.includes('anorexia') || event.includes('mental') || event.includes('crisis') || event.includes('emotional')) return 'Mental Health';
-    if (event.includes('car') || event.includes('accident')) return 'Accident';
-    if (event.includes('strep') || event.includes('kidney') || event.includes('shingles') || event.includes('fever') || event.includes('influenza') || event.includes('covid') || event.includes('quarantine')) return 'Illness';
-    return 'Other';
-}
-
-function categorizeRecovery(c) {
-    const type = (c.comeback_type || '').toLowerCase();
-    if (type.includes('travel') || type.includes('adventure') || type.includes('cruise')) return 'Travel/Adventure';
-    if (type.includes('community') || type.includes('social') || type.includes('ecd')) return 'Community Creation';
-    if (type.includes('physical') || type.includes('fitness') || type.includes('gym')) return 'Physical Fitness';
-    if (type.includes('career') || type.includes('work')) return 'Career Growth';
-    if (type.includes('family')) return 'Family Bonds';
-    return 'Resilience';
+function truncate(str, len) {
+    if (!str) return '';
+    return str.length > len ? str.slice(0, len) + '...' : str;
 }
 
 // Auto-init
@@ -278,6 +183,6 @@ initComeback()
     .then(() => initWormholes('comeback'))
     .then(() => plantClue('clue3', document.querySelector('.comeback-callout')))
     .catch(() => {
-        const el = document.querySelector('.comeback-sankey');
+        const el = document.querySelector('.comeback-stories');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
     });
