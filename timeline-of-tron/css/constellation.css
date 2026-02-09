@@ -1063,3 +1063,513 @@
     .featured-card { min-width: 100px; }
     .featured-row { gap: 8px; }
 }
+
+/* ─── Advanced Node Effects ─────────────────────────────────── */
+
+@keyframes nodePulse {
+    0%, 100% { filter: drop-shadow(0 0 2px currentColor); opacity: 1; }
+    50% { filter: drop-shadow(0 0 8px currentColor); opacity: 0.9; }
+}
+
+@keyframes nodeGlow {
+    0%, 100% { filter: drop-shadow(0 0 4px var(--glow-color, #4a90d9)) drop-shadow(0 0 12px var(--glow-color, #4a90d9)); }
+    50% { filter: drop-shadow(0 0 8px var(--glow-color, #4a90d9)) drop-shadow(0 0 20px var(--glow-color, #4a90d9)); }
+}
+
+.node-important {
+    animation: nodePulse 4s ease-in-out infinite;
+}
+
+.node-hub {
+    animation: nodeGlow 3s ease-in-out infinite;
+}
+
+/* ─── Social DNA Radar Chart ────────────────────────────────── */
+
+.social-dna-section {
+    margin-top: 20px;
+    padding: 16px 0;
+    border-top: 1px solid rgba(30, 58, 95, 0.4);
+}
+
+.social-dna-title {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 12px;
+}
+
+.social-dna-canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 240px;
+}
+
+.social-dna-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dna-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.dna-value {
+    color: var(--room-accent);
+    font-weight: 600;
+}
+
+/* ─── Activity Sparkline ────────────────────────────────────── */
+
+.sparkline-section {
+    margin-top: 14px;
+    padding: 10px 0;
+}
+
+.sparkline-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 8px;
+}
+
+.sparkline-container {
+    position: relative;
+    height: 48px;
+    background: rgba(30, 58, 95, 0.15);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.sparkline-canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.sparkline-range {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+    opacity: 0.6;
+}
+
+/* ─── Advanced Metrics Cards ────────────────────────────────── */
+
+.advanced-metrics {
+    margin-top: var(--space-lg);
+    padding-top: var(--space-lg);
+    border-top: 1px solid var(--lj-border);
+}
+
+.metrics-section-title {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    color: var(--room-text);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.metrics-section-subtitle {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin-bottom: var(--space-lg);
+}
+
+.metric-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: 4px;
+    padding: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s;
+}
+
+.metric-card:hover {
+    border-color: var(--room-accent);
+}
+
+.metric-card-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+.metric-card-value {
+    font-family: var(--font-mono);
+    font-size: 1.6rem;
+    color: var(--room-accent);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.metric-card-label {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+}
+
+.metric-card-detail {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-top: 8px;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+.metric-card-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: var(--room-accent);
+    opacity: 0.5;
+    transition: width 0.6s ease;
+}
+
+/* ─── Community Clusters ────────────────────────────────────── */
+
+.communities-section {
+    margin-top: var(--space-lg);
+}
+
+.communities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 12px;
+}
+
+.community-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-left: 3px solid var(--community-color, var(--room-accent));
+    border-radius: 0 4px 4px 0;
+    padding: 14px 16px;
+}
+
+.community-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.community-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.community-name {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--room-text);
+}
+
+.community-count {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-left: auto;
+}
+
+.community-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 6px;
+}
+
+.community-member {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    padding: 2px 8px;
+    background: rgba(74, 144, 217, 0.1);
+    border: 1px solid rgba(74, 144, 217, 0.15);
+    border-radius: 10px;
+    color: var(--room-accent);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.community-member:hover {
+    background: rgba(74, 144, 217, 0.25);
+}
+
+.community-stats {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+}
+
+/* ─── Relationship Strength ─────────────────────────────────── */
+
+.strength-indicator {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 6px;
+}
+
+.strength-bar-track {
+    flex: 1;
+    height: 4px;
+    background: rgba(30, 58, 95, 0.3);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.strength-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+.strength-label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    min-width: 50px;
+    text-align: right;
+}
+
+.strength-strong .strength-bar-fill { background: #4a90d9; }
+.strength-moderate .strength-bar-fill { background: #c9a84c; }
+.strength-weak .strength-bar-fill { background: #7a8fa6; }
+.strength-dormant .strength-bar-fill { background: #b45050; opacity: 0.5; }
+
+/* ─── Percentile Badge ──────────────────────────────────────── */
+
+.percentile-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+.percentile-badge.top-10 {
+    background: rgba(201, 168, 76, 0.15);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    color: #c9a84c;
+}
+
+.percentile-badge.top-25 {
+    background: rgba(74, 144, 217, 0.12);
+    border: 1px solid rgba(74, 144, 217, 0.25);
+    color: #4a90d9;
+}
+
+.percentile-badge.top-50 {
+    background: rgba(107, 74, 139, 0.12);
+    border: 1px solid rgba(107, 74, 139, 0.25);
+    color: #9b7abf;
+}
+
+.percentile-badge.bottom-half {
+    background: rgba(122, 143, 166, 0.1);
+    border: 1px solid rgba(122, 143, 166, 0.2);
+    color: #7a8fa6;
+}
+
+/* ─── Enhanced Edge Panel ───────────────────────────────────── */
+
+.edge-strength-section {
+    margin-top: 12px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(30, 58, 95, 0.3);
+}
+
+.edge-strength-label {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 6px;
+}
+
+.edge-strength-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+}
+
+.edge-stat {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    padding: 4px 6px;
+    background: rgba(74, 144, 217, 0.06);
+    border-radius: 3px;
+}
+
+.edge-stat-label {
+    font-family: var(--font-sans);
+    font-size: 9px;
+    color: var(--lj-text-secondary);
+    display: block;
+}
+
+.edge-stat-value {
+    color: var(--room-accent);
+    font-weight: 600;
+}
+
+/* ─── Network Health Dashboard ──────────────────────────────── */
+
+.network-health {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 10px;
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.health-card {
+    text-align: center;
+    padding: 12px 8px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: 4px;
+    position: relative;
+}
+
+.health-card-ring {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 8px;
+    position: relative;
+}
+
+.health-card-ring svg {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+.health-card-ring-value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--room-accent);
+    font-weight: 700;
+}
+
+.health-card-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.health-card-sublabel {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--room-accent);
+    opacity: 0.7;
+    margin-top: 2px;
+}
+
+/* ─── Temporal Diversity Chart ──────────────────────────────── */
+
+.temporal-diversity {
+    max-width: 960px;
+    margin: var(--space-lg) auto;
+    padding: 0 24px;
+}
+
+.temporal-diversity h3 {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    color: var(--room-text);
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.temporal-diversity .network-subtitle {
+    margin-bottom: var(--space-md);
+}
+
+.temporal-diversity canvas {
+    max-width: 100%;
+}
+
+/* ─── Sidebar Score Donut ───────────────────────────────────── */
+
+.score-donut-section {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 14px;
+    padding: 12px;
+    background: rgba(30, 58, 95, 0.15);
+    border-radius: 4px;
+}
+
+.score-donut-svg {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    transform: rotate(-90deg);
+}
+
+.score-donut-text {
+    flex: 1;
+}
+
+.score-donut-value {
+    font-family: var(--font-mono);
+    font-size: 22px;
+    color: var(--room-accent);
+    font-weight: 700;
+}
+
+.score-donut-label {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-top: 2px;
+}
+
+.score-donut-rank {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: #c9a84c;
+    margin-top: 4px;
+}

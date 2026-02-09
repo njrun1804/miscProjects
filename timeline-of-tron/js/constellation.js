@@ -1,9 +1,20 @@
 // js/constellation.js — Room 2: The Constellation (People + Relationships)
-// D3 force graph of 164 people as stars on a dark background
+// D3 force graph with advanced graph analytics: PageRank, community detection,
+// betweenness centrality, relationship decay, and temporal evolution
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
 import { plantClue } from './room0.js';
+import {
+    computePageRank,
+    computeBetweenness,
+    computeClusteringCoeff,
+    detectCommunities,
+    computeRelationshipStrength,
+    computeNetworkHealth,
+    computePersonScores,
+    computeTemporalEvolution
+} from './graph-analytics.js';
 
 const ERA_COLORS = {
     early: '#4a90d9',    // 2004-2008: blue
@@ -133,6 +144,17 @@ let ecdPlayerNetworkData = { nodes: [], links: [] };
 let songsByPerson = {};
 let lifeChaptersData = [];
 
+// ─── Advanced Analytics Results ──────────────────────────────────
+let analyticsPageRank = new Map();
+let analyticsBetweenness = new Map();
+let analyticsClustering = new Map();
+let analyticsCommunities = { communities: new Map(), modularity: 0, communityColors: new Map() };
+let analyticsRelStrength = new Map();
+let analyticsNetworkHealth = {};
+let analyticsPersonScores = new Map();
+let analyticsTemporalEvolution = [];
+let analyticsReady = false;
+
 // Build a name→ECD player lookup (case-insensitive matching for awards)
 function buildEcdPlayerMap(playersArray) {
     const map = {};
@@ -250,6 +272,71 @@ export async function initConstellation() {
 
     if (!constellation || !constellation.nodes) return;
 
+    // ─── Run Advanced Graph Analytics ────────────────────────────────
+    try {
+        const arcArr = Array.isArray(data.person_arc) ? data.person_arc : [];
+        // Normalize arc data to have .name field
+        const normalizedArc = arcArr.map(a => ({ ...a, name: a.person || a.name }));
+
+        // Build co-occurrence count map: "nameA|nameB" → count
+        const coOccMap = new Map();
+        (coOccurrencesData || []).forEach(co => {
+            if (!co.person_a || !co.person_b) return;
+            const [a, b] = co.person_a < co.person_b
+                ? [co.person_a, co.person_b] : [co.person_b, co.person_a];
+            const key = `${a}|${b}`;
+            coOccMap.set(key, (coOccMap.get(key) || 0) + (co.co_occurrence_count || 1));
+        });
+
+        // Minimal node list for analytics (just need .name)
+        const analyticsNodes = [
+            { name: 'John Tronolone' },
+            ...constellation.nodes.map(n => ({ name: n.name }))
+        ];
+        // Minimal link list (string source/target)
+        const analyticsLinks = [
+            ...(constellation.links || []).map(l => ({
+                source: l.source, target: l.target, weight: l.weight || 1
+            })),
+            ...(coOccurrencesData || []).filter(co => co.person_a && co.person_b).map(co => ({
+                source: co.person_a, target: co.person_b,
+                weight: Math.min(co.co_occurrence_count || 1, 3)
+            })),
+            ...(ecdPlayerNetworkData.links || []).map(l => ({
+                source: l.source, target: l.target, weight: l.weight || 1
+            }))
+        ];
+
+        analyticsPageRank = computePageRank(analyticsNodes, analyticsLinks);
+        analyticsBetweenness = computeBetweenness(analyticsNodes, analyticsLinks);
+        analyticsClustering = computeClusteringCoeff(analyticsNodes, analyticsLinks);
+        analyticsCommunities = detectCommunities(analyticsNodes, analyticsLinks);
+        analyticsRelStrength = computeRelationshipStrength(
+            analyticsNodes, analyticsLinks, coOccMap, normalizedArc
+        );
+        analyticsNetworkHealth = computeNetworkHealth(
+            analyticsNodes, analyticsLinks, normalizedArc
+        );
+        analyticsPersonScores = computePersonScores(
+            analyticsNodes, analyticsLinks,
+            analyticsPageRank, analyticsBetweenness, analyticsClustering,
+            normalizedArc
+        );
+        analyticsTemporalEvolution = computeTemporalEvolution(
+            analyticsNodes, normalizedArc
+        );
+        analyticsReady = true;
+        console.log('[Constellation] Advanced analytics computed:', {
+            pageRankNodes: analyticsPageRank.size,
+            communities: new Set(analyticsCommunities.communities.values()).size,
+            modularity: analyticsCommunities.modularity.toFixed(3),
+            networkHealth: analyticsNetworkHealth
+        });
+    } catch (e) {
+        console.warn('[Constellation] Analytics computation failed, falling back to basic mode:', e);
+        analyticsReady = false;
+    }
+
     renderFeaturedCards(constellation.nodes, profilesData);
     renderFiltersAndLegend(constellation.nodes);
     renderChapterTimeline(lifeChaptersData);
@@ -258,6 +345,14 @@ export async function initConstellation() {
     initSearchAutocomplete(constellation.nodes, profilesData);
     renderNetworkChart(data.temporal_network, data.person_arc);
     renderNetworkInsights(data.temporal_network, constellation, data.person_arc);
+
+    // ─── Advanced Analytics Sections ─────────────────────────────────
+    if (analyticsReady) {
+        renderNetworkHealthDashboard();
+        renderAdvancedMetrics(constellation);
+        renderCommunityCards();
+        renderDiversityChart();
+    }
 }
 
 // Get the best first_year for a person by merging all sources
@@ -762,16 +857,35 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
                 : Math.max(baseRadius * 0.5, 2.5);
             const displayCat = getDisplayCat(n);
 
+            // Analytics-enhanced sizing
+            const personScore = analyticsPersonScores.get(n.name);
+            const prBoost = analyticsReady && personScore
+                ? personScore.socialGravity * 8 : 0;
+            const analyticsRadius = hasContent
+                ? Math.max(baseRadius + mentionBoost + ecdBoost + prBoost, 5)
+                : Math.max(baseRadius * 0.5, 2.5);
+
+            // Community assignment
+            const communityId = analyticsCommunities.communities.get(n.name);
+            const communityColor = analyticsCommunities.communityColors.get(communityId);
+
             return {
                 ...n, name: n.name,
-                radius: Math.min(nodeRadius, 20),
+                radius: Math.min(analyticsRadius, 24),
                 color: CAT_COLORS[displayCat] || CAT_COLORS.other,
+                communityColor: communityColor || null,
+                communityId: communityId ?? -1,
                 richness: r, hasContent, relation, connection,
                 firstYear, lastYear, totalMentions, importanceScore,
                 peakYear: arc?.peak_year || person?.peak_year || null,
                 activeYears: person?.active_years || '',
                 dominantTopic: person?.dominant_topic || '',
-                displayCat
+                displayCat,
+                pageRank: analyticsPageRank.get(n.name) || 0,
+                betweenness: analyticsBetweenness.get(n.name) || 0,
+                clusteringCoeff: analyticsClustering.get(n.name) || 0,
+                socialGravity: personScore?.socialGravity || 0,
+                percentile: personScore?.percentile || 0
             };
         });
 
@@ -1014,6 +1128,22 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
             showEdgePanel(d, event);
         });
 
+    // ── SVG: Community glow halos (behind nodes) ──
+    if (analyticsReady) {
+        svg.append('g').attr('class', 'community-halos')
+            .selectAll('circle').data(nodes.filter(n => n.percentile >= 75 && n.id !== 'john'))
+            .join('circle')
+            .attr('cx', d => d.x)
+            .attr('cy', d => d.y)
+            .attr('r', d => d.radius + 6)
+            .attr('fill', 'none')
+            .attr('stroke', d => d.communityColor || d.color)
+            .attr('stroke-width', 1.5)
+            .attr('opacity', 0.2)
+            .attr('stroke-dasharray', '2,3')
+            .attr('pointer-events', 'none');
+    }
+
     // ── SVG: Nodes ──
     svgNode = svg.append('g')
         .selectAll('circle')
@@ -1023,10 +1153,23 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .attr('cy', d => d.y)
         .attr('r', d => d.radius)
         .attr('fill', d => d.color)
-        .attr('stroke', d => d.hasContent ? 'rgba(255,255,255,0.45)' : 'rgba(255,255,255,0.1)')
-        .attr('stroke-width', d => d.hasContent ? 1.5 : 0.5)
+        .attr('stroke', d => {
+            if (d.percentile >= 90) return 'rgba(201,168,76,0.7)';
+            if (d.hasContent) return 'rgba(255,255,255,0.45)';
+            return 'rgba(255,255,255,0.1)';
+        })
+        .attr('stroke-width', d => {
+            if (d.percentile >= 90) return 2.5;
+            if (d.hasContent) return 1.5;
+            return 0.5;
+        })
         .attr('opacity', d => d.hasContent ? 1 : 0.3)
         .attr('cursor', 'pointer')
+        .attr('class', d => {
+            if (d.percentile >= 90) return 'node-hub';
+            if (d.percentile >= 70) return 'node-important';
+            return '';
+        })
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
@@ -1074,6 +1217,15 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         }
         const summary = richnessSummary(d.richness);
         if (summary) parts.push(`<span class="tooltip-richness">${summary}</span>`);
+        // Analytics metrics in tooltip
+        if (analyticsReady && d.id !== 'john') {
+            if (d.pageRank > 0.01)
+                parts.push(`<span class="tooltip-richness">PageRank: ${(d.pageRank * 100).toFixed(1)}%</span>`);
+            if (d.betweenness > 0.01)
+                parts.push(`<span class="tooltip-richness">Bridge Score: ${(d.betweenness * 100).toFixed(1)}%</span>`);
+            if (d.percentile > 0)
+                parts.push(`<span class="tooltip-richness">Top ${100 - d.percentile}% · Social Gravity: ${(d.socialGravity * 100).toFixed(0)}</span>`);
+        }
         tooltip
             .style('display', 'block')
             .style('left', (event.offsetX + 12) + 'px')
@@ -1202,6 +1354,36 @@ function showEdgePanel(link, event) {
         html += `<div class="edge-panel-moment" style="color:var(--lj-text-secondary);font-style:italic">Connected in the constellation, but their shared story hasn't been documented yet.</div>`;
     }
 
+    // Analytics: Relationship Strength
+    if (analyticsReady) {
+        const [sA, sB] = nameA < nameB ? [nameA, nameB] : [nameB, nameA];
+        const relKey = `${sA}|${sB}`;
+        const relStr = analyticsRelStrength.get(relKey);
+        const scoreA = analyticsPersonScores.get(nameA);
+        const scoreB = analyticsPersonScores.get(nameB);
+
+        html += `<div class="edge-strength-section">`;
+        html += `<div class="edge-strength-label">Relationship Analytics</div>`;
+        html += `<div class="edge-strength-grid">`;
+        if (relStr) {
+            const classification = relStr.strength > 2 ? 'Strong' :
+                relStr.strength > 1 ? 'Moderate' :
+                relStr.strength > 0.3 ? 'Weak' : 'Dormant';
+            const classColor = relStr.strength > 2 ? '#4a90d9' :
+                relStr.strength > 1 ? '#c9a84c' :
+                relStr.strength > 0.3 ? '#7a8fa6' : '#b45050';
+            html += `<div class="edge-stat"><span class="edge-stat-label">Strength</span><span class="edge-stat-value" style="color:${classColor}">${relStr.strength.toFixed(2)}</span></div>`;
+            html += `<div class="edge-stat"><span class="edge-stat-label">Class</span><span class="edge-stat-value" style="color:${classColor}">${classification}</span></div>`;
+            html += `<div class="edge-stat"><span class="edge-stat-label">Recency</span><span class="edge-stat-value">${(relStr.recency * 100).toFixed(0)}%</span></div>`;
+            html += `<div class="edge-stat"><span class="edge-stat-label">Mutual Ties</span><span class="edge-stat-value">${relStr.mutualCount}</span></div>`;
+        }
+        if (scoreA && scoreB) {
+            html += `<div class="edge-stat"><span class="edge-stat-label">${nameA.split(' ')[0]} Rank</span><span class="edge-stat-value">Top ${100 - scoreA.percentile}%</span></div>`;
+            html += `<div class="edge-stat"><span class="edge-stat-label">${nameB.split(' ')[0]} Rank</span><span class="edge-stat-value">Top ${100 - scoreB.percentile}%</span></div>`;
+        }
+        html += `</div></div>`;
+    }
+
     // View full profile buttons
     html += `<div style="display:flex;gap:6px;margin-top:12px">`;
     html += `<button class="edge-panel-view-btn" data-name="${nameA}">${nameA}</button>`;
@@ -1325,6 +1507,73 @@ function showPersonPanel(d) {
     if (importanceScore > 0 && d.id !== 'john') metaParts.push(`Score: ${Math.round(importanceScore)}`);
     if (metaParts.length) {
         html += `<div class="person-meta-row">${metaParts.join(' · ')}</div>`;
+    }
+
+    // ─── Analytics: Score Donut + Percentile Badge ────────────────
+    if (analyticsReady && d.id !== 'john') {
+        const personScore = analyticsPersonScores.get(d.name);
+        if (personScore) {
+            const pct = personScore.percentile;
+            const gravity = (personScore.socialGravity * 100).toFixed(0);
+            const tierClass = pct >= 90 ? 'top-10' : pct >= 75 ? 'top-25' : pct >= 50 ? 'top-50' : 'bottom-half';
+            const tierLabel = pct >= 90 ? 'Inner Constellation' : pct >= 75 ? 'Close Orbit' : pct >= 50 ? 'Mid Orbit' : 'Outer Ring';
+
+            // Score donut
+            const circumference = 2 * Math.PI * 24;
+            const dashOffset = circumference * (1 - personScore.socialGravity);
+            const donutColor = pct >= 90 ? '#c9a84c' : pct >= 75 ? '#4a90d9' : pct >= 50 ? '#6b4a8b' : '#7a8fa6';
+
+            html += `<div class="score-donut-section">
+                <svg class="score-donut-svg" viewBox="0 0 56 56">
+                    <circle cx="28" cy="28" r="24" fill="none" stroke="rgba(30,58,95,0.3)" stroke-width="4" />
+                    <circle cx="28" cy="28" r="24" fill="none" stroke="${donutColor}" stroke-width="4"
+                        stroke-dasharray="${circumference}" stroke-dashoffset="${dashOffset}"
+                        stroke-linecap="round" />
+                </svg>
+                <div class="score-donut-text">
+                    <div class="score-donut-value">${gravity}</div>
+                    <div class="score-donut-label">Social Gravity Score</div>
+                    <div class="score-donut-rank">${tierLabel} · Top ${100 - pct}%</div>
+                </div>
+            </div>`;
+
+            // Percentile badge
+            html += `<span class="percentile-badge ${tierClass}">${tierLabel}</span>`;
+        }
+    }
+
+    // ─── Analytics: Social DNA Radar ──────────────────────────────
+    if (analyticsReady && d.id !== 'john') {
+        const personScore = analyticsPersonScores.get(d.name);
+        if (personScore) {
+            html += `<div class="social-dna-section">
+                <div class="social-dna-title">Social DNA</div>
+                <canvas class="social-dna-canvas" id="dnaCanvas-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}" width="240" height="240"></canvas>
+                <div class="social-dna-labels">
+                    <span class="dna-label">PageRank: <span class="dna-value">${(personScore.pageRank * 100).toFixed(1)}</span></span>
+                    <span class="dna-label">Bridge: <span class="dna-value">${(personScore.betweenness * 100).toFixed(1)}</span></span>
+                    <span class="dna-label">Clique: <span class="dna-value">${(personScore.clustering * 100).toFixed(1)}</span></span>
+                    <span class="dna-label">Activity: <span class="dna-value">${(personScore.mentions * 100).toFixed(1)}</span></span>
+                    <span class="dna-label">Longevity: <span class="dna-value">${(personScore.span * 100).toFixed(1)}</span></span>
+                </div>
+            </div>`;
+        }
+    }
+
+    // ─── Analytics: Activity Sparkline ────────────────────────────
+    if (d.id !== 'john' && (profile?.timeline?.length || arc?.first_year)) {
+        const sparkFirstYear = firstYear || 2004;
+        const sparkLastYear = lastYear || 2026;
+        html += `<div class="sparkline-section">
+            <div class="sparkline-label">Activity Over Time</div>
+            <div class="sparkline-container">
+                <canvas class="sparkline-canvas" id="sparkline-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}" width="340" height="48"></canvas>
+            </div>
+            <div class="sparkline-range">
+                <span>${sparkFirstYear}</span>
+                <span>${sparkLastYear}</span>
+            </div>
+        </div>`;
     }
 
     // Connections with mutual friend counts
@@ -1524,6 +1773,27 @@ function showPersonPanel(d) {
             focusNodeByName(tag.dataset.name);
         });
     });
+
+    // ─── Draw Social DNA Radar Chart ─────────────────────────────
+    if (analyticsReady && d.id !== 'john') {
+        const personScore = analyticsPersonScores.get(d.name);
+        if (personScore) {
+            requestAnimationFrame(() => {
+                const canvasId = `dnaCanvas-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}`;
+                const canvas = document.getElementById(canvasId);
+                if (canvas) drawRadarChart(canvas, personScore);
+            });
+        }
+    }
+
+    // ─── Draw Activity Sparkline ─────────────────────────────────
+    if (d.id !== 'john') {
+        requestAnimationFrame(() => {
+            const sparkId = `sparkline-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}`;
+            const canvas = document.getElementById(sparkId);
+            if (canvas) drawSparkline(canvas, d, profile);
+        });
+    }
 }
 
 function closeSidebar() {
@@ -1869,6 +2139,547 @@ function renderNetworkInsights(temporalNetwork, constellation, personArc) {
             focusNodeByName(btn.dataset.name);
             document.getElementById('constellationMount')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
+    });
+}
+
+// ─── Radar Chart Drawing ─────────────────────────────────────────
+// Draws a pentagon radar chart on a canvas for a person's social DNA.
+
+function drawRadarChart(canvas, scores) {
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width;
+    const h = canvas.height;
+    const cx = w / 2;
+    const cy = h / 2;
+    const r = Math.min(w, h) * 0.38;
+
+    const dims = [
+        { key: 'pageRank', label: 'Influence' },
+        { key: 'betweenness', label: 'Bridge' },
+        { key: 'clustering', label: 'Clique' },
+        { key: 'mentions', label: 'Activity' },
+        { key: 'span', label: 'Longevity' }
+    ];
+    const n = dims.length;
+    const angleStep = (2 * Math.PI) / n;
+    const startAngle = -Math.PI / 2; // top
+
+    ctx.clearRect(0, 0, w, h);
+
+    // Draw grid rings
+    for (let ring = 1; ring <= 4; ring++) {
+        const rr = (ring / 4) * r;
+        ctx.beginPath();
+        for (let i = 0; i <= n; i++) {
+            const a = startAngle + i * angleStep;
+            const x = cx + rr * Math.cos(a);
+            const y = cy + rr * Math.sin(a);
+            i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = 'rgba(30, 58, 95, 0.3)';
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+    }
+
+    // Draw axis lines
+    for (let i = 0; i < n; i++) {
+        const a = startAngle + i * angleStep;
+        ctx.beginPath();
+        ctx.moveTo(cx, cy);
+        ctx.lineTo(cx + r * Math.cos(a), cy + r * Math.sin(a));
+        ctx.strokeStyle = 'rgba(30, 58, 95, 0.25)';
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+    }
+
+    // Draw data polygon
+    ctx.beginPath();
+    for (let i = 0; i < n; i++) {
+        const val = scores[dims[i].key] || 0;
+        const a = startAngle + i * angleStep;
+        const x = cx + r * val * Math.cos(a);
+        const y = cy + r * val * Math.sin(a);
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.fillStyle = 'rgba(74, 144, 217, 0.15)';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(74, 144, 217, 0.8)';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    // Draw data points
+    for (let i = 0; i < n; i++) {
+        const val = scores[dims[i].key] || 0;
+        const a = startAngle + i * angleStep;
+        const x = cx + r * val * Math.cos(a);
+        const y = cy + r * val * Math.sin(a);
+        ctx.beginPath();
+        ctx.arc(x, y, 3, 0, 2 * Math.PI);
+        ctx.fillStyle = '#4a90d9';
+        ctx.fill();
+    }
+
+    // Draw dimension labels
+    ctx.font = '9px Trebuchet MS, sans-serif';
+    ctx.fillStyle = '#7a8fa6';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    for (let i = 0; i < n; i++) {
+        const a = startAngle + i * angleStep;
+        const lx = cx + (r + 16) * Math.cos(a);
+        const ly = cy + (r + 16) * Math.sin(a);
+        ctx.fillText(dims[i].label, lx, ly);
+    }
+}
+
+// ─── Sparkline Drawing ───────────────────────────────────────────
+// Draws a mini bar chart of activity per year.
+
+function drawSparkline(canvas, personData, profile) {
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width;
+    const h = canvas.height;
+
+    ctx.clearRect(0, 0, w, h);
+
+    // Count events per year
+    const eventsByYear = {};
+    const timeline = profile?.timeline || [];
+    timeline.forEach(e => {
+        if (e.year) eventsByYear[e.year] = (eventsByYear[e.year] || 0) + 1;
+    });
+
+    // Also count co-occurrences
+    (coOccurrencesData || []).forEach(co => {
+        if ((co.person_a === personData.name || co.person_b === personData.name) && co.year) {
+            eventsByYear[co.year] = (eventsByYear[co.year] || 0) + 0.5;
+        }
+    });
+
+    const startYear = personData.firstYear || 2004;
+    const endYear = personData.lastYear || 2026;
+    const years = [];
+    for (let y = startYear; y <= endYear; y++) years.push(y);
+
+    if (!years.length) return;
+
+    const values = years.map(y => eventsByYear[y] || 0);
+    const maxVal = Math.max(...values, 1);
+    const barW = Math.max(w / years.length - 1, 2);
+    const gap = (w - barW * years.length) / (years.length + 1);
+
+    for (let i = 0; i < years.length; i++) {
+        const barH = (values[i] / maxVal) * (h - 4);
+        const x = gap + i * (barW + gap);
+        const y = h - barH - 2;
+
+        const isPeak = personData.peakYear === years[i];
+        ctx.fillStyle = isPeak ? 'rgba(201, 168, 76, 0.9)' :
+            values[i] > 0 ? 'rgba(74, 144, 217, 0.6)' : 'rgba(30, 58, 95, 0.2)';
+        ctx.fillRect(x, y, barW, barH);
+    }
+}
+
+// ─── Network Health Dashboard ────────────────────────────────────
+// Renders circular ring indicators for network health metrics.
+
+function renderNetworkHealthDashboard() {
+    const mount = document.getElementById('networkHealthMount');
+    if (!mount || !analyticsReady) return;
+
+    const h = analyticsNetworkHealth;
+
+    const metrics = [
+        {
+            value: h.avgDegree?.toFixed(1) || '0',
+            pct: Math.min((h.avgDegree || 0) / 10, 1),
+            label: 'Avg Connections',
+            sublabel: 'per person',
+            color: '#4a90d9'
+        },
+        {
+            value: ((h.density || 0) * 100).toFixed(1) + '%',
+            pct: h.density || 0,
+            label: 'Network Density',
+            sublabel: 'of possible edges',
+            color: '#4a6741'
+        },
+        {
+            value: ((h.avgClusteringCoeff || 0) * 100).toFixed(0) + '%',
+            pct: h.avgClusteringCoeff || 0,
+            label: 'Clustering',
+            sublabel: 'avg clique tightness',
+            color: '#6b4a8b'
+        },
+        {
+            value: h.giantComponentSize || 0,
+            pct: Math.min((h.giantComponentSize || 0) / (allNodes.length || 1), 1),
+            label: 'Giant Component',
+            sublabel: 'largest connected group',
+            color: '#c9a84c'
+        },
+        {
+            value: (h.avgPathLength || 0).toFixed(1),
+            pct: Math.min((h.avgPathLength || 0) / 5, 1),
+            label: 'Avg Path Length',
+            sublabel: 'hops between people',
+            color: '#4a90d9'
+        },
+        {
+            value: ((h.activeRatio || 0) * 100).toFixed(0) + '%',
+            pct: h.activeRatio || 0,
+            label: 'Still Active',
+            sublabel: 'in last 3 years',
+            color: '#4a6741'
+        },
+        {
+            value: ((h.churnRate || 0) * 100).toFixed(0) + '%',
+            pct: h.churnRate || 0,
+            label: 'Faded Away',
+            sublabel: 'inactive 5+ years',
+            color: '#b45050'
+        },
+        {
+            value: ((h.networkCentralization || 0) * 100).toFixed(0) + '%',
+            pct: Math.min(h.networkCentralization || 0, 1),
+            label: 'Centralization',
+            sublabel: 'how star-shaped',
+            color: '#7a8fa6'
+        }
+    ];
+
+    mount.innerHTML = metrics.map(m => {
+        const circumference = 2 * Math.PI * 22;
+        const dashOffset = circumference * (1 - m.pct);
+        return `<div class="health-card">
+            <div class="health-card-ring">
+                <svg viewBox="0 0 52 52">
+                    <circle cx="26" cy="26" r="22" fill="none" stroke="rgba(30,58,95,0.3)" stroke-width="4" />
+                    <circle cx="26" cy="26" r="22" fill="none" stroke="${m.color}" stroke-width="4"
+                        stroke-dasharray="${circumference}" stroke-dashoffset="${dashOffset}"
+                        stroke-linecap="round" style="transform:rotate(-90deg);transform-origin:center;" />
+                </svg>
+                <div class="health-card-ring-value">${m.value}</div>
+            </div>
+            <div class="health-card-label">${m.label}</div>
+            <div class="health-card-sublabel">${m.sublabel}</div>
+        </div>`;
+    }).join('');
+}
+
+// ─── Advanced Metrics Grid ───────────────────────────────────────
+// Shows top PageRank, bridge people, clique leaders, etc.
+
+function renderAdvancedMetrics(constellation) {
+    const mount = document.getElementById('metricsGridMount');
+    if (!mount || !analyticsReady) return;
+
+    const nodes = allNodes.filter(n => n.id !== 'john');
+
+    // Top PageRank people
+    const topPR = [...analyticsPageRank.entries()]
+        .filter(([name]) => name !== 'John Tronolone')
+        .sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+    // Top bridge people (betweenness)
+    const topBridge = [...analyticsBetweenness.entries()]
+        .filter(([name]) => name !== 'John Tronolone')
+        .sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+    // Highest clustering (clique leaders)
+    const topClique = [...analyticsClustering.entries()]
+        .filter(([name]) => name !== 'John Tronolone')
+        .sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+    // Strongest relationships
+    const topRels = [...analyticsRelStrength.entries()]
+        .sort((a, b) => b[1].strength - a[1].strength).slice(0, 5);
+
+    const communityCount = new Set(analyticsCommunities.communities.values()).size;
+
+    let html = '';
+
+    // Summary cards
+    html += `<div class="metric-card">
+        <div class="metric-card-icon">🧠</div>
+        <div class="metric-card-value">${communityCount}</div>
+        <div class="metric-card-label">Natural Communities</div>
+        <div class="metric-card-detail">Detected via modularity optimization (Q=${analyticsCommunities.modularity.toFixed(3)})</div>
+        <div class="metric-card-bar" style="width:${Math.min(communityCount / 10 * 100, 100)}%"></div>
+    </div>`;
+
+    html += `<div class="metric-card">
+        <div class="metric-card-icon">⭐</div>
+        <div class="metric-card-value">${topPR.length ? topPR[0][0].split(' ')[0] : '—'}</div>
+        <div class="metric-card-label">Highest PageRank</div>
+        <div class="metric-card-detail">${topPR.length ? `Score: ${(topPR[0][1] * 100).toFixed(1)}% — most central by link structure` : 'N/A'}</div>
+        <div class="metric-card-bar" style="width:${topPR.length ? topPR[0][1] * 100 : 0}%"></div>
+    </div>`;
+
+    html += `<div class="metric-card">
+        <div class="metric-card-icon">🌉</div>
+        <div class="metric-card-value">${topBridge.length ? topBridge[0][0].split(' ')[0] : '—'}</div>
+        <div class="metric-card-label">Top Bridge Person</div>
+        <div class="metric-card-detail">${topBridge.length ? `Betweenness: ${(topBridge[0][1] * 100).toFixed(1)}% — connects separate clusters` : 'N/A'}</div>
+        <div class="metric-card-bar" style="width:${topBridge.length ? topBridge[0][1] * 100 : 0}%"></div>
+    </div>`;
+
+    html += `<div class="metric-card">
+        <div class="metric-card-icon">🔗</div>
+        <div class="metric-card-value">${topClique.length ? topClique[0][0].split(' ')[0] : '—'}</div>
+        <div class="metric-card-label">Tightest Clique</div>
+        <div class="metric-card-detail">${topClique.length ? `Clustering: ${(topClique[0][1] * 100).toFixed(0)}% — neighbors are also friends` : 'N/A'}</div>
+        <div class="metric-card-bar" style="width:${topClique.length ? topClique[0][1] * 100 : 0}%"></div>
+    </div>`;
+
+    // Top lists
+    html += `</div>`; // close metrics-grid
+    html += `<div class="insights-grid" style="margin-top:20px">`;
+
+    // PageRank leaders
+    html += `<div class="insights-section">
+        <h4 class="insights-section-title">PageRank Leaders</h4>
+        <p class="insights-desc">Who matters most by network structure alone</p>
+        <div class="insights-list">${topPR.map(([name, score]) => {
+            const person = peopleData[name];
+            return `<button class="insight-person" data-name="${name}">
+                <span class="insight-person-name">${name}</span>
+                <span class="insight-person-meta">${(score * 100).toFixed(1)}%${person?.relation ? ' · ' + person.relation : ''}</span>
+            </button>`;
+        }).join('')}</div>
+    </div>`;
+
+    // Bridge people
+    html += `<div class="insights-section">
+        <h4 class="insights-section-title">Bridge People</h4>
+        <p class="insights-desc">Connectors between different social clusters</p>
+        <div class="insights-list">${topBridge.map(([name, score]) => {
+            const person = peopleData[name];
+            return `<button class="insight-person" data-name="${name}">
+                <span class="insight-person-name">${name}</span>
+                <span class="insight-person-meta">${(score * 100).toFixed(1)}%${person?.relation ? ' · ' + person.relation : ''}</span>
+            </button>`;
+        }).join('')}</div>
+    </div>`;
+
+    // Strongest bonds
+    html += `<div class="insights-section">
+        <h4 class="insights-section-title">Strongest Bonds</h4>
+        <p class="insights-desc">Relationships with highest composite strength (weight + co-occurrence + recency)</p>
+        <div class="insights-list">${topRels.map(([key, data]) => {
+            const [nameA, nameB] = key.split('|');
+            const classification = data.strength > 2 ? 'Strong' : data.strength > 1 ? 'Moderate' : 'Weak';
+            return `<button class="insight-person" data-name="${nameA}">
+                <span class="insight-person-name">${nameA} ↔ ${nameB}</span>
+                <span class="insight-person-meta">${data.strength.toFixed(2)} · ${classification} · ${data.mutualCount} mutual</span>
+            </button>`;
+        }).join('')}</div>
+    </div>`;
+
+    html += `</div>`;
+
+    mount.innerHTML = html;
+
+    // Wire up clickable people
+    mount.querySelectorAll('.insight-person').forEach(btn => {
+        btn.addEventListener('click', () => {
+            focusNodeByName(btn.dataset.name);
+            document.getElementById('constellationMount')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    });
+}
+
+// ─── Community Cards ─────────────────────────────────────────────
+// Renders detected community clusters with member lists.
+
+function renderCommunityCards() {
+    const mount = document.getElementById('communitiesMount');
+    if (!mount || !analyticsReady) return;
+
+    const communityMembers = {};
+    for (const [name, communityId] of analyticsCommunities.communities) {
+        if (name === 'John Tronolone') continue;
+        if (!communityMembers[communityId]) communityMembers[communityId] = [];
+        communityMembers[communityId].push(name);
+    }
+
+    // Sort communities by size
+    const sortedCommunities = Object.entries(communityMembers)
+        .map(([id, members]) => ({
+            id: parseInt(id),
+            members: members.sort((a, b) => {
+                const scoreA = analyticsPersonScores.get(a)?.socialGravity || 0;
+                const scoreB = analyticsPersonScores.get(b)?.socialGravity || 0;
+                return scoreB - scoreA;
+            })
+        }))
+        .filter(c => c.members.length >= 2) // Only show communities with 2+ members
+        .sort((a, b) => b.members.length - a.members.length);
+
+    if (!sortedCommunities.length) return;
+
+    // Name communities by their top member's category
+    function nameCommunity(members) {
+        const catCounts = {};
+        members.forEach(name => {
+            const node = allNodes.find(n => n.name === name);
+            const cat = node?.displayCat || 'other';
+            catCounts[cat] = (catCounts[cat] || 0) + 1;
+        });
+        const topCat = Object.entries(catCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
+        const catNames = { core: 'Inner Circle', family: 'Family', ecd: 'ECD Community', other: 'Extended Network' };
+        const topMember = members[0]?.split(' ')[0] || '';
+        return `${catNames[topCat] || 'Group'} (${topMember}+)`;
+    }
+
+    let html = `<h4 class="insights-section-title">Detected Communities</h4>
+        <p class="insights-desc">Clusters discovered by modularity optimization — groups that naturally hang together</p>
+        <div class="communities-grid">`;
+
+    sortedCommunities.forEach(c => {
+        const color = analyticsCommunities.communityColors.get(c.id) || '#7a8fa6';
+        const communityName = nameCommunity(c.members);
+
+        // Community-level stats
+        const avgPR = c.members.reduce((sum, m) => sum + (analyticsPageRank.get(m) || 0), 0) / c.members.length;
+        const avgCC = c.members.reduce((sum, m) => sum + (analyticsClustering.get(m) || 0), 0) / c.members.length;
+
+        html += `<div class="community-card" style="--community-color:${color}">
+            <div class="community-card-header">
+                <span class="community-dot" style="background:${color}"></span>
+                <span class="community-name">${communityName}</span>
+                <span class="community-count">${c.members.length}</span>
+            </div>
+            <div class="community-members">${c.members.slice(0, 12).map(name =>
+                `<button class="community-member" data-name="${name}">${name}</button>`
+            ).join('')}${c.members.length > 12 ? `<span class="community-member" style="cursor:default;opacity:0.5">+${c.members.length - 12} more</span>` : ''}</div>
+            <div class="community-stats">
+                <span>Avg PageRank: ${(avgPR * 100).toFixed(1)}%</span>
+                <span>Avg Clustering: ${(avgCC * 100).toFixed(0)}%</span>
+            </div>
+        </div>`;
+    });
+
+    html += `</div>`;
+    mount.innerHTML = html;
+
+    // Wire up member clicks
+    mount.querySelectorAll('.community-member[data-name]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            focusNodeByName(btn.dataset.name);
+            document.getElementById('constellationMount')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    });
+}
+
+// ─── Diversity Over Time Chart ───────────────────────────────────
+// Shannon entropy of category mix + network age over time.
+
+function renderDiversityChart() {
+    const canvas = document.getElementById('diversityChart');
+    if (!canvas || typeof Chart === 'undefined' || !analyticsReady) return;
+
+    const evolution = analyticsTemporalEvolution;
+    if (!evolution.length) return;
+
+    const years = evolution.map(e => String(e.year));
+    const diversity = evolution.map(e => e.diversityIndex);
+    const networkAge = evolution.map(e => e.networkAge);
+    const activeCount = evolution.map(e => e.activeCount);
+
+    new Chart(canvas, {
+        type: 'line',
+        data: {
+            labels: years,
+            datasets: [
+                {
+                    label: 'Diversity Index (Shannon)',
+                    data: diversity,
+                    borderColor: '#6b4a8b',
+                    backgroundColor: 'rgba(107,74,139,0.1)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 3,
+                    pointBackgroundColor: '#6b4a8b',
+                    borderWidth: 2,
+                    yAxisID: 'y'
+                },
+                {
+                    label: 'Network Age (avg years known)',
+                    data: networkAge,
+                    borderColor: '#c9a84c',
+                    backgroundColor: 'rgba(201,168,76,0.05)',
+                    fill: false,
+                    tension: 0.3,
+                    pointRadius: 3,
+                    pointBackgroundColor: '#c9a84c',
+                    borderWidth: 2,
+                    yAxisID: 'y1'
+                },
+                {
+                    label: 'Active People',
+                    data: activeCount,
+                    borderColor: 'rgba(74,144,217,0.4)',
+                    backgroundColor: 'rgba(74,144,217,0.08)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 2,
+                    borderWidth: 1,
+                    borderDash: [4, 4],
+                    yAxisID: 'y1'
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            interaction: { mode: 'index', intersect: false },
+            plugins: {
+                legend: {
+                    display: true,
+                    position: 'bottom',
+                    labels: {
+                        color: '#7a8fa6',
+                        font: { family: "'Trebuchet MS', sans-serif", size: 11 },
+                        boxWidth: 14,
+                        padding: 16
+                    }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(10, 22, 40, 0.95)',
+                    borderColor: '#6b4a8b',
+                    borderWidth: 1,
+                    titleFont: { family: "'Courier Prime', monospace", size: 13 },
+                    bodyFont: { family: "'Trebuchet MS', sans-serif", size: 12 },
+                    padding: 12
+                }
+            },
+            scales: {
+                x: {
+                    ticks: { color: '#7a8fa6', font: { family: "'Courier Prime', monospace", size: 10 } },
+                    grid: { color: 'rgba(30,58,95,0.2)' }
+                },
+                y: {
+                    position: 'left',
+                    title: {
+                        display: true, text: 'Shannon Entropy',
+                        color: '#6b4a8b', font: { family: "'Courier Prime', monospace", size: 10 }
+                    },
+                    ticks: { color: '#6b4a8b', font: { family: "'Courier Prime', monospace", size: 10 } },
+                    grid: { color: 'rgba(30,58,95,0.15)' }
+                },
+                y1: {
+                    position: 'right',
+                    title: {
+                        display: true, text: 'People / Years',
+                        color: '#c9a84c', font: { family: "'Courier Prime', monospace", size: 10 }
+                    },
+                    ticks: { color: '#c9a84c', font: { family: "'Courier Prime', monospace", size: 10 } },
+                    grid: { drawOnChartArea: false }
+                }
+            }
+        }
     });
 }
 
