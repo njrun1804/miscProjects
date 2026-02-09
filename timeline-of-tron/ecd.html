@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East Coast Dodgeball — Timeline of Tron</title>
+    <meta name="description" content="128 players. 168 events. 20 years. One backyard dodgeball tournament that became a community.">
+    <meta property="og:title" content="East Coast Dodgeball — Timeline of Tron">
+    <meta property="og:description" content="128 players. 168 events. 20 years of EastCoastDodgeball.">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ecd.css">
+</head>
+<body class="room-ecd">
+    <div id="lj-header-mount"></div>
+
+    <main class="ecd-main">
+        <!-- Hero -->
+        <section class="ecd-hero">
+            <h1>East Coast Dodgeball</h1>
+            <p class="room-subtitle">One person started a backyard dodgeball tournament. 128 people showed up over 20 years.</p>
+            <div class="ecd-hero-stats"></div>
+        </section>
+
+        <!-- The Rise and Fall -->
+        <section class="ecd-section">
+            <h2>The Rise and Fall</h2>
+            <p class="ecd-section-intro">Sentiment and attendance tell the same story: growth killed the joy. Then when it collapsed and was rebuilt, the joy returned.</p>
+            <div class="heartbeat-chart-wrap">
+                <canvas id="heartbeatChart"></canvas>
+            </div>
+            <div class="era-cards"></div>
+        </section>
+
+        <!-- The 128 -->
+        <section class="ecd-section">
+            <h2>The 128</h2>
+            <p class="ecd-section-intro">Every player who ever stepped onto the field. Nodes sized by mentions, colored by era.</p>
+            <div class="player-network-wrap">
+                <div class="player-network-tooltip" id="networkTooltip"></div>
+            </div>
+            <h3 class="ecd-callout" style="margin-bottom: var(--space-md); font-style: normal; font-family: var(--font-mono); font-size: 15px; color: var(--room-accent); text-transform: uppercase; letter-spacing: 1px;">Legends Leaderboard</h3>
+            <div class="ecd-leaderboard"></div>
+        </section>
+
+        <!-- Rivalries -->
+        <section class="ecd-section">
+            <h2>The Rivalries</h2>
+            <p class="ecd-section-intro">Head-to-head records built from 350+ documented matches. The context snippets are straight from the original LiveJournal posts.</p>
+            <div class="rivalry-grid"></div>
+        </section>
+
+        <!-- The Emotional Archive -->
+        <section class="ecd-section">
+            <h2>The Emotional Archive</h2>
+            <p class="ecd-section-intro">553 posts analyzed for emotional tone. The most positive posts aren't victories — they're the bittersweet ones.</p>
+            <div class="emotion-insight"></div>
+            <div class="emotion-chart-wrap">
+                <div class="emotion-bubbles"></div>
+            </div>
+            <h3 class="ecd-callout" style="margin-bottom: var(--space-md); font-style: normal; font-family: var(--font-mono); font-size: 15px; color: var(--room-accent); text-transform: uppercase; letter-spacing: 1px;">Greatest Hits</h3>
+            <div class="highlights-list"></div>
+        </section>
+
+        <!-- Legacy -->
+        <section class="ecd-section">
+            <h2>The Legacy</h2>
+            <p class="ecd-section-intro">The competition ended but the community didn't. Awards, Hall of Fame inductees, and $1,847 raised for charity.</p>
+            <div class="legacy-grid"></div>
+        </section>
+
+        <p class="ecd-callout">
+            "Some people journal. Some people run. Tron started a dodgeball tournament and 128 people showed up."
+        </p>
+    </main>
+
+    <div id="lj-footer-mount"></div>
+
+    <script src="lib/d3.min.js"></script>
+    <script src="lib/chart.js"></script>
+    <script src="lib/fuse.min.js"></script>
+    <script type="module">
+        import { initNav } from './js/nav.js';
+        import './js/search.js';
+        import './js/ecd.js';
+
+        initNav({
+            room: 'ecd',
+            mood: 'competitive',
+            music: 'Survivor — "Eye of the Tiger"',
+            subtitle: '128 Players. 168 Events. 20 Years.'
+        });
+    </script>
+</body>
+</html>

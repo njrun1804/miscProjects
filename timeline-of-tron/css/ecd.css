@@ -1,0 +1,640 @@
+/*
+ * THE TIMELINE OF TRON — ECD: East Coast Dodgeball
+ * Deep plum-black, dodgeball red-orange, night at the park
+ */
+
+.room-ecd {
+    --room-bg: #1a1520;
+    --room-text: #e0d8cc;
+    --room-accent: #e85d3a;
+    --room-panel: #251e2a;
+    --lj-panel: #251e2a;
+    --lj-border: #3d2f4a;
+    --lj-text: #e0d8cc;
+    --lj-text-secondary: #9a8a7a;
+    --lj-header-bg: #1a1520;
+    --lj-header-text: #e0d8cc;
+    --lj-link: #e85d3a;
+    --lj-link-hover: #ff7a54;
+    --lj-input-bg: #2a2230;
+    --lj-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.ecd-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: var(--space-lg) 24px;
+}
+
+/* Hero */
+.ecd-hero {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.ecd-hero h1 {
+    color: var(--room-accent);
+    font-size: 2.4rem;
+}
+
+.ecd-hero .room-subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.ecd-hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    margin: var(--space-lg) 0;
+    padding: 24px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+}
+
+.ecd-hero-stat {
+    text-align: center;
+    min-width: 80px;
+}
+
+.ecd-hero-stat__value {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--room-accent);
+    line-height: 1.2;
+}
+
+.ecd-hero-stat__label {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+
+/* Sections shared */
+.ecd-section {
+    margin-bottom: var(--space-xl);
+}
+
+.ecd-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+.ecd-section-intro {
+    text-align: center;
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    margin-bottom: var(--space-lg);
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.ecd-callout {
+    max-width: 600px;
+    margin: var(--space-lg) auto;
+    text-align: center;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    line-height: 1.6;
+}
+
+/* Section 2: Rise and Fall — Heartbeat Chart */
+.heartbeat-chart-wrap {
+    position: relative;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: var(--space-lg);
+}
+
+.heartbeat-chart-wrap canvas {
+    width: 100% !important;
+    max-height: 320px;
+}
+
+.era-cards {
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    padding: var(--space-sm) 0;
+}
+
+.era-card {
+    flex: 1;
+    min-width: 170px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 16px;
+}
+
+.era-card--collapse {
+    border-color: #5a3a3a;
+    background: rgba(90, 30, 30, 0.2);
+}
+
+.era-card--boom {
+    border-color: #3a5a3a;
+    background: rgba(30, 90, 30, 0.1);
+}
+
+.era-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.era-card__name {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.era-card__years {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.era-card__desc {
+    font-size: 12px;
+    color: var(--room-text);
+    line-height: 1.5;
+}
+
+.era-card__metrics {
+    margin-top: 8px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.era-card__metric--growth {
+    color: #6abf6a;
+}
+
+.era-card__metric--decline {
+    color: #bf6a6a;
+}
+
+.era-arrow {
+    display: flex;
+    align-items: center;
+    padding: 0 6px;
+    font-size: 18px;
+    color: var(--lj-text-secondary);
+    opacity: 0.4;
+}
+
+/* Section 3: The 128 — Player Network */
+.player-network-wrap {
+    position: relative;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: var(--space-lg);
+}
+
+.player-network-wrap svg {
+    display: block;
+    width: 100%;
+}
+
+.player-network-tooltip {
+    position: absolute;
+    pointer-events: none;
+    background: rgba(26, 21, 32, 0.95);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 10px 14px;
+    font-size: 12px;
+    color: var(--room-text);
+    opacity: 0;
+    transition: opacity 0.15s;
+    z-index: 10;
+    max-width: 240px;
+}
+
+.player-network-tooltip.visible { opacity: 1; }
+
+.tooltip-name {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--room-accent);
+    font-size: 14px;
+}
+
+.tooltip-alias {
+    font-style: italic;
+    color: var(--lj-text-secondary);
+    margin-top: 2px;
+}
+
+.tooltip-stats {
+    margin-top: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+/* Leaderboard */
+.ecd-leaderboard-table {
+    overflow-x: auto;
+}
+
+.ecd-lb-header,
+.ecd-lb-row {
+    display: grid;
+    grid-template-columns: 36px 1fr 1fr 60px 80px 100px;
+    gap: 8px;
+    padding: 8px 12px;
+    align-items: center;
+}
+
+.ecd-lb-header {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--lj-text-secondary);
+    border-bottom: 1px solid var(--lj-border);
+}
+
+.ecd-lb-row {
+    font-size: 13px;
+    color: var(--room-text);
+    border-bottom: 1px solid rgba(61, 47, 74, 0.3);
+    transition: background 0.15s;
+}
+
+.ecd-lb-row:hover {
+    background: rgba(232, 93, 58, 0.06);
+}
+
+.ecd-lb-row--top3 {
+    background: rgba(232, 93, 58, 0.04);
+}
+
+.ecd-lb-row--top3 .ecd-lb-name {
+    color: var(--room-accent);
+    font-weight: 700;
+}
+
+.ecd-lb-rank {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--lj-text-secondary);
+    text-align: center;
+}
+
+.ecd-lb-name {
+    font-family: var(--font-mono);
+    font-size: 13px;
+}
+
+.ecd-lb-nickname {
+    font-style: italic;
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+}
+
+.ecd-lb-record {
+    font-family: var(--font-mono);
+    text-align: center;
+}
+
+.ecd-lb-mentions {
+    font-family: var(--font-mono);
+    text-align: right;
+    color: var(--lj-text-secondary);
+}
+
+.ecd-lb-era {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    text-align: right;
+}
+
+/* Section 4: Rivalries */
+.rivalry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+}
+
+.rivalry-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 16px;
+}
+
+.rivalry-card__matchup {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--room-text);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.rivalry-vs {
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    text-transform: uppercase;
+}
+
+.rivalry-winner {
+    color: var(--room-accent);
+    font-weight: 700;
+}
+
+.rivalry-card__record {
+    margin-top: 6px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    font-size: 12px;
+}
+
+.rivalry-record-value {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.rivalry-detail {
+    font-family: var(--font-mono);
+    color: var(--lj-text-secondary);
+}
+
+.rivalry-card__snippet {
+    margin-top: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--lj-text-secondary);
+    line-height: 1.5;
+    border-left: 2px solid var(--room-accent);
+    padding-left: 10px;
+}
+
+/* Section 5: Emotional Archive */
+.emotion-chart-wrap {
+    position: relative;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-bottom: var(--space-lg);
+}
+
+.emotion-insight {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: var(--space-lg);
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+}
+
+.emotion-insight__number {
+    font-family: var(--font-mono);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--room-accent);
+    display: block;
+}
+
+.emotion-insight__label {
+    font-size: 14px;
+    color: var(--room-text);
+    margin-top: 6px;
+    line-height: 1.5;
+}
+
+.emotion-insight__sub {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+    font-style: italic;
+}
+
+.emotion-bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.emotion-bubble {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    padding: 6px;
+    transition: transform 0.15s;
+    cursor: default;
+    line-height: 1.2;
+}
+
+.emotion-bubble:hover {
+    transform: scale(1.1);
+}
+
+.emotion-bubble__count {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.emotion-bubble__label {
+    font-size: 9px;
+    opacity: 0.85;
+    max-width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Greatest Hits */
+.highlights-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 10px;
+}
+
+.highlight-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.highlight-card__year {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--room-accent);
+    min-width: 36px;
+}
+
+.highlight-card__content {
+    flex: 1;
+}
+
+.highlight-card__title {
+    font-size: 13px;
+    color: var(--room-text);
+    line-height: 1.4;
+}
+
+.highlight-card__meta {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    text-transform: uppercase;
+    margin-top: 4px;
+}
+
+/* Section 6: Legacy */
+.legacy-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.legacy-panel {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 20px;
+}
+
+.legacy-panel h3 {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--room-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: var(--space-md);
+}
+
+.legacy-item {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(61, 47, 74, 0.3);
+    font-size: 13px;
+}
+
+.legacy-item:last-child { border-bottom: none; }
+
+.legacy-item__name {
+    font-family: var(--font-mono);
+    color: var(--room-text);
+    font-weight: 700;
+}
+
+.legacy-item__type {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.legacy-item__context {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+    margin-top: 4px;
+    line-height: 1.4;
+}
+
+.legacy-item--remembrance {
+    border-left: 3px solid #7a7a7a;
+    padding-left: 12px;
+    margin-top: var(--space-md);
+}
+
+.fundraiser-item {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(61, 47, 74, 0.3);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.fundraiser-item:last-child { border-bottom: none; }
+
+.fundraiser-amount {
+    font-family: var(--font-mono);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.fundraiser-amount--hero {
+    font-size: 2.2rem;
+}
+
+.fundraiser-detail {
+    flex: 1;
+}
+
+.fundraiser-event {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--room-text);
+}
+
+.fundraiser-year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.fundraiser-beneficiary {
+    font-size: 12px;
+    color: var(--room-accent);
+    margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+    .ecd-hero-stats { gap: 16px; padding: 14px; }
+    .ecd-hero-stat__value { font-size: 1.4rem; }
+    .era-cards { flex-direction: column; }
+    .era-arrow { transform: rotate(90deg); justify-content: center; padding: 4px 0; }
+    .ecd-lb-header, .ecd-lb-row { grid-template-columns: 28px 1fr 60px 60px; font-size: 12px; }
+    .ecd-lb-nickname, .ecd-lb-era { display: none; }
+    .rivalry-grid { grid-template-columns: 1fr; }
+    .legacy-grid { grid-template-columns: 1fr; }
+    .highlights-list { grid-template-columns: 1fr; }
+}

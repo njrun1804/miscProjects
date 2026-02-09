@@ -11,6 +11,7 @@ const ROOMS = [
     { id: 'atlas', label: 'Atlas', href: 'atlas.html' },
     { id: 'vault', label: 'Vault', href: 'vault.html' },
     { id: 'dynasty', label: 'Dynasty', href: 'dynasty.html' },
+    { id: 'ecd', label: 'ECD', href: 'ecd.html' },
 ];
 
 const DEFAULT_CONFIG = {
