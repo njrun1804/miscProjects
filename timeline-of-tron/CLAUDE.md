@@ -39,7 +39,7 @@ The site has 10 HTML pages: 1 lobby + 8 rooms + 1 hidden room.
 | `atlas.html` | The Atlas | wandering | Fleetwood Mac — "Everywhere" | Leaflet map, travel eras, cruise streak, recovery stories |
 | `vault.html` | The Vault | intimate | Bon Iver — "Skinny Love" | 79 quotes, voice evolution, then & now pairs, soundtrack |
 | `dynasty.html` | The Dynasty | accomplished | Jay-Z — "Empire State of Mind" | Career staircase, trophy case, WWE timeline, traditions |
-| `ecd.html` | ECD | competitive | Survivor — "Eye of the Tiger" | 128 players, 168 events, 20 years of dodgeball |
+| `ecd.html` | ECD | competitive | Survivor — "Eye of the Tiger" | 128 players, 168 events, 21 years of dodgeball |
 | `room0.html` | The Before | raw | Radiohead — "Everything In Its Right Place" | Hidden room, requires finding 7 clues across other rooms |
 
 **Note**: There is no `comeback.html`. Comeback content lives inside `records.html`.
@@ -81,7 +81,7 @@ timeline-of-tron/
 │   ├── atlas.js                  # Room 5: Leaflet map, travel eras, cruise streak
 │   ├── vault.js                  # Room 6: featured quote, year chapters, voice evolution, soundtrack
 │   ├── dynasty.js                # Room 7: career staircase, trophy case, WWE, traditions
-│   └── ecd.js                    # Room 8: 128 players, 168 events, D3 force bubbles, rivalries
+│   └── ecd.js                    # Room 8: 128 players, 171 events attended, D3 force bubbles, rivalries
 ├── lib/
 │   ├── chart.js                  # Chart.js v4.5.1 (208KB, do NOT update without testing)
 │   ├── d3.min.js                 # D3.js v7 (~280KB)
@@ -309,7 +309,7 @@ GitHub Pages auto-deploys in 1-2 minutes.
 
 ### ECD Room Addition (Feb 9, 2026)
 - Added Room 8: East Coast Dodgeball (ECD) — `ecd.html`, `css/ecd.css`, `js/ecd.js`
-- 128 players, 168 events, 20 years of community data
+- 128 players, 168 events in database (171 attended by author), 21 years of community data
 - D3 force-directed player network, emotion bubbles, rivalry head-to-heads
 - Scraped 600+ ECD posts from LiveJournal via multi-phase pipeline
 - 12 dedicated ECD JSON data files in `db/api/`
@@ -347,12 +347,12 @@ GitHub Pages auto-deploys in 1-2 minutes.
 
 This is a deeply personal project tracking 22+ years of one person's life:
 - Career: Intern → Executive Director (15 years)
-- WWE: 91+ events, 25-year Survivor Series streak
+- WWE: 91+ events, 29-year Survivor Series streak
 - Travel: 20+ countries, 5 continents
 - Sports: 93.9% table tennis win rate, 254 cornhole wins
 - Medical: 14 events, 100% comeback rate, 7.1-month average recovery
 - People: 164 documented relationships across the full arc
-- ECD: 128 players, 168 events, 20 years of dodgeball community
+- ECD: 128 players, 171 events, 21 years of dodgeball community
 - The obsessive precision of measurement IS the character trait — 8.6 lbs of shrimp, 4:10:18 PM CT, 218 ping pong rounds
 
 **Tone**: Nostalgic, detailed, proud but self-aware. The data obsession is treated as a feature, not a bug.

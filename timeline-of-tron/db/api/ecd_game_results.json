@@ -39,19 +39,6 @@
     "event_number": null
   },
   {
-    "id": 36,
-    "winner": "Kelly Oberto",
-    "loser": "Travis Mills",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 116896,
-    "post_date": "2012-08-28",
-    "year": 2010,
-    "event_number": null
-  },
-  {
     "id": 35,
     "winner": "Kelly Oberto",
     "loser": "Travis Mills",
@@ -61,19 +48,6 @@
     "match_type": "individual",
     "post_id": 116896,
     "post_date": "2012-08-28",
-    "year": 2010,
-    "event_number": null
-  },
-  {
-    "id": 14,
-    "winner": "Dan Spengeman",
-    "loser": "Julia Dennebaum",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 106400,
-    "post_date": "2010-10-16",
     "year": 2010,
     "event_number": null
   },
@@ -130,19 +104,6 @@
     "event_number": 140
   },
   {
-    "id": 17,
-    "winner": "Bobby Vetrano",
-    "loser": "Kenny Jacobs",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 109645,
-    "post_date": "1986-06-15",
-    "year": 2010,
-    "event_number": 140
-  },
-  {
     "id": 16,
     "winner": "Bobby Vetrano",
     "loser": "Kenny Jacobs",
@@ -154,19 +115,6 @@
     "post_date": "1986-06-15",
     "year": 2010,
     "event_number": 140
-  },
-  {
-    "id": 64,
-    "winner": "Kevin Adams",
-    "loser": "Kevin Fitzpatrick",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 67846,
-    "post_date": "",
-    "year": 2010,
-    "event_number": 80
   },
   {
     "id": 63,
@@ -231,19 +179,6 @@
     "post_id": 103294,
     "post_date": "",
     "year": 2009,
-    "event_number": null
-  },
-  {
-    "id": 28,
-    "winner": "Dan Spengeman",
-    "loser": "Julia Dennebaum",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
-    "year": 2008,
     "event_number": null
   },
   {
@@ -507,19 +442,6 @@
     "event_number": 149
   },
   {
-    "id": 85,
-    "winner": "Kevin Adams",
-    "loser": "Michael Edwards",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 91312,
-    "post_date": "2008-07-12",
-    "year": 2008,
-    "event_number": 145
-  },
-  {
     "id": 84,
     "winner": "Kevin Adams",
     "loser": "Michael Edwards",
@@ -544,19 +466,6 @@
     "post_date": "2008-01-26",
     "year": 2008,
     "event_number": 123
-  },
-  {
-    "id": 79,
-    "winner": "Grant Cornero",
-    "loser": "Ryan Letsche",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 79407,
-    "post_date": "2008-01-12",
-    "year": 2008,
-    "event_number": 116
   },
   {
     "id": 78,
@@ -793,19 +702,6 @@
     "event_number": 75
   },
   {
-    "id": 82,
-    "winner": "Juan Londono",
-    "loser": "Justin Wolf",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 90304,
-    "post_date": "2007-07-24",
-    "year": 2007,
-    "event_number": 75
-  },
-  {
     "id": 72,
     "winner": "Kevin Adams",
     "loser": "Grant Cornero",
@@ -871,19 +767,6 @@
     "event_number": null
   },
   {
-    "id": 77,
-    "winner": "Kevin Megill",
-    "loser": "Justin Wolf",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 78629,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 120
-  },
-  {
     "id": 76,
     "winner": "Kevin Megill",
     "loser": "Justin Wolf",
@@ -921,19 +804,6 @@
     "post_date": "",
     "year": 2007,
     "event_number": 120
-  },
-  {
-    "id": 67,
-    "winner": "Chris Adams",
-    "loser": "Kevin Fitzpatrick",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 70933,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 95
   },
   {
     "id": 66,
@@ -1010,19 +880,6 @@
     "match_type": "individual",
     "post_id": 97699,
     "post_date": "2007-11-05",
-    "year": 2006,
-    "event_number": 60
-  },
-  {
-    "id": 69,
-    "winner": "Mike Butler",
-    "loser": "Melissa Kerr",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 73906,
-    "post_date": "2007-05-06",
     "year": 2006,
     "event_number": 60
   },

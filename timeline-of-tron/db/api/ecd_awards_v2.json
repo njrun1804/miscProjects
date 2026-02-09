@@ -17,7 +17,7 @@
     "date": "",
     "year": 2010,
     "event_number": null,
-    "context": "rBall\" Results and Statistics\nRimshot Contest\n#15\n: Winner ★ Lauren Stopa\n→ Contestants: (14) Kevin Fitzpatrick, Kenny Jaco"
+    "context": "rBall\" Results and Statistics\nRimshot Contest\n#15\n: Winner \u2605 Lauren Stopa\n\u2192 Contestants: (14) Kevin Fitzpatrick, Kenny Jaco"
   },
   {
     "id": 5,
@@ -192,7 +192,7 @@
   {
     "id": 20,
     "award_type": "In Remembrance",
-    "recipient": "MICHAEL ROSINSKI",
+    "recipient": "Michael Rosinski",
     "post_id": null,
     "date": "2025-09-27",
     "year": null,
@@ -202,7 +202,7 @@
   {
     "id": 21,
     "award_type": "200 Events Award",
-    "recipient": "DIANA DIBUCCIO",
+    "recipient": "Diana DiBuccio",
     "post_id": null,
     "date": "2025-09-27",
     "year": null,
@@ -212,7 +212,7 @@
   {
     "id": 22,
     "award_type": "ECD Elite Inductee",
-    "recipient": "SASCHA BASISTA",
+    "recipient": "Sascha Basista",
     "post_id": null,
     "date": "2025-09-27",
     "year": null,
@@ -222,7 +222,7 @@
   {
     "id": 23,
     "award_type": "Rimshot Contest Champion",
-    "recipient": "KEVIN FITZPATRICK",
+    "recipient": "Kevin Fitzpatrick",
     "post_id": null,
     "date": "2025-09-27",
     "year": null,
@@ -230,19 +230,9 @@
     "context": "From sidebar: ANNIVERSARY XX"
   },
   {
-    "id": 24,
-    "award_type": "ProBowl Fundraiser",
-    "recipient": "$1,720 For LAUREN & EMMA",
-    "post_id": null,
-    "date": "2025-02-08",
-    "year": null,
-    "event_number": null,
-    "context": "From sidebar: 2025 PRO BOWL"
-  },
-  {
     "id": 25,
     "award_type": "Rimshot Contest Champion",
-    "recipient": "ZACH KATZ",
+    "recipient": "Zach Katz",
     "post_id": null,
     "date": "2024-09-21",
     "year": null,
@@ -252,7 +242,7 @@
   {
     "id": 26,
     "award_type": "ECD Elite Inductee",
-    "recipient": "DAN SPENGEMAN",
+    "recipient": "Dan Spengeman",
     "post_id": null,
     "date": "2023-08-26",
     "year": null,
@@ -262,7 +252,7 @@
   {
     "id": 27,
     "award_type": "Hit The Human Champion",
-    "recipient": "KEVIN MEGILL",
+    "recipient": "Kevin Megill",
     "post_id": null,
     "date": "2023-08-26",
     "year": null,

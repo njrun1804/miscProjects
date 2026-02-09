@@ -330,24 +330,59 @@ function selectQuotes(quotes, max) {
     return selected.slice(0, max);
 }
 
+// ─── DATE EXTRACTION ─────────────────────────────────────────────
+const MONTH_ORDER = { Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12 };
+
+function extractDate(text) {
+    if (!text) return null;
+    const months = 'Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec';
+    // "Mon DD-DD" range within a month
+    const rangeRe = new RegExp(`\\b((?:${months})\\s+\\d{1,2})\\s*[-\u2013]\\s*(\\d{1,2})\\b`);
+    const rangeMatch = text.match(rangeRe);
+    if (rangeMatch) return { label: `${rangeMatch[1]}\u2013${rangeMatch[2]}`, month: MONTH_ORDER[rangeMatch[1].slice(0,3)], day: parseInt(rangeMatch[1].match(/\d+/)[0]) };
+    // "Mon DD"
+    const singleRe = new RegExp(`\\b((?:${months})\\s+\\d{1,2})\\b`);
+    const singleMatch = text.match(singleRe);
+    if (singleMatch) return { label: singleMatch[1], month: MONTH_ORDER[singleMatch[1].slice(0,3)], day: parseInt(singleMatch[1].match(/\d+$/)[0]) };
+    return null;
+}
+
 // ─── MILESTONE TIMELINE ──────────────────────────────────────────
 function timelineHTML(milestones) {
     if (!milestones.length) return '';
 
     const sorted = [...milestones].sort((a, b) => {
         if (a.year !== b.year) return a.year - b.year;
-        return Math.abs(b.vader_compound) - Math.abs(a.vader_compound);
+        const da = extractDate(a.milestone);
+        const db = extractDate(b.milestone);
+        if (da && db) {
+            if (da.month !== db.month) return da.month - db.month;
+            return da.day - db.day;
+        }
+        if (da) return -1;
+        if (db) return 1;
+        return 0;
     });
 
     const display = selectMilestones(sorted, 12);
 
+    let lastLabel = '';
     const entries = display.map(m => {
-        const sv = m.vader_compound || 0;
-        const sentClass = sv > 0.1 ? 'positive' : sv < -0.1 ? 'negative' : 'neutral';
         const icon = CATEGORY_ICONS[m.category] || CATEGORY_ICONS.other;
+        const parsed = extractDate(m.milestone);
+        let dateLabel;
+        if (parsed) {
+            dateLabel = parsed.label;
+        } else {
+            dateLabel = String(m.year);
+        }
+        // Suppress repeated identical labels
+        const showLabel = dateLabel !== lastLabel;
+        lastLabel = dateLabel;
+
         return `
-            <div class="tl-entry tl-entry--${sentClass}">
-                <span class="tl-year">${m.year}</span>
+            <div class="tl-entry">
+                <span class="tl-year">${showLabel ? dateLabel : ''}</span>
                 <span class="tl-dot"></span>
                 <div class="tl-body">
                     <span class="tl-icon">${icon}</span>

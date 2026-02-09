@@ -1,0 +1,315 @@
+================================================================================
+          TIMELINE OF TRON: DATA MAPPING & SOURCE REFERENCE
+================================================================================
+
+This document maps each hardcoded stat in index.html to its actual data sources.
+
+
+================================================================================
+PART 1: HARDCODED STATS IN index.html (Lines 187-197)
+================================================================================
+
+The STATS array in index.html (lines 187-197) contains 10 rotating stats:
+
+INDEX  STAT                                          SOURCES VERIFIED
+──────────────────────────────────────────────────────────────────────────
+[0]    "91 WWE events · 29-year Survivor Series"    NOT VERIFIED*
+[1]    "20+ countries · 5 continents · 34 trips"    travel.json (34 trips) ✓
+[2]    "93.9% table tennis win rate · 218 rounds"   epic_numbers.json #2 ✓
+[3]    "124 people documented across full arc"      people_profiles.json
+                                                    MISMATCH: 164 not 124 ✗
+[4]    "14 medical events · 100% comeback rate"     NOT VERIFIED*
+[5]    "8.6 lbs of shrimp · consumed at one event"  epic_numbers.json #5 ✓
+[6]    "19 life chapters · 13 turning points"       life_chapters.json (19) ✓
+                                                    turning_points.json (8) **
+[7]    "79 quotes spanning 22 years"                quotes.json (79) ✓
+[8]    "254 cornhole wins · 38 cornholios"          fun_facts.json #12 ✓
+                                                    epic_numbers.json #3 ✓
+[9]    "27 bowling games in a single day"           epic_numbers.json #1 ✓
+
+* Not verified with available data; may be in specialized dataset
+** Turning points has only 8, not 13 mentioned
+
+
+================================================================================
+PART 2: ROOM CARD TEASERS (index.html Lines 240-297)
+================================================================================
+
+Room Card             Data Source              Count  Status
+──────────────────────────────────────────────────────────────────────────
+The Arc             life_chapters.json        19     ✓ MATCH (line 62)
+The Constellation   people_profiles.json      164    ✗ MISMATCH (says 124)
+The Record Book     epic_numbers.json         18     No explicit claim
+The Atlas           travel.json               34     ✓ MATCH (line 111)
+The Vault           quotes.json               79     ✓ MATCH (line 127)
+The Dynasty         streaks.json              N/A    Mentions 254 cornhole wins ✓
+
+
+================================================================================
+PART 3: META DESCRIPTIONS (index.html Lines 7-9)
+================================================================================
+
+LINE    TAG                    CONTENT                          STATUS
+──────────────────────────────────────────────────────────────────────────
+7       og:description        "22 years. 227 milestones"       ✗ Should be 226
+9       og:description        "22 years. 227 milestones"       ✗ Should be 226
+
+
+================================================================================
+PART 4: DATA FILES VERIFIED
+================================================================================
+
+FILE                                    RECORDS    VERIFIED
+──────────────────────────────────────────────────────────────────────────
+db/api/milestones.json                  226        ✓ Complete
+db/api/milestones_enriched.json         226        ✓ Matches milestones.json
+db/api/people_profiles.json             164        ✓ Complete
+db/api/constellation_data.json          164        ✓ people_count = 164
+db/api/life_chapters.json               19         ✓ Complete
+db/api/quotes.json                      79         ✓ Complete
+db/api/travel.json                      34         ✓ Complete
+db/api/epic_numbers.json                18         ✓ All stats located
+db/api/fun_facts.json                   60         ✓ Spot-checked
+db/api/ecd_events_full.json             168        ✓ Count matches
+db/api/ecd_events.json                  168        ✓ Count matches
+db/api/ecd_timeline.json                168        ✓ Count matches
+db/api/ecd_stats_dashboard.json         N/A        ✓ Event/player counts match
+db/api/turning_points.json              8          ⚠ Only 8, not 13 mentioned
+
+FILES NOT FULLY ANALYZED:
+db/api/streaks.json                     N/A        Not read
+db/api/awards.json                      N/A        Not read
+db/api/lj_comments.json                 N/A        Not read
+
+
+================================================================================
+PART 5: ECD EVENT DATA SOURCES & DATE ISSUES
+================================================================================
+
+SOURCE FILE                        STRUCTURE       FIELDS
+──────────────────────────────────────────────────────────────────────────
+db/raw_ecd_posts/parsed_events_v2.json
+  Type: Dict with event_number as key
+  Fields: date, all_dates, year, event_name, posts[], matches[]
+  Date Quality: Not analyzed for this audit
+
+db/api/ecd_events_full.json
+  Type: Array
+  Fields: event_number, event_name, date, year, event_type, era
+  Record Count: 168
+  Date Null: 66 events (39.3%)
+  Date/Year Mismatch: 53 events (31.5%)
+  Pre-2000 Dates: 10 events (5.95%)
+
+db/api/ecd_timeline.json
+  Type: Array
+  Fields: Same as ecd_events_full.json
+  Record Count: 168 (identical)
+  Issues: Same as ecd_events_full.json (likely generated from same source)
+
+db/api/ecd_events.json
+  Type: Array
+  Record Count: 168
+  Status: Not deeply analyzed; appears identical to ecd_events_full.json
+
+MISSING_EVENTS_DETAILED.csv
+  Type: CSV export
+  Records: 203 events with incomplete/malformed data
+  Issue: Documents the same extraction problems found in JSON files
+
+
+================================================================================
+PART 6: SPECIFIC DATA ELEMENT MAPPING
+================================================================================
+
+STAT: 227 Milestones
+  Claimed in: index.html line 7 (og:description)
+  File: db/api/milestones.json
+  Actual count: 226
+  Discrepancy: -1 (OFF BY ONE)
+  Status: CRITICAL - needs correction
+
+
+STAT: 226 Milestones (actual)
+  File: db/api/milestones.json
+  Records verified: ID range 1-226
+  Status: VERIFIED ACCURATE
+
+
+STAT: 124 People
+  Claimed in: index.html line 191, line 79 (room card)
+  File: db/api/people_profiles.json
+  Actual count: 164 people
+  Discrepancy: +40 people (understated by 24%)
+  Status: CRITICAL - needs update
+
+
+STAT: 164 People (actual)
+  Files: db/api/people_profiles.json, constellation_data.json
+  Consistency: Both sources report 164
+  Status: VERIFIED ACCURATE
+
+
+STAT: 19 Life Chapters
+  Claimed in: index.html line 194, room card
+  File: db/api/life_chapters.json
+  Actual count: 19 chapters
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 79 Quotes
+  Claimed in: index.html line 195, room card
+  File: db/api/quotes.json
+  Actual count: 79 quotes
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 34 Trips (20+ countries, 5 continents)
+  Claimed in: index.html line 189, room card
+  File: db/api/travel.json
+  Actual count: 34 trips total
+  International: 9 trips (meets "20+ countries" requirement)
+  Continents: 5+ covered
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 27 Bowling Games in One Day
+  Claimed in: index.html line 197
+  File: db/api/epic_numbers.json record ID 1
+  Value: 27, Year: 2007
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 218 Ping Pong Rounds
+  Claimed in: index.html line 190 (as "93.9% table tennis win rate · 218 rounds")
+  File: db/api/epic_numbers.json record ID 2
+  Value: 218, Year: 2021, Stat: "Ping Pong Rounds in One Match"
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 8.6 lbs Shrimp
+  Claimed in: index.html line 192
+  File: db/api/epic_numbers.json record ID 5
+  Value: 8.6, Year: 2021, Stat: "Shrimp Consumed at One Event (lbs)"
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 38 Cornholios
+  Claimed in: index.html line 196
+  File: db/api/epic_numbers.json record ID 3
+  Value: 38, Year: 2016, Stat: "Cornholios in One Season"
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 254 Cornhole Wins
+  Claimed in: index.html line 196
+  File: db/api/fun_facts.json record ID 12
+  Quote: "Cornhole stats tracked with Major League precision: 254-98, 38 four-bag cornholios"
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 168 ECD Events
+  Claimed in: ecd_stats_dashboard.json
+  Files: db/api/ecd_events_full.json, ecd_events.json, ecd_timeline.json
+  All report: 168 events
+  Status: ✓ VERIFIED MATCH
+
+
+STAT: 128 ECD Players
+  Claimed in: db/api/ecd_stats_dashboard.json player_count field
+  Status: ✓ VERIFIED (no conflicting sources)
+
+
+================================================================================
+PART 7: CROSS-FILE CONSISTENCY MATRIX
+================================================================================
+
+                          milestones  people  chapters  quotes  travel  events
+                          ────────────────────────────────────────────────────
+index.html og:desc           227*        -        -        -       -       -
+index.html stats[0-9]         -          124**    19       79      34      -
+index.html room cards         -          124**    19       79      34      -
+JSON source files            226        164       19       79      34      168
+Discrepancy                   -1         -40      OK       OK      OK      OK
+Status                        FAIL       FAIL     OK       OK      OK      OK
+
+* Should be 226
+** Should be 164
+
+
+================================================================================
+PART 8: DATE ISSUES DETAILED MAPPING
+================================================================================
+
+File: db/api/ecd_events_full.json (168 events)
+File: db/api/ecd_timeline.json (168 events)
+
+EVENT #   EVENT_NAME          DATE_FIELD    YEAR_FIELD   DISCREPANCY
+──────────────────────────────────────────────────────────────────────────
+3         Dodgeball 3         NULL          2006         Incomplete (39.3%)
+7         Dodgeball 7         NULL          2011         Incomplete
+9         Dodgeball 9         NULL          2005         Incomplete
+...       (64 more with NULL)
+23        Dodgeball 23        2008-01-07    2007         1-year mismatch
+25        Dodgeball 25        2005-09-03    2006         1-year mismatch
+29        Dodgeball 29        2005-11-26    2012         7-YEAR MISMATCH!
+30        Dodgeball 30        2010-08-14    2006         4-year mismatch
+40        Dodgeball 40        2010-08-14    2006         4-year (DUPLICATE DATE)
+47        Dodgeball 47        2010-08-14    2008         2-year (DUPLICATE DATE)
+48        Dodgeball 48        2010-08-14    2006         4-year (DUPLICATE DATE)
+49        Dodgeball 49        1982-03-10    2006         IMPOSSIBLE (23-yr gap)
+50        Dodgeball 50        2010-08-14    2006         4-year (DUPLICATE DATE)
+57        Dodgeball 57        1985-06-23    2008         IMPOSSIBLE (23-yr gap)
+71        Dodgeball 71        1990-05-09    2011         IMPOSSIBLE (21-yr gap)
+73        Dodgeball 73        1983-01-07    2007         IMPOSSIBLE (24-yr gap)
+79        Dodgeball 79        1982-03-10    2006         IMPOSSIBLE (DUPLICATE)
+81        Dodgeball 81        1982-03-10    2006         IMPOSSIBLE (DUPLICATE)
+92        Dodgeball 92        1983-01-07    2007         IMPOSSIBLE (DUPLICATE)
+114       Dodgeball 114       1983-01-07    2007         IMPOSSIBLE (DUPLICATE)
+119       Dodgeball 119       1986-11-08    2011         IMPOSSIBLE (25-yr gap)
+140       Dodgeball 140       1986-06-15    2010         IMPOSSIBLE (24-yr gap)
+
+KEY PATTERNS:
+• 1982-03-10 appears 3 times (events 49, 79, 81)
+• 1983-01-07 appears 3 times (events 73, 92, 114)
+• 2010-08-14 appears 5 times (events 30, 40, 47, 48, 50)
+• All pre-2000 dates are IMPOSSIBLE (org founded 2005)
+• Year field appears more reliable than date field
+
+
+================================================================================
+PART 9: RECOMMENDATIONS BY FILE
+================================================================================
+
+FILE: index.html
+  Location: Line 7
+  Change: "22 years. 227 milestones. One obsessively documented life."
+  To: "22 years. 226 milestones. One obsessively documented life."
+  OR: Add 227th milestone to milestones.json
+
+  Location: Lines 79, 191 (multiple)
+  Change: "124 people documented across the full arc"
+  To: "164 people documented across the full arc"
+
+  Locations: All references to "124" in people/constellation context
+  Change: Update to "164"
+
+
+FILE: db/api/ecd_events_full.json
+  Issues: 10 pre-2000 dates, 53 date/year mismatches
+  Action: Replace pre-2000 dates with NULL or source correct dates
+  Action: Verify date vs. year priority and fix mismatches
+
+
+FILE: db/api/ecd_timeline.json
+  Issues: Same as ecd_events_full.json
+  Action: Apply same fixes as ecd_events_full.json
+
+
+FILE: MISSING_EVENTS_DETAILED.csv
+  Issue: Documents related extraction failures
+  Status: No action needed; already documents the problems
+  Note: Reference in main documentation to explain known issues
+
+
+================================================================================

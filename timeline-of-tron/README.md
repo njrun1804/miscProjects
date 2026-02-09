@@ -40,7 +40,7 @@ miscProjects/
 
 - **Stats**: KPIs, sports records, epic single-event numbers
 - **Career**: 15-year progression from Intern to Executive Director
-- **WWE**: 91+ events attended, 25 consecutive Survivor Series years
+- **WWE**: 91+ events attended, 29 consecutive Survivor Series years
 - **Travel**: 20+ countries across 5 continents
 - **Cast**: Recurring characters and lifers
 - **Awards**: Music Artist and Comedian of the Year traditions
@@ -110,8 +110,8 @@ npx http-server
 - **20+ Countries** Visited
 - **93.9% Win Rate** at Table Tennis
 - **254+ Cornhole Games** Won
-- **18+ Years** of East Coast Dodgeball
-- **6 Career Promotions** (Intern → Executive Director)
+- **21+ Years** of East Coast Dodgeball
+- **5 Career Promotions** (Intern → Executive Director)
 
 ## 📜 Version History
 

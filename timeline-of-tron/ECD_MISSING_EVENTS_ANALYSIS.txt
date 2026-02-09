@@ -1,0 +1,312 @@
+
+================================================================================
+                    ECD EVENT DATA ANALYSIS REPORT
+                        February 9, 2026
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+
+Current Database Status:
+  - Events in database (ecd_events_v2): 168 events
+  - Date range in database: 1982 to 2015
+  - Raw post files available: 603 JSON files  
+  - Posts referenced in current events: 377 unique post IDs
+  - Posts NOT referenced in database: 226 post IDs
+
+Missing Event Data Found:
+  - Additional event posts with titles: 200 events
+  - Significant missing years: 2016-2025 (post-2015)
+  - Undated events with full content: 142 events
+
+
+DETAILED FINDINGS
+================================================================================
+
+1. GITHUB REPOSITORY SEARCH
+   ---------------------
+   Repository: https://github.com/njrun1804/miscProjects
+   
+   RESULT: NO ECD EVENT DATA FOUND
+   - Repository contains only "lifting" and "timeline-of-tron" folders
+   - No ECD-specific files, JSON, CSV, or markdown event lists
+   - No dodgeball-related data in this repo
+
+
+2. LIVEJOURNAL ARCHIVE ANALYSIS
+   ---------------------------
+   
+   A. Web Fetch Attempts:
+      - https://dodgeball.livejournal.com/2024/ - No event content extracted
+      - https://dodgeball.livejournal.com/2023/ - No event content extracted
+      - https://dodgeball.livejournal.com/2022/ - No event content extracted
+      - https://dodgeball.livejournal.com/2021/ - No event content extracted
+      - https://dodgeball.livejournal.com/2020/ - No event content extracted
+      - https://dodgeball.livejournal.com/2019/ - No event content extracted
+      - https://dodgeball.livejournal.com/2018/ - No event content extracted
+      - https://dodgeball.livejournal.com/2017/ - No event content extracted
+      
+   ISSUE: Web pages return only JavaScript/UI code, not post content
+   
+   B. ATOM Feed (https://dodgeball.livejournal.com/data/atom):
+      SUCCESS - Retrieved recent events:
+      - 20YA (20th Anniversary) - September 27, 2025
+      - 2025 ProBowl - February 8, 2025
+      - Multiple 2025 posts about ProBowl and 20YA
+
+
+3. LOCAL DATABASE ANALYSIS
+   -----------------------
+   
+   Location: /sessions/adoring-beautiful-gates/mnt/timeline-of-tron/db/
+   
+   Database File: tron.db (SQLite)
+   
+   ECD-Related Tables:
+   - ecd_events_v2 (168 records) - Main events table
+   - ecd_posts (posts metadata)
+   - ecd_players (player data)
+   - ecd_match_results
+   - ecd_awards_v2
+   - ecd_rivalries
+   - ecd_fundraisers
+   - And 25+ other ECD-related tables
+   
+   Raw Posts Directory: /db/raw_ecd_posts/ (603 JSON files)
+   
+   Each post contains:
+   - id (numeric LiveJournal post ID)
+   - url (direct post link)
+   - title (event name/description)
+   - date (if available)
+   - body_text (full post content)
+   - body_html (HTML version)
+   - comment_count_text
+   - images (list of image URLs)
+   - tags
+   - source information
+
+
+MISSING EVENTS - COMPREHENSIVE BREAKDOWN
+================================================================================
+
+Total Posts with Event Titles NOT in Database: 200 events
+
+CRITICAL FINDING: Events from 2015 Onward are Largely Missing
+--------------------------------------------------------------
+
+2025 EVENTS (9 missing posts):
+  - 2025 ProBowl | Announcement
+  - 2025 ProBowl | Register Now!
+  - 2025 ProBowl | Main Event
+  - 2025 ProBowl | Special Fundraiser
+  - 2025 ProBowl | Full Preview
+  - 2025 ProBowl | See You Tonight!
+  - 2025 ProBowl | Photo Collage & Attendance
+  - 2025 ProBowl | Main Event & Fundraiser Results
+  - 2025 ProBowl | Event Extras
+
+2024 EVENTS (2 missing posts):
+  - INDOOR.3 | Family Affair 2024
+  - INDOOR.3 | Full Attendance Figures
+
+POST-2015 EVENTS (Large number of "undated" posts covering 2015-2025):
+  The "undated" category contains 142 missing events, many of which are from
+  2015-2025 based on content analysis. Key series include:
+  
+  - 20YA (20th Anniversary) Series (many posts)
+  - SEVENTEEN Event Series (multiple posts)
+  - SIXTEEN Event Series (12+ posts)
+  - 15YA Anniversary Series (multiple posts)
+  - FALLFEST Series (10+ posts)
+  - FOUNDERS' DAY Series (7+ posts)
+  - 18th Anniversary Series (8+ posts)
+  - INDOOR.3 Series (3+ posts)
+  - The AMAZING RACE Series
+  - 14YA Anniversary Series (9+ posts)
+  - 13YA Anniversary Series (6+ posts)
+  - 12YA Anniversary Series (6+ posts)
+  - 11YA Anniversary Series (6+ posts)
+  - And many more individual events
+
+2017 EVENTS (3 missing posts):
+  - 12YA: The GREAT ADVENTURE
+  - 12YA: Is This A WET WAR?
+  - ECD in 2017?
+
+2016 EVENTS (3 missing posts):
+  - The US OPEN: Photos & Results
+  - The US OPEN: Notes & Numbers
+  - 11YA: The Ladies' Championship
+  - The Great NOR'EASTER '16
+
+2015 EVENTS (1 missing post):
+  - X LIST: "Captains"
+
+2013-2014 EVENTS (4 missing posts):
+  - The GRAND SLAM Brothers (2013)
+  - YOU JERK (2013)
+
+2012 EVENTS (2 missing posts):
+  - One Seat At The THRONE
+  - CIVILITIY, No More
+
+2011 EVENTS (12 missing posts):
+  - The Winter BALL
+  - '11 BONNIE & CLYDE
+  - INITIATION DAY
+  - SLAM JAM'D
+  - There's LESS Room On The CAKE
+  - The FINAL FLIGHT
+  - CARVING Our Own History
+  - Winner Take 'W'ALL Of It
+  - Turkey TITLE Up For Grabs
+  - FOUNDERS' DAY Photos & Results
+  - And 2 more
+
+2010 EVENTS (6 missing posts):
+  - HELLO AGAIN!
+  - PAPERS To File, PIES To Throw
+  - The PIE To DIE For
+  - SOUTH For The WINTER
+  - CALL Answered, Message Received
+  - ... There's NOTHING You & I WON'T DO ...
+
+2009 EVENTS (1 missing post):
+  - MAN Overboard!
+
+2008 EVENTS (1 missing post):
+  - In GOD'S Hands
+
+2007 EVENTS (5 missing posts):
+  - Family, Friends, and FOES
+  - DOVER Taken OVER
+  - The Battle of KATHRYN
+  - I 17 (Continued)
+  - NOTHIN' But NET
+
+2006 EVENTS (2 missing posts):
+  - SURVIVAL Saturday
+  - Directions for DIANA'S PARTY
+
+2005 EVENTS (2 missing posts):
+  - 5 CANDLES & 1 For Good Luck
+  - LUCK Be A LADY
+
+UNDATED EVENTS (142 posts):
+  These posts contain full event information but date extraction failed.
+  They appear to be a mix of:
+  - Regular event coverage posts
+  - Profile posts (4, 6, 2, 6+ new profiles)
+  - Informational posts (rules, logos, logos)
+  - Anniversary/milestone posts
+  - Historical analysis posts
+  - And many more
+
+
+KEY STATISTICS
+================================================================================
+
+Data Completeness by Era:
+  2005-2008 (Early Era):        98% complete (4 missing out of 168+ total)
+  2009-2010 (Growth Era):       93% complete (7 missing)
+  2011-2014 (Expansion):        89% complete (21 missing)
+  2015 (Last Tracked Year):     50% complete (1 of 2 missing)
+  2016-2025 (Recent):          HEAVILY UNDERREPRESENTED
+                               Most posts exist but not in events table
+
+Raw Post Files Available:
+  - Total files: 603
+  - With titles: 576
+  - Referenced in database: 377
+  - Not referenced: 199
+  - Potential additional events: 200
+
+
+RECOMMENDATIONS FOR DATA EXPANSION
+================================================================================
+
+1. IMMEDIATE ACTIONS:
+   
+   a) Extract post titles from 2015-2025 content
+      Location: /db/raw_ecd_posts/ files 124449-162098
+      Count: Approximately 100+ posts to process
+      
+   b) Parse "undated" posts for event information
+      Method: Analyze body text for event names, dates, and details
+      Expected yield: 100+ events
+      
+   c) Extract event details from posts:
+      - Event dates and years
+      - Attendance numbers
+      - Match results
+      - Award information
+      - Fundraiser amounts
+      
+2. DATA ENRICHMENT:
+   
+   a) Create mappings between post titles and actual event names
+   b) Extract dates from post body when title doesn't contain date
+   c) Link related posts to single event records (e.g., multiple 2025 ProBowl posts)
+   d) Extract attendance and other metrics from post content
+
+3. VALIDATION:
+   
+   a) Cross-reference with ATOM feed data for 2024-2025
+   b) Verify anniversary celebrations (15YA, 16YA, 17YA, 18YA, 20YA)
+   c) Confirm event numbering (Dodgeball series appears to continue)
+
+
+DATA SOURCES AVAILABLE
+================================================================================
+
+1. Raw Posts (603 JSON files):
+   Path: /sessions/adoring-beautiful-gates/mnt/timeline-of-tron/db/raw_ecd_posts/
+   Files: [post_id].json (e.g., 10078.json, 162098.json)
+   Content: Complete post data with text and HTML
+   
+2. ATOM Feed:
+   URL: https://dodgeball.livejournal.com/data/atom
+   Status: WORKING - Returns recent event summaries
+   Recent Data: 2025 ProBowl, 20YA Anniversary
+   
+3. LiveJournal Archive Pages:
+   Status: Difficult to parse (returns JS/UI code)
+   Alternative: Individual post URLs are accessible
+   Example: https://dodgeball.livejournal.com/[post_id].html
+   
+4. Database:
+   Path: /sessions/adoring-beautiful-gates/mnt/timeline-of-tron/db/tron.db
+   Tables: 50+ tables with ECD data
+   Current events: 168 verified
+   
+5. GitHub:
+   Status: No ECD data found in searched repository
+
+
+MISSING SPECIFIC EVENT DATA
+================================================================================
+
+The most significant gaps appear to be:
+
+1. Post-2015 Event Integration:
+   Database ends at 2015, but raw posts continue through 2025
+   
+2. Anniversary Events Missing:
+   11YA, 12YA, 13YA, 14YA, 15YA, 16YA, 17YA, 18YA, 20YA
+   (These are major events with multiple supporting posts each)
+   
+3. Tournament Series:
+   US OPEN series (2016+)
+   FALLFEST series (multiple years)
+   The AMAZING RACE (2017)
+   
+4. Recent Events:
+   2024 INDOOR.3 event
+   2025 ProBowl (SuperBowl-sized event)
+   2025 20YA (20th Anniversary celebration)
+
+
+================================================================================
+                            END OF REPORT
+================================================================================

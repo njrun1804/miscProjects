@@ -26,18 +26,30 @@ function renderStaircase(career) {
 
     const positions = career.filter(c => c.type !== 'award');
     const sorted = [...positions].sort((a, b) => a.year - b.year);
+    const maxLevel = Math.max(...sorted.map(s => s.career_level || 0));
 
-    container.innerHTML = sorted.map(step => `
-        <div class="staircase-step" style="margin-left: ${(step.career_level || 0) * 30}px;">
-            <div class="staircase-step__level">${step.career_level || 0}</div>
+    container.innerHTML = sorted.map((step, i) => {
+        const level = step.career_level || 0;
+        const prev = i > 0 ? (sorted[i - 1].career_level || 0) : 0;
+        const direction = level > prev ? 'up' : level < prev ? 'down' : 'same';
+        const pct = maxLevel > 0 ? Math.round((level / maxLevel) * 100) : 0;
+
+        return `
+        <div class="staircase-step" data-direction="${direction}">
+            <div class="staircase-step__year">${step.year}</div>
+            <div class="staircase-step__node">
+                <div class="staircase-step__dot"></div>
+            </div>
             <div class="staircase-step__content">
                 <div class="staircase-step__title">${step.title}</div>
                 <div class="staircase-step__employer">${step.employer}</div>
-                <div class="staircase-step__year">${step.year}</div>
                 ${step.milestone ? `<div class="staircase-step__milestone">${step.milestone}</div>` : ''}
+                <div class="staircase-step__bar">
+                    <div class="staircase-step__bar-fill" style="width: ${pct}%"></div>
+                </div>
             </div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
 }
 
 function renderTrophyCase(awards, categories) {

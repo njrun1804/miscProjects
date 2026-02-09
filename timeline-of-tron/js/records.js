@@ -266,7 +266,7 @@ function renderRivals(matchResults) {
             name,
             ...stats,
             total: stats.wins + stats.losses,
-            rate: Math.round((stats.wins / (stats.wins + stats.losses)) * 100)
+            rate: (stats.wins + stats.losses) > 0 ? Math.round((stats.wins / (stats.wins + stats.losses)) * 100) : 0
         }))
         .filter(p => p.total >= 3)
         .sort((a, b) => b.wins - a.wins)
@@ -361,6 +361,7 @@ function renderStreakStories(streaks) {
     container.innerHTML = sorted.map(s => {
         const name = s.description || s.name || s.streak || 'Unknown';
         const len = s.length || s.years || s.duration || 0;
+        const unit = s.unit || 'yrs';
         const active = s.still_active === 1 || s.active === true;
         const start = s.start_year || '';
         const end = s.end_year || '';
@@ -369,7 +370,7 @@ function renderStreakStories(streaks) {
 
         return `
             <div class="streak-card ${active ? 'streak-card--active' : 'streak-card--broken'}">
-                <div class="streak-card__duration">${len}<span class="streak-card__unit"> yrs</span></div>
+                <div class="streak-card__duration">${len}<span class="streak-card__unit"> ${unit}</span></div>
                 <div class="streak-card__info">
                     <div class="streak-card__name">${name}</div>
                     <div class="streak-card__meta">

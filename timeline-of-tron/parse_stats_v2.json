@@ -1,0 +1,28 @@
+{
+  "total_events": 222,
+  "total_match_results": 114,
+  "event_range": "#1-#222",
+  "year_range": "2005-2025",
+  "events_with_dates": 123,
+  "events_with_attendance": 67,
+  "events_by_type": {
+    "regular": 189,
+    "anniversary": 13,
+    "family_affair": 3,
+    "special": 5,
+    "holiday": 4,
+    "reunion": 3,
+    "masters": 2,
+    "indoor": 2,
+    "probowl": 1
+  },
+  "events_by_era": {
+    "Founding Era": 79,
+    "Golden Age": 20,
+    "Growth Era": 74,
+    "Evolution Era": 12,
+    "Legacy Era": 15,
+    "Reunion Era": 10,
+    "Modern Era": 12
+  }
+}

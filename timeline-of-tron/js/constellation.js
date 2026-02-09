@@ -15,6 +15,15 @@ import {
     computePersonScores,
     computeTemporalEvolution
 } from './graph-analytics.js';
+import {
+    resolveName,
+    deduplicateNodes,
+    deduplicateLinks,
+    deduplicateCoOccurrences,
+    deduplicateArcs,
+    resolveProfileKey,
+    getAliases
+} from './name-resolver.js';
 
 const ERA_COLORS = {
     early: '#4a90d9',    // 2004-2008: blue
@@ -144,6 +153,97 @@ let ecdPlayerNetworkData = { nodes: [], links: [] };
 let songsByPerson = {};
 let lifeChaptersData = [];
 
+// ─── New enrichment data for enhanced sidebar ──────────────────
+let quotesData = [];
+let quoteAttributionData = [];
+let ecdRivalriesData = [];
+let ecdMatchResultsData = [];
+let ecdGameResultsData = [];
+let traditionsData = [];
+let streaksData = [];
+let funFactsData = [];
+let ljCommentsData = [];
+let milestonePeopleData = [];
+
+// ─── Build lookups for new enrichment data ─────────────────────
+function buildQuotesByPerson(quoteAttrArray) {
+    const map = {};
+    if (!Array.isArray(quoteAttrArray)) return map;
+    quoteAttrArray.forEach(q => {
+        if (!q.person_name) return;
+        if (!map[q.person_name]) map[q.person_name] = [];
+        map[q.person_name].push(q);
+    });
+    return map;
+}
+
+function buildRivalriesByPlayer(rivalriesArray) {
+    const map = {};
+    if (!Array.isArray(rivalriesArray)) return map;
+    rivalriesArray.forEach(r => {
+        if (r.player1) {
+            if (!map[r.player1]) map[r.player1] = [];
+            map[r.player1].push(r);
+        }
+        if (r.player2) {
+            if (!map[r.player2]) map[r.player2] = [];
+            map[r.player2].push(r);
+        }
+    });
+    return map;
+}
+
+function buildMatchRecordsByPlayer(matchArray) {
+    const map = {};
+    if (!Array.isArray(matchArray)) return map;
+    matchArray.forEach(m => {
+        if (m.winner) {
+            if (!map[m.winner]) map[m.winner] = { wins: [], losses: [] };
+            map[m.winner].wins.push(m);
+        }
+        if (m.loser) {
+            if (!map[m.loser]) map[m.loser] = { wins: [], losses: [] };
+            map[m.loser].losses.push(m);
+        }
+    });
+    return map;
+}
+
+function buildLjCommentsByPerson(commentsArray) {
+    const map = {};
+    if (!Array.isArray(commentsArray)) return map;
+    commentsArray.forEach(c => {
+        if (!c.commenter) return;
+        if (!map[c.commenter]) map[c.commenter] = [];
+        map[c.commenter].push(c);
+    });
+    return map;
+}
+
+function buildMilestonesByPerson(milestoneArray) {
+    const map = {};
+    if (!Array.isArray(milestoneArray)) return map;
+    milestoneArray.forEach(m => {
+        let people = [];
+        try {
+            people = typeof m.people_names === 'string' ? JSON.parse(m.people_names) : (m.people_names || []);
+        } catch (_) { /* ignore */ }
+        if (!Array.isArray(people)) return;
+        people.forEach(name => {
+            if (!name) return;
+            if (!map[name]) map[name] = [];
+            map[name].push(m);
+        });
+    });
+    return map;
+}
+
+let quotesByPerson = {};
+let rivalriesByPlayer = {};
+let matchRecordsByPlayer = {};
+let ljCommentsByPerson = {};
+let milestonesByPerson = {};
+
 // ─── Advanced Analytics Results ──────────────────────────────────
 let analyticsPageRank = new Map();
 let analyticsBetweenness = new Map();
@@ -199,14 +299,97 @@ export async function initConstellation() {
         data.ecd_player_network = extras.ecd_player_network;
     } catch (_) { /* enrichment data unavailable — page still works */ }
 
-    const constellation = data.relationship_constellation;
-    profilesData = buildProfileMap(data.people_profiles);
-    peopleData = buildPeopleMap(data.people);
-    arcData = buildArcMap(data.person_arc);
-    coOccurrencesData = data.co_occurrences || [];
-    ecdPlayersData = buildEcdPlayerMap(data.ecd_players);
+    // ─── Load extended enrichment data (quotes, rivalries, records, etc.) ────
+    try {
+        const extended = await loadMultiple([
+            'quotes.json', 'quote_attribution.json',
+            'ecd_rivalries.json', 'ecd_match_results.json', 'ecd_game_results.json',
+            'traditions.json', 'streaks.json', 'fun_facts.json',
+            'lj_comments.json', 'milestone_people.json'
+        ]);
+        quotesData = extended.quotes || [];
+        quoteAttributionData = extended.quote_attribution || [];
+        ecdRivalriesData = extended.ecd_rivalries || [];
+        ecdMatchResultsData = extended.ecd_match_results || [];
+        ecdGameResultsData = extended.ecd_game_results || [];
+        traditionsData = extended.traditions || [];
+        streaksData = extended.streaks || [];
+        funFactsData = extended.fun_facts || [];
+        ljCommentsData = extended.lj_comments || [];
+        milestonePeopleData = extended.milestone_people || [];
+
+        // Build person-indexed lookups
+        quotesByPerson = buildQuotesByPerson(quoteAttributionData);
+        rivalriesByPlayer = buildRivalriesByPlayer(ecdRivalriesData);
+        matchRecordsByPlayer = buildMatchRecordsByPlayer([...(ecdMatchResultsData || []), ...(ecdGameResultsData || [])]);
+        ljCommentsByPerson = buildLjCommentsByPerson(ljCommentsData);
+        milestonesByPerson = buildMilestonesByPerson(milestonePeopleData);
+        console.log('[Constellation] Extended data loaded:', {
+            quotes: quotesData.length,
+            quoteAttrs: quoteAttributionData.length,
+            rivalries: ecdRivalriesData.length,
+            matchResults: ecdMatchResultsData.length,
+            traditions: traditionsData.length,
+            funFacts: funFactsData.length,
+            ljComments: ljCommentsData.length,
+            milestones: milestonePeopleData.length
+        });
+    } catch (e) {
+        console.warn('[Constellation] Extended enrichment data unavailable:', e.message);
+    }
+
+    // ─── Name Resolution: Deduplicate before anything touches the data ────
+    const rawConstellation = data.relationship_constellation || { nodes: [], links: [] };
+    const constellation = {
+        ...rawConstellation,
+        nodes: deduplicateNodes(rawConstellation.nodes || []),
+        links: deduplicateLinks(rawConstellation.links || [])
+    };
+    const deduplicatedNodeCount = (rawConstellation.nodes || []).length - constellation.nodes.length;
+    if (deduplicatedNodeCount > 0) {
+        console.log(`[NameResolver] Merged ${deduplicatedNodeCount} duplicate nodes in constellation`);
+    }
+    const deduplicatedLinkCount = (rawConstellation.links || []).length - constellation.links.length;
+    if (deduplicatedLinkCount > 0) {
+        console.log(`[NameResolver] Merged ${deduplicatedLinkCount} duplicate/self-loop links`);
+    }
+
+    // Resolve names in co-occurrences before building maps
+    const rawCoOcc = data.co_occurrences || [];
+    const resolvedCoOcc = deduplicateCoOccurrences(rawCoOcc);
+
+    // Resolve names in person_arc before building arc map
+    const rawArc = data.person_arc || [];
+    const resolvedArc = deduplicateArcs(rawArc);
+
+    // Resolve names in people data
+    const rawPeople = data.people || [];
+    rawPeople.forEach(p => { p.name = resolveName(p.name); });
+
+    // Resolve names in people_profiles
+    const rawProfiles = data.people_profiles || [];
+    rawProfiles.forEach(p => {
+        if (p.person) p.person.name = resolveName(p.person.name);
+    });
+
+    // Resolve names in ECD players
+    const rawEcd = data.ecd_players || [];
+    rawEcd.forEach(p => { p.name = resolveName(p.name); });
+
+    // Resolve names in ECD player network
+    const rawEcdNet = data.ecd_player_network || { nodes: [], links: [] };
+    const ecdNet = {
+        nodes: deduplicateNodes(rawEcdNet.nodes || []),
+        links: deduplicateLinks(rawEcdNet.links || [])
+    };
+
+    profilesData = buildProfileMap(rawProfiles);
+    peopleData = buildPeopleMap(rawPeople);
+    arcData = buildArcMap(resolvedArc);
+    coOccurrencesData = resolvedCoOcc;
+    ecdPlayersData = buildEcdPlayerMap(rawEcd);
     ecdAwardsData = data.ecd_awards_v2 || [];
-    ecdPlayerNetworkData = data.ecd_player_network || { nodes: [], links: [] };
+    ecdPlayerNetworkData = ecdNet;
     lifeChaptersData = data.life_chapters || [];
     songsByPerson = buildSongPersonMap(data.song_person_map);
 
@@ -214,7 +397,7 @@ export async function initConstellation() {
     // but not in people_profiles (covers more people)
     const personTimelines = data.person_timelines || [];
     personTimelines.forEach(evt => {
-        const name = evt.person_name;
+        const name = resolveName(evt.person_name);
         if (!name) return;
         if (!profilesData[name]) {
             profilesData[name] = {
@@ -341,18 +524,10 @@ export async function initConstellation() {
     renderFiltersAndLegend(constellation.nodes);
     renderChapterTimeline(lifeChaptersData);
     renderStatsBar(constellation);
+    renderTemporalSlider();
     renderForceGraph(constellation, profilesData, coOccurrencesData);
     initSearchAutocomplete(constellation.nodes, profilesData);
-    renderNetworkChart(data.temporal_network, data.person_arc);
     renderNetworkInsights(data.temporal_network, constellation, data.person_arc);
-
-    // ─── Advanced Analytics Sections ─────────────────────────────────
-    if (analyticsReady) {
-        renderNetworkHealthDashboard();
-        renderAdvancedMetrics(constellation);
-        renderCommunityCards();
-        renderDiversityChart();
-    }
 }
 
 // Get the best first_year for a person by merging all sources
@@ -764,7 +939,8 @@ function highlightMatch(text, query) {
 
 function focusNodeByName(name) {
     if (!svgNode || !svgLink) return;
-    const targetNode = allNodes.find(n => n.name === name);
+    const resolved = resolveName(name);
+    const targetNode = allNodes.find(n => n.name === resolved) || allNodes.find(n => n.name === name);
     if (!targetNode) return;
 
     const connected = new Set();
@@ -793,6 +969,157 @@ function resetGraphOpacity() {
     if (svgLink) svgLink.transition().duration(300).attr('opacity', d => d.isHub ? 0.12 : 0.35);
 }
 
+// ─── Temporal Slider ─────────────────────────────────────────────
+// Year slider that filters the graph to show network at a point in time.
+
+let temporalSliderYear = null; // null = show all
+
+function renderTemporalSlider() {
+    const mount = document.getElementById('temporalSliderMount');
+    if (!mount) return;
+
+    mount.innerHTML = `
+        <div class="temporal-slider-wrap">
+            <span class="temporal-slider-label">Network Through Time</span>
+            <div class="temporal-slider-track">
+                <button class="temporal-btn temporal-all active" data-year="all">All Years</button>
+                <input type="range" class="temporal-range" min="2004" max="2026" value="2026" step="1">
+                <span class="temporal-year-display">2026</span>
+            </div>
+            <button class="temporal-play-btn" title="Animate timeline">&#9654;</button>
+        </div>
+    `;
+
+    const slider = mount.querySelector('.temporal-range');
+    const yearDisplay = mount.querySelector('.temporal-year-display');
+    const allBtn = mount.querySelector('.temporal-all');
+    const playBtn = mount.querySelector('.temporal-play-btn');
+    let animationTimer = null;
+
+    slider.addEventListener('input', () => {
+        const year = parseInt(slider.value);
+        yearDisplay.textContent = year;
+        allBtn.classList.remove('active');
+        temporalSliderYear = year;
+        applyTemporalFilter(year);
+    });
+
+    allBtn.addEventListener('click', () => {
+        allBtn.classList.add('active');
+        slider.value = 2026;
+        yearDisplay.textContent = '2026';
+        temporalSliderYear = null;
+        resetGraphOpacity();
+    });
+
+    playBtn.addEventListener('click', () => {
+        if (animationTimer) {
+            clearInterval(animationTimer);
+            animationTimer = null;
+            playBtn.innerHTML = '&#9654;';
+            return;
+        }
+        playBtn.innerHTML = '&#9632;';
+        let y = 2004;
+        slider.value = y;
+        yearDisplay.textContent = y;
+        allBtn.classList.remove('active');
+        applyTemporalFilter(y);
+
+        animationTimer = setInterval(() => {
+            y++;
+            if (y > 2026) {
+                clearInterval(animationTimer);
+                animationTimer = null;
+                playBtn.innerHTML = '&#9654;';
+                return;
+            }
+            slider.value = y;
+            yearDisplay.textContent = y;
+            temporalSliderYear = y;
+            applyTemporalFilter(y);
+        }, 800);
+    });
+}
+
+function applyTemporalFilter(year) {
+    if (!svgNode || !svgLink) return;
+
+    svgNode.transition().duration(350)
+        .attr('opacity', d => {
+            if (d.id === 'john') return 1;
+            const first = d.firstYear;
+            if (!first) return 0.06;
+            if (first > year) return 0.03;
+            const last = d.lastYear || 2026;
+            const isActive = first <= year && last >= year;
+            const isPast = last < year;
+            return isActive ? 1 : isPast ? 0.15 : 0.03;
+        })
+        .attr('r', d => {
+            if (d.id === 'john') return d.radius;
+            const first = d.firstYear;
+            if (!first || first > year) return d.radius * 0.3;
+            return d.radius;
+        });
+
+    svgLink.transition().duration(350)
+        .attr('opacity', l => {
+            const src = typeof l.source === 'object' ? l.source : allNodes.find(n => n.name === l.source);
+            const tgt = typeof l.target === 'object' ? l.target : allNodes.find(n => n.name === l.target);
+            const srcFirst = src?.firstYear;
+            const tgtFirst = tgt?.firstYear;
+            if (!srcFirst || !tgtFirst) return 0.02;
+            const bothActive = srcFirst <= year && tgtFirst <= year;
+            return bothActive ? 0.45 : 0.02;
+        });
+}
+
+// ─── Enhanced Hover: 2-Hop Ego Network ──────────────────────────
+// On hover, highlight 1-hop connections bright, 2-hop dimmer
+
+function highlightEgoNetwork(targetName) {
+    if (!svgNode || !svgLink) return;
+
+    const oneHop = new Set();
+    const twoHop = new Set();
+
+    allLinks.forEach(l => {
+        const srcName = typeof l.source === 'object' ? l.source.name : l.source;
+        const tgtName = typeof l.target === 'object' ? l.target.name : l.target;
+        if (srcName === targetName) oneHop.add(tgtName);
+        if (tgtName === targetName) oneHop.add(srcName);
+    });
+
+    oneHop.forEach(hop1 => {
+        allLinks.forEach(l => {
+            const srcName = typeof l.source === 'object' ? l.source.name : l.source;
+            const tgtName = typeof l.target === 'object' ? l.target.name : l.target;
+            if (srcName === hop1 && !oneHop.has(tgtName) && tgtName !== targetName) twoHop.add(tgtName);
+            if (tgtName === hop1 && !oneHop.has(srcName) && srcName !== targetName) twoHop.add(srcName);
+        });
+    });
+
+    svgNode.transition().duration(200)
+        .attr('opacity', d => {
+            if (d.name === targetName) return 1;
+            if (oneHop.has(d.name)) return 0.9;
+            if (twoHop.has(d.name)) return 0.4;
+            return 0.06;
+        });
+
+    svgLink.transition().duration(200)
+        .attr('opacity', l => {
+            const srcName = typeof l.source === 'object' ? l.source.name : l.source;
+            const tgtName = typeof l.target === 'object' ? l.target.name : l.target;
+            if (srcName === targetName || tgtName === targetName) return 0.7;
+            if ((oneHop.has(srcName) && oneHop.has(tgtName)) ||
+                (oneHop.has(srcName) && twoHop.has(tgtName)) ||
+                (twoHop.has(srcName) && oneHop.has(tgtName))) return 0.2;
+            return 0.02;
+        });
+}
+
 // ─── Radial Network Graph ────────────────────────────────────────
 // Structured radial layout: John at center, people arranged in concentric
 // rings by importance, within angular sectors by relationship category.
@@ -806,13 +1133,39 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     const height = container.clientHeight || 600;
     const cx = width / 2;
     const cy = height / 2;
-    const maxR = Math.min(width, height) * 0.44;
+    const maxR = Math.min(width, height) * 0.46;
 
     const svg = d3.select(container)
         .append('svg')
         .attr('width', width)
         .attr('height', height)
         .attr('viewBox', `0 0 ${width} ${height}`);
+
+    // Zoom container — all drawing goes inside this <g>
+    const zoomG = svg.append('g').attr('class', 'zoom-layer');
+
+    const zoom = d3.zoom()
+        .scaleExtent([0.3, 4])
+        .on('zoom', (event) => {
+            zoomG.attr('transform', event.transform);
+        });
+    svg.call(zoom);
+    // Disable double-click zoom (conflicts with node deselect)
+    svg.on('dblclick.zoom', null);
+
+    // Wire up zoom control buttons
+    const zoomInBtn = document.getElementById('zoomIn');
+    const zoomOutBtn = document.getElementById('zoomOut');
+    const zoomResetBtn = document.getElementById('zoomReset');
+    const zoomHint = document.getElementById('zoomHint');
+    if (zoomInBtn) zoomInBtn.addEventListener('click', () => svg.transition().duration(300).call(zoom.scaleBy, 1.4));
+    if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => svg.transition().duration(300).call(zoom.scaleBy, 0.7));
+    if (zoomResetBtn) zoomResetBtn.addEventListener('click', () => svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity));
+    // Fade out zoom hint after first interaction
+    if (zoomHint) {
+        const hideHint = () => { zoomHint.style.opacity = '0'; container.removeEventListener('wheel', hideHint); };
+        container.addEventListener('wheel', hideHint, { once: true });
+    }
 
     const tooltip = d3.select(container)
         .append('div')
@@ -1022,7 +1375,7 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
 
     // ── SVG: Ring guides ──
     const ringFracs = [0.15, 0.32, 0.50, 0.68, 0.88];
-    svg.append('g').attr('class', 'ring-guides')
+    zoomG.append('g').attr('class', 'ring-guides')
         .selectAll('circle').data(ringFracs).join('circle')
         .attr('cx', cx).attr('cy', cy)
         .attr('r', f => maxR * f)
@@ -1031,17 +1384,71 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .attr('stroke-width', 0.5)
         .attr('stroke-dasharray', '4,8');
 
-    // ── SVG: Center glow ──
+    // ── SVG: Defs (filters, gradients) ──
     const defs = svg.append('defs');
+
+    // Center glow
     const grad = defs.append('radialGradient').attr('id', 'centerGlow');
-    grad.append('stop').attr('offset', '0%').attr('stop-color', 'rgba(201,168,76,0.06)');
+    grad.append('stop').attr('offset', '0%').attr('stop-color', 'rgba(201,168,76,0.08)');
     grad.append('stop').attr('offset', '100%').attr('stop-color', 'rgba(201,168,76,0)');
-    svg.append('circle').attr('cx', cx).attr('cy', cy)
+    zoomG.append('circle').attr('cx', cx).attr('cy', cy)
         .attr('r', maxR * 0.3).attr('fill', 'url(#centerGlow)');
+
+    // Nebula glow filter for community clusters
+    const nebulaFilter = defs.append('filter').attr('id', 'nebulaGlow')
+        .attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%');
+    nebulaFilter.append('feGaussianBlur').attr('in', 'SourceGraphic').attr('stdDeviation', '30');
+
+    // Node glow filter
+    const nodeGlowFilter = defs.append('filter').attr('id', 'nodeGlow')
+        .attr('x', '-100%').attr('y', '-100%').attr('width', '300%').attr('height', '300%');
+    nodeGlowFilter.append('feGaussianBlur').attr('in', 'SourceGraphic').attr('stdDeviation', '4')
+        .attr('result', 'blur');
+    const nodeGlowMerge = nodeGlowFilter.append('feMerge');
+    nodeGlowMerge.append('feMergeNode').attr('in', 'blur');
+    nodeGlowMerge.append('feMergeNode').attr('in', 'SourceGraphic');
+
+    // Animated edge gradient for peer links
+    const edgeGrad = defs.append('linearGradient').attr('id', 'edgeFlow')
+        .attr('gradientUnits', 'userSpaceOnUse');
+    edgeGrad.append('stop').attr('offset', '0%').attr('stop-color', 'rgba(74,144,217,0)');
+    edgeGrad.append('stop').attr('offset', '50%').attr('stop-color', 'rgba(201,168,76,0.6)');
+    edgeGrad.append('stop').attr('offset', '100%').attr('stop-color', 'rgba(74,144,217,0)');
+
+    // ── SVG: Community Nebulae (soft cluster backgrounds) ──
+    if (analyticsReady) {
+        const communityGroups = {};
+        nodes.forEach(n => {
+            if (n.communityId >= 0 && n.id !== 'john') {
+                if (!communityGroups[n.communityId]) communityGroups[n.communityId] = [];
+                communityGroups[n.communityId].push(n);
+            }
+        });
+
+        const nebulaG = zoomG.append('g').attr('class', 'community-nebulae');
+        Object.entries(communityGroups).forEach(([cid, members]) => {
+            if (members.length < 3) return; // Only show nebulae for clusters of 3+
+            const centroidX = members.reduce((s, m) => s + (m.x || 0), 0) / members.length;
+            const centroidY = members.reduce((s, m) => s + (m.y || 0), 0) / members.length;
+            const maxDist = members.reduce((max, m) => {
+                const dx = (m.x || 0) - centroidX;
+                const dy = (m.y || 0) - centroidY;
+                return Math.max(max, Math.sqrt(dx * dx + dy * dy));
+            }, 0);
+            const color = members[0].communityColor || members[0].color;
+            nebulaG.append('circle')
+                .attr('cx', centroidX).attr('cy', centroidY)
+                .attr('r', maxDist + 40)
+                .attr('fill', color)
+                .attr('opacity', 0.04)
+                .attr('filter', 'url(#nebulaGlow)')
+                .attr('pointer-events', 'none');
+        });
+    }
 
     // ── SVG: Sector separator lines ──
     const separatorAngles = [240, 300, 308, 353, 1, 130, 138, 232];
-    svg.append('g').attr('class', 'sector-lines')
+    zoomG.append('g').attr('class', 'sector-lines')
         .selectAll('line').data(separatorAngles).join('line')
         .attr('x1', d => cx + maxR * 0.08 * Math.cos(d * Math.PI / 180))
         .attr('y1', d => cy + maxR * 0.08 * Math.sin(d * Math.PI / 180))
@@ -1054,7 +1461,7 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     const sectorLabelData = Object.entries(SECTORS).map(([cat, s]) => ({
         ...s, cat, color: CAT_COLORS[cat] || '#7a8fa6'
     }));
-    svg.append('g').attr('class', 'sector-labels')
+    zoomG.append('g').attr('class', 'sector-labels')
         .selectAll('text').data(sectorLabelData).join('text')
         .attr('x', d => cx + (maxR + 18) * Math.cos(d.labelAngle * Math.PI / 180))
         .attr('y', d => cy + (maxR + 18) * Math.sin(d.labelAngle * Math.PI / 180))
@@ -1086,7 +1493,7 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         return `M${sx},${sy} Q${cpx},${cpy} ${tx},${ty}`;
     }
 
-    svgLink = svg.append('g')
+    svgLink = zoomG.append('g')
         .selectAll('path')
         .data(links)
         .join('path')
@@ -1130,7 +1537,7 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
 
     // ── SVG: Community glow halos (behind nodes) ──
     if (analyticsReady) {
-        svg.append('g').attr('class', 'community-halos')
+        zoomG.append('g').attr('class', 'community-halos')
             .selectAll('circle').data(nodes.filter(n => n.percentile >= 75 && n.id !== 'john'))
             .join('circle')
             .attr('cx', d => d.x)
@@ -1145,7 +1552,7 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     }
 
     // ── SVG: Nodes ──
-    svgNode = svg.append('g')
+    svgNode = zoomG.append('g')
         .selectAll('circle')
         .data(nodes)
         .join('circle')
@@ -1165,10 +1572,13 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         })
         .attr('opacity', d => d.hasContent ? 1 : 0.3)
         .attr('cursor', 'pointer')
+        .attr('filter', d => d.percentile >= 85 ? 'url(#nodeGlow)' : null)
         .attr('class', d => {
-            if (d.percentile >= 90) return 'node-hub';
-            if (d.percentile >= 70) return 'node-important';
-            return '';
+            const classes = [];
+            if (d.percentile >= 90) classes.push('node-hub', 'node-pulse');
+            else if (d.percentile >= 70) classes.push('node-important');
+            if (d.hasContent) classes.push('node-has-content');
+            return classes.join(' ');
         })
         .call(d3.drag()
             .on('start', dragstarted)
@@ -1176,10 +1586,10 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
             .on('end', dragended));
 
     // ── SVG: Name labels for important people ──
-    const labelThreshold = 25;
+    const labelThreshold = 10;
     const labeledNodes = nodes.filter(n =>
         n.importanceScore > labelThreshold || n.id === 'john');
-    const svgLabels = svg.append('g').attr('class', 'node-labels')
+    const svgLabels = zoomG.append('g').attr('class', 'node-labels')
         .selectAll('text').data(labeledNodes).join('text')
         .attr('x', d => d.x)
         .attr('y', d => d.y - d.radius - 5)
@@ -1191,8 +1601,11 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .attr('pointer-events', 'none')
         .text(d => d.name);
 
-    // ── Hover tooltip ──
+    // ── Hover tooltip + ego network highlight ──
     svgNode.on('mouseover', (event, d) => {
+        // Highlight ego network on hover
+        highlightEgoNetwork(d.name);
+
         const relation = d.relation;
         const yearSpan = d.firstYear && d.lastYear ? `${d.firstYear}–${d.lastYear}` :
                          d.firstYear ? `Since ${d.firstYear}` : '';
@@ -1215,6 +1628,18 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
             const rec = (w + l > 0) ? ` ${w}W–${l}L` : '';
             parts.push(`<span class="tooltip-richness">ECD: ${ecdP.total_mentions.toLocaleString()} mentions${rec}</span>`);
         }
+        // Show a quote snippet in tooltip
+        const personQuotes = quotesByPerson[d.name];
+        if (personQuotes?.length) {
+            const q = personQuotes[0];
+            const snippet = q.quote?.length > 60 ? q.quote.slice(0, 57) + '...' : q.quote;
+            parts.push(`<span class="tooltip-quote">"${snippet}"</span>`);
+        }
+        // Show rivalry count in tooltip
+        const personRivalries = rivalriesByPlayer[d.name];
+        if (personRivalries?.length) {
+            parts.push(`<span class="tooltip-richness">${personRivalries.length} rivalr${personRivalries.length > 1 ? 'ies' : 'y'}</span>`);
+        }
         const summary = richnessSummary(d.richness);
         if (summary) parts.push(`<span class="tooltip-richness">${summary}</span>`);
         // Analytics metrics in tooltip
@@ -1232,7 +1657,15 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
             .style('top', (event.offsetY - 10) + 'px')
             .html(parts.join('<br>'));
     })
-    .on('mouseout', () => tooltip.style('display', 'none'));
+    .on('mouseout', () => {
+        tooltip.style('display', 'none');
+        // Reset opacity on mouseout (unless a node is focused via sidebar)
+        const sidebarOpen = document.querySelector('.constellation-sidebar.open');
+        if (!sidebarOpen) {
+            if (temporalSliderYear) applyTemporalFilter(temporalSliderYear);
+            else resetGraphOpacity();
+        }
+    });
 
     // Click node → focus + sidebar
     svgNode.on('click', (event, d) => {
@@ -1240,8 +1673,8 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         focusNodeByName(d.name);
     });
 
-    // Background click → reset
-    svg.on('click', () => {
+    // Background double-click → reset selection (single click used for pan)
+    svg.on('dblclick', () => {
         resetGraphOpacity();
         closeSidebar();
         closeEdgePanel();
@@ -1474,6 +1907,17 @@ function showPersonPanel(d) {
 
     let html = `<button class="sidebar-close">&times;</button>`;
     html += `<h2 class="person-name">${d.name}</h2>`;
+    // Show aliases if this person was merged from other name variants
+    const aliases = getAliases(d.name);
+    if (aliases.length > 0) {
+        const displayAliases = aliases
+            .filter(a => a.length > 2 && !a.includes("it's") && !a.includes(' it') && !a.includes(' on') && !a.endsWith("'s"))
+            .slice(0, 4)
+            .map(a => a.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '));
+        if (displayAliases.length > 0) {
+            html += `<p class="person-more-note">aka ${displayAliases.join(', ')}</p>`;
+        }
+    }
     if (relation) html += `<p class="person-relation-tag">${relation}</p>`;
     else if (category && category !== 'other') html += `<p class="person-relation-tag">${formatAwardCategory(category)}</p>`;
 
@@ -1726,6 +2170,79 @@ function showPersonPanel(d) {
         }
     }
 
+    // ─── Quotes attributed to this person ──────────────────────
+    const personQuotes = quotesByPerson[d.name] || [];
+    if (personQuotes.length) {
+        html += `<div class="person-section-label">Quotes & Words</div>`;
+        html += personQuotes.slice(0, 6).map(q => {
+            return `<div class="person-quote-item">
+                <blockquote class="person-quote-text">&ldquo;${q.quote}&rdquo;</blockquote>
+                <div class="person-quote-meta">
+                    <span class="person-milestone-year">${q.year || ''}</span>
+                    ${q.context ? `<span class="quote-context">${q.context}</span>` : ''}
+                </div>
+            </div>`;
+        }).join('');
+        if (personQuotes.length > 6) {
+            html += `<div class="person-more-note">+ ${personQuotes.length - 6} more quotes</div>`;
+        }
+    }
+
+    // ─── ECD Rivalries ───────────────────────────────────────────
+    const personRivalries = rivalriesByPlayer[d.name] || [];
+    if (personRivalries.length) {
+        html += `<div class="person-section-label">Rivalries (${personRivalries.length})</div>`;
+        html += personRivalries
+            .sort((a, b) => (b.mention_count || 0) - (a.mention_count || 0))
+            .slice(0, 6).map(r => {
+                const opponent = r.player1 === d.name ? r.player2 : r.player1;
+                const yearRange = r.first_year && r.last_year
+                    ? `${r.first_year}–${r.last_year}` : r.first_year ? `Since ${r.first_year}` : '';
+                let snippets = [];
+                try {
+                    snippets = typeof r.context_snippets === 'string'
+                        ? JSON.parse(r.context_snippets) : (r.context_snippets || []);
+                } catch (_) { /* ignore */ }
+                const snippetText = snippets.length > 0
+                    ? `<span class="rivalry-snippet">${snippets[0].length > 80 ? snippets[0].slice(0, 77) + '...' : snippets[0]}</span>` : '';
+                return `<div class="rivalry-item">
+                    <div class="rivalry-header">
+                        <button class="rivalry-opponent connection-tag" data-name="${opponent}">${opponent}</button>
+                        <span class="rivalry-mentions">${r.mention_count || 0} clashes</span>
+                    </div>
+                    ${yearRange ? `<span class="rivalry-years">${yearRange}</span>` : ''}
+                    ${snippetText}
+                </div>`;
+            }).join('');
+    }
+
+    // ─── ECD Match Records ───────────────────────────────────────
+    const personMatches = matchRecordsByPlayer[d.name];
+    if (personMatches && (personMatches.wins.length + personMatches.losses.length > 0)) {
+        const allMatches = [
+            ...personMatches.wins.map(m => ({ ...m, result: 'W' })),
+            ...personMatches.losses.map(m => ({ ...m, result: 'L' }))
+        ].sort((a, b) => (a.year || 0) - (b.year || 0));
+
+        html += `<div class="person-section-label">Match Records (${personMatches.wins.length}W–${personMatches.losses.length}L)</div>`;
+        html += `<div class="match-records-list">`;
+        html += allMatches.slice(0, 10).map(m => {
+            const opponent = m.result === 'W' ? m.loser : m.winner;
+            const score = m.score || (m.score_winner && m.score_loser ? `${m.score_winner}–${m.score_loser}` : '');
+            const resultClass = m.result === 'W' ? 'match-win' : 'match-loss';
+            return `<div class="match-record-item ${resultClass}">
+                <span class="match-result-badge">${m.result}</span>
+                <span class="match-opponent">${m.result === 'W' ? 'def.' : 'lost to'} <button class="connection-tag match-opp-btn" data-name="${opponent}">${opponent}</button></span>
+                ${score ? `<span class="match-score">${score}</span>` : ''}
+                <span class="match-meta">${m.year || ''}${m.event_number ? ` · ECD #${m.event_number}` : ''}${m.match_type ? ` · ${m.match_type}` : ''}</span>
+            </div>`;
+        }).join('');
+        html += `</div>`;
+        if (allMatches.length > 10) {
+            html += `<div class="person-more-note">+ ${allMatches.length - 10} more matches</div>`;
+        }
+    }
+
     // Awards (from profile)
     if (profile?.awards?.length) {
         html += `<div class="person-section-label">Awards</div>`;
@@ -1737,6 +2254,28 @@ function showPersonPanel(d) {
         ).join('')}</div>`;
     }
 
+    // ─── Milestones where this person is mentioned ───────────────
+    const personMilestones = milestonesByPerson[d.name] || [];
+    if (personMilestones.length) {
+        html += `<div class="person-section-label">Life Milestones Mentioned In</div>`;
+        html += personMilestones
+            .sort((a, b) => (a.year || 0) - (b.year || 0))
+            .slice(0, 8).map(m => {
+                const categoryIcon = m.category === 'ecd' ? ' \u{1F3C0}' :
+                    m.category === 'travel' ? ' \u{2708}' :
+                    m.category === 'medical' ? ' \u{1FA7A}' :
+                    m.category === 'relationship' ? ' \u{2764}' :
+                    m.category === 'career' ? ' \u{1F4BC}' : '';
+                return `<div class="person-milestone-item">
+                    <span class="person-milestone-year">${m.year || ''}</span>
+                    ${m.milestone}${categoryIcon}
+                </div>`;
+            }).join('');
+        if (personMilestones.length > 8) {
+            html += `<div class="person-more-note">+ ${personMilestones.length - 8} more milestones</div>`;
+        }
+    }
+
     // Songs (from profile)
     if (profile?.songs?.length) {
         html += `<div class="person-section-label">Associated Songs</div>`;
@@ -1746,17 +2285,29 @@ function showPersonPanel(d) {
         }).join('');
     }
 
-    // LJ Comments (from profile)
-    if (profile?.lj_comments?.length) {
+    // ─── LJ Comments by this person ──────────────────────────────
+    const personLjComments = ljCommentsByPerson[d.name] || profile?.lj_comments || [];
+    if (personLjComments.length) {
         html += `<div class="person-section-label">LiveJournal Comments</div>`;
-        html += profile.lj_comments.map(c => {
-            const text = typeof c === 'string' ? c : (c.comment || c.text || '');
-            return `<blockquote class="person-lj-comment">&ldquo;${text}&rdquo;</blockquote>`;
+        html += personLjComments.slice(0, 5).map(c => {
+            const text = typeof c === 'string' ? c : (c.excerpt || c.comment || c.text || '');
+            const postTitle = c.post_title ? `<span class="lj-comment-post">on "${c.post_title}"</span>` : '';
+            const year = c.year ? `<span class="person-milestone-year">${c.year}</span>` : '';
+            return `<div class="lj-comment-enhanced">
+                <blockquote class="person-lj-comment">&ldquo;${text}&rdquo;</blockquote>
+                <div class="lj-comment-meta">${year}${postTitle}</div>
+            </div>`;
         }).join('');
     }
 
+    // ─── Mini Ego Network Visualization ──────────────────────────
+    if (connected.length > 0 && d.id !== 'john') {
+        html += `<div class="person-section-label">Network Map</div>`;
+        html += `<div class="ego-network-container"><canvas class="ego-network-canvas" id="egoNet-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}" width="340" height="220"></canvas></div>`;
+    }
+
     // If nothing to show, say so gently
-    if (r.total === 0 && !connected.length && !connection) {
+    if (r.total === 0 && !connected.length && !connection && !personQuotes.length && !personRivalries.length) {
         html += `<p class="sidebar-empty">This person appears in the timeline but doesn't have documented details yet.</p>`;
     }
 
@@ -1794,212 +2345,20 @@ function showPersonPanel(d) {
             if (canvas) drawSparkline(canvas, d, profile);
         });
     }
+
+    // ─── Draw Ego Network Mini Graph ─────────────────────────────
+    if (connected.length > 0 && d.id !== 'john') {
+        requestAnimationFrame(() => {
+            const egoId = `egoNet-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}`;
+            const canvas = document.getElementById(egoId);
+            if (canvas) drawEgoNetwork(canvas, d, connected);
+        });
+    }
 }
 
 function closeSidebar() {
     const sidebar = document.getElementById('personPanel');
     if (sidebar) sidebar.classList.remove('open');
-}
-
-// ─── Network Over Time Chart ─────────────────────────────────────
-// Shows how the relationship network grew and shifted year by year,
-// using temporal_network.json (active, new, lost people) and
-// enriching with person_arc data for a fuller picture.
-
-function renderNetworkChart(temporalNetwork, personArc) {
-    const canvas = document.getElementById('networkChart');
-    if (!canvas || typeof Chart === 'undefined') return;
-
-    const tnData = Array.isArray(temporalNetwork) ? temporalNetwork : [];
-
-    // Build year→set of active people from people.json active_years
-    let runningTotal = new Set();
-    const yearPeopleMap = {};
-    const allPeople = Object.values(peopleData);
-
-    allPeople.forEach(p => {
-        if (!p.active_years) return;
-        const parsed = parseActiveYears(p.active_years);
-        if (!parsed) return;
-        for (let y = parsed.first; y <= parsed.last; y++) {
-            if (!yearPeopleMap[y]) yearPeopleMap[y] = new Set();
-            yearPeopleMap[y].add(p.name);
-        }
-    });
-
-    // Also add person_arc data for people not in people.json
-    const arcArr = Array.isArray(personArc) ? personArc : [];
-    arcArr.forEach(a => {
-        if (!a.first_year || !a.last_year) return;
-        for (let y = a.first_year; y <= a.last_year; y++) {
-            if (!yearPeopleMap[y]) yearPeopleMap[y] = new Set();
-            yearPeopleMap[y].add(a.person);
-        }
-    });
-
-    // Build sorted year list (2004–2025)
-    const allYears = new Set();
-    tnData.forEach(d => allYears.add(d.year));
-    Object.keys(yearPeopleMap).forEach(y => allYears.add(parseInt(y)));
-    const years = [...allYears].filter(y => y >= 2004 && y <= 2026).sort((a, b) => a - b);
-
-    // Compute metrics per year
-    const activePerYear = [];
-    const newPerYear = [];
-    const lostPerYear = [];
-    const cumulativePerYear = [];
-    const topPersonPerYear = [];
-
-    years.forEach(y => {
-        const tnEntry = tnData.find(d => d.year === y);
-        const peopleThisYear = yearPeopleMap[y] || new Set();
-
-        const active = Math.max(tnEntry?.active_people || 0, peopleThisYear.size);
-        activePerYear.push(active);
-        newPerYear.push(tnEntry?.new_people || 0);
-        lostPerYear.push(tnEntry?.lost_people || 0);
-
-        peopleThisYear.forEach(name => runningTotal.add(name));
-        cumulativePerYear.push(runningTotal.size);
-
-        topPersonPerYear.push(tnEntry?.top_person || '');
-    });
-
-    const yearLabels = years.map(String);
-
-    new Chart(canvas, {
-        type: 'bar',
-        data: {
-            labels: yearLabels,
-            datasets: [
-                {
-                    type: 'line',
-                    label: 'Total Network (cumulative)',
-                    data: cumulativePerYear,
-                    borderColor: '#c9a84c',
-                    backgroundColor: 'rgba(201, 168, 76, 0.08)',
-                    fill: true,
-                    tension: 0.3,
-                    pointRadius: 4,
-                    pointBackgroundColor: '#c9a84c',
-                    pointBorderColor: '#c9a84c',
-                    borderWidth: 2,
-                    yAxisID: 'y1',
-                    order: 0
-                },
-                {
-                    label: 'Active This Year',
-                    data: activePerYear,
-                    backgroundColor: 'rgba(74, 144, 217, 0.7)',
-                    borderColor: '#4a90d9',
-                    borderWidth: 1,
-                    borderRadius: 2,
-                    yAxisID: 'y',
-                    order: 1
-                },
-                {
-                    label: 'New Connections',
-                    data: newPerYear,
-                    backgroundColor: 'rgba(74, 167, 65, 0.7)',
-                    borderColor: '#4a6741',
-                    borderWidth: 1,
-                    borderRadius: 2,
-                    yAxisID: 'y',
-                    order: 2
-                },
-                {
-                    label: 'Faded Out',
-                    data: lostPerYear.map(v => -v),
-                    backgroundColor: 'rgba(180, 80, 80, 0.5)',
-                    borderColor: '#b45050',
-                    borderWidth: 1,
-                    borderRadius: 2,
-                    yAxisID: 'y',
-                    order: 3
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            interaction: {
-                mode: 'index',
-                intersect: false
-            },
-            plugins: {
-                legend: { display: false },
-                tooltip: {
-                    backgroundColor: 'rgba(10, 22, 40, 0.95)',
-                    borderColor: '#4a90d9',
-                    borderWidth: 1,
-                    titleFont: { family: "'Courier Prime', monospace", size: 13 },
-                    bodyFont: { family: "'Trebuchet MS', sans-serif", size: 12 },
-                    padding: 12,
-                    callbacks: {
-                        afterTitle: function(ctx) {
-                            const idx = ctx[0].dataIndex;
-                            const top = topPersonPerYear[idx];
-                            return top ? `Most mentioned: ${top}` : '';
-                        },
-                        label: function(ctx) {
-                            const label = ctx.dataset.label;
-                            let val = ctx.parsed.y;
-                            if (label === 'Faded Out') val = Math.abs(val);
-                            return ` ${label}: ${val}`;
-                        }
-                    }
-                }
-            },
-            scales: {
-                x: {
-                    ticks: {
-                        color: '#7a8fa6',
-                        font: { family: "'Courier Prime', monospace", size: 10 }
-                    },
-                    grid: { color: 'rgba(30,58,95,0.2)' }
-                },
-                y: {
-                    position: 'left',
-                    title: {
-                        display: true,
-                        text: 'People',
-                        color: '#7a8fa6',
-                        font: { family: "'Courier Prime', monospace", size: 10 }
-                    },
-                    ticks: {
-                        color: '#7a8fa6',
-                        font: { family: "'Courier Prime', monospace", size: 10 },
-                        callback: v => Math.abs(v)
-                    },
-                    grid: { color: 'rgba(30,58,95,0.2)' }
-                },
-                y1: {
-                    position: 'right',
-                    title: {
-                        display: true,
-                        text: 'Cumulative',
-                        color: '#c9a84c',
-                        font: { family: "'Courier Prime', monospace", size: 10 }
-                    },
-                    ticks: {
-                        color: '#c9a84c',
-                        font: { family: "'Courier Prime', monospace", size: 10 }
-                    },
-                    grid: { drawOnChartArea: false }
-                }
-            }
-        }
-    });
-
-    // Render custom legend
-    const legendMount = document.getElementById('networkLegend');
-    if (legendMount) {
-        legendMount.innerHTML = `
-            <span class="net-legend-item"><span class="net-legend-swatch" style="background:#4a90d9"></span>Active This Year</span>
-            <span class="net-legend-item"><span class="net-legend-swatch" style="background:#4a6741"></span>New Connections</span>
-            <span class="net-legend-item"><span class="net-legend-swatch" style="background:#b45050"></span>Faded Out</span>
-            <span class="net-legend-item"><span class="net-legend-line" style="border-color:#c9a84c"></span>Total Network</span>
-        `;
-    }
 }
 
 // ─── Network Insights ────────────────────────────────────────────
@@ -2282,405 +2641,112 @@ function drawSparkline(canvas, personData, profile) {
     }
 }
 
-// ─── Network Health Dashboard ────────────────────────────────────
-// Renders circular ring indicators for network health metrics.
+// ─── Ego Network Mini Graph Drawing ──────────────────────────────
+// Draws a small radial graph showing a person's direct connections
 
-function renderNetworkHealthDashboard() {
-    const mount = document.getElementById('networkHealthMount');
-    if (!mount || !analyticsReady) return;
+function drawEgoNetwork(canvas, personData, connected) {
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width;
+    const h = canvas.height;
+    const centerX = w / 2;
+    const centerY = h / 2;
+    const radius = Math.min(w, h) * 0.38;
 
-    const h = analyticsNetworkHealth;
+    ctx.clearRect(0, 0, w, h);
 
-    const metrics = [
-        {
-            value: h.avgDegree?.toFixed(1) || '0',
-            pct: Math.min((h.avgDegree || 0) / 10, 1),
-            label: 'Avg Connections',
-            sublabel: 'per person',
-            color: '#4a90d9'
-        },
-        {
-            value: ((h.density || 0) * 100).toFixed(1) + '%',
-            pct: h.density || 0,
-            label: 'Network Density',
-            sublabel: 'of possible edges',
-            color: '#4a6741'
-        },
-        {
-            value: ((h.avgClusteringCoeff || 0) * 100).toFixed(0) + '%',
-            pct: h.avgClusteringCoeff || 0,
-            label: 'Clustering',
-            sublabel: 'avg clique tightness',
-            color: '#6b4a8b'
-        },
-        {
-            value: h.giantComponentSize || 0,
-            pct: Math.min((h.giantComponentSize || 0) / (allNodes.length || 1), 1),
-            label: 'Giant Component',
-            sublabel: 'largest connected group',
-            color: '#c9a84c'
-        },
-        {
-            value: (h.avgPathLength || 0).toFixed(1),
-            pct: Math.min((h.avgPathLength || 0) / 5, 1),
-            label: 'Avg Path Length',
-            sublabel: 'hops between people',
-            color: '#4a90d9'
-        },
-        {
-            value: ((h.activeRatio || 0) * 100).toFixed(0) + '%',
-            pct: h.activeRatio || 0,
-            label: 'Still Active',
-            sublabel: 'in last 3 years',
-            color: '#4a6741'
-        },
-        {
-            value: ((h.churnRate || 0) * 100).toFixed(0) + '%',
-            pct: h.churnRate || 0,
-            label: 'Faded Away',
-            sublabel: 'inactive 5+ years',
-            color: '#b45050'
-        },
-        {
-            value: ((h.networkCentralization || 0) * 100).toFixed(0) + '%',
-            pct: Math.min(h.networkCentralization || 0, 1),
-            label: 'Centralization',
-            sublabel: 'how star-shaped',
-            color: '#7a8fa6'
-        }
-    ];
-
-    mount.innerHTML = metrics.map(m => {
-        const circumference = 2 * Math.PI * 22;
-        const dashOffset = circumference * (1 - m.pct);
-        return `<div class="health-card">
-            <div class="health-card-ring">
-                <svg viewBox="0 0 52 52">
-                    <circle cx="26" cy="26" r="22" fill="none" stroke="rgba(30,58,95,0.3)" stroke-width="4" />
-                    <circle cx="26" cy="26" r="22" fill="none" stroke="${m.color}" stroke-width="4"
-                        stroke-dasharray="${circumference}" stroke-dashoffset="${dashOffset}"
-                        stroke-linecap="round" style="transform:rotate(-90deg);transform-origin:center;" />
-                </svg>
-                <div class="health-card-ring-value">${m.value}</div>
-            </div>
-            <div class="health-card-label">${m.label}</div>
-            <div class="health-card-sublabel">${m.sublabel}</div>
-        </div>`;
-    }).join('');
-}
-
-// ─── Advanced Metrics Grid ───────────────────────────────────────
-// Shows top PageRank, bridge people, clique leaders, etc.
-
-function renderAdvancedMetrics(constellation) {
-    const mount = document.getElementById('metricsGridMount');
-    if (!mount || !analyticsReady) return;
-
-    const nodes = allNodes.filter(n => n.id !== 'john');
-
-    // Top PageRank people
-    const topPR = [...analyticsPageRank.entries()]
-        .filter(([name]) => name !== 'John Tronolone')
-        .sort((a, b) => b[1] - a[1]).slice(0, 5);
-
-    // Top bridge people (betweenness)
-    const topBridge = [...analyticsBetweenness.entries()]
-        .filter(([name]) => name !== 'John Tronolone')
-        .sort((a, b) => b[1] - a[1]).slice(0, 5);
-
-    // Highest clustering (clique leaders)
-    const topClique = [...analyticsClustering.entries()]
-        .filter(([name]) => name !== 'John Tronolone')
-        .sort((a, b) => b[1] - a[1]).slice(0, 5);
-
-    // Strongest relationships
-    const topRels = [...analyticsRelStrength.entries()]
-        .sort((a, b) => b[1].strength - a[1].strength).slice(0, 5);
-
-    const communityCount = new Set(analyticsCommunities.communities.values()).size;
-
-    let html = '';
-
-    // Summary cards
-    html += `<div class="metric-card">
-        <div class="metric-card-icon">🧠</div>
-        <div class="metric-card-value">${communityCount}</div>
-        <div class="metric-card-label">Natural Communities</div>
-        <div class="metric-card-detail">Detected via modularity optimization (Q=${analyticsCommunities.modularity.toFixed(3)})</div>
-        <div class="metric-card-bar" style="width:${Math.min(communityCount / 10 * 100, 100)}%"></div>
-    </div>`;
-
-    html += `<div class="metric-card">
-        <div class="metric-card-icon">⭐</div>
-        <div class="metric-card-value">${topPR.length ? topPR[0][0].split(' ')[0] : '—'}</div>
-        <div class="metric-card-label">Highest PageRank</div>
-        <div class="metric-card-detail">${topPR.length ? `Score: ${(topPR[0][1] * 100).toFixed(1)}% — most central by link structure` : 'N/A'}</div>
-        <div class="metric-card-bar" style="width:${topPR.length ? topPR[0][1] * 100 : 0}%"></div>
-    </div>`;
-
-    html += `<div class="metric-card">
-        <div class="metric-card-icon">🌉</div>
-        <div class="metric-card-value">${topBridge.length ? topBridge[0][0].split(' ')[0] : '—'}</div>
-        <div class="metric-card-label">Top Bridge Person</div>
-        <div class="metric-card-detail">${topBridge.length ? `Betweenness: ${(topBridge[0][1] * 100).toFixed(1)}% — connects separate clusters` : 'N/A'}</div>
-        <div class="metric-card-bar" style="width:${topBridge.length ? topBridge[0][1] * 100 : 0}%"></div>
-    </div>`;
-
-    html += `<div class="metric-card">
-        <div class="metric-card-icon">🔗</div>
-        <div class="metric-card-value">${topClique.length ? topClique[0][0].split(' ')[0] : '—'}</div>
-        <div class="metric-card-label">Tightest Clique</div>
-        <div class="metric-card-detail">${topClique.length ? `Clustering: ${(topClique[0][1] * 100).toFixed(0)}% — neighbors are also friends` : 'N/A'}</div>
-        <div class="metric-card-bar" style="width:${topClique.length ? topClique[0][1] * 100 : 0}%"></div>
-    </div>`;
-
-    // Top lists
-    html += `</div>`; // close metrics-grid
-    html += `<div class="insights-grid" style="margin-top:20px">`;
-
-    // PageRank leaders
-    html += `<div class="insights-section">
-        <h4 class="insights-section-title">PageRank Leaders</h4>
-        <p class="insights-desc">Who matters most by network structure alone</p>
-        <div class="insights-list">${topPR.map(([name, score]) => {
-            const person = peopleData[name];
-            return `<button class="insight-person" data-name="${name}">
-                <span class="insight-person-name">${name}</span>
-                <span class="insight-person-meta">${(score * 100).toFixed(1)}%${person?.relation ? ' · ' + person.relation : ''}</span>
-            </button>`;
-        }).join('')}</div>
-    </div>`;
-
-    // Bridge people
-    html += `<div class="insights-section">
-        <h4 class="insights-section-title">Bridge People</h4>
-        <p class="insights-desc">Connectors between different social clusters</p>
-        <div class="insights-list">${topBridge.map(([name, score]) => {
-            const person = peopleData[name];
-            return `<button class="insight-person" data-name="${name}">
-                <span class="insight-person-name">${name}</span>
-                <span class="insight-person-meta">${(score * 100).toFixed(1)}%${person?.relation ? ' · ' + person.relation : ''}</span>
-            </button>`;
-        }).join('')}</div>
-    </div>`;
-
-    // Strongest bonds
-    html += `<div class="insights-section">
-        <h4 class="insights-section-title">Strongest Bonds</h4>
-        <p class="insights-desc">Relationships with highest composite strength (weight + co-occurrence + recency)</p>
-        <div class="insights-list">${topRels.map(([key, data]) => {
-            const [nameA, nameB] = key.split('|');
-            const classification = data.strength > 2 ? 'Strong' : data.strength > 1 ? 'Moderate' : 'Weak';
-            return `<button class="insight-person" data-name="${nameA}">
-                <span class="insight-person-name">${nameA} ↔ ${nameB}</span>
-                <span class="insight-person-meta">${data.strength.toFixed(2)} · ${classification} · ${data.mutualCount} mutual</span>
-            </button>`;
-        }).join('')}</div>
-    </div>`;
-
-    html += `</div>`;
-
-    mount.innerHTML = html;
-
-    // Wire up clickable people
-    mount.querySelectorAll('.insight-person').forEach(btn => {
-        btn.addEventListener('click', () => {
-            focusNodeByName(btn.dataset.name);
-            document.getElementById('constellationMount')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        });
-    });
-}
-
-// ─── Community Cards ─────────────────────────────────────────────
-// Renders detected community clusters with member lists.
-
-function renderCommunityCards() {
-    const mount = document.getElementById('communitiesMount');
-    if (!mount || !analyticsReady) return;
-
-    const communityMembers = {};
-    for (const [name, communityId] of analyticsCommunities.communities) {
-        if (name === 'John Tronolone') continue;
-        if (!communityMembers[communityId]) communityMembers[communityId] = [];
-        communityMembers[communityId].push(name);
-    }
-
-    // Sort communities by size
-    const sortedCommunities = Object.entries(communityMembers)
-        .map(([id, members]) => ({
-            id: parseInt(id),
-            members: members.sort((a, b) => {
-                const scoreA = analyticsPersonScores.get(a)?.socialGravity || 0;
-                const scoreB = analyticsPersonScores.get(b)?.socialGravity || 0;
-                return scoreB - scoreA;
-            })
-        }))
-        .filter(c => c.members.length >= 2) // Only show communities with 2+ members
-        .sort((a, b) => b.members.length - a.members.length);
-
-    if (!sortedCommunities.length) return;
-
-    // Name communities by their top member's category
-    function nameCommunity(members) {
-        const catCounts = {};
-        members.forEach(name => {
+    // Filter to max 16 connections (most important first)
+    const sortedConns = connected
+        .map(name => {
             const node = allNodes.find(n => n.name === name);
-            const cat = node?.displayCat || 'other';
-            catCounts[cat] = (catCounts[cat] || 0) + 1;
-        });
-        const topCat = Object.entries(catCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
-        const catNames = { core: 'Inner Circle', family: 'Family', ecd: 'ECD Community', other: 'Extended Network' };
-        const topMember = members[0]?.split(' ')[0] || '';
-        return `${catNames[topCat] || 'Group'} (${topMember}+)`;
-    }
+            return { name, importanceScore: node?.importanceScore || 0, displayCat: node?.displayCat || 'other', color: node?.color || '#7a8fa6' };
+        })
+        .sort((a, b) => b.importanceScore - a.importanceScore)
+        .slice(0, 16);
 
-    let html = `<h4 class="insights-section-title">Detected Communities</h4>
-        <p class="insights-desc">Clusters discovered by modularity optimization — groups that naturally hang together</p>
-        <div class="communities-grid">`;
-
-    sortedCommunities.forEach(c => {
-        const color = analyticsCommunities.communityColors.get(c.id) || '#7a8fa6';
-        const communityName = nameCommunity(c.members);
-
-        // Community-level stats
-        const avgPR = c.members.reduce((sum, m) => sum + (analyticsPageRank.get(m) || 0), 0) / c.members.length;
-        const avgCC = c.members.reduce((sum, m) => sum + (analyticsClustering.get(m) || 0), 0) / c.members.length;
-
-        html += `<div class="community-card" style="--community-color:${color}">
-            <div class="community-card-header">
-                <span class="community-dot" style="background:${color}"></span>
-                <span class="community-name">${communityName}</span>
-                <span class="community-count">${c.members.length}</span>
-            </div>
-            <div class="community-members">${c.members.slice(0, 12).map(name =>
-                `<button class="community-member" data-name="${name}">${name}</button>`
-            ).join('')}${c.members.length > 12 ? `<span class="community-member" style="cursor:default;opacity:0.5">+${c.members.length - 12} more</span>` : ''}</div>
-            <div class="community-stats">
-                <span>Avg PageRank: ${(avgPR * 100).toFixed(1)}%</span>
-                <span>Avg Clustering: ${(avgCC * 100).toFixed(0)}%</span>
-            </div>
-        </div>`;
-    });
-
-    html += `</div>`;
-    mount.innerHTML = html;
-
-    // Wire up member clicks
-    mount.querySelectorAll('.community-member[data-name]').forEach(btn => {
-        btn.addEventListener('click', () => {
-            focusNodeByName(btn.dataset.name);
-            document.getElementById('constellationMount')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        });
-    });
-}
-
-// ─── Diversity Over Time Chart ───────────────────────────────────
-// Shannon entropy of category mix + network age over time.
-
-function renderDiversityChart() {
-    const canvas = document.getElementById('diversityChart');
-    if (!canvas || typeof Chart === 'undefined' || !analyticsReady) return;
-
-    const evolution = analyticsTemporalEvolution;
-    if (!evolution.length) return;
-
-    const years = evolution.map(e => String(e.year));
-    const diversity = evolution.map(e => e.diversityIndex);
-    const networkAge = evolution.map(e => e.networkAge);
-    const activeCount = evolution.map(e => e.activeCount);
-
-    new Chart(canvas, {
-        type: 'line',
-        data: {
-            labels: years,
-            datasets: [
-                {
-                    label: 'Diversity Index (Shannon)',
-                    data: diversity,
-                    borderColor: '#6b4a8b',
-                    backgroundColor: 'rgba(107,74,139,0.1)',
-                    fill: true,
-                    tension: 0.3,
-                    pointRadius: 3,
-                    pointBackgroundColor: '#6b4a8b',
-                    borderWidth: 2,
-                    yAxisID: 'y'
-                },
-                {
-                    label: 'Network Age (avg years known)',
-                    data: networkAge,
-                    borderColor: '#c9a84c',
-                    backgroundColor: 'rgba(201,168,76,0.05)',
-                    fill: false,
-                    tension: 0.3,
-                    pointRadius: 3,
-                    pointBackgroundColor: '#c9a84c',
-                    borderWidth: 2,
-                    yAxisID: 'y1'
-                },
-                {
-                    label: 'Active People',
-                    data: activeCount,
-                    borderColor: 'rgba(74,144,217,0.4)',
-                    backgroundColor: 'rgba(74,144,217,0.08)',
-                    fill: true,
-                    tension: 0.3,
-                    pointRadius: 2,
-                    borderWidth: 1,
-                    borderDash: [4, 4],
-                    yAxisID: 'y1'
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            interaction: { mode: 'index', intersect: false },
-            plugins: {
-                legend: {
-                    display: true,
-                    position: 'bottom',
-                    labels: {
-                        color: '#7a8fa6',
-                        font: { family: "'Trebuchet MS', sans-serif", size: 11 },
-                        boxWidth: 14,
-                        padding: 16
-                    }
-                },
-                tooltip: {
-                    backgroundColor: 'rgba(10, 22, 40, 0.95)',
-                    borderColor: '#6b4a8b',
-                    borderWidth: 1,
-                    titleFont: { family: "'Courier Prime', monospace", size: 13 },
-                    bodyFont: { family: "'Trebuchet MS', sans-serif", size: 12 },
-                    padding: 12
-                }
-            },
-            scales: {
-                x: {
-                    ticks: { color: '#7a8fa6', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(30,58,95,0.2)' }
-                },
-                y: {
-                    position: 'left',
-                    title: {
-                        display: true, text: 'Shannon Entropy',
-                        color: '#6b4a8b', font: { family: "'Courier Prime', monospace", size: 10 }
-                    },
-                    ticks: { color: '#6b4a8b', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(30,58,95,0.15)' }
-                },
-                y1: {
-                    position: 'right',
-                    title: {
-                        display: true, text: 'People / Years',
-                        color: '#c9a84c', font: { family: "'Courier Prime', monospace", size: 10 }
-                    },
-                    ticks: { color: '#c9a84c', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { drawOnChartArea: false }
-                }
-            }
+    // Compute peer links among connected nodes
+    const connSet = new Set(sortedConns.map(c => c.name));
+    const peerLinks = [];
+    allLinks.forEach(l => {
+        const src = typeof l.source === 'object' ? l.source.name : l.source;
+        const tgt = typeof l.target === 'object' ? l.target.name : l.target;
+        if (src !== personData.name && tgt !== personData.name &&
+            connSet.has(src) && connSet.has(tgt)) {
+            peerLinks.push({ src, tgt });
         }
     });
+
+    // Position nodes in a circle
+    const positions = {};
+    positions[personData.name] = { x: centerX, y: centerY };
+    sortedConns.forEach((c, i) => {
+        const angle = (2 * Math.PI * i) / sortedConns.length - Math.PI / 2;
+        positions[c.name] = {
+            x: centerX + radius * Math.cos(angle),
+            y: centerY + radius * Math.sin(angle)
+        };
+    });
+
+    // Draw peer links (faint)
+    peerLinks.forEach(({ src, tgt }) => {
+        const p1 = positions[src];
+        const p2 = positions[tgt];
+        if (!p1 || !p2) return;
+        ctx.beginPath();
+        ctx.moveTo(p1.x, p1.y);
+        ctx.lineTo(p2.x, p2.y);
+        ctx.strokeStyle = 'rgba(201, 168, 76, 0.15)';
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+    });
+
+    // Draw hub links (to center)
+    sortedConns.forEach(c => {
+        const pos = positions[c.name];
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(pos.x, pos.y);
+        ctx.strokeStyle = 'rgba(74, 144, 217, 0.2)';
+        ctx.lineWidth = 0.8;
+        ctx.stroke();
+    });
+
+    // Draw connection nodes
+    sortedConns.forEach(c => {
+        const pos = positions[c.name];
+        const nodeR = Math.max(3, Math.sqrt(c.importanceScore) * 0.5 + 2);
+        ctx.beginPath();
+        ctx.arc(pos.x, pos.y, nodeR, 0, 2 * Math.PI);
+        ctx.fillStyle = c.color;
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+
+        // Labels for top connections
+        if (c.importanceScore > 5 || sortedConns.length <= 8) {
+            ctx.font = '8px Trebuchet MS, sans-serif';
+            ctx.fillStyle = '#7a8fa6';
+            ctx.textAlign = 'center';
+            const labelY = pos.y > centerY ? pos.y + nodeR + 10 : pos.y - nodeR - 4;
+            const shortName = c.name.split(' ')[0];
+            ctx.fillText(shortName, pos.x, labelY);
+        }
+    });
+
+    // Draw center node
+    ctx.beginPath();
+    ctx.arc(centerX, centerY, 6, 0, 2 * Math.PI);
+    ctx.fillStyle = '#c9a84c';
+    ctx.fill();
+    ctx.strokeStyle = 'rgba(255,255,255,0.5)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // Center label
+    ctx.font = 'bold 9px Trebuchet MS, sans-serif';
+    ctx.fillStyle = '#c9a84c';
+    ctx.textAlign = 'center';
+    ctx.fillText(personData.name.split(' ')[0], centerX, centerY - 10);
 }
 
 // Auto-init
@@ -2691,3 +2757,4 @@ initConstellation()
         const el = document.getElementById('constellationMount');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
     });
+

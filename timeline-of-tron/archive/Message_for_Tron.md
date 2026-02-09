@@ -52,7 +52,7 @@ Reading the Timelines in order, you can watch an entire career unfold:
 The username says it all.
 
 - 91+ WWE events attended (as of 2021, probably higher now)
-- 25 consecutive calendar years at Survivor Series
+- 29 consecutive calendar years at Survivor Series
 - 10+ WrestleManias attended (confirmed through 2016)
 - 17 events attended with RL (Letsche)
 - 90th event milestone: March 8, 2020

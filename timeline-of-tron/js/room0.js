@@ -60,7 +60,7 @@ function renderOriginStory() {
         {
             year: '1997',
             title: 'First Survivor Series',
-            text: 'The obsession begins. Not with data, not with tracking — but with wrestling. Survivor Series 1997, the Montreal Screwjob. A kid watching something he didn\'t fully understand, but knew he couldn\'t look away. 25 years of consecutive attendance would follow.'
+            text: 'The obsession begins. Not with data, not with tracking — but with wrestling. Survivor Series 1997, the Montreal Screwjob. A kid watching something he didn\'t fully understand, but knew he couldn\'t look away. 29 years of consecutive attendance would follow.'
         },
         {
             year: '1998–2002',

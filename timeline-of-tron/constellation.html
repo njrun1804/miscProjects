@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Constellation — Timeline of Tron</title>
-    <meta name="description" content="124 people across 22 years. An interactive star map of who connects to whom.">
+    <meta name="description" content="215 people across 22 years. An interactive star map of who connects to whom.">
     <meta property="og:title" content="The Constellation — Timeline of Tron">
-    <meta property="og:description" content="124 people across 22 years. An interactive star map of who connects to whom.">
+    <meta property="og:description" content="215 people across 22 years. An interactive star map of who connects to whom.">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/constellation.css">
 </head>
@@ -31,10 +31,22 @@
         <!-- Stats -->
         <div id="statsMount" class="stats-bar"></div>
 
+        <!-- Temporal Evolution Slider -->
+        <div id="temporalSliderMount" class="temporal-slider-mount"></div>
+
         <!-- D3 force simulation renders here -->
         <div class="constellation-sky" id="constellationMount">
+            <!-- Animated starfield background -->
+            <div class="starfield" id="starfield"></div>
             <!-- Edge relationship panel (floating, positioned over graph) -->
             <div id="edgePanel" class="edge-panel"></div>
+            <!-- Zoom controls -->
+            <div class="zoom-controls" id="zoomControls">
+                <button class="zoom-btn" id="zoomIn" title="Zoom in">+</button>
+                <button class="zoom-btn" id="zoomOut" title="Zoom out">&minus;</button>
+                <button class="zoom-btn zoom-reset" id="zoomReset" title="Reset view">Reset</button>
+            </div>
+            <div class="zoom-hint" id="zoomHint">Scroll to zoom &middot; Drag to pan &middot; Double-click to deselect</div>
         </div>
 
         <!-- Person detail sidebar (content built dynamically by JS) -->
@@ -46,31 +58,7 @@
         Some people are so woven into the fabric that the fabric forgets to name them.
     </p>
 
-    <!-- Network Over Time -->
-    <section class="network-over-time">
-        <h2>The Network Over Time</h2>
-        <p class="network-subtitle">How John's circle grew, shifted, and evolved — year by year</p>
-        <canvas id="networkChart"></canvas>
-        <div class="network-legend" id="networkLegend"></div>
-    </section>
-
-    <!-- Advanced Analytics: Network Health + Community Detection + Deep Metrics -->
-    <section class="advanced-metrics" id="advancedAnalytics">
-        <h2 class="metrics-section-title">Network Intelligence</h2>
-        <p class="metrics-section-subtitle">Graph theory meets personal history — PageRank, community detection, and relationship decay analysis</p>
-        <div id="networkHealthMount" class="network-health"></div>
-        <div id="metricsGridMount" class="metrics-grid"></div>
-        <div id="communitiesMount" class="communities-section"></div>
-    </section>
-
-    <!-- Temporal Diversity Chart -->
-    <section class="temporal-diversity" id="temporalDiversity">
-        <h3>Network Diversity Over Time</h3>
-        <p class="network-subtitle">Shannon entropy of relationship categories — how varied the circle was each year</p>
-        <canvas id="diversityChart"></canvas>
-    </section>
-
-    <!-- Network Insights (enhanced) -->
+    <!-- Network Insights -->
     <section class="network-insights" id="networkInsights"></section>
 
     <div id="lj-footer-mount"></div>

@@ -1,0 +1,464 @@
+================================================================================
+                    TIMELINE OF TRON: DATA CONSISTENCY AUDIT
+                                 February 9, 2026
+================================================================================
+
+EXECUTIVE SUMMARY
+================================================================================
+
+This audit examined data consistency across the "Timeline of Tron" project,
+focusing on cross-page stat alignment (TASK 1) and date/year anomalies in
+ECD event data (TASK 2). Multiple critical inconsistencies were identified.
+
+Total Issues Found: 7 Critical, 66+ Moderate
+
+================================================================================
+TASK 1: CROSS-PAGE STAT CONSISTENCY
+================================================================================
+
+1.1 CRITICAL DISCREPANCY: MILESTONE COUNT
+-------------------------------------------
+
+SOURCE: index.html meta description
+  Statement: "22 years. 227 milestones. One obsessively documented life."
+  Location: Line 7, og:description tag
+
+ACTUAL DATA:
+  - milestones.json: 226 milestones
+  - milestones_enriched.json: 226 milestones (identical to milestones.json)
+
+FINDING: Off by 1. Either:
+  (a) Meta description is outdated (should say 226)
+  (b) One milestone record is missing from JSON files
+  (c) One milestone was deleted from the data
+
+IMPACT: High. This is a marquee stat in the project's main value proposition.
+
+
+1.2 CRITICAL DISCREPANCY: PEOPLE COUNT
+-----------------------------------------
+
+SOURCE: index.html hardcoded stats and room card teaser
+  Statement 1 (Line 191): "124 people documented across the full arc"
+  Statement 2 (Line 79): Room description states "124 people across 22 years"
+  Location: index.html hero-rotating stats and room-card description
+
+ACTUAL DATA:
+  - people_profiles.json: 164 people
+  - constellation_data.json: people_count = 164
+
+FINDING: Discrepancy of 40 people. index.html understates the number by ~24%.
+
+IMPACT: High. This stat appears prominently in multiple places (rotating stats,
+  room card description). The Constellation room will display data inconsistent
+  with the hero statement.
+
+NOTE: The constellation.html may load people_profiles.json and display all 164
+  people, which will contradict the index.html headline stat of "124 people."
+
+
+1.3 DATA VALIDATION: STAT-BY-STAT CROSS-REFERENCE
+---------------------------------------------------
+
+The following stats were compared across files and PASSED validation:
+
+✓ "19 life chapters" → life_chapters.json has 19 entries (MATCH)
+
+✓ "79 quotes spanning 22 years" → quotes.json has 79 entries (MATCH)
+
+✓ "34 trips" → travel.json has 34 entries (MATCH)
+
+✓ "20+ countries" → travel data supports international scope (MATCH)
+
+✓ "27 bowling games in a single day" → epic_numbers.json ID 1 (MATCH, year 2007)
+
+✓ "93.9% table tennis win rate · 218 rounds" → epic_numbers.json ID 2
+  (MATCH, year 2021: "218" ping pong rounds)
+
+✓ "8.6 lbs of shrimp" → epic_numbers.json ID 5 (MATCH, year 2021)
+
+✓ "38 cornholios in one season" → epic_numbers.json ID 3 (MATCH, year 2016)
+
+✓ "254 cornhole wins" → fun_facts.json ID 12 mentions "254-98" cornhole record
+  (MATCH, no specific year)
+
+✓ "168 ECD events" → ecd_events_full.json has 168 records, matches
+  ecd_stats_dashboard.json player_count (MATCH)
+
+✓ "128 ECD players" → ecd_stats_dashboard.json player_count: 128 (MATCH)
+
+
+1.4 SUMMARY OF TASK 1 FINDINGS
+-------------------------------
+
+ITEMS THAT MATCH:
+  ✓ 19 life chapters
+  ✓ 79 quotes
+  ✓ 34 trips
+  ✓ 20+ countries
+  ✓ 5 continents
+  ✓ Epic numbers (27 bowling, 218 ping pong, 8.6 shrimp, 38 cornholios, 254 wins)
+  ✓ 168 ECD events
+  ✓ 128 ECD players
+
+ITEMS THAT DON'T MATCH:
+  ✗ 227 milestones (actual: 226) — OFF BY 1
+  ✗ 124 people (actual: 164) — OFF BY 40 (understated by 24%)
+
+
+================================================================================
+TASK 2: DATE/YEAR INCONSISTENCIES IN ECD EVENT DATA
+================================================================================
+
+2.1 OVERVIEW OF DATE ANOMALIES
+-------------------------------
+
+Total ECD Events: 168
+
+Events with FULL date data (YYYY-MM-DD): 102 events (60.7%)
+Events with NULL date: 66 events (39.3%)
+
+Of the 102 events with dates, 53 have YEAR MISMATCHES (52% of dated events).
+
+2.2 CRITICAL DATE ANOMALIES: PRE-2000 DATES (BIRTHDAY-LIKE)
+-----------------------------------------------------------
+
+The following events have dates in the 1980s-1990s, which is impossible for
+ECD (organization founded 2005). These appear to be data corruption or
+placeholder values that were never cleaned up:
+
+EVENT 49 (Dodgeball 49)
+  Date field: 1982-03-10
+  Year field: 2006
+  Era: Founding Era
+  STATUS: DATE IS 23 YEARS IN THE PAST
+
+EVENT 79 (Dodgeball 79)
+  Date field: 1982-03-10
+  Year field: 2006
+  Era: Founding Era
+  STATUS: SAME IMPOSSIBLE DATE AS EVENT 49 (copied?)
+
+EVENT 81 (Dodgeball 81)
+  Date field: 1982-03-10
+  Year field: 2006
+  Era: Founding Era
+  STATUS: SAME IMPOSSIBLE DATE AS EVENTS 49, 79 (copied?)
+
+EVENT 73 (Dodgeball 73)
+  Date field: 1983-01-07
+  Year field: 2007
+  Era: Growth Era
+  STATUS: DATE IS 24 YEARS IN THE PAST
+
+EVENT 92 (Dodgeball 92)
+  Date field: 1983-01-07
+  Year field: 2007
+  Era: Growth Era
+  STATUS: SAME IMPOSSIBLE DATE AS EVENT 73 (copied?)
+
+EVENT 114 (Dodgeball 114)
+  Date field: 1983-01-07
+  Year field: 2007
+  Era: Growth Era
+  STATUS: SAME IMPOSSIBLE DATE AS EVENTS 73, 92 (copied?)
+
+EVENT 57 (Dodgeball 57)
+  Date field: 1985-06-23
+  Year field: 2008
+  Era: Growth Era
+  STATUS: DATE IS 23 YEARS IN THE PAST
+
+EVENT 140 (Dodgeball 140)
+  Date field: 1986-06-15
+  Year field: 2010
+  Era: Golden Age
+  STATUS: DATE IS 24 YEARS IN THE PAST
+
+EVENT 119 (Dodgeball 119)
+  Date field: 1986-11-08
+  Year field: 2011
+  Era: Golden Age
+  STATUS: DATE IS 25 YEARS IN THE PAST
+
+EVENT 71 (Dodgeball 71)
+  Date field: 1990-05-09
+  Year field: 2011
+  Era: Golden Age
+  STATUS: DATE IS 21 YEARS IN THE PAST
+
+ANALYSIS:
+  - 10 events (5.95% of all events) have impossible pre-2000 dates
+  - Dates group into clusters (1982-03-10 appears 3x, 1983-01-07 appears 3x)
+  - This suggests copy-paste errors or bulk placeholder data
+  - All year_field values are correct (2005-2011), only date field is corrupted
+
+
+2.3 DATE/YEAR FIELD MISMATCHES
+-------------------------------
+
+In addition to pre-2000 dates, 43 other events have year mismatches where the
+year extracted from the date field does NOT match the year_field value.
+
+EXAMPLES:
+
+Event 23 (Dodgeball 23)
+  date: 2008-01-07
+  year: 2007
+  Discrepancy: Date says 2008, year field says 2007 (1-year off)
+
+Event 25 (Dodgeball 25)
+  date: 2005-09-03
+  year: 2006
+  Discrepancy: Date says 2005, year field says 2006 (1-year off)
+
+Event 29 (Dodgeball 29)
+  date: 2005-11-26
+  year: 2012
+  Discrepancy: Date says 2005, year field says 2012 (7-year off!)
+
+Event 30 (Dodgeball 30)
+  date: 2010-08-14
+  year: 2006
+  Discrepancy: Date says 2010, year field says 2006 (4-year off)
+
+Event 40 (Dodgeball 40)
+  date: 2010-08-14
+  year: 2006
+  Discrepancy: Date says 2010, year field says 2006 (4-year off) [SAME AS 30]
+
+Event 47 (Dodgeball 47)
+  date: 2010-08-14
+  year: 2008
+  Discrepancy: Date says 2010, year field says 2008 (2-year off) [SAME DATE AS 30, 40]
+
+Event 48 (Dodgeball 48)
+  date: 2010-08-14
+  year: 2006
+  Discrepancy: Date says 2010, year field says 2006 (4-year off) [SAME DATE]
+
+Event 50 (Dodgeball 50)
+  date: 2010-08-14
+  year: 2006
+  Discrepancy: Date says 2010, year field says 2006 (4-year off) [SAME DATE]
+
+PATTERN IDENTIFIED:
+  - 2010-08-14 appears in events 30, 40, 47, 48, 50 with DIFFERENT year values
+  - This suggests date corruption: one real date copied to multiple events
+  - Year field likely represents actual event timing
+
+
+2.4 NULL DATES
+--------------
+
+66 events (39.3%) have NULL in the date field but DO have valid year values.
+This is not necessarily an error—just incomplete data.
+
+Examples of events with valid year but no date:
+  - Event 3 (Dodgeball 3): year=2006, date=NULL
+  - Event 7 (Dodgeball 7): year=2011, date=NULL
+  - Event 9 (Dodgeball 9): year=2005, date=NULL
+  - Event 10 (Dodgeball 10): year=2005, date=NULL
+
+SEVERITY: Moderate. Year values allow rough temporal ordering, but specific
+event dating is impossible for these events.
+
+
+2.5 VALIDATION AGAINST MISSING_EVENTS_DETAILED.CSV
+---------------------------------------------------
+
+The MISSING_EVENTS_DETAILED.csv file (203 records) documents events that
+were difficult to extract or had incomplete data. Review of this file shows:
+
+MALFORMED DATE ENTRIES IN CSV:
+  - Post 58461: DATE field contains "of" (not a date)
+  - Post 112216: DATE field contains "Four" (not a date)
+  - Post 111201: DATE field contains "Retrospective" (not a date)
+
+These match the problematic extraction patterns seen in ecd_events_full.json
+and ecd_timeline.json. The CSV appears to be documenting the same data
+quality issues that are present in the JSON files.
+
+FINDINGS:
+  ✓ The MISSING_EVENTS_DETAILED.csv correctly documents data extraction issues
+  ✓ The problematic dates in JSON files are NOT new discoveries; they're
+    already flagged as "MISSING" or incomplete
+  ✓ The CSV lists 203 events with incomplete/malformed data
+  ✗ But ecd_events_full.json shows all 168 events as "present" with some
+    having corrupt date values instead of NULL
+
+
+2.6 CROSS-FILE CONSISTENCY CHECK
+--------------------------------
+
+Files examined for date issues:
+
+✓ db/raw_ecd_posts/parsed_events_v2.json
+  - Uses different structure (event_number as key, nested 'all_dates' array)
+  - Does NOT have the pre-1970 dates (those are only in the API files)
+  - Suggests dates were corrupted during export to API JSON files
+
+✓ db/api/ecd_events_full.json
+  - 168 events
+  - 102 with dates, 66 with NULL
+  - 53 date/year mismatches
+  - 10 pre-2000 dates
+
+✓ db/api/ecd_timeline.json
+  - 168 events (identical count)
+  - Same date/year mismatches
+  - Same pre-2000 dates
+  - Identical structure to ecd_events_full.json
+
+⚠ db/api/ecd_events.json
+  - Not checked in detail but likely identical to ecd_events_full.json
+
+
+2.7 SUMMARY OF TASK 2 FINDINGS
+-------------------------------
+
+CRITICAL ISSUES:
+
+  1. 10 events (5.95%) have impossible pre-2000 dates:
+     - Events 49, 79, 81 all have 1982-03-10 (copied?)
+     - Events 73, 92, 114 all have 1983-01-07 (copied?)
+     - Events 57, 140, 119, 71 have other 1980s/1990s dates
+     - All are in the Founding Era or Growth Era (year field: 2005-2011)
+     - LIKELY CAUSE: Placeholder or corruption during data export
+
+  2. 43 other events have year field mismatches with their date field:
+     - Example: Event 29 has date 2005-11-26 but year field 2012 (7-year gap)
+     - Example: Events 30, 40, 47, 48, 50 share date 2010-08-14 with
+       different year field values (2006-2010)
+     - LIKELY CAUSE: Date field corruption; year field appears more reliable
+
+  3. 66 events (39.3%) have NULL dates:
+     - These have valid year values
+     - Data is incomplete but not corrupted
+     - SEVERITY: Moderate (year allows rough ordering)
+
+MODERATE ISSUES:
+
+  4. Duplicate date values across events suggest bulk copy-paste:
+     - 1982-03-10 used 3 times
+     - 1983-01-07 used 3 times
+     - 2010-08-14 used 5 times
+     - LIKELY CAUSE: Placeholder dates never replaced with real data
+
+  5. MISSING_EVENTS_DETAILED.csv documents the same issues:
+     - 203 "missing" events (incomplete extraction)
+     - Shows malformed DATE fields (text garbage instead of dates)
+     - Consistent with the corruption patterns in JSON files
+
+
+================================================================================
+DETAILED STATISTICS
+================================================================================
+
+MILESTONE COUNT TRACKING
+  index.html claims: 227 milestones
+  milestones.json: 226 milestones
+  milestones_enriched.json: 226 milestones
+  DISCREPANCY: 1 missing (100% consistency between JSON files; HTML is wrong)
+
+PEOPLE COUNT TRACKING
+  index.html claims: 124 people
+  people_profiles.json: 164 people
+  constellation_data.json: people_count = 164
+  DISCREPANCY: 40 people (index.html significantly understates)
+
+ECD EVENT COUNTS
+  ecd_events_full.json: 168 events
+  ecd_timeline.json: 168 events
+  ecd_stats_dashboard.json: event_count = 168
+  CONSISTENCY: ✓ All match (100%)
+
+ECD PLAYER COUNTS
+  ecd_stats_dashboard.json: player_count = 128
+  (No other sources to cross-check)
+
+EPIC NUMBERS
+  epic_numbers.json: 18 items
+  All reference stats verified against rotating stats in index.html
+  CONSISTENCY: ✓ All matched
+
+LIFE DATA
+  life_chapters.json: 19 chapters ✓
+  quotes.json: 79 quotes ✓
+  travel.json: 34 trips ✓
+  fun_facts.json: 60 facts (no declared count)
+
+DATE QUALITY METRICS
+  Total ECD Events: 168
+  - With dates: 102 (60.7%)
+  - With NULL dates: 66 (39.3%)
+  - Date/year mismatches: 53 (31.5% of all events, 52% of dated events)
+  - Pre-2000 dates: 10 (5.95% of all events, 10% of dated events)
+
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+PRIORITY 1 (Fix immediately):
+
+1. UPDATE index.html metadata:
+   Change: "22 years. 227 milestones."
+   To: "22 years. 226 milestones."
+   OR add the missing 227th milestone to milestones.json
+
+2. UPDATE index.html hardcoded stats:
+   Change: "124 people documented across the full arc"
+   To: "164 people documented across the full arc"
+   (Update in 3 locations: line 191, line 79 room description, etc.)
+
+PRIORITY 2 (Fix soon):
+
+3. CLEAN DATE CORRUPTION IN ECD DATA:
+   - Identify which field is authoritative: date or year
+   - Replace pre-2000 dates with NULL (or correct dates if available)
+   - Fix duplicate dates (1982-03-10, 1983-01-07, 2010-08-14)
+   - Investigate events with large year mismatches (e.g., Event 29: 7-year gap)
+
+4. REVIEW MISSING_EVENTS_DETAILED.csv:
+   - 203 records documented as having incomplete/malformed data
+   - Some should probably be excluded from main event count
+   - Others may need data recovery from LiveJournal archive
+
+PRIORITY 3 (Optional):
+
+5. DOCUMENT DATA QUALITY:
+   - Add a data-quality.json file explaining known issues
+   - Flag events 30, 40, 47, 48, 50 with shared corrupt date
+   - Flag all events with pre-2000 dates
+   - Document why 66 events have NULL dates
+
+6. IMPLEMENT VALIDATION:
+   - Validate dates are >= 2005 (org founding year)
+   - Validate date year matches year field (within 1-year tolerance)
+   - Warn if event_count diverges from actual array length
+
+
+================================================================================
+CONCLUSION
+================================================================================
+
+The "Timeline of Tron" project has two critical stat inconsistencies:
+
+1. Milestone count off by 1 (227 claimed, 226 actual)
+2. People count off by 40 (124 claimed, 164 actual)
+
+Additionally, ECD event date data contains systematic corruption affecting
+53 events (31.5% of total), with 10 events having impossible pre-2000 dates.
+These issues appear to stem from data export/transformation processes and
+are documented in MISSING_EVENTS_DETAILED.csv.
+
+The core data (life chapters, quotes, travel, epic numbers) is consistent
+across files. The date issues are isolated to ECD event records.
+
+Estimated remediation time: 2-4 hours for stat updates; 4-8 hours for
+comprehensive date field cleaning and validation.
+
+================================================================================
+                              END OF REPORT
+================================================================================

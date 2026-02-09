@@ -4,17 +4,17 @@
     "category": "WWE",
     "description": "Consecutive Survivor Series calendar years",
     "start_year": 1997,
-    "end_year": 2021,
-    "length": 25,
+    "end_year": 2025,
+    "length": 29,
     "still_active": 1
   },
   {
     "id": 2,
     "category": "WWE",
-    "description": "WrestleMania attendance streak",
+    "description": "WrestleMania attendance streak (note: 2011 was WM XXVII viewing, not in-person)",
     "start_year": 2007,
     "end_year": 2017,
-    "length": 10,
+    "length": 11,
     "still_active": 0
   },
   {
@@ -32,7 +32,7 @@
     "description": "East Coast Dodgeball continuous operation",
     "start_year": 2005,
     "end_year": 2025,
-    "length": 20,
+    "length": 21,
     "still_active": 1
   },
   {
@@ -65,10 +65,11 @@
   {
     "id": 8,
     "category": "Sports",
-    "description": "Table tennis unbeaten stretch (2016)",
+    "description": "Table tennis 62 wins in one season (93.9%)",
     "start_year": 2016,
     "end_year": 2016,
     "length": 62,
+    "unit": "games",
     "still_active": 0
   },
   {
@@ -86,7 +87,7 @@
     "description": "Years at Sunrise Senior Living",
     "start_year": 2011,
     "end_year": 2025,
-    "length": 14,
+    "length": 15,
     "still_active": 1
   }
 ]

@@ -1,0 +1,221 @@
+================================================================================
+DODGEBALL EVENT SEARCH FINDINGS SUMMARY
+================================================================================
+Search Date: 2026-02-09
+Total Files Searched: 603 raw ECD post JSON files
+Directory: /sessions/adoring-beautiful-gates/mnt/timeline-of-tron/db/raw_ecd_posts/
+
+================================================================================
+SEARCH RESULTS OVERVIEW
+================================================================================
+
+Total Matches Found: 1,629
+  - Missing event numbers (4, 5, 6, 11, 12, 16, 111, 112, 152, 172, 173, etc.): 874 matches
+  - Events numbered > 200 (201-220): 5 matches
+  - Special event names (Anniversary, Championship, etc.): 750 matches
+
+================================================================================
+KEY FINDINGS FOR MISSING EVENTS
+================================================================================
+
+EVENTS FOUND IN POSTS (11 out of 30 missing events located):
+
+  Event #4: 279 mentions
+    - Primary mentions: appears in numbered lists, voting results, and event references
+    - Most common in early/foundational posts
+    
+  Event #5: 283 mentions
+    - Primary mentions: numbered lists, milestone references (5 Year Anniversary)
+    - Frequently referenced in historical context
+    
+  Event #6: 100 mentions
+    - Primary mentions: chronological event lists, comparisons
+    - Less frequent than #4 and #5
+    
+  Event #11: 82 mentions
+    - Primary mentions: player debut/statistics, match history
+    - Appears in player biography sections
+    
+  Event #12: 84 mentions
+    - Primary mentions: statistical references, game history
+    - Commonly in match recaps and statistics
+    
+  Event #16: 38 mentions
+    - Primary mentions: attendance records, venue/lighting discussions
+    - Multiple mentions in post ID 100332 (You Got SERVED)
+    
+  Event #172: 2 mentions
+    - Found in post ID 114290 ("One Day To Stop This WORLD")
+    - Referenced as "Event #172" and "#172"
+    - Date reference: May 23, 2009
+    
+  Event #173: 2 mentions
+    - Found in post ID 114290 ("One Day To Stop This WORLD")
+    - Referenced as "Event #173" and "#173"
+    - Date reference: July 24, 2010
+    
+  Event #182: 2 mentions
+    - Found in post ID 114290 ("One Day To Stop This WORLD")
+    - Referenced as "Event #182" and "#182"
+    - Date reference: June 18, 2011
+    
+  Event #190: 1 mention
+    - Found in post ID 118624 ("TWO For ONE Special")
+    - Referenced as Roman numeral: "DODGEBALL CXC" (190 in Roman numerals)
+    
+  Event #191: 1 mention
+    - Found in post ID 118624 ("TWO For ONE Special")
+    - Referenced as Roman numeral: "DODGEBALL CXCI" (191 in Roman numerals)
+
+EVENTS NOT FOUND IN ANY POST (19 out of 30 missing):
+  111, 112, 152, 175, 176, 178, 179, 180, 181, 183, 186, 187, 188, 189, 193, 194, 196, 197, 198
+
+================================================================================
+EVENTS BEYOND #200
+================================================================================
+
+Found 5 mentions of events numbered 201-220:
+
+  Event #202: 1 mention
+    - Found in post ID 123576 ("The BIGGEST, The BEST, The FEAST")
+    - Context: "broke record for the longest stretch between CREAMation encounters, ECD 91-202"
+    - Suggests event 202 exists in the system
+    
+  Event #203: 3 mentions
+    - Found in posts ID 111707, 29108, 49049
+    - Referenced as "highest numbered player - 203"
+    - Also appears in temporal references: "After 203 days"
+    - Suggests event 203 may exist
+    
+  Event #218: 1 mention
+    - Found in post ID 116678 ("Just ONE .. More FIGHT .. And I'll Be HISTORY")
+    - Context: "ECD Player #218 Debut: DODGEBALL..."
+    - Likely a player number, not event number
+
+================================================================================
+SPECIAL EVENT REFERENCES
+================================================================================
+
+Found 750 total mentions of special event types:
+
+  FINAL: 228 matches
+    - "Final Encounter", "Season Finale", "3rd and final encounter"
+    
+  SPECIAL: 212 matches
+    - "Thanksgiving Special", "Holiday Special", "Double Main Event"
+    
+  ANNIVERSARY: 146 matches
+    - "5 Year Anniversary", "10th Anniversary", etc.
+    
+  CHAMPIONSHIP: 68 matches
+    - Championship matches, title defenses, championship chases
+    
+  TOURNAMENT: 49 matches
+    - Team tournaments, survivor series tournaments
+    
+  ALL-STAR: 22 matches
+    - All-star lineups, all-star novices, all-star events
+    
+  INDOOR: 21 matches
+    - Indoor family fun night, indoor extravaganza
+    
+  WOMEN'S: 4 matches
+    - Women's division, women's rights movement references
+
+================================================================================
+TOP POSTS WITH MOST EVENT REFERENCES
+================================================================================
+
+Post ID 114290 - "One Day To Stop This WORLD"
+  - Contains references to events #172, #173, #182
+  - Appears to be a comprehensive historical/milestone post
+  - Contains dates for referenced events
+
+Post ID 100332 - "You Got SERVED"
+  - Contains multiple references to events #166-#170
+  - Discusses Dodgeball #161 attendance record
+  - Multiple mentions of events #16x in venue/lighting discussion
+
+Post ID 100771 - "Raiders of the Lost ARMS"
+  - References multiple dodgeball events
+  - Discusses event numbering and history
+
+Post ID 104181 - "ONCE"
+  - Contains chronological event references
+  - Statistics and match history
+
+Post ID 103856 - "Somewhere, A Clock Is TICKING"
+  - Historical narrative with event references
+  - Contains references to events #4, #5, #48, #49, #50
+
+================================================================================
+METHODOLOGY NOTES
+================================================================================
+
+Search patterns used:
+  1. "Dodgeball #X" (e.g., "Dodgeball #172")
+  2. "Dodgeball X" (e.g., "Dodgeball 172")
+  3. "#X" standalone (e.g., "#172")
+  4. Roman numerals (e.g., "DODGEBALL CLXXII" for 172)
+  5. "Event #X" format
+  6. "Event X" format
+
+Special event keywords:
+  Pro Bowl, Anniversary, Indoor, Women's, All-Star, Championship, Final, Playoff, Tournament, Special
+
+Context extraction: 150 characters before and after each match
+
+================================================================================
+CONCLUSIONS
+================================================================================
+
+1. EVENTS 4, 5, 6, 11, 12, 16 ARE WELL-DOCUMENTED
+   - These early/foundational events have 38-283 mentions each
+   - Appear primarily in numbered lists and historical references
+   - Likely exist as actual events with substantive content elsewhere
+
+2. EVENTS 172, 173, 182 ARE DOCUMENTED IN POST 114290
+   - This single post appears to be a historical timeline/milestone post
+   - Contains specific dates for these events
+   - May be a key reference document for filling in gaps
+
+3. EVENTS 190, 191 USE ROMAN NUMERAL FORMAT
+   - Found in post 118624 using format "DODGEBALL CXC" and "DODGEBALL CXCI"
+   - Suggests these events exist, just in uncommon reference format
+
+4. 19 EVENTS HAVE NO MENTIONS IN RAW POSTS
+   - Events 111, 112, 152, 175-189, 193-198
+   - These may be:
+     a) Non-existent/skipped event numbers
+     b) Future events not yet posted about
+     c) Events documented in comments or other content sources
+
+5. EVENTS 202-203 REFERENCED
+   - Suggests the event series may extend beyond #200
+   - References appear to be incidental rather than primary event announcements
+
+================================================================================
+RECOMMENDED NEXT STEPS
+================================================================================
+
+1. Examine post ID 114290 ("One Day To Stop This WORLD") in detail
+   - Contains concentrated references to missing events
+   - May have links or information to reconstruct those event posts
+
+2. Search raw HTML files if available
+   - Current search only examined JSON title/body_text fields
+   - Comments section may contain additional event references
+
+3. Check database for these event numbers directly
+   - These mentions suggest the events exist in some form
+   - May need to query event database rather than post database
+
+4. Investigate Roman numeral references more thoroughly
+   - Events 190-199 may consistently use Roman numeral format
+   - May need additional patterns for CXC-CCC range
+
+5. Review posts 114290, 100332, 100771 as primary reference documents
+   - These appear to be comprehensive historical/encyclopedia posts
+   - May contain the most complete event chronology
+
+================================================================================

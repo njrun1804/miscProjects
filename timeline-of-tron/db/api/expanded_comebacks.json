@@ -6,12 +6,12 @@
     "crisis_event": "Life-altering car accident resulting in panic attacks and anxiety",
     "crisis_sentiment": -0.875,
     "recovery_year": 2007,
-    "recovery_event": "DODGEBALL 100 — record 52 participants (Aug 18)",
+    "recovery_event": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
     "recovery_sentiment": 0.2,
     "gap_months": 36,
     "intensity_shift": 1.075,
     "source_table": "milestones",
-    "narrative": "After Life-altering car accident resulting in , DODGEBALL 100 — record 52 participants ( marked a turnaround"
+    "narrative": "After Life-altering car accident resulting in panic attacks and anxiety, DODGEBALL 100 \u2014 record 52 participants (Aug 18) marked a turnaround"
   },
   {
     "id": 2,
@@ -25,7 +25,7 @@
     "gap_months": 36,
     "intensity_shift": 1.1482,
     "source_table": "milestones",
-    "narrative": "After Life-altering car accident resulting in , Dad's surprise 50th birthday (Jul 29) marked a turnaround"
+    "narrative": "After Life-altering car accident resulting in panic attacks and anxiety, Dad's surprise 50th birthday (Jul 29) marked a turnaround"
   },
   {
     "id": 3,
@@ -39,13 +39,13 @@
     "gap_months": 36,
     "intensity_shift": 1.3154,
     "source_table": "milestones",
-    "narrative": "After Life-altering car accident resulting in , MU Co-Ed Dodgeball League championship ( marked a turnaround"
+    "narrative": "After Life-altering car accident resulting in panic attacks and anxiety, MU Co-Ed Dodgeball League championship (Nov 19, PondScum) marked a turnaround"
   },
   {
     "id": 206,
     "comeback_type": "medical",
     "crisis_year": 2004,
-    "crisis_event": "Life-altering car accident — panic attacks and anxiety",
+    "crisis_event": "Life-altering car accident \u2014 panic attacks and anxiety",
     "crisis_sentiment": -0.6,
     "recovery_year": 2004,
     "recovery_event": "Years-long recovery; became HERO of the Year advocate",
@@ -53,7 +53,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: Life-altering car accident — panic attac → Years-long recovery; became HERO of the "
+    "narrative": "Medical: Life-altering car accident \u2014 panic attacks and anxiety \u2192 Years-long recovery; became HERO of the Year advocate"
   },
   {
     "id": 4,
@@ -62,12 +62,12 @@
     "crisis_event": "Difficult period after WrestleMania attendance",
     "crisis_sentiment": -0.3612,
     "recovery_year": 2007,
-    "recovery_event": "DODGEBALL 100 — record 52 participants (Aug 18)",
+    "recovery_event": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
     "recovery_sentiment": 0.2,
     "gap_months": 24,
     "intensity_shift": 0.5612,
     "source_table": "milestones",
-    "narrative": "After Difficult period after WrestleMania atte, DODGEBALL 100 — record 52 participants ( marked a turnaround"
+    "narrative": "After Difficult period after WrestleMania attendance, DODGEBALL 100 \u2014 record 52 participants (Aug 18) marked a turnaround"
   },
   {
     "id": 5,
@@ -81,7 +81,7 @@
     "gap_months": 24,
     "intensity_shift": 0.6344000000000001,
     "source_table": "milestones",
-    "narrative": "After Difficult period after WrestleMania atte, Dad's surprise 50th birthday (Jul 29) marked a turnaround"
+    "narrative": "After Difficult period after WrestleMania attendance, Dad's surprise 50th birthday (Jul 29) marked a turnaround"
   },
   {
     "id": 6,
@@ -95,7 +95,7 @@
     "gap_months": 24,
     "intensity_shift": 0.8016000000000001,
     "source_table": "milestones",
-    "narrative": "After Difficult period after WrestleMania atte, MU Co-Ed Dodgeball League championship ( marked a turnaround"
+    "narrative": "After Difficult period after WrestleMania attendance, MU Co-Ed Dodgeball League championship (Nov 19, PondScum) marked a turnaround"
   },
   {
     "id": 7,
@@ -109,7 +109,7 @@
     "gap_months": 36,
     "intensity_shift": 0.8016000000000001,
     "source_table": "milestones",
-    "narrative": "After Difficult period after WrestleMania atte, First semester of Health Studies complet marked a turnaround"
+    "narrative": "After Difficult period after WrestleMania attendance, First semester of Health Studies completed at MU (May 8) marked a turnaround"
   },
   {
     "id": 8,
@@ -123,7 +123,7 @@
     "gap_months": 36,
     "intensity_shift": 0.743,
     "source_table": "milestones",
-    "narrative": "After Difficult period after WrestleMania atte, Diana DiBuccio: Comedian of the Year marked a turnaround"
+    "narrative": "After Difficult period after WrestleMania attendance, Diana DiBuccio: Comedian of the Year marked a turnaround"
   },
   {
     "id": 9,
@@ -137,7 +137,7 @@
     "gap_months": 36,
     "intensity_shift": 0.7012,
     "source_table": "milestones",
-    "narrative": "After Difficult period after WrestleMania atte, First beer shared with The Pops (Aug 21) marked a turnaround"
+    "narrative": "After Difficult period after WrestleMania attendance, First beer shared with The Pops (Aug 21) marked a turnaround"
   },
   {
     "id": 10,
@@ -151,7 +151,7 @@
     "gap_months": 36,
     "intensity_shift": 0.6326,
     "source_table": "milestones",
-    "narrative": "After Difficult period after WrestleMania atte, Yeah I Said It post: raw honest reflecti marked a turnaround"
+    "narrative": "After Difficult period after WrestleMania attendance, Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 nea marked a turnaround"
   },
   {
     "id": 193,
@@ -165,7 +165,7 @@
     "gap_months": 12,
     "intensity_shift": 0.0,
     "source_table": "temporal_network",
-    "narrative": "After losing 1 connections, 1 new relationships formed"
+    "narrative": "After Lost 1 relationships, Gained 1 connections marked a turnaround"
   },
   {
     "id": 207,
@@ -179,7 +179,7 @@
     "gap_months": 24,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: Near-anorexia and mental health crisis → Joined Jersey Shore Fitness with James B"
+    "narrative": "Medical: Near-anorexia and mental health crisis \u2192 Joined Jersey Shore Fitness with James Butler; family reconciliation"
   },
   {
     "id": 127,
@@ -193,7 +193,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Near-anorexia and mental health crisis;  enabled Detroit, Michigan"
+    "narrative": "After Near-anorexia and mental health crisis; chopped long hair; joined gym, Detroit, Michigan marked a turnaround"
   },
   {
     "id": 128,
@@ -207,7 +207,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Near-anorexia and mental health crisis;  enabled NYC (MSG)"
+    "narrative": "After Near-anorexia and mental health crisis; chopped long hair; joined gym, NYC (MSG) marked a turnaround"
   },
   {
     "id": 129,
@@ -221,7 +221,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Near-anorexia and mental health crisis;  enabled Orlando, Florida"
+    "narrative": "After Near-anorexia and mental health crisis; chopped long hair; joined gym, Orlando, Florida marked a turnaround"
   },
   {
     "id": 130,
@@ -235,7 +235,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Near-anorexia and mental health crisis;  enabled Atlantic City (multiple)"
+    "narrative": "After Near-anorexia and mental health crisis; chopped long hair; joined gym, Atlantic City (multiple) marked a turnaround"
   },
   {
     "id": 194,
@@ -249,7 +249,7 @@
     "gap_months": 12,
     "intensity_shift": 0.0,
     "source_table": "temporal_network",
-    "narrative": "After losing 2 connections, 2 new relationships formed"
+    "narrative": "After Lost 2 relationships, Gained 2 connections marked a turnaround"
   },
   {
     "id": 11,
@@ -258,12 +258,12 @@
     "crisis_event": "Car accident on West Park Avenue (Nov 4)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2009,
-    "recovery_event": "SkyDive I at 10,000 feet (Aug 16) — 'maybe the happiest 24-span of my life'",
+    "recovery_event": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
     "recovery_sentiment": 0.6369,
     "gap_months": 12,
     "intensity_shift": 1.1136,
     "source_table": "milestones",
-    "narrative": "After Car accident on West Park Avenue (Nov 4), SkyDive I at 10,000 feet (Aug 16) — 'may marked a turnaround"
+    "narrative": "After Car accident on West Park Avenue (Nov 4), SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life' marked a turnaround"
   },
   {
     "id": 12,
@@ -277,7 +277,7 @@
     "gap_months": 12,
     "intensity_shift": 0.9706,
     "source_table": "milestones",
-    "narrative": "After Car accident on West Park Avenue (Nov 4), U.S. Open Tennis Championships attended  marked a turnaround"
+    "narrative": "After Car accident on West Park Avenue (Nov 4), U.S. Open Tennis Championships attended (Sep 7) marked a turnaround"
   },
   {
     "id": 13,
@@ -305,7 +305,7 @@
     "gap_months": 24,
     "intensity_shift": 0.6767000000000001,
     "source_table": "milestones",
-    "narrative": "After Car accident on West Park Avenue (Nov 4), Graduated Monmouth University (3.66 majo marked a turnaround"
+    "narrative": "After Car accident on West Park Avenue (Nov 4), Graduated Monmouth University (3.66 major GPA, 3.49 cumulative) marked a turnaround"
   },
   {
     "id": 15,
@@ -333,7 +333,7 @@
     "gap_months": 24,
     "intensity_shift": 1.129,
     "source_table": "milestones",
-    "narrative": "After Car accident on West Park Avenue (Nov 4), HERO Campaign 10th Anniversary at Trump  marked a turnaround"
+    "narrative": "After Car accident on West Park Avenue (Nov 4), HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22) marked a turnaround"
   },
   {
     "id": 17,
@@ -347,7 +347,7 @@
     "gap_months": 24,
     "intensity_shift": 0.6767000000000001,
     "source_table": "milestones",
-    "narrative": "After Car accident on West Park Avenue (Nov 4), Brother Michael graduated from Kean Univ marked a turnaround"
+    "narrative": "After Car accident on West Park Avenue (Nov 4), Brother Michael graduated from Kean University (May 13) marked a turnaround"
   },
   {
     "id": 18,
@@ -356,12 +356,12 @@
     "crisis_event": "Car accident on West Park Avenue (Nov 4)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2011,
-    "recovery_event": "Survivor Series at MSG — The Rock returns (Nov 20)",
+    "recovery_event": "Survivor Series at MSG \u2014 The Rock returns (Nov 20)",
     "recovery_sentiment": 0.3612,
     "gap_months": 36,
     "intensity_shift": 0.8379000000000001,
     "source_table": "milestones",
-    "narrative": "After Car accident on West Park Avenue (Nov 4), Survivor Series at MSG — The Rock return marked a turnaround"
+    "narrative": "After Car accident on West Park Avenue (Nov 4), Survivor Series at MSG \u2014 The Rock returns (Nov 20) marked a turnaround"
   },
   {
     "id": 19,
@@ -378,34 +378,6 @@
     "narrative": "After Car accident on West Park Avenue (Nov 4), ECDElite Hall of Fame induction (Jun 18) marked a turnaround"
   },
   {
-    "id": 131,
-    "comeback_type": "health_travel",
-    "crisis_year": 2008,
-    "crisis_event": "Double wart removal surgery (Jan 22)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2007,
-    "recovery_event": "Detroit, Michigan",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Double wart removal surgery (Jan 22) enabled Detroit, Michigan"
-  },
-  {
-    "id": 132,
-    "comeback_type": "health_travel",
-    "crisis_year": 2008,
-    "crisis_event": "Double wart removal surgery (Jan 22)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2007,
-    "recovery_event": "NYC (MSG)",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Double wart removal surgery (Jan 22) enabled NYC (MSG)"
-  },
-  {
     "id": 133,
     "comeback_type": "health_travel",
     "crisis_year": 2008,
@@ -417,7 +389,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Double wart removal surgery (Jan 22) enabled Orlando, Florida"
+    "narrative": "After Double wart removal surgery (Jan 22), Orlando, Florida marked a turnaround"
   },
   {
     "id": 134,
@@ -431,7 +403,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Double wart removal surgery (Jan 22) enabled Atlantic City (multiple)"
+    "narrative": "After Double wart removal surgery (Jan 22), Atlantic City (multiple) marked a turnaround"
   },
   {
     "id": 135,
@@ -445,7 +417,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Double wart removal surgery (Jan 22) enabled Houston, Texas"
+    "narrative": "After Double wart removal surgery (Jan 22), Houston, Texas marked a turnaround"
   },
   {
     "id": 136,
@@ -459,7 +431,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Double wart removal surgery (Jan 22) enabled Atlantic City"
+    "narrative": "After Double wart removal surgery (Jan 22), Atlantic City marked a turnaround"
   },
   {
     "id": 137,
@@ -473,41 +445,13 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Double wart removal surgery (Jan 22) enabled Kutztown, Pennsylvania"
-  },
-  {
-    "id": 138,
-    "comeback_type": "health_travel",
-    "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2007,
-    "recovery_event": "Detroit, Michigan",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Car accident — rear-ended on West Park A enabled Detroit, Michigan"
-  },
-  {
-    "id": 139,
-    "comeback_type": "health_travel",
-    "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2007,
-    "recovery_event": "NYC (MSG)",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Car accident — rear-ended on West Park A enabled NYC (MSG)"
+    "narrative": "After Double wart removal surgery (Jan 22), Kutztown, Pennsylvania marked a turnaround"
   },
   {
     "id": 140,
     "comeback_type": "health_travel",
     "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
+    "crisis_event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2008,
     "recovery_event": "Orlando, Florida",
@@ -515,13 +459,13 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Car accident — rear-ended on West Park A enabled Orlando, Florida"
+    "narrative": "After Car accident \u2014 rear-ended on West Park Avenue (Nov 4), Orlando, Florida marked a turnaround"
   },
   {
     "id": 141,
     "comeback_type": "health_travel",
     "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
+    "crisis_event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2008,
     "recovery_event": "Atlantic City (multiple)",
@@ -529,13 +473,13 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Car accident — rear-ended on West Park A enabled Atlantic City (multiple)"
+    "narrative": "After Car accident \u2014 rear-ended on West Park Avenue (Nov 4), Atlantic City (multiple) marked a turnaround"
   },
   {
     "id": 142,
     "comeback_type": "health_travel",
     "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
+    "crisis_event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2009,
     "recovery_event": "Houston, Texas",
@@ -543,13 +487,13 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Car accident — rear-ended on West Park A enabled Houston, Texas"
+    "narrative": "After Car accident \u2014 rear-ended on West Park Avenue (Nov 4), Houston, Texas marked a turnaround"
   },
   {
     "id": 143,
     "comeback_type": "health_travel",
     "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
+    "crisis_event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2009,
     "recovery_event": "Atlantic City",
@@ -557,13 +501,13 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Car accident — rear-ended on West Park A enabled Atlantic City"
+    "narrative": "After Car accident \u2014 rear-ended on West Park Avenue (Nov 4), Atlantic City marked a turnaround"
   },
   {
     "id": 144,
     "comeback_type": "health_travel",
     "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
+    "crisis_event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2009,
     "recovery_event": "Kutztown, Pennsylvania",
@@ -571,7 +515,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Car accident — rear-ended on West Park A enabled Kutztown, Pennsylvania"
+    "narrative": "After Car accident \u2014 rear-ended on West Park Avenue (Nov 4), Kutztown, Pennsylvania marked a turnaround"
   },
   {
     "id": 195,
@@ -585,13 +529,13 @@
     "gap_months": 12,
     "intensity_shift": -0.5,
     "source_table": "temporal_network",
-    "narrative": "After losing 4 connections, 2 new relationships formed"
+    "narrative": "After Lost 4 relationships, Gained 2 connections marked a turnaround"
   },
   {
     "id": 204,
     "comeback_type": "turning_point",
     "crisis_year": 2008,
-    "crisis_event": "Coming out — 'The power of an internal desire liberated!'",
+    "crisis_event": "Coming out \u2014 'The power of an internal desire liberated!'",
     "crisis_sentiment": -0.3597738888888889,
     "recovery_year": 2009,
     "recovery_event": "Recovery period",
@@ -599,7 +543,7 @@
     "gap_months": 12,
     "intensity_shift": 0.4738423099415205,
     "source_table": "turning_point_analysis",
-    "narrative": "Turning point: Coming out — 'The power of an internal desire libe... led to recovery"
+    "narrative": "After Coming out \u2014 'The power of an internal desire liberated!', Recovery period marked a turnaround"
   },
   {
     "id": 205,
@@ -613,13 +557,13 @@
     "gap_months": 12,
     "intensity_shift": 0.4738423099415205,
     "source_table": "turning_point_analysis",
-    "narrative": "Turning point: Relationship ends (Jun 10), liberation follows... led to recovery"
+    "narrative": "After Relationship ends (Jun 10), liberation follows, Recovery period marked a turnaround"
   },
   {
     "id": 208,
     "comeback_type": "medical",
     "crisis_year": 2008,
-    "crisis_event": "Car accident — rear-ended on West Park Avenue",
+    "crisis_event": "Car accident \u2014 rear-ended on West Park Avenue",
     "crisis_sentiment": -0.6,
     "recovery_year": 2008,
     "recovery_event": "Came out in 2008; began 'most rewarding and refreshing' months",
@@ -627,7 +571,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: Car accident — rear-ended on West Park A → Came out in 2008; began 'most rewarding "
+    "narrative": "Medical: Car accident \u2014 rear-ended on West Park Avenue \u2192 Came out in 2008; began 'most rewarding and refreshing' months"
   },
   {
     "id": 20,
@@ -641,7 +585,7 @@
     "gap_months": 12,
     "intensity_shift": 0.5612,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, Graduated Monmouth University (3.66 majo marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, Graduated Monmouth University (3.66 major GPA, 3.49 cumulative) marked a turnaround"
   },
   {
     "id": 21,
@@ -655,7 +599,7 @@
     "gap_months": 12,
     "intensity_shift": 1.2027,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, Won inaugural HERO of the Year (Jan 27) marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, Won inaugural HERO of the Year (Jan 27) marked a turnaround"
   },
   {
     "id": 22,
@@ -669,7 +613,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0135,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, HERO Campaign 10th Anniversary at Trump  marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22) marked a turnaround"
   },
   {
     "id": 23,
@@ -683,7 +627,7 @@
     "gap_months": 12,
     "intensity_shift": 0.5612,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, Brother Michael graduated from Kean Univ marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, Brother Michael graduated from Kean University (May 13) marked a turnaround"
   },
   {
     "id": 24,
@@ -692,12 +636,12 @@
     "crisis_event": "28 beers consumed all year; 101 dates posted; 0 regrets",
     "crisis_sentiment": -0.3612,
     "recovery_year": 2011,
-    "recovery_event": "Survivor Series at MSG — The Rock returns (Nov 20)",
+    "recovery_event": "Survivor Series at MSG \u2014 The Rock returns (Nov 20)",
     "recovery_sentiment": 0.3612,
     "gap_months": 24,
     "intensity_shift": 0.7224,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, Survivor Series at MSG — The Rock return marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, Survivor Series at MSG \u2014 The Rock returns (Nov 20) marked a turnaround"
   },
   {
     "id": 25,
@@ -711,7 +655,7 @@
     "gap_months": 24,
     "intensity_shift": 0.8016000000000001,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, ECDElite Hall of Fame induction (Jun 18) marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, ECDElite Hall of Fame induction (Jun 18) marked a turnaround"
   },
   {
     "id": 26,
@@ -725,7 +669,7 @@
     "gap_months": 36,
     "intensity_shift": 0.5612,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, Record 18 rounds at Orchard Park (Oct 13 marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, Record 18 rounds at Orchard Park (Oct 13) marked a turnaround"
   },
   {
     "id": 27,
@@ -739,7 +683,7 @@
     "gap_months": 36,
     "intensity_shift": 0.46390000000000003,
     "source_table": "milestones",
-    "narrative": "After 28 beers consumed all year; 101 dates po, SUS15H reached 190,000 miles (Nov) marked a turnaround"
+    "narrative": "After 28 beers consumed all year; 101 dates posted; 0 regrets, SUS15H reached 190,000 miles (Nov) marked a turnaround"
   },
   {
     "id": 196,
@@ -753,7 +697,7 @@
     "gap_months": 12,
     "intensity_shift": -0.5,
     "source_table": "temporal_network",
-    "narrative": "After losing 2 connections, 1 new relationships formed"
+    "narrative": "After Lost 2 relationships, Gained 1 connections marked a turnaround"
   },
   {
     "id": 197,
@@ -767,7 +711,7 @@
     "gap_months": 12,
     "intensity_shift": -0.25,
     "source_table": "temporal_network",
-    "narrative": "After losing 4 connections, 3 new relationships formed"
+    "narrative": "After Lost 4 relationships, Gained 3 connections marked a turnaround"
   },
   {
     "id": 28,
@@ -781,7 +725,7 @@
     "gap_months": 12,
     "intensity_shift": 0.7574000000000001,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, Record 18 rounds at Orchard Park (Oct 13 marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), Record 18 rounds at Orchard Park (Oct 13) marked a turnaround"
   },
   {
     "id": 29,
@@ -795,7 +739,7 @@
     "gap_months": 12,
     "intensity_shift": 0.6601,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, SUS15H reached 190,000 miles (Nov) marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), SUS15H reached 190,000 miles (Nov) marked a turnaround"
   },
   {
     "id": 30,
@@ -809,7 +753,7 @@
     "gap_months": 12,
     "intensity_shift": 0.45,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, Record 18 rounds at Orchard Park (Oct 13 marked a turnaround"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), Record 18 rounds at Orchard Park (Oct 13) marked a turnaround"
   },
   {
     "id": 31,
@@ -823,7 +767,7 @@
     "gap_months": 12,
     "intensity_shift": 0.3527,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, SUS15H reached 190,000 miles (Nov) marked a turnaround"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), SUS15H reached 190,000 miles (Nov) marked a turnaround"
   },
   {
     "id": 32,
@@ -837,7 +781,7 @@
     "gap_months": 24,
     "intensity_shift": 0.7574000000000001,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, WrestleMania 29 at-home NJ (8th WM); 21- marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), WrestleMania 29 at-home NJ (8th WM); 21-0 record marked a turnaround"
   },
   {
     "id": 33,
@@ -851,7 +795,7 @@
     "gap_months": 24,
     "intensity_shift": 0.9978,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, 'Table 7' Era begins (Jun 8) marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), 'Table 7' Era begins (Jun 8) marked a turnaround"
   },
   {
     "id": 34,
@@ -865,7 +809,7 @@
     "gap_months": 24,
     "intensity_shift": 0.45,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, WrestleMania 29 at-home NJ (8th WM); 21- marked a turnaround"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), WrestleMania 29 at-home NJ (8th WM); 21-0 record marked a turnaround"
   },
   {
     "id": 35,
@@ -879,7 +823,7 @@
     "gap_months": 24,
     "intensity_shift": 0.6904,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, 'Table 7' Era begins (Jun 8) marked a turnaround"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), 'Table 7' Era begins (Jun 8) marked a turnaround"
   },
   {
     "id": 36,
@@ -888,12 +832,12 @@
     "crisis_event": "First meal with Rob at Ocean Bay Diner (Jan 1)",
     "crisis_sentiment": -0.5574,
     "recovery_year": 2014,
-    "recovery_event": "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+    "recovery_event": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
     "recovery_sentiment": 0.4588,
     "gap_months": 36,
     "intensity_shift": 1.0162,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, Norwegian Epic cruise II — Jamaica, Gran marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15) marked a turnaround"
   },
   {
     "id": 37,
@@ -907,7 +851,7 @@
     "gap_months": 36,
     "intensity_shift": 1.3224,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, Cornhole Championship won with Pops at M marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), Cornhole Championship won with Pops at Maggie & Mike's (Aug 30) marked a turnaround"
   },
   {
     "id": 38,
@@ -921,7 +865,7 @@
     "gap_months": 36,
     "intensity_shift": 1.3272,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, Johnny Nash: most influential friend of  marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), Johnny Nash: most influential friend of 2014 marked a turnaround"
   },
   {
     "id": 39,
@@ -935,7 +879,7 @@
     "gap_months": 36,
     "intensity_shift": 1.0997,
     "source_table": "milestones",
-    "narrative": "After First meal with Rob at Ocean Bay Diner (, The Pops: Comedian of the Year (2nd stra marked a turnaround"
+    "narrative": "After First meal with Rob at Ocean Bay Diner (Jan 1), The Pops: Comedian of the Year (2nd straight year) marked a turnaround"
   },
   {
     "id": 40,
@@ -944,12 +888,12 @@
     "crisis_event": "Torn glenoid labrum confirmed via MRI (Aug 2)",
     "crisis_sentiment": -0.25,
     "recovery_year": 2014,
-    "recovery_event": "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+    "recovery_event": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
     "recovery_sentiment": 0.4588,
     "gap_months": 36,
     "intensity_shift": 0.7088,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, Norwegian Epic cruise II — Jamaica, Gran marked a turnaround"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15) marked a turnaround"
   },
   {
     "id": 41,
@@ -963,7 +907,7 @@
     "gap_months": 36,
     "intensity_shift": 1.0150000000000001,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, Cornhole Championship won with Pops at M marked a turnaround"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), Cornhole Championship won with Pops at Maggie & Mike's (Aug 30) marked a turnaround"
   },
   {
     "id": 42,
@@ -977,7 +921,7 @@
     "gap_months": 36,
     "intensity_shift": 1.0198,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, Johnny Nash: most influential friend of  marked a turnaround"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), Johnny Nash: most influential friend of 2014 marked a turnaround"
   },
   {
     "id": 43,
@@ -991,35 +935,7 @@
     "gap_months": 36,
     "intensity_shift": 0.7923,
     "source_table": "milestones",
-    "narrative": "After Torn glenoid labrum confirmed via MRI (A, The Pops: Comedian of the Year (2nd stra marked a turnaround"
-  },
-  {
-    "id": 145,
-    "comeback_type": "health_travel",
-    "crisis_year": 2011,
-    "crisis_event": "Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2010,
-    "recovery_event": "Arizona",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Slightly torn glenoid labrum (right shou enabled Arizona"
-  },
-  {
-    "id": 146,
-    "comeback_type": "health_travel",
-    "crisis_year": 2011,
-    "crisis_event": "Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2010,
-    "recovery_event": "Atlantic City",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Slightly torn glenoid labrum (right shou enabled Atlantic City"
+    "narrative": "After Torn glenoid labrum confirmed via MRI (Aug 2), The Pops: Comedian of the Year (2nd straight year) marked a turnaround"
   },
   {
     "id": 147,
@@ -1033,7 +949,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Slightly torn glenoid labrum (right shou enabled Stratton, Vermont"
+    "narrative": "After Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2), Stratton, Vermont marked a turnaround"
   },
   {
     "id": 148,
@@ -1047,7 +963,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Slightly torn glenoid labrum (right shou enabled Atlantic City"
+    "narrative": "After Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2), Atlantic City marked a turnaround"
   },
   {
     "id": 149,
@@ -1061,7 +977,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Slightly torn glenoid labrum (right shou enabled Washington D.C."
+    "narrative": "After Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2), Washington D.C. marked a turnaround"
   },
   {
     "id": 150,
@@ -1075,7 +991,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Slightly torn glenoid labrum (right shou enabled Shohola, Pennsylvania"
+    "narrative": "After Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2), Shohola, Pennsylvania marked a turnaround"
   },
   {
     "id": 151,
@@ -1089,7 +1005,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Slightly torn glenoid labrum (right shou enabled Stratton, Vermont"
+    "narrative": "After Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2), Stratton, Vermont marked a turnaround"
   },
   {
     "id": 209,
@@ -1103,7 +1019,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: Torn glenoid labrum confirmed via MRI → Continued sports participation"
+    "narrative": "Medical: Torn glenoid labrum confirmed via MRI \u2192 Continued sports participation"
   },
   {
     "id": 198,
@@ -1117,7 +1033,7 @@
     "gap_months": 12,
     "intensity_shift": 0.0,
     "source_table": "temporal_network",
-    "narrative": "After losing 3 connections, 3 new relationships formed"
+    "narrative": "After Lost 3 relationships, Gained 3 connections marked a turnaround"
   },
   {
     "id": 44,
@@ -1126,12 +1042,12 @@
     "crisis_event": "'2010 and 2013 will no doubt stand the test of time'",
     "crisis_sentiment": -0.5719,
     "recovery_year": 2014,
-    "recovery_event": "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+    "recovery_event": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
     "recovery_sentiment": 0.4588,
     "gap_months": 12,
     "intensity_shift": 1.0307,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, Norwegian Epic cruise II — Jamaica, Gran marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15) marked a turnaround"
   },
   {
     "id": 45,
@@ -1145,7 +1061,7 @@
     "gap_months": 12,
     "intensity_shift": 1.3369,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, Cornhole Championship won with Pops at M marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', Cornhole Championship won with Pops at Maggie & Mike's (Aug 30) marked a turnaround"
   },
   {
     "id": 46,
@@ -1159,7 +1075,7 @@
     "gap_months": 12,
     "intensity_shift": 1.3417,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, Johnny Nash: most influential friend of  marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', Johnny Nash: most influential friend of 2014 marked a turnaround"
   },
   {
     "id": 47,
@@ -1173,7 +1089,7 @@
     "gap_months": 12,
     "intensity_shift": 1.1141999999999999,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, The Pops: Comedian of the Year (2nd stra marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', The Pops: Comedian of the Year (2nd straight year) marked a turnaround"
   },
   {
     "id": 48,
@@ -1187,7 +1103,7 @@
     "gap_months": 24,
     "intensity_shift": 1.1578,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, Janet Jackson first Artist of the Year w marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', Janet Jackson first Artist of the Year win marked a turnaround"
   },
   {
     "id": 49,
@@ -1201,7 +1117,7 @@
     "gap_months": 24,
     "intensity_shift": 0.9537,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, Dan Spengeman: Comedian of the Year marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', Dan Spengeman: Comedian of the Year marked a turnaround"
   },
   {
     "id": 50,
@@ -1210,12 +1126,12 @@
     "crisis_event": "'2010 and 2013 will no doubt stand the test of time'",
     "crisis_sentiment": -0.5719,
     "recovery_year": 2016,
-    "recovery_event": "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
+    "recovery_event": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
     "recovery_sentiment": 0.6369,
     "gap_months": 36,
     "intensity_shift": 1.2088,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, WrestleMania 32 (100,000+) — 'greatest W marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time' marked a turnaround"
   },
   {
     "id": 51,
@@ -1229,7 +1145,7 @@
     "gap_months": 36,
     "intensity_shift": 1.1141999999999999,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, Manager of the Year award marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', Manager of the Year award marked a turnaround"
   },
   {
     "id": 52,
@@ -1243,7 +1159,7 @@
     "gap_months": 36,
     "intensity_shift": 0.9537,
     "source_table": "milestones",
-    "narrative": "After '2010 and 2013 will no doubt stand the t, Lauren Winston: Comedian of the Year marked a turnaround"
+    "narrative": "After '2010 and 2013 will no doubt stand the test of time', Lauren Winston: Comedian of the Year marked a turnaround"
   },
   {
     "id": 53,
@@ -1257,7 +1173,7 @@
     "gap_months": 12,
     "intensity_shift": 1.2227999999999999,
     "source_table": "milestones",
-    "narrative": "After Gray Kia Soul purchased (Jan 11-13), Janet Jackson first Artist of the Year w marked a turnaround"
+    "narrative": "After Gray Kia Soul purchased (Jan 11-13), Janet Jackson first Artist of the Year win marked a turnaround"
   },
   {
     "id": 54,
@@ -1280,12 +1196,12 @@
     "crisis_event": "Gray Kia Soul purchased (Jan 11-13)",
     "crisis_sentiment": -0.6369,
     "recovery_year": 2016,
-    "recovery_event": "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
+    "recovery_event": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
     "recovery_sentiment": 0.6369,
     "gap_months": 24,
     "intensity_shift": 1.2738,
     "source_table": "milestones",
-    "narrative": "After Gray Kia Soul purchased (Jan 11-13), WrestleMania 32 (100,000+) — 'greatest W marked a turnaround"
+    "narrative": "After Gray Kia Soul purchased (Jan 11-13), WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time' marked a turnaround"
   },
   {
     "id": 56,
@@ -1355,7 +1271,7 @@
     "gap_months": 36,
     "intensity_shift": 1.1636,
     "source_table": "milestones",
-    "narrative": "After Gray Kia Soul purchased (Jan 11-13), Silver League Champions volleyball (Aug  marked a turnaround"
+    "narrative": "After Gray Kia Soul purchased (Jan 11-13), Silver League Champions volleyball (Aug 30) marked a turnaround"
   },
   {
     "id": 61,
@@ -1378,12 +1294,12 @@
     "crisis_event": "Kia Soul hits 20,000 miles (Dec 15)",
     "crisis_sentiment": -0.6369,
     "recovery_year": 2016,
-    "recovery_event": "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
+    "recovery_event": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
     "recovery_sentiment": 0.6369,
     "gap_months": 12,
     "intensity_shift": 1.2738,
     "source_table": "milestones",
-    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), WrestleMania 32 (100,000+) — 'greatest W marked a turnaround"
+    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time' marked a turnaround"
   },
   {
     "id": 63,
@@ -1453,7 +1369,7 @@
     "gap_months": 24,
     "intensity_shift": 1.1636,
     "source_table": "milestones",
-    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Silver League Champions volleyball (Aug  marked a turnaround"
+    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Silver League Champions volleyball (Aug 30) marked a turnaround"
   },
   {
     "id": 68,
@@ -1495,7 +1411,7 @@
     "gap_months": 36,
     "intensity_shift": 1.3719999999999999,
     "source_table": "milestones",
-    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Best tennis comeback: won from 0-6 defic marked a turnaround"
+    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Best tennis comeback: won from 0-6 deficit (Dec 23) marked a turnaround"
   },
   {
     "id": 71,
@@ -1504,12 +1420,12 @@
     "crisis_event": "Kia Soul hits 20,000 miles (Dec 15)",
     "crisis_sentiment": -0.6369,
     "recovery_year": 2018,
-    "recovery_event": "Sisters turned 16 — Six Flags Great Adventure (Aug 27)",
+    "recovery_event": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
     "recovery_sentiment": 0.7506,
     "gap_months": 36,
     "intensity_shift": 1.3875000000000002,
     "source_table": "milestones",
-    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Sisters turned 16 — Six Flags Great Adve marked a turnaround"
+    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27) marked a turnaround"
   },
   {
     "id": 72,
@@ -1523,7 +1439,7 @@
     "gap_months": 36,
     "intensity_shift": 1.2088,
     "source_table": "milestones",
-    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Won Weezer tickets as 94.3 radio 9th cal marked a turnaround"
+    "narrative": "After Kia Soul hits 20,000 miles (Dec 15), Won Weezer tickets as 94.3 radio 9th caller (Nov 26) marked a turnaround"
   },
   {
     "id": 199,
@@ -1537,13 +1453,13 @@
     "gap_months": 12,
     "intensity_shift": 2.5,
     "source_table": "temporal_network",
-    "narrative": "After losing 2 connections, 7 new relationships formed"
+    "narrative": "After Lost 2 relationships, Gained 7 connections marked a turnaround"
   },
   {
     "id": 73,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2018,
     "recovery_event": "Engagement ring purchased in Croatia",
@@ -1551,13 +1467,13 @@
     "gap_months": 12,
     "intensity_shift": 0.6588,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, Engagement ring purchased in Croatia marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, Engagement ring purchased in Croatia marked a turnaround"
   },
   {
     "id": 74,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2018,
     "recovery_event": "Best tennis comeback: won from 0-6 deficit (Dec 23)",
@@ -1565,27 +1481,27 @@
     "gap_months": 12,
     "intensity_shift": 0.9351,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, Best tennis comeback: won from 0-6 defic marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, Best tennis comeback: won from 0-6 deficit (Dec 23) marked a turnaround"
   },
   {
     "id": 75,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2018,
-    "recovery_event": "Sisters turned 16 — Six Flags Great Adventure (Aug 27)",
+    "recovery_event": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
     "recovery_sentiment": 0.7506,
     "gap_months": 12,
     "intensity_shift": 0.9506000000000001,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, Sisters turned 16 — Six Flags Great Adve marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27) marked a turnaround"
   },
   {
     "id": 76,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2018,
     "recovery_event": "Won Weezer tickets as 94.3 radio 9th caller (Nov 26)",
@@ -1593,13 +1509,13 @@
     "gap_months": 12,
     "intensity_shift": 0.7719,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, Won Weezer tickets as 94.3 radio 9th cal marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, Won Weezer tickets as 94.3 radio 9th caller (Nov 26) marked a turnaround"
   },
   {
     "id": 77,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2018,
     "recovery_event": "Engagement ring purchased in Croatia",
@@ -1607,13 +1523,13 @@
     "gap_months": 12,
     "intensity_shift": 0.9355,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, Engagement ring purchased in Croatia marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), Engagement ring purchased in Croatia marked a turnaround"
   },
   {
     "id": 78,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2018,
     "recovery_event": "Best tennis comeback: won from 0-6 deficit (Dec 23)",
@@ -1621,27 +1537,27 @@
     "gap_months": 12,
     "intensity_shift": 1.2118,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, Best tennis comeback: won from 0-6 defic marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), Best tennis comeback: won from 0-6 deficit (Dec 23) marked a turnaround"
   },
   {
     "id": 79,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2018,
-    "recovery_event": "Sisters turned 16 — Six Flags Great Adventure (Aug 27)",
+    "recovery_event": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
     "recovery_sentiment": 0.7506,
     "gap_months": 12,
     "intensity_shift": 1.2273,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, Sisters turned 16 — Six Flags Great Adve marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27) marked a turnaround"
   },
   {
     "id": 80,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2018,
     "recovery_event": "Won Weezer tickets as 94.3 radio 9th caller (Nov 26)",
@@ -1649,27 +1565,27 @@
     "gap_months": 12,
     "intensity_shift": 1.0486,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, Won Weezer tickets as 94.3 radio 9th cal marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), Won Weezer tickets as 94.3 radio 9th caller (Nov 26) marked a turnaround"
   },
   {
     "id": 81,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2019,
-    "recovery_event": "Australia & New Zealand — 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
+    "recovery_event": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
     "recovery_sentiment": 0.8555,
     "gap_months": 24,
     "intensity_shift": 1.0555,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, Australia & New Zealand — 'the best, the marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31) marked a turnaround"
   },
   {
     "id": 82,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2019,
     "recovery_event": "7th Major ECD championship (Aug 17)",
@@ -1677,13 +1593,13 @@
     "gap_months": 24,
     "intensity_shift": 0.6404000000000001,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, 7th Major ECD championship (Aug 17) marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, 7th Major ECD championship (Aug 17) marked a turnaround"
   },
   {
     "id": 83,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2019,
     "recovery_event": "DC Pride Weekend (Jun 22-24)",
@@ -1691,13 +1607,13 @@
     "gap_months": 24,
     "intensity_shift": 0.54,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, DC Pride Weekend (Jun 22-24) marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, DC Pride Weekend (Jun 22-24) marked a turnaround"
   },
   {
     "id": 84,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2019,
     "recovery_event": "U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8)",
@@ -1705,13 +1621,13 @@
     "gap_months": 24,
     "intensity_shift": 0.6404000000000001,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, U.S. Open: Nadal vs Medvedev final, 3rd  marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8) marked a turnaround"
   },
   {
     "id": 85,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2019,
     "recovery_event": "'2020, challenge accepted' (Dec 31)",
@@ -1719,27 +1635,27 @@
     "gap_months": 24,
     "intensity_shift": 0.54,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, '2020, challenge accepted' (Dec 31) marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, '2020, challenge accepted' (Dec 31) marked a turnaround"
   },
   {
     "id": 86,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2019,
-    "recovery_event": "Australia & New Zealand — 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
+    "recovery_event": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
     "recovery_sentiment": 0.8555,
     "gap_months": 24,
     "intensity_shift": 1.3322,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, Australia & New Zealand — 'the best, the marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31) marked a turnaround"
   },
   {
     "id": 87,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2019,
     "recovery_event": "7th Major ECD championship (Aug 17)",
@@ -1747,13 +1663,13 @@
     "gap_months": 24,
     "intensity_shift": 0.9171,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, 7th Major ECD championship (Aug 17) marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), 7th Major ECD championship (Aug 17) marked a turnaround"
   },
   {
     "id": 88,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2019,
     "recovery_event": "DC Pride Weekend (Jun 22-24)",
@@ -1761,13 +1677,13 @@
     "gap_months": 24,
     "intensity_shift": 0.8167,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, DC Pride Weekend (Jun 22-24) marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), DC Pride Weekend (Jun 22-24) marked a turnaround"
   },
   {
     "id": 89,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2019,
     "recovery_event": "U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8)",
@@ -1775,13 +1691,13 @@
     "gap_months": 24,
     "intensity_shift": 0.9171,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, U.S. Open: Nadal vs Medvedev final, 3rd  marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8) marked a turnaround"
   },
   {
     "id": 90,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2019,
     "recovery_event": "'2020, challenge accepted' (Dec 31)",
@@ -1789,41 +1705,41 @@
     "gap_months": 24,
     "intensity_shift": 0.8167,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, '2020, challenge accepted' (Dec 31) marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), '2020, challenge accepted' (Dec 31) marked a turnaround"
   },
   {
     "id": 91,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2020,
-    "recovery_event": "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
+    "recovery_event": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
     "recovery_sentiment": 0.5267,
     "gap_months": 36,
     "intensity_shift": 0.7266999999999999,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, Medical quarantine (Mar 26 – Apr 16) + m marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback marked a turnaround"
   },
   {
     "id": 92,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2020,
-    "recovery_event": "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
+    "recovery_event": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
     "recovery_sentiment": 0.4215,
     "gap_months": 36,
     "intensity_shift": 0.6214999999999999,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, 4th skydive (Oct 3, mother witnessed) —  marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, 4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls' marked a turnaround"
   },
   {
     "id": 93,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
+    "crisis_event": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
     "crisis_sentiment": -0.2,
     "recovery_year": 2020,
     "recovery_event": "Grace & Megan graduate high school",
@@ -1831,41 +1747,41 @@
     "gap_months": 36,
     "intensity_shift": 0.6214999999999999,
     "source_table": "milestones",
-    "narrative": "After L5-S1 herniation → microdiscectomy surge, Grace & Megan graduate high school marked a turnaround"
+    "narrative": "After L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital, Grace & Megan graduate high school marked a turnaround"
   },
   {
     "id": 94,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2020,
-    "recovery_event": "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
+    "recovery_event": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
     "recovery_sentiment": 0.5267,
     "gap_months": 36,
     "intensity_shift": 1.0034,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, Medical quarantine (Mar 26 – Apr 16) + m marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback marked a turnaround"
   },
   {
     "id": 95,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2020,
-    "recovery_event": "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
+    "recovery_event": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
     "recovery_sentiment": 0.4215,
     "gap_months": 36,
     "intensity_shift": 0.8982,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, 4th skydive (Oct 3, mother witnessed) —  marked a turnaround"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), 4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls' marked a turnaround"
   },
   {
     "id": 96,
     "comeback_type": "career_setback",
     "crisis_year": 2017,
-    "crisis_event": "Broken left pinky — volleyball career paused (Mar 26)",
+    "crisis_event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
     "crisis_sentiment": -0.4767,
     "recovery_year": 2020,
     "recovery_event": "Grace & Megan graduate high school",
@@ -1873,21 +1789,7 @@
     "gap_months": 36,
     "intensity_shift": 0.8982,
     "source_table": "milestones",
-    "narrative": "After Broken left pinky — volleyball career pa, Grace & Megan graduate high school marked a turnaround"
-  },
-  {
-    "id": 152,
-    "comeback_type": "health_travel",
-    "crisis_year": 2017,
-    "crisis_event": "Left pinky dislocation + two-part fracture from volleyball (Mar 26)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2016,
-    "recovery_event": "St. Lucia, Dominica, Antigua",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Left pinky dislocation + two-part fractu enabled St. Lucia, Dominica, Antigua"
+    "narrative": "After Broken left pinky \u2014 volleyball career paused (Mar 26), Grace & Megan graduate high school marked a turnaround"
   },
   {
     "id": 153,
@@ -1901,7 +1803,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Left pinky dislocation + two-part fractu enabled Alaska & Seattle"
+    "narrative": "After Left pinky dislocation + two-part fracture from volleyball (Mar 26), Alaska & Seattle marked a turnaround"
   },
   {
     "id": 154,
@@ -1915,7 +1817,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Left pinky dislocation + two-part fractu enabled California (600+ miles)"
+    "narrative": "After Left pinky dislocation + two-part fracture from volleyball (Mar 26), California (600+ miles) marked a turnaround"
   },
   {
     "id": 155,
@@ -1929,7 +1831,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Left pinky dislocation + two-part fractu enabled Victoria, Canada"
+    "narrative": "After Left pinky dislocation + two-part fracture from volleyball (Mar 26), Victoria, Canada marked a turnaround"
   },
   {
     "id": 156,
@@ -1943,7 +1845,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Left pinky dislocation + two-part fractu enabled Slovenia, Italy, Greece, Malta, Croatia"
+    "narrative": "After Left pinky dislocation + two-part fracture from volleyball (Mar 26), Slovenia, Italy, Greece, Malta, Croatia marked a turnaround"
   },
   {
     "id": 157,
@@ -1957,21 +1859,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Left pinky dislocation + two-part fractu enabled New Hampshire"
-  },
-  {
-    "id": 158,
-    "comeback_type": "health_travel",
-    "crisis_year": 2017,
-    "crisis_event": "L5-S1 'fairly large' herniation diagnosed (Sep 28)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2016,
-    "recovery_event": "St. Lucia, Dominica, Antigua",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from L5-S1 'fairly large' herniation diagnose enabled St. Lucia, Dominica, Antigua"
+    "narrative": "After Left pinky dislocation + two-part fracture from volleyball (Mar 26), New Hampshire marked a turnaround"
   },
   {
     "id": 159,
@@ -1985,7 +1873,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from L5-S1 'fairly large' herniation diagnose enabled Alaska & Seattle"
+    "narrative": "After L5-S1 'fairly large' herniation diagnosed (Sep 28), Alaska & Seattle marked a turnaround"
   },
   {
     "id": 160,
@@ -1999,7 +1887,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from L5-S1 'fairly large' herniation diagnose enabled California (600+ miles)"
+    "narrative": "After L5-S1 'fairly large' herniation diagnosed (Sep 28), California (600+ miles) marked a turnaround"
   },
   {
     "id": 161,
@@ -2013,7 +1901,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from L5-S1 'fairly large' herniation diagnose enabled Victoria, Canada"
+    "narrative": "After L5-S1 'fairly large' herniation diagnosed (Sep 28), Victoria, Canada marked a turnaround"
   },
   {
     "id": 162,
@@ -2027,7 +1915,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from L5-S1 'fairly large' herniation diagnose enabled Slovenia, Italy, Greece, Malta, Croatia"
+    "narrative": "After L5-S1 'fairly large' herniation diagnosed (Sep 28), Slovenia, Italy, Greece, Malta, Croatia marked a turnaround"
   },
   {
     "id": 163,
@@ -2041,27 +1929,13 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from L5-S1 'fairly large' herniation diagnose enabled New Hampshire"
-  },
-  {
-    "id": 164,
-    "comeback_type": "health_travel",
-    "crisis_year": 2017,
-    "crisis_event": "Two epidural injections (Nov 10, Dec 8 — second failed)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2016,
-    "recovery_event": "St. Lucia, Dominica, Antigua",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Two epidural injections (Nov 10, Dec 8 — enabled St. Lucia, Dominica, Antigua"
+    "narrative": "After L5-S1 'fairly large' herniation diagnosed (Sep 28), New Hampshire marked a turnaround"
   },
   {
     "id": 165,
     "comeback_type": "health_travel",
     "crisis_year": 2017,
-    "crisis_event": "Two epidural injections (Nov 10, Dec 8 — second failed)",
+    "crisis_event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2017,
     "recovery_event": "Alaska & Seattle",
@@ -2069,13 +1943,13 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Two epidural injections (Nov 10, Dec 8 — enabled Alaska & Seattle"
+    "narrative": "After Two epidural injections (Nov 10, Dec 8 \u2014 second failed), Alaska & Seattle marked a turnaround"
   },
   {
     "id": 166,
     "comeback_type": "health_travel",
     "crisis_year": 2017,
-    "crisis_event": "Two epidural injections (Nov 10, Dec 8 — second failed)",
+    "crisis_event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2017,
     "recovery_event": "California (600+ miles)",
@@ -2083,13 +1957,13 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Two epidural injections (Nov 10, Dec 8 — enabled California (600+ miles)"
+    "narrative": "After Two epidural injections (Nov 10, Dec 8 \u2014 second failed), California (600+ miles) marked a turnaround"
   },
   {
     "id": 167,
     "comeback_type": "health_travel",
     "crisis_year": 2017,
-    "crisis_event": "Two epidural injections (Nov 10, Dec 8 — second failed)",
+    "crisis_event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2017,
     "recovery_event": "Victoria, Canada",
@@ -2097,13 +1971,13 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Two epidural injections (Nov 10, Dec 8 — enabled Victoria, Canada"
+    "narrative": "After Two epidural injections (Nov 10, Dec 8 \u2014 second failed), Victoria, Canada marked a turnaround"
   },
   {
     "id": 168,
     "comeback_type": "health_travel",
     "crisis_year": 2017,
-    "crisis_event": "Two epidural injections (Nov 10, Dec 8 — second failed)",
+    "crisis_event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2018,
     "recovery_event": "Slovenia, Italy, Greece, Malta, Croatia",
@@ -2111,13 +1985,13 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Two epidural injections (Nov 10, Dec 8 — enabled Slovenia, Italy, Greece, Malta, Croatia"
+    "narrative": "After Two epidural injections (Nov 10, Dec 8 \u2014 second failed), Slovenia, Italy, Greece, Malta, Croatia marked a turnaround"
   },
   {
     "id": 169,
     "comeback_type": "health_travel",
     "crisis_year": 2017,
-    "crisis_event": "Two epidural injections (Nov 10, Dec 8 — second failed)",
+    "crisis_event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2018,
     "recovery_event": "New Hampshire",
@@ -2125,21 +1999,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Two epidural injections (Nov 10, Dec 8 — enabled New Hampshire"
-  },
-  {
-    "id": 170,
-    "comeback_type": "health_travel",
-    "crisis_year": 2017,
-    "crisis_event": "Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2016,
-    "recovery_event": "St. Lucia, Dominica, Antigua",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Microdiscectomy surgery at Riverview hos enabled St. Lucia, Dominica, Antigua"
+    "narrative": "After Two epidural injections (Nov 10, Dec 8 \u2014 second failed), New Hampshire marked a turnaround"
   },
   {
     "id": 171,
@@ -2153,7 +2013,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Microdiscectomy surgery at Riverview hos enabled Alaska & Seattle"
+    "narrative": "After Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26, Alaska & Seattle marked a turnaround"
   },
   {
     "id": 172,
@@ -2167,7 +2027,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Microdiscectomy surgery at Riverview hos enabled California (600+ miles)"
+    "narrative": "After Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26, California (600+ miles) marked a turnaround"
   },
   {
     "id": 173,
@@ -2181,7 +2041,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Microdiscectomy surgery at Riverview hos enabled Victoria, Canada"
+    "narrative": "After Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26, Victoria, Canada marked a turnaround"
   },
   {
     "id": 174,
@@ -2195,7 +2055,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Microdiscectomy surgery at Riverview hos enabled Slovenia, Italy, Greece, Malta, Croatia"
+    "narrative": "After Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26, Slovenia, Italy, Greece, Malta, Croatia marked a turnaround"
   },
   {
     "id": 175,
@@ -2209,7 +2069,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Microdiscectomy surgery at Riverview hos enabled New Hampshire"
+    "narrative": "After Microdiscectomy surgery at Riverview hospital (Dec 15); 14 staples removed Dec 26, New Hampshire marked a turnaround"
   },
   {
     "id": 200,
@@ -2223,7 +2083,7 @@
     "gap_months": 12,
     "intensity_shift": -0.3333333333333333,
     "source_table": "temporal_network",
-    "narrative": "After losing 3 connections, 2 new relationships formed"
+    "narrative": "After Lost 3 relationships, Gained 2 connections marked a turnaround"
   },
   {
     "id": 210,
@@ -2237,7 +2097,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: L5-S1 herniation + microdiscectomy surge → Mediterranean cruise (Croatia, Montenegr"
+    "narrative": "Medical: L5-S1 herniation + microdiscectomy surgery (Dec 15) \u2192 Mediterranean cruise (Croatia, Montenegro, Italy); 'Back on the road'"
   },
   {
     "id": 201,
@@ -2251,7 +2111,7 @@
     "gap_months": 12,
     "intensity_shift": -0.75,
     "source_table": "temporal_network",
-    "narrative": "After losing 8 connections, 2 new relationships formed"
+    "narrative": "After Lost 8 relationships, Gained 2 connections marked a turnaround"
   },
   {
     "id": 97,
@@ -2260,12 +2120,12 @@
     "crisis_event": "Inaugural 'Steal Bingo' (Nov 23)",
     "crisis_sentiment": -0.4939,
     "recovery_year": 2020,
-    "recovery_event": "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
+    "recovery_event": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
     "recovery_sentiment": 0.5267,
     "gap_months": 12,
     "intensity_shift": 1.0206,
     "source_table": "milestones",
-    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Medical quarantine (Mar 26 – Apr 16) + m marked a turnaround"
+    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback marked a turnaround"
   },
   {
     "id": 98,
@@ -2274,12 +2134,12 @@
     "crisis_event": "Inaugural 'Steal Bingo' (Nov 23)",
     "crisis_sentiment": -0.4939,
     "recovery_year": 2020,
-    "recovery_event": "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
+    "recovery_event": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
     "recovery_sentiment": 0.4215,
     "gap_months": 12,
     "intensity_shift": 0.9154,
     "source_table": "milestones",
-    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), 4th skydive (Oct 3, mother witnessed) —  marked a turnaround"
+    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), 4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls' marked a turnaround"
   },
   {
     "id": 99,
@@ -2302,12 +2162,12 @@
     "crisis_event": "Inaugural 'Steal Bingo' (Nov 23)",
     "crisis_sentiment": -0.4939,
     "recovery_year": 2021,
-    "recovery_event": "25th consecutive Survivor Series — 91st WWE event",
+    "recovery_event": "25th consecutive Survivor Series \u2014 91st WWE event",
     "recovery_sentiment": 0.3612,
     "gap_months": 24,
     "intensity_shift": 0.8551,
     "source_table": "milestones",
-    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), 25th consecutive Survivor Series — 91st  marked a turnaround"
+    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), 25th consecutive Survivor Series \u2014 91st WWE event marked a turnaround"
   },
   {
     "id": 101,
@@ -2321,7 +2181,7 @@
     "gap_months": 24,
     "intensity_shift": 1.1425,
     "source_table": "milestones",
-    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Sr. Resident Care Coordinator promotion  marked a turnaround"
+    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Sr. Resident Care Coordinator promotion (applied Jul 11, accepted Jul 23) marked a turnaround"
   },
   {
     "id": 102,
@@ -2335,7 +2195,7 @@
     "gap_months": 24,
     "intensity_shift": 0.9527,
     "source_table": "milestones",
-    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Grand Canyon/Vegas/Utah/Colorado/Boston  marked a turnaround"
+    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos) marked a turnaround"
   },
   {
     "id": 103,
@@ -2377,7 +2237,7 @@
     "gap_months": 24,
     "intensity_shift": 0.9527,
     "source_table": "milestones",
-    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Arizona trip: Grand Canyon, Sedona, Flag marked a turnaround"
+    "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Arizona trip: Grand Canyon, Sedona, Flagstaff marked a turnaround"
   },
   {
     "id": 106,
@@ -2408,34 +2268,6 @@
     "narrative": "After Inaugural 'Steal Bingo' (Nov 23), Undertaker inducted into Hall of Fame marked a turnaround"
   },
   {
-    "id": 176,
-    "comeback_type": "health_travel",
-    "crisis_year": 2019,
-    "crisis_event": "Strep throat (Aug 7) + kidney stone removal",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2018,
-    "recovery_event": "Slovenia, Italy, Greece, Malta, Croatia",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Strep throat (Aug 7) + kidney stone remo enabled Slovenia, Italy, Greece, Malta, Croatia"
-  },
-  {
-    "id": 177,
-    "comeback_type": "health_travel",
-    "crisis_year": 2019,
-    "crisis_event": "Strep throat (Aug 7) + kidney stone removal",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2018,
-    "recovery_event": "New Hampshire",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Strep throat (Aug 7) + kidney stone remo enabled New Hampshire"
-  },
-  {
     "id": 178,
     "comeback_type": "health_travel",
     "crisis_year": 2019,
@@ -2447,7 +2279,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Strep throat (Aug 7) + kidney stone remo enabled Australia & New Zealand"
+    "narrative": "After Strep throat (Aug 7) + kidney stone removal, Australia & New Zealand marked a turnaround"
   },
   {
     "id": 179,
@@ -2461,7 +2293,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Strep throat (Aug 7) + kidney stone remo enabled Wisconsin (2 trips)"
+    "narrative": "After Strep throat (Aug 7) + kidney stone removal, Wisconsin (2 trips) marked a turnaround"
   },
   {
     "id": 180,
@@ -2475,7 +2307,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Strep throat (Aug 7) + kidney stone remo enabled Washington D.C."
+    "narrative": "After Strep throat (Aug 7) + kidney stone removal, Washington D.C. marked a turnaround"
   },
   {
     "id": 181,
@@ -2489,7 +2321,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Strep throat (Aug 7) + kidney stone remo enabled Singapore, Thailand, Cambodia, Vietnam, "
+    "narrative": "After Strep throat (Aug 7) + kidney stone removal, Singapore, Thailand, Cambodia, Vietnam, Hong Kong marked a turnaround"
   },
   {
     "id": 202,
@@ -2503,7 +2335,7 @@
     "gap_months": 12,
     "intensity_shift": -0.25,
     "source_table": "temporal_network",
-    "narrative": "After losing 4 connections, 3 new relationships formed"
+    "narrative": "After Lost 4 relationships, Gained 3 connections marked a turnaround"
   },
   {
     "id": 211,
@@ -2517,7 +2349,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: Strep throat + kidney stone removal → Australia & New Zealand trip"
+    "narrative": "Medical: Strep throat + kidney stone removal \u2192 Australia & New Zealand trip"
   },
   {
     "id": 108,
@@ -2526,12 +2358,12 @@
     "crisis_event": "Pasta Passion & Pistols Murder Mystery NYE (Dec 31)",
     "crisis_sentiment": -0.4019,
     "recovery_year": 2021,
-    "recovery_event": "25th consecutive Survivor Series — 91st WWE event",
+    "recovery_event": "25th consecutive Survivor Series \u2014 91st WWE event",
     "recovery_sentiment": 0.3612,
     "gap_months": 12,
     "intensity_shift": 0.7631,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, 25th consecutive Survivor Series — 91st  marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), 25th consecutive Survivor Series \u2014 91st WWE event marked a turnaround"
   },
   {
     "id": 109,
@@ -2545,7 +2377,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0505,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Sr. Resident Care Coordinator promotion  marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Sr. Resident Care Coordinator promotion (applied Jul 11, accepted Jul 23) marked a turnaround"
   },
   {
     "id": 110,
@@ -2559,7 +2391,7 @@
     "gap_months": 12,
     "intensity_shift": 0.8607,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Grand Canyon/Vegas/Utah/Colorado/Boston  marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos) marked a turnaround"
   },
   {
     "id": 111,
@@ -2573,7 +2405,7 @@
     "gap_months": 12,
     "intensity_shift": 0.8786,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Tour de Friends events (Feb-Apr) marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Tour de Friends events (Feb-Apr) marked a turnaround"
   },
   {
     "id": 112,
@@ -2587,7 +2419,7 @@
     "gap_months": 12,
     "intensity_shift": 0.9738,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Danny won inaugural 'RK Quiz' (Dec 11) marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Danny won inaugural 'RK Quiz' (Dec 11) marked a turnaround"
   },
   {
     "id": 113,
@@ -2601,7 +2433,7 @@
     "gap_months": 12,
     "intensity_shift": 0.8607,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Arizona trip: Grand Canyon, Sedona, Flag marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Arizona trip: Grand Canyon, Sedona, Flagstaff marked a turnaround"
   },
   {
     "id": 114,
@@ -2615,7 +2447,7 @@
     "gap_months": 24,
     "intensity_shift": 0.9441999999999999,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, #100 Award marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), #100 Award marked a turnaround"
   },
   {
     "id": 115,
@@ -2629,7 +2461,7 @@
     "gap_months": 24,
     "intensity_shift": 0.8423,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Undertaker inducted into Hall of Fame marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Undertaker inducted into Hall of Fame marked a turnaround"
   },
   {
     "id": 116,
@@ -2638,12 +2470,12 @@
     "crisis_event": "Pasta Passion & Pistols Murder Mystery NYE (Dec 31)",
     "crisis_sentiment": -0.4019,
     "recovery_year": 2023,
-    "recovery_event": "Super Bowl LVII in Phoenix — 'most spectacular day I've ever experienced'",
+    "recovery_event": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced'",
     "recovery_sentiment": 0.5994,
     "gap_months": 36,
     "intensity_shift": 1.0013,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Super Bowl LVII in Phoenix — 'most spect marked a turnaround"
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced' marked a turnaround"
   },
   {
     "id": 117,
@@ -2657,55 +2489,13 @@
     "gap_months": 36,
     "intensity_shift": 1.1525,
     "source_table": "milestones",
-    "narrative": "After Pasta Passion & Pistols Murder Mystery N, Six Flags Great Adventure visits (multip marked a turnaround"
-  },
-  {
-    "id": 182,
-    "comeback_type": "health_travel",
-    "crisis_year": 2020,
-    "crisis_event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2019,
-    "recovery_event": "Australia & New Zealand",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Medical quarantine (Mar 26 – Apr 16); ga enabled Australia & New Zealand"
-  },
-  {
-    "id": 183,
-    "comeback_type": "health_travel",
-    "crisis_year": 2020,
-    "crisis_event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2019,
-    "recovery_event": "Wisconsin (2 trips)",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Medical quarantine (Mar 26 – Apr 16); ga enabled Wisconsin (2 trips)"
-  },
-  {
-    "id": 184,
-    "comeback_type": "health_travel",
-    "crisis_year": 2020,
-    "crisis_event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2019,
-    "recovery_event": "Washington D.C.",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Medical quarantine (Mar 26 – Apr 16); ga enabled Washington D.C."
+    "narrative": "After Pasta Passion & Pistols Murder Mystery NYE (Dec 31), Six Flags Great Adventure visits (multiple) marked a turnaround"
   },
   {
     "id": 185,
     "comeback_type": "health_travel",
     "crisis_year": 2020,
-    "crisis_event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle",
+    "crisis_event": "Medical quarantine (Mar 26 \u2013 Apr 16); gained 3 lbs solid muscle",
     "crisis_sentiment": -0.5,
     "recovery_year": 2020,
     "recovery_event": "Singapore, Thailand, Cambodia, Vietnam, Hong Kong",
@@ -2713,13 +2503,13 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Medical quarantine (Mar 26 – Apr 16); ga enabled Singapore, Thailand, Cambodia, Vietnam, "
+    "narrative": "After Medical quarantine (Mar 26 \u2013 Apr 16); gained 3 lbs solid muscle, Singapore, Thailand, Cambodia, Vietnam, Hong Kong marked a turnaround"
   },
   {
     "id": 186,
     "comeback_type": "health_travel",
     "crisis_year": 2020,
-    "crisis_event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle",
+    "crisis_event": "Medical quarantine (Mar 26 \u2013 Apr 16); gained 3 lbs solid muscle",
     "crisis_sentiment": -0.5,
     "recovery_year": 2021,
     "recovery_event": "Grand Canyon, Vegas, Utah, Colorado, Boston",
@@ -2727,7 +2517,7 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Medical quarantine (Mar 26 – Apr 16); ga enabled Grand Canyon, Vegas, Utah, Colorado, Bos"
+    "narrative": "After Medical quarantine (Mar 26 \u2013 Apr 16); gained 3 lbs solid muscle, Grand Canyon, Vegas, Utah, Colorado, Boston marked a turnaround"
   },
   {
     "id": 203,
@@ -2741,7 +2531,7 @@
     "gap_months": 12,
     "intensity_shift": -0.3333333333333333,
     "source_table": "temporal_network",
-    "narrative": "After losing 3 connections, 2 new relationships formed"
+    "narrative": "After Lost 3 relationships, Gained 2 connections marked a turnaround"
   },
   {
     "id": 212,
@@ -2755,7 +2545,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: COVID medical quarantine (Mar 26 - Apr 1 → Gained 3 lbs muscle; biked to Highlands/"
+    "narrative": "Medical: COVID medical quarantine (Mar 26 - Apr 16) \u2192 Gained 3 lbs muscle; biked to Highlands/Asbury Park/Sea Bright"
   },
   {
     "id": 118,
@@ -2820,12 +2610,12 @@
     "crisis_event": "10-year anniversary with Rob (Jan 15)",
     "crisis_sentiment": -0.5574,
     "recovery_year": 2023,
-    "recovery_event": "Super Bowl LVII in Phoenix — 'most spectacular day I've ever experienced'",
+    "recovery_event": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced'",
     "recovery_sentiment": 0.5994,
     "gap_months": 24,
     "intensity_shift": 1.1568,
     "source_table": "milestones",
-    "narrative": "After 10-year anniversary with Rob (Jan 15), Super Bowl LVII in Phoenix — 'most spect marked a turnaround"
+    "narrative": "After 10-year anniversary with Rob (Jan 15), Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced' marked a turnaround"
   },
   {
     "id": 123,
@@ -2839,7 +2629,7 @@
     "gap_months": 24,
     "intensity_shift": 1.308,
     "source_table": "milestones",
-    "narrative": "After 10-year anniversary with Rob (Jan 15), Six Flags Great Adventure visits (multip marked a turnaround"
+    "narrative": "After 10-year anniversary with Rob (Jan 15), Six Flags Great Adventure visits (multiple) marked a turnaround"
   },
   {
     "id": 124,
@@ -2848,12 +2638,12 @@
     "crisis_event": "Death Valley visited (Mar 16-20)",
     "crisis_sentiment": -0.5994,
     "recovery_year": 2023,
-    "recovery_event": "Super Bowl LVII in Phoenix — 'most spectacular day I've ever experienced'",
+    "recovery_event": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced'",
     "recovery_sentiment": 0.5994,
     "gap_months": 24,
     "intensity_shift": 1.1988,
     "source_table": "milestones",
-    "narrative": "After Death Valley visited (Mar 16-20), Super Bowl LVII in Phoenix — 'most spect marked a turnaround"
+    "narrative": "After Death Valley visited (Mar 16-20), Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced' marked a turnaround"
   },
   {
     "id": 125,
@@ -2867,7 +2657,7 @@
     "gap_months": 24,
     "intensity_shift": 1.35,
     "source_table": "milestones",
-    "narrative": "After Death Valley visited (Mar 16-20), Six Flags Great Adventure visits (multip marked a turnaround"
+    "narrative": "After Death Valley visited (Mar 16-20), Six Flags Great Adventure visits (multiple) marked a turnaround"
   },
   {
     "id": 126,
@@ -2884,24 +2674,10 @@
     "narrative": "After Wicked on Broadway, Five Boro Bike Tour medal finish marked a turnaround"
   },
   {
-    "id": 187,
-    "comeback_type": "health_travel",
-    "crisis_year": 2024,
-    "crisis_event": "Kidney stones — two hospitalizations (Dec 18 & 20)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2023,
-    "recovery_event": "Phoenix / Arizona",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Kidney stones — two hospitalizations (De enabled Phoenix / Arizona"
-  },
-  {
     "id": 188,
     "comeback_type": "health_travel",
     "crisis_year": 2024,
-    "crisis_event": "Kidney stones — two hospitalizations (Dec 18 & 20)",
+    "crisis_event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2024,
     "recovery_event": "Portugal, Spain, Norway, Iceland, Toronto",
@@ -2909,13 +2685,13 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Kidney stones — two hospitalizations (De enabled Portugal, Spain, Norway, Iceland, Toront"
+    "narrative": "After Kidney stones \u2014 two hospitalizations (Dec 18 & 20), Portugal, Spain, Norway, Iceland, Toronto marked a turnaround"
   },
   {
     "id": 189,
     "comeback_type": "health_travel",
     "crisis_year": 2024,
-    "crisis_event": "Kidney stones — two hospitalizations (Dec 18 & 20)",
+    "crisis_event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
     "crisis_sentiment": -0.5,
     "recovery_year": 2025,
     "recovery_event": "Midwest Road Trip (16 states)",
@@ -2923,13 +2699,13 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Kidney stones — two hospitalizations (De enabled Midwest Road Trip (16 states)"
+    "narrative": "After Kidney stones \u2014 two hospitalizations (Dec 18 & 20), Midwest Road Trip (16 states) marked a turnaround"
   },
   {
     "id": 213,
     "comeback_type": "medical",
     "crisis_year": 2024,
-    "crisis_event": "Kidney stones — two hospitalizations (Dec 18 & 20)",
+    "crisis_event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
     "crisis_sentiment": -0.6,
     "recovery_year": 2024,
     "recovery_event": "Continued travel (Norway, Iceland, Toronto, Montreal) & celebration",
@@ -2937,21 +2713,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "medical_comeback_pairs",
-    "narrative": "Medical: Kidney stones — two hospitalizations (De → Continued travel (Norway, Iceland, Toron"
-  },
-  {
-    "id": 190,
-    "comeback_type": "health_travel",
-    "crisis_year": 2025,
-    "crisis_event": "Influenza confirmed by medical visit (February)",
-    "crisis_sentiment": -0.5,
-    "recovery_year": 2024,
-    "recovery_event": "Portugal, Spain, Norway, Iceland, Toronto",
-    "recovery_sentiment": 0.5,
-    "gap_months": -12,
-    "intensity_shift": 1.0,
-    "source_table": "travel_medical",
-    "narrative": "Recovery from Influenza confirmed by medical visit (Fe enabled Portugal, Spain, Norway, Iceland, Toront"
+    "narrative": "Medical: Kidney stones \u2014 two hospitalizations (Dec 18 & 20) \u2192 Continued travel (Norway, Iceland, Toronto, Montreal) & celebration"
   },
   {
     "id": 191,
@@ -2965,7 +2727,7 @@
     "gap_months": 0,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Influenza confirmed by medical visit (Fe enabled Midwest Road Trip (16 states)"
+    "narrative": "After Influenza confirmed by medical visit (February), Midwest Road Trip (16 states) marked a turnaround"
   },
   {
     "id": 192,
@@ -2979,6 +2741,6 @@
     "gap_months": 12,
     "intensity_shift": 1.0,
     "source_table": "travel_medical",
-    "narrative": "Recovery from Influenza confirmed by medical visit (Fe enabled Japan"
+    "narrative": "After Influenza confirmed by medical visit (February), Japan marked a turnaround"
   }
 ]

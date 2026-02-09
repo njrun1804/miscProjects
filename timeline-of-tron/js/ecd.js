@@ -1,5 +1,5 @@
 // js/ecd.js — East Coast Dodgeball (Redesigned)
-// 128 players. 168 events. 20 years. The community page.
+// 128 players. 168 events. 21 years. The community page.
 // Resilient loading, animated counters, scroll reveals, D3 force bubbles.
 
 import { initWormholes } from './wormholes.js';
@@ -126,7 +126,7 @@ function renderHeroStats(dashboard) {
     const d = dashboard || {};
     const stats = [
         { value: d.player_count || 128, label: 'Players' },
-        { value: d.event_count || 168, label: 'Events' },
+        { value: d.event_count || 222, label: 'Events' },
         { value: 20, label: 'Years' },
         { value: 553, label: 'Posts' },
         { value: 350, label: 'Matches', suffix: '+' },
@@ -169,7 +169,7 @@ function renderHeartbeat(sentiment, attendance, narrative) {
         { start: 2007, end: 2008, color: 'rgba(232, 93, 58, 0.08)', label: 'Golden Age' },
         { start: 2009, end: 2009, color: 'rgba(139, 74, 107, 0.18)', label: 'Collapse' },
         { start: 2010, end: 2013, color: 'rgba(212, 169, 76, 0.08)', label: 'Revival' },
-        { start: 2014, end: 2025, color: 'rgba(106, 141, 170, 0.05)', label: 'Legacy' }
+        { start: 2014, end: 2026, color: 'rgba(106, 141, 170, 0.05)', label: 'Legacy' }
     ];
 
     // Custom plugins
@@ -925,7 +925,7 @@ function renderLegacy(awards, fundraisers) {
         { title: 'ECD Elite', items: uniqueAwards.filter(a => a.award_type === 'ECD Elite Inductee') },
         { title: 'Rimshot Champions', items: uniqueAwards.filter(a => a.award_type === 'Rimshot Champion' || a.award_type === 'Rimshot Contest Champion') },
         { title: 'Hit The Human', items: uniqueAwards.filter(a => a.award_type === 'Hit The Human Champion') },
-        { title: 'Special Awards', items: uniqueAwards.filter(a => a.award_type === '200 Events Award') },
+        { title: 'Special Awards', items: uniqueAwards.filter(a => a.award_type && a.award_type.includes('Events Award')) },
         { title: 'In Remembrance', items: uniqueAwards.filter(a => a.award_type === 'In Remembrance'), isRemembrance: true }
     ].filter(g => g.items.length > 0);
 

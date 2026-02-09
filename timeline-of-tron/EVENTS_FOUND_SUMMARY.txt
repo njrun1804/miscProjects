@@ -1,0 +1,154 @@
+================================================================================
+QUICK REFERENCE: MISSING DODGEBALL EVENTS - SEARCH RESULTS
+================================================================================
+
+EVENTS FOUND (11 of 30 missing events):
+================================================================================
+
+Event #4:     FOUND - 279 mentions
+              Primary post references: 10078, 103856, 104181, 10499, 106070
+              Status: WELL DOCUMENTED
+
+Event #5:     FOUND - 283 mentions
+              Primary post references: 10078, 103856, 104181, 104745, 10499
+              Status: WELL DOCUMENTED
+
+Event #6:     FOUND - 100 mentions
+              Primary post references: 100771, 10078, 10499, 107953
+              Status: DOCUMENTED
+
+Event #11:    FOUND - 82 mentions
+              Primary post references: 106070, 110310, 114118, 116678, 118197
+              Status: DOCUMENTED
+
+Event #12:    FOUND - 84 mentions
+              Primary post references: 100771, 100915, 106070, 76187, 76689
+              Status: DOCUMENTED
+
+Event #16:    FOUND - 38 mentions
+              Primary post references: 100332 (multiple)
+              Status: DOCUMENTED
+              NOTE: Multiple references in post about "DODGEBALL 166" and venue/lighting issues
+
+Event #172:   FOUND - 2 mentions
+              Post ID: 114290 ("One Day To Stop This WORLD")
+              References: "#172", "Event #172"
+              Date: May 23, 2009
+              Status: REFERENCED IN TIMELINE
+
+Event #173:   FOUND - 2 mentions
+              Post ID: 114290 ("One Day To Stop This WORLD")
+              References: "#173", "Event #173"
+              Date: July 24, 2010
+              Status: REFERENCED IN TIMELINE
+
+Event #182:   FOUND - 2 mentions
+              Post ID: 114290 ("One Day To Stop This WORLD")
+              References: "#182", "Event #182"
+              Date: June 18, 2011
+              Status: REFERENCED IN TIMELINE
+
+Event #190:   FOUND - 1 mention
+              Post ID: 118624 ("TWO For ONE Special")
+              Reference: "DODGEBALL CXC" (Roman numeral format)
+              Status: ROMAN NUMERAL FORMAT REFERENCE
+
+Event #191:   FOUND - 1 mention
+              Post ID: 118624 ("TWO For ONE Special")
+              Reference: "DODGEBALL CXCI" (Roman numeral format)
+              Status: ROMAN NUMERAL FORMAT REFERENCE
+
+
+EVENTS NOT FOUND (19 of 30 missing events):
+================================================================================
+
+NOT FOUND:    111, 112, 152, 175, 176, 178, 179, 180, 181, 183, 186, 187, 188, 189, 193, 194, 196, 197, 198
+              Across all 603 raw post files
+
+POSSIBLE CAUSES:
+  - These events may use different formatting/naming conventions not searched
+  - These may be non-existent/skipped event numbers
+  - These events may only be documented in comments (not in title/body_text)
+  - These may be future events not yet posted about at time of data capture
+
+
+KEY FINDING LOCATIONS:
+================================================================================
+
+Post #114290 ("One Day To Stop This WORLD")
+  - Contains references to events #172, #173, #182
+  - Appears to be a comprehensive historical timeline/milestone post
+  - Contains specific dates for each referenced event
+  RECOMMENDED: Review this post in full for missing event details
+
+Post #100332 ("You Got SERVED")
+  - Contains multiple event #16x references
+  - Discusses DODGEBALL 161 attendance records
+  - Multiple mentions related to venue/lighting
+  RECOMMENDED: Review for historical event information
+
+Post #118624 ("TWO For ONE Special")
+  - Uses Roman numeral format (DODGEBALL CXC, DODGEBALL CXCI)
+  - References events #190-191
+  RECOMMENDED: Check for additional Roman numeral format references
+
+
+EVENTS BEYOND #200:
+================================================================================
+
+Event #202:   1 mention in post 123576
+              Context: "CREAMation encounters, ECD 91-202"
+
+Event #203:   3 mentions in posts 111707, 29108, 49049
+              Possible contexts: Player numbers, temporal references
+
+Event #218:   1 mention in post 116678
+              Context: "ECD Player #218" (likely player number, not event)
+
+
+SPECIAL EVENT TYPES FOUND (750 total mentions):
+================================================================================
+
+FINAL:        228 matches - Season finales, final encounters
+SPECIAL:      212 matches - Holiday/Thanksgiving specials
+ANNIVERSARY:  146 matches - Anniversary celebrations (5, 10, 15 year, etc.)
+CHAMPIONSHIP: 68 matches - Championship matches, title defenses
+TOURNAMENT:   49 matches - Tournament formats, series events
+ALL-STAR:     22 matches - All-star lineups, all-star events
+INDOOR:       21 matches - Indoor special events
+WOMEN'S:      4 matches - Women's division references
+
+
+SEARCH STATISTICS:
+================================================================================
+
+Total files searched:           603 JSON files
+Total missing events searched:  30 event numbers
+Events found:                   11 (37% success rate)
+Events not found:               19 (63%)
+Total matches for found events: 874
+Total mentions in 603 files:    1,629 (including special event types)
+
+
+CRITICAL POSTS FOR FURTHER INVESTIGATION:
+================================================================================
+
+1. Post #114290 - "One Day To Stop This WORLD"
+   - Highest concentration of missing event references
+   - Appears to be encyclopedia/timeline post
+   - Contains specific dates
+
+2. Post #100332 - "You Got SERVED"
+   - Multiple event references and historical context
+   - Discusses attendance records and venue details
+
+3. Post #100771 - "Raiders of the Lost ARMS"
+   - Event numbering discussion and history
+
+4. Post #104181 - "ONCE"
+   - Chronological references and statistics
+
+5. Post #103856 - "Somewhere, A Clock Is TICKING"
+   - Historical narrative with event references
+
+================================================================================

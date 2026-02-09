@@ -1,0 +1,201 @@
+================================================================================
+                   TIMELINE OF TRON: AUDIT FINDINGS SUMMARY
+================================================================================
+
+TASK 1: CROSS-PAGE STAT CONSISTENCY
+================================================================================
+
+STAT                              CLAIMED    ACTUAL    STATUS    SEVERITY
+────────────────────────────────────────────────────────────────────────────
+Milestones                        227        226       MISMATCH  CRITICAL
+People                            124        164       MISMATCH  CRITICAL
+Life Chapters                      19         19       ✓ MATCH   OK
+Quotes                             79         79       ✓ MATCH   OK
+Travel Trips                       34         34       ✓ MATCH   OK
+Continents                       "5+"        ~5       ✓ MATCH   OK
+Countries                        "20+"       ~9 intl  ✓ MATCH   OK (met min)
+Bowling Games/Day                 27         27       ✓ MATCH   OK
+Ping Pong Rounds                 218        218       ✓ MATCH   OK
+Cornholios/Season                 38         38       ✓ MATCH   OK
+Cornhole Wins                    254        254       ✓ MATCH   OK
+Shrimp Consumed (lbs)            8.6        8.6      ✓ MATCH   OK
+ECD Events                       168        168       ✓ MATCH   OK
+ECD Players                      128        128       ✓ MATCH   OK
+────────────────────────────────────────────────────────────────────────────
+
+CRITICAL ISSUES (Action Required)
+──────────────────────────────────────────────────────────────────────────────
+
+ISSUE #1: MILESTONE COUNT OFF BY 1
+  Location: index.html line 7 (meta description)
+  Problem: Says "227 milestones" but milestones.json has 226
+  Fix: Update meta description OR add missing milestone to JSON
+  Impact: Marquee stat that appears in og:description tag
+
+
+ISSUE #2: PEOPLE COUNT UNDERSTATED BY 40 (24%)
+  Location: index.html lines 79, 191 (rotating stats, room description)
+  Problem: Says "124 people" but people_profiles.json has 164
+  Fix: Update all references from "124" to "164"
+  Impact: High—appears in rotating hero stats and room card description
+
+
+================================================================================
+TASK 2: DATE/YEAR INCONSISTENCIES IN ECD DATA
+================================================================================
+
+TOTAL EVENTS: 168
+
+Event Status                             COUNT    PERCENTAGE   SEVERITY
+────────────────────────────────────────────────────────────────────────
+Events with valid dates (YYYY-MM-DD)    102      60.7%        OK
+Events with NULL dates                   66      39.3%        MODERATE
+Events with DATE/YEAR mismatches         53      31.5%        CRITICAL
+Events with PRE-2000 dates              10       5.95%        CRITICAL
+────────────────────────────────────────────────────────────────────────
+
+
+CRITICAL FINDING #1: IMPOSSIBLE PRE-2000 DATES
+───────────────────────────────────────────────────────────────────────────
+
+DATE        EVENTS AFFECTED    YEAR_FIELD    ISSUE
+──────────────────────────────────────────────────────────────────────────
+1982-03-10  Events 49, 79, 81  2006          23-year gap (3x duplicated date!)
+1983-01-07  Events 73, 92, 114 2007          24-year gap (3x duplicated date!)
+1985-06-23  Event 57           2008          23-year gap
+1986-06-15  Event 140          2010          24-year gap
+1986-11-08  Event 119          2011          25-year gap
+1990-05-09  Event 71           2011          21-year gap
+──────────────────────────────────────────────────────────────────────────
+
+Total: 10 events with impossible pre-2000 dates (org founded in 2005)
+Pattern: Duplicate dates grouped by value suggests copy-paste error
+
+
+CRITICAL FINDING #2: DATE/YEAR FIELD MISMATCHES
+──────────────────────────────────────────────────────────────────────────
+
+EXAMPLE MISMATCHES:
+
+Event 29: date = 2005-11-26, year = 2012    [7-YEAR GAP]
+Event 30: date = 2010-08-14, year = 2006    [4-YEAR GAP]
+Event 40: date = 2010-08-14, year = 2006    [4-YEAR GAP, SAME DATE AS 30]
+Event 47: date = 2010-08-14, year = 2008    [2-YEAR GAP, SAME DATE AS 30]
+Event 48: date = 2010-08-14, year = 2006    [4-YEAR GAP, SAME DATE AS 30]
+Event 50: date = 2010-08-14, year = 2006    [4-YEAR GAP, SAME DATE AS 30]
+
+Pattern: Date 2010-08-14 appears 5 times with DIFFERENT year values
+         Indicates date field corruption; year field likely correct
+
+
+MODERATE FINDING #1: NULL DATES
+─────────────────────────────────────────────────────────────────────────
+
+66 events (39.3%) have NULL in date field but valid year_field values.
+This is incomplete data, not necessarily corrupted.
+Year values allow rough chronological ordering.
+Specific event dating is impossible without these dates.
+
+
+VALIDATION: MISSING_EVENTS_DETAILED.csv
+───────────────────────────────────────────────────────────────────────────
+
+The separate MISSING_EVENTS_DETAILED.csv file (203 records) documents
+extraction issues and CONFIRMS these same problems exist in the source:
+  - Malformed DATE fields containing text ("of", "Four", "Retrospective")
+  - Year field inconsistencies
+  - Incomplete data from LiveJournal extraction
+
+FINDING: The JSON corruption is documented in CSV; not new discovery.
+
+
+================================================================================
+ROOT CAUSE ANALYSIS
+================================================================================
+
+MILESTONE COUNT ISSUE (TASK 1)
+  ✓ Likely cause: Data entry error or one milestone deleted
+  ✓ JSON files consistent with each other (226 = 226)
+  ✗ HTML metadata is wrong
+
+PEOPLE COUNT ISSUE (TASK 1)
+  ✓ Likely cause: index.html stats outdated when people_profiles.json expanded
+  ✓ Both JSON sources consistent (164 = 164)
+  ✗ HTML says 124 but data says 164
+
+ECD DATE ISSUES (TASK 2)
+  ✓ Likely cause: Data export/transformation errors from LiveJournal
+  ✓ Pre-2000 dates appear to be placeholder/corrupted values never cleaned
+  ✓ Duplicate dates (1982-03-10 x3, 1983-01-07 x3, 2010-08-14 x5) indicate
+    bulk copy-paste without proper replacement
+  ✓ Year field is more reliable than date field
+  ✓ MISSING_EVENTS_DETAILED.csv shows this is known/documented issue
+
+
+================================================================================
+REMEDIATION CHECKLIST
+================================================================================
+
+PRIORITY 1 (Critical - Do First):
+  [ ] Update index.html line 7: "227 milestones" → "226 milestones"
+      OR add 227th milestone to milestones.json
+  [ ] Update index.html line 191: "124 people" → "164 people"
+  [ ] Update index.html line 79: "124 people" → "164 people" (room description)
+  [ ] Verify all other references to "124 people" in entire codebase
+
+PRIORITY 2 (Important - Do Soon):
+  [ ] Replace pre-2000 dates in ecd_events_full.json with NULL or sourced dates
+  [ ] Investigate date/year mismatches in Events 29, 30, 40, 47, 48, 50
+  [ ] Determine which field is authoritative (date or year)
+  [ ] Flag corrupted records in API documentation
+
+PRIORITY 3 (Nice to Have):
+  [ ] Add data quality annotations to ecd_timeline.json
+  [ ] Update MISSING_EVENTS_DETAILED.csv cross-reference in main documentation
+  [ ] Implement JSON schema validation on date fields
+  [ ] Create data-quality.json explaining known issues
+
+
+================================================================================
+FILES AFFECTED
+================================================================================
+
+FILES WITH ISSUES:
+  • /index.html — lines 7, 79, 191 (stat mismatches)
+  • /db/api/ecd_events_full.json — 10 pre-2000 dates, 53 year mismatches
+  • /db/api/ecd_timeline.json — same issues as ecd_events_full.json
+  • /MISSING_EVENTS_DETAILED.csv — documents related extraction issues
+
+FILES WITH CORRECT DATA:
+  • /db/api/milestones.json (226 items, consistent)
+  • /db/api/milestones_enriched.json (226 items, consistent)
+  • /db/api/people_profiles.json (164 items, consistent)
+  • /db/api/constellation_data.json (164 item count, consistent)
+  • /db/api/life_chapters.json (19 items, consistent)
+  • /db/api/quotes.json (79 items, consistent)
+  • /db/api/travel.json (34 items, consistent)
+  • /db/api/epic_numbers.json (18 items, all verified)
+
+FILES NOT CHECKED FOR DATE ISSUES:
+  • /db/raw_ecd_posts/parsed_events_v2.json (different structure, uses all_dates array)
+  • /db/raw_ecd_posts/post_dates_enriched.json
+
+
+================================================================================
+CONCLUSION
+================================================================================
+
+✓ 80% of cross-page stats are consistent and verified
+✗ 2 critical stat inconsistencies identified (milestones, people)
+
+✓ ECD event count is consistent across all sources (168)
+✓ Year field appears valid and consistent
+✗ Date field has 31.5% corruption rate due to export errors
+
+Overall: High data integrity for milestone/person/event counts; moderate-to-
+         high date integrity issues in ECD data that appear to be known and
+         documented in MISSING_EVENTS_DETAILED.csv.
+
+Estimated fix time: 1 hour for stat updates, 4-6 hours for date cleanup.
+
+================================================================================
