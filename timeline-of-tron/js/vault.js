@@ -3,6 +3,7 @@
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
+import { plantClue } from './room0.js';
 
 // Curated quote pairs: thematic echoes across years
 const QUOTE_PAIRS = [
@@ -58,7 +59,8 @@ export async function initVault() {
         'year_keywords.json',
         'life_chapters.json',
         'turning_points_detailed.json',
-        'insights_full.json'
+        'insights_full.json',
+        'people_profiles.json'
     ]);
 
     const quotes = data.quotes || [];
@@ -68,6 +70,7 @@ export async function initVault() {
     const chapters = data.life_chapters || [];
     const turningPoints = data.turning_points_detailed || [];
     const insights = data.insights_full || [];
+    const profiles = data.people_profiles || [];
 
     renderFeaturedQuote(quotes);
     initSearch(quotes);
@@ -75,7 +78,7 @@ export async function initVault() {
     renderQuoteWall(quotes, keywords, chapters, turningPoints);
     renderPairs(quotes);
     renderEvolution(evolution);
-    renderPeople(quotes);
+    renderPeople(quotes, profiles);
     renderInsights(insights);
     renderSoundtrack(songs);
 }
@@ -413,58 +416,358 @@ function renderEvolution(evolution) {
 
 // ── People Behind the Words ──
 
-function renderPeople(quotes) {
+// Alias map: alternate name forms → canonical profile name
+const NAME_ALIASES = {
+    'James Butler': 'Jim Butler',
+    'Jim Butler': 'Jim Butler',
+    'Pam D': 'Pam',
+    'Kevin Megill': 'Kevin Megill (KMJ)',
+    'KMJ': 'Kevin Megill (KMJ)',
+    'Leah N': 'Kevin & Leah (KMJ & LN)',
+    'Kevin & Leah': 'Kevin & Leah (KMJ & LN)',
+    'Ryan Letsche': 'Ryan Letsche',
+    'RL': 'RL (Letsche)',
+    'RyGuy': 'Ryan Letsche',
+    'Tim M': 'Tim Moore',
+    'Edwards': 'Edwards',
+    'C. Adams': 'Chris Adams',
+    'Mike Lanza': 'Chef Lanza',
+    'Danny Sponge': 'Dan Spengeman',
+    'Spengeman': 'Dan Spengeman',
+    'ValPal': 'Valerie Winston (ValPal)',
+    'Valerie': 'Valerie Winston (ValPal)',
+    'Lauren Winston': 'Lauren Winston',
+    'Rupert': 'Rupert',
+    'Rob': 'Rob',
+    'Michael': 'Michael',
+    'Ma': 'Ma',
+    'The Pops': 'The Pops',
+    'Diana DiBuccio': 'Diana DiBuccio',
+    'Phil Campanella': 'Phil Campanella',
+    'Jackie T': 'Jackie Amorino',
+    'Matt': 'Matt (introduced Jul 3, 2019)',
+    'Theresa Lee': 'Grandma Theresa',
+    'melsa': 'Melissa Kerr',
+    'The Undertaker': 'The Undertaker',
+    'George Michael': 'George Michael',
+    'Juan': 'Juan Londono (Muffin Man)',
+    'Julian': 'Julian',
+    'Grammy Nancy': 'Grammy Nancy',
+    'Grammy': 'Grammy Nancy',
+    'Megan': 'Megan',
+    'Grace': 'Grace',
+    'Shane': 'Shane',
+    'Alison': 'Alison Bertsch',
+};
+
+// Category display config
+const CATEGORY_CONFIG = {
+    family:       { label: 'Family',       color: '#c9a84c' },
+    partner:      { label: 'Partner',      color: '#c07070' },
+    inner_circle: { label: 'Inner Circle', color: '#6a8fb0' },
+    ecd_player:   { label: 'ECD',          color: '#7ab07a' },
+    other:        { label: 'Friend',       color: '#8a8a9a' },
+};
+
+// Event type colors for mini-timeline dots
+const EVENT_TYPE_COLORS = {
+    wwe:       '#c9a84c',
+    social:    '#6a8fb0',
+    travel:    '#7ab07a',
+    milestone: '#c07070',
+    award:     '#d4a24e',
+    ecd:       '#8a7ab0',
+};
+
+function renderPeople(quotes, profiles) {
     const grid = document.querySelector('.vault-people-grid');
     if (!grid) return;
 
-    // Match people by scanning quote text + context for known names
-    const peopleMentions = {};
+    // Build profile lookup: canonical name → profile entry
+    const profileMap = {};
+    if (Array.isArray(profiles)) {
+        profiles.forEach(entry => {
+            if (entry?.person?.name) {
+                profileMap[entry.person.name] = entry;
+            }
+        });
+    }
+
+    // Scan all quotes for people mentions
+    const quoteMentions = {}; // canonical name → [quote objects]
+    const SEARCH_NAMES = Object.keys(NAME_ALIASES);
 
     quotes.forEach(q => {
         const haystack = `${q.quote || ''} ${q.context || ''}`;
-
-        // Known people from the quotes — curated from the actual data
-        const PEOPLE = [
-            'Jim Butler', 'James Butler', 'Pam D', 'Pam', 'Kevin Megill', 'Valerie',
-            'Diana DiBuccio', 'Phil Campanella', 'Tim M', 'Edwards',
-            'Leah N', 'Jackie T', 'Alison', 'Shane', 'Theresa Lee',
-            'melsa', 'C. Adams', 'Mike Lanza', 'Matt', 'Ryan Letsche',
-            'George Michael', 'The Undertaker',
-        ];
-
-        for (const name of PEOPLE) {
-            if (haystack.includes(name)) {
-                // Merge Jim Butler / James Butler
-                const key = (name === 'James Butler') ? 'Jim Butler' : name;
-                if (!peopleMentions[key]) peopleMentions[key] = [];
-                // Avoid duplicate quote entries for same person
-                if (!peopleMentions[key].some(existing => existing.id === q.id)) {
-                    peopleMentions[key].push(q);
+        for (const alias of SEARCH_NAMES) {
+            if (haystack.includes(alias)) {
+                const canonical = NAME_ALIASES[alias];
+                if (!quoteMentions[canonical]) quoteMentions[canonical] = [];
+                if (!quoteMentions[canonical].some(existing => existing.id === q.id)) {
+                    quoteMentions[canonical].push(q);
                 }
             }
         }
     });
 
-    // Sort by quote count, then by name
-    const sorted = Object.entries(peopleMentions)
-        .filter(([, qs]) => qs.length >= 1)
-        .sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+    // Also scan for profile names directly (catches names not in alias map)
+    quotes.forEach(q => {
+        const haystack = `${q.quote || ''} ${q.context || ''}`;
+        Object.keys(profileMap).forEach(name => {
+            if (name.length > 3 && haystack.includes(name)) {
+                if (!quoteMentions[name]) quoteMentions[name] = [];
+                if (!quoteMentions[name].some(existing => existing.id === q.id)) {
+                    quoteMentions[name].push(q);
+                }
+            }
+        });
+    });
 
-    if (!sorted.length) return;
+    // ── Build the three tiers ──
 
-    grid.innerHTML = sorted.map(([name, qs]) => {
-        const years = [...new Set(qs.map(q => q.year))].sort();
-        const sample = qs[0];
-        const yearRange = years.length > 1 ? `${years[0]}–${years[years.length - 1]}` : `${years[0]}`;
+    // Tier 1: Featured — family + partner with rich profiles (importance > 25)
+    const tier1Names = ['Ma', 'The Pops', 'Rob', 'Michael'];
 
-        return `
-            <div class="vault-person-card">
-                <div class="vault-person-card__name">${name}</div>
-                <div class="vault-person-card__count">${qs.length} quote${qs.length !== 1 ? 's' : ''} &middot; ${yearRange}</div>
-                <div class="vault-person-card__sample">&ldquo;${sample.quote.length > 80 ? sample.quote.slice(0, 80) + '...' : sample.quote}&rdquo;</div>
+    // Tier 2: Quoted — people who appear in vault quotes and have profiles
+    // Tier 3: The Unquoted — high-importance people who never appear in vault quotes
+
+    const tier1 = [];
+    const tier2 = [];
+    const tier3 = [];
+    const usedNames = new Set();
+
+    // Build tier 1
+    tier1Names.forEach(name => {
+        const profile = profileMap[name];
+        if (profile) {
+            tier1.push({ profile, quoteCount: (quoteMentions[name] || []).length, quotes: quoteMentions[name] || [] });
+            usedNames.add(name);
+        }
+    });
+
+    // Build tier 2: quoted people with profiles, sorted by importance
+    Object.entries(quoteMentions).forEach(([name, qs]) => {
+        if (usedNames.has(name)) return;
+        const profile = profileMap[name];
+        if (profile && profile.person) {
+            tier2.push({ profile, quoteCount: qs.length, quotes: qs });
+            usedNames.add(name);
+        }
+    });
+    tier2.sort((a, b) => (b.profile.person.importance_score || 0) - (a.profile.person.importance_score || 0));
+
+    // Build tier 3: unquoted people with importance > 5 or rich profiles
+    Object.entries(profileMap).forEach(([name, entry]) => {
+        if (usedNames.has(name)) return;
+        const p = entry.person || {};
+        const richness = (entry.highlights || []).length + (entry.timeline_events || []).length;
+        if ((p.importance_score || 0) >= 10 || richness >= 3) {
+            tier3.push({ profile: entry, quoteCount: 0, quotes: [] });
+            usedNames.add(name);
+        }
+    });
+    tier3.sort((a, b) => (b.profile.person.importance_score || 0) - (a.profile.person.importance_score || 0));
+
+    // ── Render ──
+    let html = '';
+
+    // Tier 1: Featured people — large cards
+    if (tier1.length) {
+        html += '<div class="vault-people-tier vault-people-tier--featured">';
+        html += tier1.map(item => renderFeaturedPersonCard(item)).join('');
+        html += '</div>';
+    }
+
+    // Tier 2: Quoted people — medium cards
+    if (tier2.length) {
+        html += `<div class="vault-people-tier-label">Also in the Vault</div>`;
+        html += '<div class="vault-people-tier vault-people-tier--quoted">';
+        html += tier2.map(item => renderQuotedPersonCard(item)).join('');
+        html += '</div>';
+    }
+
+    // Tier 3: The Unquoted — special section
+    if (tier3.length) {
+        html += `
+            <div class="vault-people-unquoted">
+                <div class="vault-people-unquoted__label">The Unquoted</div>
+                <div class="vault-people-unquoted__note">Some people are so woven into the fabric that the fabric forgets to name them.</div>
+                <div class="vault-people-tier vault-people-tier--unquoted">
+                    ${tier3.map(item => renderUnquotedPersonCard(item)).join('')}
+                </div>
             </div>
         `;
+    }
+
+    grid.innerHTML = html;
+}
+
+function renderFeaturedPersonCard(item) {
+    const p = item.profile.person || {};
+    const events = item.profile.timeline_events || [];
+    const highlights = item.profile.highlights || [];
+    const coOccurrences = item.profile.co_occurrences || [];
+    const cat = CATEGORY_CONFIG[p.category] || CATEGORY_CONFIG.other;
+    const maxImportance = 257; // Ma's score — the ceiling
+
+    // Year range from timeline events
+    const eventYears = events.map(e => e.year).filter(Boolean).sort((a, b) => a - b);
+    const yearRange = eventYears.length > 1
+        ? `${eventYears[0]}–${eventYears[eventYears.length - 1]}`
+        : p.active_years || '';
+
+    // Importance bar width (percentage of max)
+    const importancePct = Math.min(((p.importance_score || 0) / maxImportance) * 100, 100);
+
+    // Build mini-timeline: dots by year, colored by event type
+    const miniTimeline = buildMiniTimeline(events);
+
+    // Best highlight
+    const bestHighlight = highlights.length > 0
+        ? highlights.reduce((best, h) => (h.vader_compound || 0) > (best.vader_compound || 0) ? h : best, highlights[0])
+        : null;
+
+    // Sample quote from vault
+    const sampleQuote = item.quotes.length > 0
+        ? item.quotes.reduce((best, q) => (q.quote || '').length > (best.quote || '').length ? q : best, item.quotes[0])
+        : null;
+
+    // Connection text
+    const connection = p.connection || p.relation || '';
+
+    return `
+        <div class="vault-person-card vault-person-card--featured">
+            <div class="vault-person-card__header">
+                <div class="vault-person-card__name">${p.name}</div>
+                <span class="vault-person-card__category" style="background: ${cat.color}20; color: ${cat.color}; border-color: ${cat.color}40">${cat.label}${p.relation ? ' &middot; ' + p.relation : ''}</span>
+            </div>
+            ${connection && connection !== p.relation ? `<div class="vault-person-card__connection">${connection}</div>` : ''}
+            <div class="vault-person-card__importance">
+                <div class="vault-person-card__importance-bar">
+                    <div class="vault-person-card__importance-fill" style="width: ${importancePct}%"></div>
+                </div>
+                <span class="vault-person-card__importance-score">${Math.round(p.importance_score || 0)}</span>
+            </div>
+            ${yearRange ? `<div class="vault-person-card__years">${yearRange}</div>` : ''}
+            ${miniTimeline}
+            ${bestHighlight ? `<div class="vault-person-card__highlight">${bestHighlight.highlight}</div>` : ''}
+            ${sampleQuote ? `
+                <div class="vault-person-card__quote">
+                    &ldquo;${sampleQuote.quote.length > 120 ? sampleQuote.quote.slice(0, 120) + '...' : sampleQuote.quote}&rdquo;
+                    <span class="vault-person-card__quote-year">${sampleQuote.year}</span>
+                </div>
+            ` : ''}
+            <div class="vault-person-card__stats">
+                ${item.quoteCount > 0 ? `<span class="vault-person-card__stat">${item.quoteCount} vault quote${item.quoteCount !== 1 ? 's' : ''}</span>` : ''}
+                ${events.length > 0 ? `<span class="vault-person-card__stat">${events.length} timeline event${events.length !== 1 ? 's' : ''}</span>` : ''}
+                ${coOccurrences.length > 0 ? `<span class="vault-person-card__stat">${coOccurrences.length} connection${coOccurrences.length !== 1 ? 's' : ''}</span>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+function renderQuotedPersonCard(item) {
+    const p = item.profile.person || {};
+    const highlights = item.profile.highlights || [];
+    const events = item.profile.timeline_events || [];
+    const cat = CATEGORY_CONFIG[p.category] || CATEGORY_CONFIG.other;
+    const maxImportance = 257;
+    const importancePct = Math.min(((p.importance_score || 0) / maxImportance) * 100, 100);
+
+    const bestHighlight = highlights.length > 0 ? highlights[0] : null;
+    const sampleQuote = item.quotes.length > 0 ? item.quotes[0] : null;
+    const yearRange = p.active_years || '';
+
+    return `
+        <div class="vault-person-card vault-person-card--quoted">
+            <div class="vault-person-card__header">
+                <div class="vault-person-card__name">${p.name}</div>
+                <span class="vault-person-card__category" style="background: ${cat.color}20; color: ${cat.color}; border-color: ${cat.color}40">${cat.label}</span>
+            </div>
+            ${p.connection ? `<div class="vault-person-card__connection">${p.connection}</div>` : ''}
+            <div class="vault-person-card__importance">
+                <div class="vault-person-card__importance-bar">
+                    <div class="vault-person-card__importance-fill" style="width: ${importancePct}%"></div>
+                </div>
+                <span class="vault-person-card__importance-score">${Math.round(p.importance_score || 0)}</span>
+            </div>
+            ${yearRange ? `<div class="vault-person-card__years">${yearRange}</div>` : ''}
+            ${bestHighlight ? `<div class="vault-person-card__highlight">${bestHighlight.highlight}</div>` : ''}
+            ${sampleQuote ? `
+                <div class="vault-person-card__quote">
+                    &ldquo;${sampleQuote.quote.length > 80 ? sampleQuote.quote.slice(0, 80) + '...' : sampleQuote.quote}&rdquo;
+                    <span class="vault-person-card__quote-year">${sampleQuote.year}</span>
+                </div>
+            ` : ''}
+            <div class="vault-person-card__stats">
+                <span class="vault-person-card__stat">${item.quoteCount} quote${item.quoteCount !== 1 ? 's' : ''}</span>
+                ${events.length > 0 ? `<span class="vault-person-card__stat">${events.length} event${events.length !== 1 ? 's' : ''}</span>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+function renderUnquotedPersonCard(item) {
+    const p = item.profile.person || {};
+    const highlights = item.profile.highlights || [];
+    const events = item.profile.timeline_events || [];
+    const cat = CATEGORY_CONFIG[p.category] || CATEGORY_CONFIG.other;
+
+    const bestHighlight = highlights.length > 0 ? highlights[0] : null;
+    const yearRange = p.active_years || '';
+
+    return `
+        <div class="vault-person-card vault-person-card--unquoted">
+            <div class="vault-person-card__header">
+                <div class="vault-person-card__name">${p.name}</div>
+                <span class="vault-person-card__category" style="background: ${cat.color}20; color: ${cat.color}; border-color: ${cat.color}40">${cat.label}${p.relation ? ' &middot; ' + p.relation : ''}</span>
+            </div>
+            ${yearRange ? `<div class="vault-person-card__years">${yearRange}</div>` : ''}
+            ${bestHighlight ? `<div class="vault-person-card__highlight">${bestHighlight.highlight}</div>` : ''}
+            <div class="vault-person-card__stats">
+                <span class="vault-person-card__stat">importance: ${Math.round(p.importance_score || 0)}</span>
+                ${events.length > 0 ? `<span class="vault-person-card__stat">${events.length} event${events.length !== 1 ? 's' : ''}</span>` : ''}
+                ${highlights.length > 0 ? `<span class="vault-person-card__stat">${highlights.length} highlight${highlights.length !== 1 ? 's' : ''}</span>` : ''}
+            </div>
+        </div>
+    `;
+}
+
+function buildMiniTimeline(events) {
+    if (!events.length) return '';
+
+    const years = events.map(e => e.year).filter(Boolean);
+    if (!years.length) return '';
+
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+    const span = maxYear - minYear || 1;
+
+    // Group events by year for dot sizing
+    const byYear = {};
+    events.forEach(e => {
+        if (!e.year) return;
+        if (!byYear[e.year]) byYear[e.year] = [];
+        byYear[e.year].push(e);
+    });
+
+    const dots = Object.entries(byYear).map(([year, yearEvents]) => {
+        const pct = ((year - minYear) / span) * 100;
+        const primaryType = yearEvents[0].event_type || 'social';
+        const color = EVENT_TYPE_COLORS[primaryType] || '#8a8a9a';
+        const size = Math.min(4 + yearEvents.length * 2, 10);
+        const title = yearEvents.map(e => `${e.year}: ${e.event_description}`).join('\n');
+
+        return `<div class="vault-timeline-dot" style="left:${pct}%; width:${size}px; height:${size}px; background:${color}" title="${title.replace(/"/g, '&quot;')}"></div>`;
     }).join('');
+
+    return `
+        <div class="vault-person-card__timeline">
+            <span class="vault-timeline-year">${minYear}</span>
+            <div class="vault-timeline-track">${dots}</div>
+            <span class="vault-timeline-year">${maxYear}</span>
+        </div>
+    `;
 }
 
 // ── What the Archive Reveals ──
@@ -547,6 +850,7 @@ function renderSoundtrack(songs) {
 // Auto-init
 initVault()
     .then(() => initWormholes('vault'))
+    .then(() => plantClue('clue6', document.querySelector('.vault-featured')))
     .catch(() => {
         const el = document.querySelector('.vault-quote-wall');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';

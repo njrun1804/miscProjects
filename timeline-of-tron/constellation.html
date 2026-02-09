@@ -46,11 +46,16 @@
         Some people are so woven into the fabric that the fabric forgets to name them.
     </p>
 
-    <!-- Inner Circle Timeline -->
-    <section class="inner-circle-timeline">
-        <h2>The Circle Over Time</h2>
-        <canvas id="innerCircleChart"></canvas>
+    <!-- Network Over Time -->
+    <section class="network-over-time">
+        <h2>The Network Over Time</h2>
+        <p class="network-subtitle">How John's circle grew, shifted, and evolved — year by year</p>
+        <canvas id="networkChart"></canvas>
+        <div class="network-legend" id="networkLegend"></div>
     </section>
+
+    <!-- Network Insights -->
+    <section class="network-insights" id="networkInsights"></section>
 
     <div id="lj-footer-mount"></div>
 
@@ -60,8 +65,6 @@
     <script type="module">
         import { initNav } from './js/nav.js';
         import './js/search.js';
-        import './js/constellation.js';
-
         initNav({
             room: 'constellation',
             mood: 'contemplative',
@@ -69,5 +72,6 @@
             subtitle: 'The People'
         });
     </script>
+    <script type="module" src="js/constellation.js"></script>
 </body>
 </html>

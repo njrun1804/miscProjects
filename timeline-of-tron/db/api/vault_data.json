@@ -1,0 +1,1396 @@
+{
+  "quotes": [
+    {
+      "id": 12,
+      "quote": "Without any hesitation, I proudly proclaim that 2007 was undoubtedly the most colorful and eventful year of my life.",
+      "context": "Year-end reflection, 2007",
+      "year": 2007,
+      "sentiment_score": 0.5333,
+      "vader_compound": -0.2755,
+      "emotion": "pride",
+      "theme": "reflection"
+    },
+    {
+      "id": 41,
+      "quote": "the beginning not of a temporary diet, but a desperate lifestyle alteration",
+      "context": "About starting fitness with James Butler, Sep 2007",
+      "year": 2007,
+      "sentiment_score": -0.6,
+      "vader_compound": -0.4497,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 44,
+      "quote": "Some day you're gonna look back and be happy you recorded all of this stuff",
+      "context": "Anonymous commenter on Timeline IV",
+      "year": 2007,
+      "sentiment_score": 0.4,
+      "vader_compound": 0.5719,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 47,
+      "quote": "half of these entries don't make any sense to the reader [or the writer, haha]",
+      "context": "Crazy Chili Dog post",
+      "year": 2007,
+      "sentiment_score": 0.0167,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 75,
+      "quote": "Sometimes the door without a sign is the sign",
+      "context": "Crazy Chili Dog, Nov 2007",
+      "year": 2007,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 76,
+      "quote": "My oh my, how the times have changed. A full tank. No Angel. Triple digits. Reconciliation.",
+      "context": "Crazy Chili Dog closing, Nov 2007",
+      "year": 2007,
+      "sentiment_score": 0.35,
+      "vader_compound": -0.296,
+      "emotion": "neutral",
+      "theme": "growth"
+    },
+    {
+      "id": 13,
+      "quote": "Conquered obstacles, dreams turned reality, fears for happy tears",
+      "context": "Year-end reflection, 2008",
+      "year": 2008,
+      "sentiment_score": 0.375,
+      "vader_compound": 0.0258,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 14,
+      "quote": "2008: Rewarding, Refreshing, Heavenly. I Did It.",
+      "context": "Timeline V closing line, 2008",
+      "year": 2008,
+      "sentiment_score": 0.5,
+      "vader_compound": 0.8126,
+      "emotion": "pride",
+      "theme": "reflection"
+    },
+    {
+      "id": 15,
+      "quote": "Family First...Friendship takes two, not one.",
+      "context": "Timeline V, 2008",
+      "year": 2008,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "love",
+      "theme": "relationships"
+    },
+    {
+      "id": 39,
+      "quote": "I said exactly what I needed to say; now I look back with a smile.",
+      "context": "About coming out, from Merrie Melodies post",
+      "year": 2008,
+      "sentiment_score": 0.1833,
+      "vader_compound": 0.3612,
+      "emotion": "neutral",
+      "theme": "identity"
+    },
+    {
+      "id": 43,
+      "quote": "Life is Beautiful",
+      "context": "Jim Butler comment on Click Click Boom",
+      "year": 2008,
+      "sentiment_score": 0.85,
+      "vader_compound": 0.5994,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 46,
+      "quote": "I cannot and will not pass any negative sanction upon anything I've ever said because I know at one time, at that specific time, it's how I felt.",
+      "context": "Yeah I Said It post",
+      "year": 2008,
+      "sentiment_score": -0.15,
+      "vader_compound": 0.4585,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 53,
+      "quote": "Well written, John, but as usual, makes little sense to me. You are way too esoteric.",
+      "context": "Jim Butler comment on Nut Cracker",
+      "year": 2008,
+      "sentiment_score": -0.2188,
+      "vader_compound": 0.1406,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 54,
+      "quote": "When Jim Butler calls you esoteric, well...that's just hilarious (pot, meet kettle)",
+      "context": "Pam D comment on Nut Cracker",
+      "year": 2008,
+      "sentiment_score": 0.5,
+      "vader_compound": 0.4019,
+      "emotion": "humor",
+      "theme": "reflection"
+    },
+    {
+      "id": 55,
+      "quote": "Keep on evolving John!",
+      "context": "Alison comment on Timeline V",
+      "year": 2008,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 56,
+      "quote": "the best yet...showcased all the cool times...and gave every true friend their moment",
+      "context": "Anonymous comment on Timeline V",
+      "year": 2008,
+      "sentiment_score": 0.5667,
+      "vader_compound": 0.91,
+      "emotion": "joy",
+      "theme": "relationships"
+    },
+    {
+      "id": 61,
+      "quote": "The power of an internal desire liberated!",
+      "context": "J. Tronolone, March 2008 (from Kia Sorento post)",
+      "year": 2008,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.4574,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 63,
+      "quote": "Can't a guy just get tired?",
+      "context": "Fall 2008, listing all the activities",
+      "year": 2008,
+      "sentiment_score": -0.4,
+      "vader_compound": -0.4404,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 65,
+      "quote": "The feeling of being in that spotlight was truly very special",
+      "context": "On headlining ECD season finales",
+      "year": 2008,
+      "sentiment_score": 0.4643,
+      "vader_compound": 0.7501,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 67,
+      "quote": "someone crushed his acorn",
+      "context": "Nut Cracker closing line, Sep 2008",
+      "year": 2008,
+      "sentiment_score": -0.1,
+      "vader_compound": -0.4215,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 77,
+      "quote": "regret ever regretting",
+      "context": "Yeah I Said It, Mar 2008 — credited to Kevin Megill",
+      "year": 2008,
+      "sentiment_score": 0.0,
+      "vader_compound": -0.6705,
+      "emotion": "sadness",
+      "theme": "reflection"
+    },
+    {
+      "id": 78,
+      "quote": "Inner joy. Endless privilege and pleasure. I've never felt happier to be alive than here and now.",
+      "context": "Yeah I Said It, Mar 2008 — written weeks before coming out",
+      "year": 2008,
+      "sentiment_score": 0.1938,
+      "vader_compound": 0.8697,
+      "emotion": "joy",
+      "theme": "identity"
+    },
+    {
+      "id": 79,
+      "quote": "I really love how you are who you are regardless of what others think. You really possess something that many strive to obtain but are never able to, due to insecurities and expectations.",
+      "context": "Anonymous commenter on Yeah I Said It, Mar 2008",
+      "year": 2008,
+      "sentiment_score": 0.165,
+      "vader_compound": -0.2391,
+      "emotion": "defiance",
+      "theme": "relationships"
+    },
+    {
+      "id": 80,
+      "quote": "I love your writing style...it's like, you say what you wanna say and you don't care what anyone thinks.",
+      "context": "Kevin Megill (Kev), commenting on Yeah I Said It",
+      "year": 2008,
+      "sentiment_score": 0.5,
+      "vader_compound": 0.6214,
+      "emotion": "love",
+      "theme": "relationships"
+    },
+    {
+      "id": 16,
+      "quote": "Sometimes it is hell trying to get to heaven.",
+      "context": "The Undertaker, Jan 25, 2009",
+      "year": 2009,
+      "sentiment_score": 0.0,
+      "vader_compound": -0.3182,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 17,
+      "quote": "You cannot fear death once you've touched heaven.",
+      "context": "J. Tronolone, Oct 11, 2009 (SkyDive II)",
+      "year": 2009,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.8432,
+      "emotion": "fear",
+      "theme": "reflection"
+    },
+    {
+      "id": 18,
+      "quote": "Walk the plank, take the jump, and still come up alive. What's a chance if you don't take it.",
+      "context": "J. Tronolone, Jul 5, 2009",
+      "year": 2009,
+      "sentiment_score": 0.1,
+      "vader_compound": 0.5574,
+      "emotion": "determination",
+      "theme": "reflection"
+    },
+    {
+      "id": 19,
+      "quote": "Friends, Family, Freedom. The Greatest Year Ever. 2009.",
+      "context": "Timeline VI closing line",
+      "year": 2009,
+      "sentiment_score": 1.0,
+      "vader_compound": 0.91,
+      "emotion": "joy",
+      "theme": "relationships"
+    },
+    {
+      "id": 28,
+      "quote": "It wasn't something I was happy about doing, but it is something I'm happy I did.",
+      "context": "On dodgeball retirement, 2009",
+      "year": 2009,
+      "sentiment_score": 0.8,
+      "vader_compound": -0.7181,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 50,
+      "quote": "You deserve a prize for being the last person on livejournal",
+      "context": "C. Adams comment on Timeline VI",
+      "year": 2009,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.5106,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 52,
+      "quote": "you reminded me of a LOT of events that i have forgotten about",
+      "context": "melsa (Melissa Kerr) comment on Timeline VI",
+      "year": 2009,
+      "sentiment_score": 0.0,
+      "vader_compound": -0.2263,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 62,
+      "quote": "I finally came to the realization that I needed to move away from something that simply didn't make me happy anymore",
+      "context": "Kia Sorento post, about ECD retirement",
+      "year": 2009,
+      "sentiment_score": 0.2667,
+      "vader_compound": -0.4585,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 64,
+      "quote": "I got tired of kissin' ass",
+      "context": "On ECD retirement, On Newsstands Now",
+      "year": 2009,
+      "sentiment_score": -0.4,
+      "vader_compound": -0.7506,
+      "emotion": "sadness",
+      "theme": "growth"
+    },
+    {
+      "id": 20,
+      "quote": "0 = Regrets",
+      "context": "Year-end stats, 2010",
+      "year": 2010,
+      "sentiment_score": -0.1,
+      "vader_compound": -0.3612,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 21,
+      "quote": "In love, and unashamed by it and for whom it's for",
+      "context": "J. Tronolone, March 22, 2011",
+      "year": 2011,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.6369,
+      "emotion": "pride",
+      "theme": "relationships"
+    },
+    {
+      "id": 22,
+      "quote": "the beauty in finality. The wonder of commencement.",
+      "context": "Timeline X opening, 2013",
+      "year": 2013,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.5859,
+      "emotion": "joy",
+      "theme": "celebration"
+    },
+    {
+      "id": 23,
+      "quote": "the best + the most = .TWENTY '13.",
+      "context": "Timeline X closing line",
+      "year": 2013,
+      "sentiment_score": 0.75,
+      "vader_compound": 0.6369,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 24,
+      "quote": "If all keeps up, 2013 could honestly become the greatest year of my adulthood",
+      "context": "March 31, 2013",
+      "year": 2013,
+      "sentiment_score": 0.8,
+      "vader_compound": 0.802,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 25,
+      "quote": "just woke up from this dream.. but it wasn't a dream!!!",
+      "context": "Aug 12, 2013 — WM XXX tickets secured",
+      "year": 2013,
+      "sentiment_score": 0.0,
+      "vader_compound": -0.4563,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 26,
+      "quote": "2010 and 2013 will no doubt stand the test of time. The only difference is that now, in '13, I've had someone to share all those amazing times.",
+      "context": "Nov 21, 2013",
+      "year": 2013,
+      "sentiment_score": 0.3,
+      "vader_compound": 0.3182,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 40,
+      "quote": "He simply made being a wrestling fan acceptable, the 'in' thing.",
+      "context": "About Phil Campanella, from The Influlist",
+      "year": 2013,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.5574,
+      "emotion": "anger",
+      "theme": "reflection"
+    },
+    {
+      "id": 60,
+      "quote": "I enjoy reading this every year",
+      "context": "Theresa Lee comment on Timeline X",
+      "year": 2013,
+      "sentiment_score": 0.4,
+      "vader_compound": 0.4939,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 71,
+      "quote": "Our time is precious and should occasionally be used to credit certain individuals who may have simply made even the smallest difference",
+      "context": "The Influlist opening, 2013",
+      "year": 2013,
+      "sentiment_score": 0.1786,
+      "vader_compound": 0.8126,
+      "emotion": "nostalgia",
+      "theme": "reflection"
+    },
+    {
+      "id": 11,
+      "quote": "the committee has spoken, Darrell.",
+      "context": "To The Pops about Comedian of the Year",
+      "year": 2014,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 27,
+      "quote": "All that keeps running through my head is 'I finally did it.' I never, ever thought the day would come.",
+      "context": "Apr 10, 2014 — meeting The Undertaker",
+      "year": 2014,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "pride",
+      "theme": "reflection"
+    },
+    {
+      "id": 68,
+      "quote": "10 Years After The First .. 20 Years To Meet The Man.",
+      "context": "WrestleMania XXX subtitle, Timeline XI",
+      "year": 2014,
+      "sentiment_score": 0.25,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "adventure"
+    },
+    {
+      "id": 69,
+      "quote": "When you enjoy the journeys, the destinations magnify",
+      "context": "Timeline XI opening line",
+      "year": 2014,
+      "sentiment_score": 0.4,
+      "vader_compound": 0.4939,
+      "emotion": "neutral",
+      "theme": "adventure"
+    },
+    {
+      "id": 70,
+      "quote": "The Epic Handshake, and then some.. 2|0'1|4.",
+      "context": "Timeline XI closing line",
+      "year": 2014,
+      "sentiment_score": 0.1,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 72,
+      "quote": "Well you guys just made his dream come true.",
+      "context": "Diana DiBuccio, Jan 28, 2014 — after securing Undertaker meet-and-greet tickets",
+      "year": 2014,
+      "sentiment_score": 0.35,
+      "vader_compound": 0.7096,
+      "emotion": "anger",
+      "theme": "reflection"
+    },
+    {
+      "id": 73,
+      "quote": "He's gonna have a heart attack and die on stage.",
+      "context": "Ryan Letsche or Diana DiBuccio, about John's reaction to Undertaker tickets",
+      "year": 2014,
+      "sentiment_score": 0.0,
+      "vader_compound": -0.7906,
+      "emotion": "love",
+      "theme": "reflection"
+    },
+    {
+      "id": 74,
+      "quote": "OMG. Pam, if you got it, he will DIE!",
+      "context": "Diana DiBuccio, Undertaker ticket coordination",
+      "year": 2014,
+      "sentiment_score": 0.0,
+      "vader_compound": -0.7118,
+      "emotion": "sadness",
+      "theme": "reflection"
+    },
+    {
+      "id": 58,
+      "quote": "having kids would be a good idea, except that I'm not willing to give up my life",
+      "context": "Timeline XII (2015)",
+      "year": 2015,
+      "sentiment_score": 0.2875,
+      "vader_compound": 0.4404,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 4,
+      "quote": "unquestionably, the greatest WWE experience of all-time",
+      "context": "WrestleMania 32, 2016",
+      "year": 2016,
+      "sentiment_score": 1.0,
+      "vader_compound": 0.6369,
+      "emotion": "joy",
+      "theme": "adventure"
+    },
+    {
+      "id": 45,
+      "quote": "Oh my god you're such a huge dork. I read the whole blog!",
+      "context": "Leah N comment on Timeline XIII",
+      "year": 2016,
+      "sentiment_score": 0.2167,
+      "vader_compound": 0.3164,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 1,
+      "quote": "I Just Want To Wake Up. (I Did!)",
+      "context": "Post-surgery reflection, 2017",
+      "year": 2017,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.1511,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 29,
+      "quote": "1997, 2007, 2015, and now 2017. My personal SummerSlam story, some 20 years long, complete.",
+      "context": "SummerSlam 2017",
+      "year": 2017,
+      "sentiment_score": 0.0167,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 30,
+      "quote": "THE GREAT ADVENTURE 2.0.1.7",
+      "context": "2017 year subtitle",
+      "year": 2017,
+      "sentiment_score": 0.8,
+      "vader_compound": 0.8345,
+      "emotion": "joy",
+      "theme": "adventure"
+    },
+    {
+      "id": 31,
+      "quote": "patience & gratitude",
+      "context": "Resignation motto, Oct 2, 2018",
+      "year": 2018,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.5106,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 59,
+      "quote": "Life, Rejoined. . M M 1 8 .",
+      "context": "Timeline XV closing line",
+      "year": 2018,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 2,
+      "quote": "the best, the longest, and the greatest",
+      "context": "Describing Australia & New Zealand trip, 2019",
+      "year": 2019,
+      "sentiment_score": 1.0,
+      "vader_compound": 0.8555,
+      "emotion": "joy",
+      "theme": "adventure"
+    },
+    {
+      "id": 32,
+      "quote": "What am I getting myself into?",
+      "context": "Meeting Matt, Jul 3, 2019",
+      "year": 2019,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "identity"
+    },
+    {
+      "id": 33,
+      "quote": "Halfway to 70",
+      "context": "35th birthday, Sep 2019",
+      "year": 2019,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 34,
+      "quote": "best. longest. most. greatest.",
+      "context": "Australia/NZ trip summary, 2019",
+      "year": 2019,
+      "sentiment_score": 0.8333,
+      "vader_compound": 0.8655,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 35,
+      "quote": "2020, challenge accepted",
+      "context": "NYE 2019",
+      "year": 2019,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.34,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 42,
+      "quote": "a lot of people say dont think of the past, but i feel like the past totally motivates to outdo it",
+      "context": "wwecoowner reply to Mike Lanza, Timeline XVI",
+      "year": 2019,
+      "sentiment_score": -0.1667,
+      "vader_compound": 0.5023,
+      "emotion": "nostalgia",
+      "theme": "reflection"
+    },
+    {
+      "id": 5,
+      "quote": "not a death sentence, living proof",
+      "context": "During quarantine recovery, 2020",
+      "year": 2020,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.4449,
+      "emotion": "neutral",
+      "theme": "resilience"
+    },
+    {
+      "id": 9,
+      "quote": "job doesn't get easier unless yours does first",
+      "context": "After dropping $160 on desserts for care team, 2020",
+      "year": 2020,
+      "sentiment_score": 0.25,
+      "vader_compound": -0.3252,
+      "emotion": "neutral",
+      "theme": "adventure"
+    },
+    {
+      "id": 10,
+      "quote": "the record is the record. next question.",
+      "context": "Response to Famous Faces criticism",
+      "year": 2020,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 36,
+      "quote": "My friends got their ladies, they're all having babies, but I just want to have some fun.",
+      "context": "George Michael 'Fastlove' quote, Nov 18, 2020",
+      "year": 2020,
+      "sentiment_score": 0.3,
+      "vader_compound": 0.7876,
+      "emotion": "sadness",
+      "theme": "relationships"
+    },
+    {
+      "id": 48,
+      "quote": "JTP only you would call 2020 great",
+      "context": "Tim M comment on Timeline XVII",
+      "year": 2020,
+      "sentiment_score": 0.4,
+      "vader_compound": 0.6249,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 49,
+      "quote": "So energizing to sense the energy you bring to life",
+      "context": "Edwards comment on Timeline XVII",
+      "year": 2020,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.659,
+      "emotion": "joy",
+      "theme": "reflection"
+    },
+    {
+      "id": 51,
+      "quote": "oh my gosh! i am so honored to have made multiple appearances!",
+      "context": "Jackie T comment on Timeline XVII",
+      "year": 2020,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.7543,
+      "emotion": "anger",
+      "theme": "reflection"
+    },
+    {
+      "id": 57,
+      "quote": "Shit I need to do this. It's so cool",
+      "context": "Shane comment on Timeline XVII",
+      "year": 2020,
+      "sentiment_score": 0.075,
+      "vader_compound": -0.1553,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 6,
+      "quote": "it's called dedication. look it up.",
+      "context": "Response to 8.6 lbs shrimp stat",
+      "year": 2021,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 7,
+      "quote": "the notebook doesn't lie, ValPal.",
+      "context": "Response to 218 ping pong rounds",
+      "year": 2021,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 8,
+      "quote": "you're welcome for the immortality.",
+      "context": "To Valerie about documenting everything",
+      "year": 2021,
+      "sentiment_score": 0.8,
+      "vader_compound": 0.4588,
+      "emotion": "neutral",
+      "theme": "reflection"
+    },
+    {
+      "id": 37,
+      "quote": "Life went from 9.5 to 9.7 in 10m, 37s",
+      "context": "Job acceptance moment, 2021",
+      "year": 2021,
+      "sentiment_score": 0.0,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "career"
+    },
+    {
+      "id": 38,
+      "quote": "Baby is here. Everyone healthy and safe.",
+      "context": "Lawrence Michael's birth, Dec 23, 2021",
+      "year": 2021,
+      "sentiment_score": 0.5,
+      "vader_compound": 0.6808,
+      "emotion": "joy",
+      "theme": "health"
+    },
+    {
+      "id": 3,
+      "quote": "the most spectacular day I've ever experienced",
+      "context": "Super Bowl LVII, 2023",
+      "year": 2023,
+      "sentiment_score": 0.6333,
+      "vader_compound": 0.0,
+      "emotion": "neutral",
+      "theme": "adventure"
+    }
+  ],
+  "top_keywords": [
+    {
+      "id": 211,
+      "year": 2026,
+      "keyword": "trip",
+      "tfidf_score": 1.0
+    },
+    {
+      "id": 11,
+      "year": 2005,
+      "keyword": "period wrestlemania",
+      "tfidf_score": 0.5676
+    },
+    {
+      "id": 12,
+      "year": 2005,
+      "keyword": "period",
+      "tfidf_score": 0.5676
+    },
+    {
+      "id": 13,
+      "year": 2005,
+      "keyword": "attendance",
+      "tfidf_score": 0.5016
+    },
+    {
+      "id": 91,
+      "year": 2014,
+      "keyword": "30th",
+      "tfidf_score": 0.492
+    },
+    {
+      "id": 15,
+      "year": 2006,
+      "keyword": "ongoing",
+      "tfidf_score": 0.4902
+    },
+    {
+      "id": 16,
+      "year": 2006,
+      "keyword": "ongoing march",
+      "tfidf_score": 0.4902
+    },
+    {
+      "id": 17,
+      "year": 2006,
+      "keyword": "70",
+      "tfidf_score": 0.4332
+    },
+    {
+      "id": 18,
+      "year": 2006,
+      "keyword": "dodgeball",
+      "tfidf_score": 0.3927
+    },
+    {
+      "id": 101,
+      "year": 2015,
+      "keyword": "10",
+      "tfidf_score": 0.3629
+    },
+    {
+      "id": 19,
+      "year": 2006,
+      "keyword": "30",
+      "tfidf_score": 0.3613
+    },
+    {
+      "id": 111,
+      "year": 2016,
+      "keyword": "wwe experience",
+      "tfidf_score": 0.3452
+    },
+    {
+      "id": 112,
+      "year": 2016,
+      "keyword": "experience",
+      "tfidf_score": 0.3452
+    },
+    {
+      "id": 113,
+      "year": 2016,
+      "keyword": "experience time",
+      "tfidf_score": 0.3452
+    },
+    {
+      "id": 114,
+      "year": 2016,
+      "keyword": "greatest wwe",
+      "tfidf_score": 0.3452
+    },
+    {
+      "id": 181,
+      "year": 2023,
+      "keyword": "day ve",
+      "tfidf_score": 0.3336
+    },
+    {
+      "id": 182,
+      "year": 2023,
+      "keyword": "spectacular day",
+      "tfidf_score": 0.3336
+    },
+    {
+      "id": 183,
+      "year": 2023,
+      "keyword": "experienced",
+      "tfidf_score": 0.3336
+    },
+    {
+      "id": 184,
+      "year": 2023,
+      "keyword": "ve experienced",
+      "tfidf_score": 0.3336
+    },
+    {
+      "id": 185,
+      "year": 2023,
+      "keyword": "spectacular",
+      "tfidf_score": 0.3336
+    },
+    {
+      "id": 14,
+      "year": 2005,
+      "keyword": "wrestlemania",
+      "tfidf_score": 0.3226
+    },
+    {
+      "id": 186,
+      "year": 2023,
+      "keyword": "day",
+      "tfidf_score": 0.3205
+    },
+    {
+      "id": 141,
+      "year": 2019,
+      "keyword": "longest",
+      "tfidf_score": 0.3204
+    },
+    {
+      "id": 115,
+      "year": 2016,
+      "keyword": "time",
+      "tfidf_score": 0.305
+    },
+    {
+      "id": 1,
+      "year": 2004,
+      "keyword": "project begins",
+      "tfidf_score": 0.3017
+    },
+    {
+      "id": 2,
+      "year": 2004,
+      "keyword": "panic",
+      "tfidf_score": 0.3017
+    },
+    {
+      "id": 3,
+      "year": 2004,
+      "keyword": "panic attacks",
+      "tfidf_score": 0.3017
+    },
+    {
+      "id": 4,
+      "year": 2004,
+      "keyword": "resulting panic",
+      "tfidf_score": 0.3017
+    },
+    {
+      "id": 5,
+      "year": 2004,
+      "keyword": "resulting",
+      "tfidf_score": 0.3017
+    },
+    {
+      "id": 6,
+      "year": 2004,
+      "keyword": "project",
+      "tfidf_score": 0.3017
+    },
+    {
+      "id": 31,
+      "year": 2008,
+      "keyword": "2008",
+      "tfidf_score": 0.299
+    },
+    {
+      "id": 171,
+      "year": 2022,
+      "keyword": "game",
+      "tfidf_score": 0.2977
+    },
+    {
+      "id": 81,
+      "year": 2013,
+      "keyword": "2013",
+      "tfidf_score": 0.2932
+    },
+    {
+      "id": 51,
+      "year": 2010,
+      "keyword": "hero",
+      "tfidf_score": 0.2924
+    },
+    {
+      "id": 52,
+      "year": 2010,
+      "keyword": "graduated",
+      "tfidf_score": 0.2924
+    },
+    {
+      "id": 53,
+      "year": 2010,
+      "keyword": "university",
+      "tfidf_score": 0.2924
+    },
+    {
+      "id": 102,
+      "year": 2015,
+      "keyword": "year",
+      "tfidf_score": 0.2753
+    },
+    {
+      "id": 131,
+      "year": 2018,
+      "keyword": "croatia",
+      "tfidf_score": 0.2738
+    },
+    {
+      "id": 61,
+      "year": 2011,
+      "keyword": "14",
+      "tfidf_score": 0.2672
+    },
+    {
+      "id": 187,
+      "year": 2023,
+      "keyword": "ve",
+      "tfidf_score": 0.2672
+    },
+    {
+      "id": 7,
+      "year": 2004,
+      "keyword": "car accident",
+      "tfidf_score": 0.2666
+    },
+    {
+      "id": 8,
+      "year": 2004,
+      "keyword": "accident",
+      "tfidf_score": 0.2666
+    },
+    {
+      "id": 9,
+      "year": 2004,
+      "keyword": "car",
+      "tfidf_score": 0.2666
+    },
+    {
+      "id": 54,
+      "year": 2010,
+      "keyword": "regrets",
+      "tfidf_score": 0.2583
+    },
+    {
+      "id": 41,
+      "year": 2009,
+      "keyword": "25",
+      "tfidf_score": 0.2579
+    },
+    {
+      "id": 116,
+      "year": 2016,
+      "keyword": "greatest",
+      "tfidf_score": 0.2544
+    },
+    {
+      "id": 103,
+      "year": 2015,
+      "keyword": "000 miles",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 104,
+      "year": 2015,
+      "keyword": "rated",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 105,
+      "year": 2015,
+      "keyword": "rated 10",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 106,
+      "year": 2015,
+      "keyword": "jackson",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 107,
+      "year": 2015,
+      "keyword": "kia",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 108,
+      "year": 2015,
+      "keyword": "kia soul",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 109,
+      "year": 2015,
+      "keyword": "soul",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 110,
+      "year": 2015,
+      "keyword": "spengeman",
+      "tfidf_score": 0.2503
+    },
+    {
+      "id": 121,
+      "year": 2017,
+      "keyword": "story",
+      "tfidf_score": 0.243
+    },
+    {
+      "id": 122,
+      "year": 2017,
+      "keyword": "summerslam",
+      "tfidf_score": 0.243
+    },
+    {
+      "id": 123,
+      "year": 2017,
+      "keyword": "complete",
+      "tfidf_score": 0.243
+    },
+    {
+      "id": 124,
+      "year": 2017,
+      "keyword": "volleyball",
+      "tfidf_score": 0.243
+    },
+    {
+      "id": 62,
+      "year": 2011,
+      "keyword": "begins",
+      "tfidf_score": 0.2423
+    },
+    {
+      "id": 10,
+      "year": 2004,
+      "keyword": "begins",
+      "tfidf_score": 0.2417
+    },
+    {
+      "id": 142,
+      "year": 2019,
+      "keyword": "tronolone",
+      "tfidf_score": 0.2403
+    },
+    {
+      "id": 143,
+      "year": 2019,
+      "keyword": "longest greatest",
+      "tfidf_score": 0.2403
+    },
+    {
+      "id": 144,
+      "year": 2019,
+      "keyword": "best longest",
+      "tfidf_score": 0.2403
+    },
+    {
+      "id": 161,
+      "year": 2021,
+      "keyword": "23",
+      "tfidf_score": 0.2362
+    },
+    {
+      "id": 42,
+      "year": 2009,
+      "keyword": "hell",
+      "tfidf_score": 0.2333
+    },
+    {
+      "id": 43,
+      "year": 2009,
+      "keyword": "heaven",
+      "tfidf_score": 0.2333
+    },
+    {
+      "id": 172,
+      "year": 2022,
+      "keyword": "100",
+      "tfidf_score": 0.2307
+    },
+    {
+      "id": 162,
+      "year": 2021,
+      "keyword": "vegas",
+      "tfidf_score": 0.23
+    },
+    {
+      "id": 92,
+      "year": 2014,
+      "keyword": "pops",
+      "tfidf_score": 0.223
+    },
+    {
+      "id": 191,
+      "year": 2024,
+      "keyword": "trip",
+      "tfidf_score": 0.2208
+    },
+    {
+      "id": 125,
+      "year": 2017,
+      "keyword": "20",
+      "tfidf_score": 0.2195
+    },
+    {
+      "id": 71,
+      "year": 2012,
+      "keyword": "ecd",
+      "tfidf_score": 0.2186
+    },
+    {
+      "id": 201,
+      "year": 2025,
+      "keyword": "road trip",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 202,
+      "year": 2025,
+      "keyword": "passed nj",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 203,
+      "year": 2025,
+      "keyword": "raised",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 204,
+      "year": 2025,
+      "keyword": "raised boro",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 205,
+      "year": 2025,
+      "keyword": "promotion passed",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 206,
+      "year": 2025,
+      "keyword": "16 states",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 207,
+      "year": 2025,
+      "keyword": "people 700",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 208,
+      "year": 2025,
+      "keyword": "road",
+      "tfidf_score": 0.2182
+    },
+    {
+      "id": 32,
+      "year": 2008,
+      "keyword": "year",
+      "tfidf_score": 0.2179
+    },
+    {
+      "id": 20,
+      "year": 2006,
+      "keyword": "dec",
+      "tfidf_score": 0.2165
+    },
+    {
+      "id": 151,
+      "year": 2020,
+      "keyword": "living",
+      "tfidf_score": 0.2156
+    },
+    {
+      "id": 21,
+      "year": 2007,
+      "keyword": "dodgeball",
+      "tfidf_score": 0.2135
+    },
+    {
+      "id": 117,
+      "year": 2016,
+      "keyword": "wwe",
+      "tfidf_score": 0.2079
+    },
+    {
+      "id": 44,
+      "year": 2009,
+      "keyword": "happy",
+      "tfidf_score": 0.2062
+    },
+    {
+      "id": 93,
+      "year": 2014,
+      "keyword": "30",
+      "tfidf_score": 0.2052
+    },
+    {
+      "id": 192,
+      "year": 2024,
+      "keyword": "oct 21",
+      "tfidf_score": 0.2051
+    },
+    {
+      "id": 193,
+      "year": 2024,
+      "keyword": "place armes",
+      "tfidf_score": 0.2051
+    },
+    {
+      "id": 194,
+      "year": 2024,
+      "keyword": "place",
+      "tfidf_score": 0.2051
+    },
+    {
+      "id": 195,
+      "year": 2024,
+      "keyword": "passed oct",
+      "tfidf_score": 0.2051
+    },
+    {
+      "id": 196,
+      "year": 2024,
+      "keyword": "personal best",
+      "tfidf_score": 0.2051
+    },
+    {
+      "id": 197,
+      "year": 2024,
+      "keyword": "18 20",
+      "tfidf_score": 0.2051
+    },
+    {
+      "id": 198,
+      "year": 2024,
+      "keyword": "pm age",
+      "tfidf_score": 0.2051
+    },
+    {
+      "id": 22,
+      "year": 2007,
+      "keyword": "27",
+      "tfidf_score": 0.2042
+    },
+    {
+      "id": 163,
+      "year": 2021,
+      "keyword": "lbs",
+      "tfidf_score": 0.2032
+    },
+    {
+      "id": 72,
+      "year": 2012,
+      "keyword": "oct 13",
+      "tfidf_score": 0.2031
+    },
+    {
+      "id": 73,
+      "year": 2012,
+      "keyword": "reopened world",
+      "tfidf_score": 0.2031
+    },
+    {
+      "id": 74,
+      "year": 2012,
+      "keyword": "reached",
+      "tfidf_score": 0.2031
+    },
+    {
+      "id": 75,
+      "year": 2012,
+      "keyword": "record 18",
+      "tfidf_score": 0.2031
+    }
+  ]
+}

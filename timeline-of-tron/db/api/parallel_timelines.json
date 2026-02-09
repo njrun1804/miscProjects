@@ -1,0 +1,938 @@
+[
+  {
+    "id": 1,
+    "year": 2001,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Cashier",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 2,
+    "year": 2004,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Monmouth University Student",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 3,
+    "year": 2004,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Life-altering car accident — panic attacks and anxiety",
+    "event_sentiment": -0.6875,
+    "intensity": 3.0
+  },
+  {
+    "id": 4,
+    "year": 2004,
+    "domain": "relationships",
+    "event_count": 2,
+    "key_event": "1 active + 1 new people (led by Tim Moore)",
+    "event_sentiment": 0.0,
+    "intensity": 0.6666666666666666
+  },
+  {
+    "id": 5,
+    "year": 2004,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "16 words written",
+    "event_sentiment": 0.1,
+    "intensity": 7.1282
+  },
+  {
+    "id": 6,
+    "year": 2005,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "EastCoastDodgeball Founder",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 7,
+    "year": 2005,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Contracted Shingles at age 20",
+    "event_sentiment": 0.0,
+    "intensity": 3.0
+  },
+  {
+    "id": 8,
+    "year": 2005,
+    "domain": "relationships",
+    "event_count": 4,
+    "key_event": "2 active + 2 new people (led by Dan Farnkopf)",
+    "event_sentiment": 0.0,
+    "intensity": 1.3333333333333333
+  },
+  {
+    "id": 9,
+    "year": 2005,
+    "domain": "ecd",
+    "event_count": 131,
+    "key_event": "7 matches, 20 events",
+    "event_sentiment": 0.1,
+    "intensity": 10.0
+  },
+  {
+    "id": 10,
+    "year": 2006,
+    "domain": "relationships",
+    "event_count": 4,
+    "key_event": "3 active + 1 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 1.3333333333333333
+  },
+  {
+    "id": 11,
+    "year": 2006,
+    "domain": "ecd",
+    "event_count": 177,
+    "key_event": "11 matches, 51 events",
+    "event_sentiment": 0.1,
+    "intensity": 10.0
+  },
+  {
+    "id": 12,
+    "year": 2006,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "33 words written",
+    "event_sentiment": 0.09091,
+    "intensity": 7.5816
+  },
+  {
+    "id": 13,
+    "year": 2007,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Recreation Worker",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 14,
+    "year": 2007,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Near-anorexia and mental health crisis; chopped long hair; joined gym",
+    "event_sentiment": -0.6486,
+    "intensity": 3.0
+  },
+  {
+    "id": 15,
+    "year": 2007,
+    "domain": "relationships",
+    "event_count": 8,
+    "key_event": "5 active + 3 new people (led by Phil Campanella)",
+    "event_sentiment": 0.0,
+    "intensity": 2.6666666666666665
+  },
+  {
+    "id": 16,
+    "year": 2007,
+    "domain": "travel",
+    "event_count": 2,
+    "key_event": "2 trips to 2 locations",
+    "event_sentiment": 0.4,
+    "intensity": 2.0
+  },
+  {
+    "id": 17,
+    "year": 2007,
+    "domain": "ecd",
+    "event_count": 156,
+    "key_event": "26 matches, 26 events",
+    "event_sentiment": 0.1,
+    "intensity": 10.0
+  },
+  {
+    "id": 18,
+    "year": 2007,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "218 words written",
+    "event_sentiment": 0.07385000000000001,
+    "intensity": 8.448599999999999
+  },
+  {
+    "id": 19,
+    "year": 2008,
+    "domain": "health",
+    "event_count": 2,
+    "key_event": "Double wart removal surgery (Jan 22); Car accident — rear-ended on West Park Avenue (Nov 4)",
+    "event_sentiment": 0.3611,
+    "intensity": 6.0
+  },
+  {
+    "id": 20,
+    "year": 2008,
+    "domain": "relationships",
+    "event_count": 5,
+    "key_event": "3 active + 2 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 1.6666666666666667
+  },
+  {
+    "id": 21,
+    "year": 2008,
+    "domain": "travel",
+    "event_count": 2,
+    "key_event": "2 trips to 2 locations",
+    "event_sentiment": 0.4,
+    "intensity": 2.0
+  },
+  {
+    "id": 22,
+    "year": 2008,
+    "domain": "ecd",
+    "event_count": 132,
+    "key_event": "33 matches, 48 events",
+    "event_sentiment": 0.1,
+    "intensity": 10.0
+  },
+  {
+    "id": 23,
+    "year": 2008,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "345 words written",
+    "event_sentiment": 0.07449,
+    "intensity": 4.144
+  },
+  {
+    "id": 24,
+    "year": 2009,
+    "domain": "relationships",
+    "event_count": 7,
+    "key_event": "5 active + 2 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 2.3333333333333335
+  },
+  {
+    "id": 25,
+    "year": 2009,
+    "domain": "travel",
+    "event_count": 3,
+    "key_event": "3 trips to 3 locations",
+    "event_sentiment": 0.6000000000000001,
+    "intensity": 3.0
+  },
+  {
+    "id": 26,
+    "year": 2009,
+    "domain": "ecd",
+    "event_count": 8,
+    "key_event": "1 matches, 0 events",
+    "event_sentiment": 0.1,
+    "intensity": 0.5
+  },
+  {
+    "id": 27,
+    "year": 2009,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "334 words written",
+    "event_sentiment": 0.07156,
+    "intensity": 8.1868
+  },
+  {
+    "id": 28,
+    "year": 2010,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Intern",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 29,
+    "year": 2010,
+    "domain": "relationships",
+    "event_count": 4,
+    "key_event": "3 active + 1 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 1.3333333333333333
+  },
+  {
+    "id": 30,
+    "year": 2010,
+    "domain": "travel",
+    "event_count": 2,
+    "key_event": "2 trips to 2 locations",
+    "event_sentiment": 0.4,
+    "intensity": 2.0
+  },
+  {
+    "id": 31,
+    "year": 2010,
+    "domain": "ecd",
+    "event_count": 39,
+    "key_event": "14 matches, 6 events",
+    "event_sentiment": 0.1,
+    "intensity": 10.0
+  },
+  {
+    "id": 32,
+    "year": 2010,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "125 words written",
+    "event_sentiment": 0.0728,
+    "intensity": 10.0
+  },
+  {
+    "id": 33,
+    "year": 2011,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Life Enrichment Manager",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 34,
+    "year": 2011,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Slightly torn glenoid labrum (right shoulder, confirmed via MRI Aug 2)",
+    "event_sentiment": -0.1796,
+    "intensity": 3.0
+  },
+  {
+    "id": 35,
+    "year": 2011,
+    "domain": "relationships",
+    "event_count": 7,
+    "key_event": "4 active + 3 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 2.3333333333333335
+  },
+  {
+    "id": 36,
+    "year": 2011,
+    "domain": "travel",
+    "event_count": 4,
+    "key_event": "4 trips to 4 locations",
+    "event_sentiment": 0.8,
+    "intensity": 4.0
+  },
+  {
+    "id": 37,
+    "year": 2011,
+    "domain": "ecd",
+    "event_count": 34,
+    "key_event": "1 matches, 4 events",
+    "event_sentiment": 0.1,
+    "intensity": 2.5
+  },
+  {
+    "id": 38,
+    "year": 2011,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "129 words written",
+    "event_sentiment": 0.0814,
+    "intensity": 10.0
+  },
+  {
+    "id": 39,
+    "year": 2012,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Activities & Volunteer Coordinator",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 40,
+    "year": 2012,
+    "domain": "relationships",
+    "event_count": 1,
+    "key_event": "1 active + 0 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 0.3333333333333333
+  },
+  {
+    "id": 41,
+    "year": 2012,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 42,
+    "year": 2012,
+    "domain": "ecd",
+    "event_count": 17,
+    "key_event": "1 matches, 4 events",
+    "event_sentiment": 0.1,
+    "intensity": 2.5
+  },
+  {
+    "id": 43,
+    "year": 2012,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "71 words written",
+    "event_sentiment": 0.09155,
+    "intensity": 10.0
+  },
+  {
+    "id": 44,
+    "year": 2013,
+    "domain": "relationships",
+    "event_count": 10,
+    "key_event": "7 active + 3 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 3.3333333333333335
+  },
+  {
+    "id": 45,
+    "year": 2013,
+    "domain": "travel",
+    "event_count": 3,
+    "key_event": "3 trips to 3 locations",
+    "event_sentiment": 0.6000000000000001,
+    "intensity": 3.0
+  },
+  {
+    "id": 46,
+    "year": 2013,
+    "domain": "ecd",
+    "event_count": 23,
+    "key_event": "0 matches, 3 events",
+    "event_sentiment": 0.1,
+    "intensity": 1.5
+  },
+  {
+    "id": 47,
+    "year": 2013,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "232 words written",
+    "event_sentiment": 0.07414,
+    "intensity": 6.5964
+  },
+  {
+    "id": 48,
+    "year": 2014,
+    "domain": "relationships",
+    "event_count": 15,
+    "key_event": "9 active + 6 new people (led by The Pops)",
+    "event_sentiment": 0.3,
+    "intensity": 5.0
+  },
+  {
+    "id": 49,
+    "year": 2014,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 50,
+    "year": 2014,
+    "domain": "ecd",
+    "event_count": 13,
+    "key_event": "0 matches, 2 events",
+    "event_sentiment": 0.1,
+    "intensity": 1.0
+  },
+  {
+    "id": 51,
+    "year": 2014,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "187 words written",
+    "event_sentiment": 0.08556000000000001,
+    "intensity": 3.9223999999999997
+  },
+  {
+    "id": 52,
+    "year": 2015,
+    "domain": "relationships",
+    "event_count": 3,
+    "key_event": "3 active + 0 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 1.0
+  },
+  {
+    "id": 53,
+    "year": 2015,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 54,
+    "year": 2015,
+    "domain": "ecd",
+    "event_count": 12,
+    "key_event": "0 matches, 2 events",
+    "event_sentiment": 0.1,
+    "intensity": 1.0
+  },
+  {
+    "id": 55,
+    "year": 2015,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "60 words written",
+    "event_sentiment": 0.085,
+    "intensity": 10.0
+  },
+  {
+    "id": 56,
+    "year": 2016,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Manager of the Year Award",
+    "event_sentiment": 1.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 57,
+    "year": 2016,
+    "domain": "relationships",
+    "event_count": 4,
+    "key_event": "4 active + 0 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 1.3333333333333333
+  },
+  {
+    "id": 58,
+    "year": 2016,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 59,
+    "year": 2016,
+    "domain": "ecd",
+    "event_count": 9,
+    "key_event": "1 matches, 0 events",
+    "event_sentiment": 0.1,
+    "intensity": 0.5
+  },
+  {
+    "id": 60,
+    "year": 2016,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "74 words written",
+    "event_sentiment": 0.07297000000000001,
+    "intensity": 5.0898
+  },
+  {
+    "id": 61,
+    "year": 2017,
+    "domain": "health",
+    "event_count": 4,
+    "key_event": "Left pinky dislocation + two-part fracture from volleyball (Mar 26); L5-S1 'fairly large' herniation",
+    "event_sentiment": -0.013999999999999985,
+    "intensity": 10.0
+  },
+  {
+    "id": 62,
+    "year": 2017,
+    "domain": "relationships",
+    "event_count": 16,
+    "key_event": "9 active + 7 new people (led by Kevin & Leah (KMJ & LN))",
+    "event_sentiment": 0.3,
+    "intensity": 5.333333333333333
+  },
+  {
+    "id": 63,
+    "year": 2017,
+    "domain": "travel",
+    "event_count": 3,
+    "key_event": "3 trips to 3 locations",
+    "event_sentiment": 0.6000000000000001,
+    "intensity": 3.0
+  },
+  {
+    "id": 64,
+    "year": 2017,
+    "domain": "ecd",
+    "event_count": 7,
+    "key_event": "0 matches, 2 events",
+    "event_sentiment": 0.1,
+    "intensity": 1.0
+  },
+  {
+    "id": 65,
+    "year": 2017,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "123 words written",
+    "event_sentiment": 0.08862,
+    "intensity": 6.7296000000000005
+  },
+  {
+    "id": 66,
+    "year": 2018,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Reminiscence Coordinator",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 67,
+    "year": 2018,
+    "domain": "relationships",
+    "event_count": 7,
+    "key_event": "5 active + 2 new people (led by Terra Bergquist)",
+    "event_sentiment": 0.0,
+    "intensity": 2.3333333333333335
+  },
+  {
+    "id": 68,
+    "year": 2018,
+    "domain": "travel",
+    "event_count": 2,
+    "key_event": "2 trips to 2 locations",
+    "event_sentiment": 0.4,
+    "intensity": 2.0
+  },
+  {
+    "id": 69,
+    "year": 2018,
+    "domain": "ecd",
+    "event_count": 3,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 70,
+    "year": 2018,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "178 words written",
+    "event_sentiment": 0.07528000000000001,
+    "intensity": 7.3106
+  },
+  {
+    "id": 71,
+    "year": 2019,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Strep throat (Aug 7) + kidney stone removal",
+    "event_sentiment": 0.0,
+    "intensity": 3.0
+  },
+  {
+    "id": 72,
+    "year": 2019,
+    "domain": "relationships",
+    "event_count": 6,
+    "key_event": "4 active + 2 new people (led by John Tronolone)",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 73,
+    "year": 2019,
+    "domain": "travel",
+    "event_count": 3,
+    "key_event": "3 trips to 3 locations",
+    "event_sentiment": 0.6000000000000001,
+    "intensity": 3.0
+  },
+  {
+    "id": 74,
+    "year": 2019,
+    "domain": "ecd",
+    "event_count": 7,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 75,
+    "year": 2019,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "185 words written",
+    "event_sentiment": 0.07892,
+    "intensity": 9.637
+  },
+  {
+    "id": 76,
+    "year": 2020,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Assisted Living Manager",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 77,
+    "year": 2020,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle",
+    "event_sentiment": 0.7506,
+    "intensity": 3.0
+  },
+  {
+    "id": 78,
+    "year": 2020,
+    "domain": "relationships",
+    "event_count": 12,
+    "key_event": "9 active + 3 new people (led by Kevin & Leah (KMJ & LN))",
+    "event_sentiment": 0.3,
+    "intensity": 4.0
+  },
+  {
+    "id": 79,
+    "year": 2020,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 80,
+    "year": 2020,
+    "domain": "ecd",
+    "event_count": 6,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 81,
+    "year": 2020,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "198 words written",
+    "event_sentiment": 0.08434000000000001,
+    "intensity": 7.2696000000000005
+  },
+  {
+    "id": 82,
+    "year": 2021,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Sr. Resident Care Coordinator",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 83,
+    "year": 2021,
+    "domain": "relationships",
+    "event_count": 11,
+    "key_event": "9 active + 2 new people (led by Dan Farnkopf)",
+    "event_sentiment": 0.3,
+    "intensity": 3.6666666666666665
+  },
+  {
+    "id": 84,
+    "year": 2021,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 85,
+    "year": 2021,
+    "domain": "ecd",
+    "event_count": 2,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 86,
+    "year": 2021,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "216 words written",
+    "event_sentiment": 0.0787,
+    "intensity": 4.103199999999999
+  },
+  {
+    "id": 87,
+    "year": 2022,
+    "domain": "relationships",
+    "event_count": 1,
+    "key_event": "1 active + 0 new people (led by Megan)",
+    "event_sentiment": 0.0,
+    "intensity": 0.3333333333333333
+  },
+  {
+    "id": 88,
+    "year": 2022,
+    "domain": "ecd",
+    "event_count": 2,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 89,
+    "year": 2022,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "74 words written",
+    "event_sentiment": 0.09459000000000001,
+    "intensity": 10.0
+  },
+  {
+    "id": 90,
+    "year": 2023,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 91,
+    "year": 2023,
+    "domain": "ecd",
+    "event_count": 2,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 92,
+    "year": 2023,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "58 words written",
+    "event_sentiment": 0.08966,
+    "intensity": 10.0
+  },
+  {
+    "id": 93,
+    "year": 2024,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Kidney stones — two hospitalizations (Dec 18 & 20)",
+    "event_sentiment": 0.0,
+    "intensity": 3.0
+  },
+  {
+    "id": 94,
+    "year": 2024,
+    "domain": "relationships",
+    "event_count": 3,
+    "key_event": "3 active + 0 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 1.0
+  },
+  {
+    "id": 95,
+    "year": 2024,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 96,
+    "year": 2024,
+    "domain": "ecd",
+    "event_count": 6,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 97,
+    "year": 2024,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "64 words written",
+    "event_sentiment": 0.09531,
+    "intensity": 10.0
+  },
+  {
+    "id": 98,
+    "year": 2025,
+    "domain": "career",
+    "event_count": 1,
+    "key_event": "Executive Director",
+    "event_sentiment": 0.0,
+    "intensity": 2.0
+  },
+  {
+    "id": 99,
+    "year": 2025,
+    "domain": "health",
+    "event_count": 1,
+    "key_event": "Influenza confirmed by medical visit (February)",
+    "event_sentiment": 0.0,
+    "intensity": 3.0
+  },
+  {
+    "id": 100,
+    "year": 2025,
+    "domain": "relationships",
+    "event_count": 2,
+    "key_event": "2 active + 0 new people (led by The Pops)",
+    "event_sentiment": 0.0,
+    "intensity": 0.6666666666666666
+  },
+  {
+    "id": 101,
+    "year": 2025,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  },
+  {
+    "id": 102,
+    "year": 2025,
+    "domain": "ecd",
+    "event_count": 4,
+    "key_event": null,
+    "event_sentiment": 0.1,
+    "intensity": 0.0
+  },
+  {
+    "id": 103,
+    "year": 2025,
+    "domain": "writing",
+    "event_count": 1,
+    "key_event": "70 words written",
+    "event_sentiment": 0.09143000000000001,
+    "intensity": 10.0
+  },
+  {
+    "id": 104,
+    "year": 2026,
+    "domain": "travel",
+    "event_count": 1,
+    "key_event": "1 trips to 1 locations",
+    "event_sentiment": 0.2,
+    "intensity": 1.0
+  }
+]

@@ -14,63 +14,87 @@
     <div id="lj-header-mount"></div>
 
     <main class="ecd-main">
-        <!-- Hero -->
+        <!-- ═══ HERO ═══ -->
         <section class="ecd-hero">
-            <h1>East Coast Dodgeball</h1>
-            <p class="room-subtitle">One person started a backyard dodgeball tournament. 128 people showed up over 20 years.</p>
+            <div class="ecd-hero__glow"></div>
+            <h1 class="ecd-hero__title">East Coast Dodgeball</h1>
+            <p class="ecd-hero__tagline">One person started a backyard tournament.<br>128 people showed up over 20 years.</p>
             <div class="ecd-hero-stats"></div>
         </section>
 
-        <!-- The Rise and Fall -->
-        <section class="ecd-section">
-            <h2>The Rise and Fall</h2>
-            <p class="ecd-section-intro">Sentiment and attendance tell the same story: growth killed the joy. Then when it collapsed and was rebuilt, the joy returned.</p>
+        <!-- ═══ 01 · THE RISE AND FALL ═══ -->
+        <section class="ecd-section" data-reveal>
+            <div class="ecd-section__header">
+                <span class="ecd-section__number">01</span>
+                <h2>The Rise and Fall</h2>
+                <p class="ecd-section-intro">Sentiment and attendance tell the same story: growth killed the joy. Then when it collapsed and was rebuilt, the joy returned.</p>
+            </div>
             <div class="heartbeat-chart-wrap">
                 <canvas id="heartbeatChart"></canvas>
             </div>
             <div class="era-cards"></div>
         </section>
 
-        <!-- The 128 -->
-        <section class="ecd-section">
-            <h2>The 128</h2>
-            <p class="ecd-section-intro">Every player who ever stepped onto the field. Nodes sized by mentions, colored by era.</p>
+        <!-- ═══ 02 · THE 128 ═══ -->
+        <section class="ecd-section" data-reveal>
+            <div class="ecd-section__header">
+                <span class="ecd-section__number">02</span>
+                <h2>The 128</h2>
+                <p class="ecd-section-intro">Every player who ever stepped onto the field. Nodes sized by mentions, colored by era. Drag to explore.</p>
+            </div>
             <div class="player-network-wrap">
+                <div class="network-legend" id="networkLegend"></div>
                 <div class="player-network-tooltip" id="networkTooltip"></div>
             </div>
-            <h3 class="ecd-callout" style="margin-bottom: var(--space-md); font-style: normal; font-family: var(--font-mono); font-size: 15px; color: var(--room-accent); text-transform: uppercase; letter-spacing: 1px;">Legends Leaderboard</h3>
-            <div class="ecd-leaderboard"></div>
+            <div class="ecd-leaderboard-wrap">
+                <h3 class="ecd-section__subtitle">Legends Leaderboard</h3>
+                <div class="ecd-leaderboard"></div>
+            </div>
         </section>
 
-        <!-- Rivalries -->
-        <section class="ecd-section">
-            <h2>The Rivalries</h2>
-            <p class="ecd-section-intro">Head-to-head records built from 350+ documented matches. The context snippets are straight from the original LiveJournal posts.</p>
+        <!-- ═══ 03 · THE RIVALRIES ═══ -->
+        <section class="ecd-section" data-reveal>
+            <div class="ecd-section__header">
+                <span class="ecd-section__number">03</span>
+                <h2>The Rivalries</h2>
+                <p class="ecd-section-intro">Head-to-head records built from 350+ documented matches. The context snippets are straight from the original LiveJournal posts.</p>
+            </div>
             <div class="rivalry-grid"></div>
         </section>
 
-        <!-- The Emotional Archive -->
-        <section class="ecd-section">
-            <h2>The Emotional Archive</h2>
-            <p class="ecd-section-intro">553 posts analyzed for emotional tone. The most positive posts aren't victories — they're the bittersweet ones.</p>
+        <!-- ═══ 04 · THE EMOTIONAL ARCHIVE ═══ -->
+        <section class="ecd-section" data-reveal>
+            <div class="ecd-section__header">
+                <span class="ecd-section__number">04</span>
+                <h2>The Emotional Archive</h2>
+                <p class="ecd-section-intro">553 posts analyzed for emotional tone. The most positive posts aren't victories — they're the bittersweet ones.</p>
+            </div>
             <div class="emotion-insight"></div>
             <div class="emotion-chart-wrap">
-                <div class="emotion-bubbles"></div>
+                <div class="emotion-bubbles" id="emotionBubbles"></div>
             </div>
-            <h3 class="ecd-callout" style="margin-bottom: var(--space-md); font-style: normal; font-family: var(--font-mono); font-size: 15px; color: var(--room-accent); text-transform: uppercase; letter-spacing: 1px;">Greatest Hits</h3>
-            <div class="highlights-list"></div>
+            <div class="highlights-wrap">
+                <h3 class="ecd-section__subtitle">Greatest Hits</h3>
+                <div class="highlights-list"></div>
+            </div>
         </section>
 
-        <!-- Legacy -->
-        <section class="ecd-section">
-            <h2>The Legacy</h2>
-            <p class="ecd-section-intro">The competition ended but the community didn't. Awards, Hall of Fame inductees, and $1,847 raised for charity.</p>
+        <!-- ═══ 05 · THE LEGACY ═══ -->
+        <section class="ecd-section" data-reveal>
+            <div class="ecd-section__header">
+                <span class="ecd-section__number">05</span>
+                <h2>The Legacy</h2>
+                <p class="ecd-section-intro">The competition ended but the community didn't. Awards, Hall of Fame inductees, and $1,847 raised for charity.</p>
+            </div>
             <div class="legacy-grid"></div>
         </section>
 
-        <p class="ecd-callout">
-            "Some people journal. Some people run. Tron started a dodgeball tournament and 128 people showed up."
-        </p>
+        <!-- ═══ CLOSING ═══ -->
+        <section class="ecd-closing" data-reveal>
+            <blockquote class="ecd-callout">
+                "Some people journal. Some people run.<br>Tron started a dodgeball tournament and 128 people showed up."
+            </blockquote>
+        </section>
     </main>
 
     <div id="lj-footer-mount"></div>
@@ -81,8 +105,6 @@
     <script type="module">
         import { initNav } from './js/nav.js';
         import './js/search.js';
-        import './js/ecd.js';
-
         initNav({
             room: 'ecd',
             mood: 'competitive',
@@ -90,5 +112,6 @@
             subtitle: '128 Players. 168 Events. 20 Years.'
         });
     </script>
+    <script type="module" src="js/ecd.js"></script>
 </body>
 </html>

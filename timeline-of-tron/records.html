@@ -35,29 +35,54 @@
         <!-- Sports Gauges -->
         <section class="gauges-section">
             <h2>Win Rates</h2>
-            <div class="gauges-grid">
-                <div class="gauge-wrap">
-                    <canvas id="gauge0"></canvas>
-                    <div class="gauge-label">Table Tennis</div>
-                </div>
-                <div class="gauge-wrap">
-                    <canvas id="gauge1"></canvas>
-                    <div class="gauge-label">Cornhole</div>
-                </div>
-                <div class="gauge-wrap">
-                    <canvas id="gauge2"></canvas>
-                    <div class="gauge-label">Famous Faces</div>
-                </div>
-            </div>
+            <div class="gauges-grid"></div>
+        </section>
+
+        <!-- Athletic Archives -->
+        <section class="archives-section">
+            <h2>The Athletic Archives</h2>
+            <p class="section-subtitle">
+                Every sport tells a story. Some ended in glory, some in injury, all in obsession.
+            </p>
+            <div class="archives-grid"></div>
+        </section>
+
+        <!-- The Rivals -->
+        <section class="rivals-section">
+            <h2>The Rivals</h2>
+            <p class="section-subtitle">
+                ECD head-to-head records. 171 events. Every match documented.
+            </p>
+            <div class="rivals-grid"></div>
         </section>
 
         <!-- Streak Stories -->
         <section class="streak-section">
             <h2>The Streaks</h2>
-            <p style="text-align:center; color:var(--lj-text-secondary); margin-bottom:var(--space-lg); font-size:13px;">
+            <p class="section-subtitle">
                 Active streaks are the through-lines. Broken ones are the chapters that closed.
             </p>
             <div class="streak-stories"></div>
+        </section>
+
+        <!-- Life Intensity -->
+        <section class="intensity-section">
+            <h2>Life Intensity Map</h2>
+            <p class="section-subtitle">
+                Every year measured across six domains. The higher the bar, the more that domain consumed the year.
+            </p>
+            <div class="intensity-chart-wrap">
+                <canvas id="intensityChart"></canvas>
+            </div>
+        </section>
+
+        <!-- The Comebacks -->
+        <section class="comebacks-section">
+            <h2>The Comebacks</h2>
+            <p class="section-subtitle">
+                The falls and the rises. Every crisis paired with its recovery.
+            </p>
+            <div class="comebacks-grid"></div>
         </section>
 
         <!-- 20-Year Gap callout -->
@@ -69,7 +94,7 @@
         <!-- Entertainment Highlights -->
         <section class="entertainment-section">
             <h2>The Experiences</h2>
-            <p style="text-align:center; color:var(--lj-text-secondary); margin-bottom:var(--space-lg); font-size:13px;">
+            <p class="section-subtitle">
                 Concerts, Broadway, courtside, ringside. The nights that became stories.
             </p>
             <div class="entertainment-grid"></div>
@@ -89,8 +114,6 @@
     <script type="module">
         import { initNav } from './js/nav.js';
         import './js/search.js';
-        import './js/records.js';
-
         initNav({
             room: 'records',
             mood: 'proud',
@@ -98,5 +121,6 @@
             subtitle: 'The Numbers'
         });
     </script>
+    <script type="module" src="js/records.js"></script>
 </body>
 </html>

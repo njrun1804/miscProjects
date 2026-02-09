@@ -555,22 +555,214 @@
     font-style: italic;
 }
 
-/* Inner circle timeline section */
-.inner-circle-timeline {
-    max-width: 900px;
+/* ─── Network Over Time ────────────────────────────────────── */
+
+.network-over-time {
+    max-width: 960px;
     margin: var(--space-xl) auto;
     padding: 0 24px;
 }
 
-.inner-circle-timeline h2 {
+.network-over-time h2 {
     color: var(--room-text);
-    font-size: 1.2rem;
-    margin-bottom: var(--space-md);
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    margin-bottom: 4px;
     text-align: center;
 }
 
-.inner-circle-timeline canvas {
+.network-subtitle {
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    margin-bottom: var(--space-md);
+}
+
+.network-over-time canvas {
     max-width: 100%;
+}
+
+.network-legend {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 12px;
+}
+
+.net-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.net-legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.net-legend-line {
+    width: 16px;
+    height: 0;
+    border-top: 2px solid;
+    display: inline-block;
+}
+
+/* ─── Network Insights ─────────────────────────────────────── */
+
+.network-insights {
+    max-width: 960px;
+    margin: var(--space-lg) auto var(--space-xl);
+    padding: 0 24px;
+}
+
+.insights-title {
+    font-family: var(--font-mono);
+    font-size: 1.1rem;
+    color: var(--room-text);
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: var(--space-lg);
+}
+
+.insight-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+}
+
+.insight-number {
+    font-family: var(--font-mono);
+    font-size: 1.8rem;
+    color: var(--room-accent);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.insight-label {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+}
+
+.insights-section {
+    margin-top: var(--space-lg);
+}
+
+.insights-section-title {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 12px;
+}
+
+.insights-desc {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: -8px;
+    margin-bottom: 12px;
+}
+
+/* Layer bars */
+.layer-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.layer-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.layer-bar-label {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--room-text);
+    width: 100px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.layer-bar-track {
+    flex: 1;
+    height: 20px;
+    background: rgba(30, 58, 95, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.layer-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.6s ease;
+}
+
+.layer-bar-count {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--room-accent);
+    width: 30px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+/* Insight people list */
+.insights-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.insight-person {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    padding: 8px 12px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    text-align: left;
+    color: var(--room-text);
+    width: 100%;
+}
+
+.insight-person:hover {
+    border-color: var(--room-accent);
+    background: rgba(74, 144, 217, 0.08);
+}
+
+.insight-person-name {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--room-accent);
+    white-space: nowrap;
+}
+
+.insight-person-meta {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
 }
 
 /* Annotation quote */

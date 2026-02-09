@@ -1,0 +1,2899 @@
+{
+  "generated_at": "2026-02-09T01:06:30.627289",
+  "tables": {
+    "_deleted_records_backup": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "source_table": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "source_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "data": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "deleted_at": {
+        "type": "TIMESTAMP",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "awards": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "winner": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 40,
+        "null_percentage": 78.43
+      }
+    },
+    "awards_enriched": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "winner": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 40,
+        "null_percentage": 78.43
+      },
+      "related_milestones": {
+        "type": "TEXT",
+        "null_count": 41,
+        "null_percentage": 80.39
+      },
+      "award_sentiment": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "career": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "title": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "employer": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "milestone": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "career_level": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "career_chapter_map": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "career_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "chapter_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "career_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "chapter_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "career_title": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "co_occurrences": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_a": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_b": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "context": {
+        "type": "TEXT",
+        "null_count": 12,
+        "null_percentage": 21.43
+      },
+      "co_occurrence_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "comebacks": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "challenge": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "comeback": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "cruise_detail": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "ship_name": {
+        "type": "TEXT",
+        "null_count": 4,
+        "null_percentage": 66.67
+      },
+      "destinations": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "duration_days": {
+        "type": "INTEGER",
+        "null_count": 4,
+        "null_percentage": 66.67
+      },
+      "rating": {
+        "type": "TEXT",
+        "null_count": 4,
+        "null_percentage": 66.67
+      },
+      "highlight": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "countries_visited": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "cruise_number": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "ecd_awards_v2": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "award_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "recipient": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "post_id": {
+        "type": "INTEGER",
+        "null_count": 15,
+        "null_percentage": 55.56
+      },
+      "date": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 15,
+        "null_percentage": 55.56
+      },
+      "event_number": {
+        "type": "INTEGER",
+        "null_count": 18,
+        "null_percentage": 66.67
+      },
+      "context": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "ecd_community_narrative": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "phase_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "active_players": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "events_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "matches_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "posts_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "new_players": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "returning_players": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "retention_rate": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "growth_rate": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "narrative_description": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "ecd_events_legacy": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_number": {
+        "type": "INTEGER",
+        "null_count": 9,
+        "null_percentage": 47.37
+      },
+      "anniversary": {
+        "type": "TEXT",
+        "null_count": 10,
+        "null_percentage": 52.63
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 10,
+        "null_percentage": 52.63
+      },
+      "date": {
+        "type": "TEXT",
+        "null_count": 3,
+        "null_percentage": 15.79
+      },
+      "participants": {
+        "type": "INTEGER",
+        "null_count": 15,
+        "null_percentage": 78.95
+      },
+      "raised": {
+        "type": "REAL",
+        "null_count": 14,
+        "null_percentage": 73.68
+      },
+      "event_name": {
+        "type": "TEXT",
+        "null_count": 18,
+        "null_percentage": 94.74
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 5,
+        "null_percentage": 26.32
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 5,
+        "null_percentage": 26.32
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 5,
+        "null_percentage": 26.32
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 5,
+        "null_percentage": 26.32
+      }
+    },
+    "ecd_events_v2": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_number": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "date": {
+        "type": "TEXT",
+        "null_count": 66,
+        "null_percentage": 39.29
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "attendance": {
+        "type": "INTEGER",
+        "null_count": 113,
+        "null_percentage": 67.26
+      },
+      "match_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "post_ids": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "seasons": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 160,
+        "null_percentage": 95.24
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 160,
+        "null_percentage": 95.24
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 160,
+        "null_percentage": 95.24
+      },
+      "participants": {
+        "type": "INTEGER",
+        "null_count": 168,
+        "null_percentage": 100.0
+      },
+      "raised": {
+        "type": "REAL",
+        "null_count": 168,
+        "null_percentage": 100.0
+      }
+    },
+    "ecd_fundraisers": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "amount": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "beneficiary": {
+        "type": "TEXT",
+        "null_count": 2,
+        "null_percentage": 66.67
+      },
+      "event_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "post_id": {
+        "type": "INTEGER",
+        "null_count": 1,
+        "null_percentage": 33.33
+      },
+      "date": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 1,
+        "null_percentage": 33.33
+      },
+      "raw_text": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "ecd_match_results": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "winner": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "loser": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "score": {
+        "type": "TEXT",
+        "null_count": 54,
+        "null_percentage": 54.55
+      },
+      "score_winner": {
+        "type": "INTEGER",
+        "null_count": 54,
+        "null_percentage": 54.55
+      },
+      "score_loser": {
+        "type": "INTEGER",
+        "null_count": 54,
+        "null_percentage": 54.55
+      },
+      "match_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "post_id": {
+        "type": "INTEGER",
+        "null_count": 4,
+        "null_percentage": 4.04
+      },
+      "post_date": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 4,
+        "null_percentage": 4.04
+      },
+      "event_number": {
+        "type": "INTEGER",
+        "null_count": 29,
+        "null_percentage": 29.29
+      }
+    },
+    "ecd_player_years": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player_id": {
+        "type": "INTEGER",
+        "null_count": 106,
+        "null_percentage": 100.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "matches_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "wins_in_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "losses_in_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "win_rate": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "awards_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "had_rivalry": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "ecd_players": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "total_mentions": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "post_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "wins": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "losses": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "nicknames": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_year": {
+        "type": "INTEGER",
+        "null_count": 72,
+        "null_percentage": 56.25
+      },
+      "last_year": {
+        "type": "INTEGER",
+        "null_count": 72,
+        "null_percentage": 56.25
+      },
+      "peak_year": {
+        "type": "INTEGER",
+        "null_count": 72,
+        "null_percentage": 56.25
+      },
+      "is_hof": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era_active": {
+        "type": "TEXT",
+        "null_count": 72,
+        "null_percentage": 56.25
+      }
+    },
+    "ecd_posts": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "title": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "date": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "post_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "body_length": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_positive": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_negative": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_neutral": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_label": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_themes": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_emotions": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "url": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "has_images": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "image_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "ecd_rivalries": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player1": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player2": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "mention_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "context_snippets": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_year": {
+        "type": "INTEGER",
+        "null_count": 130,
+        "null_percentage": 78.31
+      },
+      "last_year": {
+        "type": "INTEGER",
+        "null_count": 130,
+        "null_percentage": 78.31
+      }
+    },
+    "ecd_rivalry_timeline": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player1": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player2": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "matches_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player1_wins": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "player2_wins": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "rivalry_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "entertainment": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "show_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 7,
+        "null_percentage": 41.18
+      }
+    },
+    "epic_numbers": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "stat": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "value": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "unit": {
+        "type": "TEXT",
+        "null_count": 14,
+        "null_percentage": 77.78
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 2,
+        "null_percentage": 11.11
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 17,
+        "null_percentage": 94.44
+      }
+    },
+    "eras": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "start_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "end_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era_theme": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_sentiment": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_topics": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "description": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "expanded_comebacks": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "comeback_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "crisis_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "crisis_event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "crisis_sentiment": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "recovery_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "recovery_event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "recovery_sentiment": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "gap_months": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "intensity_shift": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "source_table": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "narrative": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "fun_facts": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "fact": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 10,
+        "null_percentage": 16.67
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_polarity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "heros_journey": {
+      "stage": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year_start": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year_end": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "years": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "description": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "avg_sentiment": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "milestone_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "people_active_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "career_milestones": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_topic": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "intensity_score": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "quote_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "insights": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "title": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "value": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "detail": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sort_order": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "life_chapters": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "chapter_number": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "chapter_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "start_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "end_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "years": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "theme": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "defining_moments": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "key_people": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_avg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "intensity_avg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "lj_commenters": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "comment_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_year": {
+        "type": "INTEGER",
+        "null_count": 21,
+        "null_percentage": 40.38
+      },
+      "last_year": {
+        "type": "INTEGER",
+        "null_count": 21,
+        "null_percentage": 40.38
+      },
+      "years_active": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "is_in_people_table": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "lj_comments": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "post_title": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "commenter": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "excerpt": {
+        "type": "TEXT",
+        "null_count": 16,
+        "null_percentage": 36.36
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "theme": {
+        "type": "TEXT",
+        "null_count": 8,
+        "null_percentage": 18.18
+      }
+    },
+    "locations": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "location_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 4,
+        "null_percentage": 13.79
+      },
+      "latitude": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "longitude": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "medical_comeback_pairs": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "medical_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "medical_event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "severity": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "comeback_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "comeback_event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "gap_months": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "comeback_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "medical_history": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "severity": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "recovery_note": {
+        "type": "TEXT",
+        "null_count": 2,
+        "null_percentage": 14.29
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "milestone_people": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "milestone_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "mention_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "confidence": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "milestones": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "milestone": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_polarity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_subjectivity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_adjusted": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "life_stage": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_manually_corrected": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "valence": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "arousal": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominance": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "ner_entities": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "source_table": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "source_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "entity_text": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "entity_label": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 18,
+        "null_percentage": 4.13
+      }
+    },
+    "parallel_timelines": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "domain": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "key_event": {
+        "type": "TEXT",
+        "null_count": 8,
+        "null_percentage": 7.69
+      },
+      "event_sentiment": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "people": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "relation": {
+        "type": "TEXT",
+        "null_count": 114,
+        "null_percentage": 69.51
+      },
+      "connection": {
+        "type": "TEXT",
+        "null_count": 9,
+        "null_percentage": 5.49
+      },
+      "birth_year": {
+        "type": "INTEGER",
+        "null_count": 162,
+        "null_percentage": 98.78
+      },
+      "born": {
+        "type": "TEXT",
+        "null_count": 162,
+        "null_percentage": 98.78
+      },
+      "importance_score": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "peak_year": {
+        "type": "INTEGER",
+        "null_count": 127,
+        "null_percentage": 77.44
+      },
+      "active_years": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_topic": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "influence_period": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "people_highlights": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "highlight": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "person": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "birthday": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "birth_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "high_school": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "college": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "college_gpa": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "major_gpa": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "major": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "graduation_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "liberation_day": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "came_out_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_concert": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_cruise": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_skydive": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "home": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "person_arc": {
+      "person": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "last_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "span": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "total_mentions": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "peak_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "peak_mentions": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "person_timeline": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_description": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "post_content": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "post_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "title": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "date": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "post_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "themes": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "key_people": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "key_quotes": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "summary": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      }
+    },
+    "quote_attribution": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "quote_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "attribution_method": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "confidence": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "quotes": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "quote": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "context": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_score": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "emotion": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "theme": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "relationship_graph": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "connected_to": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "relationship_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "weight": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "first_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "last_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "years_span": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "song_person_map": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "song": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "artist": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "story": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year_of_connection": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "sports": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sport": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 10,
+        "null_percentage": 38.46
+      },
+      "stat_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "stat_value": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "sqlite_sequence": {
+      "name": {
+        "type": "",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "seq": {
+        "type": "",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "streaks": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "category": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "description": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "start_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "end_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "length": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "still_active": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "temporal_network": {
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "active_people": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "new_people": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "lost_people": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "network_density": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "top_person": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "top_person_mentions": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "timeline_posts": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "post_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "title": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "year_covered": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "posted": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0
+      },
+      "is_timeline_post": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0
+      }
+    },
+    "topic_evolution": {
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "weight": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "topic_person_timeline": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_id": {
+        "type": "INTEGER",
+        "null_count": 1193,
+        "null_percentage": 96.83
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_weight": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "person_mentions": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "co_strength": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "topics": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_name": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "keywords": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "traditions": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "tradition": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "years_active": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "description": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "travel": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "destination": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "scope": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "countries": {
+        "type": "INTEGER",
+        "null_count": 25,
+        "null_percentage": 73.53
+      },
+      "highlight": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "trip_type": {
+        "type": "TEXT",
+        "null_count": 28,
+        "null_percentage": 82.35
+      },
+      "duration_days": {
+        "type": "INTEGER",
+        "null_count": 32,
+        "null_percentage": 94.12
+      },
+      "photos": {
+        "type": "INTEGER",
+        "null_count": 32,
+        "null_percentage": 94.12
+      },
+      "miles": {
+        "type": "INTEGER",
+        "null_count": 33,
+        "null_percentage": 97.06
+      },
+      "states": {
+        "type": "INTEGER",
+        "null_count": 33,
+        "null_percentage": 97.06
+      },
+      "status": {
+        "type": "TEXT",
+        "null_count": 33,
+        "null_percentage": 97.06
+      },
+      "vader_compound": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_pos": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vader_neg": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "latitude": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "longitude": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "travel_medical_correlations": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "medical_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "medical_event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "medical_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "travel_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "travel_destination": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "travel_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "correlation_type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "months_between": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "turning_point_analysis": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "turning_point_year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "domain": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "before_sentiment": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "after_sentiment": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_shift": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "before_people_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "after_people_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "before_key_topic": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "after_key_topic": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "shock_magnitude": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "recovery_months": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "narrative_summary": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "turning_points": {
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "event": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "type": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "domain": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "from_state": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "to_state": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "writing_evolution": {
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "avg_grade_level": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "avg_word_count": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "vocabulary_richness": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "avg_sentence_length": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "total_words": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_topic": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "topic_diversity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "emotional_range": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "quote_density": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "thematic_coherence": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "wwe_events": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "label": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "cumulative_events": {
+        "type": "INTEGER",
+        "null_count": 5,
+        "null_percentage": 31.25
+      },
+      "note": {
+        "type": "TEXT",
+        "null_count": 6,
+        "null_percentage": 37.5
+      }
+    },
+    "year_intensity_breakdown": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "career_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "travel_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "health_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "social_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "ecd_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "creative_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "total_intensity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "dominant_domain": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "secondary_domain": {
+        "type": "TEXT",
+        "null_count": 1,
+        "null_percentage": 4.35
+      }
+    },
+    "year_keywords": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "keyword": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "tfidf_score": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "year_similarity": {
+      "year1": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year2": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "similarity": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "year_summary": {
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "milestone_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "travel_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "wwe_events": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "people_mentioned": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "entertainment_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "comeback_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "award_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "quote_count": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "intensity_score": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year_theme": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "self_rating": {
+        "type": "REAL",
+        "null_count": 22,
+        "null_percentage": 95.65
+      }
+    },
+    "year_to_era": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era_id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "era_position": {
+        "type": "TEXT",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    },
+    "year_transitions": {
+      "id": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year_from": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "year_to": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "sentiment_shift": {
+        "type": "REAL",
+        "null_count": 22,
+        "null_percentage": 100.0
+      },
+      "intensity_shift": {
+        "type": "REAL",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "is_chapter_boundary": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "is_turning_point": {
+        "type": "BOOLEAN",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "people_entering": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "people_leaving": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "milestone_count_from": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      },
+      "milestone_count_to": {
+        "type": "INTEGER",
+        "null_count": 0,
+        "null_percentage": 0.0
+      }
+    }
+  }
+}

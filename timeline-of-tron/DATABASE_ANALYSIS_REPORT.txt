@@ -1,0 +1,445 @@
+================================================================================
+SQLITE DATABASE ANALYSIS REPORT
+Timeline of Tron Database (/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db)
+================================================================================
+
+DATABASE OVERVIEW
+================================================================================
+Total Tables:        51
+Total Rows:          3,687
+Database Size:       0.64 MB
+
+Core Tables (ECD):   ecd_posts (1,096 rows), ecd_events_v2 (168 rows), 
+                     ecd_match_results (99 rows), ecd_players (128 rows),
+                     ecd_awards_v2 (27 rows), ecd_fundraisers (3 rows)
+
+Person Tables:       people (165 rows), person (1 row), person_arc (40 rows),
+                     person_timeline (64 rows), people_highlights (46 rows)
+
+Narrative/Content:   milestones (226 rows), life_chapters (19 rows),
+                     quotes (113 rows), fun_facts (18 rows), lj_comments (44 rows)
+
+Temporal:            year_summary (23 rows), temporal_network (57 rows),
+                     year_keywords (231 rows), turning_points (11 rows)
+
+Other:               topics (8 rows), topic_evolution (184 rows),
+                     career (14 rows), medical_history (13 rows),
+                     awards/awards_enriched (51 rows each)
+
+================================================================================
+1. COMPLETENESS ANALYSIS: NULL RATES BY COLUMN
+================================================================================
+
+CRITICAL SPARSE COLUMNS (>50% NULL):
+  ecd_players.first_year              100.0% (128/128) - NO DATA POPULATED
+  ecd_players.last_year               100.0% (128/128) - NO DATA POPULATED
+  ecd_players.peak_year               100.0% (128/128) - NO DATA POPULATED
+  ecd_players.era_active              100.0% (128/128) - NO DATA POPULATED
+  ecd_awards_v2.event_number          100.0% (27/27)  - NO DATA POPULATED
+  ecd_match_results.event_number      100.0% (99/99)  - NO DATA POPULATED
+  ecd_rivalries.first_year            100.0% (166/166) - NO DATA POPULATED
+  ecd_rivalries.last_year             100.0% (166/166) - NO DATA POPULATED
+  people.birth_year                   98.8% (163/165) - MOSTLY MISSING
+  people.born                         98.8% (163/165) - MOSTLY MISSING
+  travel.miles                        97.1% (33/34)   - MOSTLY MISSING
+  travel.states                       97.1% (33/34)   - MOSTLY MISSING
+  travel.status                       97.1% (33/34)   - MOSTLY MISSING
+  year_summary.self_rating            95.7% (22/23)   - MOSTLY MISSING
+  ecd_events.event_name               94.7% (18/19)   - MOSTLY MISSING
+  travel.duration_days                94.1% (32/34)   - MOSTLY MISSING
+  travel.trip_type                    82.4% (28/34)   - MOSTLY MISSING
+  awards_enriched.related_milestones  80.4% (41/51)   - MOSTLY MISSING
+  awards.note                         78.4% (40/51)   - MOSTLY MISSING
+  ecd_match_results.score*            54.5% (54/99)   - MOSTLY MISSING
+  ecd_awards_v2.post_id               55.6% (15/27)   - MOSTLY MISSING
+  ecd_awards_v2.year                  55.6% (15/27)   - MOSTLY MISSING
+
+HIGH RISK SPARSE COLUMNS (20-50% NULL):
+  ecd_events.participants             78.9% null
+  ecd_events.raised                   73.7% null
+  cruise_detail.*                     66.7% null (multiple columns)
+  ecd_fundraisers.beneficiary         66.7% null
+  timeline_posts.note                 70.0% null
+  people.relation                     69.7% null
+  ecd_events_v2.attendance            67.3% null
+  ecd_events_v2.date                  39.3% null
+  lj_commenters.first_year/last_year  40.4% null (each)
+
+⚠️  RECOMMENDATION: ecd_players.first_year/last_year/peak_year/era_active appear to be 
+    completely unpopulated. Consider if this is expected or a data quality issue.
+    ecd_match_results.event_number and ecd_awards_v2.event_number are also 100% null,
+    which blocks referential integrity to ecd_events_v2.
+
+================================================================================
+2. CONSISTENCY CHECKS
+================================================================================
+
+2A. DUPLICATE VALUES IN PRESUMED-UNIQUE COLUMNS:
+────────────────────────────────────────────────
+⚠️  DUPLICATES FOUND:
+  people.name: "Juan Londono (Muffin Man)" appears 2 times
+  
+No other duplicates found in unique columns (ecd_players.name, topics.topic_name, etc.)
+
+2B. DATE FORMAT CONSISTENCY:
+───────────────────────────
+⚠️  MIXED FORMATS DETECTED:
+  
+  ecd_posts.date
+    - YYYY/MM/DD format: 4 samples (e.g., "2005/09/04")
+    - Text format: 15 samples (e.g., "August 4, 2006")
+    - Empty strings: some present
+    
+  ecd_events_v2.date
+    - Text format: 14 samples (e.g., "September 4, 2005")
+    - YYYY/MM/DD format: 6 samples (e.g., "2006/01/01")
+    
+  timeline_posts.posted
+    - YYYY-MM-DD format: 10 samples (e.g., "2005-07-29")
+    - Partial dates: 10 samples (e.g., "2006-01", "2007-01")
+    
+  post_content.date
+    - YYYY-MM-DD format: 7 samples
+    - Inconsistent: 1 sample
+    
+📊  IMPACT: High - Date parsing will require special handling. Consider 
+    normalizing to ISO 8601 (YYYY-MM-DD) format.
+
+2C. YEAR RANGE CONSISTENCY (Expected: 1970-2026):
+─────────────────────────────────────────────────
+✓ ALL YEAR VALUES WITHIN RANGE (with minor note below)
+
+Note: people.birth_year has 2 values in 1957 (outside typical range but valid for 
+      biography). All other years within 1970-2026.
+
+2D. SENTIMENT VALUE RANGE CHECK (Expected: [-1, 1]):
+───────────────────────────────────────────────────
+✓ ALL SENTIMENT VALUES WITHIN EXPECTED RANGE [-1, 1]
+  Checked: sentiment_compound, vader_compound, sentiment_polarity, etc.
+  All values properly normalized.
+
+================================================================================
+3. REFERENTIAL INTEGRITY CHECKS
+================================================================================
+
+VALID RELATIONSHIPS (All references intact):
+─────────────────────────────────────────────
+✓ people_highlights.person_id → people.id
+  References: 46 values | Status: ALL VALID
+
+✓ ecd_awards_v2.post_id → ecd_posts.id
+  References: 12 values | Status: ALL VALID
+
+✓ ecd_match_results.post_id → ecd_posts.id
+  References: 95 values | Status: ALL VALID
+
+✓ topic_evolution.topic_id → topics.id
+  References: 184 values | Status: ALL VALID
+
+✓ ecd_fundraisers.post_id → ecd_posts.id
+  References: 2 values | Status: ALL VALID
+
+✓ milestones.topic_id → topics.id
+  References: 8 values | Status: ALL VALID
+
+
+BROKEN RELATIONSHIPS (Orphaned references):
+──────────────────────────────────────────
+⚠️  timeline_posts.post_id → ecd_posts.id
+  References: 30 values
+  Orphaned: 30 records (100% of non-null references)
+  Sample orphaned IDs: 56704, 56999, 57343, 57394, 58397
+  
+⚠️  post_content.post_id → ecd_posts.id
+  References: 9 values
+  Orphaned: 9 records (100% of non-null references)
+  Sample orphaned IDs: 61818, 62073, 59703, 57787, 58912
+
+⚠️  ner_entities.source_id → ecd_posts.id (conditional - if source_table='ecd_posts')
+  References: 184 values
+  Orphaned: 438 records (~70% of entries reference non-existent posts)
+  Note: This may be expected if source_table can reference multiple table types
+
+❌ CRITICAL: ecd_match_results.event_number → ecd_events_v2.event_number
+  References: 0 values (100% NULL in ecd_match_results.event_number)
+  Cannot verify this relationship - column is entirely unpopulated
+
+❌ CRITICAL: ecd_awards_v2.event_number → ecd_events_v2.event_number
+  References: 0 values (100% NULL in ecd_awards_v2.event_number)
+  Cannot verify this relationship - column is entirely unpopulated
+
+📊  IMPACT: timeline_posts and post_content appear to reference deleted/archived posts.
+    ner_entities has significant orphaned data, possibly from different source tables.
+    Missing event_number data prevents matching awards/results to events.
+
+================================================================================
+4. REDUNDANCY ANALYSIS: POTENTIAL TABLE OVERLAP
+================================================================================
+
+DIRECT DUPLICATES/VERSIONS (Same data, different enrichment):
+──────────────────────────────────────────────────────────────
+
+awards vs awards_enriched:
+  Rows:         51 (identical)
+  Common cols:  id, category, year, winner, note (5 columns)
+  Extra in v2:  award_sentiment, related_milestones
+  Purpose:      awards_enriched adds sentiment analysis and milestone links
+  ✓ awards_enriched is an enriched version of awards - NOT redundant, intentional
+
+
+ecd_events vs ecd_events_v2:
+  Rows:         19 vs 168 (v2 has 9x more data)
+  Common cols:  id, event_number, event_name, date, year (5 columns)
+  Extra in v1:  anniversary, note, participants, raised, vader_compound/pos/neg
+  Extra in v2:  attendance, era, event_type, match_count, post_ids, seasons
+  Purpose:      v2 appears to be expanded dataset with additional event types/details
+  ⚠️  CONCERN: ecd_events (19) may be incomplete. ecd_events_v2 (168) is much larger
+      and appears to be the production table. May have data quality issues in v1.
+
+
+PARTIAL DUPLICATES (Different entities, overlapping scope):
+────────────────────────────────────────────────────────────
+
+person vs people:
+  Rows:         1 vs 165 (vastly different scope)
+  Common cols:  id, name, birth_year (3 columns)
+  Extra in person: detailed biographical data (16 cols total)
+  Extra in people: category, relation, connection, born (7 cols total)
+  Purpose:      'person' = main subject profile, 'people' = relationships/network
+  ✓ NOT redundant - complementary tables
+
+
+ecd_players vs person_arc:
+  Rows:         128 vs 40 (overlap unclear)
+  Common cols:  first_year, last_year, peak_year, total_mentions, peak_mentions
+  Extra in players: id, name, wins, losses, is_hof, nicknames, post_count, era_active
+  Extra in person_arc: person, span
+  Purpose:      players = ECD wrestling players, person_arc = career arcs
+  ⚠️  POSSIBLE OVERLAP: May need to verify if same entities represented differently
+
+
+TEMPORAL AGGREGATES (Same data, different aggregation levels):
+──────────────────────────────────────────────────────────────
+
+milestones (226) vs year_summary (23):
+  Purpose:      milestones = individual events, year_summary = yearly aggregates
+  ✓ NOT redundant - different granularity (event vs year level)
+
+life_chapters (19) vs heros_journey (9):
+  Purpose:      life_chapters = detailed chapters, heros_journey = hero's journey stages
+  ✓ NOT redundant - different narrative frameworks
+
+
+SUMMARY OF REDUNDANCY:
+  ✓ Most redundancy appears intentional (enriched versions, aggregation levels)
+  ⚠️  ecd_events vs ecd_events_v2 may indicate data quality issue or incomplete migration
+  ⚠️  ecd_players.first_year/last_year/peak_year are 100% NULL - consider dropping or populating
+
+================================================================================
+5. KEY RELATIONSHIPS MAP: FOREIGN KEY STRUCTURE
+================================================================================
+
+CORE RELATIONSHIP NETWORKS:
+────────────────────────────
+
+1. POSTS AND RELATED DATA (Hub: ecd_posts)
+   ┌─ ecd_posts (id) [1,096 rows]
+   │
+   ├─→ ecd_match_results.post_id [95 references] ✓ VALID
+   │   └─ Match-level details from posts
+   │
+   ├─→ ecd_awards_v2.post_id [12 references] ✓ VALID
+   │   └─ Awards mentioned in posts
+   │
+   ├─→ post_content.post_id [9 references, 9 ORPHANED] ⚠️ BROKEN
+   │   └─ Detailed content summaries
+   │
+   ├─→ timeline_posts.post_id [30 references, 30 ORPHANED] ⚠️ BROKEN
+   │   └─ Posts that are timeline-specific
+   │
+   └─→ ecd_fundraisers.post_id [2 references] ✓ VALID
+       └─ Fundraiser events in posts
+
+
+2. PEOPLE AND HIGHLIGHTS (Hub: people)
+   ┌─ people (id) [165 rows]
+   │
+   └─→ people_highlights.person_id [46 references] ✓ VALID
+       └─ Notable moments for each person
+
+
+3. TOPICS ACROSS TIME (Hub: topics + topic_evolution)
+   ┌─ topics (id) [8 rows]
+   │
+   ├─→ topic_evolution.topic_id [184 references] ✓ VALID
+   │   └─ Topic weight per year
+   │
+   └─→ milestones.topic_id [8 references] ✓ VALID
+       └─ Milestones associated with topics
+
+
+4. EVENTS AND MATCHES (Broken Hub: ecd_events_v2)
+   ┌─ ecd_events_v2 (id, event_number) [168 rows]
+   │
+   ├─ ecd_match_results.event_number [100% NULL] ❌ BROKEN
+   │   └─ Cannot link match results to events
+   │
+   └─ ecd_awards_v2.event_number [100% NULL] ❌ BROKEN
+       └─ Cannot link awards to events
+
+
+5. TEMPORAL ALIGNMENT (Year-based relationships)
+   All these tables share 'year' column for cross-filtering:
+   - ecd_posts, ecd_events_v2, ecd_match_results
+   - ecd_awards_v2, ecd_fundraisers
+   - milestones, life_chapters
+   - temporal_network, year_summary, year_keywords
+   - career, medical_history, entertainment, travel
+   Purpose: Allows time-series analysis across multiple domains
+
+
+6. NAMED ENTITY RELATIONSHIPS (Complex):
+   ┌─ ner_entities (source_table, source_id) [622 rows]
+   │
+   ├─→ ecd_posts (source_id=ecd_posts.id) [438 ORPHANED] ⚠️
+   │   └─ Extracted entities from posts
+   │
+   └─ Other source_tables not verified
+       └─ May reference other tables
+
+
+IMPLICIT RELATIONSHIPS (No explicit FK, but linked by values):
+──────────────────────────────────────────────────────────────
+
+Year-based joins:
+  - ecd_posts.year ←→ year_summary.year
+  - ecd_posts.year ←→ temporal_network.year
+  - ecd_posts.year ←→ year_keywords.year
+  - milestones.year ←→ life_chapters.year_start/end
+  - milestones.year ←→ year_summary.year
+
+Person-name based joins:
+  - ecd_players.name (no direct FK, but unique player names)
+  - co_occurrences.person_a/person_b (person names as text)
+  - relationship_graph.person_name (text-based person references)
+  - person_timeline.person_name (text-based person references)
+  - lj_commenters.name (commenter names, some in people table)
+
+Event-based joins:
+  - ecd_match_results.winner/loser ←→ ecd_players.name
+  - ecd_rivalries.player1/player2 ←→ ecd_players.name
+  - ecd_awards_v2.recipient (text, not linked to people table)
+
+Theme/emotion-based:
+  - ecd_posts.dominant_themes ←→ lj_comments.theme
+  - ecd_posts.dominant_emotions ←→ quotes.emotion
+  - milestones.sentiment_* ←→ ecd_posts.sentiment_*
+
+
+SUMMARY TABLE:
+──────────────
+Foreign Key Type          Count    Valid   Broken   % Coverage
+─────────────────────────────────────────────────────────────
+Explicit (post_id)           7        5        2     71%
+Explicit (person_id)         1        1        0    100%
+Explicit (topic_id)          3        3        0    100%
+Explicit (event_number)      2        0        2      0%  ← CRITICAL
+Implicit (year joins)       10+      N/A      N/A    ~95%
+Implicit (name joins)        8+      N/A      N/A    ~80%
+─────────────────────────────────────────────────────────────
+
+================================================================================
+DATA QUALITY ISSUES SUMMARY (Severity Ranking)
+================================================================================
+
+CRITICAL (Must Fix):
+  1. ecd_players.first_year/last_year/peak_year/era_active ALL NULL (128 rows)
+     → Impact: Cannot determine player career spans
+     → Action: Populate missing data OR remove columns
+  
+  2. ecd_match_results.event_number ALL NULL (99 rows)
+     → Impact: Cannot link match results to ECD events
+     → Action: Populate or document why link is absent
+  
+  3. ecd_awards_v2.event_number ALL NULL (27 rows)
+     → Impact: Cannot link awards to ECD events
+     → Action: Populate or document why link is absent
+  
+  4. timeline_posts.post_id ALL ORPHANED (30 references to non-existent posts)
+     → Impact: Orphaned timeline post records
+     → Action: Clean up orphaned records or restore posts
+
+HIGH (Should Fix):
+  5. post_content.post_id ALL ORPHANED (9 references to non-existent posts)
+     → Impact: Content summaries for deleted posts
+     → Action: Clean up orphaned records
+  
+  6. people.name DUPLICATE: "Juan Londono (Muffin Man)" appears 2x
+     → Impact: Ambiguity in person identification
+     → Action: Investigate and de-duplicate
+  
+  7. Date formats inconsistent across multiple tables
+     → Impact: Date parsing errors in applications
+     → Action: Normalize to ISO 8601 format
+  
+  8. people.birth_year 98.8% NULL (163/165)
+     → Impact: Cannot perform age/cohort analysis
+     → Action: Populate from external sources or accept limitation
+
+MEDIUM (Nice to Fix):
+  9. ecd_events vs ecd_events_v2 appear to be different datasets
+     → Impact: Unclear which table to use
+     → Action: Document schema differences and deprecate v1 or merge
+  
+  10. ecd_rivalries missing year data (100% null for first_year, last_year)
+      → Impact: Cannot determine rivalry timespan
+      → Action: Compute from match data or populate manually
+  
+  11. Multiple tables with >70% NULL columns (travel, cruise_detail, etc)
+      → Impact: Sparse data limits analysis potential
+      → Action: Document expected sparsity or populate if possible
+
+LOW (Cosmetic):
+  12. Various notes/description fields 70-95% null (optional fields)
+  13. Self-ratings missing 95.7% (expected for incomplete data)
+  14. ner_entities has ~70% orphans (may be multi-source design)
+
+================================================================================
+RECOMMENDATIONS
+================================================================================
+
+1. DATA GOVERNANCE:
+   - Establish clear ownership for each table
+   - Document which tables are production vs experimental (v1 vs v2)
+   - Define data quality SLAs (e.g., max allowed NULL rates)
+   - Create audit trail for data changes
+
+2. DATA CLEANUP (Priority Order):
+   a) Fix event_number NULLs in ecd_match_results and ecd_awards_v2
+   b) Resolve timeline_posts and post_content orphaned references
+   c) De-duplicate people.name entries
+   d) Normalize all date formats to YYYY-MM-DD ISO 8601
+   e) Investigate ecd_players missing year data
+   f) Populate people.birth_year from external data or accept sparsity
+
+3. SCHEMA IMPROVEMENTS:
+   - Drop ecd_players.first_year/last_year/peak_year/era_active if unused
+   - Consolidate ecd_events and ecd_events_v2 (deprecate v1 if v2 is complete)
+   - Add CHECK constraints for sentiment/year ranges
+   - Add NOT NULL constraints where appropriate
+   - Document expected NULL rates for optional fields
+
+4. RELATIONSHIP INTEGRITY:
+   - Add explicit foreign key constraints in SQLite (enable PRAGMA foreign_keys)
+   - Investigate and repair ner_entities.source_id orphaned records
+   - Create index on frequently-joined columns (year, post_id, person_id)
+
+5. DOCUMENTATION:
+   - Create data dictionary with null rate, range, format for each column
+   - Document implicit relationships (year-based, name-based joins)
+   - Clarify which tables are canonical vs derived/enriched
+   - Explain v1 vs v2 table differences and migration status
+
+================================================================================
+END OF REPORT
+================================================================================

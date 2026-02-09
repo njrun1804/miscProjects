@@ -3,6 +3,7 @@
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
+import { plantClue } from './room0.js';
 
 export async function initAtlas() {
     const data = await loadMultiple([
@@ -356,6 +357,7 @@ function renderBigTrips(travel) {
 // Auto-init
 initAtlas()
     .then(() => initWormholes('atlas'))
+    .then(() => plantClue('clue5', document.querySelector('.atlas-callout')))
     .catch(err => {
         console.error('Atlas init error:', err);
         const el = document.getElementById('atlasMap');

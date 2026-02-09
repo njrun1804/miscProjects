@@ -560,12 +560,72 @@
 }
 
 .vault-people-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 12px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
 }
+
+/* ── Tier layout ── */
+
+.vault-people-tier--featured {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.vault-people-tier-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--lj-border);
+}
+
+.vault-people-tier--quoted {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.vault-people-tier--unquoted {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+}
+
+/* ── The Unquoted section ── */
+
+.vault-people-unquoted {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px dashed var(--lj-border);
+}
+
+.vault-people-unquoted__label {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--room-accent);
+    opacity: 0.7;
+    margin-bottom: 6px;
+}
+
+.vault-people-unquoted__note {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 14px;
+    color: var(--room-text);
+    opacity: 0.6;
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+/* ── Card base ── */
 
 .vault-person-card {
     background: var(--room-panel);
@@ -580,13 +640,216 @@
     box-shadow: 0 4px 12px rgba(201, 168, 76, 0.12);
 }
 
+/* ── Featured card ── */
+
+.vault-person-card--featured {
+    padding: 20px;
+    border-left: 3px solid var(--room-accent);
+}
+
+.vault-person-card--featured:hover {
+    box-shadow: 0 6px 20px rgba(201, 168, 76, 0.18);
+}
+
+/* ── Unquoted card ── */
+
+.vault-person-card--unquoted {
+    opacity: 0.7;
+    border-style: dashed;
+}
+
+.vault-person-card--unquoted:hover {
+    opacity: 1;
+}
+
+/* ── Card header ── */
+
+.vault-person-card__header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+}
+
 .vault-person-card__name {
     font-family: var(--font-mono);
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--room-accent);
-    margin-bottom: 4px;
+    line-height: 1.2;
 }
+
+.vault-person-card--featured .vault-person-card__name {
+    font-size: 18px;
+}
+
+.vault-person-card__category {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    border: 1px solid;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+/* ── Connection text ── */
+
+.vault-person-card__connection {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.vault-person-card--featured .vault-person-card__connection {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+/* ── Importance bar ── */
+
+.vault-person-card__importance {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.vault-person-card__importance-bar {
+    flex: 1;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.vault-person-card__importance-fill {
+    height: 100%;
+    background: var(--room-accent);
+    border-radius: 2px;
+    transition: width 0.8s ease-out;
+}
+
+.vault-person-card__importance-score {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    min-width: 24px;
+    text-align: right;
+}
+
+/* ── Years ── */
+
+.vault-person-card__years {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-bottom: 8px;
+}
+
+/* ── Mini timeline ── */
+
+.vault-person-card__timeline {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+    padding: 6px 0;
+}
+
+.vault-timeline-year {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--lj-text-secondary);
+    white-space: nowrap;
+}
+
+.vault-timeline-track {
+    flex: 1;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 1px;
+    position: relative;
+}
+
+.vault-timeline-dot {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.2s, transform 0.2s;
+    cursor: help;
+}
+
+.vault-timeline-dot:hover {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+    z-index: 2;
+}
+
+/* ── Highlight ── */
+
+.vault-person-card__highlight {
+    font-family: var(--font-sans);
+    font-size: 12px;
+    color: var(--room-text);
+    background: rgba(201, 168, 76, 0.06);
+    padding: 6px 10px;
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* ── Quote sample ── */
+
+.vault-person-card__quote {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 12px;
+    color: var(--room-text);
+    line-height: 1.5;
+    opacity: 0.8;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 2px solid rgba(201, 168, 76, 0.3);
+}
+
+.vault-person-card--featured .vault-person-card__quote {
+    font-size: 13px;
+}
+
+.vault-person-card__quote-year {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-style: normal;
+    font-size: 10px;
+    color: var(--room-accent);
+    margin-left: 6px;
+    opacity: 0.7;
+}
+
+/* ── Stats row ── */
+
+.vault-person-card__stats {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.vault-person-card__stat {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+}
+
+/* ── Old class compat (unused, kept for safety) ── */
 
 .vault-person-card__count {
     font-family: var(--font-sans);
@@ -781,7 +1044,9 @@
     .vault-filters { gap: 6px; }
     .vault-filter { font-size: 10px; padding: 4px 10px; }
     .vault-soundtrack-grid { grid-template-columns: 1fr; }
-    .vault-people-grid { grid-template-columns: 1fr; }
+    .vault-people-tier--featured { grid-template-columns: 1fr; }
+    .vault-people-tier--quoted { grid-template-columns: 1fr; }
+    .vault-people-tier--unquoted { grid-template-columns: 1fr; }
 
     .vault-featured__quote { font-size: 18px; }
     .vault-featured__card { padding: 24px 16px; }

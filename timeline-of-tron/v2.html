@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Timeline of Tron — A Data Biography</title>
+<style>
+/* ========================================
+   RESET & BASE
+   ======================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 18px; }
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #2c2416;
+  background: #f7f3ec;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+.mono { font-family: 'Courier New', Courier, monospace; }
+.sans { font-family: 'Trebuchet MS', 'Lucida Grande', Arial, sans-serif; }
+
+h1, h2, h3 { font-family: Georgia, serif; font-weight: normal; }
+
+/* ========================================
+   LAYOUT
+   ======================================== */
+.container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+.wide { max-width: 1000px; margin: 0 auto; padding: 0 24px; }
+.full-bleed { width: 100%; position: relative; }
+
+section { padding: 80px 0; }
+section + section { border-top: 1px solid rgba(44,36,22,0.08); }
+
+/* ========================================
+   HERO / PROLOGUE
+   ======================================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+  background: #2c2416;
+  color: #e8e0d0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-title {
+  font-size: 2.8rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  opacity: 0;
+  animation: fadeUp 1.2s ease 0.3s forwards;
+}
+.hero-subtitle {
+  font-size: 1.05rem;
+  color: #a09888;
+  margin-bottom: 48px;
+  opacity: 0;
+  animation: fadeUp 1.2s ease 0.6s forwards;
+}
+.hero-seismograph {
+  width: 100%;
+  max-width: 900px;
+  height: 140px;
+  opacity: 0;
+  animation: fadeUp 1.2s ease 0.9s forwards;
+}
+.hero-scroll-hint {
+  position: absolute;
+  bottom: 32px;
+  font-size: 0.75rem;
+  color: #6b5b47;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeUp 1.2s ease 1.5s forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ========================================
+   CHAPTER HEADERS
+   ======================================== */
+.chapter-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.chapter-number {
+  font-family: 'Courier New', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #8b7b67;
+  display: block;
+  margin-bottom: 12px;
+}
+.chapter-title {
+  font-size: 2.2rem;
+  color: #2c2416;
+  margin-bottom: 12px;
+}
+.chapter-premise {
+  font-size: 1rem;
+  color: #6b5b47;
+  font-style: italic;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   CHAPTER 1: THE SHAPE OF A LIFE
+   ======================================== */
+.sentiment-chart-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  margin: 40px 0;
+}
+#sentimentChart { width: 100%; height: 100%; }
+
+.year-annotation {
+  position: absolute;
+  background: #2c2416;
+  color: #e8e0d0;
+  padding: 12px 16px;
+  border-radius: 2px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  max-width: 260px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+.year-annotation.visible { opacity: 1; }
+
+.insight-callout {
+  background: #ece6d8;
+  border-left: 3px solid #c9a84c;
+  padding: 24px 28px;
+  margin: 40px 0;
+  font-style: italic;
+  color: #4a3f30;
+}
+.insight-callout .data-point {
+  font-family: 'Courier New', monospace;
+  font-style: normal;
+  color: #8b1a1a;
+}
+
+/* ========================================
+   CHAPTER 2: WHEN THINGS BREAK
+   ======================================== */
+.crisis-timeline {
+  position: relative;
+  margin: 48px 0;
+}
+.crisis-pair {
+  display: grid;
+  grid-template-columns: 1fr 40px 1fr;
+  gap: 0;
+  align-items: start;
+  margin-bottom: 48px;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.crisis-pair.visible { opacity: 1; transform: translateY(0); }
+
+.crisis-side {
+  text-align: right;
+  padding-right: 24px;
+}
+.creation-side {
+  text-align: left;
+  padding-left: 24px;
+}
+.timeline-spine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #8b1a1a;
+  position: relative;
+  z-index: 2;
+  margin-top: 6px;
+}
+.timeline-dot.creation { background: #4a6741; }
+.timeline-line {
+  width: 2px;
+  flex: 1;
+  background: rgba(44,36,22,0.12);
+  min-height: 60px;
+}
+
+.crisis-year {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: #8b1a1a;
+  letter-spacing: 0.05em;
+}
+.crisis-event {
+  font-size: 0.95rem;
+  margin-top: 4px;
+  color: #2c2416;
+}
+.creation-year {
+  font-family: 'Courier New', monospace;
+  font-size: 0.75rem;
+  color: #4a6741;
+  letter-spacing: 0.05em;
+}
+.creation-event {
+  font-size: 0.95rem;
+  margin-top: 4px;
+  color: #2c2416;
+}
+.gap-label {
+  font-family: 'Courier New', monospace;
+  font-size: 0.65rem;
+  color: #8b7b67;
+  margin-top: 8px;
+  display: block;
+}
+
+/* ========================================
+   CHAPTER 3: THE WRITER'S VOICE
+   ======================================== */
+.quote-evolution {
+  margin: 48px 0;
+}
+.quote-era {
+  margin-bottom: 56px;
+}
+.era-label {
+  font-family: 'Courier New', monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8b7b67;
+  margin-bottom: 16px;
+}
+.era-description {
+  font-size: 0.9rem;
+  color: #6b5b47;
+  margin-bottom: 20px;
+}
+
+.quote-card {
+  border-left: 2px solid rgba(44,36,22,0.1);
+  padding: 16px 0 16px 24px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.quote-text {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: #2c2416;
+  line-height: 1.6;
+}
+.quote-attr {
+  font-size: 0.75rem;
+  color: #8b7b67;
+  margin-top: 8px;
+  font-family: 'Courier New', monospace;
+}
+.quote-metrics {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+.metric-pill {
+  font-family: 'Courier New', monospace;
+  font-size: 0.6rem;
+  color: #6b5b47;
+  background: rgba(44,36,22,0.05);
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+
+.voice-chart-container {
+  height: 300px;
+  margin: 40px 0;
+}
+
+/* ========================================
+   CHAPTER 4: WHO WAS THERE
+   ======================================== */
+.stark-stat {
+  text-align: center;
+  padding: 56px 0;
+}
+.stark-number {
+  font-family: 'Courier New', monospace;
+  font-size: 5rem;
+  font-weight: bold;
+  color: #2c2416;
+  line-height: 1;
+}
+.stark-label {
+  font-size: 1rem;
+  color: #6b5b47;
+  margin-top: 8px;
+}
+.stark-row {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.stark-row .stark-stat { padding: 24px 0; }
+.stark-row .stark-number { font-size: 3.5rem; }
+
+.people-chart-container {
+  height: 250px;
+  margin: 40px 0;
+}
+
+.presence-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 8px 16px;
+  margin: 40px 0;
+  align-items: center;
+}
+.presence-name {
+  font-size: 0.85rem;
+  text-align: right;
+  color: #2c2416;
+}
+.presence-bar-container {
+  height: 24px;
+  background: rgba(44,36,22,0.04);
+  position: relative;
+  border-radius: 2px;
+}
+.presence-bar {
+  height: 100%;
+  border-radius: 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+.presence-bar span {
+  font-family: 'Courier New', monospace;
+  font-size: 0.6rem;
+  color: #fff;
+}
+
+/* ========================================
+   CHAPTER 5: WHAT HE BUILT
+   ======================================== */
+.ecd-chart-container {
+  height: 320px;
+  margin: 40px 0;
+}
+
+.ecd-phases {
+  margin: 40px 0;
+}
+.ecd-phase {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(44,36,22,0.06);
+}
+.phase-years {
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: #8b7b67;
+  padding-top: 4px;
+}
+.phase-name {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #2c2416;
+  margin-bottom: 4px;
+}
+.phase-detail {
+  font-size: 0.9rem;
+  color: #6b5b47;
+}
+
+/* ========================================
+   EPILOGUE
+   ======================================== */
+.epilogue {
+  background: #2c2416;
+  color: #e8e0d0;
+  text-align: center;
+  padding: 120px 24px;
+}
+.epilogue-quote {
+  font-size: 1.6rem;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto 24px;
+  line-height: 1.5;
+}
+.epilogue-attr {
+  font-size: 0.8rem;
+  color: #8b7b67;
+  font-family: 'Courier New', monospace;
+}
+.epilogue-counter {
+  margin-top: 56px;
+  font-family: 'Courier New', monospace;
+  font-size: 0.65rem;
+  color: #4a3f30;
+  letter-spacing: 0.1em;
+}
+
+/* ========================================
+   PROSE
+   ======================================== */
+.prose { margin-bottom: 24px; }
+.prose p { margin-bottom: 16px; }
+.prose p:last-child { margin-bottom: 0; }
+.prose strong { color: #2c2416; }
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+  html { font-size: 16px; }
+  .hero-title { font-size: 2rem; }
+  .chapter-title { font-size: 1.6rem; }
+  .crisis-pair { grid-template-columns: 1fr; gap: 8px; }
+  .crisis-side { text-align: left; padding: 0; }
+  .creation-side { padding: 0 0 0 20px; }
+  .timeline-spine { display: none; }
+  .stark-row { gap: 40px; }
+  .stark-number { font-size: 2.5rem; }
+  .presence-grid { grid-template-columns: 80px 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========================================
+     HERO / PROLOGUE
+     ======================================== -->
+<section class="hero">
+  <h1 class="hero-title">The Timeline of Tron</h1>
+  <p class="hero-subtitle">22 years of one obsessively documented life. Not what happened &mdash; what it means.</p>
+  <canvas class="hero-seismograph" id="heroSeismograph"></canvas>
+  <p class="hero-scroll-hint">Scroll to begin</p>
+</section>
+
+
+<!-- ========================================
+     CHAPTER 1: THE SHAPE OF A LIFE
+     ======================================== -->
+<section id="ch1">
+  <div class="container">
+    <div class="chapter-header">
+      <span class="chapter-number">Chapter One</span>
+      <h2 class="chapter-title">The Shape of a Life</h2>
+      <p class="chapter-premise">22 years of sentiment, scored by machine, annotated by hand. <br>The peaks aren't where you'd expect.</p>
+    </div>
+
+    <div class="prose">
+      <p>Between 2004 and 2026, John documented 226 milestones. Each one was scored for emotional valence &mdash; how positive or negative the language was. Stacked together, they form a shape. Not a success story that climbs steadily upward. Something stranger.</p>
+    </div>
+  </div>
+
+  <div class="wide">
+    <div class="sentiment-chart-container">
+      <canvas id="sentimentChart"></canvas>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="prose">
+      <p>2004 is a pit. The car accident that started the entire project sits at the bottom of the chart, the most negative year in 22 years of recording. And then: a slow, uneven climb. Not toward happiness exactly, but toward something more interesting.</p>
+    </div>
+
+    <div class="insight-callout">
+      2009 had a sentiment score of only <span class="data-point">+0.100</span> &mdash; moderate at best. But it recorded the widest emotional range in the entire dataset: <span class="data-point">0.998</span> on a 0-to-1 scale. That year contained ECD's retirement, John's first concert, his first skydive, and WrestleMania 25. His quotes that year swing between "Sometimes it is hell trying to get to heaven" and "You cannot fear death once you've touched heaven." It wasn't his happiest year. It was his most <em>alive</em> year. The greatest years aren't the calmest.
+    </div>
+
+    <div class="prose">
+      <p>The other surprise: 2023 and 2016 are the emotional peaks &mdash; not 2013, which John himself called "the greatest year of my adulthood." The data doesn't always agree with memory. What we remember as great and what we <em>wrote</em> as great are different things.</p>
+
+      <p>And at the end, a dip. 2024 and 2025 slide back below zero &mdash; the first negative years since 2004. A relationship transition, kidney stones, influenza. The line bends downward. But we've seen this shape before.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     CHAPTER 2: WHEN THINGS BREAK
+     ======================================== -->
+<section id="ch2">
+  <div class="container">
+    <div class="chapter-header">
+      <span class="chapter-number">Chapter Two</span>
+      <h2 class="chapter-title">When Things Break</h2>
+      <p class="chapter-premise">Every major trauma is followed by a creation. <br>Not always. But when the body breaks, the hands build.</p>
+    </div>
+
+    <div class="prose">
+      <p>Here's a pattern that holds up under scrutiny, but only for the serious stuff. Minor crises &mdash; strep throat, wart removal &mdash; don't trigger anything. But when something truly breaks, John builds something within 3 to 12 months. Every time.</p>
+    </div>
+
+    <div class="crisis-timeline" id="crisisTimeline">
+
+      <div class="crisis-pair" data-observe>
+        <div class="crisis-side">
+          <span class="crisis-year">Jul 29, 2004</span>
+          <div class="crisis-event">Life-altering car accident.<br>Panic attacks. Anxiety.</div>
+        </div>
+        <div class="timeline-spine">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-dot creation"></div>
+        </div>
+        <div class="creation-side">
+          <span class="creation-year">Nov 2005</span>
+          <div class="creation-event">EastCoastDodgeball founded.<br>168 events over 12 years.</div>
+          <span class="gap-label">16 months later</span>
+        </div>
+      </div>
+
+      <div class="crisis-pair" data-observe>
+        <div class="crisis-side">
+          <span class="crisis-year">2005</span>
+          <div class="crisis-event">Shingles at age 20.<br>Family estrangement.</div>
+        </div>
+        <div class="timeline-spine">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-dot creation"></div>
+        </div>
+        <div class="creation-side">
+          <span class="creation-year">Mar 2006</span>
+          <div class="creation-event">FINS Friday tradition begins.<br>Still running 20 years later.</div>
+          <span class="gap-label">9 months later</span>
+        </div>
+      </div>
+
+      <div class="crisis-pair" data-observe>
+        <div class="crisis-side">
+          <span class="crisis-year">Sep 2007</span>
+          <div class="crisis-event">Near-anorexia. Mental health crisis.<br>"A desperate lifestyle alteration."</div>
+        </div>
+        <div class="timeline-spine">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-dot creation"></div>
+        </div>
+        <div class="creation-side">
+          <span class="creation-year">Sep 2007</span>
+          <div class="creation-event">Joined Jersey Shore Fitness.<br>Physical transformation begins.</div>
+          <span class="gap-label">Same month</span>
+        </div>
+      </div>
+
+      <div class="crisis-pair" data-observe>
+        <div class="crisis-side">
+          <span class="crisis-year">Nov 4, 2008</span>
+          <div class="crisis-event">Second car accident.<br>Rear-ended on West Park Avenue.</div>
+        </div>
+        <div class="timeline-spine">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-dot creation"></div>
+        </div>
+        <div class="creation-side">
+          <span class="creation-year">Jan 3, 2009</span>
+          <div class="creation-event">ECD retirement: "Legacy secured."<br>Freedom and self-discovery begin.</div>
+          <span class="gap-label">2 months later</span>
+        </div>
+      </div>
+
+      <div class="crisis-pair" data-observe>
+        <div class="crisis-side">
+          <span class="crisis-year">Dec 15, 2017</span>
+          <div class="crisis-event">Spinal microdiscectomy. 14 staples.<br>"I Just Want To Wake Up. (I Did!)"</div>
+        </div>
+        <div class="timeline-spine">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-dot creation"></div>
+        </div>
+        <div class="creation-side">
+          <span class="creation-year">2018</span>
+          <div class="creation-event">Mediterranean cruise. Slovenia, Italy, Greece, Malta, Croatia.<br>Bought the engagement ring in Croatia.</div>
+          <span class="gap-label">~3 months later</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="insight-callout">
+      The pattern holds for major crises at an <span class="data-point">80%</span> rate. For minor ones: <span class="data-point">0%</span>. This isn't a guy who turns every bad day into a project. It's specific: when the body genuinely breaks, he redirects the energy into building something. The bigger the break, the bigger the build.
+    </div>
+
+    <div class="prose">
+      <p>The honest caveat: some of what looks like "creation" is continuation. WWE attendance was already a habit by 2017. Travel was already a pattern. The real signal is in what's <em>new</em> &mdash; ECD after the accident, the gym after the mental health crisis, the ring after the surgery. Those weren't planned. They were responses.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     CHAPTER 3: THE WRITER'S VOICE
+     ======================================== -->
+<section id="ch3">
+  <div class="container">
+    <div class="chapter-header">
+      <span class="chapter-number">Chapter Three</span>
+      <h2 class="chapter-title">The Writer's Voice</h2>
+      <p class="chapter-premise">79 quotes across 22 years. What changed isn't what he said &mdash;<br>it's how sure he was when he said it.</p>
+    </div>
+
+    <div class="prose">
+      <p>In 2007, John wrote: "Without any hesitation, I proudly proclaim that 2007 was undoubtedly the most colorful and eventful year of my life." Count the qualifiers. <em>Without any hesitation. Proudly. Undoubtedly. Most colorful and eventful.</em> A man that sure doesn't need four qualifiers. He's performing confidence.</p>
+
+      <p>By 2023, describing what he'd call an even greater experience, he wrote: "the most spectacular day I've ever experienced." Seven words. No qualifiers. No need.</p>
+
+      <p>That's the entire story of the voice, in two quotes.</p>
+    </div>
+
+    <div class="quote-evolution">
+
+      <div class="quote-era">
+        <div class="era-label">2007 &mdash; 2008 &middot; The Performance</div>
+        <p class="era-description">College-sophomore prose. Borrowed authority. Defensive complexity as armor.</p>
+
+        <div class="quote-card">
+          <div class="quote-text">"Without any hesitation, I proudly proclaim that 2007 was undoubtedly the most colorful and eventful year of my life."</div>
+          <div class="quote-attr">&mdash; Year-end reflection, 2007</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">Grade level: 16.8</span>
+            <span class="metric-pill">Quote density: 0.43</span>
+            <span class="metric-pill">Emotion: pride</span>
+          </div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-text">"I cannot and will not pass any negative sanction upon anything I've ever said because I know at one time, at that specific time, it's how I felt."</div>
+          <div class="quote-attr">&mdash; Yeah I Said It, 2008</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">Grade level: 8.2</span>
+            <span class="metric-pill">Defensive framing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-era">
+        <div class="era-label">Mar 2008 &middot; The Inflection Point</div>
+        <p class="era-description">Coming out. Grade level drops from 16.8 to 8.15. He stops performing.</p>
+
+        <div class="quote-card" style="border-left-color: #c9a84c;">
+          <div class="quote-text">"The power of an internal desire liberated!"</div>
+          <div class="quote-attr">&mdash; Kia Sorento post, March 2008</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">7 words</span>
+            <span class="metric-pill">No qualifiers</span>
+            <span class="metric-pill">Emotional range: 0.917</span>
+          </div>
+        </div>
+
+        <div class="quote-card" style="border-left-color: #c9a84c;">
+          <div class="quote-text">"Inner joy. Endless privilege and pleasure. I've never felt happier to be alive than here and now."</div>
+          <div class="quote-attr">&mdash; Yeah I Said It, March 2008 &mdash; weeks before coming out</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">Sentiment: +0.870</span>
+            <span class="metric-pill">No borrowed voices</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-era">
+        <div class="era-label">2009 &mdash; 2014 &middot; The Authentic Rebuild</div>
+        <p class="era-description">Voice matures. Less borrowing, more direct expression. Comfortable with paradox.</p>
+
+        <div class="quote-card">
+          <div class="quote-text">"Sometimes it is hell trying to get to heaven."</div>
+          <div class="quote-attr">&mdash; Jan 25, 2009 (The Undertaker)</div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-text">"You cannot fear death once you've touched heaven."</div>
+          <div class="quote-attr">&mdash; Oct 11, 2009 (after second skydive)</div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-text">"It wasn't something I was happy about doing, but it is something I'm happy I did."</div>
+          <div class="quote-attr">&mdash; On dodgeball retirement, 2009</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">Comfortable with contradiction</span>
+          </div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-text">"All that keeps running through my head is 'I finally did it.' I never, ever thought the day would come."</div>
+          <div class="quote-attr">&mdash; Apr 10, 2014, meeting The Undertaker</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">Simple language, real awe</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-era">
+        <div class="era-label">2017 &mdash; Present &middot; The Architecture</div>
+        <p class="era-description">Fewer words, more meaning. Vocabulary richness rises but sentence length stays short. Complexity from choice, not defense.</p>
+
+        <div class="quote-card">
+          <div class="quote-text">"I Just Want To Wake Up. (I Did!)"</div>
+          <div class="quote-attr">&mdash; Post-surgery reflection, 2017</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">8 words</span>
+            <span class="metric-pill">Vocabulary richness: 0.886</span>
+          </div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-text">"patience &amp; gratitude"</div>
+          <div class="quote-attr">&mdash; Resignation motto, Oct 2, 2018</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">2 words</span>
+          </div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-text">"it's called dedication. look it up."</div>
+          <div class="quote-attr">&mdash; On eating 8.6 lbs of shrimp, 2021</div>
+        </div>
+
+        <div class="quote-card">
+          <div class="quote-text">"the most spectacular day I've ever experienced"</div>
+          <div class="quote-attr">&mdash; Super Bowl LVII, 2023</div>
+          <div class="quote-metrics">
+            <span class="metric-pill">7 words. No qualifiers. Done.</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="insight-callout">
+      His early complexity was armor. His late complexity is architecture. In 2007, long sentences meant he was trying to impress. By 2021, high vocabulary richness (<span class="data-point">0.914</span>) paired with short word counts (<span class="data-point">6.4 avg</span>) means every word is chosen because the idea demands it. The confidence didn't come from getting louder. It came from getting quieter.
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     CHAPTER 4: WHO WAS THERE
+     ======================================== -->
+<section id="ch4">
+  <div class="container">
+    <div class="chapter-header">
+      <span class="chapter-number">Chapter Four</span>
+      <h2 class="chapter-title">Who Was There</h2>
+      <p class="chapter-premise">164 people appear in this dataset. The real story is in who doesn't.</p>
+    </div>
+
+    <div class="stark-stat">
+      <div class="stark-number">226</div>
+      <div class="stark-label">milestones documented</div>
+    </div>
+
+    <div class="stark-row">
+      <div class="stark-stat">
+        <div class="stark-number">66</div>
+        <div class="stark-label">mention anyone by name</div>
+      </div>
+      <div class="stark-stat">
+        <div class="stark-number">50</div>
+        <div class="stark-label">mention Ma</div>
+      </div>
+    </div>
+
+    <div class="prose">
+      <p>That's the entire relationship story, in three numbers.</p>
+
+      <p>Of 226 milestones across 22 years, only 29% mention another human being. And of those, 76% mention the same person: Ma. Everyone else &mdash; The Pops, Rob, Michael, Megan, Dan Spengeman &mdash; appears once or twice.</p>
+
+      <p>This isn't isolation. John had 124 people in his ECD community alone. He travels with people, works with people, lives among people. But the <em>documentation</em> is deliberately selective. This is a man who tells the story of his own achievement, not his social life. The people are there. The diary just doesn't always name them.</p>
+    </div>
+  </div>
+
+  <div class="wide">
+    <div class="container">
+      <div class="presence-grid" id="presenceGrid">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="insight-callout">
+      Ma is the only person who appears in both the highest and lowest emotional moments. Everyone else is context-specific: The Pops appears only in positive contexts (recreation, joy). Rob appears only in crisis contexts. Ma is the only constant across the full emotional spectrum &mdash; <span class="data-point">20 years</span>, every kind of moment.
+    </div>
+
+    <div class="prose">
+      <p>And here's what the numbers miss: 2004, the year of the car accident, the most negative year in the dataset &mdash; mentions zero people. 2017, the year of spinal surgery &mdash; mentions only Ma. John documents positive social transitions with wider circles, but handles personal crises quietly. The harder it gets, the fewer names appear.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     CHAPTER 5: WHAT HE BUILT
+     ======================================== -->
+<section id="ch5">
+  <div class="container">
+    <div class="chapter-header">
+      <span class="chapter-number">Chapter Five</span>
+      <h2 class="chapter-title">What He Built</h2>
+      <p class="chapter-premise">ECD wasn't a hobby. It was identity. And the proof is what happened when it ended.</p>
+    </div>
+
+    <div class="prose">
+      <p>In November 2005, a 20-year-old recovering from a car accident started a dodgeball group. By 2006, it had 51 events in a single year. By 2008, there were 270+ numbered events, 100+ players, a Hall of Fame, documented rivalries, and a blog voice called "The Writer" that published twice a week.</p>
+
+      <p>Then it ended. In January 2009, John forced a clean retirement rather than let the community degrade. His quote: "It wasn't something I was happy about doing, but it is something I'm happy I did."</p>
+    </div>
+  </div>
+
+  <div class="wide">
+    <div class="ecd-chart-container">
+      <canvas id="ecdChart"></canvas>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="ecd-phases">
+      <div class="ecd-phase">
+        <div class="phase-years">2005&ndash;2006</div>
+        <div>
+          <div class="phase-name">The Founding</div>
+          <div class="phase-detail">20 events in year one, 51 in year two. Born from a car accident's aftermath. Community building as recovery mechanism.</div>
+        </div>
+      </div>
+      <div class="ecd-phase">
+        <div class="phase-years">2007&ndash;2008</div>
+        <div>
+          <div class="phase-name">The Golden Age</div>
+          <div class="phase-detail">Peak participation. Hall of Fame system, legendary moments (John in the garbage can, DODGEBOWL 200), rivalries documented with the precision of ESPN.</div>
+        </div>
+      </div>
+      <div class="ecd-phase">
+        <div class="phase-years">Jan 2009</div>
+        <div>
+          <div class="phase-name">The Retirement</div>
+          <div class="phase-detail">"I got tired of kissin' ass." Clean exit after 171 events. Legacy secured rather than degraded. The hardest decision in the dataset.</div>
+        </div>
+      </div>
+      <div class="ecd-phase">
+        <div class="phase-years">2010&ndash;2017</div>
+        <div>
+          <div class="phase-name">The Ceremonial Era</div>
+          <div class="phase-detail">2-6 events per year. Annual gatherings, not weekly games. The community became a memory institution.</div>
+        </div>
+      </div>
+      <div class="ecd-phase">
+        <div class="phase-years">2021&ndash;2025</div>
+        <div>
+          <div class="phase-name">The Transfer</div>
+          <div class="phase-detail">John's community-building impulse moved to professional senior living work. Self-rating hit 9.8/10 &mdash; his highest ever &mdash; with ECD dormant. The community still gathers. Next-generation family members attend.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="insight-callout">
+      ECD proves something about John that no single chart could: he can create real institutional meaning from nothing. A dodgeball league became a 20-year community that outlasted the sport itself. When health crisis forced an exit, he didn't collapse &mdash; he transferred the skill to where it was needed most. The community still gathers in 2025, bringing children who weren't born when it started.
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     EPILOGUE
+     ======================================== -->
+<section class="epilogue">
+  <div class="container">
+    <div class="epilogue-quote">"Some day you're gonna look back and be happy you recorded all of this stuff"</div>
+    <div class="epilogue-attr">&mdash; Anonymous commenter, Timeline IV, 2007</div>
+    <div class="epilogue-counter">
+      226 milestones &middot; 79 quotes &middot; 168 ECD events &middot; 14 medical events &middot; 34 trips &middot; 22 years<br>
+      One obsessively documented life.
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================================
+     SCRIPTS
+     ======================================== -->
+<script src="lib/chart.js"></script>
+<script>
+// ========================================
+// DATA
+// ========================================
+const SENTIMENT = [
+  {year:2004,avg:-0.4375,intensity:6.5,milestones:2},
+  {year:2005,avg:-0.1806,intensity:2.0,milestones:2},
+  {year:2006,avg:0.0,intensity:2.0,milestones:2},
+  {year:2007,avg:0.069,intensity:26.0,milestones:14},
+  {year:2008,avg:0.072,intensity:29.0,milestones:14},
+  {year:2009,avg:0.100,intensity:31.5,milestones:14},
+  {year:2010,avg:0.192,intensity:17.5,milestones:10},
+  {year:2011,avg:-0.0005,intensity:26.5,milestones:12},
+  {year:2012,avg:0.038,intensity:13.0,milestones:8},
+  {year:2013,avg:0.006,intensity:25.0,milestones:12},
+  {year:2014,avg:0.190,intensity:16.0,milestones:10},
+  {year:2015,avg:0.083,intensity:8.5,milestones:4},
+  {year:2016,avg:0.223,intensity:13.0,milestones:7},
+  {year:2017,avg:0.048,intensity:27.0,milestones:13},
+  {year:2018,avg:0.194,intensity:23.5,milestones:13},
+  {year:2019,avg:0.128,intensity:30.5,milestones:15},
+  {year:2020,avg:0.088,intensity:24.0,milestones:11},
+  {year:2021,avg:0.091,intensity:30.0,milestones:20},
+  {year:2022,avg:0.070,intensity:17.5,milestones:14},
+  {year:2023,avg:0.225,intensity:12.5,milestones:6},
+  {year:2024,avg:-0.048,intensity:17.0,milestones:11},
+  {year:2025,avg:-0.058,intensity:13.0,milestones:11},
+  {year:2026,avg:0.0,intensity:3.0,milestones:1}
+];
+
+const ECD_EVENTS = [
+  {year:2005,events:20},{year:2006,events:51},{year:2007,events:26},
+  {year:2008,events:48},{year:2009,events:0},{year:2010,events:6},
+  {year:2011,events:4},{year:2012,events:4},{year:2013,events:3},
+  {year:2014,events:2},{year:2015,events:2},{year:2016,events:0},
+  {year:2017,events:2}
+];
+
+const PEOPLE = [
+  {name:'Ma',mentions:50,color:'#c9a84c'},
+  {name:'The Pops',mentions:2,color:'#4a6741'},
+  {name:'Rob',mentions:2,color:'#8b1a1a'},
+  {name:'Michael',mentions:2,color:'#1a4a8b'},
+  {name:'Megan',mentions:2,color:'#6b4a8b'},
+  {name:'Maggie',mentions:2,color:'#5c3d1a'},
+  {name:'Lauren Winston',mentions:2,color:'#1a5c5c'},
+  {name:'Julian',mentions:2,color:'#8b6914'},
+  {name:'Dan Spengeman',mentions:1,color:'#4a6741'},
+  {name:'Diana DiBuccio',mentions:1,color:'#6b4a8b'}
+];
+
+const ANNOTATIONS = {
+  2004: 'Car accident. Panic attacks begin.\nThe lowest point in 22 years.',
+  2007: 'Family reconciliation. ECD golden age.\n"The most colorful year of my life."',
+  2008: 'Coming out. "The power of an\ninternal desire liberated!"',
+  2009: 'Widest emotional range ever recorded.\nFirst concert. First skydive. ECD retires.',
+  2011: 'Shoulder surgery. "In love,\nand unashamed by it."',
+  2013: '"The greatest year of my adulthood."\nWrestleMania XXX tickets secured.',
+  2016: 'Highest avg sentiment: +0.223.\nWrestleMania 32.',
+  2017: 'Spinal surgery. 14 staples.\n"I Just Want To Wake Up. (I Did!)"',
+  2019: 'Australia & New Zealand.\n"best. longest. most. greatest."',
+  2023: 'Super Bowl LVII. Peak sentiment.\n"the most spectacular day I\'ve ever experienced"',
+  2025: 'Relationship transition.\nBack below zero for first time since 2004.'
+};
+
+
+// ========================================
+// HERO SEISMOGRAPH
+// ========================================
+function drawSeismograph() {
+  const canvas = document.getElementById('heroSeismograph');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width * dpr;
+  canvas.height = rect.height * dpr;
+  ctx.scale(dpr, dpr);
+  const w = rect.width, h = rect.height;
+
+  const padding = {left: 40, right: 40, top: 20, bottom: 30};
+  const chartW = w - padding.left - padding.right;
+  const chartH = h - padding.top - padding.bottom;
+  const minS = -0.5, maxS = 0.3;
+
+  // Zero line
+  const zeroY = padding.top + chartH * (maxS / (maxS - minS));
+  ctx.beginPath();
+  ctx.strokeStyle = 'rgba(232,224,208,0.15)';
+  ctx.lineWidth = 1;
+  ctx.moveTo(padding.left, zeroY);
+  ctx.lineTo(w - padding.right, zeroY);
+  ctx.stroke();
+
+  // Sentiment line
+  ctx.beginPath();
+  ctx.strokeStyle = '#c9a84c';
+  ctx.lineWidth = 2;
+  ctx.lineJoin = 'round';
+  SENTIMENT.forEach((d, i) => {
+    const x = padding.left + (i / (SENTIMENT.length - 1)) * chartW;
+    const y = padding.top + chartH * ((maxS - d.avg) / (maxS - minS));
+    if (i === 0) ctx.moveTo(x, y);
+    else ctx.lineTo(x, y);
+  });
+  ctx.stroke();
+
+  // Year labels at start and end
+  ctx.fillStyle = 'rgba(160,152,136,0.6)';
+  ctx.font = '11px "Courier New", monospace';
+  ctx.textAlign = 'center';
+  ctx.fillText('2004', padding.left, h - 4);
+  ctx.fillText('2026', w - padding.right, h - 4);
+}
+
+
+// ========================================
+// CHAPTER 1: SENTIMENT CHART
+// ========================================
+function drawSentimentChart() {
+  const ctx = document.getElementById('sentimentChart');
+  if (!ctx) return;
+
+  const annotatedYears = new Set(Object.keys(ANNOTATIONS).map(Number));
+
+  new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: SENTIMENT.map(d => d.year),
+      datasets: [{
+        data: SENTIMENT.map(d => d.avg),
+        borderColor: '#c9a84c',
+        backgroundColor: 'transparent',
+        borderWidth: 2.5,
+        pointRadius: SENTIMENT.map(d => annotatedYears.has(d.year) ? 5 : 3),
+        pointBackgroundColor: SENTIMENT.map(d => {
+          if (d.avg < 0) return '#8b1a1a';
+          if (annotatedYears.has(d.year)) return '#c9a84c';
+          return '#6b5b47';
+        }),
+        pointBorderColor: 'transparent',
+        tension: 0.3,
+        fill: {
+          target: 'origin',
+          above: 'rgba(74,103,65,0.06)',
+          below: 'rgba(139,26,26,0.06)'
+        }
+      },{
+        data: SENTIMENT.map(d => d.intensity / 100),
+        borderColor: 'rgba(44,36,22,0.12)',
+        backgroundColor: 'transparent',
+        borderWidth: 1,
+        borderDash: [4,4],
+        pointRadius: 0,
+        tension: 0.3,
+        yAxisID: 'intensity'
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#2c2416',
+          titleFont: { family: '"Courier New", monospace', size: 12 },
+          bodyFont: { family: 'Georgia, serif', size: 13 },
+          padding: 14,
+          cornerRadius: 2,
+          callbacks: {
+            title: (items) => {
+              const year = SENTIMENT[items[0].dataIndex].year;
+              return String(year);
+            },
+            label: (item) => {
+              if (item.datasetIndex === 1) return null;
+              const d = SENTIMENT[item.dataIndex];
+              const lines = [`Sentiment: ${d.avg >= 0 ? '+' : ''}${d.avg.toFixed(3)}`];
+              lines.push(`Milestones: ${d.milestones}`);
+              lines.push(`Intensity: ${d.intensity}`);
+              if (ANNOTATIONS[d.year]) {
+                lines.push('');
+                ANNOTATIONS[d.year].split('\n').forEach(l => lines.push(l));
+              }
+              return lines;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            font: { family: '"Courier New", monospace', size: 10 },
+            color: '#8b7b67',
+            maxRotation: 0,
+            callback: function(val, i) {
+              const year = SENTIMENT[i].year;
+              if (year % 5 === 0 || year === 2004 || year === 2026) return year;
+              return '';
+            }
+          }
+        },
+        y: {
+          position: 'left',
+          grid: { color: 'rgba(44,36,22,0.05)' },
+          ticks: {
+            font: { family: '"Courier New", monospace', size: 10 },
+            color: '#8b7b67',
+            callback: v => (v >= 0 ? '+' : '') + v.toFixed(1)
+          },
+          title: {
+            display: true,
+            text: 'avg sentiment',
+            font: { family: '"Courier New", monospace', size: 10 },
+            color: '#8b7b67'
+          }
+        },
+        intensity: {
+          position: 'right',
+          display: false,
+          min: 0, max: 0.5
+        }
+      }
+    }
+  });
+}
+
+
+// ========================================
+// CHAPTER 4: PRESENCE GRID
+// ========================================
+function drawPresenceGrid() {
+  const grid = document.getElementById('presenceGrid');
+  if (!grid) return;
+
+  const maxMentions = PEOPLE[0].mentions;
+
+  PEOPLE.forEach(p => {
+    const nameEl = document.createElement('div');
+    nameEl.className = 'presence-name';
+    nameEl.textContent = p.name;
+
+    const barContainer = document.createElement('div');
+    barContainer.className = 'presence-bar-container';
+
+    const bar = document.createElement('div');
+    bar.className = 'presence-bar';
+    bar.style.width = Math.max(2, (p.mentions / maxMentions) * 100) + '%';
+    bar.style.background = p.color;
+
+    const label = document.createElement('span');
+    label.textContent = p.mentions;
+    if (p.mentions < 3) {
+      label.style.color = p.color;
+      label.style.position = 'absolute';
+      label.style.left = 'calc(100% + 8px)';
+    }
+    bar.appendChild(label);
+    barContainer.appendChild(bar);
+
+    grid.appendChild(nameEl);
+    grid.appendChild(barContainer);
+  });
+}
+
+
+// ========================================
+// CHAPTER 5: ECD CHART
+// ========================================
+function drawECDChart() {
+  const ctx = document.getElementById('ecdChart');
+  if (!ctx) return;
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ECD_EVENTS.map(d => d.year),
+      datasets: [{
+        data: ECD_EVENTS.map(d => d.events),
+        backgroundColor: ECD_EVENTS.map(d => {
+          if (d.year <= 2008) return '#4a6741';
+          if (d.year === 2009) return '#8b1a1a';
+          return 'rgba(74,103,65,0.3)';
+        }),
+        borderRadius: 2,
+        barPercentage: 0.7
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#2c2416',
+          titleFont: { family: '"Courier New", monospace', size: 12 },
+          bodyFont: { family: 'Georgia, serif', size: 13 },
+          padding: 12,
+          cornerRadius: 2,
+          callbacks: {
+            label: (item) => {
+              const d = ECD_EVENTS[item.dataIndex];
+              if (d.events === 0) return 'Retirement year — 0 events';
+              return `${d.events} events`;
+            }
+          }
+        }
+      },
+      scales: {
+        x: {
+          grid: { display: false },
+          ticks: {
+            font: { family: '"Courier New", monospace', size: 10 },
+            color: '#8b7b67'
+          }
+        },
+        y: {
+          grid: { color: 'rgba(44,36,22,0.05)' },
+          ticks: {
+            font: { family: '"Courier New", monospace', size: 10 },
+            color: '#8b7b67'
+          },
+          title: {
+            display: true,
+            text: 'events per year',
+            font: { family: '"Courier New", monospace', size: 10 },
+            color: '#8b7b67'
+          }
+        }
+      }
+    }
+  });
+}
+
+
+// ========================================
+// SCROLL ANIMATIONS
+// ========================================
+function setupScrollAnimations() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('[data-observe]').forEach(el => observer.observe(el));
+}
+
+
+// ========================================
+// INIT
+// ========================================
+window.addEventListener('DOMContentLoaded', () => {
+  drawSeismograph();
+  drawSentimentChart();
+  drawPresenceGrid();
+  drawECDChart();
+  setupScrollAnimations();
+});
+
+window.addEventListener('resize', () => {
+  drawSeismograph();
+});
+</script>
+
+</body>
+</html>

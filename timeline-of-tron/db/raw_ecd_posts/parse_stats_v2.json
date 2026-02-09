@@ -1,0 +1,123 @@
+{
+  "total_posts": 578,
+  "posts_with_text": 521,
+  "posts_image_only": 50,
+  "unique_events": 168,
+  "event_number_range": "3-200",
+  "total_players": 128,
+  "match_results": 99,
+  "scores_found": 557,
+  "awards": 19,
+  "fundraisers": 3,
+  "total_fundraiser_amount": 1847.0,
+  "attendance_records": 326,
+  "seasons_found": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17
+  ],
+  "rivalries": 173,
+  "weather_mentions": 327,
+  "music_references": 648,
+  "post_type_distribution": {
+    "event_narrative": 350,
+    "image_post": 52,
+    "event_results": 44,
+    "anniversary_retrospective": 39,
+    "other": 36,
+    "event_preview": 12,
+    "anniversary": 10,
+    "indoor_event": 8,
+    "probowl": 7,
+    "statistics": 6,
+    "season_recap": 6,
+    "poster": 3,
+    "infographic": 3,
+    "farewell": 2
+  },
+  "award_type_distribution": {
+    "Hall of Fame": 7,
+    "Rimshot Champion": 5,
+    "ECD Elite Inductee": 2,
+    "Rimshot Contest Champion": 2,
+    "In Remembrance": 1,
+    "200 Events Award": 1,
+    "Hit The Human Champion": 1
+  },
+  "top_10_players": [
+    [
+      "John Tronolone",
+      1362,
+      9,
+      2
+    ],
+    [
+      "Diana DiBuccio",
+      1349,
+      0,
+      4
+    ],
+    [
+      "Lauren Freda",
+      821,
+      0,
+      0
+    ],
+    [
+      "Kevin Megill",
+      691,
+      5,
+      1
+    ],
+    [
+      "Justin Pierce",
+      555,
+      2,
+      0
+    ],
+    [
+      "Ryan Letsche",
+      549,
+      5,
+      7
+    ],
+    [
+      "Mike Edwards",
+      455,
+      3,
+      0
+    ],
+    [
+      "Juan Londono",
+      431,
+      8,
+      2
+    ],
+    [
+      "Dan Spengeman",
+      413,
+      5,
+      1
+    ],
+    [
+      "Michael Krott",
+      392,
+      0,
+      0
+    ]
+  ],
+  "parsed_at": "2026-02-09T00:09:32.050313"
+}

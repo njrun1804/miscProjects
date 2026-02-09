@@ -129,6 +129,7 @@ let arcData = {};
 let coOccurrencesData = [];
 let ecdPlayersData = {};
 let ecdAwardsData = [];
+let ecdPlayerNetworkData = { nodes: [], links: [] };
 let songsByPerson = {};
 let lifeChaptersData = [];
 
@@ -162,17 +163,18 @@ export async function initConstellation() {
         'people.json',
         'person_arc.json',
         'person_timelines.json',
-        'milestones_enriched.json',
         'co_occurrences.json',
-        'life_chapters.json'
+        'life_chapters.json',
+        'temporal_network.json'
     ]);
     // Optional enrichment data — don't block page if missing
     try {
-        const extras = await loadMultiple(['people_highlights.json', 'ecd_players.json', 'ecd_awards_v2.json', 'song_person_map.json']);
+        const extras = await loadMultiple(['people_highlights.json', 'ecd_players.json', 'ecd_awards_v2.json', 'song_person_map.json', 'ecd_player_network.json']);
         data.people_highlights = extras.people_highlights;
         data.ecd_players = extras.ecd_players;
         data.ecd_awards_v2 = extras.ecd_awards_v2;
         data.song_person_map = extras.song_person_map;
+        data.ecd_player_network = extras.ecd_player_network;
     } catch (_) { /* enrichment data unavailable — page still works */ }
 
     const constellation = data.relationship_constellation;
@@ -182,6 +184,7 @@ export async function initConstellation() {
     coOccurrencesData = data.co_occurrences || [];
     ecdPlayersData = buildEcdPlayerMap(data.ecd_players);
     ecdAwardsData = data.ecd_awards_v2 || [];
+    ecdPlayerNetworkData = data.ecd_player_network || { nodes: [], links: [] };
     lifeChaptersData = data.life_chapters || [];
     songsByPerson = buildSongPersonMap(data.song_person_map);
 
@@ -253,7 +256,8 @@ export async function initConstellation() {
     renderStatsBar(constellation);
     renderForceGraph(constellation, profilesData, coOccurrencesData);
     initSearchAutocomplete(constellation.nodes, profilesData);
-    renderInnerCircleChart(data.milestones_enriched);
+    renderNetworkChart(data.temporal_network, data.person_arc);
+    renderNetworkInsights(data.temporal_network, constellation, data.person_arc);
 }
 
 // Get the best first_year for a person by merging all sources
@@ -375,15 +379,21 @@ function renderFiltersAndLegend(nodes) {
         cats[cat] = (cats[cat] || 0) + 1;
     });
 
-    const categoryOrder = ['family', 'inner_circle', 'partner', 'other'];
-    const categoryLabels = { family: 'Family', inner_circle: 'Inner Circle', partner: 'Partner', other: 'Others' };
+    const categoryOrder = ['family', 'inner_circle', 'ecd_player', 'partner', 'other'];
+    const categoryLabels = { family: 'Family', inner_circle: 'Inner Circle', ecd_player: 'ECD', partner: 'Partner', other: 'Others' };
 
     const filterBtns = categoryOrder
         .filter(c => cats[c])
         .map(c => `<button class="filter-pill" data-cat="${c}">${categoryLabels[c] || c} <span class="filter-count">${cats[c]}</span></button>`);
 
-    const legendItems = Object.entries(ERA_COLORS).map(([key, color]) =>
-        `<span class="legend-item"><span class="legend-dot" style="background: ${color}"></span>${ERA_LABELS[key]}</span>`
+    const CAT_LEGEND = [
+        { color: '#4a90d9', label: 'Inner Circle' },
+        { color: '#4a6741', label: 'Family' },
+        { color: '#6b4a8b', label: 'ECD Community' },
+        { color: '#7a8fa6', label: 'Extended Network' }
+    ];
+    const legendItems = CAT_LEGEND.map(({ color, label }) =>
+        `<span class="legend-item"><span class="legend-dot" style="background: ${color}"></span>${label}</span>`
     );
 
     mount.innerHTML = `
@@ -688,7 +698,10 @@ function resetGraphOpacity() {
     if (svgLink) svgLink.transition().duration(300).attr('opacity', d => d.isHub ? 0.12 : 0.35);
 }
 
-// ─── Force Graph ─────────────────────────────────────────────────
+// ─── Radial Network Graph ────────────────────────────────────────
+// Structured radial layout: John at center, people arranged in concentric
+// rings by importance, within angular sectors by relationship category.
+// Merges constellation, co-occurrence, and ECD player network links.
 
 function renderForceGraph(constellation, profiles, coOccurrences) {
     const container = document.getElementById('constellationMount');
@@ -696,6 +709,9 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
 
     const width = container.clientWidth;
     const height = container.clientHeight || 600;
+    const cx = width / 2;
+    const cy = height / 2;
+    const maxR = Math.min(width, height) * 0.44;
 
     const svg = d3.select(container)
         .append('svg')
@@ -708,166 +724,331 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .attr('class', 'constellation-tooltip')
         .style('display', 'none');
 
-    // Prepare nodes — size and opacity based on data richness + importance
+    // ── Display category: regroup for meaningful visual clusters ──
+    const CAT_COLORS = {
+        core: '#4a90d9', family: '#4a6741',
+        ecd: '#6b4a8b', other: '#7a8fa6', self: '#c9a84c'
+    };
+
+    function getDisplayCat(n) {
+        if (n.category === 'inner_circle' || n.category === 'partner') return 'core';
+        if (n.category === 'family') return 'family';
+        if (n.category === 'ecd_player' || ecdPlayersData[n.name]) return 'ecd';
+        return 'other';
+    }
+
+    // ── Build enriched nodes ──
     const nodes = constellation.nodes
-        .filter(n => n.name !== 'John Tronolone') // We add center node manually
+        .filter(n => n.name !== 'John Tronolone')
         .map(n => {
-        const profile = profiles[n.name];
-        const r = getDataRichness(n.name, profile);
-        const person = peopleData[n.name];
-        const arc = arcData[n.name];
-        const firstYear = getBestFirstYear(n);
-        const lastYear = getBestLastYear(n);
-        const relation = getBestRelation(n);
-        const connection = getBestConnection(n);
-        const totalMentions = arc?.total_mentions || 0;
-        const importanceScore = n.importance_score || person?.importance_score || 0;
-        const ecdPlayer = ecdPlayersData[n.name];
-        const ecdMentions = ecdPlayer?.total_mentions || 0;
+            const profile = profiles[n.name];
+            const r = getDataRichness(n.name, profile);
+            const person = peopleData[n.name];
+            const arc = arcData[n.name];
+            const firstYear = getBestFirstYear(n);
+            const lastYear = getBestLastYear(n);
+            const relation = getBestRelation(n);
+            const connection = getBestConnection(n);
+            const totalMentions = arc?.total_mentions || 0;
+            const importanceScore = n.importance_score || person?.importance_score || 0;
+            const ecdPlayer = ecdPlayersData[n.name];
+            const ecdMentions = ecdPlayer?.total_mentions || 0;
+            const hasContent = r.total > 0 || !!connection || importanceScore >= 10 || ecdMentions > 0;
+            const baseRadius = Math.sqrt(Math.max(importanceScore, 1)) * 1.2 + 3;
+            const mentionBoost = Math.sqrt(totalMentions) * 0.5;
+            const ecdBoost = Math.sqrt(ecdMentions) * 0.15;
+            const nodeRadius = hasContent
+                ? Math.max(baseRadius + mentionBoost + ecdBoost, 5)
+                : Math.max(baseRadius * 0.5, 2.5);
+            const displayCat = getDisplayCat(n);
 
-        // Content = profile data + connection description + importance + ECD stats
-        const hasContent = r.total > 0 || !!connection || importanceScore >= 10 || ecdMentions > 0;
-
-        // Node radius: based on importance (primary) + mentions (secondary) + ECD (tertiary)
-        const baseRadius = Math.sqrt(Math.max(importanceScore, 1)) * 1.2 + 3;
-        const mentionBoost = Math.sqrt(totalMentions) * 0.5;
-        const ecdBoost = Math.sqrt(ecdMentions) * 0.15;
-        const radius = hasContent ? Math.max(baseRadius + mentionBoost + ecdBoost, 5) : Math.max(baseRadius * 0.5, 2.5);
-
-        return {
-            ...n,
-            name: n.name,
-            radius: Math.min(radius, 20), // cap max radius
-            color: getEraColor(firstYear),
-            richness: r,
-            hasContent,
-            relation,
-            connection,
-            firstYear,
-            lastYear,
-            totalMentions,
-            importanceScore,
-            peakYear: arc?.peak_year || person?.peak_year || null,
-            activeYears: person?.active_years || '',
-            dominantTopic: person?.dominant_topic || ''
-        };
-    });
-
-    // Add center node (the subject)
-    nodes.unshift({
-        id: 'john',
-        name: 'John Tronolone',
-        category: 'self',
-        radius: 18,
-        color: '#c9a84c',
-        fx: width / 2,
-        fy: height / 2,
-        richness: { total: 999 },
-        hasContent: true,
-        relation: '',
-        connection: '',
-        firstYear: 2004,
-        lastYear: 2026,
-        totalMentions: 999,
-        importanceScore: 999,
-        peakYear: null,
-        activeYears: '2004-2026',
-        dominantTopic: ''
-    });
-
-    // Links use names as source/target — D3 resolves via .id(d => d.name)
-    const links = (constellation.links || []).map(l => ({
-        source: l.source,
-        target: l.target,
-        weight: l.weight || 1,
-        isHub: l.target === 'John Tronolone' || l.source === 'John Tronolone',
-        fromCoOccurrence: false
-    })).filter(l => l.source !== l.target);
-
-    // Enrich with co-occurrence links not already in the data
-    const existingLinkSet = new Set(links.map(l => [l.source, l.target].sort().join('|')));
-    const nodeNames = new Set(nodes.map(n => n.name));
-    (coOccurrences || []).forEach(co => {
-        if (!nodeNames.has(co.person_a) || !nodeNames.has(co.person_b)) return;
-        if (co.person_a === co.person_b) return;
-        const key = [co.person_a, co.person_b].sort().join('|');
-        if (existingLinkSet.has(key)) return;
-        existingLinkSet.add(key);
-        links.push({
-            source: co.person_a,
-            target: co.person_b,
-            weight: Math.min(co.co_occurrence_count || 1, 3),
-            fromCoOccurrence: true,
-            isHub: false
+            return {
+                ...n, name: n.name,
+                radius: Math.min(nodeRadius, 20),
+                color: CAT_COLORS[displayCat] || CAT_COLORS.other,
+                richness: r, hasContent, relation, connection,
+                firstYear, lastYear, totalMentions, importanceScore,
+                peakYear: arc?.peak_year || person?.peak_year || null,
+                activeYears: person?.active_years || '',
+                dominantTopic: person?.dominant_topic || '',
+                displayCat
+            };
         });
+
+    // Center node
+    nodes.unshift({
+        id: 'john', name: 'John Tronolone', category: 'self',
+        radius: 18, color: CAT_COLORS.self,
+        richness: { total: 999 }, hasContent: true,
+        relation: '', connection: '',
+        firstYear: 2004, lastYear: 2026,
+        totalMentions: 999, importanceScore: 999,
+        peakYear: null, activeYears: '2004-2026',
+        dominantTopic: '', displayCat: 'self'
+    });
+
+    // ── Build merged links (constellation + co-occurrence + ECD network) ──
+    const linkSet = new Set();
+    const links = [];
+    const nodeNames = new Set(nodes.map(n => n.name));
+
+    function addLink(src, tgt, weight, type) {
+        if (!nodeNames.has(src) || !nodeNames.has(tgt)) return;
+        if (src === tgt) return;
+        const key = [src, tgt].sort().join('|');
+        if (linkSet.has(key)) return;
+        linkSet.add(key);
+        links.push({
+            source: src, target: tgt, weight: weight || 1, type,
+            isHub: src === 'John Tronolone' || tgt === 'John Tronolone',
+            fromCoOccurrence: type === 'co_occurrence',
+            fromEcd: type === 'ecd'
+        });
+    }
+
+    (constellation.links || []).forEach(l =>
+        addLink(l.source, l.target, l.weight || 1, 'constellation'));
+    (coOccurrences || []).forEach(co =>
+        addLink(co.person_a, co.person_b,
+            Math.min(co.co_occurrence_count || 1, 3), 'co_occurrence'));
+    (ecdPlayerNetworkData.links || []).forEach(l =>
+        addLink(l.source, l.target, l.weight || 1, 'ecd'));
+
+    // Resolve link names → node objects
+    const nodeByName = {};
+    nodes.forEach(n => nodeByName[n.name] = n);
+    links.forEach(l => {
+        if (typeof l.source === 'string') l.source = nodeByName[l.source] || l.source;
+        if (typeof l.target === 'string') l.target = nodeByName[l.target] || l.target;
     });
 
     allNodes = nodes;
     allLinks = links;
 
-    // Hub links (person→John) get longer distance to create the spoke structure;
-    // peer links are shorter to cluster connected people together
-    simulation = d3.forceSimulation(nodes)
-        .force('link', d3.forceLink(links).id(d => d.name)
-            .distance(d => d.isHub ? 120 : 60)
-            .strength(d => d.isHub ? 0.15 : 0.4))
-        .force('charge', d3.forceManyBody().strength(-40))
-        .force('center', d3.forceCenter(width / 2, height / 2))
-        .force('collide', d3.forceCollide(d => d.radius + 3));
+    // ── Peer degree (for layout) ──
+    const peerDegree = {};
+    links.forEach(l => {
+        if (l.isHub) return;
+        const s = typeof l.source === 'object' ? l.source.name : l.source;
+        const t = typeof l.target === 'object' ? l.target.name : l.target;
+        peerDegree[s] = (peerDegree[s] || 0) + 1;
+        peerDegree[t] = (peerDegree[t] || 0) + 1;
+    });
 
-    // Hub links: thin, subtle rays from center; peer links: brighter
+    // ── Radial layout: sectors + importance rings ──
+    // Sectors: angles in SVG degrees (0°=right, 90°=down, 270°=up)
+    const SECTORS = {
+        core:   { start: 240, end: 300, labelAngle: 270, label: 'INNER CIRCLE' },
+        family: { start: 308, end: 353, labelAngle: 330, label: 'FAMILY' },
+        ecd:    { start: 1, end: 130, labelAngle: 65, label: 'ECD COMMUNITY' },
+        other:  { start: 138, end: 232, labelAngle: 185, label: 'EXTENDED NETWORK' }
+    };
+
+    function getTargetRadius(importance, hasPeers) {
+        if (importance > 50) return maxR * 0.15;
+        if (importance > 25) return maxR * 0.32;
+        if (importance > 10) return maxR * 0.50;
+        if (importance > 5 || hasPeers) return maxR * 0.68;
+        return maxR * 0.88;
+    }
+
+    // Group by display category, sorted by importance
+    const catGroups = { core: [], family: [], ecd: [], other: [] };
+    nodes.forEach(n => {
+        if (n.id === 'john') return;
+        if (catGroups[n.displayCat]) catGroups[n.displayCat].push(n);
+    });
+    Object.values(catGroups).forEach(g =>
+        g.sort((a, b) => b.importanceScore - a.importanceScore));
+
+    // Center-out ordering: most important at sector center, less important at edges
+    function centerOutOrder(arr) {
+        const result = new Array(arr.length);
+        let left = Math.floor(arr.length / 2) - 1;
+        let right = Math.floor(arr.length / 2);
+        for (let i = 0; i < arr.length; i++) {
+            if (i % 2 === 0) { result[right] = arr[i]; right++; }
+            else { result[left] = arr[i]; left--; }
+        }
+        return result;
+    }
+
+    // Assign radial positions
+    Object.entries(catGroups).forEach(([cat, group]) => {
+        const sector = SECTORS[cat];
+        if (!sector || !group.length) return;
+        const ordered = centerOutOrder(group);
+        const startRad = sector.start * Math.PI / 180;
+        const endRad = sector.end * Math.PI / 180;
+
+        ordered.forEach((n, i) => {
+            const t = group.length > 1 ? (i + 0.5) / group.length : 0.5;
+            const angle = startRad + (endRad - startRad) * t;
+            const hasPeers = (peerDegree[n.name] || 0) > 0;
+            const targetR = getTargetRadius(n.importanceScore, hasPeers);
+            // Slight jitter to prevent perfect overlap
+            const jr = (Math.random() - 0.5) * maxR * 0.04;
+            const ja = (Math.random() - 0.5) * 0.02;
+            n.targetAngle = angle + ja;
+            n.targetRadius = targetR + jr;
+            n.targetX = cx + n.targetRadius * Math.cos(n.targetAngle);
+            n.targetY = cy + n.targetRadius * Math.sin(n.targetAngle);
+            n.x = n.targetX;
+            n.y = n.targetY;
+        });
+    });
+
+    // Fix John at center
+    const john = nodes.find(n => n.id === 'john');
+    if (john) {
+        john.x = cx; john.y = cy;
+        john.fx = cx; john.fy = cy;
+        john.targetX = cx; john.targetY = cy;
+    }
+
+    // ── SVG: Ring guides ──
+    const ringFracs = [0.15, 0.32, 0.50, 0.68, 0.88];
+    svg.append('g').attr('class', 'ring-guides')
+        .selectAll('circle').data(ringFracs).join('circle')
+        .attr('cx', cx).attr('cy', cy)
+        .attr('r', f => maxR * f)
+        .attr('fill', 'none')
+        .attr('stroke', 'rgba(30,58,95,0.12)')
+        .attr('stroke-width', 0.5)
+        .attr('stroke-dasharray', '4,8');
+
+    // ── SVG: Center glow ──
+    const defs = svg.append('defs');
+    const grad = defs.append('radialGradient').attr('id', 'centerGlow');
+    grad.append('stop').attr('offset', '0%').attr('stop-color', 'rgba(201,168,76,0.06)');
+    grad.append('stop').attr('offset', '100%').attr('stop-color', 'rgba(201,168,76,0)');
+    svg.append('circle').attr('cx', cx).attr('cy', cy)
+        .attr('r', maxR * 0.3).attr('fill', 'url(#centerGlow)');
+
+    // ── SVG: Sector separator lines ──
+    const separatorAngles = [240, 300, 308, 353, 1, 130, 138, 232];
+    svg.append('g').attr('class', 'sector-lines')
+        .selectAll('line').data(separatorAngles).join('line')
+        .attr('x1', d => cx + maxR * 0.08 * Math.cos(d * Math.PI / 180))
+        .attr('y1', d => cy + maxR * 0.08 * Math.sin(d * Math.PI / 180))
+        .attr('x2', d => cx + maxR * 0.96 * Math.cos(d * Math.PI / 180))
+        .attr('y2', d => cy + maxR * 0.96 * Math.sin(d * Math.PI / 180))
+        .attr('stroke', 'rgba(30,58,95,0.07)')
+        .attr('stroke-width', 0.5);
+
+    // ── SVG: Sector labels ──
+    const sectorLabelData = Object.entries(SECTORS).map(([cat, s]) => ({
+        ...s, cat, color: CAT_COLORS[cat] || '#7a8fa6'
+    }));
+    svg.append('g').attr('class', 'sector-labels')
+        .selectAll('text').data(sectorLabelData).join('text')
+        .attr('x', d => cx + (maxR + 18) * Math.cos(d.labelAngle * Math.PI / 180))
+        .attr('y', d => cy + (maxR + 18) * Math.sin(d.labelAngle * Math.PI / 180))
+        .attr('text-anchor', 'middle')
+        .attr('dominant-baseline', 'middle')
+        .attr('fill', d => d.color)
+        .attr('font-family', "'Trebuchet MS', sans-serif")
+        .attr('font-size', 9)
+        .attr('letter-spacing', '1.5px')
+        .attr('opacity', 0.5)
+        .text(d => d.label);
+
+    // ── SVG: Links (all as <path> — curves for peers, straight for hub) ──
+    function linkCurve(d) {
+        const sx = d.source.x, sy = d.source.y;
+        const tx = d.target.x, ty = d.target.y;
+        if (d.isHub) return `M${sx},${sy} L${tx},${ty}`;
+        const dx = tx - sx, dy = ty - sy;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 1) return `M${sx},${sy} L${tx},${ty}`;
+        const mx = (sx + tx) / 2, my = (sy + ty) / 2;
+        const nx = -dy / dist, ny = dx / dist;
+        const toCx = cx - mx, toCy = cy - my;
+        const dot = nx * toCx + ny * toCy;
+        const sign = dot > 0 ? 1 : -1;
+        const bow = Math.min(dist * 0.15, 30);
+        const cpx = mx + nx * bow * sign;
+        const cpy = my + ny * bow * sign;
+        return `M${sx},${sy} Q${cpx},${cpy} ${tx},${ty}`;
+    }
+
     svgLink = svg.append('g')
-        .selectAll('line')
+        .selectAll('path')
         .data(links)
-        .join('line')
+        .join('path')
+        .attr('d', linkCurve)
+        .attr('fill', 'none')
         .attr('stroke', d => {
-            if (d.isHub) return 'rgba(201, 168, 76, 0.12)';
-            if (d.fromCoOccurrence) return 'rgba(201, 168, 76, 0.25)';
-            return 'rgba(255,255,255,0.35)';
+            if (d.isHub) return 'rgba(201,168,76,0.04)';
+            if (d.fromEcd) return 'rgba(107,74,139,0.2)';
+            if (d.fromCoOccurrence) return 'rgba(201,168,76,0.18)';
+            return 'rgba(255,255,255,0.2)';
         })
-        .attr('stroke-width', d => {
-            if (d.isHub) return 0.5;
-            return Math.min(d.weight, 3);
-        })
-        .attr('stroke-dasharray', d => d.fromCoOccurrence ? '3,3' : 'none');
+        .attr('stroke-width', d => d.isHub ? 0.3 : Math.min(d.weight || 1, 2.5))
+        .attr('stroke-dasharray', d =>
+            d.fromCoOccurrence ? '3,3' : d.fromEcd ? '2,3' : 'none')
+        .attr('opacity', d => d.isHub ? 0.12 : 0.35)
+        .attr('pointer-events', d => d.isHub ? 'none' : 'stroke')
+        .attr('cursor', d => d.isHub ? 'default' : 'pointer');
 
-    // Edge hover + click for "Story of Us"
+    // Edge hover + click
     svgLink
-        .on('mouseover', function (event, d) {
-            if (d.isHub) return; // Don't highlight hub spokes
+        .on('mouseover', function(event, d) {
+            if (d.isHub) return;
             d3.select(this)
                 .attr('stroke-width', Math.max(d.weight || 1, 2.5))
-                .attr('stroke', 'rgba(201, 168, 76, 0.6)');
+                .attr('stroke', 'rgba(201,168,76,0.6)')
+                .attr('opacity', 0.8);
         })
-        .on('mouseout', function (event, d) {
+        .on('mouseout', function(event, d) {
             d3.select(this)
-                .attr('stroke-width', d.isHub ? 0.5 : Math.min(d.weight || 1, 3))
-                .attr('stroke', d.isHub ? 'rgba(201, 168, 76, 0.12)' :
-                    d.fromCoOccurrence ? 'rgba(201, 168, 76, 0.25)' : 'rgba(255,255,255,0.35)');
+                .attr('stroke-width', d.isHub ? 0.3 : Math.min(d.weight || 1, 2.5))
+                .attr('stroke', d.isHub ? 'rgba(201,168,76,0.04)' :
+                    d.fromEcd ? 'rgba(107,74,139,0.2)' :
+                    d.fromCoOccurrence ? 'rgba(201,168,76,0.18)' : 'rgba(255,255,255,0.2)')
+                .attr('opacity', d.isHub ? 0.12 : 0.35);
         })
-        .on('click', function (event, d) {
+        .on('click', function(event, d) {
             if (d.isHub) return;
             event.stopPropagation();
             showEdgePanel(d, event);
-        })
-        .attr('cursor', d => d.isHub ? 'default' : 'pointer');
+        });
 
+    // ── SVG: Nodes ──
     svgNode = svg.append('g')
         .selectAll('circle')
         .data(nodes)
         .join('circle')
+        .attr('cx', d => d.x)
+        .attr('cy', d => d.y)
         .attr('r', d => d.radius)
         .attr('fill', d => d.color)
-        .attr('stroke', d => d.hasContent ? 'rgba(255,255,255,0.5)' : 'rgba(255,255,255,0.15)')
+        .attr('stroke', d => d.hasContent ? 'rgba(255,255,255,0.45)' : 'rgba(255,255,255,0.1)')
         .attr('stroke-width', d => d.hasContent ? 1.5 : 0.5)
-        .attr('opacity', d => d.hasContent ? 1 : 0.35)
+        .attr('opacity', d => d.hasContent ? 1 : 0.3)
         .attr('cursor', 'pointer')
         .call(d3.drag()
             .on('start', dragstarted)
             .on('drag', dragged)
             .on('end', dragended));
 
-    // Hover — show enriched info
+    // ── SVG: Name labels for important people ──
+    const labelThreshold = 25;
+    const labeledNodes = nodes.filter(n =>
+        n.importanceScore > labelThreshold || n.id === 'john');
+    const svgLabels = svg.append('g').attr('class', 'node-labels')
+        .selectAll('text').data(labeledNodes).join('text')
+        .attr('x', d => d.x)
+        .attr('y', d => d.y - d.radius - 5)
+        .attr('text-anchor', 'middle')
+        .attr('fill', d => d.color)
+        .attr('font-family', "'Courier Prime', monospace")
+        .attr('font-size', d => d.id === 'john' ? 11 : 9)
+        .attr('opacity', 0.75)
+        .attr('pointer-events', 'none')
+        .text(d => d.name);
+
+    // ── Hover tooltip ──
     svgNode.on('mouseover', (event, d) => {
         const relation = d.relation;
         const yearSpan = d.firstYear && d.lastYear ? `${d.firstYear}–${d.lastYear}` :
@@ -876,22 +1057,23 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         if (relation) parts.push(relation);
         if (d.connection) {
             const snippet = d.connection.split('.')[0].split(';')[0];
-            if (snippet && snippet !== relation) parts.push(`<span class="tooltip-connection">${snippet}</span>`);
+            if (snippet && snippet !== relation)
+                parts.push(`<span class="tooltip-connection">${snippet}</span>`);
         }
         if (yearSpan) parts.push(yearSpan);
-        if (d.importanceScore > 0 && d.id !== 'john') {
+        const peers = peerDegree[d.name] || 0;
+        if (peers > 0 && d.id !== 'john')
+            parts.push(`<span class="tooltip-richness">${peers} connection${peers > 1 ? 's' : ''}</span>`);
+        if (d.importanceScore > 0 && d.id !== 'john')
             parts.push(`<span class="tooltip-richness">Importance: ${Math.round(d.importanceScore)}</span>`);
-        }
         const ecdP = ecdPlayersData[d.name];
         if (ecdP) {
-            const w = ecdP.wins || 0;
-            const l = ecdP.losses || 0;
+            const w = ecdP.wins || 0, l = ecdP.losses || 0;
             const rec = (w + l > 0) ? ` ${w}W–${l}L` : '';
             parts.push(`<span class="tooltip-richness">ECD: ${ecdP.total_mentions.toLocaleString()} mentions${rec}</span>`);
         }
         const summary = richnessSummary(d.richness);
         if (summary) parts.push(`<span class="tooltip-richness">${summary}</span>`);
-
         tooltip
             .style('display', 'block')
             .style('left', (event.offsetX + 12) + 'px')
@@ -900,30 +1082,46 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     })
     .on('mouseout', () => tooltip.style('display', 'none'));
 
+    // Click node → focus + sidebar
     svgNode.on('click', (event, d) => {
         event.stopPropagation();
         focusNodeByName(d.name);
     });
 
+    // Background click → reset
     svg.on('click', () => {
         resetGraphOpacity();
         closeSidebar();
         closeEdgePanel();
     });
 
-    simulation.on('tick', () => {
-        svgLink
-            .attr('x1', d => d.source.x)
-            .attr('y1', d => d.source.y)
-            .attr('x2', d => d.target.x)
-            .attr('y2', d => d.target.y);
-        svgNode
-            .attr('cx', d => d.x = Math.max(d.radius, Math.min(width - d.radius, d.x)))
-            .attr('cy', d => d.y = Math.max(d.radius, Math.min(height - d.radius, d.y)));
-    });
+    // ── Simulation: minimal, just for collision + drag snap-back ──
+    function forceTarget(strength) {
+        let simNodes;
+        function force(alpha) {
+            simNodes.forEach(n => {
+                if (n.fx != null || !n.targetX) return;
+                n.vx += (n.targetX - n.x) * strength * alpha;
+                n.vy += (n.targetY - n.y) * strength * alpha;
+            });
+        }
+        force.initialize = (n) => simNodes = n;
+        return force;
+    }
+
+    simulation = d3.forceSimulation(nodes)
+        .force('target', forceTarget(0.4))
+        .force('collide', d3.forceCollide(d => d.radius + 1.5))
+        .alpha(0.3)
+        .alphaDecay(0.04)
+        .on('tick', () => {
+            svgNode.attr('cx', d => d.x).attr('cy', d => d.y);
+            svgLink.attr('d', linkCurve);
+            svgLabels.attr('x', d => d.x).attr('y', d => d.y - d.radius - 5);
+        });
 
     function dragstarted(event, d) {
-        if (!event.active) simulation.alphaTarget(0.3).restart();
+        if (!event.active) simulation.alphaTarget(0.2).restart();
         d.fx = d.x;
         d.fy = d.y;
     }
@@ -1333,57 +1531,344 @@ function closeSidebar() {
     if (sidebar) sidebar.classList.remove('open');
 }
 
-// ─── Inner Circle Chart ──────────────────────────────────────────
+// ─── Network Over Time Chart ─────────────────────────────────────
+// Shows how the relationship network grew and shifted year by year,
+// using temporal_network.json (active, new, lost people) and
+// enriching with person_arc data for a fuller picture.
 
-function renderInnerCircleChart(milestones) {
-    const canvas = document.getElementById('innerCircleChart');
+function renderNetworkChart(temporalNetwork, personArc) {
+    const canvas = document.getElementById('networkChart');
     if (!canvas || typeof Chart === 'undefined') return;
 
-    const yearlyPeople = {};
-    const allMilestones = Array.isArray(milestones) ? milestones : [];
+    const tnData = Array.isArray(temporalNetwork) ? temporalNetwork : [];
 
-    allMilestones.forEach(m => {
-        const year = m.year;
-        if (!year) return;
-        if (!yearlyPeople[year]) yearlyPeople[year] = new Set();
-        yearlyPeople[year].add(m.category || 'unknown');
+    // Build year→set of active people from people.json active_years
+    let runningTotal = new Set();
+    const yearPeopleMap = {};
+    const allPeople = Object.values(peopleData);
+
+    allPeople.forEach(p => {
+        if (!p.active_years) return;
+        const parsed = parseActiveYears(p.active_years);
+        if (!parsed) return;
+        for (let y = parsed.first; y <= parsed.last; y++) {
+            if (!yearPeopleMap[y]) yearPeopleMap[y] = new Set();
+            yearPeopleMap[y].add(p.name);
+        }
     });
 
-    const years = Object.keys(yearlyPeople).sort();
-    const counts = years.map(y => yearlyPeople[y].size);
+    // Also add person_arc data for people not in people.json
+    const arcArr = Array.isArray(personArc) ? personArc : [];
+    arcArr.forEach(a => {
+        if (!a.first_year || !a.last_year) return;
+        for (let y = a.first_year; y <= a.last_year; y++) {
+            if (!yearPeopleMap[y]) yearPeopleMap[y] = new Set();
+            yearPeopleMap[y].add(a.person);
+        }
+    });
+
+    // Build sorted year list (2004–2025)
+    const allYears = new Set();
+    tnData.forEach(d => allYears.add(d.year));
+    Object.keys(yearPeopleMap).forEach(y => allYears.add(parseInt(y)));
+    const years = [...allYears].filter(y => y >= 2004 && y <= 2026).sort((a, b) => a - b);
+
+    // Compute metrics per year
+    const activePerYear = [];
+    const newPerYear = [];
+    const lostPerYear = [];
+    const cumulativePerYear = [];
+    const topPersonPerYear = [];
+
+    years.forEach(y => {
+        const tnEntry = tnData.find(d => d.year === y);
+        const peopleThisYear = yearPeopleMap[y] || new Set();
+
+        const active = Math.max(tnEntry?.active_people || 0, peopleThisYear.size);
+        activePerYear.push(active);
+        newPerYear.push(tnEntry?.new_people || 0);
+        lostPerYear.push(tnEntry?.lost_people || 0);
+
+        peopleThisYear.forEach(name => runningTotal.add(name));
+        cumulativePerYear.push(runningTotal.size);
+
+        topPersonPerYear.push(tnEntry?.top_person || '');
+    });
+
+    const yearLabels = years.map(String);
 
     new Chart(canvas, {
-        type: 'line',
+        type: 'bar',
         data: {
-            labels: years,
-            datasets: [{
-                label: 'Active connections per year',
-                data: counts,
-                borderColor: '#4a90d9',
-                backgroundColor: 'rgba(74, 144, 217, 0.1)',
-                fill: true,
-                tension: 0.3,
-                pointRadius: 3,
-                pointBackgroundColor: '#4a90d9'
-            }]
+            labels: yearLabels,
+            datasets: [
+                {
+                    type: 'line',
+                    label: 'Total Network (cumulative)',
+                    data: cumulativePerYear,
+                    borderColor: '#c9a84c',
+                    backgroundColor: 'rgba(201, 168, 76, 0.08)',
+                    fill: true,
+                    tension: 0.3,
+                    pointRadius: 4,
+                    pointBackgroundColor: '#c9a84c',
+                    pointBorderColor: '#c9a84c',
+                    borderWidth: 2,
+                    yAxisID: 'y1',
+                    order: 0
+                },
+                {
+                    label: 'Active This Year',
+                    data: activePerYear,
+                    backgroundColor: 'rgba(74, 144, 217, 0.7)',
+                    borderColor: '#4a90d9',
+                    borderWidth: 1,
+                    borderRadius: 2,
+                    yAxisID: 'y',
+                    order: 1
+                },
+                {
+                    label: 'New Connections',
+                    data: newPerYear,
+                    backgroundColor: 'rgba(74, 167, 65, 0.7)',
+                    borderColor: '#4a6741',
+                    borderWidth: 1,
+                    borderRadius: 2,
+                    yAxisID: 'y',
+                    order: 2
+                },
+                {
+                    label: 'Faded Out',
+                    data: lostPerYear.map(v => -v),
+                    backgroundColor: 'rgba(180, 80, 80, 0.5)',
+                    borderColor: '#b45050',
+                    borderWidth: 1,
+                    borderRadius: 2,
+                    yAxisID: 'y',
+                    order: 3
+                }
+            ]
         },
         options: {
             responsive: true,
+            interaction: {
+                mode: 'index',
+                intersect: false
+            },
             plugins: {
                 legend: { display: false },
-                title: { display: false }
+                tooltip: {
+                    backgroundColor: 'rgba(10, 22, 40, 0.95)',
+                    borderColor: '#4a90d9',
+                    borderWidth: 1,
+                    titleFont: { family: "'Courier Prime', monospace", size: 13 },
+                    bodyFont: { family: "'Trebuchet MS', sans-serif", size: 12 },
+                    padding: 12,
+                    callbacks: {
+                        afterTitle: function(ctx) {
+                            const idx = ctx[0].dataIndex;
+                            const top = topPersonPerYear[idx];
+                            return top ? `Most mentioned: ${top}` : '';
+                        },
+                        label: function(ctx) {
+                            const label = ctx.dataset.label;
+                            let val = ctx.parsed.y;
+                            if (label === 'Faded Out') val = Math.abs(val);
+                            return ` ${label}: ${val}`;
+                        }
+                    }
+                }
             },
             scales: {
                 x: {
-                    ticks: { color: '#7a8fa6', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(30,58,95,0.3)' }
+                    ticks: {
+                        color: '#7a8fa6',
+                        font: { family: "'Courier Prime', monospace", size: 10 }
+                    },
+                    grid: { color: 'rgba(30,58,95,0.2)' }
                 },
                 y: {
-                    ticks: { color: '#7a8fa6', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(30,58,95,0.3)' }
+                    position: 'left',
+                    title: {
+                        display: true,
+                        text: 'People',
+                        color: '#7a8fa6',
+                        font: { family: "'Courier Prime', monospace", size: 10 }
+                    },
+                    ticks: {
+                        color: '#7a8fa6',
+                        font: { family: "'Courier Prime', monospace", size: 10 },
+                        callback: v => Math.abs(v)
+                    },
+                    grid: { color: 'rgba(30,58,95,0.2)' }
+                },
+                y1: {
+                    position: 'right',
+                    title: {
+                        display: true,
+                        text: 'Cumulative',
+                        color: '#c9a84c',
+                        font: { family: "'Courier Prime', monospace", size: 10 }
+                    },
+                    ticks: {
+                        color: '#c9a84c',
+                        font: { family: "'Courier Prime', monospace", size: 10 }
+                    },
+                    grid: { drawOnChartArea: false }
                 }
             }
         }
+    });
+
+    // Render custom legend
+    const legendMount = document.getElementById('networkLegend');
+    if (legendMount) {
+        legendMount.innerHTML = `
+            <span class="net-legend-item"><span class="net-legend-swatch" style="background:#4a90d9"></span>Active This Year</span>
+            <span class="net-legend-item"><span class="net-legend-swatch" style="background:#4a6741"></span>New Connections</span>
+            <span class="net-legend-item"><span class="net-legend-swatch" style="background:#b45050"></span>Faded Out</span>
+            <span class="net-legend-item"><span class="net-legend-line" style="border-color:#c9a84c"></span>Total Network</span>
+        `;
+    }
+}
+
+// ─── Network Insights ────────────────────────────────────────────
+// Summarizes key network stats: busiest year, longest relationships,
+// most connected people, network layers.
+
+function renderNetworkInsights(temporalNetwork, constellation, personArc) {
+    const mount = document.getElementById('networkInsights');
+    if (!mount) return;
+
+    const tnData = Array.isArray(temporalNetwork) ? temporalNetwork : [];
+    const nodes = constellation?.nodes || [];
+    const links = constellation?.links || [];
+
+    // Busiest year
+    const busiest = tnData.reduce((max, d) =>
+        (d.active_people > (max?.active_people || 0)) ? d : max, null);
+
+    // Year with most new connections
+    const mostNew = tnData.reduce((max, d) =>
+        (d.new_people > (max?.new_people || 0)) ? d : max, null);
+
+    // Longest-spanning relationships (from people.json active_years)
+    const longestPeople = Object.values(peopleData)
+        .map(p => {
+            const parsed = parseActiveYears(p.active_years);
+            if (!parsed) return null;
+            return { name: p.name, span: parsed.last - parsed.first, first: parsed.first, last: parsed.last, relation: p.relation || '' };
+        })
+        .filter(p => p && p.span > 0)
+        .sort((a, b) => b.span - a.span)
+        .slice(0, 5);
+
+    // Most connected people in the graph (by link count, excluding John)
+    const connectionCounts = {};
+    links.forEach(l => {
+        const src = l.source;
+        const tgt = l.target;
+        if (src !== 'John Tronolone') connectionCounts[src] = (connectionCounts[src] || 0) + 1;
+        if (tgt !== 'John Tronolone') connectionCounts[tgt] = (connectionCounts[tgt] || 0) + 1;
+    });
+    const mostConnected = Object.entries(connectionCounts)
+        .filter(([name]) => name !== 'John Tronolone')
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 5);
+
+    // Category breakdown
+    const catCounts = {};
+    nodes.forEach(n => {
+        const cat = n.category || 'other';
+        catCounts[cat] = (catCounts[cat] || 0) + 1;
+    });
+    const catLabels = { family: 'Family', inner_circle: 'Inner Circle', partner: 'Partners', other: 'Others' };
+
+    // Build HTML
+    let html = `<h3 class="insights-title">Network at a Glance</h3>`;
+    html += `<div class="insights-grid">`;
+
+    html += `<div class="insight-card">
+        <div class="insight-number">${nodes.length + 1}</div>
+        <div class="insight-label">People in the constellation</div>
+    </div>`;
+    html += `<div class="insight-card">
+        <div class="insight-number">${links.length}</div>
+        <div class="insight-label">Documented connections</div>
+    </div>`;
+    if (busiest) {
+        html += `<div class="insight-card">
+            <div class="insight-number">${busiest.year}</div>
+            <div class="insight-label">Busiest year (${busiest.active_people} active)</div>
+        </div>`;
+    }
+    if (mostNew) {
+        html += `<div class="insight-card">
+            <div class="insight-number">${mostNew.year}</div>
+            <div class="insight-label">Most new connections (${mostNew.new_people})</div>
+        </div>`;
+    }
+
+    html += `</div>`;
+
+    // Network layers (category breakdown)
+    html += `<div class="insights-section">`;
+    html += `<h4 class="insights-section-title">Network Layers</h4>`;
+    html += `<div class="layer-bars">`;
+    const totalPeople = nodes.length;
+    ['inner_circle', 'family', 'partner', 'other'].forEach(cat => {
+        const count = catCounts[cat] || 0;
+        const pct = Math.round((count / totalPeople) * 100);
+        const colors = { inner_circle: '#4a90d9', family: '#4a6741', partner: '#6b4a8b', other: '#7a8fa6' };
+        html += `<div class="layer-bar-row">
+            <span class="layer-bar-label">${catLabels[cat] || cat}</span>
+            <div class="layer-bar-track">
+                <div class="layer-bar-fill" style="width:${pct}%;background:${colors[cat] || '#7a8fa6'}"></div>
+            </div>
+            <span class="layer-bar-count">${count}</span>
+        </div>`;
+    });
+    html += `</div></div>`;
+
+    // Longest relationships
+    if (longestPeople.length) {
+        html += `<div class="insights-section">`;
+        html += `<h4 class="insights-section-title">Longest-Running Relationships</h4>`;
+        html += `<div class="insights-list">`;
+        longestPeople.forEach(p => {
+            html += `<button class="insight-person" data-name="${p.name}">
+                <span class="insight-person-name">${p.name}</span>
+                <span class="insight-person-meta">${p.first}–${p.last} (${p.span} years)${p.relation ? ' · ' + p.relation : ''}</span>
+            </button>`;
+        });
+        html += `</div></div>`;
+    }
+
+    // Most connected (network hubs)
+    if (mostConnected.length) {
+        html += `<div class="insights-section">`;
+        html += `<h4 class="insights-section-title">Network Hubs</h4>`;
+        html += `<p class="insights-desc">People connected to the most other people in the constellation</p>`;
+        html += `<div class="insights-list">`;
+        mostConnected.forEach(([name, count]) => {
+            const person = peopleData[name];
+            const relation = person?.relation || '';
+            html += `<button class="insight-person" data-name="${name}">
+                <span class="insight-person-name">${name}</span>
+                <span class="insight-person-meta">${count} connections${relation ? ' · ' + relation : ''}</span>
+            </button>`;
+        });
+        html += `</div></div>`;
+    }
+
+    mount.innerHTML = html;
+
+    // Wire up clickable people
+    mount.querySelectorAll('.insight-person').forEach(btn => {
+        btn.addEventListener('click', () => {
+            focusNodeByName(btn.dataset.name);
+            document.getElementById('constellationMount')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
     });
 }
 

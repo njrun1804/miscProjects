@@ -3,14 +3,7 @@
 // Import and call initWormholes() from any room's JS module.
 
 const WORMHOLES = [
-    // Arc → Comeback Lab
-    {
-        from: { room: 'arc', selector: '[data-stage="ordeal"]' },
-        to: { room: 'comeback', url: 'comeback.html', hash: '' },
-        label: 'See the recovery pattern →',
-        context: 'Comeback Lab'
-    },
-    // Arc → Constellation (people woven into stages)
+// Arc → Constellation (people woven into stages)
     {
         from: { room: 'arc', selector: '[data-stage="ordinary-world"]' },
         to: { room: 'constellation', url: 'constellation.html', hash: '' },
@@ -24,21 +17,7 @@ const WORMHOLES = [
         label: 'See their role in the hero\'s journey →',
         context: 'The Arc'
     },
-    // Atlas → Comeback Lab (recovery trips)
-    {
-        from: { room: 'atlas', selector: '.atlas-callout' },
-        to: { room: 'comeback', url: 'comeback.html', hash: '' },
-        label: 'The recovery trips connect here →',
-        context: 'Comeback Lab'
-    },
-    // Records → Comeback Lab (broken streak)
-    {
-        from: { room: 'records', selector: '.record-wall-grid' },
-        to: { room: 'comeback', url: 'comeback.html', hash: '' },
-        label: 'The surgery that broke the streak →',
-        context: 'Comeback Lab'
-    },
-    // Records → Dynasty (streaks + traditions)
+// Records → Dynasty (streaks + traditions)
     {
         from: { room: 'records', selector: '.obsession-grid' },
         to: { room: 'dynasty', url: 'dynasty.html', hash: '' },
@@ -68,25 +47,11 @@ const WORMHOLES = [
     },
     // Vault → Constellation (speakers)
     {
-        from: { room: 'vault', selector: '.vault-keyword-river' },
+        from: { room: 'vault', selector: '.vault-people-section' },
         to: { room: 'constellation', url: 'constellation.html', hash: '' },
         label: 'Meet the people who said these words →',
         context: 'The Constellation'
     },
-    // Comeback → Atlas (recovery destinations)
-    {
-        from: { room: 'comeback', selector: '.comeback-detail' },
-        to: { room: 'atlas', url: 'atlas.html', hash: '' },
-        label: 'See where recovery took him →',
-        context: 'The Atlas'
-    },
-    // Comeback → Dynasty (what was built after)
-    {
-        from: { room: 'comeback', selector: '.comeback-clock-section' },
-        to: { room: 'dynasty', url: 'dynasty.html', hash: '' },
-        label: 'What was built after each comeback →',
-        context: 'The Dynasty'
-    }
 ];
 
 export function initWormholes(currentRoom) {

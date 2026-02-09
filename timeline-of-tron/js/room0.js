@@ -2,7 +2,7 @@
 // Clue tracking via localStorage, origin story content
 
 const CLUE_KEY = 'tron_room0_clues';
-const TOTAL_CLUES = 5;
+const TOTAL_CLUES = 7;
 
 export function initRoom0() {
     renderClueStatus();
@@ -40,7 +40,7 @@ function renderClueStatus() {
     container.innerHTML = `
         <div class="room0-clue-status__label">Clues Found</div>
         <div class="clue-dots">
-            ${[1, 2, 3, 4, 5].map(i =>
+            ${[1, 2, 3, 4, 5, 6, 7].map(i =>
                 `<div class="clue-dot ${found.includes('clue' + i) ? 'found' : ''}" title="Clue ${i}"></div>`
             ).join('')}
         </div>

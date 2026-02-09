@@ -1,0 +1,50 @@
+[
+  {
+    "year": 2005,
+    "events": 7,
+    "avg_attendance": 50.285714285714285,
+    "peak_attendance": 147
+  },
+  {
+    "year": 2006,
+    "events": 15,
+    "avg_attendance": 48.333333333333336,
+    "peak_attendance": 190
+  },
+  {
+    "year": 2007,
+    "events": 2,
+    "avg_attendance": 23.0,
+    "peak_attendance": 24
+  },
+  {
+    "year": 2008,
+    "events": 23,
+    "avg_attendance": 30.0,
+    "peak_attendance": 180
+  },
+  {
+    "year": 2010,
+    "events": 4,
+    "avg_attendance": 32.25,
+    "peak_attendance": 39
+  },
+  {
+    "year": 2011,
+    "events": 2,
+    "avg_attendance": 31.0,
+    "peak_attendance": 39
+  },
+  {
+    "year": 2012,
+    "events": 1,
+    "avg_attendance": 19.0,
+    "peak_attendance": 19
+  },
+  {
+    "year": 2013,
+    "events": 1,
+    "avg_attendance": 9.0,
+    "peak_attendance": 9
+  }
+]

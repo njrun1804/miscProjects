@@ -131,7 +131,7 @@ function renderTraditions(traditions) {
 // Auto-init
 initDynasty()
     .then(() => initWormholes('dynasty'))
-    .then(() => plantClue('clue5', document.querySelector('.dynasty-callout')))
+    .then(() => plantClue('clue4', document.querySelector('.dynasty-callout')))
     .catch(() => {
         const el = document.querySelector('.staircase-container');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';

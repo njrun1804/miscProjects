@@ -26,7 +26,16 @@
 
 .records-hero h1 { color: var(--room-accent); }
 
-/* Obsession Index */
+.section-subtitle {
+    text-align: center;
+    color: var(--lj-text-secondary);
+    margin-bottom: var(--space-lg);
+    font-size: 13px;
+}
+
+/* ============================
+   OBSESSION INDEX
+   ============================ */
 .obsession-index {
     margin-bottom: var(--space-xl);
 }
@@ -86,7 +95,9 @@
     margin-right: auto;
 }
 
-/* Sports Gauges */
+/* ============================
+   WIN RATES (GAUGES)
+   ============================ */
 .gauges-section {
     margin-bottom: var(--space-xl);
 }
@@ -124,9 +135,315 @@
     font-family: var(--font-mono);
     font-size: 11px;
     color: var(--lj-text-secondary);
+    margin-top: 2px;
 }
 
-/* Streak Stories */
+/* ============================
+   ATHLETIC ARCHIVES
+   ============================ */
+.archives-section {
+    margin-bottom: var(--space-xl);
+}
+
+.archives-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.archives-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+}
+
+.archive-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 18px;
+    box-shadow: 1px 2px 4px rgba(90,78,60,0.08);
+    transition: box-shadow 0.2s;
+}
+
+.archive-card:hover {
+    box-shadow: 2px 4px 12px rgba(90,78,60,0.15);
+}
+
+.archive-card__header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--lj-border);
+}
+
+.archive-card__icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.archive-card__title-block {
+    flex: 1;
+}
+
+.archive-card__sport {
+    font-family: var(--font-mono);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--room-text);
+}
+
+.archive-card__years {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--room-accent);
+    margin-top: 2px;
+}
+
+.archive-card__record {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 2px;
+}
+
+.archive-card__stories {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.archive-card__story {
+    font-size: 13px;
+    color: var(--room-text);
+    line-height: 1.4;
+    padding-left: 10px;
+    border-left: 2px solid rgba(139, 105, 20, 0.2);
+}
+
+.archive-card__story-year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--room-accent);
+    margin-right: 6px;
+    font-weight: 700;
+}
+
+.archive-card__story-text {
+    color: var(--lj-text-secondary);
+    font-size: 12px;
+}
+
+/* ============================
+   THE RIVALS
+   ============================ */
+.rivals-section {
+    margin-bottom: var(--space-xl);
+}
+
+.rivals-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.rivals-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+.rivals-leaderboard h3,
+.rivals-highlights h3,
+.rivals-matchups h3 {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--room-accent);
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.leaderboard-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.leaderboard-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    font-size: 13px;
+}
+
+.leaderboard-rank {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    min-width: 28px;
+    text-align: center;
+}
+
+.leaderboard-name {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--room-text);
+    flex: 1;
+}
+
+.leaderboard-record {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+}
+
+.leaderboard-rate {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--room-accent);
+    min-width: 36px;
+    text-align: right;
+}
+
+/* Match highlights */
+.highlight-match {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.highlight-match--blowout {
+    border-left: 3px solid #8b1a1a;
+}
+
+.highlight-match--thriller {
+    border-left: 3px solid #4a6741;
+}
+
+.highlight-match__winner {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--room-text);
+    flex: 1;
+}
+
+.highlight-match__score {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: var(--room-accent);
+    font-size: 14px;
+}
+
+.highlight-match__loser {
+    font-family: var(--font-mono);
+    color: var(--lj-text-secondary);
+    flex: 1;
+    text-align: right;
+}
+
+.highlight-match__year {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    opacity: 0.7;
+}
+
+/* Head-to-head matchups */
+.matchups-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.matchup-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 12px 14px;
+}
+
+.matchup-card--sweep {
+    border-left: 3px solid var(--room-accent);
+}
+
+.matchup-players {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.matchup-p {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+}
+
+.matchup-p strong {
+    font-size: 14px;
+}
+
+.matchup-winner {
+    color: var(--room-text);
+    font-weight: 700;
+}
+
+.matchup-vs {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--lj-text-secondary);
+    opacity: 0.6;
+}
+
+.matchup-bar {
+    height: 6px;
+    background: rgba(180,168,140,0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 6px;
+}
+
+.matchup-bar__fill {
+    height: 100%;
+    background: var(--room-accent);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+}
+
+.matchup-meta {
+    display: flex;
+    gap: 10px;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+}
+
+.matchup-tag {
+    font-weight: 700;
+    color: var(--room-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ============================
+   STREAK STORIES
+   ============================ */
 .streak-section {
     margin-bottom: var(--space-xl);
 }
@@ -234,7 +551,143 @@
     color: var(--lj-text-secondary);
 }
 
-/* Entertainment */
+/* ============================
+   LIFE INTENSITY MAP
+   ============================ */
+.intensity-section {
+    margin-bottom: var(--space-xl);
+}
+
+.intensity-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.intensity-chart-wrap {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    height: 380px;
+    box-shadow: 1px 2px 4px rgba(90,78,60,0.08);
+}
+
+/* ============================
+   COMEBACKS
+   ============================ */
+.comebacks-section {
+    margin-bottom: var(--space-xl);
+}
+
+.comebacks-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.comebacks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 14px;
+}
+
+.comeback-card {
+    display: flex;
+    gap: 14px;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 16px;
+    box-shadow: 1px 2px 4px rgba(90,78,60,0.08);
+    transition: box-shadow 0.2s;
+}
+
+.comeback-card:hover {
+    box-shadow: 2px 4px 12px rgba(90,78,60,0.15);
+}
+
+.comeback-card__icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+
+.comeback-card__content {
+    flex: 1;
+}
+
+.comeback-card__crisis,
+.comeback-card__recovery {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.comeback-card__crisis {
+    padding-bottom: 6px;
+}
+
+.comeback-card__recovery {
+    padding-top: 6px;
+}
+
+.comeback-card__year {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--room-accent);
+    min-width: 32px;
+    flex-shrink: 0;
+}
+
+.comeback-card__event {
+    font-size: 12px;
+    color: var(--room-text);
+    line-height: 1.4;
+}
+
+.comeback-card__crisis .comeback-card__event {
+    color: #8b1a1a;
+}
+
+.comeback-card__recovery .comeback-card__event {
+    color: #4a6741;
+}
+
+.comeback-card__arrow {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0 4px 40px;
+    border-left: 2px dashed rgba(139, 105, 20, 0.25);
+    margin-left: 16px;
+}
+
+.comeback-card__gap {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.comeback-card__arrow-icon {
+    font-size: 14px;
+    color: var(--room-accent);
+}
+
+.comeback-card__shift {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: #4a6741;
+    margin-top: 8px;
+    padding-top: 6px;
+    border-top: 1px solid var(--lj-border);
+}
+
+/* ============================
+   ENTERTAINMENT
+   ============================ */
 .entertainment-section {
     margin-bottom: var(--space-xl);
 }
@@ -311,7 +764,9 @@
     font-style: italic;
 }
 
-/* Record Wall */
+/* ============================
+   RECORD WALL
+   ============================ */
 .record-wall {
     margin-bottom: var(--space-xl);
 }
@@ -358,7 +813,9 @@
     margin-top: 4px;
 }
 
-/* Special callout */
+/* ============================
+   SPECIAL CALLOUT
+   ============================ */
 .records-callout {
     max-width: 700px;
     margin: var(--space-xl) auto;
@@ -374,10 +831,22 @@
     line-height: 1.6;
 }
 
+/* ============================
+   RESPONSIVE
+   ============================ */
 @media (max-width: 768px) {
     .gauges-grid { grid-template-columns: 1fr; max-width: 250px; margin: 0 auto; }
     .obsession-grid { grid-template-columns: repeat(2, 1fr); }
     .record-wall-grid { grid-template-columns: 1fr; }
     .entertainment-grid { grid-template-columns: 1fr; }
+    .archives-grid { grid-template-columns: 1fr; }
+    .comebacks-grid { grid-template-columns: 1fr; }
+    .rivals-columns { grid-template-columns: 1fr; }
+    .matchups-list { grid-template-columns: 1fr; }
     .streak-card__duration { font-size: 1.5rem; min-width: 50px; }
+    .intensity-chart-wrap { height: 300px; padding: 12px; }
+}
+
+@media (max-width: 480px) {
+    .obsession-grid { grid-template-columns: 1fr; }
 }

@@ -1,321 +1,136 @@
-// js/arc.js — Room 1: The Arc (Hero's Journey + Emotional Timeline)
-// Scroll-driven narrative through 9 hero's journey stages
+// js/arc.js — Room 1: The Arc (Redesigned)
+// Emotional "year in the life" narrative through 9 hero's journey stages
+// Loads richer data: year themes, life chapters, epic numbers, callouts
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
 import { plantClue } from './room0.js';
 
 const STAGE_SLUGS = [
-    'ordinary-world',
-    'call-to-adventure',
-    'crossing-threshold',
-    'tests-allies',
-    'approach-cave',
-    'ordeal',
-    'road-back',
-    'resurrection',
-    'return-elixir'
+    'ordinary-world', 'call-to-adventure', 'crossing-threshold',
+    'tests-allies', 'approach-cave', 'ordeal',
+    'road-back', 'resurrection', 'return-elixir'
 ];
 
-const CATEGORY_ICONS = {
-    travel: '\u2708',
-    wwe: '\u{1F93C}',
-    career: '\u{1F4C8}',
-    health: '\u{1F3E5}',
-    ecd: '\u{1F534}',
-    family: '\u{1F468}\u200D\u{1F469}\u200D\u{1F466}',
-    relationship: '\u{1F49B}',
-    entertainment: '\u{1F3AD}',
-    sports: '\u{1F3D3}',
-    education: '\u{1F393}',
-    music_awards: '\u{1F3B5}',
-    vehicle: '\u{1F697}',
-    social: '\u{1F389}',
-    personal: '\u{1F4DD}',
-    writing: '\u270D',
-    other: '\u25C6'
-};
+const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
 
-const DOMAIN_COLORS = {
-    health: '#c0392b',
-    family: '#8b6914',
-    identity: '#6a4b8b',
-    relationship: '#d4a24e',
-    community: '#2e7d32'
+const CATEGORY_ICONS = {
+    travel: '\u2708', wwe: '\u{1F93C}', career: '\u{1F4C8}', health: '\u{1F3E5}',
+    ecd: '\u{1F534}', family: '\u{1F468}\u200D\u{1F469}\u200D\u{1F466}', relationship: '\u{1F49B}',
+    entertainment: '\u{1F3AD}', sports: '\u{1F3D3}', education: '\u{1F393}',
+    music_awards: '\u{1F3B5}', vehicle: '\u{1F697}', social: '\u{1F389}',
+    personal: '\u{1F4DD}', writing: '\u270D', other: '\u25C6'
 };
 
 const EMOTION_COLORS = {
-    joy: '#4a6741',
-    pride: '#c9a84c',
-    love: '#d4a24e',
-    sadness: '#5a5a6e',
-    anger: '#8b1a1a',
-    nostalgia: '#6a4b8b',
-    neutral: '#888',
-    humor: '#2e7d32',
-    defiance: '#c0392b',
-    fear: '#4a2d6b',
-    determination: '#1a5c8b',
-    gratitude: '#4a6741',
+    joy: '#4a6741', pride: '#c9a84c', love: '#d4a24e',
+    sadness: '#5a5a6e', anger: '#8b1a1a', nostalgia: '#6a4b8b',
+    neutral: '#888', humor: '#2e7d32', defiance: '#c0392b',
+    fear: '#4a2d6b', determination: '#1a5c8b', gratitude: '#4a6741',
     reflection: '#5a5a6e'
 };
 
+const DOMAIN_COLORS = {
+    health: '#c0392b', family: '#8b6914', identity: '#6a4b8b',
+    relationship: '#d4a24e', community: '#2e7d32'
+};
+
+// ─── INIT ─────────────────────────────────────────────────────────
 export async function initArc() {
     const data = await loadMultiple([
         'heros_journey_narrative.json',
         'sentiment_timeline.json',
-        'turning_points.json',
-        'turning_point_impact.json'
+        'turning_point_impact.json',
+        'year_summaries.json',
+        'life_chapters.json',
+        'epic_numbers.json'
     ]);
 
-    const stages = data.heros_journey_narrative;
-    const sentiment = data.sentiment_timeline;
+    const maps = buildMaps(data);
+    renderStages(data.heros_journey_narrative, maps);
+    initSentimentLine(data.sentiment_timeline);
+    initChapterNav(data.heros_journey_narrative);
+    initScrollObserver();
+}
 
-    // Build impact lookup by year
+function buildMaps(data) {
+    const yearSummary = {};
+    (data.year_summaries || []).forEach(y => { yearSummary[y.year] = y; });
+
+    const epicNumbers = {};
+    (data.epic_numbers || []).forEach(e => {
+        if (!e.year) return;
+        if (!epicNumbers[e.year]) epicNumbers[e.year] = [];
+        epicNumbers[e.year].push(e);
+    });
+
     const impactMap = {};
     (data.turning_point_impact || []).forEach(tp => {
-        const key = `${tp.turning_point_year}_${tp.event.slice(0, 25)}`;
         if (!impactMap[tp.turning_point_year]) impactMap[tp.turning_point_year] = [];
         impactMap[tp.turning_point_year].push(tp);
     });
 
-    renderStages(stages, impactMap);
-    initSentimentLine(sentiment);
-    initChapterNav(stages);
-    initScrollObserver();
+    return {
+        yearSummary,
+        epicNumbers,
+        lifeChapters: data.life_chapters || [],
+        impactMap
+    };
 }
 
-function findImpact(impactMap, year, event) {
-    const entries = impactMap[year];
-    if (!entries) return null;
-    // Match by first 20 chars of event text
-    const prefix = event.slice(0, 20).toLowerCase();
-    return entries.find(e => e.event.slice(0, 20).toLowerCase() === prefix) || entries[0];
+function parseYears(yearsStr) {
+    if (!yearsStr) return [];
+    try {
+        const parsed = JSON.parse(yearsStr);
+        return Array.isArray(parsed) ? parsed : [];
+    } catch {
+        const match = yearsStr.match(/(\d{4})/g);
+        return match ? [...new Set(match.map(Number))] : [];
+    }
 }
 
-function generateCallout(stageInfo, i) {
-    // Special case: stage 3 (Tests, Allies — 2009-2011)
-    if (i === 3) {
-        return '2009 wasn\u2019t the happiest year. It was the most alive. Sentiment score: 0.076. But emotional range: \u2212\u20090.751 to +0.91. The greatest years aren\u2019t the calmest.';
-    }
-    // Negative sentiment but high intensity
-    if (stageInfo.avg_sentiment < -0.1 && stageInfo.intensity_score > 8) {
-        return `Sentiment: ${stageInfo.avg_sentiment.toFixed(3)}. Intensity: ${stageInfo.intensity_score.toFixed(1)}. Not every foundation is built on happiness.`;
-    }
-    // Highest positive sentiment
-    if (stageInfo.avg_sentiment > 0.18) {
-        return `The most documented year was also the most joyful. Average sentiment: +${stageInfo.avg_sentiment.toFixed(3)}. Peak vulnerability follows peak joy.`;
-    }
-    // Many milestones in short span
-    const span = stageInfo.year_end - stageInfo.year_start + 1;
-    if (stageInfo.milestone_count >= 25 && span <= 2) {
-        return `${stageInfo.milestone_count} milestones in ${span} year${span > 1 ? 's' : ''}. Life was happening fast.`;
-    }
-    return null;
-}
-
-function selectQuotes(quotes, max) {
-    if (!quotes || quotes.length === 0) return [];
-    if (quotes.length <= max) return quotes;
-
-    const selected = [];
-    // Most positive
-    const sorted = [...quotes].sort((a, b) => (b.sentiment_score || 0) - (a.sentiment_score || 0));
-    selected.push(sorted[0]);
-
-    // Most raw/intense (most negative)
-    const mostRaw = sorted[sorted.length - 1];
-    if (mostRaw !== selected[0]) selected.push(mostRaw);
-
-    // Different emotion from first two
-    const usedEmotions = new Set(selected.map(q => q.emotion));
-    const different = quotes.find(q => !usedEmotions.has(q.emotion) && !selected.includes(q));
-    if (different && selected.length < max) selected.push(different);
-
-    // Fill remaining
-    while (selected.length < max) {
-        const next = quotes.find(q => !selected.includes(q));
-        if (!next) break;
-        selected.push(next);
-    }
-
-    return selected.slice(0, max);
-}
-
-function renderStages(stages, impactMap) {
+// ─── RENDER ALL STAGES ────────────────────────────────────────────
+function renderStages(stages, maps) {
     const main = document.querySelector('.arc-stages');
     if (!main) return;
 
-    const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX'];
-
     stages.forEach((entry, i) => {
-        // Destructure the nested data structure
-        const stageInfo = entry.stage;
-        const milestones = entry.milestones || [];
-        const quotes = entry.quotes || [];
-        const turningPoints = entry.turning_points || [];
-        const people = entry.people || [];
-        const careerMilestones = entry.career_milestones || [];
-        const eras = entry.eras || [];
+        const s = entry.stage;
+        const slug = STAGE_SLUGS[i];
+        const years = parseYears(s.years);
 
-        const slug = STAGE_SLUGS[i] || stageInfo.stage.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        // Gather contextual data
+        const yearThemes = years.map(y => maps.yearSummary[y]).filter(Boolean);
+        const chapters = maps.lifeChapters.filter(ch =>
+            years.some(y => y >= ch.start_year && y <= ch.end_year)
+        );
+        const uniqueChapters = [...new Map(chapters.map(c => [c.chapter_number, c])).values()];
+        const epicNums = years.flatMap(y => maps.epicNumbers[y] || []);
+        const milestones = entry.milestones || [];
+        const quotes = selectQuotes(entry.quotes || [], 4);
+        const turningPoints = entry.turning_points || [];
+        const people = (entry.people || [])
+            .sort((a, b) => (b.importance_score || 0) - (a.importance_score || 0))
+            .slice(0, 10);
+
         const section = document.createElement('section');
         section.className = 'arc-stage';
         section.dataset.stage = slug;
         section.id = `stage-${i + 1}`;
 
-        // --- Stats bar ---
-        const sentimentClass = stageInfo.avg_sentiment >= 0 ? 'stage-stat--positive' : 'stage-stat--negative';
-        const sentimentPrefix = stageInfo.avg_sentiment >= 0 ? '+' : '';
-        const statsBarHTML = `
-            <div class="stage-stats-bar">
-                <div class="stage-stat">
-                    <span class="stage-stat__value">${stageInfo.milestone_count}</span>
-                    <span class="stage-stat__label">milestones</span>
-                </div>
-                <div class="stage-stat">
-                    <span class="stage-stat__value">${stageInfo.people_active_count}</span>
-                    <span class="stage-stat__label">people</span>
-                </div>
-                <div class="stage-stat ${sentimentClass}">
-                    <span class="stage-stat__value">${sentimentPrefix}${stageInfo.avg_sentiment.toFixed(2)}</span>
-                    <span class="stage-stat__label">sentiment</span>
-                </div>
-                <div class="stage-stat">
-                    <span class="stage-stat__value">${stageInfo.intensity_score.toFixed(1)}</span>
-                    <span class="stage-stat__label">intensity</span>
-                </div>
-                ${stageInfo.quote_count > 0 ? `
-                <div class="stage-stat">
-                    <span class="stage-stat__value">${stageInfo.quote_count}</span>
-                    <span class="stage-stat__label">quotes</span>
-                </div>` : ''}
-            </div>
-        `;
+        const callout = generateCallout(s, i, yearThemes);
 
-        // --- Career & era context ---
-        const careerTitles = stageInfo.career_milestones || '';
-        const eraNames = eras.length > 0
-            ? [...new Set(eras.map(e => e.era_name))].slice(0, 2).join(' \u2192 ')
-            : '';
-        const contextHTML = (careerTitles || eraNames) ? `
-            <div class="stage-context">
-                ${careerTitles ? `<span class="stage-context__career">${careerTitles}</span>` : ''}
-                ${eraNames ? `<span class="stage-context__era">${eraNames}</span>` : ''}
-            </div>
-        ` : '';
-
-        // --- Milestones (limit to 7, pick most significant) ---
-        const topMilestones = milestones
-            .filter(m => m.vader_compound !== 0)
-            .sort((a, b) => Math.abs(b.vader_compound) - Math.abs(a.vader_compound))
-            .slice(0, 7);
-
-        if (topMilestones.length < 3) {
-            const remaining = milestones
-                .filter(m => !topMilestones.includes(m))
-                .slice(0, 7 - topMilestones.length);
-            topMilestones.push(...remaining);
-        }
-
-        const milestonesHTML = topMilestones.slice(0, 7).map(m => `
-            <div class="milestone-card">
-                <div class="milestone-card__header">
-                    <span class="milestone-card__category">${CATEGORY_ICONS[m.category] || CATEGORY_ICONS.other}</span>
-                    <span class="milestone-card__year">${m.year}</span>
-                </div>
-                <p class="milestone-card__text">${m.milestone}</p>
-            </div>
-        `).join('');
-
-        // --- Turning points with impact data ---
-        const turningPointsHTML = turningPoints.map(tp => {
-            const impact = findImpact(impactMap, tp.year, tp.event);
-            const domainColor = DOMAIN_COLORS[tp.domain] || '#888';
-            const shockPct = impact ? Math.min((impact.shock_magnitude / 2.5) * 100, 100) : 0;
-
-            let impactHTML = '';
-            if (impact) {
-                impactHTML = `
-                    <div class="turning-point__impact">
-                        <span class="turning-point__domain" style="background: ${domainColor}; color: #fff">${tp.domain}</span>
-                        <span class="turning-point__recovery">${impact.recovery_months}mo recovery</span>
-                    </div>
-                    <div class="turning-point__from-to">${tp.from_state} \u2192 ${tp.to_state}</div>
-                    <div class="turning-point__shock-bar" style="--shock-pct: ${shockPct.toFixed(0)}%"></div>
-                `;
-            } else {
-                impactHTML = tp.from_state && tp.to_state ? `
-                    <div class="turning-point__impact">
-                        <span class="turning-point__domain" style="background: ${domainColor}; color: #fff">${tp.domain}</span>
-                    </div>
-                    <div class="turning-point__from-to">${tp.from_state} \u2192 ${tp.to_state}</div>
-                ` : '';
-            }
-
-            return `
-                <div class="turning-point turning-point--${tp.type}">
-                    <div class="turning-point__header">
-                        <span class="turning-point__diamond"></span>
-                        <span class="turning-point__event">${tp.year}: ${tp.event}</span>
-                    </div>
-                    ${impactHTML}
-                </div>
-            `;
-        }).join('');
-
-        // --- People tags ---
-        const topPeople = [...people]
-            .sort((a, b) => (b.importance_score || 0) - (a.importance_score || 0))
-            .slice(0, 8);
-
-        const peopleHTML = topPeople.length > 0 ? `
-            <div class="stage-people">
-                ${topPeople.map(p => `
-                    <span class="stage-person" data-category="${p.category || 'friend'}" title="${p.relation || ''}">${p.name}</span>
-                `).join('')}
-            </div>
-        ` : '';
-
-        // --- Quotes (up to 3 with emotion + context) ---
-        const selectedQuotes = selectQuotes(quotes, 3);
-        const quotesHTML = selectedQuotes.length > 0 ? `
-            <div class="stage-quotes">
-                ${selectedQuotes.map(q => {
-                    const emotionColor = EMOTION_COLORS[q.emotion] || EMOTION_COLORS.neutral;
-                    return `
-                        <blockquote class="stage-quote">
-                            <p>&ldquo;${q.quote}&rdquo;</p>
-                            <footer class="stage-quote__meta">
-                                ${q.emotion ? `<span class="stage-quote__emotion" style="background: ${emotionColor}; color: #fff">${q.emotion}</span>` : ''}
-                                ${q.context ? `<span class="stage-quote__context">${q.context}</span>` : ''}
-                            </footer>
-                        </blockquote>
-                    `;
-                }).join('')}
-            </div>
-        ` : '';
-
-        // --- Callout ---
-        const calloutText = generateCallout(stageInfo, i);
-        const calloutHTML = calloutText ? `
-            <div class="arc-callout">${calloutText}</div>
-        ` : '';
-
-        // --- Assemble stage ---
         section.innerHTML = `
-            <div class="stage-content">
-                <span class="stage-number">${romanNumerals[i]}</span>
-                <h2 class="stage-title">${stageInfo.stage}</h2>
-                <p class="stage-years">${stageInfo.year_start}${stageInfo.year_end !== stageInfo.year_start ? '\u2013' + stageInfo.year_end : ''}</p>
-                <p class="stage-prose">${stageInfo.description}</p>
-                ${statsBarHTML}
-                ${contextHTML}
-                ${calloutHTML}
-                <div class="stage-milestones">${milestonesHTML}</div>
-                ${turningPointsHTML ? `<div class="stage-turning-points">${turningPointsHTML}</div>` : ''}
-                ${peopleHTML}
-                ${quotesHTML}
+            ${heroHTML(i, s, years, yearThemes)}
+            <div class="stage-body">
+                ${chapterBannerHTML(uniqueChapters)}
+                ${narrativeHTML(s)}
+                ${callout ? `<div class="arc-callout anim-target"><p>${callout}</p></div>` : ''}
+                ${turningPointsHTML(turningPoints, maps.impactMap)}
+                ${quotesHTML(quotes)}
+                ${timelineHTML(milestones)}
+                ${epicNumbersHTML(epicNums)}
+                ${peopleHTML(people)}
             </div>
         `;
 
@@ -323,6 +138,294 @@ function renderStages(stages, impactMap) {
     });
 }
 
+// ─── HERO ─────────────────────────────────────────────────────────
+function heroHTML(i, s, years, yearThemes) {
+    const sentClass = s.avg_sentiment >= 0 ? 'positive' : 'negative';
+    const sentPrefix = s.avg_sentiment >= 0 ? '+' : '';
+    const yearRange = years.length > 1
+        ? `${years[0]}\u2013${years[years.length - 1]}`
+        : `${years[0]}`;
+
+    const themesBlock = yearThemes.map(yt => `
+        <div class="year-theme">
+            <span class="year-theme__year">${yt.year}</span>
+            <span class="year-theme__text">${yt.year_theme}</span>
+        </div>
+    `).join('');
+
+    return `
+        <div class="stage-hero">
+            <span class="stage-number">${ROMAN[i]}</span>
+            <h2 class="stage-title">${s.stage}</h2>
+            <p class="stage-years">${yearRange}</p>
+            ${themesBlock ? `<div class="stage-year-themes">${themesBlock}</div>` : ''}
+            <div class="stage-pulse">
+                <div class="pulse-metric pulse-metric--${sentClass}">
+                    <span class="pulse-value">${sentPrefix}${s.avg_sentiment.toFixed(2)}</span>
+                    <span class="pulse-label">sentiment</span>
+                </div>
+                <div class="pulse-metric">
+                    <span class="pulse-value">${s.intensity_score.toFixed(0)}</span>
+                    <span class="pulse-label">intensity</span>
+                </div>
+                <div class="pulse-metric">
+                    <span class="pulse-value">${s.milestone_count}</span>
+                    <span class="pulse-label">milestones</span>
+                </div>
+                <div class="pulse-metric">
+                    <span class="pulse-value">${s.people_active_count}</span>
+                    <span class="pulse-label">people</span>
+                </div>
+                ${s.quote_count > 0 ? `
+                <div class="pulse-metric">
+                    <span class="pulse-value">${s.quote_count}</span>
+                    <span class="pulse-label">quotes</span>
+                </div>` : ''}
+            </div>
+            <div class="hero-scroll-hint">\u2193</div>
+        </div>
+    `;
+}
+
+// ─── CHAPTER BANNER ───────────────────────────────────────────────
+function chapterBannerHTML(chapters) {
+    if (!chapters.length) return '';
+    return chapters.map(ch => {
+        const mainTheme = (ch.theme || '').split('|')[0].trim();
+        return `
+            <div class="stage-chapter-banner anim-target">
+                <span class="chapter-badge">Ch. ${ch.chapter_number}</span>
+                <span class="chapter-theme">${mainTheme}</span>
+            </div>
+        `;
+    }).join('');
+}
+
+// ─── NARRATIVE ────────────────────────────────────────────────────
+function narrativeHTML(s) {
+    return `
+        <div class="stage-narrative anim-target">
+            <p class="stage-prose">${s.description}</p>
+            ${s.career_milestones ? `<p class="stage-career-context">${s.career_milestones}</p>` : ''}
+        </div>
+    `;
+}
+
+// ─── CALLOUT GENERATOR ────────────────────────────────────────────
+function generateCallout(s, i, yearThemes) {
+    // Stage-specific callouts
+    if (i === 0) {
+        return `Sentiment averaged ${s.avg_sentiment.toFixed(2)} across these three years. ${s.milestone_count} milestones. ${s.people_active_count} people. Not every foundation is built on happiness.`;
+    }
+    if (i === 1) {
+        return `One year. ${s.milestone_count} milestones. Intensity jumped to ${s.intensity_score.toFixed(0)}. Everything started moving at once.`;
+    }
+    if (i === 3) {
+        return `2009 wasn\u2019t the happiest year. It was the most alive. Sentiment: 0.076. But emotional range: \u22120.751 to +0.91. The greatest years aren\u2019t the calmest.`;
+    }
+    if (i === 5) {
+        return `The quiet years. Intensity dropped to ${s.intensity_score.toFixed(0)}. But sentiment hit +${s.avg_sentiment.toFixed(2)}\u2009\u2014\u2009the highest positive stretch. Sometimes the calm is the point.`;
+    }
+    if (i === 7) {
+        return `Post-surgery, post-stillness: ${s.milestone_count} milestones across ${s.year_end - s.year_start + 1} years. Travel resumed. Adventure resumed. Intensity: ${s.intensity_score.toFixed(0)}.`;
+    }
+    if (i === 8) {
+        return `${s.milestone_count} milestones. ${s.people_active_count} people still in the frame. 22 years of data. The timeline keeps going.`;
+    }
+
+    // Pattern-based
+    if (s.avg_sentiment > 0.18) {
+        return `Average sentiment: +${s.avg_sentiment.toFixed(2)}. The most positive era measured. Peak vulnerability follows peak joy.`;
+    }
+    const span = s.year_end - s.year_start + 1;
+    if (s.milestone_count >= 25 && span <= 3) {
+        return `${s.milestone_count} milestones in ${span} year${span > 1 ? 's' : ''}. Life was happening fast.`;
+    }
+    return null;
+}
+
+// ─── TURNING POINTS ───────────────────────────────────────────────
+function turningPointsHTML(turningPoints, impactMap) {
+    if (!turningPoints.length) return '';
+
+    const cards = turningPoints.map(tp => {
+        const impact = findImpact(impactMap, tp.year, tp.event);
+        const domainColor = DOMAIN_COLORS[tp.domain] || '#888';
+        let recoveryTag = '';
+        if (impact && impact.recovery_months) {
+            recoveryTag = `<span class="tp-recovery">${impact.recovery_months}mo recovery</span>`;
+        }
+
+        return `
+            <div class="tp-card tp-card--${tp.type}">
+                <div class="tp-marker"></div>
+                <div class="tp-content">
+                    <div class="tp-header">
+                        <span class="tp-year">${tp.year}</span>
+                        <span class="tp-domain" style="background:${domainColor}">${tp.domain}</span>
+                        ${recoveryTag}
+                    </div>
+                    <p class="tp-event">${tp.event}</p>
+                    ${tp.from_state && tp.to_state ? `
+                    <div class="tp-transition">
+                        <span class="tp-from">${tp.from_state}</span>
+                        <span class="tp-arrow">\u2192</span>
+                        <span class="tp-to">${tp.to_state}</span>
+                    </div>` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    return `<div class="stage-drama anim-target">${cards}</div>`;
+}
+
+function findImpact(impactMap, year, event) {
+    const entries = impactMap[year];
+    if (!entries) return null;
+    const prefix = event.slice(0, 20).toLowerCase();
+    return entries.find(e => e.event.slice(0, 20).toLowerCase() === prefix) || entries[0];
+}
+
+// ─── QUOTES ───────────────────────────────────────────────────────
+function quotesHTML(quotes) {
+    if (!quotes.length) return '';
+
+    const blocks = quotes.map(q => {
+        const emotionColor = EMOTION_COLORS[q.emotion] || EMOTION_COLORS.neutral;
+        return `
+            <blockquote class="arc-quote">
+                <p>\u201C${q.quote}\u201D</p>
+                <footer>
+                    ${q.emotion ? `<span class="quote-emotion" style="background:${emotionColor}">${q.emotion}</span>` : ''}
+                    ${q.context ? `<span class="quote-context">${q.context}</span>` : ''}
+                </footer>
+            </blockquote>
+        `;
+    }).join('');
+
+    return `<div class="stage-quotes anim-target">${blocks}</div>`;
+}
+
+function selectQuotes(quotes, max) {
+    if (!quotes || !quotes.length) return [];
+    if (quotes.length <= max) return quotes;
+
+    const selected = [];
+    const sorted = [...quotes].sort((a, b) => (b.sentiment_score || 0) - (a.sentiment_score || 0));
+    selected.push(sorted[0]);
+
+    const mostRaw = sorted[sorted.length - 1];
+    if (mostRaw !== selected[0]) selected.push(mostRaw);
+
+    const usedEmotions = new Set(selected.map(q => q.emotion));
+    const different = quotes.find(q => !usedEmotions.has(q.emotion) && !selected.includes(q));
+    if (different && selected.length < max) selected.push(different);
+
+    while (selected.length < max) {
+        const next = quotes.find(q => !selected.includes(q));
+        if (!next) break;
+        selected.push(next);
+    }
+    return selected.slice(0, max);
+}
+
+// ─── MILESTONE TIMELINE ──────────────────────────────────────────
+function timelineHTML(milestones) {
+    if (!milestones.length) return '';
+
+    const sorted = [...milestones].sort((a, b) => {
+        if (a.year !== b.year) return a.year - b.year;
+        return Math.abs(b.vader_compound) - Math.abs(a.vader_compound);
+    });
+
+    const display = selectMilestones(sorted, 12);
+
+    const entries = display.map(m => {
+        const sv = m.vader_compound || 0;
+        const sentClass = sv > 0.1 ? 'positive' : sv < -0.1 ? 'negative' : 'neutral';
+        const icon = CATEGORY_ICONS[m.category] || CATEGORY_ICONS.other;
+        return `
+            <div class="tl-entry tl-entry--${sentClass}">
+                <span class="tl-year">${m.year}</span>
+                <span class="tl-dot"></span>
+                <div class="tl-body">
+                    <span class="tl-icon">${icon}</span>
+                    <p class="tl-text">${m.milestone}</p>
+                </div>
+            </div>
+        `;
+    }).join('');
+
+    return `
+        <div class="stage-timeline anim-target">
+            <h3 class="section-label">what happened</h3>
+            ${entries}
+        </div>
+    `;
+}
+
+function selectMilestones(milestones, max) {
+    if (milestones.length <= max) return milestones;
+
+    const bySentiment = [...milestones].sort((a, b) =>
+        Math.abs(b.vader_compound) - Math.abs(a.vader_compound)
+    );
+
+    const selected = [];
+    const yearsCovered = new Set();
+
+    // One per year, most emotional first
+    for (const m of bySentiment) {
+        if (!yearsCovered.has(m.year) && selected.length < max) {
+            selected.push(m);
+            yearsCovered.add(m.year);
+        }
+    }
+    // Fill remaining
+    for (const m of bySentiment) {
+        if (!selected.includes(m) && selected.length < max) {
+            selected.push(m);
+        }
+    }
+    return selected.sort((a, b) => a.year - b.year);
+}
+
+// ─── EPIC NUMBERS ─────────────────────────────────────────────────
+function epicNumbersHTML(epicNums) {
+    if (!epicNums.length) return '';
+
+    const cards = epicNums.map(e => `
+        <div class="epic-card">
+            <span class="epic-value">${e.value}</span>
+            <span class="epic-stat">${e.stat.toLowerCase()}</span>
+            ${e.year ? `<span class="epic-year">${e.year}</span>` : ''}
+        </div>
+    `).join('');
+
+    return `<div class="stage-epic anim-target">${cards}</div>`;
+}
+
+// ─── PEOPLE ───────────────────────────────────────────────────────
+function peopleHTML(people) {
+    if (!people.length) return '';
+
+    const tags = people.map(p => {
+        const cat = p.category || 'friend';
+        const imp = p.importance_score || 0;
+        const cls = imp > 100 ? 'cast-person--major' : imp > 20 ? 'cast-person--mid' : '';
+        return `<span class="cast-person ${cls}" data-category="${cat}" title="${p.relation || ''}">${p.name}</span>`;
+    }).join('');
+
+    return `
+        <div class="stage-cast anim-target">
+            <h3 class="section-label">who was there</h3>
+            <div class="cast-tags">${tags}</div>
+        </div>
+    `;
+}
+
+// ─── SENTIMENT LINE ───────────────────────────────────────────────
 function initSentimentLine(sentimentData) {
     const canvas = document.getElementById('sentimentLine');
     if (!canvas) return;
@@ -339,39 +442,39 @@ function initSentimentLine(sentimentData) {
 
         const w = rect.width;
         const h = rect.height;
-        const padding = { top: 40, bottom: 40, left: 10, right: 10 };
-        const plotH = h - padding.top - padding.bottom;
+        const pad = { top: 50, bottom: 50 };
+        const plotH = h - pad.top - pad.bottom;
 
         ctx.clearRect(0, 0, w, h);
 
-        // Draw sentiment line vertically
         const points = sorted.map((d, idx) => ({
-            x: w / 2,
-            y: padding.top + (idx / (sorted.length - 1)) * plotH,
+            x: w / 2 + d.avg_sentiment * (w * 0.35),
+            y: pad.top + (idx / (sorted.length - 1)) * plotH,
             sentiment: d.avg_sentiment,
             year: d.year,
             isTurningPoint: d.is_turning_point,
             turningPointType: d.turning_point_type
         }));
 
-        // Offset x by sentiment (-1 to 1 -> -20 to +20)
+        // Gradient line
+        for (let i = 0; i < points.length - 1; i++) {
+            const p = points[i];
+            const next = points[i + 1];
+            const alpha = 0.35 + Math.abs(p.sentiment) * 1.8;
+            ctx.strokeStyle = p.sentiment >= 0
+                ? `rgba(74,103,65,${Math.min(alpha, 0.9)})`
+                : `rgba(139,26,26,${Math.min(alpha, 0.9)})`;
+            ctx.lineWidth = 2.5;
+            ctx.lineJoin = 'round';
+            ctx.lineCap = 'round';
+            ctx.beginPath();
+            ctx.moveTo(p.x, p.y);
+            ctx.lineTo(next.x, next.y);
+            ctx.stroke();
+        }
+
+        // Dots
         points.forEach(p => {
-            p.x = w / 2 + p.sentiment * 20;
-        });
-
-        // Draw line
-        ctx.strokeStyle = 'rgba(201, 168, 76, 0.6)';
-        ctx.lineWidth = 2;
-        ctx.lineJoin = 'round';
-        ctx.beginPath();
-        points.forEach((p, idx) => {
-            if (idx === 0) ctx.moveTo(p.x, p.y);
-            else ctx.lineTo(p.x, p.y);
-        });
-        ctx.stroke();
-
-        // Draw dots
-        points.forEach((p, idx) => {
             if (p.isTurningPoint) {
                 ctx.fillStyle = p.turningPointType === 'redemptive' ? '#4a6741' :
                     p.turningPointType === 'contaminated' ? '#8b1a1a' : '#c9a84c';
@@ -381,14 +484,24 @@ function initSentimentLine(sentimentData) {
                 ctx.fillRect(-4, -4, 8, 8);
                 ctx.restore();
             } else {
-                ctx.fillStyle = p.sentiment >= 0 ? 'rgba(74,103,65,0.5)' : 'rgba(139,26,26,0.5)';
+                ctx.fillStyle = p.sentiment >= 0 ? 'rgba(74,103,65,0.6)' : 'rgba(139,26,26,0.6)';
                 ctx.beginPath();
                 ctx.arc(p.x, p.y, 3, 0, Math.PI * 2);
                 ctx.fill();
             }
         });
 
-        // Highlight active position
+        // Year labels
+        ctx.font = '9px "Courier Prime", monospace';
+        ctx.textAlign = 'center';
+        points.forEach(p => {
+            if (p.year % 5 === 0 || p.isTurningPoint) {
+                ctx.fillStyle = 'rgba(200,190,170,0.5)';
+                ctx.fillText(p.year, w / 2, p.y - 10);
+            }
+        });
+
+        // Active highlight
         if (activeStageIndex !== undefined && activeStageIndex >= 0) {
             const stageYears = [2004, 2007, 2008, 2009, 2012, 2014, 2015, 2018, 2021];
             const targetYear = stageYears[activeStageIndex] || 2004;
@@ -396,15 +509,17 @@ function initSentimentLine(sentimentData) {
 
             ctx.fillStyle = '#c9a84c';
             ctx.beginPath();
-            ctx.arc(targetPoint.x, targetPoint.y, 6, 0, Math.PI * 2);
+            ctx.arc(targetPoint.x, targetPoint.y, 7, 0, Math.PI * 2);
             ctx.fill();
 
-            ctx.strokeStyle = 'rgba(201,168,76,0.4)';
+            ctx.strokeStyle = 'rgba(201,168,76,0.25)';
             ctx.lineWidth = 1;
+            ctx.setLineDash([4, 4]);
             ctx.beginPath();
             ctx.moveTo(0, targetPoint.y);
             ctx.lineTo(w, targetPoint.y);
             ctx.stroke();
+            ctx.setLineDash([]);
         }
     }
 
@@ -412,6 +527,7 @@ function initSentimentLine(sentimentData) {
     draw(0);
 }
 
+// ─── CHAPTER NAV ──────────────────────────────────────────────────
 function initChapterNav(stages) {
     const nav = document.querySelector('.arc-chapter-nav');
     if (!nav) return;
@@ -432,54 +548,65 @@ function initChapterNav(stages) {
     });
 }
 
+// ─── SCROLL OBSERVER ──────────────────────────────────────────────
 function initScrollObserver() {
     const stages = document.querySelectorAll('.arc-stage');
     const dots = document.querySelectorAll('.chapter-dot');
 
-    const observer = new IntersectionObserver((entries) => {
+    // Stage-level observer (chapter nav + sentiment line + year theme reveal)
+    const stageObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 const idx = Array.from(stages).indexOf(entry.target);
-
-                // Update chapter dots
                 dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+                if (window.__arcSentimentDraw) window.__arcSentimentDraw(idx);
 
-                // Update sentiment line
-                if (window.__arcSentimentDraw) {
-                    window.__arcSentimentDraw(idx);
-                }
-
-                // Animate stats bar
-                entry.target.querySelectorAll('.stage-stats-bar').forEach(bar => bar.classList.add('visible'));
-
-                // Animate milestones
-                entry.target.querySelectorAll('.milestone-card').forEach((card, cardIdx) => {
-                    setTimeout(() => card.classList.add('visible'), cardIdx * 100);
-                });
-
-                // Animate people tags
-                entry.target.querySelectorAll('.stage-person').forEach((p, pIdx) => {
-                    setTimeout(() => p.classList.add('visible'), pIdx * 60);
-                });
-
-                // Animate quotes
-                entry.target.querySelectorAll('.stage-quote').forEach((q, qIdx) => {
-                    setTimeout(() => q.classList.add('visible'), qIdx * 200);
+                // Reveal year themes inside this stage's hero
+                entry.target.querySelectorAll('.year-theme:not(.visible)').forEach((yt, i) => {
+                    setTimeout(() => yt.classList.add('visible'), 300 + i * 150);
                 });
             }
         });
-    }, {
-        threshold: 0.25
+    }, { threshold: 0.15 });
+
+    // Element-level observer (staggered animations)
+    const animObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+
+                // Stagger child elements
+                const items = entry.target.querySelectorAll(
+                    '.tl-entry, .tp-card, .arc-quote, .epic-card, .cast-person, .year-theme'
+                );
+                items.forEach((item, idx) => {
+                    setTimeout(() => item.classList.add('visible'), idx * 80);
+                });
+            }
+        });
+    }, { threshold: 0.1 });
+
+    stages.forEach(stage => {
+        stageObserver.observe(stage);
+        stage.querySelectorAll('.anim-target').forEach(el => animObserver.observe(el));
     });
 
-    stages.forEach(stage => observer.observe(stage));
+    // Animate first hero immediately
+    const firstHero = document.querySelector('.stage-hero');
+    if (firstHero) firstHero.classList.add('visible');
+
+    // Animate year themes in first hero
+    document.querySelectorAll('#stage-1 .year-theme').forEach((yt, idx) => {
+        setTimeout(() => yt.classList.add('visible'), 400 + idx * 150);
+    });
 }
 
-// Auto-init
+// ─── AUTO INIT ────────────────────────────────────────────────────
 initArc()
     .then(() => initWormholes('arc'))
     .then(() => plantClue('clue1', document.querySelector('.arc-stage:last-child')))
-    .catch(() => {
+    .catch(err => {
+        console.error('Arc init failed:', err);
         const el = document.querySelector('.arc-stages');
         if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
     });

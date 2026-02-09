@@ -1,0 +1,234 @@
+[
+  {
+    "winner_captain": "Kevin Megill",
+    "loser_captain": "Chris Adams",
+    "winner_score": 6,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 100332
+  },
+  {
+    "winner_captain": "Kevin Fitzpatrick",
+    "loser_captain": "Justin Wolf",
+    "winner_score": 5,
+    "loser_score": 3,
+    "date": "",
+    "post_id": 100915
+  },
+  {
+    "winner_captain": "Sascha Basista",
+    "loser_captain": "Joey Smalls",
+    "winner_score": 4,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 103294
+  },
+  {
+    "winner_captain": "Lauren Stopa",
+    "loser_captain": "Joanice Lima",
+    "winner_score": 6,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 108409
+  },
+  {
+    "winner_captain": "Bobby Vetrano",
+    "loser_captain": "Kenny Jacobs",
+    "winner_score": 5,
+    "loser_score": 3,
+    "date": "",
+    "post_id": 109645
+  },
+  {
+    "winner_captain": "Jason Teitelbaum",
+    "loser_captain": "Jon Yochum",
+    "winner_score": 4,
+    "loser_score": 1,
+    "date": "",
+    "post_id": 109645
+  },
+  {
+    "winner_captain": "Sascha Basista",
+    "loser_captain": "Joey Smalls",
+    "winner_score": 4,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 109645
+  },
+  {
+    "winner_captain": "Rob Avakian",
+    "loser_captain": "Juan Londono",
+    "winner_score": 4,
+    "loser_score": 3,
+    "date": "",
+    "post_id": 116306
+  },
+  {
+    "winner_captain": "Joe Kelly",
+    "loser_captain": "Derek Carty",
+    "winner_score": 6,
+    "loser_score": 5,
+    "date": "",
+    "post_id": 116306
+  },
+  {
+    "winner_captain": "Joe Kelly",
+    "loser_captain": "Derek Carty",
+    "winner_score": 6,
+    "loser_score": 5,
+    "date": "",
+    "post_id": 29108
+  },
+  {
+    "winner_captain": "Ryan Letsche",
+    "loser_captain": "Kevin Adams",
+    "winner_score": 7,
+    "loser_score": 5,
+    "date": "",
+    "post_id": 37247
+  },
+  {
+    "winner_captain": "Robert Brown",
+    "loser_captain": "Alison Bertsch",
+    "winner_score": 5,
+    "loser_score": 3,
+    "date": "",
+    "post_id": 40467
+  },
+  {
+    "winner_captain": "Chris Adams",
+    "loser_captain": "John",
+    "winner_score": null,
+    "loser_score": null,
+    "date": "",
+    "post_id": 41348
+  },
+  {
+    "winner_captain": "Kevin Fitzpatrick",
+    "loser_captain": "Lauren Stopa",
+    "winner_score": 11,
+    "loser_score": 1,
+    "date": "",
+    "post_id": 52568
+  },
+  {
+    "winner_captain": "Justin Pierce",
+    "loser_captain": "Tom Adams",
+    "winner_score": 3,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 61832
+  },
+  {
+    "winner_captain": "Sascha Basista",
+    "loser_captain": "Ray Marzarella",
+    "winner_score": 4,
+    "loser_score": 1,
+    "date": "",
+    "post_id": 64201
+  },
+  {
+    "winner_captain": "Mike Edwards",
+    "loser_captain": "Derek Carty",
+    "winner_score": 6,
+    "loser_score": 4,
+    "date": "",
+    "post_id": 75005
+  },
+  {
+    "winner_captain": "Tom Adams",
+    "loser_captain": "John Tronolone",
+    "winner_score": 5,
+    "loser_score": 4,
+    "date": "",
+    "post_id": 77959
+  },
+  {
+    "winner_captain": "Cobra Ki",
+    "loser_captain": "Strike Force",
+    "winner_score": 6,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 78629
+  },
+  {
+    "winner_captain": "Kevin Megill",
+    "loser_captain": "Justin Wolf",
+    "winner_score": 5,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 78629
+  },
+  {
+    "winner_captain": "Kevin Megill",
+    "loser_captain": "Justin Wolf",
+    "winner_score": 5,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 78629
+  },
+  {
+    "winner_captain": "Grant Cornero",
+    "loser_captain": "Ryan Letsche",
+    "winner_score": 8,
+    "loser_score": 3,
+    "date": "",
+    "post_id": 79407
+  },
+  {
+    "winner_captain": "Juan Londono",
+    "loser_captain": "Justin Wolf",
+    "winner_score": 4,
+    "loser_score": 0,
+    "date": "",
+    "post_id": 90304
+  },
+  {
+    "winner_captain": "Kevin Adams",
+    "loser_captain": "Michael Edwards",
+    "winner_score": 6,
+    "loser_score": 0,
+    "date": "",
+    "post_id": 91312
+  },
+  {
+    "winner_captain": "John Tronolone",
+    "loser_captain": "Eamon Fitzpatrick",
+    "winner_score": 3,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 92742
+  },
+  {
+    "winner_captain": "Grant Cornero",
+    "loser_captain": "Ryan Letsche",
+    "winner_score": 4,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 93841
+  },
+  {
+    "winner_captain": "John Tronolone",
+    "loser_captain": "Jim Butler",
+    "winner_score": 3,
+    "loser_score": 1,
+    "date": "",
+    "post_id": 95139
+  },
+  {
+    "winner_captain": "Juan Londono",
+    "loser_captain": "Justin Wolf",
+    "winner_score": 4,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 96525
+  },
+  {
+    "winner_captain": "Ashley Hoppe",
+    "loser_captain": "Alysha Kelly",
+    "winner_score": 3,
+    "loser_score": 2,
+    "date": "",
+    "post_id": 99258
+  }
+]

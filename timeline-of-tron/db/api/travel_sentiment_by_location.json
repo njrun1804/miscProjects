@@ -1,0 +1,147 @@
+[
+  {
+    "destination": "Australia & New Zealand",
+    "count": 1,
+    "avg_sentiment": 0.8555
+  },
+  {
+    "destination": "Phoenix / Arizona",
+    "count": 1,
+    "avg_sentiment": 0.5994
+  },
+  {
+    "destination": "Kutztown, Pennsylvania",
+    "count": 1,
+    "avg_sentiment": 0.4767
+  },
+  {
+    "destination": "Shohola, Pennsylvania",
+    "count": 1,
+    "avg_sentiment": 0.4019
+  },
+  {
+    "destination": "Washington D.C.",
+    "count": 2,
+    "avg_sentiment": 0.34
+  },
+  {
+    "destination": "Atlantic City",
+    "count": 4,
+    "avg_sentiment": 0.26355
+  },
+  {
+    "destination": "Wisconsin (2 trips)",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Victoria, Canada",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "U.S. Virgin Islands, Bahamas",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Stratton, Vermont",
+    "count": 2,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "St. Lucia, Dominica, Antigua",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Slovenia, Italy, Greece, Malta, Croatia",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Singapore, Thailand, Cambodia, Vietnam, Hong Kong",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Portugal, Spain, Norway, Iceland, Toronto",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Orlando, Florida",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Norwegian Breakaway Cruise",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "New Hampshire",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Maryland",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Japan",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Jamaica, Grand Cayman, Cozumel",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Houston, Texas",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Detroit, Michigan",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "California (600+ miles)",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Atlantic City (multiple)",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Arizona",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "Alaska & Seattle",
+    "count": 1,
+    "avg_sentiment": 0.0
+  },
+  {
+    "destination": "NYC (MSG)",
+    "count": 1,
+    "avg_sentiment": -0.1027
+  },
+  {
+    "destination": "Grand Canyon, Vegas, Utah, Colorado, Boston",
+    "count": 1,
+    "avg_sentiment": -0.25
+  },
+  {
+    "destination": "Midwest Road Trip (16 states)",
+    "count": 1,
+    "avg_sentiment": -0.5719
+  }
+]

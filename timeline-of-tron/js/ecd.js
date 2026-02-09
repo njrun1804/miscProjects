@@ -1,75 +1,157 @@
-// js/ecd.js — East Coast Dodgeball
+// js/ecd.js — East Coast Dodgeball (Redesigned)
 // 128 players. 168 events. 20 years. The community page.
+// Resilient loading, animated counters, scroll reveals, D3 force bubbles.
 
-import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
 import { plantClue } from './room0.js';
 
-async function initECD() {
-    const data = await loadMultiple([
-        'ecd_stats_dashboard.json',
-        'ecd_sentiment_timeline.json',
-        'ecd_attendance_trends.json',
-        'ecd_community_narrative.json',
-        'ecd_player_network.json',
-        'ecd_players_full.json',
-        'ecd_match_results.json',
-        'ecd_rivalries.json',
-        'ecd_emotion_distribution.json',
-        'ecd_highlights.json',
-        'ecd_awards_full.json',
-        'ecd_fundraisers.json'
-    ]);
+const API = 'db/api/';
 
-    const dashboard = data.ecd_stats_dashboard || {};
-    renderHeroStats(dashboard);
-    renderHeartbeat(
-        data.ecd_sentiment_timeline || [],
-        (dashboard.attendance_trends || data.ecd_attendance_trends || []),
-        data.ecd_community_narrative || []
-    );
-    renderPlayerNetwork(data.ecd_player_network || {}, data.ecd_players_full || [], dashboard.top_players || []);
-    renderLeaderboard(dashboard.top_players || []);
-    renderRivalries(data.ecd_match_results || [], data.ecd_rivalries || []);
-    renderEmotions(data.ecd_emotion_distribution || [], data.ecd_highlights || []);
-    renderLegacy(data.ecd_awards_full || [], data.ecd_fundraisers || []);
+// ═══════════════════════════════════════
+//  RESILIENT DATA LOADING
+// ═══════════════════════════════════════
+
+async function loadSafe(filename) {
+    try {
+        const resp = await fetch(API + filename, { cache: 'no-cache' });
+        if (!resp.ok) throw new Error(resp.status);
+        return await resp.json();
+    } catch (e) {
+        console.warn(`[ECD] Could not load ${filename}:`, e.message);
+        return null;
+    }
 }
 
-// ─── Section 1: Hero Stats ───
+// ═══════════════════════════════════════
+//  SCROLL REVEAL (IntersectionObserver)
+// ═══════════════════════════════════════
+
+function initScrollReveal() {
+    const els = document.querySelectorAll('[data-reveal]');
+    if (!els.length) return;
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('revealed');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    els.forEach(el => observer.observe(el));
+}
+
+// ═══════════════════════════════════════
+//  ANIMATED COUNTERS
+// ═══════════════════════════════════════
+
+function animateCounters() {
+    const els = document.querySelectorAll('[data-count-to]');
+    if (!els.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseFloat(el.dataset.countTo);
+                const prefix = el.dataset.countPrefix || '';
+                const suffix = el.dataset.countSuffix || '';
+                const duration = 1200;
+                const start = performance.now();
+
+                function tick(now) {
+                    const elapsed = now - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // Ease-out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    const current = Math.round(target * eased);
+                    el.textContent = prefix + current.toLocaleString() + suffix;
+                    if (progress < 1) requestAnimationFrame(tick);
+                }
+                requestAnimationFrame(tick);
+                observer.unobserve(el);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    els.forEach(el => observer.observe(el));
+}
+
+// ═══════════════════════════════════════
+//  INIT
+// ═══════════════════════════════════════
+
+async function initECD() {
+    // Load all data files independently (no single-point-of-failure)
+    const [
+        dashboard, sentiment, attendance, narrative,
+        network, playersAll, matches, rivalries,
+        emotions, highlights, awards, fundraisers
+    ] = await Promise.all([
+        loadSafe('ecd_stats_dashboard.json'),
+        loadSafe('ecd_sentiment_timeline.json'),
+        loadSafe('ecd_attendance_trends.json'),
+        loadSafe('ecd_community_narrative.json'),
+        loadSafe('ecd_player_network.json'),
+        loadSafe('ecd_players_full.json'),
+        loadSafe('ecd_match_results.json'),
+        loadSafe('ecd_rivalries.json'),
+        loadSafe('ecd_emotion_distribution.json'),
+        loadSafe('ecd_highlights.json'),
+        loadSafe('ecd_awards_full.json'),
+        loadSafe('ecd_fundraisers.json')
+    ]);
+
+    // Each section renders independently
+    renderHeroStats(dashboard);
+    renderHeartbeat(sentiment, dashboard?.attendance_trends || attendance, narrative);
+    renderPlayerNetwork(network, playersAll, dashboard?.top_players);
+    renderLeaderboard(dashboard?.top_players);
+    renderRivalries(matches, rivalries);
+    renderEmotions(emotions, highlights);
+    renderLegacy(awards, fundraisers);
+
+    // Boot scroll reveals & counters
+    initScrollReveal();
+    animateCounters();
+}
+
+// ═══════════════════════════════════════
+//  SECTION 1: HERO STATS
+// ═══════════════════════════════════════
 
 function renderHeroStats(dashboard) {
     const container = document.querySelector('.ecd-hero-stats');
     if (!container) return;
 
+    const d = dashboard || {};
     const stats = [
-        { value: dashboard.player_count || 128, label: 'Players' },
-        { value: dashboard.event_count || 168, label: 'Events' },
-        { value: '20', label: 'Years' },
-        { value: '553', label: 'Posts' },
-        { value: '350+', label: 'Matches' },
-        { value: '$' + ((dashboard.fundraiser_total || 1847).toLocaleString()), label: 'Raised' }
+        { value: d.player_count || 128, label: 'Players' },
+        { value: d.event_count || 168, label: 'Events' },
+        { value: 20, label: 'Years' },
+        { value: 553, label: 'Posts' },
+        { value: 350, label: 'Matches', suffix: '+' },
+        { value: d.fundraiser_total || 1847, label: 'Raised', prefix: '$' }
     ];
 
     container.innerHTML = stats.map(s => `
         <div class="ecd-hero-stat">
-            <span class="ecd-hero-stat__value">${s.value}</span>
+            <span class="ecd-hero-stat__value" data-count-to="${s.value}" data-count-prefix="${s.prefix || ''}" data-count-suffix="${s.suffix || ''}">0</span>
             <span class="ecd-hero-stat__label">${s.label}</span>
         </div>
     `).join('');
 }
 
-// ─── Section 2: Rise and Fall (Heartbeat) ───
+// ═══════════════════════════════════════
+//  SECTION 2: RISE AND FALL
+// ═══════════════════════════════════════
 
 function renderHeartbeat(sentiment, attendance, narrative) {
     const canvas = document.getElementById('heartbeatChart');
-    if (!canvas || !sentiment.length) return;
+    if (!canvas || !sentiment?.length) return;
 
-    // Build aligned data
     const years = sentiment.map(s => s.year);
-
-    // Attendance keyed by year for lookup
     const attMap = {};
-    attendance.forEach(a => { attMap[a.year] = a; });
+    (attendance || []).forEach(a => { attMap[a.year] = a; });
 
     const sentimentData = years.map(y => {
         const s = sentiment.find(r => r.year === y);
@@ -78,18 +160,19 @@ function renderHeartbeat(sentiment, attendance, narrative) {
 
     const eventsData = years.map(y => {
         const a = attMap[y];
-        return a ? a.event_count : 0;
+        return a ? (a.event_count || a.events || 0) : 0;
     });
 
     // Era background bands
     const eraBands = [
-        { start: 2005, end: 2006, color: 'rgba(74, 158, 107, 0.08)', label: 'Founding' },
+        { start: 2005, end: 2006, color: 'rgba(74, 158, 107, 0.10)', label: 'Founding' },
         { start: 2007, end: 2008, color: 'rgba(232, 93, 58, 0.08)', label: 'Golden Age' },
-        { start: 2009, end: 2009, color: 'rgba(90, 74, 106, 0.15)', label: 'Collapse' },
-        { start: 2010, end: 2013, color: 'rgba(240, 160, 48, 0.08)', label: 'Revival' },
-        { start: 2014, end: 2025, color: 'rgba(122, 154, 186, 0.05)', label: 'Legacy' }
+        { start: 2009, end: 2009, color: 'rgba(139, 74, 107, 0.18)', label: 'Collapse' },
+        { start: 2010, end: 2013, color: 'rgba(212, 169, 76, 0.08)', label: 'Revival' },
+        { start: 2014, end: 2025, color: 'rgba(106, 141, 170, 0.05)', label: 'Legacy' }
     ];
 
+    // Custom plugins
     const eraBandPlugin = {
         id: 'eraBands',
         beforeDraw(chart) {
@@ -107,6 +190,58 @@ function renderHeartbeat(sentiment, attendance, narrative) {
         }
     };
 
+    const eraLabelPlugin = {
+        id: 'eraLabels',
+        afterDraw(chart) {
+            const { ctx, chartArea, scales } = chart;
+            if (!chartArea) return;
+            ctx.save();
+            ctx.font = '9px "Courier Prime", monospace';
+            ctx.textAlign = 'center';
+            ctx.fillStyle = 'rgba(138, 123, 110, 0.5)';
+            eraBands.forEach(band => {
+                const x1 = scales.x.getPixelForValue(String(band.start));
+                const x2 = scales.x.getPixelForValue(String(band.end));
+                const xMid = (x1 + x2) / 2;
+                ctx.fillText(band.label, xMid, chartArea.top + 14);
+            });
+            ctx.restore();
+        }
+    };
+
+    // Key moment annotation
+    const annotationPlugin = {
+        id: 'keyMoments',
+        afterDraw(chart) {
+            const { ctx, chartArea, scales } = chart;
+            if (!chartArea) return;
+            const moments = [
+                { year: 2009, label: 'THE COLLAPSE', color: '#8b4a6b' },
+                { year: 2010, label: 'RESURRECTION', color: '#4a9e6b' }
+            ];
+            ctx.save();
+            moments.forEach(m => {
+                const x = scales.x.getPixelForValue(String(m.year));
+                if (x == null) return;
+                // Vertical dashed line
+                ctx.beginPath();
+                ctx.setLineDash([3, 3]);
+                ctx.strokeStyle = m.color;
+                ctx.lineWidth = 1;
+                ctx.moveTo(x, chartArea.top);
+                ctx.lineTo(x, chartArea.bottom);
+                ctx.stroke();
+                // Label
+                ctx.setLineDash([]);
+                ctx.font = 'bold 8px "Courier Prime", monospace';
+                ctx.fillStyle = m.color;
+                ctx.textAlign = 'center';
+                ctx.fillText(m.label, x, chartArea.bottom + 26);
+            });
+            ctx.restore();
+        }
+    };
+
     new Chart(canvas, {
         type: 'line',
         data: {
@@ -117,24 +252,27 @@ function renderHeartbeat(sentiment, attendance, narrative) {
                     data: sentimentData,
                     yAxisID: 'y',
                     borderColor: '#e85d3a',
-                    backgroundColor: 'rgba(232, 93, 58, 0.1)',
+                    backgroundColor: 'rgba(232, 93, 58, 0.08)',
                     fill: true,
-                    tension: 0.3,
-                    pointRadius: 3,
+                    tension: 0.35,
+                    pointRadius: 4,
+                    pointHoverRadius: 7,
                     pointBackgroundColor: '#e85d3a',
-                    borderWidth: 2
+                    pointBorderColor: '#110e16',
+                    pointBorderWidth: 2,
+                    borderWidth: 2.5
                 },
                 {
-                    label: 'Events',
+                    label: 'Events per year',
                     data: eventsData,
                     yAxisID: 'y1',
-                    borderColor: '#7a9aba',
-                    backgroundColor: 'rgba(122, 154, 186, 0.1)',
+                    borderColor: '#6a8daa',
+                    backgroundColor: 'rgba(106, 141, 170, 0.06)',
                     fill: false,
-                    tension: 0.3,
+                    tension: 0.35,
                     pointRadius: 2,
                     borderWidth: 1.5,
-                    borderDash: [4, 2]
+                    borderDash: [5, 3]
                 }
             ]
         },
@@ -144,58 +282,60 @@ function renderHeartbeat(sentiment, attendance, narrative) {
             interaction: { mode: 'index', intersect: false },
             plugins: {
                 legend: {
-                    labels: { color: '#9a8a7a', font: { family: 'Courier Prime, monospace', size: 11 } }
+                    labels: { color: '#8a7b6e', font: { family: 'Courier Prime, monospace', size: 11 }, padding: 20 }
                 },
                 tooltip: {
-                    backgroundColor: 'rgba(26, 21, 32, 0.95)',
+                    backgroundColor: 'rgba(17, 14, 22, 0.95)',
                     titleColor: '#e85d3a',
                     bodyColor: '#e0d8cc',
-                    titleFont: { family: 'Courier Prime, monospace' },
-                    bodyFont: { family: 'Georgia, serif', size: 12 }
+                    borderColor: '#2e2538',
+                    borderWidth: 1,
+                    titleFont: { family: 'Courier Prime, monospace', weight: 'bold' },
+                    bodyFont: { family: 'Georgia, serif', size: 12 },
+                    padding: 12,
+                    cornerRadius: 3
                 }
             },
             scales: {
                 x: {
-                    ticks: { color: '#9a8a7a', font: { family: 'Courier Prime, monospace', size: 10 }, maxRotation: 45 },
-                    grid: { color: 'rgba(61, 47, 74, 0.2)' }
+                    ticks: { color: '#8a7b6e', font: { family: 'Courier Prime, monospace', size: 10 }, maxRotation: 45 },
+                    grid: { color: 'rgba(46, 37, 56, 0.15)' }
                 },
                 y: {
                     type: 'linear',
                     position: 'left',
                     title: { display: true, text: 'Sentiment %', color: '#e85d3a', font: { family: 'Courier Prime, monospace', size: 11 } },
                     ticks: { color: '#e85d3a', font: { family: 'Courier Prime, monospace', size: 10 } },
-                    grid: { color: 'rgba(61, 47, 74, 0.15)' },
+                    grid: { color: 'rgba(46, 37, 56, 0.12)' },
                     min: 0,
                     max: 100
                 },
                 y1: {
                     type: 'linear',
                     position: 'right',
-                    title: { display: true, text: 'Events', color: '#7a9aba', font: { family: 'Courier Prime, monospace', size: 11 } },
-                    ticks: { color: '#7a9aba', font: { family: 'Courier Prime, monospace', size: 10 } },
+                    title: { display: true, text: 'Events', color: '#6a8daa', font: { family: 'Courier Prime, monospace', size: 11 } },
+                    ticks: { color: '#6a8daa', font: { family: 'Courier Prime, monospace', size: 10 } },
                     grid: { drawOnChartArea: false }
                 }
             }
         },
-        plugins: [eraBandPlugin]
+        plugins: [eraBandPlugin, eraLabelPlugin, annotationPlugin]
     });
 
-    // Era narrative cards
     renderEraCards(narrative);
 }
 
 function renderEraCards(narrative) {
     const container = document.querySelector('.era-cards');
-    if (!container || !narrative.length) return;
+    if (!container || !narrative?.length) return;
 
-    // Group into meaningful eras (skip quiet years)
     const eras = [
-        { name: 'The Founding', years: '2005', data: narrative.filter(n => n.year === 2005) },
-        { name: 'The Growth', years: '2006', data: narrative.filter(n => n.year === 2006) },
-        { name: 'The Golden Age', years: '2007–2008', data: narrative.filter(n => n.year >= 2007 && n.year <= 2008) },
-        { name: 'The Collapse', years: '2009', data: narrative.filter(n => n.year === 2009), isCollapse: true },
-        { name: 'The Resurrection', years: '2010', data: narrative.filter(n => n.year === 2010), isBoom: true },
-        { name: 'Legacy Mode', years: '2011–2025', data: narrative.filter(n => n.year >= 2011) }
+        { name: 'The Founding', years: '2005', data: narrative.filter(n => n.year === 2005), colorVar: '--era-founding' },
+        { name: 'The Growth', years: '2006', data: narrative.filter(n => n.year === 2006), colorVar: '--era-golden' },
+        { name: 'Golden Age', years: '2007\u20132008', data: narrative.filter(n => n.year >= 2007 && n.year <= 2008), colorVar: '--era-golden' },
+        { name: 'The Collapse', years: '2009', data: narrative.filter(n => n.year === 2009), isCollapse: true, colorVar: '--era-collapse' },
+        { name: 'Resurrection', years: '2010', data: narrative.filter(n => n.year === 2010), isBoom: true, colorVar: '--era-founding' },
+        { name: 'Legacy Mode', years: '2011\u20132025', data: narrative.filter(n => n.year >= 2011), colorVar: '--era-legacy' }
     ];
 
     container.innerHTML = eras.map(era => {
@@ -239,32 +379,32 @@ function renderEraCards(narrative) {
                 </div>
             </div>
         `;
-    }).join('<div class="era-arrow">\u2192</div>');
+    }).join('');
 }
 
-// ─── Section 3: The 128 (Player Network) ───
+// ═══════════════════════════════════════
+//  SECTION 3: THE 128 — PLAYER NETWORK
+// ═══════════════════════════════════════
 
 function renderPlayerNetwork(network, playersAll, topPlayers) {
     const container = document.querySelector('.player-network-wrap');
-    if (!container || !network.nodes || !network.links) return;
+    if (!container || !network?.nodes || !network?.links) return;
 
-    // Build valid player name set from the full roster
-    const validNames = new Set(playersAll.map(p => p.name));
+    const validNames = new Set((playersAll || []).map(p => p.name));
 
-    // Build mentions lookup from top players + full roster
+    // Mentions & era lookups
     const mentionMap = {};
-    topPlayers.forEach(p => { mentionMap[p.name] = p.total_mentions || 0; });
-    playersAll.forEach(p => { if (!mentionMap[p.name]) mentionMap[p.name] = p.total_mentions || 0; });
-
-    // Build era lookup
     const eraMap = {};
-    playersAll.forEach(p => { eraMap[p.name] = p.era_active || null; });
+    (topPlayers || []).forEach(p => { mentionMap[p.name] = p.total_mentions || 0; });
+    (playersAll || []).forEach(p => {
+        if (!mentionMap[p.name]) mentionMap[p.name] = p.total_mentions || 0;
+        eraMap[p.name] = p.era_active || null;
+    });
 
-    // Filter to valid player nodes
+    // Filter valid nodes and links
     const nodes = network.nodes.filter(n => validNames.has(n.name));
     const nodeNames = new Set(nodes.map(n => n.name));
 
-    // Filter links to valid pairs
     const links = network.links
         .map(l => ({
             source: typeof l.source === 'object' ? l.source.name : (network.nodes.find(n => n.id === l.source) || {}).name,
@@ -274,34 +414,67 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
         .filter(l => l.source && l.target && nodeNames.has(l.source) && nodeNames.has(l.target));
 
     const width = container.clientWidth || 900;
-    const height = 500;
+    const height = 520;
 
-    // Color by era
+    // Era colors
+    const ERA_COLORS = {
+        founding: '#4a9e6b',
+        golden: '#e85d3a',
+        collapse: '#8b4a6b',
+        revival: '#d4a94c',
+        legacy: '#6a8daa',
+        unknown: '#5a4a6a'
+    };
+
     function eraColor(name) {
         const era = eraMap[name] || '';
-        if (era.startsWith('2005')) return '#4a9e6b';
-        if (era.includes('2006') || era.includes('2007') || era.includes('2008')) return '#e85d3a';
-        if (era.includes('2009') || era.includes('2010')) return '#f0a030';
-        if (era.includes('2011') || era.includes('2012') || era.includes('201')) return '#7a9aba';
-        return '#9a8a7a';
+        if (era.startsWith('2005')) return ERA_COLORS.founding;
+        if (era.includes('2006') || era.includes('2007') || era.includes('2008')) return ERA_COLORS.golden;
+        if (era.includes('2009') || era.includes('2010')) return ERA_COLORS.revival;
+        if (era.includes('2011') || era.includes('201') || era.includes('202')) return ERA_COLORS.legacy;
+        return ERA_COLORS.unknown;
     }
 
-    // Node size by mentions (scaled)
     const maxMentions = Math.max(...nodes.map(n => mentionMap[n.name] || 1));
     function nodeRadius(name) {
-        const mentions = mentionMap[name] || 1;
-        return 4 + (mentions / maxMentions) * 20;
+        const m = mentionMap[name] || 1;
+        return 3 + (m / maxMentions) * 22;
     }
 
+    // Render legend
+    const legendEl = document.getElementById('networkLegend');
+    if (legendEl) {
+        legendEl.innerHTML = [
+            { label: 'Founding (2005)', color: ERA_COLORS.founding },
+            { label: 'Golden Age', color: ERA_COLORS.golden },
+            { label: 'Revival', color: ERA_COLORS.revival },
+            { label: 'Legacy Era', color: ERA_COLORS.legacy }
+        ].map(l => `
+            <div class="network-legend__item">
+                <span class="network-legend__dot" style="background:${l.color}"></span>
+                ${l.label}
+            </div>
+        `).join('');
+    }
+
+    // Build SVG
     const svg = d3.select(container)
         .insert('svg', ':first-child')
         .attr('width', width)
         .attr('height', height)
         .attr('viewBox', `0 0 ${width} ${height}`);
 
+    // Glow filter
+    const defs = svg.append('defs');
+    const filter = defs.append('filter').attr('id', 'nodeGlow');
+    filter.append('feGaussianBlur').attr('stdDeviation', '3').attr('result', 'blur');
+    const merge = filter.append('feMerge');
+    merge.append('feMergeNode').attr('in', 'blur');
+    merge.append('feMergeNode').attr('in', 'SourceGraphic');
+
     const simulation = d3.forceSimulation(nodes)
-        .force('link', d3.forceLink(links).id(d => d.name).distance(60))
-        .force('charge', d3.forceManyBody().strength(-80))
+        .force('link', d3.forceLink(links).id(d => d.name).distance(55).strength(0.3))
+        .force('charge', d3.forceManyBody().strength(-70))
         .force('center', d3.forceCenter(width / 2, height / 2))
         .force('collision', d3.forceCollide().radius(d => nodeRadius(d.name) + 2));
 
@@ -309,8 +482,8 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
         .selectAll('line')
         .data(links)
         .join('line')
-        .attr('stroke', 'rgba(61, 47, 74, 0.4)')
-        .attr('stroke-width', 1);
+        .attr('stroke', 'rgba(46, 37, 56, 0.35)')
+        .attr('stroke-width', 0.8);
 
     const node = svg.append('g')
         .selectAll('circle')
@@ -318,9 +491,16 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
         .join('circle')
         .attr('r', d => nodeRadius(d.name))
         .attr('fill', d => eraColor(d.name))
-        .attr('stroke', 'rgba(26, 21, 32, 0.8)')
+        .attr('stroke', 'rgba(17, 14, 22, 0.6)')
         .attr('stroke-width', 1)
+        .attr('opacity', 0.85)
         .style('cursor', 'pointer')
+        .on('mouseover', function () {
+            d3.select(this).attr('filter', 'url(#nodeGlow)').attr('opacity', 1);
+        })
+        .on('mouseout', function () {
+            d3.select(this).attr('filter', null).attr('opacity', 0.85);
+        })
         .call(d3.drag()
             .on('start', (event, d) => { if (!event.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
             .on('drag', (event, d) => { d.fx = event.x; d.fy = event.y; })
@@ -328,7 +508,7 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
         );
 
     // Labels for top nodes
-    const labelThreshold = maxMentions * 0.15;
+    const labelThreshold = maxMentions * 0.12;
     const label = svg.append('g')
         .selectAll('text')
         .data(nodes.filter(n => (mentionMap[n.name] || 0) > labelThreshold))
@@ -338,13 +518,14 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
         .attr('font-family', 'Courier Prime, monospace')
         .attr('fill', '#e0d8cc')
         .attr('text-anchor', 'middle')
-        .attr('dy', d => -(nodeRadius(d.name) + 4))
-        .style('pointer-events', 'none');
+        .attr('dy', d => -(nodeRadius(d.name) + 5))
+        .style('pointer-events', 'none')
+        .style('text-shadow', '0 0 4px rgba(17,14,22,0.8)');
 
     // Tooltip
     const tooltip = document.getElementById('networkTooltip');
     const playerLookup = {};
-    playersAll.forEach(p => { playerLookup[p.name] = p; });
+    (playersAll || []).forEach(p => { playerLookup[p.name] = p; });
 
     node.on('mouseover', (event, d) => {
         const p = playerLookup[d.name] || {};
@@ -352,11 +533,11 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
         const record = (p.wins || p.losses) ? `${p.wins || 0}-${p.losses || 0}` : '';
         tooltip.innerHTML = `
             <div class="tooltip-name">${d.name}</div>
-            ${nick ? `<div class="tooltip-alias">"${nick}"</div>` : ''}
+            ${nick ? `<div class="tooltip-alias">\u201C${nick}\u201D</div>` : ''}
             <div class="tooltip-stats">
                 ${record ? `W-L: ${record}<br>` : ''}
-                Mentions: ${(mentionMap[d.name] || 0).toLocaleString()}<br>
-                ${p.era_active ? `Era: ${p.era_active}` : ''}
+                Mentions: ${(mentionMap[d.name] || 0).toLocaleString()}
+                ${p.era_active ? `<br>Era: ${p.era_active}` : ''}
             </div>
         `;
         tooltip.classList.add('visible');
@@ -364,8 +545,8 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
 
     node.on('mousemove', (event) => {
         const rect = container.getBoundingClientRect();
-        tooltip.style.left = (event.clientX - rect.left + 12) + 'px';
-        tooltip.style.top = (event.clientY - rect.top - 10) + 'px';
+        tooltip.style.left = (event.clientX - rect.left + 14) + 'px';
+        tooltip.style.top = (event.clientY - rect.top - 12) + 'px';
     });
 
     node.on('mouseout', () => { tooltip.classList.remove('visible'); });
@@ -377,8 +558,8 @@ function renderPlayerNetwork(network, playersAll, topPlayers) {
             .attr('x2', d => d.target.x)
             .attr('y2', d => d.target.y);
         node
-            .attr('cx', d => d.x = Math.max(10, Math.min(width - 10, d.x)))
-            .attr('cy', d => d.y = Math.max(10, Math.min(height - 10, d.y)));
+            .attr('cx', d => d.x = Math.max(12, Math.min(width - 12, d.x)))
+            .attr('cy', d => d.y = Math.max(12, Math.min(height - 12, d.y)));
         label
             .attr('x', d => d.x)
             .attr('y', d => d.y);
@@ -404,11 +585,13 @@ function pickBestNickname(raw, realName) {
     }
 }
 
-// ─── Section 3b: Leaderboard ───
+// ═══════════════════════════════════════
+//  SECTION 3B: LEADERBOARD
+// ═══════════════════════════════════════
 
 function renderLeaderboard(players) {
     const container = document.querySelector('.ecd-leaderboard');
-    if (!container || !players.length) return;
+    if (!container || !players?.length) return;
 
     const top = players.slice(0, 20);
 
@@ -424,13 +607,24 @@ function renderLeaderboard(players) {
             </div>
             ${top.map((p, i) => {
                 const bestNick = pickBestNickname(p.nicknames, p.name);
-                const record = (p.wins || p.losses) ? `${p.wins || 0}-${p.losses || 0}` : '\u2014';
+                const w = p.wins || 0;
+                const l = p.losses || 0;
+                const total = w + l;
+                const record = total ? `${w}-${l}` : '\u2014';
+                const winPct = total ? ((w / total) * 100) : 0;
+                const lossPct = total ? ((l / total) * 100) : 0;
+
+                const medal = i === 0 ? '\u{1F947}' : i === 1 ? '\u{1F948}' : i === 2 ? '\u{1F949}' : '';
+
                 return `
                     <div class="ecd-lb-row${i < 3 ? ' ecd-lb-row--top3' : ''}">
-                        <span class="ecd-lb-rank">${i + 1}</span>
+                        <span class="ecd-lb-rank">${medal || (i + 1)}</span>
                         <span class="ecd-lb-name">${p.name}</span>
                         <span class="ecd-lb-nickname">${bestNick ? '\u201C' + bestNick + '\u201D' : ''}</span>
-                        <span class="ecd-lb-record">${record}</span>
+                        <span class="ecd-lb-record">
+                            ${record}
+                            ${total ? `<div class="ecd-lb-record-bar"><div class="ecd-lb-record-bar__win" style="width:${winPct}%"></div><div class="ecd-lb-record-bar__loss" style="width:${lossPct}%"></div></div>` : ''}
+                        </span>
                         <span class="ecd-lb-mentions">${p.total_mentions.toLocaleString()}</span>
                         <span class="ecd-lb-era">${p.era_active || '\u2014'}</span>
                     </div>
@@ -440,18 +634,24 @@ function renderLeaderboard(players) {
     `;
 }
 
-// ─── Section 4: Rivalries ───
+// ═══════════════════════════════════════
+//  SECTION 4: RIVALRIES
+// ═══════════════════════════════════════
 
 function renderRivalries(matches, rivalriesData) {
     const container = document.querySelector('.rivalry-grid');
-    if (!container || !matches.length) return;
+    if (!container || !matches?.length) return;
 
-    // Build context snippet lookup from rivalries data
+    // Context snippets from rivalries
     const snippetMap = {};
-    rivalriesData.forEach(r => {
-        if (r.context_snippets && r.context_snippets.length) {
-            const key = [r.player1, r.player2].sort().join('|');
-            snippetMap[key] = r.context_snippets[0];
+    (rivalriesData || []).forEach(r => {
+        if (r.context_snippets) {
+            let snippets = r.context_snippets;
+            try { if (typeof snippets === 'string') snippets = JSON.parse(snippets); } catch {}
+            if (Array.isArray(snippets) && snippets.length) {
+                const key = [r.player1, r.player2].sort().join('|');
+                snippetMap[key] = snippets[0];
+            }
         }
     });
 
@@ -471,7 +671,6 @@ function renderRivalries(matches, rivalriesData) {
         if (m.score) h2h[key].scores.push(m.score);
     });
 
-    // Multi-match rivalries first, then notable singles
     const multi = Object.values(h2h)
         .filter(r => r.total >= 2)
         .sort((a, b) => b.total - a.total);
@@ -491,17 +690,25 @@ function renderRivalries(matches, rivalriesData) {
         const yearStr = years.length === 1 ? String(years[0]) : `${years[0]}\u2013${years[years.length - 1]}`;
         const p1w = r.records[r.p1];
         const p2w = r.records[r.p2];
+        const total = p1w + p2w;
+        const p1pct = total ? (p1w / total * 100) : 50;
+        const p2pct = total ? (p2w / total * 100) : 50;
 
-        // Look up context snippet
         const snippetKey = [r.p1, r.p2].sort().join('|');
         const snippet = snippetMap[snippetKey] || '';
+        // Clean snippet
+        const cleanSnippet = snippet.replace(/^["'\u201C\u201D]+|["'\u201C\u201D]+$/g, '').slice(0, 200);
 
         return `
             <div class="rivalry-card">
                 <div class="rivalry-card__matchup">
                     <span class="${p1w >= p2w ? 'rivalry-winner' : ''}">${r.p1}</span>
-                    <span class="rivalry-vs">${r.total > 1 ? 'vs' : 'def.'}</span>
+                    <span class="rivalry-vs">${r.total > 1 ? 'VS' : 'DEF.'}</span>
                     <span class="${p2w > p1w ? 'rivalry-winner' : ''}">${r.p2}</span>
+                </div>
+                <div class="rivalry-card__bar">
+                    <div class="rivalry-bar__p1" style="width:${p1pct}%"></div>
+                    <div class="rivalry-bar__p2" style="width:${p2pct}%"></div>
                 </div>
                 <div class="rivalry-card__record">
                     <span class="rivalry-record-value">${p1w}-${p2w}</span>
@@ -509,18 +716,20 @@ function renderRivalries(matches, rivalriesData) {
                     ${r.scores.length === 1 ? `<span class="rivalry-detail">${r.scores[0]}</span>` : ''}
                     <span class="rivalry-detail">${yearStr}</span>
                 </div>
-                ${snippet ? `<div class="rivalry-card__snippet">${snippet}</div>` : ''}
+                ${cleanSnippet ? `<div class="rivalry-card__snippet">${cleanSnippet}</div>` : ''}
             </div>
         `;
     }).join('');
 }
 
-// ─── Section 5: Emotional Archive ───
+// ═══════════════════════════════════════
+//  SECTION 5: EMOTIONAL ARCHIVE
+// ═══════════════════════════════════════
 
 function renderEmotions(emotions, highlights) {
-    if (!emotions.length) return;
+    if (!emotions?.length) return;
 
-    // Hero insight: find the bittersweet combo
+    // Hero insight
     const bittersweet = emotions.find(e => {
         const parsed = typeof e.emotion === 'string' ? e.emotion : JSON.stringify(e.emotion);
         return parsed.includes('sadness') && parsed.includes('joy') && parsed.includes('nostalgia') && !parsed.includes('pride') && !parsed.includes('tension');
@@ -535,84 +744,201 @@ function renderEmotions(emotions, highlights) {
         `;
     }
 
-    // Emotion bubbles
-    const bubblesEl = document.querySelector('.emotion-bubbles');
-    if (bubblesEl) {
-        // Filter to entries with at least 5 posts and actual emotions
-        const filtered = emotions.filter(e => {
-            const parsed = typeof e.emotion === 'string' ? e.emotion : JSON.stringify(e.emotion);
-            return e.count >= 5 && parsed !== '[]';
-        }).slice(0, 15);
-
-        // Color by avg sentiment
-        function sentColor(s) {
-            if (s >= 0.7) return '#4a9e6b';
-            if (s >= 0.5) return '#7a9aba';
-            if (s >= 0.3) return '#c9a84c';
-            return '#bf6a6a';
-        }
-
-        bubblesEl.innerHTML = filtered.map(e => {
-            let label;
-            try {
-                const arr = JSON.parse(e.emotion);
-                label = arr.join(' + ');
-            } catch {
-                label = String(e.emotion);
-            }
-            const size = 50 + (e.count / 55) * 60;
-            return `
-                <div class="emotion-bubble" style="width:${size}px; height:${size}px; background:${sentColor(e.avg_sentiment)};" title="${label}: ${e.count} posts, ${(e.avg_sentiment * 100).toFixed(0)}% positive">
-                    <span class="emotion-bubble__count">${e.count}</span>
-                    <span class="emotion-bubble__label">${label}</span>
-                </div>
-            `;
-        }).join('');
-    }
+    // D3 Force-directed emotion bubbles
+    renderEmotionBubbles(emotions);
 
     // Greatest Hits
-    const hlEl = document.querySelector('.highlights-list');
-    if (hlEl && highlights.length) {
-        const sorted = [...highlights].sort((a, b) => (b.year || 0) - (a.year || 0));
-        hlEl.innerHTML = sorted.slice(0, 24).map(h => `
-            <div class="highlight-card">
-                <span class="highlight-card__year">${h.year || ''}</span>
-                <div class="highlight-card__content">
-                    <div class="highlight-card__title">${h.title}</div>
-                    <div class="highlight-card__meta">${h.era || ''} ${h.post_type ? '/ ' + h.post_type.replace(/_/g, ' ') : ''}</div>
-                </div>
-            </div>
-        `).join('');
-    }
+    renderHighlights(highlights);
 }
 
-// ─── Section 6: Legacy ───
+function renderEmotionBubbles(emotions) {
+    const container = document.getElementById('emotionBubbles');
+    if (!container) return;
+
+    // Filter meaningful emotions
+    const filtered = emotions.filter(e => {
+        const parsed = typeof e.emotion === 'string' ? e.emotion : JSON.stringify(e.emotion);
+        return e.count >= 4 && parsed !== '[]';
+    }).slice(0, 20);
+
+    if (!filtered.length) return;
+
+    const width = container.clientWidth || 700;
+    const height = 340;
+
+    // Scale radius by count
+    const maxCount = Math.max(...filtered.map(e => e.count));
+    function radius(count) { return 22 + (count / maxCount) * 45; }
+
+    function sentColor(s) {
+        if (s >= 0.7) return '#4a9e6b';
+        if (s >= 0.5) return '#6a8daa';
+        if (s >= 0.35) return '#d4a94c';
+        return '#8b4a6b';
+    }
+
+    function labelText(e) {
+        try {
+            const arr = JSON.parse(e.emotion);
+            return arr.join(' + ');
+        } catch {
+            return String(e.emotion);
+        }
+    }
+
+    const bubbleData = filtered.map(e => ({
+        ...e,
+        r: radius(e.count),
+        color: sentColor(e.avg_sentiment),
+        label: labelText(e)
+    }));
+
+    const svg = d3.select(container)
+        .append('svg')
+        .attr('width', width)
+        .attr('height', height)
+        .attr('viewBox', `0 0 ${width} ${height}`);
+
+    // Tooltip group
+    const tooltipG = svg.append('g').style('pointer-events', 'none');
+
+    const simulation = d3.forceSimulation(bubbleData)
+        .force('charge', d3.forceManyBody().strength(5))
+        .force('center', d3.forceCenter(width / 2, height / 2))
+        .force('collision', d3.forceCollide().radius(d => d.r + 3).strength(0.8));
+
+    const groups = svg.selectAll('g.bubble')
+        .data(bubbleData)
+        .join('g')
+        .attr('class', 'emotion-bubble-node');
+
+    groups.append('circle')
+        .attr('r', d => d.r)
+        .attr('fill', d => d.color)
+        .attr('opacity', 0.75)
+        .attr('stroke', d => d.color)
+        .attr('stroke-opacity', 0.3)
+        .attr('stroke-width', 2);
+
+    // Count text
+    groups.append('text')
+        .text(d => d.count)
+        .attr('text-anchor', 'middle')
+        .attr('dy', d => d.r > 35 ? '-0.2em' : '0.35em')
+        .attr('fill', '#fff')
+        .attr('font-family', 'Courier Prime, monospace')
+        .attr('font-weight', '700')
+        .attr('font-size', d => Math.max(11, d.r * 0.4));
+
+    // Label text (only on large bubbles)
+    groups.filter(d => d.r > 35)
+        .append('text')
+        .text(d => {
+            const l = d.label;
+            return l.length > 18 ? l.slice(0, 16) + '\u2026' : l;
+        })
+        .attr('text-anchor', 'middle')
+        .attr('dy', '1.1em')
+        .attr('fill', 'rgba(255,255,255,0.7)')
+        .attr('font-family', 'Courier Prime, monospace')
+        .attr('font-size', 8);
+
+    // Tooltip on hover
+    groups.on('mouseover', function (event, d) {
+        d3.select(this).select('circle').attr('opacity', 1);
+        const sentPct = (d.avg_sentiment * 100).toFixed(0);
+        tooltipG.selectAll('*').remove();
+        const bg = tooltipG.append('rect')
+            .attr('fill', 'rgba(17,14,22,0.92)')
+            .attr('stroke', '#2e2538')
+            .attr('rx', 3);
+        const txt = tooltipG.append('text')
+            .attr('fill', '#e0d8cc')
+            .attr('font-family', 'Courier Prime, monospace')
+            .attr('font-size', 11);
+        txt.append('tspan').attr('x', 0).attr('dy', 0).attr('font-weight', 'bold').attr('fill', '#e85d3a').text(d.label);
+        txt.append('tspan').attr('x', 0).attr('dy', '1.4em').text(`${d.count} posts \u00B7 ${sentPct}% positive`);
+        const bbox = txt.node().getBBox();
+        bg.attr('x', bbox.x - 8).attr('y', bbox.y - 6).attr('width', bbox.width + 16).attr('height', bbox.height + 12);
+        tooltipG.attr('transform', `translate(${d.x + d.r + 10}, ${d.y - 10})`).attr('opacity', 1);
+    });
+
+    groups.on('mouseout', function () {
+        d3.select(this).select('circle').attr('opacity', 0.75);
+        tooltipG.attr('opacity', 0);
+    });
+
+    simulation.on('tick', () => {
+        groups.attr('transform', d => {
+            d.x = Math.max(d.r, Math.min(width - d.r, d.x));
+            d.y = Math.max(d.r, Math.min(height - d.r, d.y));
+            return `translate(${d.x},${d.y})`;
+        });
+    });
+}
+
+function renderHighlights(highlights) {
+    const hlEl = document.querySelector('.highlights-list');
+    if (!hlEl || !highlights?.length) return;
+
+    const sorted = [...highlights].sort((a, b) => (b.year || 0) - (a.year || 0));
+
+    const sentimentDot = (label) => {
+        const color = label === 'positive' ? '#4a9e6b' : label === 'negative' ? '#8b4a6b' : '#d4a94c';
+        return `<span class="highlight-card__sentiment" style="background:${color}" title="${label}"></span>`;
+    };
+
+    hlEl.innerHTML = sorted.slice(0, 24).map(h => `
+        <div class="highlight-card">
+            <span class="highlight-card__year">${h.year || ''}</span>
+            <div class="highlight-card__content">
+                <div class="highlight-card__title">${h.title}</div>
+                <div class="highlight-card__meta">
+                    ${h.era || ''} ${h.post_type ? '/ ' + h.post_type.replace(/_/g, ' ') : ''}
+                    ${h.sentiment_label ? sentimentDot(h.sentiment_label) : ''}
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+// ═══════════════════════════════════════
+//  SECTION 6: LEGACY
+// ═══════════════════════════════════════
 
 function renderLegacy(awards, fundraisers) {
     const container = document.querySelector('.legacy-grid');
     if (!container) return;
 
-    // Deduplicate awards (some appear twice with different casing)
+    // Deduplicate
     const seen = new Set();
-    const uniqueAwards = awards.filter(a => {
+    const uniqueAwards = (awards || []).filter(a => {
         const key = (a.award_type + '|' + a.recipient).toLowerCase();
         if (seen.has(key)) return false;
         seen.add(key);
         return true;
     });
 
-    // Group awards by type
-    const hof = uniqueAwards.filter(a => a.award_type === 'Hall of Fame');
-    const elite = uniqueAwards.filter(a => a.award_type === 'ECD Elite Inductee');
-    const rimshot = uniqueAwards.filter(a => a.award_type === 'Rimshot Champion' || a.award_type === 'Rimshot Contest Champion');
-    const hitHuman = uniqueAwards.filter(a => a.award_type === 'Hit The Human Champion');
-    const special = uniqueAwards.filter(a => a.award_type === '200 Events Award');
-    const remembrance = uniqueAwards.filter(a => a.award_type === 'In Remembrance');
+    // Group awards
+    const groups = [
+        { title: 'Hall of Fame', items: uniqueAwards.filter(a => a.award_type === 'Hall of Fame'), isHof: true },
+        { title: 'ECD Elite', items: uniqueAwards.filter(a => a.award_type === 'ECD Elite Inductee') },
+        { title: 'Rimshot Champions', items: uniqueAwards.filter(a => a.award_type === 'Rimshot Champion' || a.award_type === 'Rimshot Contest Champion') },
+        { title: 'Hit The Human', items: uniqueAwards.filter(a => a.award_type === 'Hit The Human Champion') },
+        { title: 'Special Awards', items: uniqueAwards.filter(a => a.award_type === '200 Events Award') },
+        { title: 'In Remembrance', items: uniqueAwards.filter(a => a.award_type === 'In Remembrance'), isRemembrance: true }
+    ].filter(g => g.items.length > 0);
 
-    function awardItem(a) {
+    function awardItem(a, isHof, isRemembrance) {
         const yearStr = a.year || (a.date ? a.date.split('-')[0] : '');
+        const classes = [
+            'legacy-item',
+            isHof ? 'legacy-item--hof' : '',
+            isRemembrance ? 'legacy-item--remembrance' : ''
+        ].filter(Boolean).join(' ');
+
         return `
-            <div class="legacy-item${a.award_type === 'In Remembrance' ? ' legacy-item--remembrance' : ''}">
+            <div class="${classes}">
                 <div class="legacy-item__name">${a.recipient}</div>
                 <div class="legacy-item__type">${a.award_type}${yearStr ? ' \u00B7 ' + yearStr : ''}</div>
                 ${a.context && !a.context.startsWith('From sidebar') ? `<div class="legacy-item__context">${a.context.slice(0, 120)}</div>` : ''}
@@ -620,18 +946,18 @@ function renderLegacy(awards, fundraisers) {
         `;
     }
 
-    // Sort fundraisers by amount
-    const sortedFundraisers = [...fundraisers].sort((a, b) => (b.amount || 0) - (a.amount || 0));
+    const sortedFundraisers = [...(fundraisers || [])].sort((a, b) => (b.amount || 0) - (a.amount || 0));
+    const totalRaised = (fundraisers || []).reduce((s, f) => s + (f.amount || 0), 0);
 
     container.innerHTML = `
         <div class="legacy-panel">
             <h3>Hall of Fame & Awards</h3>
-            ${hof.map(awardItem).join('')}
-            ${elite.length ? '<hr style="border-color: rgba(61,47,74,0.3); margin: 12px 0;">' + elite.map(awardItem).join('') : ''}
-            ${rimshot.length ? '<hr style="border-color: rgba(61,47,74,0.3); margin: 12px 0;">' + rimshot.map(awardItem).join('') : ''}
-            ${hitHuman.length ? hitHuman.map(awardItem).join('') : ''}
-            ${special.length ? special.map(awardItem).join('') : ''}
-            ${remembrance.length ? remembrance.map(awardItem).join('') : ''}
+            ${groups.map(g => `
+                <div class="legacy-award-group">
+                    <div class="legacy-award-group__title">${g.title}</div>
+                    ${g.items.map(a => awardItem(a, g.isHof, g.isRemembrance)).join('')}
+                </div>
+            `).join('')}
         </div>
         <div class="legacy-panel">
             <h3>Giving Back</h3>
@@ -648,18 +974,21 @@ function renderLegacy(awards, fundraisers) {
                     </div>
                 `;
             }).join('')}
-            <div style="margin-top: var(--space-lg); text-align: center; font-family: var(--font-mono); font-size: 1.4rem; color: var(--room-accent); font-weight: 700;">
-                $${((fundraisers.reduce((s, f) => s + (f.amount || 0), 0))).toLocaleString()} total raised
+            <div class="legacy-total">
+                <span class="legacy-total__value">$${totalRaised.toLocaleString()}</span>
+                <span class="legacy-total__label">total raised for charity</span>
             </div>
         </div>
     `;
 }
 
-// ─── Auto-init ───
+// ═══════════════════════════════════════
+//  BOOT
+// ═══════════════════════════════════════
 
 initECD()
     .then(() => initWormholes('ecd'))
-    .then(() => plantClue('clue8', document.querySelector('.ecd-callout')))
+    .then(() => plantClue('clue7', document.querySelector('.ecd-callout')))
     .catch(err => {
         console.error('ECD init error:', err);
         const el = document.querySelector('.ecd-hero-stats');

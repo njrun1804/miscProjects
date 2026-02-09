@@ -136,86 +136,136 @@ blockquote {
 }
 
 /* =============================
-   5. LJ HEADER
+   5. UNIFIED HEADER
    ============================= */
 .lj-header {
     background: var(--lj-header-bg);
     border-bottom: 3px solid #3a5431;
     padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 500;
 }
 
 .lj-header-inner {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 16px 24px;
-}
-
-.lj-nav-bar {
-    display: flex;
-    gap: 16px;
-    font-family: var(--font-sans);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: rgba(232, 224, 208, 0.6);
-    margin-bottom: 8px;
-    flex-wrap: wrap;
-}
-
-.lj-nav-bar a {
-    color: rgba(232, 224, 208, 0.6);
-    text-decoration: none;
-    transition: color 0.15s;
-}
-
-.lj-nav-bar a:hover { color: var(--lj-header-text); text-decoration: none; }
-.lj-nav-bar a.active { color: var(--lj-header-text); font-weight: bold; }
-.lj-nav-bar .sep { cursor: default; }
-
-.lj-title-bar {
+    padding: 10px 24px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    flex-wrap: wrap;
+    gap: 16px;
 }
 
+/* Identity (userpic + name + subtitle) */
+.lj-identity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    color: var(--lj-header-text);
+}
+
+.lj-identity:hover { text-decoration: none; }
+
 .lj-userpic {
-    width: 48px;
-    height: 48px;
+    width: 36px;
+    height: 36px;
     background: linear-gradient(135deg, #5c3d1a 0%, #8b5e2b 100%);
-    border: 2px solid rgba(232, 224, 208, 0.4);
+    border: 2px solid rgba(232, 224, 208, 0.35);
     border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-mono);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--lj-header-text);
     flex-shrink: 0;
-    box-shadow: 1px 1px 0 rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 0 rgba(0,0,0,0.25);
 }
 
-.lj-title-text {
+.lj-identity-text {
     display: flex;
-    align-items: baseline;
-    gap: 12px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 1px;
 }
 
 .lj-username {
     font-family: var(--font-mono);
-    font-size: 28px;
+    font-size: 15px;
     font-weight: 700;
     color: var(--lj-header-text);
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
+    line-height: 1.1;
 }
 
 .lj-subtitle {
     font-family: var(--font-sans);
-    font-size: 12px;
-    color: rgba(232, 224, 208, 0.7);
+    font-size: 10px;
+    color: rgba(232, 224, 208, 0.55);
     font-style: italic;
+    line-height: 1.1;
+}
+
+/* Room links (center) */
+.lj-rooms {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: center;
+}
+
+.lj-room-link {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    padding: 4px 10px;
+    color: rgba(232, 224, 208, 0.65);
+    text-decoration: none;
+    border-radius: 2px;
+    transition: color 0.15s, background 0.15s;
+    white-space: nowrap;
+}
+
+.lj-room-link:hover {
+    color: var(--lj-header-text);
+    background: rgba(255, 255, 255, 0.08);
+    text-decoration: none;
+}
+
+.lj-room-link.active {
+    color: var(--lj-header-text);
+    background: rgba(255, 255, 255, 0.12);
+    font-weight: 700;
+}
+
+/* Search (right) */
+.lj-search {
+    flex-shrink: 0;
+    position: relative;
+}
+
+.lj-search input {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    padding: 5px 10px;
+    border: 1px solid rgba(232, 224, 208, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 2px;
+    width: 150px;
+    color: var(--lj-header-text);
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.lj-search input:focus {
+    outline: none;
+    border-color: rgba(232, 224, 208, 0.4);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.lj-search input::placeholder {
+    color: rgba(232, 224, 208, 0.4);
 }
 
 /* Hamburger for mobile */
@@ -224,83 +274,11 @@ blockquote {
     background: none;
     border: none;
     color: var(--lj-header-text);
-    font-size: 24px;
+    font-size: 22px;
     cursor: pointer;
     padding: 4px;
+    flex-shrink: 0;
 }
-
-/* =============================
-   6. ROOM NAVIGATION
-   ============================= */
-.room-nav {
-    background: var(--room-panel, var(--lj-panel));
-    border-bottom: 1px solid var(--lj-border);
-    padding: 8px 0;
-}
-
-.room-nav-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    flex-wrap: wrap;
-}
-
-.room-nav-label {
-    font-family: var(--font-sans);
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--lj-text-secondary);
-    font-weight: bold;
-    margin-right: 8px;
-}
-
-.room-nav-link {
-    font-family: var(--font-sans);
-    font-size: 12px;
-    padding: 4px 12px;
-    border: 1px solid var(--lj-border);
-    background: var(--room-panel, var(--lj-input-bg));
-    color: var(--room-text, var(--lj-text));
-    border-radius: 2px;
-    text-decoration: none;
-    transition: all 0.15s;
-}
-
-.room-nav-link:hover {
-    background: var(--lj-header-bg);
-    color: var(--lj-header-text);
-    border-color: var(--lj-header-bg);
-    text-decoration: none;
-}
-
-.room-nav-link.active {
-    background: var(--lj-header-bg);
-    color: var(--lj-header-text);
-    border-color: var(--lj-header-bg);
-}
-
-/* Search in nav */
-.room-nav-search {
-    margin-left: auto;
-    position: relative;
-}
-
-.room-nav-search input {
-    font-family: var(--font-sans);
-    font-size: 12px;
-    padding: 4px 10px;
-    border: 1px solid var(--lj-border);
-    background: var(--room-panel, var(--lj-input-bg));
-    border-radius: 2px;
-    width: 160px;
-    color: var(--room-text, var(--lj-text));
-}
-
-.room-nav-search input::placeholder { color: var(--lj-text-secondary); opacity: 0.6; }
 
 .search-results {
     position: absolute;
@@ -621,26 +599,56 @@ blockquote {
 /* =============================
    12. RESPONSIVE
    ============================= */
+@media (max-width: 900px) {
+    .lj-header-inner {
+        flex-wrap: wrap;
+        padding: 10px 16px;
+    }
+
+    .lj-rooms {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        padding-top: 6px;
+        border-top: 1px solid rgba(255,255,255,0.08);
+        margin-top: 4px;
+    }
+
+    .lj-search {
+        margin-left: auto;
+    }
+}
+
 @media (max-width: 768px) {
     h1 { font-size: 1.5rem; }
     h2 { font-size: 1.25rem; }
 
     .container, .room-main { padding: 0 12px; }
-    .lj-header-inner { padding: 12px; }
-
-    .lj-username { font-size: 22px; }
-
-    .room-nav-inner { gap: 4px; }
-    .room-nav-link { font-size: 11px; padding: 3px 8px; }
-    .room-nav-search { display: none; }
 
     .lj-hamburger { display: block; }
+    .lj-search { display: none; }
+
+    .lj-rooms {
+        display: none;
+    }
+
+    .lj-header.nav-open .lj-rooms {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .lj-header.nav-open .lj-rooms .lj-room-link {
+        width: 100%;
+        padding: 6px 12px;
+    }
 }
 
 @media (max-width: 480px) {
-    .lj-title-text { flex-direction: column; gap: 2px; }
-    .lj-userpic { width: 36px; height: 36px; font-size: 14px; }
-    .room-nav-label { display: none; }
+    .lj-userpic { width: 30px; height: 30px; font-size: 12px; }
+    .lj-username { font-size: 13px; }
+    .lj-subtitle { font-size: 9px; }
 }
 
 /* =============================
