@@ -1000,3 +1000,6 @@ function renderLegacy(awards) {
         </div>
     `;
 }
+
+// ═══ BOOT ═══
+initECD();

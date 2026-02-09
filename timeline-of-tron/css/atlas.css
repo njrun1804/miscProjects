@@ -1,203 +1,308 @@
 /*
- * THE TIMELINE OF TRON — Room 5: The Atlas
- * Ocean blue, narrative-driven travel story
+ * THE TIMELINE OF TRON — Room 5: The Atlas (Redesign)
+ * Deep ocean theme with bioluminescent accents.
+ * Dark, dramatic, cinematic.
  */
 
+/* === ROOM VARIABLES === */
 .room-atlas {
-    --room-bg: #f0f4f8;
-    --room-text: #1a2a3a;
-    --room-accent: #1a5c8b;
-    --room-panel: #ffffff;
-    --lj-border: #c8d4e0;
-    --lj-text-secondary: #5a6a7a;
+    --room-bg: #0a0f1a;
+    --room-text: #c8d6e5;
+    --room-accent: #00d2ff;
+    --room-accent2: #00ffc8;
+    --room-panel: rgba(16, 24, 42, 0.85);
+    --lj-border: rgba(0, 210, 255, 0.12);
+    --lj-text-secondary: rgba(200, 214, 229, 0.55);
+    --atlas-glow: rgba(0, 210, 255, 0.15);
+    --atlas-glow-strong: rgba(0, 210, 255, 0.35);
+    --atlas-gradient: linear-gradient(135deg, #0a0f1a 0%, #0d1b2a 50%, #1b2838 100%);
+    --atlas-card-bg: rgba(13, 27, 42, 0.7);
+    --atlas-card-border: rgba(0, 210, 255, 0.08);
+    --atlas-warm: #ff6b4a;
+    --atlas-gold: #ffc857;
 }
 
-/* --- Hero --- */
-.atlas-hero {
+/* Override base link colors for dark theme */
+.room-atlas a { color: var(--room-accent); }
+.room-atlas a:hover { color: var(--room-accent2); }
+
+/* === MAIN LAYOUT === */
+.atlas-main {
+    max-width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.atlas-main .section-heading {
+    color: #fff;
+    font-size: 1.8rem;
     text-align: center;
-    margin-bottom: var(--space-lg);
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
 }
 
-.atlas-hero h1 { color: var(--room-accent); }
+.atlas-main .section-subtitle {
+    text-align: center;
+    color: var(--lj-text-secondary);
+    font-size: 14px;
+    font-family: var(--font-body);
+    margin-bottom: 40px;
+}
 
-/* --- Stats Bar --- */
-.atlas-stats-bar {
+/* Scroll-reveal animation */
+.atlas-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.atlas-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ================================
+   HERO SECTION — Full viewport
+   ================================ */
+.atlas-hero {
+    position: relative;
+    height: 75vh;
+    min-height: 450px;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.atlas-hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.atlas-hero__bg canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.atlas-hero__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.atlas-hero__title {
+    font-family: var(--font-mono);
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -2px;
+    line-height: 1;
+    margin: 0;
+    text-shadow: 0 0 60px rgba(0, 210, 255, 0.3), 0 0 120px rgba(0, 210, 255, 0.1);
+}
+
+.atlas-hero__subtitle {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: rgba(200, 214, 229, 0.6);
+    font-style: italic;
+    margin-top: 12px;
+    letter-spacing: 0.5px;
+}
+
+.atlas-hero__coord {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: rgba(0, 210, 255, 0.35);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.atlas-hero__coord--lat { margin-bottom: 16px; }
+.atlas-hero__coord--lng { margin-top: 16px; }
+
+.atlas-hero__scroll-cue {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    text-align: center;
+    color: rgba(200, 214, 229, 0.3);
+    font-family: var(--font-sans);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.atlas-hero__arrow-down {
+    width: 1px;
+    height: 24px;
+    background: linear-gradient(to bottom, rgba(0, 210, 255, 0.4), transparent);
+    margin: 8px auto 0;
+    animation: pulse-down 2s ease-in-out infinite;
+}
+
+@keyframes pulse-down {
+    0%, 100% { opacity: 0.3; transform: translateY(0); }
+    50% { opacity: 1; transform: translateY(6px); }
+}
+
+/* ================================
+   STATS BAR
+   ================================ */
+.atlas-stats {
+    background: linear-gradient(180deg, var(--room-bg) 0%, rgba(13, 27, 42, 0.95) 100%);
+    border-top: 1px solid var(--atlas-card-border);
+    border-bottom: 1px solid var(--atlas-card-border);
+    padding: 48px 24px;
+}
+
+.atlas-stats__inner {
+    max-width: 900px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: var(--space-xl);
+    align-items: center;
+    gap: 0;
     flex-wrap: wrap;
-    margin: var(--space-md) 0 var(--space-lg);
 }
 
-.atlas-stat { text-align: center; }
+.atlas-stat {
+    text-align: center;
+    padding: 0 28px;
+    flex-shrink: 0;
+}
 
 .atlas-stat__value {
     font-family: var(--font-mono);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    text-shadow: 0 0 30px var(--atlas-glow);
+}
+
+.atlas-stat__suffix {
+    font-size: 1.5rem;
     color: var(--room-accent);
-    line-height: 1.1;
+    vertical-align: super;
 }
 
 .atlas-stat__label {
     font-family: var(--font-sans);
-    font-size: 11px;
+    font-size: 10px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.5px;
     color: var(--lj-text-secondary);
-    margin-top: 4px;
+    margin-top: 8px;
 }
 
-/* --- Travel Eras --- */
-.atlas-eras {
-    margin-top: var(--space-xl);
+.atlas-stat-divider {
+    width: 1px;
+    height: 40px;
+    background: linear-gradient(to bottom, transparent, var(--lj-border), transparent);
+    flex-shrink: 0;
 }
 
-.atlas-eras h2 {
-    text-align: center;
-    margin-bottom: var(--space-lg);
-}
-
-.atlas-eras-flow {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    max-width: 800px;
+/* ================================
+   MAP SECTION
+   ================================ */
+.atlas-map-section {
+    padding: 60px 24px 40px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.era-card {
-    background: var(--room-panel);
-    border: 1px solid var(--lj-border);
-    border-left: 4px solid var(--room-accent);
-    border-radius: var(--radius);
-    padding: 16px 18px;
-    transition: background 0.15s;
-}
-
-.era-card:hover {
-    background: rgba(26, 92, 139, 0.03);
-}
-
-.era--intl { border-left-color: #1a5c8b; }
-.era--domestic { border-left-color: #7a8a9a; }
-.era--both { border-left-color: #4a7a6a; }
-
-.era-card__header {
+.atlas-map-header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 8px;
-}
-
-.era-card__name {
-    font-family: var(--font-mono);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--room-accent);
-}
-
-.era-card__years {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--lj-text-secondary);
-}
-
-.era-card__desc {
-    font-size: 13px;
-    color: var(--room-text);
-    line-height: 1.6;
-}
-
-.era-card__footer {
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    align-items: flex-end;
+    margin-bottom: 20px;
     flex-wrap: wrap;
+    gap: 16px;
 }
 
-.era-card__count {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    font-weight: 700;
-    color: var(--room-accent);
-}
-
-.era-card__tags {
-    display: flex;
-    gap: 4px;
-    flex-wrap: wrap;
-}
-
-.era-tag {
-    font-family: var(--font-mono);
-    font-size: 10px;
-    color: var(--lj-text-secondary);
-    background: rgba(26, 92, 139, 0.06);
-    border: 1px solid var(--lj-border);
-    border-radius: 2px;
-    padding: 1px 6px;
-}
-
-.era-arrow {
-    display: flex;
-    justify-content: center;
-    padding: 6px 0;
-    font-size: 18px;
-    color: var(--lj-text-secondary);
-    opacity: 0.35;
-}
-
-/* --- Map --- */
-.atlas-map-section {
-    margin-top: var(--space-xl);
+.atlas-map-header .section-heading {
+    text-align: left;
+    margin-bottom: 0;
 }
 
 .atlas-map {
     width: 100%;
-    height: 420px;
-    border: 1px solid var(--lj-border);
-    border-radius: var(--radius);
+    height: 520px;
+    border-radius: 8px;
+    border: 1px solid var(--atlas-card-border);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.4), 0 0 80px rgba(0, 210, 255, 0.05);
     z-index: 1;
-}
-
-.atlas-controls {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+    overflow: hidden;
 }
 
 .atlas-scrubber {
-    flex: 1;
     display: flex;
     align-items: center;
-    gap: 8px;
-    min-width: 200px;
+    gap: 10px;
 }
 
-.atlas-scrubber label {
+.atlas-scrubber__label {
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: 11px;
     color: var(--lj-text-secondary);
     white-space: nowrap;
 }
 
 .atlas-scrubber input[type="range"] {
-    flex: 1;
+    width: 160px;
     accent-color: var(--room-accent);
+    cursor: pointer;
 }
 
-#yearDisplay {
+.atlas-scrubber__year {
     font-family: var(--font-mono);
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--room-accent);
     min-width: 80px;
 }
 
-/* Map popups */
+.atlas-map-legend {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.legend-dot--intl {
+    background: var(--room-accent);
+    box-shadow: 0 0 8px var(--atlas-glow);
+}
+
+.legend-dot--domestic {
+    background: rgba(200, 214, 229, 0.4);
+}
+
+/* Map popup overrides */
 .atlas-popup__dest {
     font-family: var(--font-mono);
     font-size: 14px;
@@ -220,147 +325,349 @@
     line-height: 1.4;
 }
 
-/* --- Cruise Streak --- */
-.atlas-cruise-section {
-    margin-top: var(--space-xl);
-}
-
-.atlas-cruise-section h2 {
-    text-align: center;
-    margin-bottom: var(--space-sm);
-}
-
-.section-subtitle {
-    text-align: center;
-    color: var(--lj-text-secondary);
-    font-size: 13px;
-    margin-bottom: var(--space-lg);
-}
-
-.cruise-log {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    max-width: 800px;
+/* ================================
+   TRAVEL ERAS (Expanding Radius)
+   ================================ */
+.atlas-eras {
+    padding: 80px 24px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.cruise-step {
+.atlas-eras-timeline {
+    position: relative;
+    padding-left: 32px;
+}
+
+.atlas-eras-line {
+    position: absolute;
+    left: 11px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom,
+        transparent,
+        rgba(200, 214, 229, 0.15) 5%,
+        var(--room-accent) 40%,
+        var(--room-accent2) 80%,
+        transparent
+    );
+}
+
+.atlas-eras-flow {
     display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    background: var(--room-panel);
-    border: 1px solid var(--lj-border);
-    border-radius: var(--radius);
-    padding: 14px 18px;
-    transition: background 0.15s;
+    flex-direction: column;
+    gap: 0;
 }
 
-.cruise-step:hover {
-    background: rgba(26, 92, 139, 0.03);
+.era-card {
+    position: relative;
+    background: var(--atlas-card-bg);
+    border: 1px solid var(--atlas-card-border);
+    border-radius: 6px;
+    padding: 22px 24px;
+    margin-bottom: 24px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(8px);
 }
 
-.cruise-step__year {
+.era-card::before {
+    content: '';
+    position: absolute;
+    left: -27px;
+    top: 28px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--room-accent);
+    background: var(--room-bg);
+    z-index: 2;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.era-card:hover {
+    border-color: rgba(0, 210, 255, 0.25);
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.08);
+}
+
+.era-card:hover::before {
+    background: var(--room-accent);
+    box-shadow: 0 0 12px var(--atlas-glow-strong);
+}
+
+.era--intl::before { border-color: var(--room-accent); }
+.era--domestic::before { border-color: rgba(200, 214, 229, 0.35); }
+.era--both::before { border-color: var(--room-accent2); }
+
+.era-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.era-card__name {
     font-family: var(--font-mono);
-    font-size: 1.3rem;
+    font-size: 15px;
     font-weight: 700;
+    color: #fff;
+}
+
+.era-card__years {
+    font-family: var(--font-mono);
+    font-size: 11px;
     color: var(--room-accent);
-    min-width: 48px;
-    text-align: center;
-    opacity: 0.6;
+    letter-spacing: 1px;
 }
 
-.cruise-step__body { flex: 1; }
-
-.cruise-step__dest {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    font-weight: 700;
+.era-card__desc {
+    font-size: 14px;
     color: var(--room-text);
+    line-height: 1.7;
+    font-family: var(--font-body);
 }
 
-.cruise-step__meta {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--lj-text-secondary);
-    margin-top: 2px;
+.era-card__footer {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
 }
 
-.cruise-step__highlight {
-    font-size: 12px;
-    color: var(--lj-text-secondary);
-    font-style: italic;
-    margin-top: 4px;
-}
-
-.cruise-step__rating {
+.era-card__count {
     font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 700;
     color: var(--room-accent);
-    margin-top: 4px;
+    background: rgba(0, 210, 255, 0.08);
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 210, 255, 0.15);
 }
 
-.cruise-arrow {
+.era-card__tags {
     display: flex;
-    justify-content: center;
-    padding: 4px 0;
-    font-size: 16px;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.era-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
     color: var(--lj-text-secondary);
-    opacity: 0.3;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    padding: 2px 8px;
+    transition: color 0.2s, border-color 0.2s;
 }
 
-/* --- Recovery Stories --- */
+.era-card:hover .era-tag {
+    color: var(--room-text);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Scope badge */
+.era-card__scope {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-left: auto;
+}
+
+.era-card__scope--intl {
+    color: var(--room-accent);
+    background: rgba(0, 210, 255, 0.08);
+}
+
+.era-card__scope--domestic {
+    color: rgba(200, 214, 229, 0.5);
+    background: rgba(200, 214, 229, 0.06);
+}
+
+.era-card__scope--both {
+    color: var(--room-accent2);
+    background: rgba(0, 255, 200, 0.06);
+}
+
+/* ================================
+   CRUISE STREAK
+   ================================ */
+.atlas-cruise-section {
+    padding: 80px 24px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cruise-timeline {
+    position: relative;
+}
+
+.cruise-log {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.cruise-card {
+    background: var(--atlas-card-bg);
+    border: 1px solid var(--atlas-card-border);
+    border-radius: 6px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(8px);
+}
+
+.cruise-card:hover {
+    border-color: rgba(0, 210, 255, 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3), 0 0 20px rgba(0, 210, 255, 0.05);
+}
+
+.cruise-card__number {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    font-family: var(--font-mono);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(0, 210, 255, 0.06);
+    line-height: 1;
+}
+
+.cruise-card__year {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--room-accent);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.cruise-card__dest {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 6px;
+}
+
+.cruise-card__meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.cruise-card__highlight {
+    font-size: 12px;
+    color: var(--room-text);
+    font-style: italic;
+    margin-top: 10px;
+    line-height: 1.5;
+    font-family: var(--font-body);
+}
+
+.cruise-card__rating {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--atlas-gold);
+    margin-top: 8px;
+}
+
+.cruise-card__wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--room-accent), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.cruise-card:hover .cruise-card__wave {
+    opacity: 1;
+}
+
+/* ================================
+   RECOVERY STORIES
+   ================================ */
 .atlas-recovery-section {
-    margin-top: var(--space-xl);
-}
-
-.atlas-recovery-section h2 {
-    text-align: center;
-    margin-bottom: var(--space-sm);
+    padding: 80px 24px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .recovery-stories {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    max-width: 800px;
-    margin: 0 auto;
+    gap: 16px;
 }
 
 .recovery-card {
-    background: var(--room-panel);
-    border: 1px solid var(--lj-border);
-    border-left: 4px solid #2e7d32;
-    border-radius: var(--radius);
-    padding: 14px 18px;
+    background: var(--atlas-card-bg);
+    border: 1px solid var(--atlas-card-border);
+    border-radius: 6px;
+    padding: 22px 24px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    transition: border-color 0.3s;
+}
+
+.recovery-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(to bottom, var(--atlas-warm), var(--room-accent2));
+}
+
+.recovery-card:hover {
+    border-color: rgba(0, 255, 200, 0.15);
 }
 
 .recovery-card__year {
     font-family: var(--font-mono);
     font-size: 11px;
     font-weight: 700;
-    color: #2e7d32;
-    margin-bottom: 6px;
+    color: var(--room-accent2);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
 }
 
 .recovery-card__body {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
 .recovery-card__crisis {
     font-family: var(--font-mono);
     font-size: 12px;
-    color: #8b3a3a;
+    color: var(--atlas-warm);
+    line-height: 1.5;
+    flex: 1;
+    min-width: 180px;
 }
 
 .recovery-card__arrow {
-    font-size: 16px;
-    color: #2e7d32;
-    font-weight: bold;
+    font-size: 20px;
+    color: var(--room-accent2);
+    font-family: var(--font-mono);
+    flex-shrink: 0;
+    opacity: 0.6;
 }
 
 .recovery-card__trips {
@@ -368,72 +675,104 @@
     font-size: 12px;
     font-weight: 700;
     color: var(--room-accent);
-}
-
-.recovery-card__insight {
-    font-size: 12px;
-    color: var(--lj-text-secondary);
-    font-style: italic;
-    margin-top: 8px;
+    flex: 1;
+    min-width: 180px;
     line-height: 1.5;
 }
 
-/* --- Callout --- */
+.recovery-card__insight {
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+    margin-top: 12px;
+    line-height: 1.6;
+    font-family: var(--font-body);
+    padding-left: 12px;
+    border-left: 1px solid rgba(0, 255, 200, 0.15);
+}
+
+/* Callout */
 .atlas-callout {
     max-width: 700px;
-    margin: var(--space-xl) auto;
+    margin: 60px auto 0;
     text-align: center;
+    padding: 0 24px;
+}
+
+.atlas-callout p {
+    font-family: var(--font-body);
     font-style: italic;
-    font-size: 15px;
-    color: var(--lj-text-secondary);
-    line-height: 1.6;
+    font-size: 1.1rem;
+    color: rgba(200, 214, 229, 0.7);
+    line-height: 1.7;
 }
 
-/* --- Big Trips --- */
+.atlas-callout__line {
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--room-accent), transparent);
+    margin: 16px auto;
+}
+
+/* ================================
+   BIG TRIPS
+   ================================ */
 .atlas-big-trips {
-    margin-top: var(--space-xl);
-}
-
-.atlas-big-trips h2 {
-    text-align: center;
-    margin-bottom: var(--space-lg);
+    padding: 80px 24px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .big-trips-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
-    max-width: 900px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .big-trip-card {
-    background: var(--room-panel);
-    border: 1px solid var(--lj-border);
-    border-radius: var(--radius);
-    padding: 20px;
-    transition: background 0.15s;
+    background: var(--atlas-card-bg);
+    border: 1px solid var(--atlas-card-border);
+    border-radius: 8px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(8px);
 }
 
 .big-trip-card:hover {
-    background: rgba(26, 92, 139, 0.03);
+    border-color: rgba(0, 210, 255, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(0, 210, 255, 0.05);
+}
+
+.big-trip-card__rank {
+    position: absolute;
+    top: -8px;
+    right: 16px;
+    font-family: var(--font-mono);
+    font-size: 5rem;
+    font-weight: 700;
+    color: rgba(0, 210, 255, 0.04);
+    line-height: 1;
+    pointer-events: none;
 }
 
 .big-trip-card__tagline {
     font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 2px;
     color: var(--room-accent);
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .big-trip-card__dest {
     font-family: var(--font-mono);
-    font-size: 15px;
+    font-size: 1.1rem;
     font-weight: 700;
-    color: var(--room-text);
+    color: #fff;
     line-height: 1.3;
 }
 
@@ -441,24 +780,90 @@
     font-family: var(--font-mono);
     font-size: 11px;
     color: var(--lj-text-secondary);
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .big-trip-card__detail {
-    font-size: 13px;
+    font-size: 14px;
     color: var(--room-text);
-    line-height: 1.5;
-    margin-top: 8px;
+    line-height: 1.6;
+    margin-top: 12px;
+    font-family: var(--font-body);
 }
 
-/* --- Responsive --- */
+.big-trip-card__glow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--room-accent), var(--room-accent2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.big-trip-card:hover .big-trip-card__glow {
+    opacity: 1;
+}
+
+/* ================================
+   RESPONSIVE
+   ================================ */
 @media (max-width: 768px) {
-    .atlas-map { height: 300px; }
-    .atlas-stats-bar { gap: var(--space-lg); }
-    .atlas-stat__value { font-size: 1.5rem; }
-    .atlas-controls { flex-direction: column; align-items: stretch; }
-    .recovery-card__body { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .atlas-hero { height: 60vh; min-height: 350px; }
+    .atlas-hero__title { font-size: 2.5rem; }
+    .atlas-hero__subtitle { font-size: 0.95rem; }
+
+    .atlas-stats__inner { gap: 0; }
+    .atlas-stat { padding: 12px 16px; }
+    .atlas-stat__value { font-size: 2rem; }
+    .atlas-stat-divider { display: none; }
+
+    .atlas-map { height: 350px; }
+    .atlas-map-header { flex-direction: column; align-items: stretch; }
+    .atlas-map-header .section-heading { text-align: center; }
+
+    .atlas-eras-timeline { padding-left: 24px; }
+    .era-card { padding: 16px 18px; }
+    .era-card__header { flex-direction: column; gap: 2px; }
+
+    .cruise-log { grid-template-columns: 1fr; }
+
+    .recovery-card__body { flex-direction: column; align-items: flex-start; gap: 6px; }
+
     .big-trips-grid { grid-template-columns: 1fr; }
-    .cruise-step { flex-direction: column; gap: 4px; }
-    .cruise-step__year { text-align: left; }
+}
+
+@media (max-width: 480px) {
+    .atlas-hero__title { font-size: 2rem; }
+    .atlas-stat { padding: 8px 12px; }
+    .atlas-stat__value { font-size: 1.6rem; }
+    .atlas-scrubber { flex-wrap: wrap; }
+}
+
+/* ================================
+   LEAFLET DARK OVERRIDES
+   ================================ */
+.room-atlas .leaflet-container {
+    background: #0d1b2a;
+}
+
+.room-atlas .leaflet-control-zoom a {
+    background: rgba(13, 27, 42, 0.9);
+    color: var(--room-accent);
+    border-color: var(--atlas-card-border);
+}
+
+.room-atlas .leaflet-control-zoom a:hover {
+    background: rgba(0, 210, 255, 0.1);
+}
+
+.room-atlas .leaflet-control-attribution {
+    background: rgba(10, 15, 26, 0.8) !important;
+    color: rgba(200, 214, 229, 0.3) !important;
+    font-size: 9px !important;
+}
+
+.room-atlas .leaflet-control-attribution a {
+    color: rgba(0, 210, 255, 0.4) !important;
 }

@@ -1,9 +1,12 @@
-// js/atlas.js — Room 5: The Atlas (Travel Map + Narrative)
-// Story-driven travel page: eras, map, cruise streak, recovery stories, big trips
+// js/atlas.js — Room 5: The Atlas (Redesigned)
+// Dark ocean theme. Animated hero canvas. Flight arcs. Scroll reveals.
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
 import { plantClue } from './room0.js';
+
+// === HOME COORDS (NJ) ===
+const HOME = { lat: 40.7128, lng: -74.0060 };
 
 export async function initAtlas() {
     const data = await loadMultiple([
@@ -16,44 +19,309 @@ export async function initAtlas() {
     const medical = data.medical_events || [];
     const cruises = data.cruise_detail || [];
 
-    renderStats(travel);
-    renderEras(travel);
+    initHeroCanvas();
+    initCounterAnimation();
     const map = renderMap(travel);
-    if (map) initScrubber(map, travel);
+    if (map) {
+        initScrubber(map, travel);
+        drawFlightArcs(map, travel);
+    }
+    renderEras(travel);
     renderCruiseStreak(cruises);
     renderRecoveryStories(medical, travel);
     renderBigTrips(travel);
+    initScrollReveal();
 }
 
-// --- Big Numbers ---
-function renderStats(travel) {
-    const bar = document.querySelector('.atlas-stats-bar');
-    if (!bar) return;
+// ================================
+// HERO CANVAS — Starfield / particle grid
+// ================================
+function initHeroCanvas() {
+    const canvas = document.getElementById('heroCanvas');
+    if (!canvas) return;
 
-    const totalTrips = travel.length;
-    const intlTrips = travel.filter(t => t.scope === 'International');
-    const totalCountries = intlTrips.reduce((sum, t) => sum + (t.countries || 1), 0);
-    const longestTrip = Math.max(...travel.map(t => t.duration_days || 0));
-    const cruiseCount = travel.filter(t => t.trip_type === 'cruise').length;
+    const ctx = canvas.getContext('2d');
+    let w, h, particles;
+    const PARTICLE_COUNT = 80;
 
-    const stats = [
-        { value: totalTrips, label: 'Trips' },
-        { value: `${totalCountries}+`, label: 'Countries' },
-        { value: '5', label: 'Continents' },
-        { value: `${longestTrip}`, label: 'Days (Longest Trip)' },
-        { value: cruiseCount, label: 'Cruises in a Row' },
-    ];
+    function resize() {
+        w = canvas.width = canvas.offsetWidth;
+        h = canvas.height = canvas.offsetHeight;
+    }
 
+    function createParticles() {
+        particles = [];
+        for (let i = 0; i < PARTICLE_COUNT; i++) {
+            particles.push({
+                x: Math.random() * w,
+                y: Math.random() * h,
+                vx: (Math.random() - 0.5) * 0.3,
+                vy: (Math.random() - 0.5) * 0.3,
+                r: Math.random() * 1.5 + 0.5,
+                alpha: Math.random() * 0.4 + 0.1
+            });
+        }
+    }
 
-    bar.innerHTML = stats.map(s => `
-        <div class="atlas-stat">
-            <div class="atlas-stat__value">${s.value}</div>
-            <div class="atlas-stat__label">${s.label}</div>
-        </div>
-    `).join('');
+    function draw() {
+        ctx.clearRect(0, 0, w, h);
+
+        // Draw grid lines
+        ctx.strokeStyle = 'rgba(0, 210, 255, 0.03)';
+        ctx.lineWidth = 0.5;
+        const gridSize = 60;
+        for (let x = 0; x < w; x += gridSize) {
+            ctx.beginPath();
+            ctx.moveTo(x, 0);
+            ctx.lineTo(x, h);
+            ctx.stroke();
+        }
+        for (let y = 0; y < h; y += gridSize) {
+            ctx.beginPath();
+            ctx.moveTo(0, y);
+            ctx.lineTo(w, y);
+            ctx.stroke();
+        }
+
+        // Draw particles
+        particles.forEach(p => {
+            p.x += p.vx;
+            p.y += p.vy;
+            if (p.x < 0) p.x = w;
+            if (p.x > w) p.x = 0;
+            if (p.y < 0) p.y = h;
+            if (p.y > h) p.y = 0;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0, 210, 255, ${p.alpha})`;
+            ctx.fill();
+        });
+
+        // Draw connections between nearby particles
+        for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+                const dx = particles[i].x - particles[j].x;
+                const dy = particles[i].y - particles[j].y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < 120) {
+                    ctx.beginPath();
+                    ctx.moveTo(particles[i].x, particles[i].y);
+                    ctx.lineTo(particles[j].x, particles[j].y);
+                    ctx.strokeStyle = `rgba(0, 210, 255, ${0.06 * (1 - dist / 120)})`;
+                    ctx.stroke();
+                }
+            }
+        }
+
+        requestAnimationFrame(draw);
+    }
+
+    resize();
+    createParticles();
+    draw();
+    window.addEventListener('resize', () => { resize(); createParticles(); });
 }
 
-// --- Travel Eras ---
+// ================================
+// ANIMATED COUNTERS
+// ================================
+function initCounterAnimation() {
+    const stats = document.querySelectorAll('.atlas-stat[data-target]');
+    if (!stats.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    stats.forEach(stat => observer.observe(stat));
+}
+
+function animateCounter(el) {
+    const target = parseInt(el.dataset.target);
+    const valueEl = el.querySelector('.atlas-stat__value');
+    if (!valueEl) return;
+
+    const suffix = valueEl.querySelector('.atlas-stat__suffix');
+    const suffixText = suffix ? suffix.outerHTML : '';
+    const duration = 1500;
+    const start = performance.now();
+
+    function tick(now) {
+        const elapsed = now - start;
+        const progress = Math.min(elapsed / duration, 1);
+        // Ease out cubic
+        const eased = 1 - Math.pow(1 - progress, 3);
+        const current = Math.round(eased * target);
+        valueEl.innerHTML = current + suffixText;
+
+        if (progress < 1) requestAnimationFrame(tick);
+    }
+
+    requestAnimationFrame(tick);
+}
+
+// ================================
+// MAP — Dark tiles, glowing markers
+// ================================
+function renderMap(travel) {
+    const mapEl = document.getElementById('atlasMap');
+    if (!mapEl || typeof L === 'undefined') return null;
+
+    const map = L.map('atlasMap', {
+        scrollWheelZoom: false,
+        zoomControl: true
+    }).setView([25, 0], 2);
+
+    // Dark map tiles
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
+        maxZoom: 18
+    }).addTo(map);
+
+    const markers = [];
+    const markerLayer = L.layerGroup().addTo(map);
+
+    travel.forEach(trip => {
+        if (!trip.latitude || !trip.longitude) return;
+
+        const isIntl = trip.scope === 'International';
+        const color = isIntl ? '#00d2ff' : 'rgba(200, 214, 229, 0.5)';
+        const glowColor = isIntl ? 'rgba(0, 210, 255, 0.4)' : 'rgba(200, 214, 229, 0.2)';
+        const radius = isIntl ? 7 : 5;
+
+        const marker = L.circleMarker([trip.latitude, trip.longitude], {
+            radius: radius,
+            fillColor: color,
+            color: glowColor,
+            weight: 3,
+            fillOpacity: 0.9
+        });
+
+        const durationText = trip.duration_days ? `${trip.duration_days} days` : '';
+        const scopeText = trip.scope || '';
+        const meta = [trip.year, scopeText, durationText].filter(Boolean).join(' · ');
+
+        marker.bindPopup(`
+            <div class="atlas-popup">
+                <div class="atlas-popup__dest">${trip.destination}</div>
+                <div class="atlas-popup__year">${meta}</div>
+                ${trip.highlight ? `<div class="atlas-popup__highlight">${trip.highlight}</div>` : ''}
+            </div>
+        `);
+
+        marker._tripYear = trip.year;
+        markers.push(marker);
+        markerLayer.addLayer(marker);
+    });
+
+    map._tronMarkers = markers;
+    map._tronMarkerLayer = markerLayer;
+
+    return map;
+}
+
+// ================================
+// FLIGHT ARCS — Curved lines from home to destinations
+// ================================
+function drawFlightArcs(map, travel) {
+    const arcLayer = L.layerGroup().addTo(map);
+
+    travel.forEach(trip => {
+        if (!trip.latitude || !trip.longitude) return;
+
+        const isIntl = trip.scope === 'International';
+        if (!isIntl) return; // Only draw arcs for international trips
+
+        // Create curved line points
+        const start = [HOME.lat, HOME.lng];
+        const end = [trip.latitude, trip.longitude];
+        const points = generateArcPoints(start, end, 30);
+
+        const polyline = L.polyline(points, {
+            color: 'rgba(0, 210, 255, 0.15)',
+            weight: 1.5,
+            dashArray: '4 6',
+            smoothFactor: 1
+        });
+
+        polyline._tripYear = trip.year;
+        arcLayer.addLayer(polyline);
+    });
+
+    map._tronArcLayer = arcLayer;
+}
+
+function generateArcPoints(start, end, numPoints) {
+    const points = [];
+    for (let i = 0; i <= numPoints; i++) {
+        const t = i / numPoints;
+        const lat = start[0] + (end[0] - start[0]) * t;
+        const lng = start[1] + (end[1] - start[1]) * t;
+        // Add curvature — bulge proportional to distance
+        const dist = Math.sqrt(
+            Math.pow(end[0] - start[0], 2) + Math.pow(end[1] - start[1], 2)
+        );
+        const bulge = dist * 0.15 * Math.sin(Math.PI * t);
+        points.push([lat + bulge, lng]);
+    }
+    return points;
+}
+
+// ================================
+// TIMELINE SCRUBBER
+// ================================
+function initScrubber(map, travel) {
+    const slider = document.getElementById('yearSlider');
+    const display = document.getElementById('yearDisplay');
+    if (!slider || !display) return;
+
+    const years = travel.map(t => t.year).filter(Boolean);
+    if (!years.length) return;
+    const minYear = Math.min(...years);
+    const maxYear = Math.max(...years);
+
+    slider.min = minYear;
+    slider.max = maxYear;
+    slider.value = maxYear;
+    display.textContent = 'All Years';
+
+    slider.addEventListener('input', () => {
+        const cutoff = parseInt(slider.value);
+        display.textContent = cutoff >= maxYear ? 'All Years' : `2007–${cutoff}`;
+
+        // Filter markers
+        const markers = map._tronMarkers || [];
+        markers.forEach(m => {
+            if (m._tripYear <= cutoff) {
+                if (!map._tronMarkerLayer.hasLayer(m)) map._tronMarkerLayer.addLayer(m);
+            } else {
+                map._tronMarkerLayer.removeLayer(m);
+            }
+        });
+
+        // Filter arcs
+        const arcLayer = map._tronArcLayer;
+        if (arcLayer) {
+            arcLayer.eachLayer(arc => {
+                if (arc._tripYear <= cutoff) {
+                    arc.setStyle({ opacity: 1 });
+                } else {
+                    arc.setStyle({ opacity: 0 });
+                }
+            });
+        }
+    });
+}
+
+// ================================
+// TRAVEL ERAS
+// ================================
 function renderEras(travel) {
     const container = document.querySelector('.atlas-eras-flow');
     if (!container) return;
@@ -109,11 +377,12 @@ function renderEras(travel) {
         }
     ];
 
-    container.innerHTML = eras.map((era, i) => {
+    container.innerHTML = eras.map((era) => {
         const scopeClass = era.scope === 'international' ? 'era--intl' : era.scope === 'both' ? 'era--both' : 'era--domestic';
-        const arrow = i < eras.length - 1 ? '<div class="era-arrow">→</div>' : '';
+        const scopeBadgeClass = era.scope === 'international' ? 'era-card__scope--intl' : era.scope === 'both' ? 'era-card__scope--both' : 'era-card__scope--domestic';
+        const scopeLabel = era.scope === 'international' ? 'International' : era.scope === 'both' ? 'Mixed' : 'Domestic';
         return `
-            <div class="era-card ${scopeClass}">
+            <div class="era-card ${scopeClass} atlas-reveal">
                 <div class="era-card__header">
                     <span class="era-card__name">${era.name}</span>
                     <span class="era-card__years">${era.years}</span>
@@ -122,9 +391,9 @@ function renderEras(travel) {
                 <div class="era-card__footer">
                     <span class="era-card__count">${era.tripCount} trip${era.tripCount !== 1 ? 's' : ''}</span>
                     <div class="era-card__tags">${era.destinations.map(d => `<span class="era-tag">${d}</span>`).join('')}</div>
+                    <span class="era-card__scope ${scopeBadgeClass}">${scopeLabel}</span>
                 </div>
             </div>
-            ${arrow}
         `;
     }).join('');
 }
@@ -136,91 +405,9 @@ function countTripsInRange(travel, startYear, endYear, filterFn) {
     }).length;
 }
 
-// --- Map ---
-function renderMap(travel) {
-    const mapEl = document.getElementById('atlasMap');
-    if (!mapEl || typeof L === 'undefined') return null;
-
-    const map = L.map('atlasMap', { scrollWheelZoom: false }).setView([30, 0], 2);
-
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/">OSM</a> &copy; <a href="https://carto.com/">CARTO</a>',
-        maxZoom: 18
-    }).addTo(map);
-
-    const markers = [];
-    const markerLayer = L.layerGroup().addTo(map);
-
-    travel.forEach(trip => {
-        if (!trip.latitude || !trip.longitude) return;
-
-        const isIntl = trip.scope === 'International';
-        const color = isIntl ? '#1a5c8b' : '#7a8a9a';
-        const radius = isIntl ? 8 : 6;
-
-        const marker = L.circleMarker([trip.latitude, trip.longitude], {
-            radius: radius,
-            fillColor: color,
-            color: '#fff',
-            weight: 1.5,
-            fillOpacity: 0.85
-        });
-
-        const durationText = trip.duration_days ? `${trip.duration_days} days` : '';
-        const scopeText = trip.scope || '';
-        const meta = [trip.year, scopeText, durationText].filter(Boolean).join(' · ');
-
-        marker.bindPopup(`
-            <div class="atlas-popup">
-                <div class="atlas-popup__dest">${trip.destination}</div>
-                <div class="atlas-popup__year">${meta}</div>
-                ${trip.highlight ? `<div class="atlas-popup__highlight">${trip.highlight}</div>` : ''}
-            </div>
-        `);
-
-        marker._tripYear = trip.year;
-        markers.push(marker);
-        markerLayer.addLayer(marker);
-    });
-
-    map._tronMarkers = markers;
-    map._tronMarkerLayer = markerLayer;
-
-    return map;
-}
-
-// --- Timeline Scrubber ---
-function initScrubber(map, travel) {
-    const slider = document.getElementById('yearSlider');
-    const display = document.getElementById('yearDisplay');
-    if (!slider || !display) return;
-
-    const years = travel.map(t => t.year).filter(Boolean);
-    if (!years.length) return;
-    const minYear = Math.min(...years);
-    const maxYear = Math.max(...years);
-
-    slider.min = minYear;
-    slider.max = maxYear;
-    slider.value = maxYear;
-    display.textContent = `${minYear}–${maxYear}`;
-
-    slider.addEventListener('input', () => {
-        const cutoff = parseInt(slider.value);
-        display.textContent = `${minYear}–${cutoff}`;
-
-        const markers = map._tronMarkers || [];
-        markers.forEach(m => {
-            if (m._tripYear <= cutoff) {
-                if (!map._tronMarkerLayer.hasLayer(m)) map._tronMarkerLayer.addLayer(m);
-            } else {
-                map._tronMarkerLayer.removeLayer(m);
-            }
-        });
-    });
-}
-
-// --- Cruise Streak ---
+// ================================
+// CRUISE STREAK — Card grid
+// ================================
 function renderCruiseStreak(cruises) {
     const container = document.querySelector('.cruise-log');
     if (!container) return;
@@ -230,71 +417,60 @@ function renderCruiseStreak(cruises) {
 
     const sorted = [...items].sort((a, b) => (a.year || 0) - (b.year || 0));
 
-    container.innerHTML = sorted.map((c, i) => {
+    container.innerHTML = sorted.map((c) => {
         const ship = c.ship_name || '';
         const duration = c.duration_days ? `${c.duration_days} days` : '';
         const rating = c.rating || '';
         const countries = c.countries_visited > 0 ? `${c.countries_visited} countries` : '';
         const meta = [ship, duration, countries].filter(Boolean).join(' · ');
-        const arrow = i < sorted.length - 1 ? '<div class="cruise-arrow">→</div>' : '';
 
         return `
-            <div class="cruise-step">
-                <div class="cruise-step__year">${c.year}</div>
-                <div class="cruise-step__body">
-                    <div class="cruise-step__dest">${c.destinations}</div>
-                    ${meta ? `<div class="cruise-step__meta">${meta}</div>` : ''}
-                    ${c.highlight ? `<div class="cruise-step__highlight">${c.highlight}</div>` : ''}
-                    ${rating ? `<div class="cruise-step__rating">${rating}</div>` : ''}
-                </div>
+            <div class="cruise-card atlas-reveal">
+                <div class="cruise-card__number">#${c.cruise_number}</div>
+                <div class="cruise-card__year">${c.year}</div>
+                <div class="cruise-card__dest">${c.destinations}</div>
+                ${meta ? `<div class="cruise-card__meta">${meta}</div>` : ''}
+                ${c.highlight ? `<div class="cruise-card__highlight">${c.highlight}</div>` : ''}
+                ${rating ? `<div class="cruise-card__rating">${rating}</div>` : ''}
+                <div class="cruise-card__wave"></div>
             </div>
-            ${arrow}
         `;
     }).join('');
 }
 
-// --- Recovery by Travel ---
+// ================================
+// RECOVERY STORIES
+// ================================
 function renderRecoveryStories(medical, travel) {
     const container = document.querySelector('.recovery-stories');
     if (!container) return;
 
-    // Curated recovery stories — major setback → travel comeback
     const stories = [
         {
-            medicalId: 3,
-            title: 'Mental Health Crisis',
             year: 2007,
             crisis: 'Near-anorexia, mental health crisis',
             recovery: 'Detroit (WrestleMania 23), NYC (MSG)',
             insight: 'The first-ever trips. Wrestling became the escape route.'
         },
         {
-            medicalId: 10,
-            title: 'Spinal Surgery',
             year: 2017,
             crisis: 'L5-S1 herniation, microdiscectomy surgery, 14 staples',
             recovery: 'Alaska cruise, California road trip, Victoria BC, then 5-country Mediterranean cruise (2018)',
             insight: 'Six months from 14 staples to hiking Gros Piton. The engagement ring was purchased on that Mediterranean cruise.'
         },
         {
-            medicalId: 11,
-            title: 'Kidney Stone',
             year: 2019,
             crisis: 'Strep throat + kidney stone removal',
             recovery: 'Australia & New Zealand — 19 days',
             insight: '"The best, the longest, and the greatest." Highest sentiment score of any trip (0.855).'
         },
         {
-            medicalId: 12,
-            title: 'Medical Quarantine',
             year: 2020,
             crisis: 'Quarantine, Mar 26–Apr 16',
             recovery: 'Singapore, Thailand, Cambodia, Vietnam, Hong Kong — 17 days',
             insight: 'Gained 3 lbs of muscle during quarantine, then crossed 5 countries.'
         },
         {
-            medicalId: 13,
-            title: 'Kidney Stones (x2)',
             year: 2024,
             crisis: 'Two hospitalizations in 3 days (Dec 18 & 20)',
             recovery: 'Portugal, Spain, Norway, Iceland, Toronto',
@@ -303,7 +479,7 @@ function renderRecoveryStories(medical, travel) {
     ];
 
     container.innerHTML = stories.map(s => `
-        <div class="recovery-card">
+        <div class="recovery-card atlas-reveal">
             <div class="recovery-card__year">${s.year}</div>
             <div class="recovery-card__body">
                 <div class="recovery-card__crisis">${s.crisis}</div>
@@ -315,13 +491,14 @@ function renderRecoveryStories(medical, travel) {
     `).join('');
 }
 
-// --- Big Trips ---
+// ================================
+// BIG TRIPS
+// ================================
 function renderBigTrips(travel) {
     const container = document.querySelector('.big-trips-grid');
     if (!container) return;
 
-    // The standout trips — by duration, distance, significance, or sentiment
-    const bigTripIds = [26, 29, 24, 33, 31]; // AUS/NZ, Asia, Mediterranean, Midwest, Super Bowl
+    const bigTripIds = [26, 29, 24, 33, 31];
     const highlights = {
         26: { tagline: 'The Greatest Trip', detail: '19 days. 2 countries. Highest sentiment of any trip. "The best, the longest, and the greatest."' },
         29: { tagline: 'The Asian Expedition', detail: '17 days. 5 countries. Singapore to Hong Kong.' },
@@ -332,24 +509,51 @@ function renderBigTrips(travel) {
 
     const trips = bigTripIds.map(id => travel.find(t => t.id === id)).filter(Boolean);
 
-    container.innerHTML = trips.map(trip => {
+    container.innerHTML = trips.map((trip, i) => {
         const h = highlights[trip.id] || {};
         const duration = trip.duration_days ? `${trip.duration_days} days` : '';
         const countries = trip.countries ? `${trip.countries} countries` : '';
         const meta = [trip.year, trip.scope, duration, countries].filter(Boolean).join(' · ');
 
         return `
-            <div class="big-trip-card">
+            <div class="big-trip-card atlas-reveal">
+                <div class="big-trip-card__rank">${i + 1}</div>
                 <div class="big-trip-card__tagline">${h.tagline || trip.destination}</div>
                 <div class="big-trip-card__dest">${trip.destination}</div>
                 <div class="big-trip-card__meta">${meta}</div>
                 <div class="big-trip-card__detail">${h.detail || trip.highlight || ''}</div>
+                <div class="big-trip-card__glow"></div>
             </div>
         `;
     }).join('');
 }
 
-// Auto-init
+// ================================
+// SCROLL REVEAL
+// ================================
+function initScrollReveal() {
+    const reveals = document.querySelectorAll('.atlas-reveal');
+    if (!reveals.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, idx) => {
+            if (entry.isIntersecting) {
+                // Stagger the animation slightly for items in view
+                const delay = idx * 80;
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, delay);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    reveals.forEach(el => observer.observe(el));
+}
+
+// ================================
+// AUTO-INIT
+// ================================
 initAtlas()
     .then(() => initWormholes('atlas'))
     .then(() => plantClue('clue5', document.querySelector('.atlas-callout')))

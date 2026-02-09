@@ -89,7 +89,7 @@
 .stage-years {
     font-family: var(--font-mono);
     font-size: 1.1rem;
-    opacity: 0.55;
+    opacity: 0.7;
     letter-spacing: 0.15em;
     margin-bottom: 2.5rem;
 }
@@ -137,7 +137,7 @@
 .year-theme__year {
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    opacity: 0.45;
+    opacity: 0.65;
     flex-shrink: 0;
     min-width: 3rem;
     text-align: right;
@@ -180,7 +180,7 @@
     font-size: 9px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    opacity: 0.45;
+    opacity: 0.65;
 }
 
 /* (sentiment-colored pulse values removed) */
@@ -218,7 +218,7 @@
     font-family: var(--font-sans);
     font-size: 0.8rem;
     font-style: italic;
-    opacity: 0.55;
+    opacity: 0.75;
     line-height: 1.5;
 }
 
@@ -275,12 +275,13 @@
     padding: 1.25rem 1.5rem;
     margin-bottom: 2.5rem;
     border-left: 3px solid var(--stage-accent, var(--room-accent));
-    background: rgba(0,0,0,0.06);
+    background: rgba(0,0,0,0.15);
     border-radius: 0 var(--radius) var(--radius) 0;
     font-family: var(--font-mono);
     font-size: 0.9rem;
     line-height: 1.7;
     letter-spacing: -0.01em;
+    color: var(--stage-text, var(--room-text));
 }
 
 .arc-callout p { margin: 0; }
@@ -341,7 +342,7 @@
     font-family: var(--font-mono);
     font-size: 0.85rem;
     font-weight: 700;
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 .tp-domain {
@@ -357,7 +358,7 @@
 .tp-recovery {
     font-family: var(--font-mono);
     font-size: 11px;
-    opacity: 0.65;
+    opacity: 0.8;
 }
 
 .tp-event {
@@ -373,11 +374,11 @@
     gap: 0.5rem;
     font-style: italic;
     font-size: 0.9rem;
-    opacity: 0.7;
+    opacity: 0.85;
     flex-wrap: wrap;
 }
 
-.tp-arrow { font-style: normal; opacity: 0.5; }
+.tp-arrow { font-style: normal; opacity: 0.7; }
 
 /* Light overrides */
 .arc-stage[data-stage="ordinary-world"] .tp-card,
@@ -404,8 +405,9 @@
     line-height: 1.7;
     padding: 1.5rem 2rem;
     border-left: 4px solid var(--stage-accent, var(--room-accent));
-    background: rgba(0,0,0,0.06);
+    background: rgba(0,0,0,0.18);
     border-radius: 0 var(--radius) var(--radius) 0;
+    color: var(--stage-text, var(--room-text));
 }
 
 .arc-quote p {
@@ -431,7 +433,7 @@
 }
 
 .quote-context {
-    opacity: 0.55;
+    opacity: 0.75;
     font-family: var(--font-sans);
 }
 
@@ -472,7 +474,7 @@
 .tl-year {
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    opacity: 0.55;
+    opacity: 0.7;
     min-width: 4.5rem;
     text-align: right;
     padding-top: 2px;
@@ -561,7 +563,7 @@
     font-family: var(--font-body);
     font-style: italic;
     font-size: 1.1rem;
-    opacity: 0.65;
+    opacity: 0.8;
     line-height: 1.4;
 }
 
@@ -569,7 +571,7 @@
     display: block;
     font-family: var(--font-mono);
     font-size: 0.85rem;
-    opacity: 0.35;
+    opacity: 0.55;
     margin-top: 0.5rem;
 }
 
@@ -693,7 +695,7 @@
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    opacity: 0.35;
+    opacity: 0.55;
     margin-bottom: 1rem;
     font-weight: 400;
 }

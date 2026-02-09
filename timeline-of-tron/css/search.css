@@ -1,0 +1,320 @@
+/*
+ * search.css — Unified search styling for Timeline of Tron
+ * Rich results, keyboard focus, discovery panel, autocorrect suggestions.
+ * Uses existing LJ CSS variables from base.css.
+ */
+
+/* ── Search Results Container ───────────────────────────────────── */
+
+#searchResults {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 380px;
+    max-height: 480px;
+    overflow-y: auto;
+    background: var(--lj-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: 4px;
+    box-shadow: 0 6px 24px var(--lj-shadow);
+    margin-top: 4px;
+    z-index: 1000;
+    scrollbar-width: thin;
+    scrollbar-color: var(--lj-border) transparent;
+}
+
+/* ── Individual Result ──────────────────────────────────────────── */
+
+.search-result {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: var(--lj-text);
+    border-bottom: 1px solid rgba(196, 184, 160, 0.4);
+    transition: background 0.15s;
+}
+
+.search-result:last-child {
+    border-bottom: none;
+}
+
+.search-result:hover,
+.search-result.focused {
+    background: rgba(201, 168, 76, 0.1);
+    text-decoration: none;
+}
+
+.search-result.focused {
+    box-shadow: inset 3px 0 0 var(--lj-gold);
+}
+
+/* Type icon */
+.search-result__icon {
+    flex-shrink: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    width: 22px;
+    text-align: center;
+}
+
+/* Body wrapper */
+.search-result__body {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+    flex: 1;
+}
+
+/* Room badge */
+.search-result__room {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--lj-accent2);
+    opacity: 0.7;
+}
+
+/* Title */
+.search-result__title {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--lj-text);
+    line-height: 1.35;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Context (year, stage, etc) */
+.search-result__context {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    margin-top: 1px;
+}
+
+/* Snippet (rich preview text) */
+.search-result__snippet {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    line-height: 1.4;
+    margin-top: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Tags row */
+.search-result__tags {
+    display: flex;
+    gap: 4px;
+    margin-top: 3px;
+    flex-wrap: wrap;
+}
+
+.search-result__tag {
+    font-family: var(--font-mono);
+    font-size: 9px;
+    color: var(--lj-accent3);
+    background: rgba(107, 74, 139, 0.08);
+    padding: 1px 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+/* ── "No results" ───────────────────────────────────────────────── */
+
+.search-no-results {
+    padding: 16px 12px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    text-align: center;
+}
+
+/* ── "Did you mean?" Suggestion ─────────────────────────────────── */
+
+.search-suggestion {
+    padding: 12px 14px;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--lj-text-secondary);
+    background: rgba(139, 26, 26, 0.04);
+    border-left: 3px solid var(--lj-accent);
+    line-height: 1.5;
+}
+
+.search-suggestion__link {
+    color: var(--lj-accent);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.search-suggestion__link:hover {
+    color: var(--lj-link-hover);
+    text-decoration-style: solid;
+}
+
+/* ── Discovery Panel (empty-state) ──────────────────────────────── */
+
+.search-discovery {
+    padding: 12px;
+}
+
+.search-discovery__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.search-discovery__label {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--lj-text-secondary);
+    opacity: 0.7;
+}
+
+.search-discovery__refresh {
+    background: none;
+    border: 1px solid var(--lj-border);
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--lj-text-secondary);
+    padding: 2px 6px;
+    transition: background 0.15s, color 0.15s;
+    line-height: 1;
+}
+
+.search-discovery__refresh:hover {
+    background: rgba(201, 168, 76, 0.12);
+    color: var(--lj-text);
+}
+
+.search-discovery__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 8px 0;
+    text-decoration: none;
+    color: var(--lj-text);
+}
+
+.search-discovery__item:hover {
+    color: var(--lj-link-hover);
+}
+
+.search-discovery__title {
+    font-family: var(--font-body);
+    font-size: 13px;
+    line-height: 1.35;
+    color: var(--lj-link);
+}
+
+.search-discovery__context {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    display: block;
+    margin-top: 1px;
+}
+
+.search-discovery__top {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--lj-border);
+}
+
+.search-discovery__top-item {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--lj-link);
+    text-decoration: none;
+    padding: 3px 0;
+    line-height: 1.4;
+}
+
+.search-discovery__top-item:hover {
+    color: var(--lj-link-hover);
+    text-decoration: underline;
+}
+
+/* ── Vault: "Did you mean?" inside quote search ─────────────────── */
+
+.vault-suggestion {
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    margin-top: 4px;
+}
+
+.vault-suggestion__link {
+    color: var(--lj-accent);
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    cursor: pointer;
+}
+
+.vault-suggestion__link:hover {
+    color: var(--lj-link-hover);
+}
+
+/* ── Constellation: "Did you mean?" under dropdown ──────────────── */
+
+.constellation-suggestion {
+    padding: 8px 10px;
+    font-family: var(--font-body);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    background: rgba(139, 26, 26, 0.04);
+    border-left: 2px solid var(--lj-accent);
+}
+
+.constellation-suggestion a {
+    color: var(--lj-accent);
+    font-weight: 700;
+    text-decoration: underline dotted;
+    cursor: pointer;
+}
+
+/* ── Responsive ─────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    #searchResults {
+        width: 300px;
+        max-height: 360px;
+    }
+
+    .search-result__snippet {
+        display: none;
+    }
+
+    .search-result__tags {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    #searchResults {
+        width: calc(100vw - 24px);
+        right: -8px;
+    }
+}

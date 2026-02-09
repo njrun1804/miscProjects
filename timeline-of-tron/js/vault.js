@@ -4,6 +4,7 @@
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
 import { plantClue } from './room0.js';
+import { suggestCorrection, buildDictionary } from './search-spellchecker.js';
 
 // Curated quote pairs: thematic echoes across years
 const QUOTE_PAIRS = [
@@ -118,6 +119,21 @@ function initSearch(quotes) {
         ignoreLocation: true,
     });
 
+    // Build a mini spellcheck dictionary from quote text + themes
+    const vaultTerms = [];
+    quotes.forEach(q => {
+        if (q.quote) {
+            q.quote.split(/\s+/).forEach(w => {
+                const clean = w.replace(/[^a-zA-Z0-9'-]/g, '');
+                if (clean.length >= 3) vaultTerms.push({ title: clean, tags: [], aliases: [] });
+            });
+        }
+        if (q.theme) vaultTerms.push({ title: q.theme, tags: [], aliases: [] });
+        if (q.emotion) vaultTerms.push({ title: q.emotion, tags: [], aliases: [] });
+        if (q.context) vaultTerms.push({ title: q.context, tags: [], aliases: [] });
+    });
+    buildDictionary(vaultTerms);
+
     let searchActive = false;
 
     input.addEventListener('input', () => {
@@ -156,7 +172,24 @@ function initSearch(quotes) {
         });
 
         if (countEl) {
-            countEl.textContent = results.length ? `${results.length} match${results.length !== 1 ? 'es' : ''}` : 'No matches';
+            if (results.length) {
+                countEl.textContent = `${results.length} match${results.length !== 1 ? 'es' : ''}`;
+            } else {
+                // Try autocorrect suggestion
+                const correction = suggestCorrection(query);
+                if (correction) {
+                    countEl.innerHTML = `No matches. Try: <a href="javascript:void(0)" class="vault-suggestion__link">${correction.term}</a>`;
+                    const link = countEl.querySelector('.vault-suggestion__link');
+                    if (link) {
+                        link.addEventListener('click', () => {
+                            input.value = correction.term;
+                            input.dispatchEvent(new Event('input'));
+                        });
+                    }
+                } else {
+                    countEl.textContent = 'No matches';
+                }
+            }
         }
     });
 }

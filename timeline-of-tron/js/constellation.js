@@ -802,27 +802,53 @@ function renderStatsBar(constellation) {
     mount.innerHTML = `<span>${peopleTotalInDb} people</span> · <span>${linkCount} connections</span> · <span>${withStories} with stories</span> · <span>22 years</span>`;
 }
 
-// ─── Search Autocomplete ─────────────────────────────────────────
+// ─── Search Autocomplete (Fuse.js + Alias-Aware) ────────────────
 
 function initSearchAutocomplete(nodes, profiles) {
     const wrapper = document.querySelector('.constellation-search');
     const input = wrapper?.querySelector('input');
     if (!wrapper || !input) return;
 
-    // Build searchable list with enriched data
+    // Build searchable list with enriched data + aliases for fuzzy matching
     const searchList = nodes.map(n => {
         const profile = profiles[n.name];
         const r = getDataRichness(n.name, profile);
         const relation = getBestRelation(n);
         const connection = getBestConnection(n);
+        const aliases = getAliases(n.name); // e.g. "Dan Spengeman" → ["Danny Sponge", "Spengeman"]
         return {
             name: n.name,
             relation,
             connection,
             category: n.category || '',
+            aliases,
+            aliasStr: aliases.join(' '), // Flattened for Fuse.js key matching
             richness: r.total + (n.importance_score || 0) / 10
         };
     }).sort((a, b) => b.richness - a.richness);
+
+    // Build Fuse.js instance for fuzzy + alias-aware search
+    const constellationFuse = new Fuse(searchList, {
+        keys: [
+            { name: 'name',      weight: 10 },
+            { name: 'aliasStr',  weight: 8 },
+            { name: 'relation',  weight: 5 },
+            { name: 'connection', weight: 3 },
+            { name: 'category',  weight: 2 }
+        ],
+        threshold: 0.35,
+        ignoreLocation: true,
+        includeScore: true,
+        minMatchCharLength: 2
+    });
+
+    // Build a mini spellcheck dictionary for "did you mean?"
+    const nameTerms = new Set();
+    searchList.forEach(p => {
+        nameTerms.add(p.name);
+        p.aliases.forEach(a => nameTerms.add(a));
+    });
+    const nameDictionary = [...nameTerms];
 
     const dropdown = document.createElement('div');
     dropdown.className = 'search-dropdown';
@@ -830,40 +856,60 @@ function initSearchAutocomplete(nodes, profiles) {
     wrapper.appendChild(dropdown);
 
     input.addEventListener('input', () => {
-        const q = input.value.toLowerCase().trim();
+        const q = input.value.trim();
         if (!q) {
             dropdown.style.display = 'none';
             resetGraphOpacity();
             return;
         }
 
-        const matches = searchList
-            .filter(p =>
-                p.name.toLowerCase().includes(q) ||
-                p.relation.toLowerCase().includes(q) ||
-                p.connection.toLowerCase().includes(q)
-            )
-            .slice(0, 8);
+        const fuseResults = constellationFuse.search(q, { limit: 8 });
+        const matches = fuseResults.map(r => r.item);
+
+        // Determine which node names matched (for graph dimming)
+        const matchedNames = new Set(matches.map(m => m.name.toLowerCase()));
 
         if (!matches.length) {
-            dropdown.innerHTML = '<div class="search-no-results">No matches</div>';
+            // Try lightweight spellcheck
+            const correction = findClosestName(q, nameDictionary);
+            if (correction) {
+                dropdown.innerHTML = `
+                    <div class="search-no-results">No matches</div>
+                    <div class="constellation-suggestion">
+                        Did you mean: <a href="javascript:void(0)" data-correction="${correction}">${correction}</a>?
+                    </div>`;
+                const link = dropdown.querySelector('.constellation-suggestion a');
+                if (link) {
+                    link.addEventListener('click', () => {
+                        input.value = correction;
+                        input.dispatchEvent(new Event('input'));
+                    });
+                }
+            } else {
+                dropdown.innerHTML = '<div class="search-no-results">No matches</div>';
+            }
             dropdown.style.display = 'block';
-            if (svgNode) svgNode.attr('opacity', d => (d.name || '').toLowerCase().includes(q) ? 1 : 0.1);
+            if (svgNode) svgNode.attr('opacity', d => 0.1);
             return;
         }
 
         dropdown.innerHTML = matches.map(m => {
             const subtitle = m.relation || (m.connection ? m.connection.split('.')[0].split(';')[0] : '') || m.category;
+            const aliasHint = m.aliases.length
+                ? `<span class="search-result-alias">aka ${m.aliases.slice(0, 2).join(', ')}</span>`
+                : '';
             return `<button class="search-result" data-name="${m.name}">
                 <span class="search-result-name">${highlightMatch(m.name, q)}</span>
                 <span class="search-result-meta">${subtitle}</span>
+                ${aliasHint}
             </button>`;
         }).join('');
         dropdown.style.display = 'block';
 
+        // Dim non-matching nodes in D3 graph
         if (svgNode) {
             svgNode.attr('opacity', d =>
-                (d.name || '').toLowerCase().includes(q) ? 1 : 0.1
+                matchedNames.has((d.name || '').toLowerCase()) ? 1 : 0.1
             );
         }
 
@@ -909,6 +955,35 @@ function initSearchAutocomplete(nodes, profiles) {
             input.blur();
         }
     });
+}
+
+/** Lightweight Levenshtein for constellation-local spellcheck */
+function findClosestName(query, dictionary, maxDist = 2) {
+    if (query.length < 2) return null;
+    const q = query.toLowerCase();
+    let best = null, bestDist = Infinity;
+    for (const term of dictionary) {
+        const t = term.toLowerCase();
+        if (Math.abs(t.length - q.length) > maxDist) continue;
+        if (t === q) return null; // exact match, no correction needed
+        const d = levenshteinDist(q, t);
+        if (d <= maxDist && d < bestDist) { bestDist = d; best = term; }
+    }
+    return best;
+}
+
+function levenshteinDist(a, b) {
+    const m = a.length, n = b.length;
+    let prev = Array.from({ length: n + 1 }, (_, j) => j);
+    let curr = new Array(n + 1);
+    for (let i = 1; i <= m; i++) {
+        curr[0] = i;
+        for (let j = 1; j <= n; j++) {
+            curr[j] = Math.min(prev[j] + 1, curr[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+        }
+        [prev, curr] = [curr, prev];
+    }
+    return prev[n];
 }
 
 function highlightMatch(text, query) {
