@@ -117,9 +117,12 @@ async function buildIndex() {
         // People → The Constellation
         const people = data.people_profiles || [];
         people.forEach(p => {
+            const person = p.person || {};
+            const highlight = p.highlights && p.highlights[0] ? p.highlights[0].highlight : '';
+            const activeYears = person.active_years || '';
             searchIndex.push({
-                title: p.name || '',
-                context: p.highlight || `${p.first_year || ''}–${p.last_year || ''}`,
+                title: person.name || '',
+                context: highlight || activeYears,
                 room: 'Constellation',
                 url: 'constellation.html'
             });

@@ -1,0 +1,1592 @@
+[
+  {
+    "year": 2005,
+    "dominant_emotions": "[]",
+    "count": 9
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 8
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"tension\", \"joy\"]",
+    "count": 4
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 4
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"nostalgia\"]",
+    "count": 4
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"joy\", \"sadness\"]",
+    "count": 4
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\", \"joy\"]",
+    "count": 4
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"gratitude\"]",
+    "count": 3
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"joy\"]",
+    "count": 3
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"sadness\"]",
+    "count": 3
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"gratitude\", \"pride\", \"sadness\"]",
+    "count": 3
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"pride\", \"nostalgia\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"joy\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"nostalgia\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"pride\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"tension\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"tension\", \"nostalgia\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"tension\", \"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"tension\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"pride\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"sadness\", \"competitiveness\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"nostalgia\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"nostalgia\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"pride\", \"joy\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"nostalgia\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"nostalgia\", \"joy\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"pride\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"pride\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"joy\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"gratitude\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2005,
+    "dominant_emotions": "[\"gratitude\", \"competitiveness\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"nostalgia\"]",
+    "count": 12
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 8
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 6
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[]",
+    "count": 5
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\", \"joy\"]",
+    "count": 5
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\"]",
+    "count": 4
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\"]",
+    "count": 4
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"nostalgia\"]",
+    "count": 4
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"gratitude\"]",
+    "count": 3
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"sadness\"]",
+    "count": 3
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"tension\", \"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"gratitude\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"tension\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"gratitude\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"gratitude\", \"tension\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"gratitude\", \"pride\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"tension\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"tension\", \"joy\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"tension\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"tension\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"nostalgia\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"nostalgia\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"joy\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"joy\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"tension\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"tension\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"joy\", \"gratitude\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"gratitude\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"gratitude\", \"joy\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2006,
+    "dominant_emotions": "[\"gratitude\", \"joy\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 6
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"gratitude\"]",
+    "count": 6
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"tension\", \"sadness\"]",
+    "count": 5
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"sadness\"]",
+    "count": 5
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[]",
+    "count": 4
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"sadness\", \"joy\"]",
+    "count": 4
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 4
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"joy\"]",
+    "count": 3
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 3
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"nostalgia\"]",
+    "count": 3
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"gratitude\", \"tension\", \"sadness\"]",
+    "count": 3
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"pride\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"gratitude\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"pride\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"pride\", \"joy\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"nostalgia\", \"tension\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"gratitude\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"gratitude\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"gratitude\", \"competitiveness\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"joy\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"gratitude\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"gratitude\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"tension\", \"competitiveness\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"tension\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"tension\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"pride\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"pride\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"pride\", \"joy\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"nostalgia\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"tension\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"tension\", \"competitiveness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"gratitude\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"joy\", \"competitiveness\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2007,
+    "dominant_emotions": "[\"gratitude\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 5
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 4
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"nostalgia\"]",
+    "count": 4
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"tension\", \"sadness\", \"joy\"]",
+    "count": 3
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"tension\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"pride\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"joy\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"joy\", \"pride\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"joy\", \"gratitude\", \"tension\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"gratitude\", \"pride\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"tension\", \"sadness\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"tension\", \"nostalgia\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"tension\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"tension\", \"joy\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"tension\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"pride\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"joy\", \"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"joy\", \"pride\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"gratitude\", \"tension\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2008,
+    "dominant_emotions": "[\"gratitude\", \"joy\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2009,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"nostalgia\"]",
+    "count": 2
+  },
+  {
+    "year": 2009,
+    "dominant_emotions": "[]",
+    "count": 1
+  },
+  {
+    "year": 2009,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2009,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2009,
+    "dominant_emotions": "[\"joy\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2009,
+    "dominant_emotions": "[\"competitiveness\", \"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"sadness\", \"competitiveness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"pride\", \"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"pride\", \"joy\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"nostalgia\", \"pride\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"joy\", \"sadness\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2010,
+    "dominant_emotions": "[\"gratitude\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[]",
+    "count": 9
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 3
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 3
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"pride\", \"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"tension\", \"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"pride\", \"joy\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"joy\", \"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"joy\", \"pride\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"joy\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2011,
+    "dominant_emotions": "[\"joy\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[]",
+    "count": 4
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"sadness\", \"gratitude\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"pride\", \"joy\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"joy\", \"nostalgia\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2012,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[]",
+    "count": 4
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 3
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"tension\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"sadness\", \"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"sadness\", \"joy\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"pride\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"pride\", \"joy\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"nostalgia\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"nostalgia\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2013,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"pride\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"nostalgia\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2014,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[]",
+    "count": 3
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[\"sadness\", \"pride\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[\"sadness\", \"pride\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[\"pride\", \"joy\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[\"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2015,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"tension\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"tension\", \"sadness\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\"]",
+    "count": 1
+  },
+  {
+    "year": 2016,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2017,
+    "dominant_emotions": "[]",
+    "count": 3
+  },
+  {
+    "year": 2017,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2017,
+    "dominant_emotions": "[\"gratitude\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2018,
+    "dominant_emotions": "[]",
+    "count": 2
+  },
+  {
+    "year": 2018,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2019,
+    "dominant_emotions": "[]",
+    "count": 3
+  },
+  {
+    "year": 2019,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 2
+  },
+  {
+    "year": 2019,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2019,
+    "dominant_emotions": "[\"pride\"]",
+    "count": 1
+  },
+  {
+    "year": 2020,
+    "dominant_emotions": "[]",
+    "count": 3
+  },
+  {
+    "year": 2020,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2020,
+    "dominant_emotions": "[\"sadness\", \"nostalgia\"]",
+    "count": 1
+  },
+  {
+    "year": 2020,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2021,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2021,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2022,
+    "dominant_emotions": "[]",
+    "count": 1
+  },
+  {
+    "year": 2022,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2023,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2023,
+    "dominant_emotions": "[\"pride\", \"sadness\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2024,
+    "dominant_emotions": "[]",
+    "count": 1
+  },
+  {
+    "year": 2024,
+    "dominant_emotions": "[\"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2024,
+    "dominant_emotions": "[\"nostalgia\", \"gratitude\", \"tension\"]",
+    "count": 1
+  },
+  {
+    "year": 2024,
+    "dominant_emotions": "[\"joy\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2024,
+    "dominant_emotions": "[\"gratitude\", \"tension\", \"joy\"]",
+    "count": 1
+  },
+  {
+    "year": 2024,
+    "dominant_emotions": "[\"gratitude\", \"sadness\"]",
+    "count": 1
+  },
+  {
+    "year": 2025,
+    "dominant_emotions": "[\"sadness\", \"joy\"]",
+    "count": 2
+  },
+  {
+    "year": 2025,
+    "dominant_emotions": "[\"joy\"]",
+    "count": 2
+  }
+]

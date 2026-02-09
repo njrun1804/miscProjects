@@ -35,7 +35,6 @@ function renderStats(travel) {
     const totalCountries = intlTrips.reduce((sum, t) => sum + (t.countries || 1), 0);
     const longestTrip = Math.max(...travel.map(t => t.duration_days || 0));
     const cruiseCount = travel.filter(t => t.trip_type === 'cruise').length;
-    const totalMiles = travel.reduce((sum, t) => sum + (t.miles || 0), 0);
 
     const stats = [
         { value: totalTrips, label: 'Trips' },
@@ -45,9 +44,6 @@ function renderStats(travel) {
         { value: cruiseCount, label: 'Cruises in a Row' },
     ];
 
-    if (totalMiles > 0) {
-        stats.push({ value: totalMiles.toLocaleString(), label: 'Miles Driven' });
-    }
 
     bar.innerHTML = stats.map(s => `
         <div class="atlas-stat">
@@ -339,9 +335,8 @@ function renderBigTrips(travel) {
     container.innerHTML = trips.map(trip => {
         const h = highlights[trip.id] || {};
         const duration = trip.duration_days ? `${trip.duration_days} days` : '';
-        const miles = trip.miles ? `${trip.miles.toLocaleString()} miles` : '';
         const countries = trip.countries ? `${trip.countries} countries` : '';
-        const meta = [trip.year, trip.scope, duration, miles, countries].filter(Boolean).join(' · ');
+        const meta = [trip.year, trip.scope, duration, countries].filter(Boolean).join(' · ');
 
         return `
             <div class="big-trip-card">

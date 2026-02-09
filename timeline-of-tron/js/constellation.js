@@ -291,10 +291,10 @@ export async function initConstellation() {
     ]);
     // Optional enrichment data — don't block page if missing
     try {
-        const extras = await loadMultiple(['people_highlights.json', 'ecd_players.json', 'ecd_awards_v2.json', 'song_person_map.json', 'ecd_player_network.json']);
+        const extras = await loadMultiple(['people_highlights.json', 'ecd_players_full.json', 'ecd_awards.json', 'song_person_map.json', 'ecd_player_network.json']);
         data.people_highlights = extras.people_highlights;
         data.ecd_players = extras.ecd_players;
-        data.ecd_awards_v2 = extras.ecd_awards_v2;
+        data.ecd_awards = extras.ecd_awards;
         data.song_person_map = extras.song_person_map;
         data.ecd_player_network = extras.ecd_player_network;
     } catch (_) { /* enrichment data unavailable — page still works */ }
@@ -376,7 +376,7 @@ export async function initConstellation() {
     arcData = buildArcMap(resolvedArc);
     coOccurrencesData = resolvedCoOcc;
     ecdPlayersData = buildEcdPlayerMap(rawEcd);
-    ecdAwardsData = data.ecd_awards_v2 || [];
+    ecdAwardsData = data.ecd_awards || [];
     ecdPlayerNetworkData = ecdNet;
     lifeChaptersData = data.life_chapters || [];
     songsByPerson = buildSongPersonMap(data.song_person_map);

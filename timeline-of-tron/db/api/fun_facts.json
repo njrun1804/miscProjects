@@ -2,7 +2,7 @@
   {
     "id": 1,
     "fact": "The exact time of meeting The Undertaker is recorded to the second: 4:10:18 PM CT",
-    "year": null,
+    "year": 2014,
     "category": "misc",
     "sentiment_polarity": 0.125
   },
@@ -37,28 +37,28 @@
   {
     "id": 6,
     "fact": "Escape room completed in exactly 45 minutes, 43 seconds",
-    "year": null,
+    "year": 2017,
     "category": "misc",
     "sentiment_polarity": 0.25
   },
   {
     "id": 7,
     "fact": "Played badminton for 18,000 straight seconds (5 hours) with Angela Hibbert",
-    "year": null,
+    "year": 2007,
     "category": "sports",
     "sentiment_polarity": 0.2
   },
   {
     "id": 8,
     "fact": "The Timeline project has outlasted LiveJournal's entire cultural relevance",
-    "year": null,
-    "category": "vehicle",
+    "year": 2025,
+    "category": "meta",
     "sentiment_polarity": 0.05
   },
   {
     "id": 9,
     "fact": "East Coast Dodgeball events get WrestleMania-style names like 'Immaculate Redemption' and 'WrestleJohnMania XXVI'",
-    "year": null,
+    "year": 2005,
     "category": "sports",
     "sentiment_polarity": 0.0
   },
@@ -79,7 +79,7 @@
   {
     "id": 12,
     "fact": "Cornhole stats tracked with Major League precision: 254-98, 38 four-bag cornholios",
-    "year": null,
+    "year": 2017,
     "category": "sports",
     "sentiment_polarity": 0.0625
   },
@@ -261,7 +261,7 @@
   {
     "id": 38,
     "fact": "Contracted Shingles at age 20",
-    "year": null,
+    "year": 2007,
     "category": "medical",
     "sentiment_polarity": 0.0
   },
@@ -359,14 +359,14 @@
   {
     "id": 52,
     "fact": "The post title 'The Timline of Tron VI' has a deliberate/accidental typo in 'Timline' that was never corrected",
-    "year": null,
+    "year": 2009,
     "category": "misc",
     "sentiment_polarity": 0.0
   },
   {
     "id": 53,
     "fact": "Author's car 'SUS15H' was named with a vanity reference",
-    "year": null,
+    "year": 2014,
     "category": "vehicle",
     "sentiment_polarity": 0.0
   },
@@ -400,7 +400,7 @@
   },
   {
     "id": 58,
-    "fact": "Carolina Panthers obliterated Giants 41-9 at the final Giants home game at Giants Stadium — 19th row center, 78,809 attendance (Dec 27, 2009)",
+    "fact": "Carolina Panthers obliterated Giants 41-9 at the final game ever at Giants Stadium — 19th row center, 78,809 attendance (Dec 27, 2009)",
     "year": 2009,
     "category": "misc",
     "sentiment_polarity": -0.1667
@@ -415,7 +415,7 @@
   {
     "id": 60,
     "fact": "Mrs. Amorino introduced author to wrestling via dusty VHS tapes showing Ric Flair winning the '92 Royal Rumble",
-    "year": null,
+    "year": 2007,
     "category": "misc",
     "sentiment_polarity": 0.05
   }

@@ -7,8 +7,7 @@
     "milestone": "First job, circa 2001-2002",
     "career_level": 0,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 2,
@@ -18,19 +17,17 @@
     "milestone": "Enrolled in Health Studies program (Sep 2004)",
     "career_level": 0,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 3,
     "year": 2005,
     "title": "EastCoastDodgeball Founder",
     "employer": "Self",
-    "milestone": "Created ECD, organized 500+ participants across 5 calendar years",
+    "milestone": "Created ECD, organized 500+ participants over 5 years",
     "career_level": 0,
     "vader_compound": 0.25,
-    "vader_pos": 0.222,
-    "vader_neg": 0.0
+    "vader_pos": 0.222
   },
   {
     "id": 4,
@@ -40,8 +37,7 @@
     "milestone": "Started Feb 27, 2007",
     "career_level": 1,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 5,
@@ -51,8 +47,7 @@
     "milestone": "Graduated Monmouth (3.66 major GPA, 3.49 cumulative). Inaugural HERO of the Year. Phillies PSA.",
     "career_level": 1,
     "vader_compound": 0.6523,
-    "vader_pos": 0.25,
-    "vader_neg": 0.0
+    "vader_pos": 0.25
   },
   {
     "id": 6,
@@ -62,8 +57,7 @@
     "milestone": "Career at Sunrise begins (Oct 31/Nov 1). Left Ocean Township (Oct 13 notice).",
     "career_level": 2,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 7,
@@ -73,8 +67,7 @@
     "milestone": "Employee of the Month (Jan 2012)",
     "career_level": 2,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 8,
@@ -84,8 +77,7 @@
     "milestone": "Corporate recognition",
     "career_level": 3,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 9,
@@ -95,8 +87,7 @@
     "milestone": "Job offer Sep 28 (phone call in bathroom), started Oct 22. Previous: Escapades Producer ended Oct 19.",
     "career_level": 2,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 10,
@@ -106,8 +97,7 @@
     "milestone": "Applied May, started Sept 28. Brian announced departure same week.",
     "career_level": 3,
     "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_pos": 0.0
   },
   {
     "id": 11,
@@ -117,8 +107,7 @@
     "milestone": "After competitive interview. Applied Jul 11, interviews Jul 19-21, accepted Jul 23.",
     "career_level": 4,
     "vader_compound": 0.4215,
-    "vader_pos": 0.275,
-    "vader_neg": 0.0
+    "vader_pos": 0.275
   },
   {
     "id": 12,
@@ -128,7 +117,6 @@
     "milestone": "Passed NJ certification exam — the top job",
     "career_level": 5,
     "vader_compound": 0.2023,
-    "vader_pos": 0.205,
-    "vader_neg": 0.0
+    "vader_pos": 0.205
   }
 ]

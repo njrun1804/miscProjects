@@ -125,16 +125,14 @@ function renderTraditions(traditions) {
     const sorted = [...traditions].sort((a, b) => (b.years || b.duration || 0) - (a.years || a.duration || 0));
 
     grid.innerHTML = sorted.map(t => {
-        const name = t.name || t.tradition || 'Unknown';
-        const startYear = t.start_year || t.year || '';
-        const duration = t.years || t.duration || '';
-        const status = t.status || (t.active !== false ? 'active' : 'ended');
+        const name = t.tradition || 'Unknown';
+        const yearsActive = t.years_active || '';
 
         return `
             <div class="tradition-card">
                 <div class="tradition-card__name">${name}</div>
-                ${startYear ? `<div class="tradition-card__years">Since ${startYear}</div>` : ''}
-                ${duration ? `<div class="tradition-card__duration">${duration} years${status === 'active' ? ' (active)' : ''}</div>` : ''}
+                ${t.description ? `<div class="tradition-card__description">${t.description}</div>` : ''}
+                ${yearsActive ? `<div class="tradition-card__years">${yearsActive}</div>` : ''}
             </div>
         `;
     }).join('');

@@ -1,0 +1,642 @@
+[
+  {
+    "id": 43,
+    "name": "Aimee Savoth",
+    "nicknames": "[]"
+  },
+  {
+    "id": 17,
+    "name": "Alison Bertsch",
+    "nicknames": "[]"
+  },
+  {
+    "id": 89,
+    "name": "Alison Bertsch Another",
+    "nicknames": "[]"
+  },
+  {
+    "id": 128,
+    "name": "Alysha Kelly",
+    "nicknames": "[]"
+  },
+  {
+    "id": 42,
+    "name": "Ashley",
+    "nicknames": "[]"
+  },
+  {
+    "id": 127,
+    "name": "Ashley Hoppe",
+    "nicknames": "[]"
+  },
+  {
+    "id": 57,
+    "name": "Bethany Schonberg",
+    "nicknames": "[]"
+  },
+  {
+    "id": 93,
+    "name": "Bill Plantz",
+    "nicknames": "[]"
+  },
+  {
+    "id": 126,
+    "name": "Bob Cornero",
+    "nicknames": "[]"
+  },
+  {
+    "id": 29,
+    "name": "Bobby Vetrano",
+    "nicknames": "[]"
+  },
+  {
+    "id": 70,
+    "name": "Brody Letsche",
+    "nicknames": "[]"
+  },
+  {
+    "id": 117,
+    "name": "Carty Derek",
+    "nicknames": "[]"
+  },
+  {
+    "id": 13,
+    "name": "Chris Adams",
+    "nicknames": "[]"
+  },
+  {
+    "id": 106,
+    "name": "Chris Adams As",
+    "nicknames": "[]"
+  },
+  {
+    "id": 112,
+    "name": "Chris Adams Here's",
+    "nicknames": "[]"
+  },
+  {
+    "id": 55,
+    "name": "Christina Guarino",
+    "nicknames": "[]"
+  },
+  {
+    "id": 119,
+    "name": "Cobra Ki",
+    "nicknames": "[]"
+  },
+  {
+    "id": 124,
+    "name": "Cornero On",
+    "nicknames": "[]"
+  },
+  {
+    "id": 40,
+    "name": "Dan Karen",
+    "nicknames": "[]"
+  },
+  {
+    "id": 9,
+    "name": "Dan Spengeman",
+    "nicknames": "[\"Spengeman\"]"
+  },
+  {
+    "id": 83,
+    "name": "Dan Spengeman's",
+    "nicknames": "[]"
+  },
+  {
+    "id": 74,
+    "name": "Dan Turner",
+    "nicknames": "[]"
+  },
+  {
+    "id": 113,
+    "name": "Dan Turner Word",
+    "nicknames": "[]"
+  },
+  {
+    "id": 60,
+    "name": "Darien Brown",
+    "nicknames": "[]"
+  },
+  {
+    "id": 24,
+    "name": "Derek Carty",
+    "nicknames": "[]"
+  },
+  {
+    "id": 100,
+    "name": "Derek Carty Fast",
+    "nicknames": "[]"
+  },
+  {
+    "id": 2,
+    "name": "Diana DiBuccio",
+    "nicknames": "[\"Di Buccio\", \"DiBuccio\", \"Diana Di\", \"Diana\", \"Dibuccio\"]"
+  },
+  {
+    "id": 37,
+    "name": "Eamon Fitzpatrick",
+    "nicknames": "[]"
+  },
+  {
+    "id": 73,
+    "name": "Elizabeth Nogueira",
+    "nicknames": "[]"
+  },
+  {
+    "id": 118,
+    "name": "Female Titan Sara",
+    "nicknames": "[]"
+  },
+  {
+    "id": 72,
+    "name": "Gerald Lewis",
+    "nicknames": "[]"
+  },
+  {
+    "id": 47,
+    "name": "Godynick",
+    "nicknames": "[]"
+  },
+  {
+    "id": 49,
+    "name": "Grant Cornero",
+    "nicknames": "[]"
+  },
+  {
+    "id": 122,
+    "name": "Herrera Those",
+    "nicknames": "[]"
+  },
+  {
+    "id": 84,
+    "name": "Jason Teitelbaum",
+    "nicknames": "[]"
+  },
+  {
+    "id": 109,
+    "name": "Jeff Heimbuch",
+    "nicknames": "[]"
+  },
+  {
+    "id": 108,
+    "name": "Jeff Semienski",
+    "nicknames": "[]"
+  },
+  {
+    "id": 97,
+    "name": "Jim Bulter",
+    "nicknames": "[]"
+  },
+  {
+    "id": 79,
+    "name": "Jim Butler",
+    "nicknames": "[]"
+  },
+  {
+    "id": 36,
+    "name": "Joanice",
+    "nicknames": "[]"
+  },
+  {
+    "id": 68,
+    "name": "Joanice Lima",
+    "nicknames": "[]"
+  },
+  {
+    "id": 50,
+    "name": "Joe Kelly",
+    "nicknames": "[]"
+  },
+  {
+    "id": 87,
+    "name": "Joey Kelly",
+    "nicknames": "[]"
+  },
+  {
+    "id": 52,
+    "name": "Joey Smalls",
+    "nicknames": "[]"
+  },
+  {
+    "id": 125,
+    "name": "Joey Smalls's",
+    "nicknames": "[]"
+  },
+  {
+    "id": 1,
+    "name": "John Tronolone",
+    "nicknames": "[\"KJohn\", \"KJohn Tronolone\", \"the Creation\", \"The Writer\", \"Tronolone\", \"the King\"]"
+  },
+  {
+    "id": 101,
+    "name": "John Tronolone It",
+    "nicknames": "[]"
+  },
+  {
+    "id": 41,
+    "name": "Jon Yochum",
+    "nicknames": "[]"
+  },
+  {
+    "id": 82,
+    "name": "Jonathan Ranchin",
+    "nicknames": "[]"
+  },
+  {
+    "id": 8,
+    "name": "Juan Londono",
+    "nicknames": "[\"Londono\"]"
+  },
+  {
+    "id": 44,
+    "name": "Julia Dennebaum",
+    "nicknames": "[]"
+  },
+  {
+    "id": 5,
+    "name": "Justin Pierce",
+    "nicknames": "[\"Pierce\", \"the Piercer\", \"The Piercer\"]"
+  },
+  {
+    "id": 107,
+    "name": "Justin Pierce Yet",
+    "nicknames": "[]"
+  },
+  {
+    "id": 22,
+    "name": "Justin Wolf",
+    "nicknames": "[]"
+  },
+  {
+    "id": 86,
+    "name": "Justin Wolf's",
+    "nicknames": "[]"
+  },
+  {
+    "id": 31,
+    "name": "Kathryn Nogueira",
+    "nicknames": "[]"
+  },
+  {
+    "id": 78,
+    "name": "Kathryn Nogueira Kevin",
+    "nicknames": "[]"
+  },
+  {
+    "id": 46,
+    "name": "Katie",
+    "nicknames": "[]"
+  },
+  {
+    "id": 90,
+    "name": "Katz In",
+    "nicknames": "[]"
+  },
+  {
+    "id": 62,
+    "name": "Kelly Oberto",
+    "nicknames": "[]"
+  },
+  {
+    "id": 69,
+    "name": "Kenny Jacobs",
+    "nicknames": "[]"
+  },
+  {
+    "id": 66,
+    "name": "Kerrin Marchese",
+    "nicknames": "[]"
+  },
+  {
+    "id": 14,
+    "name": "Kevin Adams",
+    "nicknames": "[\"The Annihilator\", \"the Annihilator\"]"
+  },
+  {
+    "id": 105,
+    "name": "Kevin Adams It's",
+    "nicknames": "[]"
+  },
+  {
+    "id": 11,
+    "name": "Kevin Fitzpatrick",
+    "nicknames": "[\"Fitz\"]"
+  },
+  {
+    "id": 4,
+    "name": "Kevin Megill",
+    "nicknames": "[\"Megill\"]"
+  },
+  {
+    "id": 63,
+    "name": "Kurt Gassner",
+    "nicknames": "[]"
+  },
+  {
+    "id": 64,
+    "name": "Kyle Carty",
+    "nicknames": "[]"
+  },
+  {
+    "id": 102,
+    "name": "Kyle Hirschklau",
+    "nicknames": "[]"
+  },
+  {
+    "id": 85,
+    "name": "Kylie Casteling",
+    "nicknames": "[]"
+  },
+  {
+    "id": 3,
+    "name": "Lauren Freda",
+    "nicknames": "[\"Lauren\"]"
+  },
+  {
+    "id": 19,
+    "name": "Lauren Stopa",
+    "nicknames": "[]"
+  },
+  {
+    "id": 111,
+    "name": "Lauren Stopa Looking",
+    "nicknames": "[]"
+  },
+  {
+    "id": 23,
+    "name": "Lauren Winston",
+    "nicknames": "[]"
+  },
+  {
+    "id": 81,
+    "name": "Legend Kevin Megill",
+    "nicknames": "[]"
+  },
+  {
+    "id": 20,
+    "name": "Lenny Herrera",
+    "nicknames": "[]"
+  },
+  {
+    "id": 110,
+    "name": "Lenny Herrera Talk",
+    "nicknames": "[]"
+  },
+  {
+    "id": 28,
+    "name": "Lima",
+    "nicknames": "[]"
+  },
+  {
+    "id": 98,
+    "name": "Lindsay Gough",
+    "nicknames": "[]"
+  },
+  {
+    "id": 71,
+    "name": "Liz Nogueira",
+    "nicknames": "[]"
+  },
+  {
+    "id": 54,
+    "name": "Mari Travassos",
+    "nicknames": "[]"
+  },
+  {
+    "id": 103,
+    "name": "Mark Enwistle",
+    "nicknames": "[]"
+  },
+  {
+    "id": 34,
+    "name": "Matt Brown",
+    "nicknames": "[]"
+  },
+  {
+    "id": 104,
+    "name": "Matt Brown It's",
+    "nicknames": "[]"
+  },
+  {
+    "id": 91,
+    "name": "Matt Larsen",
+    "nicknames": "[]"
+  },
+  {
+    "id": 26,
+    "name": "Melissa Kerr",
+    "nicknames": "[]"
+  },
+  {
+    "id": 77,
+    "name": "Melissa Kerr Liz",
+    "nicknames": "[]"
+  },
+  {
+    "id": 80,
+    "name": "Michael Butler",
+    "nicknames": "[]"
+  },
+  {
+    "id": 58,
+    "name": "Michael Edwards",
+    "nicknames": "[]"
+  },
+  {
+    "id": 10,
+    "name": "Michael Krott",
+    "nicknames": "[\"Michael Sputz Krott\", \"Krott\", \"Sputz\"]"
+  },
+  {
+    "id": 38,
+    "name": "Michael Rosinski",
+    "nicknames": "[\"Mike Rosinski\", \"Rosinski\"]"
+  },
+  {
+    "id": 32,
+    "name": "Michelle Mullins",
+    "nicknames": "[]"
+  },
+  {
+    "id": 56,
+    "name": "Mike Butler",
+    "nicknames": "[]"
+  },
+  {
+    "id": 76,
+    "name": "Mike Butler Alison",
+    "nicknames": "[]"
+  },
+  {
+    "id": 7,
+    "name": "Mike Edwards",
+    "nicknames": "[\"Edwards\"]"
+  },
+  {
+    "id": 116,
+    "name": "Nogueira Decimation",
+    "nicknames": "[]"
+  },
+  {
+    "id": 96,
+    "name": "Ocean Road Park",
+    "nicknames": "[]"
+  },
+  {
+    "id": 39,
+    "name": "Pam D'Luhy",
+    "nicknames": "[]"
+  },
+  {
+    "id": 61,
+    "name": "Pamela D'",
+    "nicknames": "[]"
+  },
+  {
+    "id": 75,
+    "name": "Pond Scum",
+    "nicknames": "[]"
+  },
+  {
+    "id": 51,
+    "name": "Ray Marzarella",
+    "nicknames": "[]"
+  },
+  {
+    "id": 114,
+    "name": "Ray Marzarella On",
+    "nicknames": "[]"
+  },
+  {
+    "id": 59,
+    "name": "Rob Avakian",
+    "nicknames": "[]"
+  },
+  {
+    "id": 35,
+    "name": "Rob Pellecchia",
+    "nicknames": "[]"
+  },
+  {
+    "id": 33,
+    "name": "Robert Brown",
+    "nicknames": "[]"
+  },
+  {
+    "id": 99,
+    "name": "Robert Brown Bad",
+    "nicknames": "[]"
+  },
+  {
+    "id": 6,
+    "name": "Ryan Letsche",
+    "nicknames": "[\"Letsche\"]"
+  },
+  {
+    "id": 65,
+    "name": "Ryan Mc",
+    "nicknames": "[]"
+  },
+  {
+    "id": 27,
+    "name": "Ryan McCrorey",
+    "nicknames": "[]"
+  },
+  {
+    "id": 45,
+    "name": "Ryan Rafferty",
+    "nicknames": "[]"
+  },
+  {
+    "id": 48,
+    "name": "Sara De",
+    "nicknames": "[]"
+  },
+  {
+    "id": 18,
+    "name": "Sara DeCuir",
+    "nicknames": "[]"
+  },
+  {
+    "id": 95,
+    "name": "Sara Decuir",
+    "nicknames": "[]"
+  },
+  {
+    "id": 15,
+    "name": "Sascha Basista",
+    "nicknames": "[\"Basista\"]"
+  },
+  {
+    "id": 88,
+    "name": "Sascha Basista Captains",
+    "nicknames": "[]"
+  },
+  {
+    "id": 115,
+    "name": "Sister It's",
+    "nicknames": "[]"
+  },
+  {
+    "id": 21,
+    "name": "Steve Adams",
+    "nicknames": "[]"
+  },
+  {
+    "id": 92,
+    "name": "Steve Adams It",
+    "nicknames": "[]"
+  },
+  {
+    "id": 120,
+    "name": "Strike Force",
+    "nicknames": "[]"
+  },
+  {
+    "id": 16,
+    "name": "Tom Adams",
+    "nicknames": "[\"the Punter\", \"The Punter\"]"
+  },
+  {
+    "id": 25,
+    "name": "Travis",
+    "nicknames": "[]"
+  },
+  {
+    "id": 53,
+    "name": "Travis Mills",
+    "nicknames": "[]"
+  },
+  {
+    "id": 12,
+    "name": "Valerie Winston",
+    "nicknames": "[\"Valerie\"]"
+  },
+  {
+    "id": 94,
+    "name": "Wesley Hebrew",
+    "nicknames": "[]"
+  },
+  {
+    "id": 123,
+    "name": "Winston It",
+    "nicknames": "[]"
+  },
+  {
+    "id": 121,
+    "name": "Wolf No",
+    "nicknames": "[]"
+  },
+  {
+    "id": 30,
+    "name": "Zach Katz",
+    "nicknames": "[]"
+  },
+  {
+    "id": 67,
+    "name": "Zack Berghoff",
+    "nicknames": "[]"
+  }
+]

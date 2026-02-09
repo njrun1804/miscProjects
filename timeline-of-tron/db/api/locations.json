@@ -1,0 +1,263 @@
+[
+  {
+    "id": 1,
+    "name": "Stratton, Vermont",
+    "location_type": "Ski destination",
+    "note": "Home away from home, 7+ consecutive years",
+    "latitude": 43.0428562,
+    "longitude": -72.9109334,
+    "country": "USA"
+  },
+  {
+    "id": 2,
+    "name": "Sunrise of Jackson",
+    "location_type": "Workplace",
+    "note": "Current employer \u2014 Executive Director",
+    "latitude": 39.0159893,
+    "longitude": -94.3790067,
+    "country": "USA"
+  },
+  {
+    "id": 3,
+    "name": "Sunrise of Wall",
+    "location_type": "Former workplace",
+    "note": null,
+    "latitude": 40.1584,
+    "longitude": -74.0677,
+    "country": "USA"
+  },
+  {
+    "id": 4,
+    "name": "Monmouth University",
+    "location_type": "College",
+    "note": "Graduated 2010",
+    "latitude": 40.2794106,
+    "longitude": -74.0068022,
+    "country": "USA"
+  },
+  {
+    "id": 5,
+    "name": "Madison Square Garden",
+    "location_type": "Entertainment venue",
+    "note": "Rangers, Knicks, Weezer concert",
+    "latitude": 40.7505129,
+    "longitude": -73.9935159,
+    "country": "USA"
+  },
+  {
+    "id": 6,
+    "name": "Mill Creek Court",
+    "location_type": "Home",
+    "note": "Closed Dec 18, 2023",
+    "latitude": 40.2,
+    "longitude": -74.05,
+    "country": "USA"
+  },
+  {
+    "id": 7,
+    "name": "Ocean Bay Diner",
+    "location_type": "Restaurant",
+    "note": "First meal with Rob, Jan 1, 2011",
+    "latitude": 39.9695807,
+    "longitude": -74.1325741,
+    "country": "USA"
+  },
+  {
+    "id": 8,
+    "name": "Seven Presidents Park",
+    "location_type": "Volunteer location",
+    "note": null,
+    "latitude": 40.3160888,
+    "longitude": -73.9769621,
+    "country": "USA"
+  },
+  {
+    "id": 9,
+    "name": "LBI (Long Beach Island)",
+    "location_type": "Beach/recreation",
+    "note": null,
+    "latitude": 39.6348655,
+    "longitude": -74.1855757,
+    "country": "USA"
+  },
+  {
+    "id": 10,
+    "name": "Shrewsbury Yacht Club",
+    "location_type": "Social venue",
+    "note": "Events with Yumi sushi, crab dip",
+    "latitude": 40.3687311,
+    "longitude": -74.0303658,
+    "country": "USA"
+  },
+  {
+    "id": 11,
+    "name": "Barnegat Lighthouse",
+    "location_type": "Landmark",
+    "note": null,
+    "latitude": 39.7643444,
+    "longitude": -74.1062076,
+    "country": "USA"
+  },
+  {
+    "id": 12,
+    "name": "Pittsburgh",
+    "location_type": "Travel destination",
+    "note": "Multiple visits 2024 (Upper St. Clair, McCandless)",
+    "latitude": 40.4406968,
+    "longitude": -80.0025666,
+    "country": "USA"
+  },
+  {
+    "id": 13,
+    "name": "Wall High School",
+    "location_type": "ECD home turf",
+    "note": "East Coast Dodgeball headquarters",
+    "latitude": 40.1687219,
+    "longitude": -74.0612494,
+    "country": "USA"
+  },
+  {
+    "id": 14,
+    "name": "Ocean Road Park",
+    "location_type": "Recreation",
+    "note": "Dodgeball, pickleball, volleyball venue",
+    "latitude": 43.0369025,
+    "longitude": -89.3701434,
+    "country": "USA"
+  },
+  {
+    "id": 15,
+    "name": "Monmouth Park Racetrack",
+    "location_type": "Entertainment",
+    "note": "Annual DiBuccio-Tronolone outing; 5th annual (2007) through 11th (2013)",
+    "latitude": 40.3090591,
+    "longitude": -74.0209449,
+    "country": "USA"
+  },
+  {
+    "id": 16,
+    "name": "Simko's Grille",
+    "location_type": "Restaurant",
+    "note": "Regular dining spot; birthday celebrations; Black Friday dinners",
+    "latitude": 40.2114,
+    "longitude": -74.065,
+    "country": "USA"
+  },
+  {
+    "id": 17,
+    "name": "Front St. Trattoria",
+    "location_type": "Restaurant",
+    "note": "Birthday dinners",
+    "latitude": 40.3487,
+    "longitude": -74.0662,
+    "country": "USA"
+  },
+  {
+    "id": 18,
+    "name": "The Sitting Duck",
+    "location_type": "Restaurant/bar",
+    "note": "Birthday celebrations; Spengeman feast; social gatherings",
+    "latitude": 40.2114,
+    "longitude": -74.065,
+    "country": "USA"
+  },
+  {
+    "id": 19,
+    "name": "Pete & Elda's",
+    "location_type": "Restaurant",
+    "note": "Late-night snacks; James Sullivan III memorial",
+    "latitude": 40.199097,
+    "longitude": -74.0289747,
+    "country": "USA"
+  },
+  {
+    "id": 20,
+    "name": "The Headliner",
+    "location_type": "Entertainment venue",
+    "note": "Introduced by Pamula (2007); Katie Grand birthday",
+    "latitude": 40.2114,
+    "longitude": -74.065,
+    "country": "USA"
+  },
+  {
+    "id": 21,
+    "name": "Snap Fitness",
+    "location_type": "Gym",
+    "note": "1.16 miles from home (joined Mar 10, 2010)",
+    "latitude": 40.18,
+    "longitude": -74.06,
+    "country": "USA"
+  },
+  {
+    "id": 22,
+    "name": "Jersey Shore Fitness",
+    "location_type": "Gym",
+    "note": "Where James Butler trained author (Sep 2007)",
+    "latitude": 40.2029315,
+    "longitude": -74.0190085,
+    "country": "USA"
+  },
+  {
+    "id": 23,
+    "name": "Atlantic City",
+    "location_type": "Entertainment destination",
+    "note": "FAB4 annual trips; bachelor parties; birthday celebrations; BeerFest",
+    "latitude": 39.3642852,
+    "longitude": -74.4229351,
+    "country": "USA"
+  },
+  {
+    "id": 24,
+    "name": "Oceanport",
+    "location_type": "Residence",
+    "note": "Moved Sep 1, 2014; NYE gatherings",
+    "latitude": 40.3181663,
+    "longitude": -74.0151382,
+    "country": "USA"
+  },
+  {
+    "id": 25,
+    "name": "11 Sandburg",
+    "location_type": "Residence",
+    "note": "Home base for various events",
+    "latitude": 40.22,
+    "longitude": -74.01,
+    "country": "USA"
+  },
+  {
+    "id": 26,
+    "name": "Holy Trinity Elementary School",
+    "location_type": "School",
+    "note": "Where Mrs. Amorino introduced author to wrestling",
+    "latitude": 42.6400914,
+    "longitude": -71.2992269,
+    "country": "USA"
+  },
+  {
+    "id": 27,
+    "name": "Monmouth Regional High School",
+    "location_type": "School",
+    "note": "'Falcon Years' 1998-2002; room 306 hallway with Phil Campanella",
+    "latitude": 40.3052153,
+    "longitude": -74.0885611,
+    "country": "USA"
+  },
+  {
+    "id": 28,
+    "name": "Brandywine",
+    "location_type": "Social venue",
+    "note": "Rupert's first visit (2018); cornhole",
+    "latitude": 38.6967833,
+    "longitude": -76.8477485,
+    "country": "USA"
+  },
+  {
+    "id": 29,
+    "name": "MarinaGrille (now RiverRock Restaurant)",
+    "location_type": "Restaurant",
+    "note": "Off Route 70 in Brick NJ; where author came out to KMJ (2008)",
+    "latitude": 40.096,
+    "longitude": -74.2088,
+    "country": "USA"
+  }
+]

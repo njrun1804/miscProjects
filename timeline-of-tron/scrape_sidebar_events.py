@@ -414,7 +414,7 @@ def main():
     events = scraper.scrape()
     
     # Save to JSON
-    output_path = '/sessions/upbeat-festive-hopper/mnt/Projects/miscProjects/timeline-of-tron/db/raw_ecd_posts/sidebar_events.json'
+    output_path = os.path.join(os.path.dirname(__file__), 'db')
     scraper.save_to_json(output_path)
     
     # Print detailed summary

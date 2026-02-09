@@ -149,7 +149,7 @@
     position: relative;
     z-index: 1;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 0;
     margin: var(--space-lg) auto 0;
     max-width: 800px;

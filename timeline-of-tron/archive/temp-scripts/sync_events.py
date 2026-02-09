@@ -7,7 +7,7 @@ Syncs all 5 event files to use the canonical ecd_events_v2.json (222 events).
 import json
 from pathlib import Path
 
-BASE_PATH = Path('/sessions/pensive-zen-darwin/mnt/timeline-of-tron/db/api')
+BASE_PATH = Path(os.path.join(os.path.dirname(__file__), '..', 'db'))
 
 def load_json(filepath):
     """Load JSON file."""

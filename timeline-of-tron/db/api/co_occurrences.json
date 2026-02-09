@@ -168,22 +168,6 @@
     "co_occurrence_count": 1
   },
   {
-    "id": 11,
-    "person_a": "Ma",
-    "person_b": "Mike 'Sputz' Krott",
-    "year": 2014,
-    "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 13,
-    "person_a": "Maggie",
-    "person_b": "Mike 'Sputz' Krott",
-    "year": 2014,
-    "context": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
-    "co_occurrence_count": 1
-  },
-  {
     "id": 14,
     "person_a": "John Tronolone",
     "person_b": "Johnny Nash",
@@ -296,42 +280,10 @@
     "co_occurrence_count": 1
   },
   {
-    "id": 41,
-    "person_a": "Rob",
-    "person_b": "Rob Phillips (Robert)",
-    "year": 2021,
-    "context": "",
-    "co_occurrence_count": 1
-  },
-  {
     "id": 42,
     "person_a": "Phil Campanella",
     "person_b": "Lauren Stopa",
     "year": 2021,
-    "context": "",
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 43,
-    "person_a": "Phil Campanella",
-    "person_b": "Rob Phillips (Robert)",
-    "year": 2021,
-    "context": "",
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 44,
-    "person_a": "Rob Phillips (Robert)",
-    "person_b": "Lauren Stopa",
-    "year": 2021,
-    "context": "",
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 45,
-    "person_a": "Ma",
-    "person_b": "Ryan Letsche (RyGuy)",
-    "year": 2008,
     "context": "",
     "co_occurrence_count": 1
   },
@@ -341,110 +293,6 @@
     "person_b": "Ryan Letsche",
     "year": 2008,
     "context": "",
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 47,
-    "person_a": "Ryan Letsche",
-    "person_b": "Ryan Letsche (RyGuy)",
-    "year": 2008,
-    "context": "",
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 48,
-    "person_a": "1",
-    "person_b": "10",
-    "year": 2011,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 49,
-    "person_a": "10",
-    "person_b": "17",
-    "year": 2021,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 50,
-    "person_a": "1",
-    "person_b": "17",
-    "year": 2021,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 51,
-    "person_a": "1",
-    "person_b": "2",
-    "year": 2008,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 52,
-    "person_a": "2",
-    "person_b": "10",
-    "year": 2008,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 53,
-    "person_a": "1",
-    "person_b": "13",
-    "year": 2012,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 54,
-    "person_a": "10",
-    "person_b": "13",
-    "year": 2012,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 55,
-    "person_a": "4",
-    "person_b": "10",
-    "year": 2022,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 56,
-    "person_a": "2",
-    "person_b": "17",
-    "year": 2007,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 57,
-    "person_a": "1",
-    "person_b": "15",
-    "year": 2015,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 58,
-    "person_a": "15",
-    "person_b": "17",
-    "year": 2016,
-    "context": null,
-    "co_occurrence_count": 1
-  },
-  {
-    "id": 59,
-    "person_a": "1",
-    "person_b": "5",
-    "year": 2010,
-    "context": null,
     "co_occurrence_count": 1
   }
 ]

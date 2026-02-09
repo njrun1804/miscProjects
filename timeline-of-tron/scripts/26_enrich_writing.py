@@ -7,7 +7,7 @@ Adds dominant_topic, topic_diversity, emotional_range, quote_density, thematic_c
 import sqlite3
 import math
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
 
 def calculate_entropy(weights):
     """Calculate Shannon entropy of topic weights (higher = more diverse)"""

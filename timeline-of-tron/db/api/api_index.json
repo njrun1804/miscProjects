@@ -1,13 +1,8 @@
 [
   {
-    "filename": "VALIDATION_METRICS.json",
-    "size_bytes": 5486,
-    "record_count": 1
-  },
-  {
     "filename": "api_index.json",
-    "size_bytes": 11376,
-    "record_count": 118
+    "size_bytes": 10732,
+    "record_count": 111
   },
   {
     "filename": "awards.json",
@@ -21,12 +16,12 @@
   },
   {
     "filename": "awards_enriched.json",
-    "size_bytes": 11498,
+    "size_bytes": 9640,
     "record_count": 51
   },
   {
     "filename": "career.json",
-    "size_bytes": 3469,
+    "size_bytes": 3205,
     "record_count": 12
   },
   {
@@ -36,18 +31,18 @@
   },
   {
     "filename": "chapter_milestones.json",
-    "size_bytes": 61493,
+    "size_bytes": 54269,
     "record_count": 19
   },
   {
     "filename": "co_occurrence_strength.json",
-    "size_bytes": 5887,
-    "record_count": 56
+    "size_bytes": 4044,
+    "record_count": 37
   },
   {
     "filename": "co_occurrences.json",
-    "size_bytes": 10018,
-    "record_count": 56
+    "size_bytes": 7189,
+    "record_count": 37
   },
   {
     "filename": "comeback_narrative.json",
@@ -65,29 +60,24 @@
     "record_count": 9
   },
   {
-    "filename": "constellation_data.json",
-    "size_bytes": 17687,
-    "record_count": 1
-  },
-  {
     "filename": "cruise_detail.json",
     "size_bytes": 1615,
     "record_count": 6
   },
   {
     "filename": "data_quality_report.json",
-    "size_bytes": 63751,
-    "record_count": 1
-  },
-  {
-    "filename": "dynasty_data.json",
-    "size_bytes": 19915,
+    "size_bytes": 54641,
     "record_count": 1
   },
   {
     "filename": "ecd_attendance_trends.json",
-    "size_bytes": 818,
-    "record_count": 8
+    "size_bytes": 2124,
+    "record_count": 21
+  },
+  {
+    "filename": "ecd_awards.json",
+    "size_bytes": 6763,
+    "record_count": 27
   },
   {
     "filename": "ecd_awards_full.json",
@@ -95,19 +85,14 @@
     "record_count": 27
   },
   {
-    "filename": "ecd_awards_v2.json",
-    "size_bytes": 6763,
-    "record_count": 27
-  },
-  {
     "filename": "ecd_community_narrative.json",
-    "size_bytes": 7390,
+    "size_bytes": 6229,
     "record_count": 21
   },
   {
     "filename": "ecd_community_phases.json",
-    "size_bytes": 518,
-    "record_count": 5
+    "size_bytes": 98,
+    "record_count": 1
   },
   {
     "filename": "ecd_emotion_distribution.json",
@@ -116,23 +101,18 @@
   },
   {
     "filename": "ecd_era_summary.json",
-    "size_bytes": 542,
-    "record_count": 4
+    "size_bytes": 935,
+    "record_count": 7
   },
   {
     "filename": "ecd_events.json",
-    "size_bytes": 77125,
-    "record_count": 168
+    "size_bytes": 73594,
+    "record_count": 222
   },
   {
     "filename": "ecd_events_full.json",
-    "size_bytes": 77125,
-    "record_count": 168
-  },
-  {
-    "filename": "ecd_events_v2.json",
-    "size_bytes": 77125,
-    "record_count": 168
+    "size_bytes": 73594,
+    "record_count": 222
   },
   {
     "filename": "ecd_fundraisers.json",
@@ -140,29 +120,19 @@
     "record_count": 3
   },
   {
-    "filename": "ecd_fundraisers_full.json",
-    "size_bytes": 530,
-    "record_count": 3
-  },
-  {
     "filename": "ecd_game_results.json",
-    "size_bytes": 27141,
-    "record_count": 99
+    "size_bytes": 27935,
+    "record_count": 91
   },
   {
     "filename": "ecd_highlights.json",
-    "size_bytes": 18355,
+    "size_bytes": 14855,
     "record_count": 100
   },
   {
-    "filename": "ecd_main_events.json",
-    "size_bytes": 901,
-    "record_count": 4
-  },
-  {
     "filename": "ecd_match_results.json",
-    "size_bytes": 27141,
-    "record_count": 99
+    "size_bytes": 27935,
+    "record_count": 91
   },
   {
     "filename": "ecd_player_network.json",
@@ -191,7 +161,7 @@
   },
   {
     "filename": "ecd_posts.json",
-    "size_bytes": 305922,
+    "size_bytes": 287492,
     "record_count": 527
   },
   {
@@ -221,18 +191,18 @@
   },
   {
     "filename": "ecd_stats_dashboard.json",
-    "size_bytes": 17881,
+    "size_bytes": 19007,
     "record_count": 1
   },
   {
     "filename": "ecd_theme_distribution.json",
-    "size_bytes": 333496,
+    "size_bytes": 314012,
     "record_count": 1
   },
   {
     "filename": "ecd_timeline.json",
-    "size_bytes": 77125,
-    "record_count": 168
+    "size_bytes": 73594,
+    "record_count": 222
   },
   {
     "filename": "emotion_distribution.json",
@@ -246,12 +216,12 @@
   },
   {
     "filename": "epic_numbers.json",
-    "size_bytes": 2555,
+    "size_bytes": 2224,
     "record_count": 18
   },
   {
     "filename": "eras.json",
-    "size_bytes": 6979,
+    "size_bytes": 7831,
     "record_count": 23
   },
   {
@@ -271,7 +241,7 @@
   },
   {
     "filename": "heros_journey_narrative.json",
-    "size_bytes": 217907,
+    "size_bytes": 188373,
     "record_count": 9
   },
   {
@@ -320,11 +290,6 @@
     "record_count": 29
   },
   {
-    "filename": "medical_comeback_pairs.json",
-    "size_bytes": 2456,
-    "record_count": 8
-  },
-  {
     "filename": "medical_events.json",
     "size_bytes": 4599,
     "record_count": 14
@@ -336,28 +301,23 @@
   },
   {
     "filename": "milestone_people.json",
-    "size_bytes": 126583,
+    "size_bytes": 101449,
     "record_count": 226
   },
   {
     "filename": "milestones.json",
-    "size_bytes": 119840,
+    "size_bytes": 94706,
     "record_count": 226
   },
   {
     "filename": "milestones_enriched.json",
-    "size_bytes": 119840,
+    "size_bytes": 94706,
     "record_count": 226
   },
   {
     "filename": "name_aliases.json",
     "size_bytes": 9922,
     "record_count": 128
-  },
-  {
-    "filename": "name_issues.json",
-    "size_bytes": 3447,
-    "record_count": 1
   },
   {
     "filename": "ner_entities.json",
@@ -371,7 +331,7 @@
   },
   {
     "filename": "people.json",
-    "size_bytes": 63180,
+    "size_bytes": 56282,
     "record_count": 164
   },
   {
@@ -381,17 +341,17 @@
   },
   {
     "filename": "people_highlights.json",
-    "size_bytes": 9001,
+    "size_bytes": 5676,
     "record_count": 46
   },
   {
     "filename": "people_importance_scores.json",
-    "size_bytes": 25298,
+    "size_bytes": 21362,
     "record_count": 164
   },
   {
     "filename": "people_profiles.json",
-    "size_bytes": 125074,
+    "size_bytes": 112199,
     "record_count": 164
   },
   {
@@ -426,7 +386,7 @@
   },
   {
     "filename": "relationship_constellation.json",
-    "size_bytes": 35244,
+    "size_bytes": 35238,
     "record_count": 1
   },
   {
@@ -441,17 +401,17 @@
   },
   {
     "filename": "schema_info.json",
-    "size_bytes": 90577,
+    "size_bytes": 77775,
     "record_count": 1
   },
   {
     "filename": "sentiment_by_milestone_type.json",
-    "size_bytes": 1469,
+    "size_bytes": 830,
     "record_count": 16
   },
   {
     "filename": "sentiment_timeline.json",
-    "size_bytes": 2727,
+    "size_bytes": 1875,
     "record_count": 23
   },
   {
@@ -466,7 +426,7 @@
   },
   {
     "filename": "sports.json",
-    "size_bytes": 5084,
+    "size_bytes": 5106,
     "record_count": 26
   },
   {
@@ -506,12 +466,12 @@
   },
   {
     "filename": "traditions.json",
-    "size_bytes": 3453,
+    "size_bytes": 2825,
     "record_count": 14
   },
   {
     "filename": "travel.json",
-    "size_bytes": 15400,
+    "size_bytes": 11337,
     "record_count": 34
   },
   {
@@ -521,7 +481,7 @@
   },
   {
     "filename": "travel_sentiment_by_location.json",
-    "size_bytes": 2774,
+    "size_bytes": 1993,
     "record_count": 29
   },
   {
@@ -540,11 +500,6 @@
     "record_count": 13
   },
   {
-    "filename": "vault_data.json",
-    "size_bytes": 34066,
-    "record_count": 1
-  },
-  {
     "filename": "writing_evolution.json",
     "size_bytes": 8103,
     "record_count": 21
@@ -561,7 +516,7 @@
   },
   {
     "filename": "year_deep_dive.json",
-    "size_bytes": 8668,
+    "size_bytes": 8094,
     "record_count": 23
   },
   {
@@ -581,22 +536,22 @@
   },
   {
     "filename": "year_summaries.json",
-    "size_bytes": 8139,
+    "size_bytes": 7565,
     "record_count": 23
   },
   {
     "filename": "year_summary.json",
-    "size_bytes": 8139,
+    "size_bytes": 7565,
     "record_count": 23
   },
   {
     "filename": "year_transitions.json",
-    "size_bytes": 6587,
+    "size_bytes": 4827,
     "record_count": 22
   },
   {
     "filename": "yearly_sentiment_trend.json",
-    "size_bytes": 1895,
+    "size_bytes": 984,
     "record_count": 23
   }
 ]

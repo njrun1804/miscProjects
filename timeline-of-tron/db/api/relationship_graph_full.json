@@ -1,0 +1,742 @@
+[
+  {
+    "id": 1,
+    "person_name": "The Pops",
+    "connected_to": "John Tronolone",
+    "relationship_type": "family",
+    "weight": 5,
+    "first_year": 2007,
+    "last_year": 2017,
+    "years_span": 11
+  },
+  {
+    "id": 2,
+    "person_name": "Michael",
+    "connected_to": "John Tronolone",
+    "relationship_type": "family",
+    "weight": 2,
+    "first_year": 2010,
+    "last_year": 2018,
+    "years_span": 9
+  },
+  {
+    "id": 3,
+    "person_name": "Grace",
+    "connected_to": "John Tronolone",
+    "relationship_type": "family",
+    "weight": 1,
+    "first_year": 2020,
+    "last_year": 2020,
+    "years_span": 1
+  },
+  {
+    "id": 4,
+    "person_name": "Megan",
+    "connected_to": "John Tronolone",
+    "relationship_type": "family",
+    "weight": 2,
+    "first_year": 2020,
+    "last_year": 2022,
+    "years_span": 3
+  },
+  {
+    "id": 5,
+    "person_name": "Julian",
+    "connected_to": "John Tronolone",
+    "relationship_type": "family",
+    "weight": 2,
+    "first_year": 2019,
+    "last_year": 2024,
+    "years_span": 6
+  },
+  {
+    "id": 6,
+    "person_name": "Lawrence",
+    "connected_to": "John Tronolone",
+    "relationship_type": "family",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 7,
+    "person_name": "Rob",
+    "connected_to": "John Tronolone",
+    "relationship_type": "partner",
+    "weight": 12,
+    "first_year": 2011,
+    "last_year": 2021,
+    "years_span": 15
+  },
+  {
+    "id": 8,
+    "person_name": "Valerie Winston (ValPal)",
+    "connected_to": "John Tronolone",
+    "relationship_type": "inner_circle",
+    "weight": 1,
+    "first_year": 2022,
+    "last_year": 2022,
+    "years_span": 1
+  },
+  {
+    "id": 9,
+    "person_name": "Kevin & Leah (KMJ & LN)",
+    "connected_to": "John Tronolone",
+    "relationship_type": "inner_circle",
+    "weight": 2,
+    "first_year": 2017,
+    "last_year": 2020,
+    "years_span": 4
+  },
+  {
+    "id": 10,
+    "person_name": "Rupert",
+    "connected_to": "John Tronolone",
+    "relationship_type": "inner_circle",
+    "weight": 2,
+    "first_year": 2011,
+    "last_year": 2012,
+    "years_span": 2
+  },
+  {
+    "id": 11,
+    "person_name": "Dan Spengeman",
+    "connected_to": "John Tronolone",
+    "relationship_type": "inner_circle",
+    "weight": 2,
+    "first_year": 2015,
+    "last_year": 2018,
+    "years_span": 4
+  },
+  {
+    "id": 12,
+    "person_name": "Diana DiBuccio",
+    "connected_to": "John Tronolone",
+    "relationship_type": "inner_circle",
+    "weight": 4,
+    "first_year": 2008,
+    "last_year": 2022,
+    "years_span": 15
+  },
+  {
+    "id": 13,
+    "person_name": "Lauren Winston",
+    "connected_to": "John Tronolone",
+    "relationship_type": "inner_circle",
+    "weight": 3,
+    "first_year": 2007,
+    "last_year": 2021,
+    "years_span": 15
+  },
+  {
+    "id": 14,
+    "person_name": "Brian",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2020,
+    "last_year": 2020,
+    "years_span": 1
+  },
+  {
+    "id": 15,
+    "person_name": "Melissa Kerr",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2009,
+    "last_year": 2009,
+    "years_span": 1
+  },
+  {
+    "id": 16,
+    "person_name": "Danny Sponge",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 2,
+    "first_year": 2015,
+    "last_year": 2018,
+    "years_span": 4
+  },
+  {
+    "id": 17,
+    "person_name": "Grandma Theresa",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2013,
+    "last_year": 2013,
+    "years_span": 1
+  },
+  {
+    "id": 18,
+    "person_name": "Johnny Nash",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2014,
+    "last_year": 2014,
+    "years_span": 1
+  },
+  {
+    "id": 19,
+    "person_name": "Maggie",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 2,
+    "first_year": 2014,
+    "last_year": 2018,
+    "years_span": 5
+  },
+  {
+    "id": 20,
+    "person_name": "Arthur Knott (Artie)",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2018,
+    "last_year": 2018,
+    "years_span": 1
+  },
+  {
+    "id": 21,
+    "person_name": "Matt (Physical Therapist)",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2017,
+    "last_year": 2017,
+    "years_span": 1
+  },
+  {
+    "id": 22,
+    "person_name": "Blake",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2020,
+    "last_year": 2020,
+    "years_span": 1
+  },
+  {
+    "id": 23,
+    "person_name": "Matt (introduced Jul 3, 2019)",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2017,
+    "last_year": 2017,
+    "years_span": 1
+  },
+  {
+    "id": 24,
+    "person_name": "Lauren Stopa",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 25,
+    "person_name": "Rob",
+    "connected_to": "John Tronolone",
+    "relationship_type": "other",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 26,
+    "person_name": "John Tronolone",
+    "connected_to": "John Tronolone",
+    "relationship_type": "inner_circle",
+    "weight": 1,
+    "first_year": 2019,
+    "last_year": 2019,
+    "years_span": 1
+  },
+  {
+    "id": 27,
+    "person_name": "Ma",
+    "connected_to": "John Tronolone",
+    "relationship_type": "family",
+    "weight": 8,
+    "first_year": 2004,
+    "last_year": 2025,
+    "years_span": 22
+  },
+  {
+    "id": 28,
+    "person_name": "Lauren Stopa",
+    "connected_to": "Lauren Winston",
+    "relationship_type": "co-occurrence",
+    "weight": 5,
+    "first_year": 2007,
+    "last_year": 2021,
+    "years_span": 15
+  },
+  {
+    "id": 29,
+    "person_name": "Ma",
+    "connected_to": "Michael",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2010,
+    "last_year": 2018,
+    "years_span": 9
+  },
+  {
+    "id": 30,
+    "person_name": "Cousin Nick & Samantha",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2011,
+    "last_year": 2011,
+    "years_span": 1
+  },
+  {
+    "id": 31,
+    "person_name": "Grandma Theresa",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2013,
+    "last_year": 2013,
+    "years_span": 1
+  },
+  {
+    "id": 32,
+    "person_name": "Grandma Irene",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2013,
+    "last_year": 2013,
+    "years_span": 1
+  },
+  {
+    "id": 33,
+    "person_name": "Grandma 'Mama' Blanca",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2013,
+    "last_year": 2013,
+    "years_span": 1
+  },
+  {
+    "id": 34,
+    "person_name": "Grandma Irene",
+    "connected_to": "Grandma Theresa",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2013,
+    "last_year": 2013,
+    "years_span": 1
+  },
+  {
+    "id": 35,
+    "person_name": "Grandma 'Mama' Blanca",
+    "connected_to": "Grandma Theresa",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2013,
+    "last_year": 2013,
+    "years_span": 1
+  },
+  {
+    "id": 36,
+    "person_name": "Grandma 'Mama' Blanca",
+    "connected_to": "Grandma Irene",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2013,
+    "last_year": 2013,
+    "years_span": 1
+  },
+  {
+    "id": 37,
+    "person_name": "Diana DiBuccio",
+    "connected_to": "Valerie Winston (ValPal)",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2014,
+    "last_year": 2022,
+    "years_span": 9
+  },
+  {
+    "id": 38,
+    "person_name": "Ma",
+    "connected_to": "Mike Krott",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2014,
+    "last_year": 2014,
+    "years_span": 1
+  },
+  {
+    "id": 39,
+    "person_name": "Ma",
+    "connected_to": "Maggie",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2014,
+    "last_year": 2018,
+    "years_span": 5
+  },
+  {
+    "id": 40,
+    "person_name": "Maggie",
+    "connected_to": "Mike Krott",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2014,
+    "last_year": 2014,
+    "years_span": 1
+  },
+  {
+    "id": 41,
+    "person_name": "John Tronolone",
+    "connected_to": "Johnny Nash",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2014,
+    "last_year": 2014,
+    "years_span": 1
+  },
+  {
+    "id": 42,
+    "person_name": "Dan Spengeman",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 5,
+    "first_year": 2015,
+    "last_year": 2018,
+    "years_span": 4
+  },
+  {
+    "id": 43,
+    "person_name": "Danny Sponge",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 5,
+    "first_year": 2015,
+    "last_year": 2018,
+    "years_span": 4
+  },
+  {
+    "id": 44,
+    "person_name": "Dan Spengeman",
+    "connected_to": "Danny Sponge",
+    "relationship_type": "co-occurrence",
+    "weight": 5,
+    "first_year": 2015,
+    "last_year": 2018,
+    "years_span": 4
+  },
+  {
+    "id": 45,
+    "person_name": "Kevin & Leah (KMJ & LN)",
+    "connected_to": "Kevin Adams",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2017,
+    "last_year": 2020,
+    "years_span": 4
+  },
+  {
+    "id": 46,
+    "person_name": "Kevin & Leah (KMJ & LN)",
+    "connected_to": "Kevin Megill (KMJ)",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2017,
+    "last_year": 2020,
+    "years_span": 4
+  },
+  {
+    "id": 47,
+    "person_name": "Kevin Adams",
+    "connected_to": "Kevin Megill (KMJ)",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2017,
+    "last_year": 2020,
+    "years_span": 4
+  },
+  {
+    "id": 48,
+    "person_name": "Ma",
+    "connected_to": "Matt (Physical Therapist)",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2017,
+    "last_year": 2017,
+    "years_span": 1
+  },
+  {
+    "id": 49,
+    "person_name": "Ma",
+    "connected_to": "Matt (introduced Jul 3, 2019)",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2017,
+    "last_year": 2017,
+    "years_span": 1
+  },
+  {
+    "id": 50,
+    "person_name": "Matt (Physical Therapist)",
+    "connected_to": "Matt (introduced Jul 3, 2019)",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2017,
+    "last_year": 2017,
+    "years_span": 1
+  },
+  {
+    "id": 51,
+    "person_name": "Ma",
+    "connected_to": "Terra Bergquist",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2018,
+    "last_year": 2018,
+    "years_span": 1
+  },
+  {
+    "id": 52,
+    "person_name": "Maggie",
+    "connected_to": "Michael",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2018,
+    "last_year": 2018,
+    "years_span": 1
+  },
+  {
+    "id": 53,
+    "person_name": "Julia Dennabuam",
+    "connected_to": "Julian",
+    "relationship_type": "co-occurrence",
+    "weight": 2,
+    "first_year": 2019,
+    "last_year": 2024,
+    "years_span": 6
+  },
+  {
+    "id": 54,
+    "person_name": "John Tronolone",
+    "connected_to": "Julian",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2019,
+    "last_year": 2019,
+    "years_span": 1
+  },
+  {
+    "id": 55,
+    "person_name": "John Tronolone",
+    "connected_to": "Julia Dennabuam",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2019,
+    "last_year": 2019,
+    "years_span": 1
+  },
+  {
+    "id": 56,
+    "person_name": "Kevin & Leah (KMJ & LN)",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2020,
+    "last_year": 2020,
+    "years_span": 1
+  },
+  {
+    "id": 57,
+    "person_name": "Kevin Adams",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2020,
+    "last_year": 2020,
+    "years_span": 1
+  },
+  {
+    "id": 58,
+    "person_name": "Kevin Megill (KMJ)",
+    "connected_to": "Ma",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2020,
+    "last_year": 2020,
+    "years_span": 1
+  },
+  {
+    "id": 59,
+    "person_name": "Grace",
+    "connected_to": "Megan",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2020,
+    "last_year": 2020,
+    "years_span": 1
+  },
+  {
+    "id": 60,
+    "person_name": "Juan Londono (Muffin Man)",
+    "connected_to": "Steve and Stacey",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2009,
+    "last_year": 2009,
+    "years_span": 1
+  },
+  {
+    "id": 61,
+    "person_name": "Juan Londono (Muffin Man)",
+    "connected_to": "Steve Pham",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2009,
+    "last_year": 2009,
+    "years_span": 1
+  },
+  {
+    "id": 62,
+    "person_name": "Juan Londono (Muffin Man)",
+    "connected_to": "Juan Londono (Muffin Man)",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2009,
+    "last_year": 2009,
+    "years_span": 1
+  },
+  {
+    "id": 63,
+    "person_name": "Steve Pham",
+    "connected_to": "Steve and Stacey",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2009,
+    "last_year": 2009,
+    "years_span": 1
+  },
+  {
+    "id": 64,
+    "person_name": "Juan Londono (Muffin Man)",
+    "connected_to": "Steve and Stacey",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2009,
+    "last_year": 2009,
+    "years_span": 1
+  },
+  {
+    "id": 65,
+    "person_name": "Juan Londono (Muffin Man)",
+    "connected_to": "Steve Pham",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2009,
+    "last_year": 2009,
+    "years_span": 1
+  },
+  {
+    "id": 66,
+    "person_name": "Phil Campanella",
+    "connected_to": "Rob",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 67,
+    "person_name": "Rob",
+    "connected_to": "Lauren Stopa",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 68,
+    "person_name": "Rob",
+    "connected_to": "Rob",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 69,
+    "person_name": "Phil Campanella",
+    "connected_to": "Lauren Stopa",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 70,
+    "person_name": "Phil Campanella",
+    "connected_to": "Rob",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 71,
+    "person_name": "Rob",
+    "connected_to": "Lauren Stopa",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2021,
+    "last_year": 2021,
+    "years_span": 1
+  },
+  {
+    "id": 72,
+    "person_name": "Ma",
+    "connected_to": "Ryan Letsche",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2008,
+    "last_year": 2008,
+    "years_span": 1
+  },
+  {
+    "id": 73,
+    "person_name": "Ma",
+    "connected_to": "Ryan Letsche",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2008,
+    "last_year": 2008,
+    "years_span": 1
+  },
+  {
+    "id": 74,
+    "person_name": "Ryan Letsche",
+    "connected_to": "Ryan Letsche",
+    "relationship_type": "co-occurrence",
+    "weight": 1,
+    "first_year": 2008,
+    "last_year": 2008,
+    "years_span": 1
+  }
+]

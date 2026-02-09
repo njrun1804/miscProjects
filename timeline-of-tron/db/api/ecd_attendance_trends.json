@@ -1,50 +1,128 @@
 [
   {
     "year": 2005,
-    "events": 7,
-    "avg_attendance": 50.285714285714285,
-    "peak_attendance": 147
+    "events": 21,
+    "avg_attendance": 83.83333333333333,
+    "peak_attendance": 180
   },
   {
     "year": 2006,
-    "events": 15,
-    "avg_attendance": 48.333333333333336,
+    "events": 43,
+    "avg_attendance": 36.27272727272727,
     "peak_attendance": 190
   },
   {
     "year": 2007,
+    "events": 55,
+    "avg_attendance": 34.63157894736842,
+    "peak_attendance": 180
+  },
+  {
+    "year": 2008,
+    "events": 55,
+    "avg_attendance": 25.0,
+    "peak_attendance": 39
+  },
+  {
+    "year": 2009,
     "events": 2,
+    "avg_attendance": 36.5,
+    "peak_attendance": 40
+  },
+  {
+    "year": 2010,
+    "events": 5,
+    "avg_attendance": 37.0,
+    "peak_attendance": 41
+  },
+  {
+    "year": 2011,
+    "events": 4,
+    "avg_attendance": 24.0,
+    "peak_attendance": 24
+  },
+  {
+    "year": 2012,
+    "events": 6,
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2013,
+    "events": 7,
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2014,
+    "events": 2,
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2015,
+    "events": 5,
+    "avg_attendance": 25.0,
+    "peak_attendance": 29
+  },
+  {
+    "year": 2016,
+    "events": 3,
     "avg_attendance": 23.0,
     "peak_attendance": 24
   },
   {
-    "year": 2008,
-    "events": 23,
-    "avg_attendance": 30.0,
-    "peak_attendance": 180
-  },
-  {
-    "year": 2010,
-    "events": 4,
-    "avg_attendance": 32.25,
-    "peak_attendance": 39
-  },
-  {
-    "year": 2011,
+    "year": 2017,
     "events": 2,
-    "avg_attendance": 31.0,
-    "peak_attendance": 39
+    "avg_attendance": 23.0,
+    "peak_attendance": 23
   },
   {
-    "year": 2012,
-    "events": 1,
-    "avg_attendance": 19.0,
-    "peak_attendance": 19
+    "year": 2018,
+    "events": 2,
+    "avg_attendance": 30.0,
+    "peak_attendance": 30
   },
   {
-    "year": 2013,
+    "year": 2019,
+    "events": 2,
+    "avg_attendance": 18.0,
+    "peak_attendance": 18
+  },
+  {
+    "year": 2020,
     "events": 1,
-    "avg_attendance": 9.0,
-    "peak_attendance": 9
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2021,
+    "events": 1,
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2022,
+    "events": 2,
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2023,
+    "events": 1,
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2024,
+    "events": 1,
+    "avg_attendance": null,
+    "peak_attendance": null
+  },
+  {
+    "year": 2025,
+    "events": 2,
+    "avg_attendance": null,
+    "peak_attendance": null
   }
 ]

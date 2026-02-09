@@ -32,7 +32,7 @@
       "id": 2,
       "name": "The Pops",
       "category": "family",
-      "first_year": 1957,
+      "first_year": 0,
       "importance_score": 35.0
     },
     {
@@ -53,7 +53,7 @@
       "id": 5,
       "name": "Michael",
       "category": "family",
-      "first_year": 1987,
+      "first_year": 0,
       "importance_score": 26.0
     },
     {
@@ -263,13 +263,6 @@
       "id": 87,
       "name": "Blake",
       "category": "other",
-      "first_year": 0,
-      "importance_score": 4.0
-    },
-    {
-      "id": 131,
-      "name": "Kevin Megill",
-      "category": "ecd_player",
       "first_year": 0,
       "importance_score": 4.0
     },
@@ -1072,13 +1065,6 @@
       "importance_score": 0.0
     },
     {
-      "id": 160,
-      "name": "Julia Dennebaum",
-      "category": "ecd_player",
-      "first_year": 0,
-      "importance_score": 0.0
-    },
-    {
       "id": 161,
       "name": "Ryan Rafferty",
       "category": "ecd_player",
@@ -1323,13 +1309,6 @@
       "target": "John Tronolone",
       "weight": 1,
       "relationship_type": "other",
-      "years_span": 1
-    },
-    {
-      "source": "John Tronolone",
-      "target": "John Tronolone",
-      "weight": 1,
-      "relationship_type": "inner_circle",
       "years_span": 1
     },
     {
@@ -1578,13 +1557,6 @@
       "years_span": 1
     },
     {
-      "source": "Juan Londono (Muffin Man)",
-      "target": "Juan Londono (Muffin Man)",
-      "weight": 1,
-      "relationship_type": "co-occurrence",
-      "years_span": 1
-    },
-    {
       "source": "Steve Pham",
       "target": "Steve and Stacey",
       "weight": 1,
@@ -1620,13 +1592,6 @@
       "years_span": 1
     },
     {
-      "source": "Rob",
-      "target": "Rob",
-      "weight": 1,
-      "relationship_type": "co-occurrence",
-      "years_span": 1
-    },
-    {
       "source": "Phil Campanella",
       "target": "Lauren Stopa",
       "weight": 1,
@@ -1662,7 +1627,7 @@
       "years_span": 1
     },
     {
-      "source": "Ryan Letsche",
+      "source": "Ma",
       "target": "Ryan Letsche",
       "weight": 1,
       "relationship_type": "co-occurrence",

@@ -4,125 +4,97 @@
     "tradition": "WWE Events",
     "years_active": "22",
     "description": "Core identity since before the Timelines began",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 2,
     "tradition": "East Coast Dodgeball",
-    "years_active": "21",
+    "years_active": "18",
     "description": "Friend group activity evolved into community institution with WrestleMania-style names",
-    "vader_compound": 0.4939,
-    "vader_pos": 0.262,
-    "vader_neg": 0.0
+    "vader_compound": 0.4939
   },
   {
     "id": 3,
     "tradition": "Vermont Skiing (Stratton)",
     "years_active": "7+ consecutive",
     "description": "Stratton as 'home away from home'",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 4,
     "tradition": "January Publishing Ritual",
     "years_active": "22",
     "description": "Timeline posts drop early January, median date Jan 6-7",
-    "vader_compound": -0.2732,
-    "vader_pos": 0.0,
-    "vader_neg": 0.208
+    "vader_compound": -0.2732
   },
   {
     "id": 5,
     "tradition": "Annual Awards",
     "years_active": "12",
     "description": "Personal voting tradition — Music Artist, Comedian, Best Laughs, Shocker of the Year",
-    "vader_compound": 0.8555,
-    "vader_pos": 0.485,
-    "vader_neg": 0.078
+    "vader_compound": 0.8555
   },
   {
     "id": 6,
     "tradition": "Famous Faces Game",
     "years_active": "10",
     "description": "20 editions, 9 victories, 45 contestants",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 7,
     "tradition": "ℚ Quote Callouts",
     "years_active": "Later years",
     "description": "Evolved format feature in recent Timelines",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 8,
     "tradition": "WrestleMania BeforeBash",
     "years_active": "2005+",
     "description": "Pre-WrestleMania party. 1st had 25 people (2007). Bowling involved. Annual.",
-    "vader_compound": 0.4019,
-    "vader_pos": 0.231,
-    "vader_neg": 0.0
+    "vader_compound": 0.4019
   },
   {
     "id": 9,
     "tradition": "Monmouth Park Racetrack Outing",
     "years_active": "2003-2013+",
     "description": "Annual DiBuccio-Tronolone event. 5th annual (2007) through 11th (2013).",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 10,
     "tradition": "Birthday Multi-Day Celebrations",
     "years_active": "22",
     "description": "Birthday (Sep 27) always celebrated across multiple days with different friend groups",
-    "vader_compound": 0.7845,
-    "vader_pos": 0.408,
-    "vader_neg": 0.0
+    "vader_compound": 0.7845
   },
   {
     "id": 11,
     "tradition": "Annual Cruise",
     "years_active": "2013-2018",
     "description": "6 cruises in 6 consecutive years (2013-2018)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 12,
     "tradition": "SkyDive",
     "years_active": "2009-2020",
     "description": "4 jumps total: 2009 (solo with brother), 2009 (Cloud Nine group of 9), 2010, 2020 (mother witnessed)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 13,
     "tradition": "FINS Friday",
     "years_active": "2006+",
     "description": "Weekly gatherings since March 2006",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   },
   {
     "id": 14,
     "tradition": "Winston Family NYE",
     "years_active": "2008-2009+",
     "description": "Recurring New Year's Eve celebration",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0
+    "vader_compound": 0.0
   }
 ]

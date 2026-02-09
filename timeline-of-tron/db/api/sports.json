@@ -5,7 +5,7 @@
     "year": 2016,
     "stat_type": "wins",
     "stat_value": "62",
-    "note": ""
+    "note": null
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "year": 2016,
     "stat_type": "losses",
     "stat_value": "4",
-    "note": ""
+    "note": null
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "year": 2016,
     "stat_type": "win_rate",
     "stat_value": "93.9",
-    "note": ""
+    "note": null
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "year": 2016,
     "stat_type": "wins",
     "stat_value": "254",
-    "note": ""
+    "note": null
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "year": 2016,
     "stat_type": "losses",
     "stat_value": "98",
-    "note": ""
+    "note": null
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "year": 2016,
     "stat_type": "win_rate",
     "stat_value": "72.2",
-    "note": ""
+    "note": null
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "year": null,
     "stat_type": "wins",
     "stat_value": "9",
-    "note": ""
+    "note": null
   },
   {
     "id": 8,
@@ -61,7 +61,7 @@
     "year": null,
     "stat_type": "losses",
     "stat_value": "11",
-    "note": ""
+    "note": null
   },
   {
     "id": 9,
@@ -69,7 +69,7 @@
     "year": null,
     "stat_type": "win_rate",
     "stat_value": "45.0",
-    "note": ""
+    "note": null
   },
   {
     "id": 10,
@@ -77,7 +77,7 @@
     "year": 2024,
     "stat_type": "note",
     "stat_value": "",
-    "note": ""
+    "note": null
   },
   {
     "id": 11,
@@ -101,15 +101,15 @@
     "year": null,
     "stat_type": "note",
     "stat_value": "",
-    "note": ""
+    "note": null
   },
   {
     "id": 14,
     "sport": "Five Boro Bike Tour",
     "year": 2022,
     "stat_type": "note",
-    "stat_value": "First ride 2022; 5 boroughs, medal finish (2025)",
-    "note": "First ride 2022; 5 boroughs, medal finish (2025)"
+    "stat_value": "5 boroughs, medal finish (2025)",
+    "note": "5 boroughs, medal finish (2025)"
   },
   {
     "id": 15,
@@ -196,8 +196,8 @@
     "sport": "Volleyball",
     "year": null,
     "stat_type": "note",
-    "stat_value": "Tartarugas squad formed May 25, 2010; broken left pinky (Mar 26, 2017); Silver League Champions (Aug 30, 2017); retired from volleyball after championship season",
-    "note": "Tartarugas squad formed May 25, 2010; broken left pinky (Mar 26, 2017); Silver League Champions (Aug 30, 2017); retired from volleyball after championship season"
+    "stat_value": "Tartarugas squad formed May 25, 2010; Silver League Champions (Aug 30, 2017); broken left pinky ended volleyball career Mar 26, 2017",
+    "note": "Tartarugas squad formed May 25, 2010; Silver League Champions (Aug 30, 2017); broken left pinky ended volleyball career Mar 26, 2017"
   },
   {
     "id": 26,

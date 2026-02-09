@@ -4,7 +4,7 @@
     "event_number": 1,
     "event_name": "ECD 1",
     "event_type": "regular",
-    "date": null,
+    "date": "2004-12-23",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -15,14 +15,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 170,
     "event_number": 2,
     "event_name": "ECD 2",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-01-28",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -33,15 +34,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 1,
     "event_number": 3,
     "event_name": "Dodgeball 3",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "2005-03-06",
+    "year": 2005,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -51,14 +53,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 171,
     "event_number": 4,
     "event_name": "ECD 4",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-04-11",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -69,14 +72,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 172,
     "event_number": 5,
     "event_name": "ECD 5",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-05-18",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -87,14 +91,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 173,
     "event_number": 6,
     "event_name": "ECD 6",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-06-23",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -105,15 +110,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 2,
     "event_number": 7,
     "event_name": "Dodgeball 7",
     "event_type": "regular",
-    "date": null,
-    "year": 2011,
+    "date": "2005-07-30",
+    "year": 2005,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -123,7 +129,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 3,
@@ -141,14 +148,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 4,
     "event_number": 9,
     "event_name": "Dodgeball 9",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-09-13",
     "year": 2005,
     "era": "Founding Era",
     "attendance": 60,
@@ -159,14 +167,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 5,
     "event_number": 10,
     "event_name": "Dodgeball 10",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-09-23",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -177,14 +186,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 174,
     "event_number": 11,
     "event_name": "ECD 11",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-10-03",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -195,14 +205,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 175,
     "event_number": 12,
     "event_name": "ECD 12 (RTWD)",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-10-13",
     "year": 2005,
     "era": "Founding Era",
     "attendance": 36,
@@ -213,14 +224,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 6,
     "event_number": 13,
     "event_name": "Dodgeball 13",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-10-23",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -231,14 +243,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 7,
     "event_number": 14,
     "event_name": "Dodgeball 14",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-11-02",
     "year": 2005,
     "era": "Founding Era",
     "attendance": 33,
@@ -249,14 +262,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 8,
     "event_number": 15,
     "event_name": "Dodgeball 15",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-11-12",
     "year": 2005,
     "era": "Founding Era",
     "attendance": 147,
@@ -267,14 +281,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 176,
     "event_number": 16,
     "event_name": "ECD 16",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-11-22",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -285,14 +300,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 9,
     "event_number": 17,
     "event_name": "Dodgeball 17",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-12-02",
     "year": 2005,
     "era": "Founding Era",
     "attendance": 47,
@@ -303,14 +319,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 10,
     "event_number": 18,
     "event_name": "Dodgeball 18",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-12-12",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -321,14 +338,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 11,
     "event_number": 19,
     "event_name": "Dodgeball 19",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-12-22",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -339,7 +357,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 12,
@@ -347,7 +366,7 @@
     "event_name": "Dodgeball 20",
     "event_type": "regular",
     "date": "2006-01-01",
-    "year": 2006,
+    "year": 2005,
     "era": "Founding Era",
     "attendance": 180,
     "match_count": 6,
@@ -357,15 +376,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 13,
     "event_number": 21,
     "event_name": "Dodgeball 21",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "2006-09-03",
+    "year": 2006,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -375,14 +395,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 14,
     "event_number": 22,
     "event_name": "Dodgeball 22",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-05-06",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -393,7 +414,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 15,
@@ -401,7 +423,7 @@
     "event_name": "Dodgeball 23",
     "event_type": "regular",
     "date": "2008-01-07",
-    "year": 2007,
+    "year": 2006,
     "era": "Growth Era",
     "attendance": 22,
     "match_count": 0,
@@ -411,14 +433,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 16,
     "event_number": 24,
     "event_name": "Dodgeball 24",
     "event_type": "regular",
-    "date": null,
+    "date": "2006-11-05",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -429,7 +452,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 17,
@@ -447,14 +471,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 18,
     "event_number": 26,
     "event_name": "Dodgeball 26",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-09-03",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -465,14 +490,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 19,
     "event_number": 27,
     "event_name": "Dodgeball 27",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-09-03",
     "year": 2006,
     "era": "Founding Era",
     "attendance": 17,
@@ -483,7 +509,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 20,
@@ -491,7 +518,7 @@
     "event_name": "Dodgeball 28",
     "event_type": "regular",
     "date": "2005-09-04",
-    "year": 2005,
+    "year": 2006,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -501,15 +528,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 21,
     "event_number": 29,
     "event_name": "Dodgeball 29",
     "event_type": "regular",
-    "date": null,
-    "year": 2012,
+    "date": "2005-11-26",
+    "year": 2006,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -519,14 +547,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 22,
     "event_number": 30,
     "event_name": "Dodgeball 30",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": 32,
@@ -537,14 +566,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 23,
     "event_number": 31,
     "event_name": "Dodgeball 31",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -555,14 +585,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 24,
     "event_number": 32,
     "event_name": "Dodgeball 32",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -573,14 +604,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 25,
     "event_number": 33,
     "event_name": "Dodgeball 33",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -591,14 +623,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 26,
     "event_number": 34,
     "event_name": "Dodgeball 34",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -609,15 +642,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 27,
     "event_number": 35,
     "event_name": "Dodgeball 35",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "2010-08-14",
+    "year": 2006,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -627,14 +661,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 28,
     "event_number": 36,
     "event_name": "Dodgeball 36",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -645,14 +680,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 29,
     "event_number": 37,
     "event_name": "Dodgeball 37",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -663,14 +699,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 30,
     "event_number": 38,
     "event_name": "Dodgeball 38",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -681,15 +718,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 31,
     "event_number": 39,
     "event_name": "Dodgeball 39",
     "event_type": "regular",
-    "date": null,
-    "year": 2013,
+    "date": "2010-08-14",
+    "year": 2006,
     "era": "Golden Age",
     "attendance": 9,
     "match_count": 0,
@@ -699,14 +737,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 32,
     "event_number": 40,
     "event_name": "Dodgeball 40",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": 4,
@@ -717,7 +756,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 33,
@@ -725,7 +765,7 @@
     "event_name": "Dodgeball 41",
     "event_type": "regular",
     "date": "2008-01-07",
-    "year": 2007,
+    "year": 2006,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -735,14 +775,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 34,
     "event_number": 42,
     "event_name": "Dodgeball 42",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-08-20",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -753,15 +794,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 35,
     "event_number": 43,
     "event_name": "Dodgeball 43",
     "event_type": "regular",
-    "date": null,
-    "year": 2007,
+    "date": "2007-04-02",
+    "year": 2006,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -771,15 +813,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 36,
     "event_number": 44,
     "event_name": "Dodgeball 44",
     "event_type": "regular",
-    "date": null,
-    "year": 2007,
+    "date": "2006-11-13",
+    "year": 2006,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -789,7 +832,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 37,
@@ -807,14 +851,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 38,
     "event_number": 46,
     "event_name": "Dodgeball 46",
     "event_type": "regular",
-    "date": null,
+    "date": "2008-07-19",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -825,15 +870,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 39,
     "event_number": 47,
     "event_name": "Dodgeball 47",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2010-08-14",
+    "year": 2006,
     "era": "Growth Era",
     "attendance": 29,
     "match_count": 0,
@@ -843,14 +889,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 40,
     "event_number": 48,
     "event_name": "Dodgeball 48",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": 27,
@@ -861,14 +908,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 41,
     "event_number": 49,
     "event_name": "Dodgeball 49",
     "event_type": "regular",
-    "date": null,
+    "date": "1982-03-10",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -879,14 +927,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 42,
     "event_number": 50,
     "event_name": "Dodgeball 50",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2006,
     "era": "Founding Era",
     "attendance": 190,
@@ -897,14 +946,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 43,
     "event_number": 51,
     "event_name": "Dodgeball 51",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-01-11",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -915,14 +965,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 44,
     "event_number": 52,
     "event_name": "Dodgeball 52",
     "event_type": "regular",
-    "date": null,
+    "date": "2003-06-09",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -933,14 +984,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 45,
     "event_number": 53,
     "event_name": "Dodgeball 53",
     "event_type": "regular",
-    "date": null,
+    "date": "1999-11-05",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -951,14 +1003,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 46,
     "event_number": 54,
     "event_name": "Dodgeball 54",
     "event_type": "regular",
-    "date": null,
+    "date": "1996-04-02",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -969,14 +1022,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 47,
     "event_number": 55,
     "event_name": "Dodgeball 55",
     "event_type": "regular",
-    "date": null,
+    "date": "1992-08-29",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -987,14 +1041,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 48,
     "event_number": 56,
     "event_name": "Dodgeball 56",
     "event_type": "regular",
-    "date": null,
+    "date": "1989-01-25",
     "year": 2006,
     "era": "Founding Era",
     "attendance": null,
@@ -1005,15 +1060,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 49,
     "event_number": 57,
     "event_name": "Dodgeball 57",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "1985-06-23",
+    "year": 2006,
     "era": "Growth Era",
     "attendance": 15,
     "match_count": 1,
@@ -1023,15 +1079,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 50,
     "event_number": 58,
     "event_name": "Dodgeball 58",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "1992-06-23",
+    "year": 2006,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -1041,15 +1098,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 51,
     "event_number": 59,
     "event_name": "Dodgeball 59",
     "event_type": "regular",
-    "date": null,
-    "year": 2013,
+    "date": "1999-06-24",
+    "year": 2006,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -1059,7 +1117,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 52,
@@ -1077,15 +1136,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 53,
     "event_number": 61,
     "event_name": "Dodgeball 61",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "2006-06-25",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1095,7 +1155,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 54,
@@ -1103,7 +1164,7 @@
     "event_name": "Dodgeball 62",
     "event_type": "regular",
     "date": "2006-06-25",
-    "year": 2006,
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 24,
     "match_count": 0,
@@ -1113,15 +1174,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 55,
     "event_number": 63,
     "event_name": "Dodgeball 63",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "2006-03-19",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1131,15 +1193,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 56,
     "event_number": 64,
     "event_name": "Dodgeball 64",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "2005-12-11",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1149,7 +1212,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 57,
@@ -1157,7 +1221,7 @@
     "event_name": "Dodgeball 65",
     "event_type": "regular",
     "date": "2005-09-04",
-    "year": 2005,
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 18,
     "match_count": 0,
@@ -1167,15 +1231,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 58,
     "event_number": 66,
     "event_name": "Dodgeball 66",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2006-09-10",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -1185,15 +1250,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 59,
     "event_number": 67,
     "event_name": "Dodgeball 67",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "2007-09-16",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1203,7 +1269,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 60,
@@ -1211,7 +1278,7 @@
     "event_name": "Dodgeball 68",
     "event_type": "regular",
     "date": "2008-09-21",
-    "year": 2008,
+    "year": 2007,
     "era": "Growth Era",
     "attendance": 180,
     "match_count": 0,
@@ -1221,15 +1288,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 61,
     "event_number": 69,
     "event_name": "Dodgeball 69",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "2007-05-13",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1239,7 +1307,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 62,
@@ -1247,7 +1316,7 @@
     "event_name": "Dodgeball 70",
     "event_type": "regular",
     "date": "2006-01-01",
-    "year": 2006,
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 30,
     "match_count": 5,
@@ -1257,15 +1326,16 @@
     "vader_pos": 0.275,
     "vader_neg": 0.0,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 63,
     "event_number": 71,
     "event_name": "Dodgeball 71",
     "event_type": "regular",
-    "date": null,
-    "year": 2011,
+    "date": "1990-05-09",
+    "year": 2007,
     "era": "Golden Age",
     "attendance": 39,
     "match_count": 0,
@@ -1275,14 +1345,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 64,
     "event_number": 72,
     "event_name": "Dodgeball 72",
     "event_type": "regular",
-    "date": null,
+    "date": "1986-09-08",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1293,14 +1364,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 65,
     "event_number": 73,
     "event_name": "Dodgeball 73",
     "event_type": "regular",
-    "date": null,
+    "date": "1983-01-07",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1311,14 +1383,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 66,
     "event_number": 74,
     "event_name": "Dodgeball 74",
     "event_type": "regular",
-    "date": null,
+    "date": "1995-01-20",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1329,7 +1402,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 67,
@@ -1347,14 +1421,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 68,
     "event_number": 76,
     "event_name": "Dodgeball 76",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-02-12",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1365,14 +1440,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 69,
     "event_number": 77,
     "event_name": "Dodgeball 77",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-02-21",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1383,7 +1459,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 70,
@@ -1401,15 +1478,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 71,
     "event_number": 79,
     "event_name": "Dodgeball 79",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "1982-03-10",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 22,
     "match_count": 1,
@@ -1419,7 +1497,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 72,
@@ -1427,7 +1506,7 @@
     "event_name": "Dodgeball 80",
     "event_type": "regular",
     "date": "2010-09-11",
-    "year": 2010,
+    "year": 2007,
     "era": "Golden Age",
     "attendance": 31,
     "match_count": 1,
@@ -1437,15 +1516,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 73,
     "event_number": 81,
     "event_name": "Dodgeball 81",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "1982-03-10",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 20,
     "match_count": 8,
@@ -1455,15 +1535,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 74,
     "event_number": 82,
     "event_name": "Dodgeball 82",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "1985-05-06",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1473,15 +1554,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 75,
     "event_number": 83,
     "event_name": "Dodgeball 83",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "1988-07-03",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1491,15 +1573,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 76,
     "event_number": 84,
     "event_name": "Dodgeball 84",
     "event_type": "regular",
-    "date": null,
-    "year": 2010,
+    "date": "1991-08-31",
+    "year": 2007,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -1509,15 +1592,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 77,
     "event_number": 85,
     "event_name": "Dodgeball 85",
     "event_type": "regular",
-    "date": null,
-    "year": 2010,
+    "date": "1994-10-28",
+    "year": 2007,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -1527,15 +1611,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 78,
     "event_number": 86,
     "event_name": "Dodgeball 86",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "1997-12-24",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 24,
     "match_count": 0,
@@ -1545,15 +1630,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 79,
     "event_number": 87,
     "event_name": "Dodgeball 87",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "2001-02-20",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1563,14 +1649,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 80,
     "event_number": 88,
     "event_name": "Dodgeball 88",
     "event_type": "regular",
-    "date": null,
+    "date": "2004-04-19",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1581,14 +1668,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 81,
     "event_number": 89,
     "event_name": "Dodgeball 89",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-06-17",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1599,15 +1687,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 82,
     "event_number": 90,
     "event_name": "Dodgeball 90",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2010-08-14",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": 22,
     "match_count": 1,
@@ -1617,15 +1706,16 @@
     "vader_pos": 0.0,
     "vader_neg": 0.0,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 83,
     "event_number": 91,
     "event_name": "Dodgeball 91",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2010-08-14",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": 29,
     "match_count": 0,
@@ -1635,14 +1725,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 84,
     "event_number": 92,
     "event_name": "Dodgeball 92",
     "event_type": "regular",
-    "date": null,
+    "date": "1983-01-07",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1653,15 +1744,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 85,
     "event_number": 93,
     "event_name": "Dodgeball 93",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2010-09-11",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": 5,
     "match_count": 1,
@@ -1671,14 +1763,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 86,
     "event_number": 94,
     "event_name": "Dodgeball 94",
     "event_type": "regular",
-    "date": null,
+    "date": "2009-05-10",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1689,7 +1782,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 87,
@@ -1707,7 +1801,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 88,
@@ -1725,15 +1820,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 89,
     "event_number": 97,
     "event_name": "Dodgeball 97",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2010-09-11",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -1743,14 +1839,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 90,
     "event_number": 98,
     "event_name": "Dodgeball 98",
     "event_type": "regular",
-    "date": null,
+    "date": "2009-01-08",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1761,14 +1858,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 91,
     "event_number": 99,
     "event_name": "Dodgeball 99",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-05-08",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -1779,7 +1877,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 92,
@@ -1787,7 +1886,7 @@
     "event_name": "Dodgeball 100",
     "event_type": "anniversary",
     "date": "2005-09-03",
-    "year": 2006,
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 41,
     "match_count": 4,
@@ -1797,15 +1896,16 @@
     "vader_pos": 0.0,
     "vader_neg": 0.0,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 93,
     "event_number": 101,
     "event_name": "Dodgeball 101",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2010-08-14",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": 14,
     "match_count": 0,
@@ -1815,15 +1915,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 94,
     "event_number": 102,
     "event_name": "Dodgeball 102",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "2009-02-25",
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -1833,7 +1934,8 @@
     "vader_pos": 0.0,
     "vader_neg": 0.0,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 95,
@@ -1851,7 +1953,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 96,
@@ -1869,15 +1972,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 97,
     "event_number": 105,
     "event_name": "Dodgeball 105",
     "event_type": "anniversary",
-    "date": null,
-    "year": 2008,
+    "date": "2010-08-14",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": 18,
     "match_count": 1,
@@ -1887,7 +1991,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 98,
@@ -1905,15 +2010,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 99,
     "event_number": 107,
     "event_name": "Dodgeball 107",
     "event_type": "regular",
-    "date": null,
-    "year": 2008,
+    "date": "2010-09-11",
+    "year": 2007,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -1923,7 +2029,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 100,
@@ -1931,7 +2038,7 @@
     "event_name": "Dodgeball 108",
     "event_type": "regular",
     "date": "2008-09-21",
-    "year": 2008,
+    "year": 2007,
     "era": "Growth Era",
     "attendance": 39,
     "match_count": 0,
@@ -1941,15 +2048,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 101,
     "event_number": 109,
     "event_name": "Dodgeball 109",
     "event_type": "regular",
-    "date": null,
-    "year": 2012,
+    "date": "2005-11-26",
+    "year": 2007,
     "era": "Golden Age",
     "attendance": 19,
     "match_count": 1,
@@ -1959,7 +2067,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 102,
@@ -1967,7 +2076,7 @@
     "event_name": "Dodgeball 110",
     "event_type": "regular",
     "date": "2006-01-01",
-    "year": 2006,
+    "year": 2007,
     "era": "Founding Era",
     "attendance": 51,
     "match_count": 16,
@@ -1977,14 +2086,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 177,
     "event_number": 111,
     "event_name": "ECD 111",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-12-21",
     "year": 2007,
     "era": "Golden Age",
     "attendance": null,
@@ -1995,14 +2105,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 178,
     "event_number": 112,
     "event_name": "ECD 112",
     "event_type": "regular",
-    "date": null,
+    "date": "2005-12-10",
     "year": 2007,
     "era": "Golden Age",
     "attendance": null,
@@ -2013,7 +2124,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 103,
@@ -2021,7 +2133,7 @@
     "event_name": "Dodgeball 113",
     "event_type": "regular",
     "date": "2005-11-28",
-    "year": 2006,
+    "year": 2007,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -2031,14 +2143,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 104,
     "event_number": 114,
     "event_name": "Dodgeball 114",
     "event_type": "regular",
-    "date": null,
+    "date": "1983-01-07",
     "year": 2007,
     "era": "Growth Era",
     "attendance": null,
@@ -2049,7 +2162,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 105,
@@ -2057,7 +2171,7 @@
     "event_name": "Dodgeball 115",
     "event_type": "regular",
     "date": "2011-08-13",
-    "year": 2010,
+    "year": 2007,
     "era": "Golden Age",
     "attendance": 32,
     "match_count": 0,
@@ -2067,14 +2181,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 106,
     "event_number": 116,
     "event_name": "Dodgeball 116",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 31,
@@ -2085,15 +2200,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 107,
     "event_number": 117,
     "event_name": "Dodgeball 117",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "2008-01-05",
+    "year": 2008,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -2103,15 +2219,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 108,
     "event_number": 118,
     "event_name": "Dodgeball 118",
     "event_type": "regular",
-    "date": null,
-    "year": 2005,
+    "date": "2008-01-05",
+    "year": 2008,
     "era": "Founding Era",
     "attendance": 23,
     "match_count": 0,
@@ -2121,15 +2238,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 109,
     "event_number": 119,
     "event_name": "Dodgeball 119",
     "event_type": "regular",
-    "date": null,
-    "year": 2011,
+    "date": "1986-11-08",
+    "year": 2008,
     "era": "Golden Age",
     "attendance": 23,
     "match_count": 1,
@@ -2139,7 +2257,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 110,
@@ -2147,7 +2266,7 @@
     "event_name": "Dodgeball 120",
     "event_type": "regular",
     "date": "2008-01-05",
-    "year": 2007,
+    "year": 2008,
     "era": "Growth Era",
     "attendance": 24,
     "match_count": 0,
@@ -2157,7 +2276,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 111,
@@ -2175,7 +2295,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 112,
@@ -2193,14 +2314,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 113,
     "event_number": 123,
     "event_name": "Dodgeball 123",
     "event_type": "regular",
-    "date": null,
+    "date": "2006-12-24",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 16,
@@ -2211,7 +2333,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 114,
@@ -2229,14 +2352,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 115,
     "event_number": 125,
     "event_name": "Dodgeball 125",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 38,
@@ -2247,7 +2371,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 116,
@@ -2265,7 +2390,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 117,
@@ -2283,7 +2409,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 118,
@@ -2301,7 +2428,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 119,
@@ -2319,7 +2447,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 120,
@@ -2337,14 +2466,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 121,
     "event_number": 131,
     "event_name": "Dodgeball 131",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 20,
@@ -2355,14 +2485,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 122,
     "event_number": 132,
     "event_name": "Dodgeball 132",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-21",
     "year": 2008,
     "era": "Growth Era",
     "attendance": null,
@@ -2373,15 +2504,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 123,
     "event_number": 133,
     "event_name": "Dodgeball 133",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "2010-08-28",
+    "year": 2008,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -2391,15 +2523,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 124,
     "event_number": 134,
     "event_name": "Dodgeball 134",
     "event_type": "regular",
-    "date": null,
-    "year": 2006,
+    "date": "2010-09-04",
+    "year": 2008,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -2409,14 +2542,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 125,
     "event_number": 135,
     "event_name": "Dodgeball 135",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-09-11",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 25,
@@ -2427,15 +2561,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 126,
     "event_number": 136,
     "event_name": "Dodgeball 136",
     "event_type": "regular",
-    "date": null,
-    "year": 2014,
+    "date": "2009-05-06",
+    "year": 2008,
     "era": "Evolution Era",
     "attendance": null,
     "match_count": 0,
@@ -2445,7 +2580,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 127,
@@ -2453,7 +2589,7 @@
     "event_name": "Dodgeball 137",
     "event_type": "regular",
     "date": "2007-12-30",
-    "year": 2007,
+    "year": 2008,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -2463,7 +2599,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 128,
@@ -2471,7 +2608,7 @@
     "event_name": "Dodgeball 138",
     "event_type": "regular",
     "date": "2007-05-13",
-    "year": 2006,
+    "year": 2008,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -2481,7 +2618,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 129,
@@ -2489,7 +2627,7 @@
     "event_name": "Dodgeball 139",
     "event_type": "regular",
     "date": "2007-05-13",
-    "year": 2006,
+    "year": 2008,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -2499,15 +2637,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 130,
     "event_number": 140,
     "event_name": "Dodgeball 140",
     "event_type": "regular",
-    "date": null,
-    "year": 2010,
+    "date": "1986-06-15",
+    "year": 2008,
     "era": "Golden Age",
     "attendance": 27,
     "match_count": 1,
@@ -2517,7 +2656,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 131,
@@ -2525,7 +2665,7 @@
     "event_name": "Dodgeball 141",
     "event_type": "regular",
     "date": "2006-09-23",
-    "year": 2006,
+    "year": 2008,
     "era": "Founding Era",
     "attendance": null,
     "match_count": 0,
@@ -2535,15 +2675,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 132,
     "event_number": 142,
     "event_name": "Dodgeball 142",
     "event_type": "regular",
-    "date": null,
-    "year": 2012,
+    "date": "2005-11-26",
+    "year": 2008,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -2553,7 +2694,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 133,
@@ -2571,7 +2713,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 134,
@@ -2589,7 +2732,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 135,
@@ -2607,7 +2751,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 136,
@@ -2625,7 +2770,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 137,
@@ -2643,7 +2789,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 138,
@@ -2661,7 +2808,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 139,
@@ -2679,7 +2827,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 140,
@@ -2687,7 +2836,7 @@
     "event_name": "Dodgeball 150",
     "event_type": "regular",
     "date": "2010-09-11",
-    "year": 2010,
+    "year": 2008,
     "era": "Golden Age",
     "attendance": 39,
     "match_count": 7,
@@ -2697,7 +2846,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 141,
@@ -2705,7 +2855,7 @@
     "event_name": "Dodgeball 151",
     "event_type": "regular",
     "date": "2011-08-13",
-    "year": 2011,
+    "year": 2008,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -2715,14 +2865,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 179,
     "event_number": 152,
     "event_name": "ECD 152",
     "event_type": "regular",
-    "date": null,
+    "date": "2011-02-26",
     "year": 2008,
     "era": "Golden Age",
     "attendance": null,
@@ -2733,14 +2884,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 142,
     "event_number": 153,
     "event_name": "Dodgeball 153",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-09-11",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 34,
@@ -2751,14 +2903,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 143,
     "event_number": 154,
     "event_name": "Dodgeball 154",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 19,
@@ -2769,7 +2922,8 @@
     "vader_pos": 0.0,
     "vader_neg": 0.0,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 144,
@@ -2777,7 +2931,7 @@
     "event_name": "Dodgeball 155",
     "event_type": "regular",
     "date": "2008-01-07",
-    "year": 2007,
+    "year": 2008,
     "era": "Growth Era",
     "attendance": null,
     "match_count": 0,
@@ -2787,7 +2941,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 145,
@@ -2805,14 +2960,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 146,
     "event_number": 157,
     "event_name": "Dodgeball 157",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-08-14",
     "year": 2008,
     "era": "Growth Era",
     "attendance": 18,
@@ -2823,15 +2979,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 147,
     "event_number": 158,
     "event_name": "Dodgeball 158",
     "event_type": "regular",
-    "date": null,
-    "year": 2012,
+    "date": "2005-11-26",
+    "year": 2008,
     "era": "Golden Age",
     "attendance": null,
     "match_count": 0,
@@ -2841,7 +2998,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 148,
@@ -2859,7 +3017,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 149,
@@ -2877,7 +3036,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 150,
@@ -2895,14 +3055,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 151,
     "event_number": 162,
     "event_name": "Dodgeball 162",
     "event_type": "regular",
-    "date": null,
+    "date": "2006-05-14",
     "year": 2008,
     "era": "Growth Era",
     "attendance": null,
@@ -2913,14 +3074,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 152,
     "event_number": 163,
     "event_name": "Dodgeball 163",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-09-11",
     "year": 2008,
     "era": "Growth Era",
     "attendance": null,
@@ -2931,15 +3093,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 153,
     "event_number": 164,
     "event_name": "Dodgeball 164",
     "event_type": "regular",
-    "date": null,
-    "year": 2017,
+    "date": "2010-02-09",
+    "year": 2008,
     "era": "Evolution Era",
     "attendance": null,
     "match_count": 0,
@@ -2949,15 +3112,16 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 154,
     "event_number": 165,
     "event_name": "Dodgeball 165",
     "event_type": "regular",
-    "date": null,
-    "year": 2017,
+    "date": "2009-07-09",
+    "year": 2008,
     "era": "Evolution Era",
     "attendance": null,
     "match_count": 0,
@@ -2967,7 +3131,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 155,
@@ -2985,7 +3150,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 156,
@@ -3003,7 +3169,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 157,
@@ -3021,7 +3188,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 158,
@@ -3039,7 +3207,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 159,
@@ -3057,7 +3226,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 160,
@@ -3065,7 +3235,7 @@
     "event_name": "Dodgeball 171",
     "event_type": "regular",
     "date": "2006-01-01",
-    "year": 2006,
+    "year": 2009,
     "era": "Founding Era",
     "attendance": 33,
     "match_count": 1,
@@ -3075,7 +3245,8 @@
     "vader_pos": 0.0,
     "vader_neg": 0.0,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 180,
@@ -3093,7 +3264,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 181,
@@ -3111,7 +3283,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 161,
@@ -3129,14 +3302,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 182,
     "event_number": 175,
     "event_name": "5YA (5 Year Anniversary)",
     "event_type": "anniversary",
-    "date": null,
+    "date": "2012-04-27",
     "year": 2010,
     "era": "Evolution Era",
     "attendance": 41,
@@ -3147,14 +3321,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 183,
     "event_number": 176,
     "event_name": "ECD 176 (Couples Match)",
     "event_type": "special",
-    "date": null,
+    "date": "2009-02-11",
     "year": 2010,
     "era": "Evolution Era",
     "attendance": null,
@@ -3165,7 +3340,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 162,
@@ -3183,14 +3359,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 184,
     "event_number": 178,
     "event_name": "ECD 178",
     "event_type": "regular",
-    "date": null,
+    "date": "2007-01-07",
     "year": 2010,
     "era": "Evolution Era",
     "attendance": null,
@@ -3201,14 +3378,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 185,
     "event_number": 179,
     "event_name": "ECD 179",
     "event_type": "regular",
-    "date": null,
+    "date": "2008-02-17",
     "year": 2010,
     "era": "Evolution Era",
     "attendance": null,
@@ -3219,14 +3397,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 186,
     "event_number": 180,
     "event_name": "ECD 180",
     "event_type": "regular",
-    "date": null,
+    "date": "2009-03-28",
     "year": 2011,
     "era": "Legacy Era",
     "attendance": null,
@@ -3237,14 +3416,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 187,
     "event_number": 181,
     "event_name": "ECD 181",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-05-08",
     "year": 2011,
     "era": "Legacy Era",
     "attendance": null,
@@ -3255,7 +3435,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 188,
@@ -3273,14 +3454,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 189,
     "event_number": 183,
     "event_name": "Star Wars (Hall of Fame Ball)",
     "event_type": "special",
-    "date": null,
+    "date": "2013-06-29",
     "year": 2011,
     "era": "Legacy Era",
     "attendance": null,
@@ -3291,7 +3473,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 163,
@@ -3309,14 +3492,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 164,
     "event_number": 185,
     "event_name": "Dodgeball 185",
     "event_type": "regular",
-    "date": null,
+    "date": "2015-08-22",
     "year": 2013,
     "era": "Golden Age",
     "attendance": null,
@@ -3327,14 +3511,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 190,
     "event_number": 186,
     "event_name": "ECD 186",
     "event_type": "regular",
-    "date": null,
+    "date": "2014-09-01",
     "year": 2012,
     "era": "Legacy Era",
     "attendance": null,
@@ -3345,14 +3530,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 191,
     "event_number": 187,
     "event_name": "ECD 187",
     "event_type": "regular",
-    "date": null,
+    "date": "2013-09-11",
     "year": 2012,
     "era": "Legacy Era",
     "attendance": null,
@@ -3363,14 +3549,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 192,
     "event_number": 188,
     "event_name": "ECD 188",
     "event_type": "regular",
-    "date": null,
+    "date": "2012-09-20",
     "year": 2012,
     "era": "Legacy Era",
     "attendance": null,
@@ -3381,14 +3568,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 193,
     "event_number": 189,
     "event_name": "ECD 189",
     "event_type": "regular",
-    "date": null,
+    "date": "2011-10-01",
     "year": 2012,
     "era": "Legacy Era",
     "attendance": null,
@@ -3399,14 +3587,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 194,
     "event_number": 190,
     "event_name": "ECD 190",
     "event_type": "regular",
-    "date": null,
+    "date": "2010-10-10",
     "year": 2012,
     "era": "Legacy Era",
     "attendance": null,
@@ -3417,14 +3606,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 195,
     "event_number": 191,
     "event_name": "ECD 191",
     "event_type": "regular",
-    "date": null,
+    "date": "2009-10-20",
     "year": 2012,
     "era": "Legacy Era",
     "attendance": null,
@@ -3435,14 +3625,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 165,
     "event_number": 192,
     "event_name": "Dodgeball 192",
     "event_type": "regular",
-    "date": null,
+    "date": "2008-10-30",
     "year": 2005,
     "era": "Founding Era",
     "attendance": null,
@@ -3453,14 +3644,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 196,
     "event_number": 193,
     "event_name": "ECD 193 (East Coast Battle)",
     "event_type": "special",
-    "date": null,
+    "date": "2007-11-09",
     "year": 2013,
     "era": "Legacy Era",
     "attendance": null,
@@ -3471,14 +3663,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 197,
     "event_number": 194,
     "event_name": "ECD 194",
     "event_type": "regular",
-    "date": null,
+    "date": "2006-11-19",
     "year": 2013,
     "era": "Legacy Era",
     "attendance": null,
@@ -3489,7 +3682,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 166,
@@ -3507,14 +3701,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 198,
     "event_number": 196,
     "event_name": "ECD 196",
     "event_type": "regular",
-    "date": null,
+    "date": "2006-02-06",
     "year": 2013,
     "era": "Legacy Era",
     "attendance": null,
@@ -3525,14 +3720,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 199,
     "event_number": 197,
     "event_name": "ECD 197",
     "event_type": "regular",
-    "date": null,
+    "date": "2006-04-17",
     "year": 2013,
     "era": "Legacy Era",
     "attendance": null,
@@ -3543,14 +3739,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 200,
     "event_number": 198,
     "event_name": "Memorial Day Special",
     "event_type": "holiday",
-    "date": null,
+    "date": "2006-06-26",
     "year": 2013,
     "era": "Legacy Era",
     "attendance": null,
@@ -3561,7 +3758,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 167,
@@ -3579,7 +3777,8 @@
     "vader_pos": 0.0,
     "vader_neg": 0.434,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 168,
@@ -3597,14 +3796,15 @@
     "vader_pos": 0.091,
     "vader_neg": 0.0,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 201,
     "event_number": 201,
     "event_name": "ECD 201",
     "event_type": "reunion",
-    "date": null,
+    "date": "2014-04-01",
     "year": 2014,
     "era": "Reunion Era",
     "attendance": null,
@@ -3615,7 +3815,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 202,
@@ -3633,14 +3834,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 203,
     "event_number": 203,
     "event_name": "ECD 203",
     "event_type": "reunion",
-    "date": null,
+    "date": "2015-04-07",
     "year": 2015,
     "era": "Reunion Era",
     "attendance": null,
@@ -3651,7 +3853,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 204,
@@ -3669,7 +3872,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 205,
@@ -3687,7 +3891,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 206,
@@ -3705,14 +3910,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 207,
     "event_number": 207,
     "event_name": "ECD 207",
     "event_type": "reunion",
-    "date": null,
+    "date": "2016-06-11",
     "year": 2016,
     "era": "Reunion Era",
     "attendance": null,
@@ -3723,7 +3929,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 208,
@@ -3741,7 +3948,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 209,
@@ -3759,7 +3967,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 210,
@@ -3777,14 +3986,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 211,
     "event_number": 211,
     "event_name": "Amazing Race / Summer Series 18",
     "event_type": "special",
-    "date": null,
+    "date": "2018-02-27",
     "year": 2018,
     "era": "Modern Era",
     "attendance": null,
@@ -3795,7 +4005,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 212,
@@ -3813,7 +4024,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 213,
@@ -3831,7 +4043,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 214,
@@ -3849,7 +4062,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 215,
@@ -3867,7 +4081,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 216,
@@ -3885,7 +4100,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 217,
@@ -3903,14 +4119,15 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 218,
     "event_number": 218,
     "event_name": "Fallfest",
     "event_type": "special",
-    "date": null,
+    "date": "2022-11-22",
     "year": 2022,
     "era": "Modern Era",
     "attendance": null,
@@ -3921,7 +4138,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 1
   },
   {
     "id": 219,
@@ -3939,7 +4157,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 220,
@@ -3957,7 +4176,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 221,
@@ -3975,7 +4195,8 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   },
   {
     "id": 222,
@@ -3993,6 +4214,7 @@
     "vader_pos": null,
     "vader_neg": null,
     "participants": null,
-    "raised": null
+    "raised": null,
+    "date_inferred": 0
   }
 ]

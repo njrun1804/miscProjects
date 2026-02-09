@@ -1,0 +1,1103 @@
+{
+  "2004": [
+    {
+      "year": 2004,
+      "theme": "project begins",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "panic",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "panic attacks",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "resulting panic",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "resulting",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "project",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "car accident",
+      "tfidf_score": 0.2666
+    },
+    {
+      "year": 2004,
+      "theme": "accident",
+      "tfidf_score": 0.2666
+    },
+    {
+      "year": 2004,
+      "theme": "car",
+      "tfidf_score": 0.2666
+    },
+    {
+      "year": 2004,
+      "theme": "begins",
+      "tfidf_score": 0.2417
+    }
+  ],
+  "2005": [
+    {
+      "year": 2005,
+      "theme": "period wrestlemania",
+      "tfidf_score": 0.5676
+    },
+    {
+      "year": 2005,
+      "theme": "period",
+      "tfidf_score": 0.5676
+    },
+    {
+      "year": 2005,
+      "theme": "attendance",
+      "tfidf_score": 0.5016
+    },
+    {
+      "year": 2005,
+      "theme": "wrestlemania",
+      "tfidf_score": 0.3226
+    }
+  ],
+  "2006": [
+    {
+      "year": 2006,
+      "theme": "ongoing",
+      "tfidf_score": 0.4902
+    },
+    {
+      "year": 2006,
+      "theme": "ongoing march",
+      "tfidf_score": 0.4902
+    },
+    {
+      "year": 2006,
+      "theme": "70",
+      "tfidf_score": 0.4332
+    },
+    {
+      "year": 2006,
+      "theme": "dodgeball",
+      "tfidf_score": 0.3927
+    },
+    {
+      "year": 2006,
+      "theme": "30",
+      "tfidf_score": 0.3613
+    },
+    {
+      "year": 2006,
+      "theme": "dec",
+      "tfidf_score": 0.2165
+    }
+  ],
+  "2007": [
+    {
+      "year": 2007,
+      "theme": "dodgeball",
+      "tfidf_score": 0.2135
+    },
+    {
+      "year": 2007,
+      "theme": "27",
+      "tfidf_score": 0.2042
+    },
+    {
+      "year": 2007,
+      "theme": "23",
+      "tfidf_score": 0.1825
+    },
+    {
+      "year": 2007,
+      "theme": "29",
+      "tfidf_score": 0.1707
+    },
+    {
+      "year": 2007,
+      "theme": "jul",
+      "tfidf_score": 0.1707
+    },
+    {
+      "year": 2007,
+      "theme": "20",
+      "tfidf_score": 0.1605
+    },
+    {
+      "year": 2007,
+      "theme": "wwe",
+      "tfidf_score": 0.1605
+    },
+    {
+      "year": 2007,
+      "theme": "turned",
+      "tfidf_score": 0.1605
+    },
+    {
+      "year": 2007,
+      "theme": "oct 29",
+      "tfidf_score": 0.1333
+    },
+    {
+      "year": 2007,
+      "theme": "philadelphia dodgeball",
+      "tfidf_score": 0.1333
+    }
+  ],
+  "2008": [
+    {
+      "year": 2008,
+      "theme": "2008",
+      "tfidf_score": 0.299
+    },
+    {
+      "year": 2008,
+      "theme": "year",
+      "tfidf_score": 0.2179
+    },
+    {
+      "year": 2008,
+      "theme": "turned",
+      "tfidf_score": 0.1801
+    },
+    {
+      "year": 2008,
+      "theme": "27",
+      "tfidf_score": 0.1527
+    },
+    {
+      "year": 2008,
+      "theme": "refreshing",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "petty",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "pops aug",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "person",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "person know",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "refreshing heavenly",
+      "tfidf_score": 0.1495
+    }
+  ],
+  "2009": [
+    {
+      "year": 2009,
+      "theme": "25",
+      "tfidf_score": 0.2579
+    },
+    {
+      "year": 2009,
+      "theme": "hell",
+      "tfidf_score": 0.2333
+    },
+    {
+      "year": 2009,
+      "theme": "heaven",
+      "tfidf_score": 0.2333
+    },
+    {
+      "year": 2009,
+      "theme": "happy",
+      "tfidf_score": 0.2062
+    },
+    {
+      "year": 2009,
+      "theme": "skydive",
+      "tfidf_score": 0.1869
+    },
+    {
+      "year": 2009,
+      "theme": "16",
+      "tfidf_score": 0.1598
+    },
+    {
+      "year": 2009,
+      "theme": "13",
+      "tfidf_score": 0.1494
+    },
+    {
+      "year": 2009,
+      "theme": "oct",
+      "tfidf_score": 0.1405
+    },
+    {
+      "year": 2009,
+      "theme": "171",
+      "tfidf_score": 0.1166
+    },
+    {
+      "year": 2009,
+      "theme": "16 maybe",
+      "tfidf_score": 0.1166
+    }
+  ],
+  "2010": [
+    {
+      "year": 2010,
+      "theme": "hero",
+      "tfidf_score": 0.2924
+    },
+    {
+      "year": 2010,
+      "theme": "graduated",
+      "tfidf_score": 0.2924
+    },
+    {
+      "year": 2010,
+      "theme": "university",
+      "tfidf_score": 0.2924
+    },
+    {
+      "year": 2010,
+      "theme": "regrets",
+      "tfidf_score": 0.2583
+    },
+    {
+      "year": 2010,
+      "theme": "anniversary",
+      "tfidf_score": 0.1873
+    },
+    {
+      "year": 2010,
+      "theme": "jul",
+      "tfidf_score": 0.1873
+    },
+    {
+      "year": 2010,
+      "theme": "18",
+      "tfidf_score": 0.1761
+    },
+    {
+      "year": 2010,
+      "theme": "regrets hero",
+      "tfidf_score": 0.1462
+    },
+    {
+      "year": 2010,
+      "theme": "18 ecd",
+      "tfidf_score": 0.1462
+    },
+    {
+      "year": 2010,
+      "theme": "phillies",
+      "tfidf_score": 0.1462
+    }
+  ],
+  "2011": [
+    {
+      "year": 2011,
+      "theme": "14",
+      "tfidf_score": 0.2672
+    },
+    {
+      "year": 2011,
+      "theme": "begins",
+      "tfidf_score": 0.2423
+    },
+    {
+      "year": 2011,
+      "theme": "nov",
+      "tfidf_score": 0.1719
+    },
+    {
+      "year": 2011,
+      "theme": "rock",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "rock returns",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "18 cousin",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "rk 22nd",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "rob ocean",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "relationship begins",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "ro",
+      "tfidf_score": 0.1512
+    }
+  ],
+  "2012": [
+    {
+      "year": 2012,
+      "theme": "ecd",
+      "tfidf_score": 0.2186
+    },
+    {
+      "year": 2012,
+      "theme": "oct 13",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reopened world",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reached",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "record 18",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "park oct",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "promotion sus15h",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reopened",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reached 190",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "orchard park",
+      "tfidf_score": 0.2031
+    }
+  ],
+  "2013": [
+    {
+      "year": 2013,
+      "theme": "2013",
+      "tfidf_score": 0.2932
+    },
+    {
+      "year": 2013,
+      "theme": "stand test",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "doubt",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "rating",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "2013 doubt",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "2010 2013",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "2010",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "stand",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "star",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "star rating",
+      "tfidf_score": 0.1954
+    }
+  ],
+  "2014": [
+    {
+      "year": 2014,
+      "theme": "30th",
+      "tfidf_score": 0.492
+    },
+    {
+      "year": 2014,
+      "theme": "pops",
+      "tfidf_score": 0.223
+    },
+    {
+      "year": 2014,
+      "theme": "30",
+      "tfidf_score": 0.2052
+    },
+    {
+      "year": 2014,
+      "theme": "pam",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "pops maggie",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "oceanport",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "oceanport sep",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "pam 30th",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "pm ct",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "ride dec",
+      "tfidf_score": 0.1392
+    }
+  ],
+  "2015": [
+    {
+      "year": 2015,
+      "theme": "10",
+      "tfidf_score": 0.3629
+    },
+    {
+      "year": 2015,
+      "theme": "year",
+      "tfidf_score": 0.2753
+    },
+    {
+      "year": 2015,
+      "theme": "000 miles",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "rated",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "rated 10",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "jackson",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "kia",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "kia soul",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "soul",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "spengeman",
+      "tfidf_score": 0.2503
+    }
+  ],
+  "2016": [
+    {
+      "year": 2016,
+      "theme": "wwe experience",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "experience",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "experience time",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "greatest wwe",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "time",
+      "tfidf_score": 0.305
+    },
+    {
+      "year": 2016,
+      "theme": "greatest",
+      "tfidf_score": 0.2544
+    },
+    {
+      "year": 2016,
+      "theme": "wwe",
+      "tfidf_score": 0.2079
+    },
+    {
+      "year": 2016,
+      "theme": "year",
+      "tfidf_score": 0.1677
+    },
+    {
+      "year": 2016,
+      "theme": "award",
+      "tfidf_score": 0.1525
+    },
+    {
+      "year": 2016,
+      "theme": "winston comedian",
+      "tfidf_score": 0.1525
+    }
+  ],
+  "2017": [
+    {
+      "year": 2017,
+      "theme": "story",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "summerslam",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "complete",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "volleyball",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "20",
+      "tfidf_score": 0.2195
+    },
+    {
+      "year": 2017,
+      "theme": "26",
+      "tfidf_score": 0.1947
+    },
+    {
+      "year": 2017,
+      "theme": "personal",
+      "tfidf_score": 0.1947
+    },
+    {
+      "year": 2017,
+      "theme": "cruise",
+      "tfidf_score": 0.1463
+    },
+    {
+      "year": 2017,
+      "theme": "15",
+      "tfidf_score": 0.1381
+    },
+    {
+      "year": 2017,
+      "theme": "paused mar",
+      "tfidf_score": 0.1215
+    }
+  ],
+  "2018": [
+    {
+      "year": 2018,
+      "theme": "croatia",
+      "tfidf_score": 0.2738
+    },
+    {
+      "year": 2018,
+      "theme": "22",
+      "tfidf_score": 0.2018
+    },
+    {
+      "year": 2018,
+      "theme": "won",
+      "tfidf_score": 0.2018
+    },
+    {
+      "year": 2018,
+      "theme": "16",
+      "tfidf_score": 0.1875
+    },
+    {
+      "year": 2018,
+      "theme": "cruise",
+      "tfidf_score": 0.1649
+    },
+    {
+      "year": 2018,
+      "theme": "27",
+      "tfidf_score": 0.1398
+    },
+    {
+      "year": 2018,
+      "theme": "16 arthur",
+      "tfidf_score": 0.1369
+    },
+    {
+      "year": 2018,
+      "theme": "pickleball",
+      "tfidf_score": 0.1369
+    },
+    {
+      "year": 2018,
+      "theme": "ring purchased",
+      "tfidf_score": 0.1369
+    },
+    {
+      "year": 2018,
+      "theme": "ring",
+      "tfidf_score": 0.1369
+    }
+  ],
+  "2019": [
+    {
+      "year": 2019,
+      "theme": "longest",
+      "tfidf_score": 0.3204
+    },
+    {
+      "year": 2019,
+      "theme": "tronolone",
+      "tfidf_score": 0.2403
+    },
+    {
+      "year": 2019,
+      "theme": "longest greatest",
+      "tfidf_score": 0.2403
+    },
+    {
+      "year": 2019,
+      "theme": "best longest",
+      "tfidf_score": 0.2403
+    },
+    {
+      "year": 2019,
+      "theme": "best",
+      "tfidf_score": 0.1925
+    },
+    {
+      "year": 2019,
+      "theme": "31",
+      "tfidf_score": 0.1925
+    },
+    {
+      "year": 2019,
+      "theme": "greatest",
+      "tfidf_score": 0.1771
+    },
+    {
+      "year": 2019,
+      "theme": "23",
+      "tfidf_score": 0.1645
+    },
+    {
+      "year": 2019,
+      "theme": "wisconsin",
+      "tfidf_score": 0.1602
+    },
+    {
+      "year": 2019,
+      "theme": "halfway 70",
+      "tfidf_score": 0.1602
+    }
+  ],
+  "2020": [
+    {
+      "year": 2020,
+      "theme": "living",
+      "tfidf_score": 0.2156
+    },
+    {
+      "year": 2020,
+      "theme": "skydive",
+      "tfidf_score": 0.1955
+    },
+    {
+      "year": 2020,
+      "theme": "mar",
+      "tfidf_score": 0.1798
+    },
+    {
+      "year": 2020,
+      "theme": "record",
+      "tfidf_score": 0.1671
+    },
+    {
+      "year": 2020,
+      "theme": "feb",
+      "tfidf_score": 0.1563
+    },
+    {
+      "year": 2020,
+      "theme": "16 muscle",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "passion pistols",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "pasta",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "pasta passion",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "question friends",
+      "tfidf_score": 0.122
+    }
+  ],
+  "2021": [
+    {
+      "year": 2021,
+      "theme": "23",
+      "tfidf_score": 0.2362
+    },
+    {
+      "year": 2021,
+      "theme": "vegas",
+      "tfidf_score": 0.23
+    },
+    {
+      "year": 2021,
+      "theme": "lbs",
+      "tfidf_score": 0.2032
+    },
+    {
+      "year": 2021,
+      "theme": "year",
+      "tfidf_score": 0.1676
+    },
+    {
+      "year": 2021,
+      "theme": "11",
+      "tfidf_score": 0.1575
+    },
+    {
+      "year": 2021,
+      "theme": "dec",
+      "tfidf_score": 0.1523
+    },
+    {
+      "year": 2021,
+      "theme": "10",
+      "tfidf_score": 0.1473
+    },
+    {
+      "year": 2021,
+      "theme": "jul",
+      "tfidf_score": 0.1473
+    },
+    {
+      "year": 2021,
+      "theme": "20",
+      "tfidf_score": 0.1385
+    },
+    {
+      "year": 2021,
+      "theme": "pong",
+      "tfidf_score": 0.115
+    }
+  ],
+  "2022": [
+    {
+      "year": 2022,
+      "theme": "game",
+      "tfidf_score": 0.2977
+    },
+    {
+      "year": 2022,
+      "theme": "100",
+      "tfidf_score": 0.2307
+    },
+    {
+      "year": 2022,
+      "theme": "playoff run",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "oregon",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "rangers playoff",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "psu",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "psu white",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "ot",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "oregon vacation",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "ot game",
+      "tfidf_score": 0.1685
+    }
+  ],
+  "2023": [
+    {
+      "year": 2023,
+      "theme": "day ve",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "spectacular day",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "experienced",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "ve experienced",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "spectacular",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "day",
+      "tfidf_score": 0.3205
+    },
+    {
+      "year": 2023,
+      "theme": "ve",
+      "tfidf_score": 0.2672
+    },
+    {
+      "year": 2023,
+      "theme": "phoenix spectacular",
+      "tfidf_score": 0.1668
+    },
+    {
+      "year": 2023,
+      "theme": "phoenix",
+      "tfidf_score": 0.1668
+    },
+    {
+      "year": 2023,
+      "theme": "personal liberation",
+      "tfidf_score": 0.1668
+    }
+  ],
+  "2024": [
+    {
+      "year": 2024,
+      "theme": "trip",
+      "tfidf_score": 0.2208
+    },
+    {
+      "year": 2024,
+      "theme": "oct 21",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "place armes",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "place",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "passed oct",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "personal best",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "18 20",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "pm age",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "julian",
+      "tfidf_score": 0.1812
+    },
+    {
+      "year": 2024,
+      "theme": "tower",
+      "tfidf_score": 0.1812
+    }
+  ],
+  "2025": [
+    {
+      "year": 2025,
+      "theme": "road trip",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "passed nj",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "raised",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "raised boro",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "promotion passed",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "16 states",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "people 700",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "road",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "tower",
+      "tfidf_score": 0.1929
+    },
+    {
+      "year": 2025,
+      "theme": "mother",
+      "tfidf_score": 0.1929
+    }
+  ],
+  "2026": [
+    {
+      "year": 2026,
+      "theme": "trip",
+      "tfidf_score": 1.0
+    }
+  ]
+}

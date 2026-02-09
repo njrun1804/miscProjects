@@ -2,7 +2,7 @@ import sqlite3
 import json
 from datetime import datetime
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
 
 conn = sqlite3.connect(DB_PATH)
 cursor = conn.cursor()

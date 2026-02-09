@@ -10,8 +10,8 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
-API_DIR = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/api'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
+API_DIR = os.path.join(os.path.dirname(__file__), '..', 'db', 'api')
 
 # Track statistics
 exported_files = {}
@@ -204,7 +204,7 @@ def export_life_chapters():
     cursor.execute("""
         SELECT lc.id as chapter_id, lc.chapter_name, lc.chapter_number,
                m.id as milestone_id, m.year, m.milestone, m.category,
-               m.valence, m.arousal, m.dominance, m.vader_compound
+               m.valence, m.arousal, m.dominance
         FROM life_chapters lc
         LEFT JOIN milestones m ON m.year >= lc.start_year AND m.year <= lc.end_year
         ORDER BY lc.chapter_number, m.year
@@ -229,8 +229,7 @@ def export_life_chapters():
                 'category': r['category'],
                 'valence': r['valence'],
                 'arousal': r['arousal'],
-                'dominance': r['dominance'],
-                'vader_compound': r['vader_compound']
+                'dominance': r['dominance']
             })
     
     save_json('chapter_milestones.json', list(chapter_milestones.values()))
@@ -429,28 +428,28 @@ def export_comebacks():
     conn.close()
 
 
-def export_post_content():
-    """Export post content"""
-    print("\n[26] Exporting Post Content...")
-    conn = connect_db()
-    cursor = conn.cursor()
+# # def export_post_content():
+#     """Export post content"""
+#     print("\n[26] Exporting Post Content...")
+#     conn = connect_db()
+#     cursor = conn.cursor()
     
-    cursor.execute("SELECT * FROM post_content")
-    content = [dict(row) for row in cursor.fetchall()]
-    save_json('post_content.json', content)
-    conn.close()
+#     cursor.execute("SELECT * FROM post_content")
+#     content = [dict(row) for row in cursor.fetchall()]
+#     save_json('post_content.json', content)
+#     conn.close()
 
 
-def export_timeline_posts():
-    """Export timeline posts"""
-    print("\n[27] Exporting Timeline Posts...")
-    conn = connect_db()
-    cursor = conn.cursor()
+# def export_timeline_posts():
+#     """Export timeline posts"""
+#     print("\n[27] Exporting Timeline Posts...")
+#     conn = connect_db()
+#     cursor = conn.cursor()
     
-    cursor.execute("SELECT * FROM timeline_posts")
-    posts = [dict(row) for row in cursor.fetchall()]
-    save_json('timeline_posts.json', posts)
-    conn.close()
+#     cursor.execute("SELECT * FROM timeline_posts")
+#     posts = [dict(row) for row in cursor.fetchall()]
+#     save_json('timeline_posts.json', posts)
+#     conn.close()
 
 
 # ============================================================================
@@ -505,10 +504,10 @@ def export_ecd_events():
     cursor = conn.cursor()
     
     # V2 is canonical
-    cursor.execute("SELECT * FROM ecd_events_v2 ORDER BY event_number")
+    cursor.execute("SELECT * FROM ecd_events ORDER BY event_number")
     events = [dict(row) for row in cursor.fetchall()]
     save_json('ecd_events.json', events)
-    save_json('ecd_events_v2.json', events)
+    save_json('ecd_events.json', events)
     save_json('ecd_events_full.json', events)
     
     conn.close()
@@ -534,9 +533,9 @@ def export_ecd_awards():
     conn = connect_db()
     cursor = conn.cursor()
     
-    cursor.execute("SELECT * FROM ecd_awards_v2 ORDER BY year DESC")
+    cursor.execute("SELECT * FROM ecd_awards ORDER BY year DESC")
     awards = [dict(row) for row in cursor.fetchall()]
-    save_json('ecd_awards_v2.json', awards)
+    save_json('ecd_awards.json', awards)
     save_json('ecd_awards_full.json', awards)
     
     conn.close()
@@ -556,18 +555,18 @@ def export_ecd_rivalries():
     conn.close()
 
 
-def export_ecd_fundraisers():
-    """Export ECD fundraisers"""
-    print("\n[34] Exporting ECD Fundraisers...")
-    conn = connect_db()
-    cursor = conn.cursor()
+# def export_ecd_fundraisers():
+#     """Export ECD fundraisers"""
+#     print("\n[34] Exporting ECD Fundraisers...")
+#     conn = connect_db()
+#     cursor = conn.cursor()
     
-    cursor.execute("SELECT * FROM ecd_fundraisers ORDER BY year DESC")
-    fundraisers = [dict(row) for row in cursor.fetchall()]
-    save_json('ecd_fundraisers.json', fundraisers)
-    save_json('ecd_fundraisers_full.json', fundraisers)
+#     cursor.execute("SELECT * FROM ecd_fundraisers ORDER BY year DESC")
+#     fundraisers = [dict(row) for row in cursor.fetchall()]
+#     save_json('ecd_fundraisers.json', fundraisers)
+#     save_json('ecd_fundraisers_full.json', fundraisers)
     
-    conn.close()
+#     conn.close()
 
 
 def export_ecd_player_years():
@@ -583,30 +582,30 @@ def export_ecd_player_years():
     conn.close()
 
 
-def export_ecd_community_narrative():
-    """Export ECD community narrative and phases"""
-    print("\n[36] Exporting ECD Community Narrative...")
-    conn = connect_db()
-    cursor = conn.cursor()
+# def export_ecd_community_narrative():
+#     """Export ECD community narrative and phases"""
+#     print("\n[36] Exporting ECD Community Narrative...")
+#     conn = connect_db()
+#     cursor = conn.cursor()
     
-    # Full narrative
-    cursor.execute("SELECT * FROM ecd_community_narrative ORDER BY year")
-    narrative = [dict(row) for row in cursor.fetchall()]
-    save_json('ecd_community_narrative.json', narrative)
+#     # Full narrative
+#     cursor.execute("SELECT * FROM ecd_community_narrative ORDER BY year")
+#     narrative = [dict(row) for row in cursor.fetchall()]
+#     save_json('ecd_community_narrative.json', narrative)
     
-    # Phases (distinct phase names)
-    cursor.execute("""
-        SELECT DISTINCT phase_name, COUNT(*) as count,
-               MIN(year) as first_year, MAX(year) as last_year
-        FROM ecd_community_narrative
-        GROUP BY phase_name
-        ORDER BY first_year
-    """)
+#     # Phases (distinct phase names)
+#     cursor.execute("""
+#         SELECT DISTINCT phase_name, COUNT(*) as count,
+#                MIN(year) as first_year, MAX(year) as last_year
+#         FROM ecd_community_narrative
+#         GROUP BY phase_name
+#         ORDER BY first_year
+#     """)
     
-    phases = [dict(row) for row in cursor.fetchall()]
-    save_json('ecd_community_phases.json', phases)
+#     phases = [dict(row) for row in cursor.fetchall()]
+#     save_json('ecd_community_phases.json', phases)
     
-    conn.close()
+#     conn.close()
 
 
 # ============================================================================
@@ -622,8 +621,7 @@ def export_sentiment_timeline():
     # Build sentiment timeline from year_summary + milestones
     cursor.execute("""
         SELECT ys.year, ys.intensity_score,
-               AVG(m.vader_compound) as avg_sentiment,
-               COUNT(m.id) as milestone_count
+                              COUNT(m.id) as milestone_count
         FROM year_summary ys
         LEFT JOIN milestones m ON m.year = ys.year
         GROUP BY ys.year
@@ -823,19 +821,15 @@ def main():
         export_locations,
         export_insights,
         export_comebacks,
-        export_post_content,
-        export_timeline_posts,
-        # ECD community exports
+##        # ECD community exports
         export_ecd_posts,
         export_ecd_players,
         export_ecd_events,
         export_ecd_match_results,
         export_ecd_awards,
         export_ecd_rivalries,
-        export_ecd_fundraisers,
-        export_ecd_player_years,
-        export_ecd_community_narrative,
-        # Sentiment & emotional exports
+#        export_ecd_player_years,
+#        # Sentiment & emotional exports
         export_sentiment_timeline,
         export_emotion_distribution,
         export_ecd_sentiment,

@@ -5,7 +5,7 @@ Creates ecd_rivalry_timeline by tracking rivalry matches per year.
 """
 import sqlite3
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
 
 def main():
     conn = sqlite3.connect(DB_PATH)

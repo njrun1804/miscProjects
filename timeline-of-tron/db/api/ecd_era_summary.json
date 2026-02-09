@@ -1,0 +1,51 @@
+[
+  {
+    "era": "Founding Era",
+    "event_count": 79,
+    "avg_attendance": 48.391304347826086,
+    "start_year": 2005,
+    "end_year": 2009
+  },
+  {
+    "era": "Golden Age",
+    "event_count": 20,
+    "avg_attendance": 27.375,
+    "start_year": 2005,
+    "end_year": 2013
+  },
+  {
+    "era": "Growth Era",
+    "event_count": 74,
+    "avg_attendance": 29.44,
+    "start_year": 2006,
+    "end_year": 2008
+  },
+  {
+    "era": "Evolution Era",
+    "event_count": 12,
+    "avg_attendance": 38.0,
+    "start_year": 2008,
+    "end_year": 2015
+  },
+  {
+    "era": "Legacy Era",
+    "event_count": 15,
+    "avg_attendance": 24.0,
+    "start_year": 2011,
+    "end_year": 2013
+  },
+  {
+    "era": "Reunion Era",
+    "event_count": 10,
+    "avg_attendance": 23.8,
+    "start_year": 2014,
+    "end_year": 2017
+  },
+  {
+    "era": "Modern Era",
+    "event_count": 12,
+    "avg_attendance": 24.0,
+    "start_year": 2018,
+    "end_year": 2025
+  }
+]

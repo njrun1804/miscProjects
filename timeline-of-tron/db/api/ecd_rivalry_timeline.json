@@ -1,0 +1,472 @@
+[
+  {
+    "id": 19,
+    "player1": "Lauren Winston",
+    "player2": "Valerie Winston",
+    "year": 2005,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 22,
+    "player1": "Lenny Herrera",
+    "player2": "Matt Brown",
+    "year": 2005,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 26,
+    "player1": "Chris Adams",
+    "player2": "Derek Carty",
+    "year": 2005,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 32,
+    "player1": "Joe Kelly",
+    "player2": "Travis Mills",
+    "year": 2005,
+    "matches_count": 2,
+    "player1_wins": 2,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.36000000000000004
+  },
+  {
+    "id": 10,
+    "player1": "Chris Adams",
+    "player2": "Kevin Fitzpatrick",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 18,
+    "player1": "Dan Spengeman",
+    "player2": "Justin Pierce",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 21,
+    "player1": "Chris Adams",
+    "player2": "John Tronolone",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 23,
+    "player1": "Darien Brown",
+    "player2": "Robert Brown",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 24,
+    "player1": "Kevin Adams",
+    "player2": "Ryan Letsche",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 28,
+    "player1": "Derek Carty",
+    "player2": "Joe Kelly",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 30,
+    "player1": "Kerrin Marchese",
+    "player2": "Melissa Kerr",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 33,
+    "player1": "Kevin Fitzpatrick",
+    "player2": "Lauren Stopa",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 34,
+    "player1": "Chris Adams",
+    "player2": "Juan Londono",
+    "year": 2006,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 4,
+    "player1": "John Tronolone",
+    "player2": "Kevin Adams",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 6,
+    "player1": "Dan Spengeman",
+    "player2": "Julia Dennebaum",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 11,
+    "player1": "Chris Adams",
+    "player2": "Kevin Fitzpatrick",
+    "year": 2007,
+    "matches_count": 2,
+    "player1_wins": 2,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.36000000000000004
+  },
+  {
+    "id": 14,
+    "player1": "Kevin Adams",
+    "player2": "Kevin Fitzpatrick",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 16,
+    "player1": "Juan Londono",
+    "player2": "Rob Avakian",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 17,
+    "player1": "Kevin Megill",
+    "player2": "Mike Edwards",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 20,
+    "player1": "Lauren Winston",
+    "player2": "Valerie Winston",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 27,
+    "player1": "Alison Bertsch",
+    "player2": "Robert Brown",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 29,
+    "player1": "Derek Carty",
+    "player2": "Joe Kelly",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 31,
+    "player1": "Aimee Savoth",
+    "player2": "Kathryn Nogueira",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 37,
+    "player1": "Grant Cornero",
+    "player2": "Kevin Adams",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 38,
+    "player1": "Ray Marzarella",
+    "player2": "Sascha Basista",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 39,
+    "player1": "Diana DiBuccio",
+    "player2": "Kevin Megill",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 41,
+    "player1": "Derek Carty",
+    "player2": "Mike Edwards",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 42,
+    "player1": "John Tronolone",
+    "player2": "Tom Adams",
+    "year": 2007,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 45,
+    "player1": "Juan Londono",
+    "player2": "Justin Wolf",
+    "year": 2007,
+    "matches_count": 3,
+    "player1_wins": 3,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.44
+  },
+  {
+    "id": 3,
+    "player1": "Chris Adams",
+    "player2": "Kevin Megill",
+    "year": 2008,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 7,
+    "player1": "Dan Spengeman",
+    "player2": "Julia Dennebaum",
+    "year": 2008,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 12,
+    "player1": "Chris Adams",
+    "player2": "Kevin Fitzpatrick",
+    "year": 2008,
+    "matches_count": 2,
+    "player1_wins": 2,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.36000000000000004
+  },
+  {
+    "id": 25,
+    "player1": "Kevin Adams",
+    "player2": "Ryan Letsche",
+    "year": 2008,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 43,
+    "player1": "Grant Cornero",
+    "player2": "Ryan Letsche",
+    "year": 2008,
+    "matches_count": 3,
+    "player1_wins": 3,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.44
+  },
+  {
+    "id": 44,
+    "player1": "Kevin Fitzpatrick",
+    "player2": "Lenny Herrera",
+    "year": 2008,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 46,
+    "player1": "Juan Londono",
+    "player2": "Justin Wolf",
+    "year": 2008,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 47,
+    "player1": "John Tronolone",
+    "player2": "Ryan Letsche",
+    "year": 2008,
+    "matches_count": 3,
+    "player1_wins": 3,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.44
+  },
+  {
+    "id": 1,
+    "player1": "Joey Smalls",
+    "player2": "Sascha Basista",
+    "year": 2009,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 2,
+    "player1": "Joey Smalls",
+    "player2": "Sascha Basista",
+    "year": 2010,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 5,
+    "player1": "John Tronolone",
+    "player2": "Kevin Adams",
+    "year": 2010,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 8,
+    "player1": "Dan Spengeman",
+    "player2": "Julia Dennebaum",
+    "year": 2010,
+    "matches_count": 2,
+    "player1_wins": 2,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.36000000000000004
+  },
+  {
+    "id": 15,
+    "player1": "Kevin Adams",
+    "player2": "Kevin Fitzpatrick",
+    "year": 2010,
+    "matches_count": 2,
+    "player1_wins": 2,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.36000000000000004
+  },
+  {
+    "id": 35,
+    "player1": "Dan Turner",
+    "player2": "Ray Marzarella",
+    "year": 2010,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 36,
+    "player1": "Mike Butler",
+    "player2": "Mike Edwards",
+    "year": 2010,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 40,
+    "player1": "Justin Pierce",
+    "player2": "Tom Adams",
+    "year": 2010,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 9,
+    "player1": "Joanice Lima",
+    "player2": "Lauren Stopa",
+    "year": 2011,
+    "matches_count": 1,
+    "player1_wins": 0,
+    "player2_wins": 1,
+    "rivalry_intensity": 0.28
+  },
+  {
+    "id": 13,
+    "player1": "Justin Wolf",
+    "player2": "Zach Katz",
+    "year": 2012,
+    "matches_count": 1,
+    "player1_wins": 1,
+    "player2_wins": 0,
+    "rivalry_intensity": 0.28
+  }
+]

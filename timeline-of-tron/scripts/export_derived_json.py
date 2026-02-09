@@ -10,8 +10,8 @@ import os
 from collections import defaultdict
 from datetime import datetime
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
-API_DIR = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/api'
+DB_PATH = os.environ.get('TRON_DB_PATH', os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db'))
+API_DIR = os.environ.get('TRON_API_DIR', os.path.join(os.path.dirname(__file__), '..', 'db', 'api'))
 
 def get_connection():
     """Get database connection with Row factory."""
@@ -413,7 +413,7 @@ def export_relationship_constellation():
     # Get all people as nodes
     cur.execute("""
         SELECT id, name, category, 
-               COALESCE(birth_year, 0) as first_year,
+               0 as first_year,
                importance_score
         FROM people
         ORDER BY importance_score DESC
@@ -557,7 +557,7 @@ def export_people_importance():
     
     cur.execute("""
         SELECT id, name, category, importance_score,
-               birth_year, peak_year
+               peak_year
         FROM people
         ORDER BY importance_score DESC
     """)
@@ -580,7 +580,7 @@ def export_ecd_stats_dashboard():
     player_count = cur.fetchone()['count']
     
     # Event count
-    cur.execute("SELECT COUNT(*) as count FROM ecd_events_v2")
+    cur.execute("SELECT COUNT(*) as count FROM ecd_events")
     event_count = cur.fetchone()['count']
     
     # Top players
@@ -599,15 +599,15 @@ def export_ecd_stats_dashboard():
     """)
     top_rivalries = [dict(row) for row in cur.fetchall()]
     
-    # Fundraiser total
-    cur.execute("SELECT COALESCE(SUM(amount), 0) as total FROM ecd_fundraisers")
-    fundraiser_total = cur.fetchone()['total']
-    
-    # Attendance trends
+    # Fundraiser total (table dropped — was 100% empty)
+    fundraiser_total = 0
+
+    # Attendance trends — count ALL events per year, not just those with attendance
     cur.execute("""
-        SELECT year, COUNT(*) as event_count, AVG(attendance) as avg_attendance
-        FROM ecd_events_v2
-        WHERE attendance IS NOT NULL
+        SELECT year, COUNT(*) as event_count,
+               AVG(CASE WHEN attendance IS NOT NULL THEN attendance END) as avg_attendance
+        FROM ecd_events
+        WHERE year IS NOT NULL
         GROUP BY year
         ORDER BY year
     """)
@@ -631,7 +631,7 @@ def export_ecd_highlights():
     cur = conn.cursor()
     
     cur.execute("""
-        SELECT id, title, year, era, post_type, sentiment_label
+        SELECT id, title, year, era, post_type
         FROM ecd_posts
         WHERE sentiment_compound > 0.5
         ORDER BY year DESC
@@ -648,7 +648,7 @@ def export_ecd_timeline():
     cur = conn.cursor()
     
     cur.execute("""
-        SELECT * FROM ecd_events_v2
+        SELECT * FROM ecd_events
         ORDER BY year, date
     """)
     data = [dict(row) for row in cur.fetchall()]
@@ -680,20 +680,21 @@ def export_ecd_theme_distribution():
     save_json('ecd_theme_distribution.json', result)
 
 def export_ecd_attendance_trends():
-    """ECD attendance over time."""
+    """ECD attendance over time — counts ALL events per year, not just those with attendance data."""
     conn = get_connection()
     cur = conn.cursor()
-    
+
     cur.execute("""
-        SELECT year, COUNT(*) as events, AVG(attendance) as avg_attendance,
+        SELECT year, COUNT(*) as events,
+               AVG(CASE WHEN attendance IS NOT NULL THEN attendance END) as avg_attendance,
                MAX(attendance) as peak_attendance
-        FROM ecd_events_v2
-        WHERE attendance IS NOT NULL
+        FROM ecd_events
+        WHERE year IS NOT NULL
         GROUP BY year
         ORDER BY year
     """)
     data = [dict(row) for row in cur.fetchall()]
-    
+
     conn.close()
     save_json('ecd_attendance_trends.json', data)
 
@@ -705,7 +706,7 @@ def export_ecd_era_summary():
     cur.execute("""
         SELECT era, COUNT(*) as event_count, AVG(attendance) as avg_attendance,
                MIN(year) as start_year, MAX(year) as end_year
-        FROM ecd_events_v2
+        FROM ecd_events
         WHERE era IS NOT NULL
         GROUP BY era
         ORDER BY start_year
@@ -784,11 +785,11 @@ def export_sentiment_by_milestone_type():
     cur = conn.cursor()
     
     cur.execute("""
-        SELECT category, COUNT(*) as count, AVG(vader_compound) as avg_sentiment
+        SELECT category, COUNT(*) as count
         FROM milestones
         WHERE category IS NOT NULL
         GROUP BY category
-        ORDER BY avg_sentiment DESC
+        ORDER BY count DESC
     """)
     data = [dict(row) for row in cur.fetchall()]
     
@@ -862,10 +863,10 @@ def export_travel_sentiment_by_location():
     cur = conn.cursor()
     
     cur.execute("""
-        SELECT destination, COUNT(*) as count, AVG(vader_compound) as avg_sentiment
+        SELECT destination, COUNT(*) as count
         FROM travel
         GROUP BY destination
-        ORDER BY avg_sentiment DESC
+        ORDER BY count DESC
     """)
     data = [dict(row) for row in cur.fetchall()]
     
@@ -941,7 +942,7 @@ def export_yearly_sentiment_trend():
     cur = conn.cursor()
     
     cur.execute("""
-        SELECT year, COUNT(*) as count, AVG(vader_compound) as avg_sentiment
+        SELECT year, COUNT(*) as count
         FROM (
             SELECT year, vader_compound FROM milestones
             UNION ALL

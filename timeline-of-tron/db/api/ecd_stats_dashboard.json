@@ -1,7 +1,7 @@
 {
   "player_count": 128,
   "event_count": 222,
-  "fundraiser_total": 1847.0,
+  "fundraiser_total": 0,
   "top_players": [
     {
       "id": 1,
@@ -9,7 +9,7 @@
       "total_mentions": 1362,
       "post_count": 300,
       "wins": 9,
-      "losses": 3,
+      "losses": 4,
       "nicknames": "[\"KJohn\", \"KJohn Tronolone\", \"the Creation\", \"The Writer\", \"Tronolone\", \"the King\"]",
       "first_year": 2005,
       "last_year": 2010,
@@ -22,8 +22,8 @@
       "name": "Diana DiBuccio",
       "total_mentions": 1349,
       "post_count": 197,
-      "wins": 0,
-      "losses": 4,
+      "wins": 1,
+      "losses": 6,
       "nicknames": "[\"Di Buccio\", \"DiBuccio\", \"Diana Di\", \"Diana\", \"Dibuccio\"]",
       "first_year": 2007,
       "last_year": 2008,
@@ -50,7 +50,7 @@
       "name": "Kevin Megill",
       "total_mentions": 691,
       "post_count": 178,
-      "wins": 5,
+      "wins": 6,
       "losses": 1,
       "nicknames": "[\"Megill\"]",
       "first_year": 2007,
@@ -79,7 +79,7 @@
       "total_mentions": 549,
       "post_count": 142,
       "wins": 5,
-      "losses": 8,
+      "losses": 9,
       "nicknames": "[\"Letsche\"]",
       "first_year": 2006,
       "last_year": 2008,
@@ -121,7 +121,7 @@
       "total_mentions": 413,
       "post_count": 120,
       "wins": 5,
-      "losses": 2,
+      "losses": 3,
       "nicknames": "[\"Spengeman\"]",
       "first_year": 2006,
       "last_year": 2016,
@@ -260,7 +260,7 @@
       "name": "Lauren Stopa",
       "total_mentions": 137,
       "post_count": 85,
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
       "nicknames": "[]",
       "first_year": 2006,
@@ -759,43 +759,108 @@
   "attendance_trends": [
     {
       "year": 2005,
-      "event_count": 7,
-      "avg_attendance": 50.285714285714285
+      "event_count": 21,
+      "avg_attendance": 83.83333333333333
     },
     {
       "year": 2006,
-      "event_count": 15,
-      "avg_attendance": 48.333333333333336
+      "event_count": 43,
+      "avg_attendance": 36.27272727272727
     },
     {
       "year": 2007,
+      "event_count": 55,
+      "avg_attendance": 34.63157894736842
+    },
+    {
+      "year": 2008,
+      "event_count": 55,
+      "avg_attendance": 25.0
+    },
+    {
+      "year": 2009,
+      "event_count": 2,
+      "avg_attendance": 36.5
+    },
+    {
+      "year": 2010,
+      "event_count": 5,
+      "avg_attendance": 37.0
+    },
+    {
+      "year": 2011,
+      "event_count": 4,
+      "avg_attendance": 24.0
+    },
+    {
+      "year": 2012,
+      "event_count": 6,
+      "avg_attendance": null
+    },
+    {
+      "year": 2013,
+      "event_count": 7,
+      "avg_attendance": null
+    },
+    {
+      "year": 2014,
+      "event_count": 2,
+      "avg_attendance": null
+    },
+    {
+      "year": 2015,
+      "event_count": 5,
+      "avg_attendance": 25.0
+    },
+    {
+      "year": 2016,
+      "event_count": 3,
+      "avg_attendance": 23.0
+    },
+    {
+      "year": 2017,
       "event_count": 2,
       "avg_attendance": 23.0
     },
     {
-      "year": 2008,
-      "event_count": 23,
+      "year": 2018,
+      "event_count": 2,
       "avg_attendance": 30.0
     },
     {
-      "year": 2010,
-      "event_count": 4,
-      "avg_attendance": 32.25
-    },
-    {
-      "year": 2011,
+      "year": 2019,
       "event_count": 2,
-      "avg_attendance": 31.0
+      "avg_attendance": 18.0
     },
     {
-      "year": 2012,
+      "year": 2020,
       "event_count": 1,
-      "avg_attendance": 19.0
+      "avg_attendance": null
     },
     {
-      "year": 2013,
+      "year": 2021,
       "event_count": 1,
-      "avg_attendance": 9.0
+      "avg_attendance": null
+    },
+    {
+      "year": 2022,
+      "event_count": 2,
+      "avg_attendance": null
+    },
+    {
+      "year": 2023,
+      "event_count": 1,
+      "avg_attendance": null
+    },
+    {
+      "year": 2024,
+      "event_count": 1,
+      "avg_attendance": null
+    },
+    {
+      "year": 2025,
+      "event_count": 2,
+      "avg_attendance": null
     }
   ]
 }

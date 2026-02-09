@@ -105,7 +105,7 @@ def search_file(filepath: str) -> List[Dict]:
     return results
 
 def main():
-    directory = '/sessions/adoring-beautiful-gates/mnt/timeline-of-tron/db/raw_ecd_posts'
+    directory = os.path.join(os.path.dirname(__file__), '..', 'db')
     json_files = sorted(Path(directory).glob('*.json'))
 
     all_results = []

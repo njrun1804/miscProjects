@@ -14,7 +14,7 @@ import requests
 from bs4 import BeautifulSoup
 
 BASE_URL = "https://dodgeball.livejournal.com"
-PROJECT_DIR = Path("/sessions/upbeat-festive-hopper/mnt/Projects/miscProjects/timeline-of-tron")
+PROJECT_DIR = Path(__file__).parent
 RAW_DIR = PROJECT_DIR / "db" / "raw_ecd_posts"
 RAW_DIR.mkdir(parents=True, exist_ok=True)
 

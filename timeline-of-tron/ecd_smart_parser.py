@@ -24,7 +24,7 @@ from datetime import datetime
 logging.basicConfig(level=logging.INFO, format='%(asctime)s %(levelname)s %(message)s')
 log = logging.getLogger(__name__)
 
-PROJECT_DIR = Path("/sessions/upbeat-festive-hopper/mnt/Projects/miscProjects/timeline-of-tron")
+PROJECT_DIR = Path(__file__).parent
 RAW_DIR = PROJECT_DIR / "db" / "raw_ecd_posts"
 API_DIR = PROJECT_DIR / "db" / "api"
 

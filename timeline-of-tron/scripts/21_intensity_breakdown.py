@@ -7,7 +7,7 @@ Script 21: Decompose yearly intensity into 6 life domains
 
 import sqlite3
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)

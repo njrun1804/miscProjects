@@ -5,8 +5,7 @@
     "year": 2008,
     "winner": "",
     "note": "Category existed",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 2,
@@ -14,8 +13,7 @@
     "year": 2012,
     "winner": "Mariah Carey",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 3,
@@ -23,8 +21,7 @@
     "year": 2013,
     "winner": "Mariah Carey",
     "note": "Top 2 three straight years; switched places with Madonna from 2012",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 4,
@@ -32,8 +29,7 @@
     "year": 2014,
     "winner": "Mariah Carey",
     "note": "Top 2 past 4 years",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 5,
@@ -41,8 +37,7 @@
     "year": 2015,
     "winner": "Janet Jackson",
     "note": null,
-    "related_milestones": "[\"Janet Jackson first Artist of the Year win\"]",
-    "award_sentiment": "achievement"
+    "related_milestones": "[\"Janet Jackson first Artist of the Year win\"]"
   },
   {
     "id": 6,
@@ -50,8 +45,7 @@
     "year": 2016,
     "winner": "Janet Jackson",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 7,
@@ -59,8 +53,7 @@
     "year": 2018,
     "winner": "Janet Jackson",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 8,
@@ -68,8 +61,7 @@
     "year": 2019,
     "winner": "Janet Jackson",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 9,
@@ -77,8 +69,7 @@
     "year": 2020,
     "winner": "Janet Jackson",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 10,
@@ -86,8 +77,7 @@
     "year": 2021,
     "winner": "Janet Jackson",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 11,
@@ -95,8 +85,7 @@
     "year": 2008,
     "winner": "Runnin' Down a Dream",
     "note": null,
-    "related_milestones": "[\"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]",
-    "award_sentiment": "achievement"
+    "related_milestones": "[\"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]"
   },
   {
     "id": 12,
@@ -104,8 +93,7 @@
     "year": 2013,
     "winner": "",
     "note": "Most nominations ever (tied with 2013). First time song from Timeline year won top honors.",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 13,
@@ -113,8 +101,7 @@
     "year": 2014,
     "winner": "",
     "note": "Most nominations ever (tied with 2013). Janet's 'Alright' was runner-up (also runner-up in 2013).",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 14,
@@ -122,8 +109,7 @@
     "year": 2015,
     "winner": "All For You, If (Janet Jackson)",
     "note": "First artist to win for two different songs in same year",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 15,
@@ -131,8 +117,7 @@
     "year": 2020,
     "winner": "Music Sounds Better With You",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 16,
@@ -140,8 +125,7 @@
     "year": 2021,
     "winner": "Music Sounds Better With You",
     "note": "Runners-up: Shawn Christopher 'Sweet Freedom', Jet 'Start The Show'. First time runner-up reached #1.",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 17,
@@ -149,8 +133,7 @@
     "year": 2008,
     "winner": "Diana DiBuccio",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 18,
@@ -158,8 +141,7 @@
     "year": 2009,
     "winner": "The Pops",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 19,
@@ -167,8 +149,7 @@
     "year": 2011,
     "winner": "Rupert",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 20,
@@ -176,8 +157,7 @@
     "year": 2012,
     "winner": "Rupert",
     "note": "Two-time defending champion; later eliminated from competition",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 21,
@@ -185,8 +165,7 @@
     "year": 2014,
     "winner": "The Pops (Darrell)",
     "note": "Second straight year; nominated every year since 2009",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 22,
@@ -194,8 +173,7 @@
     "year": 2015,
     "winner": "Dan Spengeman",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 23,
@@ -203,8 +181,7 @@
     "year": 2016,
     "winner": "Lauren Winston",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 24,
@@ -212,8 +189,7 @@
     "year": 2017,
     "winner": "The Pops",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 25,
@@ -221,8 +197,7 @@
     "year": 2018,
     "winner": "Dan Spengeman",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 26,
@@ -230,8 +205,7 @@
     "year": 2019,
     "winner": "Diana DiBuccio",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 27,
@@ -239,8 +213,7 @@
     "year": 2020,
     "winner": "Diana DiBuccio",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 28,
@@ -248,8 +221,7 @@
     "year": 2021,
     "winner": "Lauren Winston",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 29,
@@ -257,8 +229,7 @@
     "year": 2008,
     "winner": "Diana DiBuccio",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 30,
@@ -266,8 +237,7 @@
     "year": 2009,
     "winner": "The Pops",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 31,
@@ -275,8 +245,7 @@
     "year": 2015,
     "winner": "Dan Spengeman",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 32,
@@ -284,8 +253,7 @@
     "year": 2017,
     "winner": "The Pops",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 33,
@@ -293,8 +261,7 @@
     "year": 2018,
     "winner": "Dan Spengeman",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 34,
@@ -302,8 +269,7 @@
     "year": 2019,
     "winner": "Diana DiBuccio",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 35,
@@ -311,8 +277,7 @@
     "year": 2020,
     "winner": "Diana DiBuccio",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 36,
@@ -320,8 +285,7 @@
     "year": 2022,
     "winner": "Valerie Winston, Diana DiBuccio",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 37,
@@ -329,8 +293,7 @@
     "year": 2013,
     "winner": "",
     "note": "First time in Timeline history co-winners announced",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 38,
@@ -338,8 +301,7 @@
     "year": 2020,
     "winner": "COVID Test II; Laver Cup Tickets; Brian's Transfer",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 39,
@@ -347,8 +309,7 @@
     "year": 2021,
     "winner": "Sr. RCC promotion; Message From Rob Phillips; Stopa's Pregnancy Text; Tim's Stand-Up Text",
     "note": "Second consecutive work-related winner",
-    "related_milestones": null,
-    "award_sentiment": "achievement"
+    "related_milestones": null
   },
   {
     "id": 40,
@@ -356,8 +317,7 @@
     "year": 2007,
     "winner": "Favorite Joke: 'T.A.R.' (Tuck and Roll)",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 41,
@@ -365,8 +325,7 @@
     "year": 2007,
     "winner": "Favorite Song: Saliva's 'Ladies and Gentlemen'",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 42,
@@ -374,8 +333,7 @@
     "year": 2008,
     "winner": "Day of the Year: Thursday",
     "note": null,
-    "related_milestones": "[\"Diana DiBuccio: Comedian of the Year\", \"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"Diana DiBuccio: Comedian of the Year\", \"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]"
   },
   {
     "id": 43,
@@ -383,8 +341,7 @@
     "year": 2008,
     "winner": "Videos of the Year: WrestleMania XXIV Intro and Ryan's Birthday Speech",
     "note": null,
-    "related_milestones": "[\"WrestleMania XXIV in Florida (4th WM)\", \"Diana DiBuccio: Comedian of the Year\", \"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"WrestleMania XXIV in Florida (4th WM)\", \"Diana DiBuccio: Comedian of the Year\", \"Song of the Year: Tom Petty 'Runnin Down a Dream'\"]"
   },
   {
     "id": 44,
@@ -392,8 +349,7 @@
     "year": 2009,
     "winner": "Video of the Year: SkyDive I",
     "note": null,
-    "related_milestones": "[\"SkyDive I at 10,000 feet (Aug 16) \\u2014 'maybe the happiest 24-span of my life'\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"SkyDive I at 10,000 feet (Aug 16) \\u2014 'maybe the happiest 24-span of my life'\"]"
   },
   {
     "id": 45,
@@ -401,8 +357,7 @@
     "year": 2010,
     "winner": "Inaugural HERO of the Year",
     "note": null,
-    "related_milestones": "[\"Won inaugural HERO of the Year (Jan 27)\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"Won inaugural HERO of the Year (Jan 27)\"]"
   },
   {
     "id": 46,
@@ -410,8 +365,7 @@
     "year": 2011,
     "winner": "Bogart's 'Man of March' (Apr 1, sober)",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 47,
@@ -419,8 +373,7 @@
     "year": 2011,
     "winner": "ECDElite Hall of Fame induction (Jun 18)",
     "note": null,
-    "related_milestones": "[\"ECDElite Hall of Fame induction (Jun 18)\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"ECDElite Hall of Fame induction (Jun 18)\"]"
   },
   {
     "id": 48,
@@ -428,8 +381,7 @@
     "year": 2012,
     "winner": "Employee of the Month (January)",
     "note": null,
-    "related_milestones": "[\"Employee of the Month (Jan)\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"Employee of the Month (Jan)\"]"
   },
   {
     "id": 49,
@@ -437,8 +389,7 @@
     "year": 2013,
     "winner": "'Most Realistic' Halloween Costume ('General' Tronolone)",
     "note": null,
-    "related_milestones": null,
-    "award_sentiment": "general"
+    "related_milestones": null
   },
   {
     "id": 50,
@@ -446,8 +397,7 @@
     "year": 2016,
     "winner": "Manager of the Year",
     "note": null,
-    "related_milestones": "[\"Manager of the Year award\", \"Lauren Winston: Comedian of the Year\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"Manager of the Year award\", \"Lauren Winston: Comedian of the Year\"]"
   },
   {
     "id": 51,
@@ -455,7 +405,6 @@
     "year": 2022,
     "winner": "#100 Award",
     "note": null,
-    "related_milestones": "[\"#100 Award\"]",
-    "award_sentiment": "general"
+    "related_milestones": "[\"#100 Award\"]"
   }
 ]

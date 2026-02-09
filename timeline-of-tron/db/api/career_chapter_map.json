@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "career_id": 2,
+    "chapter_id": 1,
+    "career_year": 2004,
+    "chapter_name": "Chapter 1: 2004-2006",
+    "career_title": "Monmouth University Student"
+  },
+  {
+    "id": 2,
+    "career_id": 3,
+    "chapter_id": 1,
+    "career_year": 2005,
+    "chapter_name": "Chapter 1: 2004-2006",
+    "career_title": "EastCoastDodgeball Founder"
+  },
+  {
+    "id": 3,
+    "career_id": 4,
+    "chapter_id": 2,
+    "career_year": 2007,
+    "chapter_name": "Chapter 2: 2007-2007",
+    "career_title": "Recreation Worker"
+  },
+  {
+    "id": 4,
+    "career_id": 5,
+    "chapter_id": 5,
+    "career_year": 2010,
+    "chapter_name": "Chapter 5: 2010-2011",
+    "career_title": "Intern"
+  },
+  {
+    "id": 5,
+    "career_id": 6,
+    "chapter_id": 5,
+    "career_year": 2011,
+    "chapter_name": "Chapter 5: 2010-2011",
+    "career_title": "Life Enrichment Manager"
+  },
+  {
+    "id": 6,
+    "career_id": 7,
+    "chapter_id": 6,
+    "career_year": 2012,
+    "chapter_name": "Chapter 6: 2012-2012",
+    "career_title": "Activities & Volunteer Coordinator"
+  },
+  {
+    "id": 7,
+    "career_id": 8,
+    "chapter_id": 10,
+    "career_year": 2016,
+    "chapter_name": "Chapter 10: 2016-2016",
+    "career_title": "Manager of the Year Award"
+  },
+  {
+    "id": 8,
+    "career_id": 9,
+    "chapter_id": 12,
+    "career_year": 2018,
+    "chapter_name": "Chapter 12: 2018-2019",
+    "career_title": "Reminiscence Coordinator"
+  },
+  {
+    "id": 9,
+    "career_id": 10,
+    "chapter_id": 13,
+    "career_year": 2020,
+    "chapter_name": "Chapter 13: 2020-2020",
+    "career_title": "Assisted Living Manager"
+  },
+  {
+    "id": 10,
+    "career_id": 11,
+    "chapter_id": 14,
+    "career_year": 2021,
+    "chapter_name": "Chapter 14: 2021-2021",
+    "career_title": "Sr. Resident Care Coordinator"
+  },
+  {
+    "id": 11,
+    "career_id": 12,
+    "chapter_id": 18,
+    "career_year": 2025,
+    "chapter_name": "Chapter 18: 2025-2025",
+    "career_title": "Executive Director"
+  }
+]

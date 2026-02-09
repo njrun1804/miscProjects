@@ -1,5 +1,5 @@
 // js/ecd.js — East Coast Dodgeball (Redesigned)
-// 128 players. 168 events. 21 years. The community page.
+// 128 players. 222 events. 21 years. The community page.
 // Resilient loading, animated counters, scroll reveals, D3 force bubbles.
 
 import { initWormholes } from './wormholes.js';
@@ -74,6 +74,29 @@ function animateCounters() {
     }, { threshold: 0.5 });
 
     els.forEach(el => observer.observe(el));
+
+    // Immediately check elements already in viewport
+    els.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            observer.unobserve(el);
+            // Trigger animation directly
+            const target = parseFloat(el.dataset.countTo);
+            const prefix = el.dataset.countPrefix || '';
+            const suffix = el.dataset.countSuffix || '';
+            const duration = 1200;
+            const start = performance.now();
+            function tick(now) {
+                const elapsed = now - start;
+                const progress = Math.min(elapsed / duration, 1);
+                const eased = 1 - Math.pow(1 - progress, 3);
+                const current = Math.round(target * eased);
+                el.textContent = prefix + current.toLocaleString() + suffix;
+                if (progress < 1) requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+        }
+    });
 }
 
 // ═══════════════════════════════════════
@@ -83,32 +106,32 @@ function animateCounters() {
 async function initECD() {
     // Load all data files independently (no single-point-of-failure)
     const [
-        dashboard, sentiment, attendance, narrative,
+        dashboard, sentiment, attendance,
         network, playersAll, matches, rivalries,
-        emotions, highlights, awards, fundraisers
+        emotions, highlights, awards, narrative
     ] = await Promise.all([
         loadSafe('ecd_stats_dashboard.json'),
         loadSafe('ecd_sentiment_timeline.json'),
         loadSafe('ecd_attendance_trends.json'),
-        loadSafe('ecd_community_narrative.json'),
         loadSafe('ecd_player_network.json'),
         loadSafe('ecd_players_full.json'),
         loadSafe('ecd_match_results.json'),
         loadSafe('ecd_rivalries.json'),
         loadSafe('ecd_emotion_distribution.json'),
         loadSafe('ecd_highlights.json'),
-        loadSafe('ecd_awards_full.json'),
-        loadSafe('ecd_fundraisers.json')
+        loadSafe('ecd_awards.json'),
+        loadSafe('ecd_community_narrative.json')
     ]);
 
     // Each section renders independently
-    renderHeroStats(dashboard);
-    renderHeartbeat(sentiment, dashboard?.attendance_trends || attendance, narrative);
+    renderHeroStats(dashboard, playersAll, matches);
+    renderHeartbeat(sentiment, dashboard?.attendance_trends || attendance);
+    renderEraCards(narrative);
     renderPlayerNetwork(network, playersAll, dashboard?.top_players);
     renderLeaderboard(dashboard?.top_players);
     renderRivalries(matches, rivalries);
     renderEmotions(emotions, highlights);
-    renderLegacy(awards, fundraisers);
+    renderLegacy(awards);
 
     // Boot scroll reveals & counters
     initScrollReveal();
@@ -119,18 +142,24 @@ async function initECD() {
 //  SECTION 1: HERO STATS
 // ═══════════════════════════════════════
 
-function renderHeroStats(dashboard) {
+function renderHeroStats(dashboard, playersAll, matches) {
     const container = document.querySelector('.ecd-hero-stats');
     if (!container) return;
 
     const d = dashboard || {};
+    
+    // Calculate post_count from players
+    const postCount = (playersAll || []).reduce((sum, p) => sum + (p.post_count || 0), 0) || 527;
+    
+    // Calculate match_count from matches array
+    const matchCount = (matches || []).length || 91;
+    
     const stats = [
         { value: d.player_count || 128, label: 'Players' },
         { value: d.event_count || 222, label: 'Events' },
-        { value: 20, label: 'Years' },
-        { value: 553, label: 'Posts' },
-        { value: 350, label: 'Matches', suffix: '+' },
-        { value: d.fundraiser_total || 1847, label: 'Raised', prefix: '$' }
+        { value: 21, label: 'Years' },
+        { value: postCount, label: 'Posts' },
+        { value: matchCount, label: 'Matches' }
     ];
 
     container.innerHTML = stats.map(s => `
@@ -141,11 +170,12 @@ function renderHeroStats(dashboard) {
     `).join('');
 }
 
+
 // ═══════════════════════════════════════
 //  SECTION 2: RISE AND FALL
 // ═══════════════════════════════════════
 
-function renderHeartbeat(sentiment, attendance, narrative) {
+function renderHeartbeat(sentiment, attendance) {
     const canvas = document.getElementById('heartbeatChart');
     if (!canvas || !sentiment?.length) return;
 
@@ -321,8 +351,6 @@ function renderHeartbeat(sentiment, attendance, narrative) {
         },
         plugins: [eraBandPlugin, eraLabelPlugin, annotationPlugin]
     });
-
-    renderEraCards(narrative);
 }
 
 function renderEraCards(narrative) {
@@ -346,10 +374,24 @@ function renderEraCards(narrative) {
             acc.posts += d.posts_count || 0;
             acc.newPlayers += d.new_players || 0;
             acc.returning += d.returning_players || 0;
-            if (d.growth_rate && d.growth_rate !== 0) acc.growth = d.growth_rate;
             if (d.retention_rate) acc.retention = d.retention_rate;
             return acc;
         }, { players: 0, matches: 0, events: 0, posts: 0, newPlayers: 0, returning: 0, growth: null, retention: null });
+
+        // Calculate era-wide growth from first to last year
+        if (era.data.length > 0) {
+            const sorted = [...era.data].sort((a, b) => a.year - b.year);
+            const firstPlayers = sorted[0].active_players || 0;
+            const lastPlayers = sorted[sorted.length - 1].active_players || 0;
+
+            if (sorted.length === 1) {
+                // Single year: use that year's growth_rate
+                combined.growth = sorted[0].growth_rate || null;
+            } else if (firstPlayers > 0) {
+                // Multi-year: compute from first to last year's active_players
+                combined.growth = ((lastPlayers - firstPlayers) / firstPlayers * 100);
+            }
+        }
 
         const growthClass = combined.growth > 0 ? 'era-card__metric--growth' : (combined.growth < 0 ? 'era-card__metric--decline' : '');
         const cardClass = era.isCollapse ? ' era-card--collapse' : (era.isBoom ? ' era-card--boom' : '');
@@ -895,7 +937,7 @@ function renderHighlights(highlights) {
                 <div class="highlight-card__title">${h.title}</div>
                 <div class="highlight-card__meta">
                     ${h.era || ''} ${h.post_type ? '/ ' + h.post_type.replace(/_/g, ' ') : ''}
-                    ${h.sentiment_label ? sentimentDot(h.sentiment_label) : ''}
+                    
                 </div>
             </div>
         </div>
@@ -906,7 +948,7 @@ function renderHighlights(highlights) {
 //  SECTION 6: LEGACY
 // ═══════════════════════════════════════
 
-function renderLegacy(awards, fundraisers) {
+function renderLegacy(awards) {
     const container = document.querySelector('.legacy-grid');
     if (!container) return;
 
@@ -940,14 +982,11 @@ function renderLegacy(awards, fundraisers) {
         return `
             <div class="${classes}">
                 <div class="legacy-item__name">${a.recipient}</div>
-                <div class="legacy-item__type">${a.award_type}${yearStr ? ' \u00B7 ' + yearStr : ''}</div>
+                <div class="legacy-item__type">${a.award_type}${yearStr ? ' · ' + yearStr : ''}</div>
                 ${a.context && !a.context.startsWith('From sidebar') ? `<div class="legacy-item__context">${a.context.slice(0, 120)}</div>` : ''}
             </div>
         `;
     }
-
-    const sortedFundraisers = [...(fundraisers || [])].sort((a, b) => (b.amount || 0) - (a.amount || 0));
-    const totalRaised = (fundraisers || []).reduce((s, f) => s + (f.amount || 0), 0);
 
     container.innerHTML = `
         <div class="legacy-panel">
@@ -959,38 +998,5 @@ function renderLegacy(awards, fundraisers) {
                 </div>
             `).join('')}
         </div>
-        <div class="legacy-panel">
-            <h3>Giving Back</h3>
-            ${sortedFundraisers.map(f => {
-                const isHero = f.amount >= 1000;
-                return `
-                    <div class="fundraiser-item">
-                        <span class="fundraiser-amount${isHero ? ' fundraiser-amount--hero' : ''}">$${(f.amount || 0).toLocaleString()}</span>
-                        <div class="fundraiser-detail">
-                            <div class="fundraiser-event">${f.event_name || 'ECD Event'}</div>
-                            <div class="fundraiser-year">${f.year || (f.date ? f.date.split('-')[0] : '')}</div>
-                            ${f.beneficiary ? `<div class="fundraiser-beneficiary">For ${f.beneficiary}</div>` : ''}
-                        </div>
-                    </div>
-                `;
-            }).join('')}
-            <div class="legacy-total">
-                <span class="legacy-total__value">$${totalRaised.toLocaleString()}</span>
-                <span class="legacy-total__label">total raised for charity</span>
-            </div>
-        </div>
     `;
 }
-
-// ═══════════════════════════════════════
-//  BOOT
-// ═══════════════════════════════════════
-
-initECD()
-    .then(() => initWormholes('ecd'))
-    .then(() => plantClue('clue7', document.querySelector('.ecd-callout')))
-    .catch(err => {
-        console.error('ECD init error:', err);
-        const el = document.querySelector('.ecd-hero-stats');
-        if (el) el.innerHTML = '<p class="load-error">Data unavailable. Try refreshing.</p>';
-    });

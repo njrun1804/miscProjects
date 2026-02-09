@@ -526,7 +526,7 @@ function renderPeople(quotes, profiles) {
     // ── Build the three tiers ──
 
     // Tier 1: Featured — family + partner with rich profiles (importance > 25)
-    const tier1Names = ['Ma', 'The Pops', 'Rob', 'Michael'];
+    const tier1Names = ['Ma', 'The Pops', 'Rob', 'Anthony', 'Michael'];
 
     // Tier 2: Quoted — people who appear in vault quotes and have profiles
     // Tier 3: The Unquoted — high-importance people who never appear in vault quotes
@@ -624,7 +624,7 @@ function renderFeaturedPersonCard(item) {
 
     // Best highlight
     const bestHighlight = highlights.length > 0
-        ? highlights.reduce((best, h) => (h.vader_compound || 0) > (best.vader_compound || 0) ? h : best, highlights[0])
+        ? highlights[0]
         : null;
 
     // Sample quote from vault

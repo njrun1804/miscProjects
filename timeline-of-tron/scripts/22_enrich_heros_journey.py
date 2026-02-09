@@ -5,7 +5,7 @@ Script 22: Enrich heros_journey table with computed columns
 
 import sqlite3
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
 
 def enrich_heros_journey():
     conn = sqlite3.connect(DB_PATH)

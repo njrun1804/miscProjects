@@ -2,7 +2,7 @@ import sqlite3
 from datetime import datetime
 import re
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
 
 def parse_date(value):
     """Try to parse various date formats and return YYYY-MM-DD or None"""

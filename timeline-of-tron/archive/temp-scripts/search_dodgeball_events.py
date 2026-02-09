@@ -154,7 +154,7 @@ def search_file(filepath: str) -> List[Dict]:
 
 def main():
     """Main function to search all files."""
-    directory = '/sessions/adoring-beautiful-gates/mnt/timeline-of-tron/db/raw_ecd_posts'
+    directory = os.path.join(os.path.dirname(__file__), '..', 'db')
 
     print("=" * 100)
     print("DODGEBALL EVENT NUMBER SEARCH")

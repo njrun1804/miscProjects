@@ -9,7 +9,7 @@ Script 18: Build ECD Community Narrative table
 import sqlite3
 from collections import defaultdict
 
-DB_PATH = '/sessions/blissful-sleepy-galileo/mnt/Projects/miscProjects/timeline-of-tron/db/tron.db'
+DB_PATH = os.path.join(os.path.dirname(__file__), '..', 'db', 'tron.db')
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)

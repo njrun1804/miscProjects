@@ -1,5 +1,117 @@
 [
   {
+    "id": 114,
+    "winner": "Diana DiBuccio",
+    "loser": "John Tronolone",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2025-09-27",
+    "year": 2025,
+    "event_number": 222,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 113,
+    "winner": "Bobby Brown",
+    "loser": "Matt Brown",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2025-02-08",
+    "year": 2025,
+    "event_number": 221,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 112,
+    "winner": "Brody Letsche",
+    "loser": "Ryan Letsche",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2024-09-21",
+    "year": 2024,
+    "event_number": 220,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 111,
+    "winner": "Michelle Mullins",
+    "loser": "Dan Spengeman",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2023-08-26",
+    "year": 2023,
+    "event_number": 219,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 106,
+    "winner": "Fitzpatrick & Stopa",
+    "loser": "C. Adams & J. Adams",
+    "score": "6-2",
+    "score_winner": 6,
+    "score_loser": 2,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2018-08-25",
+    "year": 2018,
+    "event_number": 212,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 105,
+    "winner": "Grant Cornero",
+    "loser": "Justin Wolf",
+    "score": "8-4",
+    "score_winner": 8,
+    "score_loser": 4,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2017-05-27",
+    "year": 2017,
+    "event_number": 209,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 104,
+    "winner": "Bertsch & DiBuccio",
+    "loser": "Kerr & Stopa",
+    "score": "6-5",
+    "score_winner": 6,
+    "score_loser": 5,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2016-08-27",
+    "year": 2016,
+    "event_number": 208,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 103,
+    "winner": "Lauren Stopa",
+    "loser": "Diana DiBuccio",
+    "score": "6-3",
+    "score_winner": 6,
+    "score_loser": 3,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2016-03-26",
+    "year": 2016,
+    "event_number": 206,
+    "post_date_inferred": 1
+  },
+  {
     "id": 90,
     "winner": "Dan Spengeman",
     "loser": "Bob Cornero",
@@ -8,9 +120,80 @@
     "score_loser": 1,
     "match_type": "individual",
     "post_id": 95558,
-    "post_date": "",
+    "post_date": "2016-01-01",
     "year": 2016,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 102,
+    "winner": "M. Sputz Krott",
+    "loser": "Zach Katz",
+    "score": "5-2",
+    "score_winner": 5,
+    "score_loser": 2,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2015-11-21",
+    "year": 2015,
+    "event_number": 205,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 101,
+    "winner": "Edwards, Londono, T. Adams",
+    "loser": "Megill, Wolf, Pierce",
+    "score": "7-2",
+    "score_winner": 7,
+    "score_loser": 2,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2015-08-22",
+    "year": 2015,
+    "event_number": 204,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 100,
+    "winner": "Melissa Kerr",
+    "loser": "Diana DiBuccio",
+    "score": "6-4",
+    "score_winner": 6,
+    "score_loser": 4,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2014-11-22",
+    "year": 2014,
+    "event_number": 202,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 110,
+    "winner": "Oberto, Turner, Avakian et al.",
+    "loser": "Opponents",
+    "score": "5-4",
+    "score_winner": 5,
+    "score_loser": 4,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2007-11-09",
+    "year": 2013,
+    "event_number": 193,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 107,
+    "winner": "Kevin Megill",
+    "loser": "Justin Wolf",
+    "score": "12-3",
+    "score_winner": 12,
+    "score_loser": 3,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2006-06-26",
+    "year": 2013,
+    "event_number": 198,
+    "post_date_inferred": 1
   },
   {
     "id": 29,
@@ -23,7 +206,22 @@
     "post_id": 114437,
     "post_date": "2012-06-24",
     "year": 2012,
-    "event_number": 109
+    "event_number": 109,
+    "post_date_inferred": 0
+  },
+  {
+    "id": 109,
+    "winner": "Pierce, V. Winston, Fitzpatrick",
+    "loser": "C. Adams, L. Winston, Edwards",
+    "score": "5-5",
+    "score_winner": 5,
+    "score_loser": 5,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2013-06-29",
+    "year": 2011,
+    "event_number": 183,
+    "post_date_inferred": 1
   },
   {
     "id": 15,
@@ -34,9 +232,10 @@
     "score_loser": 2,
     "match_type": "individual",
     "post_id": 108409,
-    "post_date": "",
+    "post_date": "2011-01-01",
     "year": 2011,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 1
   },
   {
     "id": 35,
@@ -49,7 +248,8 @@
     "post_id": 116896,
     "post_date": "2012-08-28",
     "year": 2010,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
   },
   {
     "id": 13,
@@ -62,7 +262,36 @@
     "post_id": 106400,
     "post_date": "2010-10-16",
     "year": 2010,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
+  },
+  {
+    "id": 63,
+    "winner": "Kevin Adams",
+    "loser": "Kevin Fitzpatrick",
+    "score": "6-4",
+    "score_winner": 6,
+    "score_loser": 4,
+    "match_type": "individual",
+    "post_id": 67846,
+    "post_date": "2010-09-11",
+    "year": 2010,
+    "event_number": 80,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 59,
+    "winner": "Justin Pierce",
+    "loser": "Tom Adams",
+    "score": "3-2",
+    "score_winner": 3,
+    "score_loser": 2,
+    "match_type": "individual",
+    "post_id": 61832,
+    "post_date": "2010-09-11",
+    "year": 2010,
+    "event_number": 80,
+    "post_date_inferred": 1
   },
   {
     "id": 4,
@@ -75,7 +304,50 @@
     "post_id": 104639,
     "post_date": "2010-09-11",
     "year": 2010,
-    "event_number": 80
+    "event_number": 80,
+    "post_date_inferred": 0
+  },
+  {
+    "id": 58,
+    "winner": "Mike Edwards",
+    "loser": "Mike Butler",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 60084,
+    "post_date": "2010-01-01",
+    "year": 2010,
+    "event_number": null,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 108,
+    "winner": "Spengeman, Rafferty, Hoppe",
+    "loser": "Mullins, Dennebaum, Edwards",
+    "score": "4-3",
+    "score_winner": 4,
+    "score_loser": 3,
+    "match_type": "main_event",
+    "post_id": null,
+    "post_date": "2009-02-11",
+    "year": 2010,
+    "event_number": 176,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 55,
+    "winner": "Dan Turner",
+    "loser": "Ray Marzarella",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 57045,
+    "post_date": "1991-08-31",
+    "year": 2010,
+    "event_number": 84,
+    "post_date_inferred": 1
   },
   {
     "id": 19,
@@ -88,7 +360,8 @@
     "post_id": 109645,
     "post_date": "1986-06-15",
     "year": 2010,
-    "event_number": 140
+    "event_number": 140,
+    "post_date_inferred": 0
   },
   {
     "id": 18,
@@ -101,7 +374,8 @@
     "post_id": 109645,
     "post_date": "1986-06-15",
     "year": 2010,
-    "event_number": 140
+    "event_number": 140,
+    "post_date_inferred": 0
   },
   {
     "id": 16,
@@ -114,59 +388,8 @@
     "post_id": 109645,
     "post_date": "1986-06-15",
     "year": 2010,
-    "event_number": 140
-  },
-  {
-    "id": 63,
-    "winner": "Kevin Adams",
-    "loser": "Kevin Fitzpatrick",
-    "score": "6-4",
-    "score_winner": 6,
-    "score_loser": 4,
-    "match_type": "individual",
-    "post_id": 67846,
-    "post_date": "",
-    "year": 2010,
-    "event_number": 80
-  },
-  {
-    "id": 59,
-    "winner": "Justin Pierce",
-    "loser": "Tom Adams",
-    "score": "3-2",
-    "score_winner": 3,
-    "score_loser": 2,
-    "match_type": "individual",
-    "post_id": 61832,
-    "post_date": "",
-    "year": 2010,
-    "event_number": 80
-  },
-  {
-    "id": 58,
-    "winner": "Mike Edwards",
-    "loser": "Mike Butler",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 60084,
-    "post_date": "",
-    "year": 2010,
-    "event_number": null
-  },
-  {
-    "id": 55,
-    "winner": "Dan Turner",
-    "loser": "Ray Marzarella",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 57045,
-    "post_date": "",
-    "year": 2010,
-    "event_number": 84
+    "event_number": 140,
+    "post_date_inferred": 0
   },
   {
     "id": 3,
@@ -177,14 +400,15 @@
     "score_loser": 2,
     "match_type": "individual",
     "post_id": 103294,
-    "post_date": "",
+    "post_date": "2009-01-01",
     "year": 2009,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 1
   },
   {
-    "id": 27,
-    "winner": "John Tronolone",
-    "loser": "Ryan Letsche",
+    "id": 28,
+    "winner": "Dan Spengeman",
+    "loser": "Julia Dennebaum",
     "score": null,
     "score_winner": null,
     "score_loser": null,
@@ -192,98 +416,22 @@
     "post_id": 113883,
     "post_date": "2012-03-09",
     "year": 2008,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
   },
   {
-    "id": 26,
-    "winner": "Alison Bertsch",
-    "loser": "Pamela D'",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
-    "year": 2008,
-    "event_number": null
-  },
-  {
-    "id": 25,
-    "winner": "Ryan Letsche",
+    "id": 81,
+    "winner": "Rob Pellecchia",
     "loser": "Bobby Vetrano",
     "score": null,
     "score_winner": null,
     "score_loser": null,
     "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
+    "post_id": 84004,
+    "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": null
-  },
-  {
-    "id": 24,
-    "winner": "John Tronolone",
-    "loser": "Valerie Winston",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
-    "year": 2008,
-    "event_number": null
-  },
-  {
-    "id": 23,
-    "winner": "Ryan Letsche",
-    "loser": "Lauren Winston",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
-    "year": 2008,
-    "event_number": null
-  },
-  {
-    "id": 22,
-    "winner": "Chris Adams",
-    "loser": "Kevin Fitzpatrick",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
-    "year": 2008,
-    "event_number": null
-  },
-  {
-    "id": 21,
-    "winner": "Juan Londono",
-    "loser": "Diana DiBuccio",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
-    "year": 2008,
-    "event_number": null
-  },
-  {
-    "id": 20,
-    "winner": "Valerie Winston",
-    "loser": "Lenny Herrera",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 113883,
-    "post_date": "2012-03-09",
-    "year": 2008,
-    "event_number": null
+    "event_number": 105,
+    "post_date_inferred": 1
   },
   {
     "id": 12,
@@ -296,7 +444,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 11,
@@ -309,7 +458,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 10,
@@ -322,7 +472,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 9,
@@ -335,7 +486,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 8,
@@ -348,7 +500,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 7,
@@ -361,7 +514,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 6,
@@ -374,7 +528,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 5,
@@ -387,7 +542,8 @@
     "post_id": 106070,
     "post_date": "2010-08-14",
     "year": 2008,
-    "event_number": 47
+    "event_number": 47,
+    "post_date_inferred": 0
   },
   {
     "id": 1,
@@ -400,7 +556,8 @@
     "post_id": 100332,
     "post_date": "2008-12-06",
     "year": 2008,
-    "event_number": 161
+    "event_number": 161,
+    "post_date_inferred": 0
   },
   {
     "id": 94,
@@ -413,7 +570,8 @@
     "post_id": 99258,
     "post_date": "2008-10-13",
     "year": 2008,
-    "event_number": 157
+    "event_number": 157,
+    "post_date_inferred": 0
   },
   {
     "id": 92,
@@ -426,7 +584,8 @@
     "post_id": 96525,
     "post_date": "2008-08-17",
     "year": 2008,
-    "event_number": 144
+    "event_number": 144,
+    "post_date_inferred": 0
   },
   {
     "id": 86,
@@ -439,7 +598,8 @@
     "post_id": 92742,
     "post_date": "2008-08-09",
     "year": 2008,
-    "event_number": 149
+    "event_number": 149,
+    "post_date_inferred": 0
   },
   {
     "id": 84,
@@ -452,7 +612,8 @@
     "post_id": 91312,
     "post_date": "2008-07-12",
     "year": 2008,
-    "event_number": 145
+    "event_number": 145,
+    "post_date_inferred": 0
   },
   {
     "id": 80,
@@ -465,7 +626,8 @@
     "post_id": 81082,
     "post_date": "2008-01-26",
     "year": 2008,
-    "event_number": 123
+    "event_number": 123,
+    "post_date_inferred": 0
   },
   {
     "id": 78,
@@ -478,46 +640,22 @@
     "post_id": 79407,
     "post_date": "2008-01-12",
     "year": 2008,
-    "event_number": 116
+    "event_number": 116,
+    "post_date_inferred": 0
   },
   {
-    "id": 95,
-    "winner": "John Tronolone",
+    "id": 42,
+    "winner": "Kevin Adams",
     "loser": "Ryan Letsche",
     "score": null,
     "score_winner": null,
     "score_loser": null,
     "match_type": "individual",
-    "post_id": 99614,
-    "post_date": "2007-10-01",
+    "post_id": 36731,
+    "post_date": "2008-01-01",
     "year": 2008,
-    "event_number": 105
-  },
-  {
-    "id": 91,
-    "winner": "Alison Bertsch",
-    "loser": "Pamela D'",
-    "score": "2-1",
-    "score_winner": 2,
-    "score_loser": 1,
-    "match_type": "individual",
-    "post_id": 96335,
-    "post_date": "2007-10-01",
-    "year": 2008,
-    "event_number": 105
-  },
-  {
-    "id": 88,
-    "winner": "Grant Cornero",
-    "loser": "Ryan Letsche",
-    "score": "4-2",
-    "score_winner": 4,
-    "score_loser": 2,
-    "match_type": "individual",
-    "post_id": 93841,
-    "post_date": "2007-04-29",
-    "year": 2008,
-    "event_number": 122
+    "event_number": null,
+    "post_date_inferred": 1
   },
   {
     "id": 2,
@@ -530,20 +668,8 @@
     "post_id": 100915,
     "post_date": "2006-12-24",
     "year": 2008,
-    "event_number": 123
-  },
-  {
-    "id": 81,
-    "winner": "Rob Pellecchia",
-    "loser": "Bobby Vetrano",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 84004,
-    "post_date": "",
-    "year": 2008,
-    "event_number": 105
+    "event_number": 123,
+    "post_date_inferred": 0
   },
   {
     "id": 47,
@@ -554,22 +680,10 @@
     "score_loser": 2,
     "match_type": "individual",
     "post_id": 39263,
-    "post_date": "",
+    "post_date": "1985-06-23",
     "year": 2008,
-    "event_number": 57
-  },
-  {
-    "id": 42,
-    "winner": "Kevin Adams",
-    "loser": "Ryan Letsche",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 36731,
-    "post_date": "",
-    "year": 2008,
-    "event_number": null
+    "event_number": 57,
+    "post_date_inferred": 1
   },
   {
     "id": 37,
@@ -582,7 +696,36 @@
     "post_id": 124393,
     "post_date": "2015-08-22",
     "year": 2007,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
+  },
+  {
+    "id": 66,
+    "winner": "Chris Adams",
+    "loser": "Kevin Fitzpatrick",
+    "score": "4-4",
+    "score_winner": 4,
+    "score_loser": 4,
+    "match_type": "individual",
+    "post_id": 70933,
+    "post_date": "2008-01-07",
+    "year": 2007,
+    "event_number": 95,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 57,
+    "winner": "Kevin Megill",
+    "loser": "Diana DiBuccio",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 57930,
+    "post_date": "2008-01-07",
+    "year": 2007,
+    "event_number": 41,
+    "post_date_inferred": 1
   },
   {
     "id": 34,
@@ -595,7 +738,8 @@
     "post_id": 116306,
     "post_date": "2008-01-07",
     "year": 2007,
-    "event_number": 23
+    "event_number": 23,
+    "post_date_inferred": 0
   },
   {
     "id": 33,
@@ -608,7 +752,8 @@
     "post_id": 116306,
     "post_date": "2008-01-07",
     "year": 2007,
-    "event_number": 23
+    "event_number": 23,
+    "post_date_inferred": 0
   },
   {
     "id": 32,
@@ -621,7 +766,8 @@
     "post_id": 116306,
     "post_date": "2008-01-07",
     "year": 2007,
-    "event_number": 23
+    "event_number": 23,
+    "post_date_inferred": 0
   },
   {
     "id": 31,
@@ -634,7 +780,8 @@
     "post_id": 116306,
     "post_date": "2008-01-07",
     "year": 2007,
-    "event_number": 23
+    "event_number": 23,
+    "post_date_inferred": 0
   },
   {
     "id": 30,
@@ -647,7 +794,50 @@
     "post_id": 116306,
     "post_date": "2008-01-07",
     "year": 2007,
-    "event_number": 23
+    "event_number": 23,
+    "post_date_inferred": 0
+  },
+  {
+    "id": 76,
+    "winner": "Kevin Megill",
+    "loser": "Justin Wolf",
+    "score": "5-2",
+    "score_winner": 5,
+    "score_loser": 2,
+    "match_type": "individual",
+    "post_id": 78629,
+    "post_date": "2008-01-05",
+    "year": 2007,
+    "event_number": 120,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 75,
+    "winner": "Cobra Ki",
+    "loser": "Strike Force",
+    "score": "6-2",
+    "score_winner": 6,
+    "score_loser": 2,
+    "match_type": "individual",
+    "post_id": 78629,
+    "post_date": "2008-01-05",
+    "year": 2007,
+    "event_number": 120,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 74,
+    "winner": "Tom Adams",
+    "loser": "John Tronolone",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 77959,
+    "post_date": "2008-01-05",
+    "year": 2007,
+    "event_number": 120,
+    "post_date_inferred": 1
   },
   {
     "id": 73,
@@ -660,7 +850,8 @@
     "post_id": 76977,
     "post_date": "2008-01-05",
     "year": 2007,
-    "event_number": 120
+    "event_number": 120,
+    "post_date_inferred": 0
   },
   {
     "id": 65,
@@ -673,7 +864,8 @@
     "post_id": 69283,
     "post_date": "2007-09-08",
     "year": 2007,
-    "event_number": 103
+    "event_number": 103,
+    "post_date_inferred": 0
   },
   {
     "id": 70,
@@ -686,20 +878,22 @@
     "post_id": 75005,
     "post_date": "2007-08-20",
     "year": 2007,
-    "event_number": 114
+    "event_number": 114,
+    "post_date_inferred": 0
   },
   {
-    "id": 83,
+    "id": 82,
     "winner": "Juan Londono",
     "loser": "Justin Wolf",
-    "score": "4-0",
-    "score_winner": 4,
-    "score_loser": 0,
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
     "match_type": "individual",
     "post_id": 90304,
     "post_date": "2007-07-24",
     "year": 2007,
-    "event_number": 75
+    "event_number": 75,
+    "post_date_inferred": 0
   },
   {
     "id": 72,
@@ -712,7 +906,8 @@
     "post_id": 76377,
     "post_date": "2007-07-16",
     "year": 2007,
-    "event_number": 75
+    "event_number": 75,
+    "post_date_inferred": 0
   },
   {
     "id": 71,
@@ -725,7 +920,8 @@
     "post_id": 75033,
     "post_date": "2007-06-24",
     "year": 2007,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
   },
   {
     "id": 60,
@@ -738,7 +934,8 @@
     "post_id": 62229,
     "post_date": "2007-06-16",
     "year": 2007,
-    "event_number": 75
+    "event_number": 75,
+    "post_date_inferred": 0
   },
   {
     "id": 61,
@@ -751,72 +948,8 @@
     "post_id": 64201,
     "post_date": "2007-04-23",
     "year": 2007,
-    "event_number": 72
-  },
-  {
-    "id": 87,
-    "winner": "Juan Londono",
-    "loser": "Justin Wolf",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 93421,
-    "post_date": "",
-    "year": 2007,
-    "event_number": null
-  },
-  {
-    "id": 76,
-    "winner": "Kevin Megill",
-    "loser": "Justin Wolf",
-    "score": "5-2",
-    "score_winner": 5,
-    "score_loser": 2,
-    "match_type": "individual",
-    "post_id": 78629,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 120
-  },
-  {
-    "id": 75,
-    "winner": "Cobra Ki",
-    "loser": "Strike Force",
-    "score": "6-2",
-    "score_winner": 6,
-    "score_loser": 2,
-    "match_type": "individual",
-    "post_id": 78629,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 120
-  },
-  {
-    "id": 74,
-    "winner": "Tom Adams",
-    "loser": "John Tronolone",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 77959,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 120
-  },
-  {
-    "id": 66,
-    "winner": "Chris Adams",
-    "loser": "Kevin Fitzpatrick",
-    "score": "4-4",
-    "score_winner": 4,
-    "score_loser": 4,
-    "match_type": "individual",
-    "post_id": 70933,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 95
+    "event_number": 72,
+    "post_date_inferred": 0
   },
   {
     "id": 62,
@@ -827,35 +960,10 @@
     "score_loser": null,
     "match_type": "individual",
     "post_id": 66883,
-    "post_date": "",
+    "post_date": "2007-01-01",
     "year": 2007,
-    "event_number": null
-  },
-  {
-    "id": 57,
-    "winner": "Kevin Megill",
-    "loser": "Diana DiBuccio",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 57930,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 41
-  },
-  {
-    "id": 54,
-    "winner": "Mike Edwards",
-    "loser": "Kevin Megill",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 55263,
-    "post_date": "",
-    "year": 2007,
-    "event_number": 73
+    "event_number": null,
+    "post_date_inferred": 1
   },
   {
     "id": 49,
@@ -866,9 +974,66 @@
     "score_loser": null,
     "match_type": "individual",
     "post_id": 40467,
-    "post_date": "",
+    "post_date": "2007-01-01",
     "year": 2007,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 54,
+    "winner": "Mike Edwards",
+    "loser": "Kevin Megill",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 55263,
+    "post_date": "1983-01-07",
+    "year": 2007,
+    "event_number": 73,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 53,
+    "winner": "Kevin Fitzpatrick",
+    "loser": "Lauren Stopa",
+    "score": "11-1",
+    "score_winner": 11,
+    "score_loser": 1,
+    "match_type": "individual",
+    "post_id": 52568,
+    "post_date": "2010-08-14",
+    "year": 2006,
+    "event_number": 30,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 50,
+    "winner": "John Tronolone",
+    "loser": "Chris Adams",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 41580,
+    "post_date": "2010-08-14",
+    "year": 2006,
+    "event_number": 30,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 43,
+    "winner": "Ryan Letsche",
+    "loser": "Kevin Adams",
+    "score": "7-5",
+    "score_winner": 7,
+    "score_loser": 5,
+    "match_type": "individual",
+    "post_id": 37247,
+    "post_date": "2010-08-14",
+    "year": 2006,
+    "event_number": 50,
+    "post_date_inferred": 1
   },
   {
     "id": 93,
@@ -881,7 +1046,8 @@
     "post_id": 97699,
     "post_date": "2007-11-05",
     "year": 2006,
-    "event_number": 60
+    "event_number": 60,
+    "post_date_inferred": 0
   },
   {
     "id": 68,
@@ -894,7 +1060,50 @@
     "post_id": 73906,
     "post_date": "2007-05-06",
     "year": 2006,
-    "event_number": 60
+    "event_number": 60,
+    "post_date_inferred": 0
+  },
+  {
+    "id": 41,
+    "winner": "Joe Kelly",
+    "loser": "Derek Carty",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 29108,
+    "post_date": "2006-01-01",
+    "year": 2006,
+    "event_number": 20,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 39,
+    "winner": "Robert Brown",
+    "loser": "Darien Brown",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 24172,
+    "post_date": "2006-01-01",
+    "year": 2006,
+    "event_number": 20,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 38,
+    "winner": "Justin Pierce",
+    "loser": "Dan Spengeman",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 20927,
+    "post_date": "2006-01-01",
+    "year": 2006,
+    "event_number": 20,
+    "post_date_inferred": 1
   },
   {
     "id": 52,
@@ -907,7 +1116,8 @@
     "post_id": 48800,
     "post_date": "2005-09-03",
     "year": 2006,
-    "event_number": 20
+    "event_number": 20,
+    "post_date_inferred": 0
   },
   {
     "id": 56,
@@ -918,87 +1128,24 @@
     "score_loser": null,
     "match_type": "individual",
     "post_id": 57726,
-    "post_date": "",
+    "post_date": "1982-03-10",
     "year": 2006,
-    "event_number": 79
+    "event_number": 79,
+    "post_date_inferred": 1
   },
   {
-    "id": 53,
-    "winner": "Kevin Fitzpatrick",
-    "loser": "Lauren Stopa",
-    "score": "11-1",
-    "score_winner": 11,
-    "score_loser": 1,
-    "match_type": "individual",
-    "post_id": 52568,
-    "post_date": "",
-    "year": 2006,
-    "event_number": 30
-  },
-  {
-    "id": 50,
-    "winner": "John Tronolone",
-    "loser": "Chris Adams",
+    "id": 48,
+    "winner": "Lenny Herrera",
+    "loser": "Matt Brown",
     "score": null,
     "score_winner": null,
     "score_loser": null,
     "match_type": "individual",
-    "post_id": 41580,
-    "post_date": "",
-    "year": 2006,
-    "event_number": 30
-  },
-  {
-    "id": 43,
-    "winner": "Ryan Letsche",
-    "loser": "Kevin Adams",
-    "score": "7-5",
-    "score_winner": 7,
-    "score_loser": 5,
-    "match_type": "individual",
-    "post_id": 37247,
-    "post_date": "",
-    "year": 2006,
-    "event_number": 50
-  },
-  {
-    "id": 41,
-    "winner": "Joe Kelly",
-    "loser": "Derek Carty",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 29108,
-    "post_date": "",
-    "year": 2006,
-    "event_number": 20
-  },
-  {
-    "id": 39,
-    "winner": "Robert Brown",
-    "loser": "Darien Brown",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 24172,
-    "post_date": "",
-    "year": 2006,
-    "event_number": 20
-  },
-  {
-    "id": 38,
-    "winner": "Justin Pierce",
-    "loser": "Dan Spengeman",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 20927,
-    "post_date": "",
-    "year": 2006,
-    "event_number": 20
+    "post_id": 39745,
+    "post_date": "2010-08-14",
+    "year": 2005,
+    "event_number": 35,
+    "post_date_inferred": 1
   },
   {
     "id": 44,
@@ -1011,7 +1158,50 @@
     "post_id": 37806,
     "post_date": "2006-09-03",
     "year": 2005,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
+  },
+  {
+    "id": 51,
+    "winner": "Ray Marzarella",
+    "loser": "Pond Scum",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 44475,
+    "post_date": "2005-12-02",
+    "year": 2005,
+    "event_number": 17,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 40,
+    "winner": "Joe Kelly",
+    "loser": "Travis Mills",
+    "score": null,
+    "score_winner": null,
+    "score_loser": null,
+    "match_type": "individual",
+    "post_id": 28315,
+    "post_date": "2005-12-02",
+    "year": 2005,
+    "event_number": 17,
+    "post_date_inferred": 1
+  },
+  {
+    "id": 46,
+    "winner": "Valerie Winston",
+    "loser": "Lauren Winston",
+    "score": "7-2",
+    "score_winner": 7,
+    "score_loser": 2,
+    "match_type": "individual",
+    "post_id": 38196,
+    "post_date": "2005-09-04",
+    "year": 2005,
+    "event_number": 8,
+    "post_date_inferred": 1
   },
   {
     "id": 89,
@@ -1024,72 +1214,8 @@
     "post_id": 95139,
     "post_date": "2005-09-03",
     "year": 2005,
-    "event_number": null
-  },
-  {
-    "id": 51,
-    "winner": "Ray Marzarella",
-    "loser": "Pond Scum",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 44475,
-    "post_date": "",
-    "year": 2005,
-    "event_number": 17
-  },
-  {
-    "id": 48,
-    "winner": "Lenny Herrera",
-    "loser": "Matt Brown",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 39745,
-    "post_date": "",
-    "year": 2005,
-    "event_number": 35
-  },
-  {
-    "id": 46,
-    "winner": "Valerie Winston",
-    "loser": "Lauren Winston",
-    "score": "7-2",
-    "score_winner": 7,
-    "score_loser": 2,
-    "match_type": "individual",
-    "post_id": 38196,
-    "post_date": "",
-    "year": 2005,
-    "event_number": 8
-  },
-  {
-    "id": 45,
-    "winner": "Joe Kelly",
-    "loser": "Travis Mills",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 37965,
-    "post_date": "",
-    "year": 2005,
-    "event_number": 8
-  },
-  {
-    "id": 40,
-    "winner": "Joe Kelly",
-    "loser": "Travis Mills",
-    "score": null,
-    "score_winner": null,
-    "score_loser": null,
-    "match_type": "individual",
-    "post_id": 28315,
-    "post_date": "",
-    "year": 2005,
-    "event_number": 17
+    "event_number": null,
+    "post_date_inferred": 0
   },
   {
     "id": 99,
@@ -1102,7 +1228,8 @@
     "post_id": null,
     "post_date": "",
     "year": null,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
   },
   {
     "id": 98,
@@ -1115,7 +1242,8 @@
     "post_id": null,
     "post_date": "",
     "year": null,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
   },
   {
     "id": 97,
@@ -1128,7 +1256,8 @@
     "post_id": null,
     "post_date": "",
     "year": null,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
   },
   {
     "id": 96,
@@ -1141,6 +1270,7 @@
     "post_id": null,
     "post_date": "",
     "year": null,
-    "event_number": null
+    "event_number": null,
+    "post_date_inferred": 0
   }
 ]

@@ -304,37 +304,98 @@ function selectQuotes(quotes, max) {
 
 // ─── DATE EXTRACTION ─────────────────────────────────────────────
 const MONTH_ORDER = { Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12 };
+const FULL_TO_SHORT = { January:'Jan',February:'Feb',March:'Mar',April:'Apr',May:'May',June:'Jun',July:'Jul',August:'Aug',September:'Sep',October:'Oct',November:'Nov',December:'Dec' };
 
 function extractDate(text) {
     if (!text) return null;
-    const months = 'Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec';
-    // "Mon DD-DD" range within a month
-    const rangeRe = new RegExp(`\\b((?:${months})\\s+\\d{1,2})\\s*[-\u2013]\\s*(\\d{1,2})\\b`);
+    const abbr = 'Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec';
+    const full = 'January|February|March|April|May|June|July|August|September|October|November|December';
+
+    // 1. "Mon DD-DD" range within a month (e.g., "Sep 25-27", "Jan 6-9")
+    const rangeRe = new RegExp(`\\b((?:${abbr})\\s+\\d{1,2})\\s*[-\u2013]\\s*(\\d{1,2})\\b`);
     const rangeMatch = text.match(rangeRe);
-    if (rangeMatch) return { label: `${rangeMatch[1]}\u2013${rangeMatch[2]}`, month: MONTH_ORDER[rangeMatch[1].slice(0,3)], day: parseInt(rangeMatch[1].match(/\d+/)[0]) };
-    // "Mon DD"
-    const singleRe = new RegExp(`\\b((?:${months})\\s+\\d{1,2})\\b`);
+    if (rangeMatch) {
+        const mon = rangeMatch[1].slice(0, 3);
+        return { label: `${rangeMatch[1]}\u2013${rangeMatch[2]}`, month: MONTH_ORDER[mon], day: parseInt(rangeMatch[1].match(/\d+/)[0]) };
+    }
+
+    // 2. "Mon DD" — abbreviated month + day (e.g., "Jul 29", "Oct 29 Philadelphia")
+    const singleRe = new RegExp(`\\b((?:${abbr})\\s+\\d{1,2})\\b`);
     const singleMatch = text.match(singleRe);
-    if (singleMatch) return { label: singleMatch[1], month: MONTH_ORDER[singleMatch[1].slice(0,3)], day: parseInt(singleMatch[1].match(/\d+$/)[0]) };
+    if (singleMatch) {
+        const mon = singleMatch[1].slice(0, 3);
+        return { label: singleMatch[1], month: MONTH_ORDER[mon], day: parseInt(singleMatch[1].match(/\d+$/)[0]) };
+    }
+
+    // 3. Full month name + day (e.g., "March 2006" — but only if day present)
+    const fullDayRe = new RegExp(`\\b(${full})\\s+(\\d{1,2})\\b`);
+    const fullDayMatch = text.match(fullDayRe);
+    if (fullDayMatch) {
+        const short = FULL_TO_SHORT[fullDayMatch[1]];
+        return { label: `${short} ${fullDayMatch[2]}`, month: MONTH_ORDER[short], day: parseInt(fullDayMatch[2]) };
+    }
+
+    // 4. Abbreviated month alone in parens (e.g., "(Jan)", "(Nov)")
+    const abbrAloneRe = new RegExp(`\\(\\s*(${abbr})\\s*\\)`);
+    const abbrAloneMatch = text.match(abbrAloneRe);
+    if (abbrAloneMatch) {
+        return { label: abbrAloneMatch[1], month: MONTH_ORDER[abbrAloneMatch[1]], day: 1 };
+    }
+
+    // 5. Full month name alone (e.g., "(February)", "(October)", "(winter)" excluded)
+    const fullAloneRe = new RegExp(`\\b(${full})\\b`);
+    const fullAloneMatch = text.match(fullAloneRe);
+    if (fullAloneMatch) {
+        const short = FULL_TO_SHORT[fullAloneMatch[1]];
+        return { label: short, month: MONTH_ORDER[short], day: 1 };
+    }
+
+    // 6. "Mon-Mon" range across months (e.g., "Feb-Apr", "Jan-Feb")
+    const crossMonthRe = new RegExp(`\\b(${abbr})\\s*[-\u2013]\\s*(${abbr})\\b`);
+    const crossMonthMatch = text.match(crossMonthRe);
+    if (crossMonthMatch) {
+        return { label: `${crossMonthMatch[1]}\u2013${crossMonthMatch[2]}`, month: MONTH_ORDER[crossMonthMatch[1]], day: 1 };
+    }
+
+    // 7. Season ranges first (e.g., "summer–fall") — must check before single season
+    const SEASON_MONTHS = { spring: 4, summer: 7, fall: 10, winter: 1 };
+    const seasonRangeRe = /\b(spring|summer|fall|winter)\s*[–-]\s*(spring|summer|fall|winter)\b/i;
+    const seasonRangeMatch = text.match(seasonRangeRe);
+    if (seasonRangeMatch) {
+        const s1 = seasonRangeMatch[1].toLowerCase();
+        const s2 = seasonRangeMatch[2].toLowerCase();
+        return { label: `${s1}\u2013${s2}`, month: SEASON_MONTHS[s1], day: 1 };
+    }
+
+    // 8. Single season (e.g., "(spring)", "(summer)", "(fall)")
+    const seasonRe = /\b(spring|summer|fall|winter)\b/i;
+    const seasonMatch = text.match(seasonRe);
+    if (seasonMatch) {
+        const s = seasonMatch[1].toLowerCase();
+        return { label: s, month: SEASON_MONTHS[s], day: 1 };
+    }
+
     return null;
+}
+
+function chronoSort(a, b) {
+    if (a.year !== b.year) return a.year - b.year;
+    const da = extractDate(a.milestone);
+    const db = extractDate(b.milestone);
+    if (da && db) {
+        if (da.month !== db.month) return da.month - db.month;
+        return da.day - db.day;
+    }
+    if (da) return -1;
+    if (db) return 1;
+    return 0;
 }
 
 // ─── MILESTONE TIMELINE ──────────────────────────────────────────
 function timelineHTML(milestones) {
     if (!milestones.length) return '';
 
-    const sorted = [...milestones].sort((a, b) => {
-        if (a.year !== b.year) return a.year - b.year;
-        const da = extractDate(a.milestone);
-        const db = extractDate(b.milestone);
-        if (da && db) {
-            if (da.month !== db.month) return da.month - db.month;
-            return da.day - db.day;
-        }
-        if (da) return -1;
-        if (db) return 1;
-        return 0;
-    });
+    const sorted = [...milestones].sort(chronoSort);
 
     const display = selectMilestones(sorted, 12);
 
@@ -375,9 +436,8 @@ function timelineHTML(milestones) {
 function selectMilestones(milestones, max) {
     if (milestones.length <= max) return milestones;
 
-    const bySentiment = [...milestones].sort((a, b) =>
-        Math.abs(b.vader_compound) - Math.abs(a.vader_compound)
-    );
+    // Select first occurrence per year (already sorted by date in timelineHTML)
+    const bySentiment = milestones;
 
     const selected = [];
     const yearsCovered = new Set();
@@ -395,7 +455,7 @@ function selectMilestones(milestones, max) {
             selected.push(m);
         }
     }
-    return selected.sort((a, b) => a.year - b.year);
+    return selected.sort(chronoSort);
 }
 
 // ─── EPIC NUMBERS ─────────────────────────────────────────────────

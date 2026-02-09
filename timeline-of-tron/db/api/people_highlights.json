@@ -3,414 +3,276 @@
     "id": 1,
     "person_id": 1,
     "highlight": "70th birthday (2025)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 30,
     "person_id": 15,
     "highlight": "Won Comedian of the Year (2015)",
-    "vader_compound": 0.743,
-    "vader_pos": 0.612,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 31,
     "person_id": 15,
     "highlight": "Wedding: Spengeman-Mullins (2016)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 32,
     "person_id": 15,
     "highlight": "Pole Position Invitational namesake",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 13,
     "person_id": 10,
     "highlight": "10-year anniversary: 2021",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "partner"
   },
   {
     "id": 14,
     "person_id": 10,
     "highlight": "20-year anniversary: 2025",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "partner"
   },
   {
     "id": 2,
     "person_id": 2,
     "highlight": "60th birthday at Woodloch Pines",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 3,
     "person_id": 2,
     "highlight": "Award: Comedian of the Year 2014",
-    "vader_compound": 0.7269,
-    "vader_pos": 0.604,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 35,
     "person_id": 17,
     "highlight": "Comedian of the Year: 2-time winner (2016, 2021)",
-    "vader_compound": 0.7506,
-    "vader_pos": 0.516,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 7,
     "person_id": 5,
     "highlight": "Married Maggie (2018)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 33,
     "person_id": 16,
     "highlight": "Best Laughs: 3-time winner (2008, 2019, 2020)",
-    "vader_compound": 0.9042,
-    "vader_pos": 0.737,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 34,
     "person_id": 16,
     "highlight": "Recurring presence at celebrations",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 11,
     "person_id": 8,
     "highlight": "1st birthday (2020)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 12,
     "person_id": 8,
     "highlight": "5th birthday (Aug 25, 2024)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 19,
     "person_id": 12,
     "highlight": "Travel companions to Utah/Colorado",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 20,
     "person_id": 12,
     "highlight": "10+ year friendship",
-    "vader_compound": 0.4404,
-    "vader_pos": 0.592,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 21,
     "person_id": 12,
     "highlight": "Entire relationship arc documented from outside perspective",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 9,
     "person_id": 7,
     "highlight": "Brookdale graduation (2022)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 10,
     "person_id": 7,
     "highlight": "Graduated high school (2020)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 36,
     "person_id": 100,
     "highlight": "FAB4 original member",
-    "vader_compound": 0.3182,
-    "vader_pos": 0.535,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 37,
     "person_id": 100,
     "highlight": "WrestleMania travel companion (multiple years)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 38,
     "person_id": 100,
     "highlight": "Bachelor party in AC (2013)",
-    "vader_compound": 0.4019,
-    "vader_pos": 0.403,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 39,
     "person_id": 100,
     "highlight": "25th birthday multi-day celebration (2010)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 40,
     "person_id": 100,
     "highlight": "Social events across 20+ years",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 41,
     "person_id": 19,
     "highlight": "Tennis partner across many years",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 42,
     "person_id": 19,
     "highlight": "Housewarming party with Pam (2013)",
-    "vader_compound": 0.4019,
-    "vader_pos": 0.403,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 43,
     "person_id": 19,
     "highlight": "U.S. Open companion",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 44,
     "person_id": 19,
     "highlight": "NJIT 12-hour visit (2007)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 45,
     "person_id": 19,
     "highlight": "36th birthday Hamilton Inn brunch (2019)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 8,
     "person_id": 6,
     "highlight": "Graduated high school (2020)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 15,
     "person_id": 11,
     "highlight": "Super Bowl LVII companion (2023)",
-    "vader_compound": 0.5994,
-    "vader_pos": 0.494,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 16,
     "person_id": 11,
     "highlight": "Appears across virtually every Timeline",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 17,
     "person_id": 11,
     "highlight": "Multi-decade friendship",
-    "vader_compound": 0.4404,
-    "vader_pos": 0.744,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 18,
     "person_id": 11,
     "highlight": "Award: Best Laughs nominee",
-    "vader_compound": 0.8979,
-    "vader_pos": 0.916,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 24,
     "person_id": 14,
     "highlight": "Tennis partner",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 25,
     "person_id": 14,
     "highlight": "SummerSlam companion",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 26,
     "person_id": 14,
     "highlight": "Southeast Asia trip",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 27,
     "person_id": 14,
     "highlight": "The RK Quiz originated with him",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 28,
     "person_id": 14,
     "highlight": "Birthday: December 11",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 29,
     "person_id": 14,
     "highlight": "Hong Kong trip (2020)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 4,
     "person_id": 4,
     "highlight": "Gram's 90th birthday (2022)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 5,
     "person_id": 4,
     "highlight": "Passed away Oct 21, 2024 at 11:57 PM",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 6,
     "person_id": 4,
     "highlight": "92nd birthday celebration (Nov 12, 2024)",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "family"
   },
   {
     "id": 22,
     "person_id": 13,
     "highlight": "17 events attended together",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 23,
     "person_id": 13,
     "highlight": "Regular presence in wrestling entries",
-    "vader_compound": 0.0,
-    "vader_pos": 0.0,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   },
   {
     "id": 46,
     "person_id": 20,
     "highlight": "WWE fan",
-    "vader_compound": 0.3182,
-    "vader_pos": 0.697,
-    "vader_neg": 0.0,
     "category": "inner_circle"
   }
 ]

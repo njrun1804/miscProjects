@@ -14,11 +14,11 @@ from difflib import SequenceMatcher
 import os
 
 # File paths
-PEOPLE_FILE = "/sessions/pensive-zen-darwin/mnt/timeline-of-tron/db/api/people.json"
-ECD_PLAYERS_FILE = "/sessions/pensive-zen-darwin/mnt/timeline-of-tron/db/api/ecd_players_full.json"
-PROFILES_FILE = "/sessions/pensive-zen-darwin/mnt/timeline-of-tron/db/api/people_profiles.json"
-IMPORTANCE_FILE = "/sessions/pensive-zen-darwin/mnt/timeline-of-tron/db/api/people_importance_scores.json"
-ALIASES_FILE = "/sessions/pensive-zen-darwin/mnt/timeline-of-tron/db/api/name_aliases.json"
+PEOPLE_FILE = os.path.join(os.path.dirname(__file__), '..', 'db')
+ECD_PLAYERS_FILE = os.path.join(os.path.dirname(__file__), '..', 'db')
+PROFILES_FILE = os.path.join(os.path.dirname(__file__), '..', 'db')
+IMPORTANCE_FILE = os.path.join(os.path.dirname(__file__), '..', 'db')
+ALIASES_FILE = os.path.join(os.path.dirname(__file__), '..', 'db')
 
 
 def fuzzy_match(name1, name2, threshold=0.85):
