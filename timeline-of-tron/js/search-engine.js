@@ -9,6 +9,7 @@ import { buildDictionary, suggestCorrection } from './search-spellchecker.js';
 let fuseInstance = null;
 let searchIndex = [];
 let indexBuilding = false;
+let indexPromise = null; // Shared promise so concurrent callers can await the same build
 let discoveryItems = []; // Subset for random exploration
 
 // ── Type metadata (icons + labels) ─────────────────────────────────
@@ -37,18 +38,18 @@ export async function initSearch() {
 
     // Build index on focus (lazy)
     input.addEventListener('focus', async () => {
-        if (!fuseInstance && !indexBuilding) {
-            await buildIndex();
-        }
+        await ensureIndex();
         // Show discovery panel when input is empty
         if (!input.value.trim() && fuseInstance) {
             showDiscoveryPanel(resultsEl);
         }
     });
 
-    // Live search on input
+    // Live search on input — debounced, waits for index if building
+    let searchTimer = null;
     input.addEventListener('input', () => {
-        handleSearch(input, resultsEl);
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(() => handleSearch(input, resultsEl), 120);
     });
 
     // Keyboard navigation
@@ -88,10 +89,8 @@ async function handleSearch(input, resultsEl) {
         return;
     }
 
-    // Ensure index is built
-    if (!fuseInstance && !indexBuilding) {
-        await buildIndex();
-    }
+    // Ensure index is built (waits if build already in progress)
+    await ensureIndex();
     if (!fuseInstance) return;
 
     const results = fuseInstance.search(query, { limit: 10 });
@@ -269,6 +268,13 @@ function waitForFuse(timeout = 5000) {
             else if (Date.now() - start > timeout) { clearInterval(check); resolve(false); }
         }, 100);
     });
+}
+
+async function ensureIndex() {
+    if (fuseInstance) return;
+    if (indexPromise) return indexPromise;
+    indexPromise = buildIndex();
+    return indexPromise;
 }
 
 async function buildIndex() {
