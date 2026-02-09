@@ -61,8 +61,9 @@
     <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        import './js/search-engine.js';
+        import { initSearch } from './js/search-engine.js';
         initNav({ room: 'dynasty', mood: 'accomplished', music: 'Jay-Z — "Empire State of Mind"', subtitle: 'What Was Built' });
+        initSearch();
     </script>
     <script type="module" src="js/dynasty.js"></script>
 </body>

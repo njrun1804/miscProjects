@@ -170,7 +170,7 @@
         import { initNav } from './js/nav.js';
         import { checkRoom0Reveal } from './js/room0.js';
         import { loadData } from './js/data-loader.js';
-        import './js/search-engine.js';
+        import { initSearch } from './js/search-engine.js';
         import './js/seismograph.js';
 
         initNav({
@@ -179,6 +179,7 @@
             music: 'Janet Jackson \u2014 "All For You"',
             subtitle: 'To Tokyo, 2026.'
         });
+        initSearch();
 
         checkRoom0Reveal();
 

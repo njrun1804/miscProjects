@@ -78,8 +78,9 @@
     <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        import './js/search-engine.js';
+        import { initSearch } from './js/search-engine.js';
         initNav({ room: 'vault', mood: 'intimate', music: 'Bon Iver — "Skinny Love"', subtitle: 'The Words' });
+        initSearch();
     </script>
     <script type="module" src="js/vault.js"></script>
 </body>

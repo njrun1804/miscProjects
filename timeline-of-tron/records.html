@@ -123,13 +123,14 @@
     <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        import './js/search-engine.js';
+        import { initSearch } from './js/search-engine.js';
         initNav({
             room: 'records',
             mood: 'proud',
             music: 'Queen \u2014 "We Are the Champions"',
             subtitle: 'The Numbers'
         });
+        initSearch();
     </script>
     <script type="module" src="js/records.js"></script>
 </body>

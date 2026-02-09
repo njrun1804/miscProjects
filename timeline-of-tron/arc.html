@@ -30,13 +30,14 @@
     <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        import './js/search-engine.js';
+        import { initSearch } from './js/search-engine.js';
         initNav({
             room: 'arc',
             mood: 'cinematic',
             music: 'Mumford & Sons \u2014 "The Cave"',
             subtitle: 'The Hero\u2019s Journey'
         });
+        initSearch();
     </script>
     <script type="module" src="js/arc.js"></script>
 </body>

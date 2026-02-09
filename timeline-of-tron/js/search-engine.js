@@ -555,9 +555,6 @@ export function getSearchIndex() { return searchIndex; }
 export function isIndexReady() { return !!fuseInstance; }
 
 // ── Auto-init ──────────────────────────────────────────────────────
-
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => initSearch());
-} else {
-    initSearch();
-}
+// NOTE: Do not auto-init here. The search input is rendered by nav.js
+// (initNav), which runs AFTER this module's top-level code executes.
+// Each page must call initSearch() explicitly after initNav().

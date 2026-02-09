@@ -69,13 +69,14 @@
     <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        import './js/search-engine.js';
+        import { initSearch } from './js/search-engine.js';
         initNav({
             room: 'constellation',
             mood: 'contemplative',
             music: 'Coldplay — "The Scientist"',
             subtitle: 'The People'
         });
+        initSearch();
     </script>
     <script type="module" src="js/constellation.js"></script>
 </body>

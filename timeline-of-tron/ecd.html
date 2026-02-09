@@ -106,13 +106,14 @@
     <script src="lib/fuse.min.js"></script>
     <script type="module">
         import { initNav } from './js/nav.js';
-        import './js/search-engine.js';
+        import { initSearch } from './js/search-engine.js';
         initNav({
             room: 'ecd',
             mood: 'competitive',
             music: 'Survivor — "Eye of the Tiger"',
             subtitle: '128 Players. 222 Events. 21 Years.'
         });
+        initSearch();
     </script>
     <script type="module" src="js/ecd.js"></script>
 </body>
