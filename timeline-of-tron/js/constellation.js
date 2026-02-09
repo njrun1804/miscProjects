@@ -129,6 +129,8 @@ let arcData = {};
 let coOccurrencesData = [];
 let ecdPlayersData = {};
 let ecdAwardsData = [];
+let songsByPerson = {};
+let lifeChaptersData = [];
 
 // Build a name→ECD player lookup (case-insensitive matching for awards)
 function buildEcdPlayerMap(playersArray) {
@@ -136,6 +138,18 @@ function buildEcdPlayerMap(playersArray) {
     if (!Array.isArray(playersArray)) return map;
     playersArray.forEach(p => {
         if (p.name) map[p.name] = p;
+    });
+    return map;
+}
+
+// Build a name→songs lookup from song_person_map.json
+function buildSongPersonMap(songArray) {
+    const map = {};
+    if (!Array.isArray(songArray)) return map;
+    songArray.forEach(s => {
+        if (!s.person) return;
+        if (!map[s.person]) map[s.person] = [];
+        map[s.person].push(s);
     });
     return map;
 }
@@ -149,14 +163,16 @@ export async function initConstellation() {
         'person_arc.json',
         'person_timelines.json',
         'milestones_enriched.json',
-        'co_occurrences.json'
+        'co_occurrences.json',
+        'life_chapters.json'
     ]);
     // Optional enrichment data — don't block page if missing
     try {
-        const extras = await loadMultiple(['people_highlights.json', 'ecd_players.json', 'ecd_awards_v2.json']);
+        const extras = await loadMultiple(['people_highlights.json', 'ecd_players.json', 'ecd_awards_v2.json', 'song_person_map.json']);
         data.people_highlights = extras.people_highlights;
         data.ecd_players = extras.ecd_players;
         data.ecd_awards_v2 = extras.ecd_awards_v2;
+        data.song_person_map = extras.song_person_map;
     } catch (_) { /* enrichment data unavailable — page still works */ }
 
     const constellation = data.relationship_constellation;
@@ -166,6 +182,8 @@ export async function initConstellation() {
     coOccurrencesData = data.co_occurrences || [];
     ecdPlayersData = buildEcdPlayerMap(data.ecd_players);
     ecdAwardsData = data.ecd_awards_v2 || [];
+    lifeChaptersData = data.life_chapters || [];
+    songsByPerson = buildSongPersonMap(data.song_person_map);
 
     // Enrich profiles with person_timelines data for people who have events there
     // but not in people_profiles (covers more people)
@@ -231,6 +249,7 @@ export async function initConstellation() {
 
     renderFeaturedCards(constellation.nodes, profilesData);
     renderFiltersAndLegend(constellation.nodes);
+    renderChapterTimeline(lifeChaptersData);
     renderStatsBar(constellation);
     renderForceGraph(constellation, profilesData, coOccurrencesData);
     initSearchAutocomplete(constellation.nodes, profilesData);
@@ -401,6 +420,110 @@ function applyFilter(cat) {
                 return (s?.category === cat || t?.category === cat) ? 0.6 : 0.03;
             });
     }
+}
+
+// ─── Life Chapter Timeline ────────────────────────────────────────
+
+function renderChapterTimeline(chapters) {
+    const mount = document.getElementById('chapterMount');
+    if (!mount || !chapters.length) return;
+
+    // Parse key_people from JSON strings
+    const parsed = chapters.map(ch => {
+        let keyPeople = [];
+        try {
+            keyPeople = typeof ch.key_people === 'string' ? JSON.parse(ch.key_people) : (ch.key_people || []);
+        } catch (_) { /* ignore */ }
+        // Extract short theme (first segment before the pipe or dash)
+        const shortTheme = (ch.theme || '').split('—')[0].split('|')[0].trim();
+        return { ...ch, keyPeople, shortTheme };
+    });
+
+    const pills = parsed.map((ch, i) => {
+        const yearLabel = ch.start_year === ch.end_year ? `${ch.start_year}` : `${ch.start_year}–${ch.end_year}`;
+        return `<button class="chapter-pill" data-idx="${i}" title="${ch.theme}">
+            <span class="chapter-pill-years">${yearLabel}</span>
+            <span class="chapter-pill-theme">${ch.shortTheme}</span>
+        </button>`;
+    });
+
+    mount.innerHTML = `
+        <div class="chapter-strip-label">Life Chapters</div>
+        <div class="chapter-strip">
+            <button class="chapter-pill active" data-idx="all">
+                <span class="chapter-pill-years">All</span>
+                <span class="chapter-pill-theme">Full timeline</span>
+            </button>
+            ${pills.join('')}
+        </div>
+    `;
+
+    mount.querySelectorAll('.chapter-pill').forEach(btn => {
+        btn.addEventListener('click', () => {
+            mount.querySelectorAll('.chapter-pill').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const idx = btn.dataset.idx;
+            if (idx === 'all') {
+                clearChapterOverlay();
+                resetGraphOpacity();
+            } else {
+                applyChapterFilter(parsed[parseInt(idx)]);
+            }
+        });
+    });
+}
+
+function applyChapterFilter(chapter) {
+    if (!svgNode || !svgLink) return;
+
+    const startY = chapter.start_year;
+    const endY = chapter.end_year;
+    const keyNames = new Set(chapter.keyPeople || []);
+
+    svgNode.transition().duration(400)
+        .attr('opacity', d => {
+            if (d.id === 'john') return 1;
+            const first = d.firstYear;
+            const last = d.lastYear || first;
+            if (!first) return 0.06;
+            // Active if their span overlaps the chapter years
+            const overlaps = first <= endY && (last || first) >= startY;
+            return overlaps ? 1 : 0.06;
+        })
+        .attr('stroke-width', d => {
+            if (keyNames.has(d.name)) return 3;
+            return d.hasContent ? 1.5 : 0.5;
+        });
+
+    svgLink.transition().duration(400)
+        .attr('opacity', l => {
+            const src = typeof l.source === 'object' ? l.source : allNodes.find(n => n.name === l.source);
+            const tgt = typeof l.target === 'object' ? l.target : allNodes.find(n => n.name === l.target);
+            const srcFirst = src?.firstYear;
+            const srcLast = src?.lastYear || srcFirst;
+            const tgtFirst = tgt?.firstYear;
+            const tgtLast = tgt?.lastYear || tgtFirst;
+            const srcOverlaps = srcFirst && srcFirst <= endY && (srcLast || srcFirst) >= startY;
+            const tgtOverlaps = tgtFirst && tgtFirst <= endY && (tgtLast || tgtFirst) >= startY;
+            return (srcOverlaps && tgtOverlaps) ? 0.5 : 0.03;
+        });
+
+    // Show chapter theme overlay on the graph
+    showChapterOverlay(chapter);
+}
+
+function showChapterOverlay(chapter) {
+    const container = document.getElementById('constellationMount');
+    if (!container) return;
+    clearChapterOverlay();
+    const overlay = document.createElement('div');
+    overlay.className = 'chapter-overlay';
+    overlay.textContent = chapter.shortTheme || chapter.theme?.split('—')[0]?.split('|')[0]?.trim() || '';
+    container.appendChild(overlay);
+}
+
+function clearChapterOverlay() {
+    document.querySelectorAll('.chapter-overlay').forEach(el => el.remove());
 }
 
 // ─── Stats Bar ───────────────────────────────────────────────────
@@ -708,6 +831,27 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         })
         .attr('stroke-dasharray', d => d.fromCoOccurrence ? '3,3' : 'none');
 
+    // Edge hover + click for "Story of Us"
+    svgLink
+        .on('mouseover', function (event, d) {
+            if (d.isHub) return; // Don't highlight hub spokes
+            d3.select(this)
+                .attr('stroke-width', Math.max(d.weight || 1, 2.5))
+                .attr('stroke', 'rgba(201, 168, 76, 0.6)');
+        })
+        .on('mouseout', function (event, d) {
+            d3.select(this)
+                .attr('stroke-width', d.isHub ? 0.5 : Math.min(d.weight || 1, 3))
+                .attr('stroke', d.isHub ? 'rgba(201, 168, 76, 0.12)' :
+                    d.fromCoOccurrence ? 'rgba(201, 168, 76, 0.25)' : 'rgba(255,255,255,0.35)');
+        })
+        .on('click', function (event, d) {
+            if (d.isHub) return;
+            event.stopPropagation();
+            showEdgePanel(d, event);
+        })
+        .attr('cursor', d => d.isHub ? 'default' : 'pointer');
+
     svgNode = svg.append('g')
         .selectAll('circle')
         .data(nodes)
@@ -764,6 +908,7 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     svg.on('click', () => {
         resetGraphOpacity();
         closeSidebar();
+        closeEdgePanel();
     });
 
     simulation.on('tick', () => {
@@ -793,6 +938,120 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         if (d.id !== 'john') { d.fx = null; d.fy = null; }
     }
 }
+
+// ─── Edge Panel ("Story of Us") ─────────────────────────────────
+// Floating panel that appears when clicking a link between two people.
+
+function showEdgePanel(link, event) {
+    const panel = document.getElementById('edgePanel');
+    if (!panel) return;
+
+    const nameA = typeof link.source === 'object' ? link.source.name : link.source;
+    const nameB = typeof link.target === 'object' ? link.target.name : link.target;
+
+    // Shared co-occurrence moments
+    const sharedMoments = coOccurrencesData.filter(co =>
+        co.context && (
+            (co.person_a === nameA && co.person_b === nameB) ||
+            (co.person_a === nameB && co.person_b === nameA)
+        )
+    );
+
+    // Shared timeline years
+    const profileA = profilesData[nameA];
+    const profileB = profilesData[nameB];
+    const yearsA = new Set((profileA?.timeline || []).map(e => e.year).filter(Boolean));
+    const yearsB = new Set((profileB?.timeline || []).map(e => e.year).filter(Boolean));
+    const sharedYears = [...yearsA].filter(y => yearsB.has(y)).sort();
+
+    // Mutual connections (excluding John and each other)
+    const connsA = new Set();
+    const connsB = new Set();
+    allLinks.forEach(l => {
+        const src = typeof l.source === 'object' ? l.source.name : l.source;
+        const tgt = typeof l.target === 'object' ? l.target.name : l.target;
+        if (src === nameA && tgt !== nameB && tgt !== 'John Tronolone') connsA.add(tgt);
+        if (tgt === nameA && src !== nameB && src !== 'John Tronolone') connsA.add(src);
+        if (src === nameB && tgt !== nameA && tgt !== 'John Tronolone') connsB.add(tgt);
+        if (tgt === nameB && src !== nameA && src !== 'John Tronolone') connsB.add(src);
+    });
+    const mutuals = [...connsA].filter(c => connsB.has(c));
+
+    // Build panel HTML
+    let html = `<button class="edge-panel-close">&times;</button>`;
+    html += `<div class="edge-panel-header">${nameA}<span class="edge-panel-ampersand">&</span>${nameB}</div>`;
+
+    if (sharedMoments.length) {
+        html += `<div class="edge-panel-section">Shared Moments</div>`;
+        html += sharedMoments.map(co =>
+            `<div class="edge-panel-moment"><span class="edge-panel-moment-year">${co.year}</span>${co.context}</div>`
+        ).join('');
+    }
+
+    if (sharedYears.length) {
+        html += `<div class="edge-panel-section">Both Active In</div>`;
+        html += `<div class="edge-panel-years-overlap">${sharedYears.join(', ')}</div>`;
+    }
+
+    if (mutuals.length) {
+        html += `<div class="edge-panel-section">Mutual Friends (${mutuals.length})</div>`;
+        html += `<div class="edge-panel-mutuals">${mutuals.slice(0, 8).map(m =>
+            `<button class="connection-tag" data-name="${m}">${m}</button>`
+        ).join('')}</div>`;
+    }
+
+    if (!sharedMoments.length && !sharedYears.length && !mutuals.length) {
+        html += `<div class="edge-panel-moment" style="color:var(--lj-text-secondary);font-style:italic">Connected in the constellation, but their shared story hasn't been documented yet.</div>`;
+    }
+
+    // View full profile buttons
+    html += `<div style="display:flex;gap:6px;margin-top:12px">`;
+    html += `<button class="edge-panel-view-btn" data-name="${nameA}">${nameA}</button>`;
+    html += `<button class="edge-panel-view-btn" data-name="${nameB}">${nameB}</button>`;
+    html += `</div>`;
+
+    panel.innerHTML = html;
+    panel.classList.add('open');
+
+    // Position near the edge midpoint
+    const container = document.getElementById('constellationMount');
+    const rect = container?.getBoundingClientRect();
+    const srcNode = typeof link.source === 'object' ? link.source : allNodes.find(n => n.name === link.source);
+    const tgtNode = typeof link.target === 'object' ? link.target : allNodes.find(n => n.name === link.target);
+    if (srcNode && tgtNode && rect) {
+        const midX = (srcNode.x + tgtNode.x) / 2;
+        const midY = (srcNode.y + tgtNode.y) / 2;
+        // Keep panel in bounds
+        const panelW = 320;
+        const panelH = 300;
+        const left = Math.max(8, Math.min(midX - panelW / 2, rect.width - panelW - 8));
+        const top = Math.max(8, Math.min(midY - panelH / 2, rect.height - panelH - 8));
+        panel.style.left = left + 'px';
+        panel.style.top = top + 'px';
+    }
+
+    // Wire up close button
+    panel.querySelector('.edge-panel-close')?.addEventListener('click', closeEdgePanel);
+
+    // Wire up view buttons to open full sidebar
+    panel.querySelectorAll('.edge-panel-view-btn, .connection-tag').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            closeEdgePanel();
+            focusNodeByName(btn.dataset.name);
+        });
+    });
+}
+
+function closeEdgePanel() {
+    const panel = document.getElementById('edgePanel');
+    if (panel) panel.classList.remove('open');
+}
+
+// Close edge panel on Escape
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeEdgePanel();
+});
 
 // ─── Person Panel (Sidebar) ─────────────────────────────────────
 // Smart sidebar: only shows sections that have data. Adapts to what exists.
@@ -843,6 +1102,23 @@ function showPersonPanel(d) {
         html += `<p class="person-connection-desc">${connection}</p>`;
     }
 
+    // Song memory anchor — vivid musical connection
+    // Fuzzy match: "Valerie Winston" matches "Valerie Winston (ValPal)", etc.
+    const personSongs = songsByPerson[d.name] || Object.entries(songsByPerson).reduce((found, [key, songs]) => {
+        if (!found.length && (d.name.startsWith(key) || key.startsWith(d.name))) return songs;
+        return found;
+    }, []);
+    if (personSongs?.length) {
+        personSongs.forEach(s => {
+            html += `<div class="song-anchor">
+                <div class="song-anchor-header">&#9835; Memory Anchor</div>
+                <div class="song-anchor-title">"${s.song}" by ${s.artist}</div>
+                <div class="song-anchor-story">${s.story}</div>
+                <div class="song-anchor-year">${s.year_of_connection}</div>
+            </div>`;
+        });
+    }
+
     // Meta stats row
     const metaParts = [];
     if (yearText) metaParts.push(yearText);
@@ -853,14 +1129,47 @@ function showPersonPanel(d) {
         html += `<div class="person-meta-row">${metaParts.join(' · ')}</div>`;
     }
 
-    // Connections (always show if any exist)
+    // Connections with mutual friend counts
     if (connected.length) {
+        // Build connection set for selected person (excluding hub to John)
+        const myConnSet = new Set(connected);
+
+        // Compute mutual count for each connection
+        const connWithMutuals = connected.map(c => {
+            const theirConns = new Set();
+            allLinks.forEach(l => {
+                const src = typeof l.source === 'object' ? l.source.name : l.source;
+                const tgt = typeof l.target === 'object' ? l.target.name : l.target;
+                if (src === c && tgt !== d.name && tgt !== 'John Tronolone') theirConns.add(tgt);
+                if (tgt === c && src !== d.name && src !== 'John Tronolone') theirConns.add(src);
+            });
+            let mutual = 0;
+            myConnSet.forEach(m => { if (m !== c && theirConns.has(m)) mutual++; });
+            return { name: c, mutual };
+        });
+
+        // Sort: people with mutuals first, then alphabetical
+        connWithMutuals.sort((a, b) => b.mutual - a.mutual || a.name.localeCompare(b.name));
+
+        const closeOrbit = connWithMutuals.filter(c => c.mutual > 0);
+        const alsoConnected = connWithMutuals.filter(c => c.mutual === 0);
+
         html += `<div class="person-section-label">Connections (${connected.length})</div>`;
-        html += `<div class="person-connections">${connected.slice(0, 16).map(c =>
-            `<button class="connection-tag" data-name="${c}">${c}</button>`
-        ).join('')}</div>`;
-        if (connected.length > 16) {
-            html += `<div class="person-more-note">+ ${connected.length - 16} more</div>`;
+        if (closeOrbit.length) {
+            html += `<div class="connection-tier-label">Close orbit</div>`;
+            html += `<div class="person-connections">${closeOrbit.slice(0, 12).map(c =>
+                `<button class="connection-tag has-mutual" data-name="${c.name}">${c.name}<span class="mutual-count">${c.mutual} mutual</span></button>`
+            ).join('')}</div>`;
+        }
+        if (alsoConnected.length) {
+            if (closeOrbit.length) html += `<div class="connection-tier-label">Also connected</div>`;
+            html += `<div class="person-connections">${alsoConnected.slice(0, 12).map(c =>
+                `<button class="connection-tag" data-name="${c.name}">${c.name}</button>`
+            ).join('')}</div>`;
+        }
+        const total = closeOrbit.length + alsoConnected.length;
+        if (total > 24) {
+            html += `<div class="person-more-note">+ ${total - 24} more</div>`;
         }
     }
 
