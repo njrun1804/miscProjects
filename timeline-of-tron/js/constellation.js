@@ -324,16 +324,6 @@ export async function initConstellation() {
         matchRecordsByPlayer = buildMatchRecordsByPlayer([...(ecdMatchResultsData || []), ...(ecdGameResultsData || [])]);
         ljCommentsByPerson = buildLjCommentsByPerson(ljCommentsData);
         milestonesByPerson = buildMilestonesByPerson(milestonePeopleData);
-        console.log('[Constellation] Extended data loaded:', {
-            quotes: quotesData.length,
-            quoteAttrs: quoteAttributionData.length,
-            rivalries: ecdRivalriesData.length,
-            matchResults: ecdMatchResultsData.length,
-            traditions: traditionsData.length,
-            funFacts: funFactsData.length,
-            ljComments: ljCommentsData.length,
-            milestones: milestonePeopleData.length
-        });
     } catch (e) {
         console.warn('[Constellation] Extended enrichment data unavailable:', e.message);
     }
@@ -347,11 +337,9 @@ export async function initConstellation() {
     };
     const deduplicatedNodeCount = (rawConstellation.nodes || []).length - constellation.nodes.length;
     if (deduplicatedNodeCount > 0) {
-        console.log(`[NameResolver] Merged ${deduplicatedNodeCount} duplicate nodes in constellation`);
     }
     const deduplicatedLinkCount = (rawConstellation.links || []).length - constellation.links.length;
     if (deduplicatedLinkCount > 0) {
-        console.log(`[NameResolver] Merged ${deduplicatedLinkCount} duplicate/self-loop links`);
     }
 
     // Resolve names in co-occurrences before building maps
@@ -509,12 +497,6 @@ export async function initConstellation() {
             analyticsNodes, normalizedArc
         );
         analyticsReady = true;
-        console.log('[Constellation] Advanced analytics computed:', {
-            pageRankNodes: analyticsPageRank.size,
-            communities: new Set(analyticsCommunities.communities.values()).size,
-            modularity: analyticsCommunities.modularity.toFixed(3),
-            networkHealth: analyticsNetworkHealth
-        });
     } catch (e) {
         console.warn('[Constellation] Analytics computation failed, falling back to basic mode:', e);
         analyticsReady = false;
@@ -1146,26 +1128,25 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
 
     const zoom = d3.zoom()
         .scaleExtent([0.3, 4])
+        .filter((event) => {
+            // Allow programmatic zoom (from buttons) and drag-to-pan,
+            // but block scroll/wheel zoom so page scrolling works normally
+            if (event.type === 'wheel') return false;
+            if (event.type === 'dblclick') return false;
+            return true;
+        })
         .on('zoom', (event) => {
             zoomG.attr('transform', event.transform);
         });
     svg.call(zoom);
-    // Disable double-click zoom (conflicts with node deselect)
-    svg.on('dblclick.zoom', null);
 
     // Wire up zoom control buttons
     const zoomInBtn = document.getElementById('zoomIn');
     const zoomOutBtn = document.getElementById('zoomOut');
     const zoomResetBtn = document.getElementById('zoomReset');
-    const zoomHint = document.getElementById('zoomHint');
     if (zoomInBtn) zoomInBtn.addEventListener('click', () => svg.transition().duration(300).call(zoom.scaleBy, 1.4));
     if (zoomOutBtn) zoomOutBtn.addEventListener('click', () => svg.transition().duration(300).call(zoom.scaleBy, 0.7));
     if (zoomResetBtn) zoomResetBtn.addEventListener('click', () => svg.transition().duration(500).call(zoom.transform, d3.zoomIdentity));
-    // Fade out zoom hint after first interaction
-    if (zoomHint) {
-        const hideHint = () => { zoomHint.style.opacity = '0'; container.removeEventListener('wheel', hideHint); };
-        container.addEventListener('wheel', hideHint, { once: true });
-    }
 
     const tooltip = d3.select(container)
         .append('div')
@@ -1986,30 +1967,12 @@ function showPersonPanel(d) {
         }
     }
 
-    // ─── Analytics: Social DNA Radar ──────────────────────────────
-    if (analyticsReady && d.id !== 'john') {
-        const personScore = analyticsPersonScores.get(d.name);
-        if (personScore) {
-            html += `<div class="social-dna-section">
-                <div class="social-dna-title">Social DNA</div>
-                <canvas class="social-dna-canvas" id="dnaCanvas-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}" width="240" height="240"></canvas>
-                <div class="social-dna-labels">
-                    <span class="dna-label">PageRank: <span class="dna-value">${(personScore.pageRank * 100).toFixed(1)}</span></span>
-                    <span class="dna-label">Bridge: <span class="dna-value">${(personScore.betweenness * 100).toFixed(1)}</span></span>
-                    <span class="dna-label">Clique: <span class="dna-value">${(personScore.clustering * 100).toFixed(1)}</span></span>
-                    <span class="dna-label">Activity: <span class="dna-value">${(personScore.mentions * 100).toFixed(1)}</span></span>
-                    <span class="dna-label">Longevity: <span class="dna-value">${(personScore.span * 100).toFixed(1)}</span></span>
-                </div>
-            </div>`;
-        }
-    }
-
-    // ─── Analytics: Activity Sparkline ────────────────────────────
+    // ─── Mentions Over Time Sparkline ────────────────────────────
     if (d.id !== 'john' && (profile?.timeline?.length || arc?.first_year)) {
         const sparkFirstYear = firstYear || 2004;
         const sparkLastYear = lastYear || 2026;
         html += `<div class="sparkline-section">
-            <div class="sparkline-label">Activity Over Time</div>
+            <div class="sparkline-label">Mentions Over Time</div>
             <div class="sparkline-container">
                 <canvas class="sparkline-canvas" id="sparkline-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}" width="340" height="48"></canvas>
             </div>
@@ -2325,19 +2288,7 @@ function showPersonPanel(d) {
         });
     });
 
-    // ─── Draw Social DNA Radar Chart ─────────────────────────────
-    if (analyticsReady && d.id !== 'john') {
-        const personScore = analyticsPersonScores.get(d.name);
-        if (personScore) {
-            requestAnimationFrame(() => {
-                const canvasId = `dnaCanvas-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}`;
-                const canvas = document.getElementById(canvasId);
-                if (canvas) drawRadarChart(canvas, personScore);
-            });
-        }
-    }
-
-    // ─── Draw Activity Sparkline ─────────────────────────────────
+    // ─── Draw Mentions Sparkline ─────────────────────────────────
     if (d.id !== 'john') {
         requestAnimationFrame(() => {
             const sparkId = `sparkline-${d.name.replace(/[^a-zA-Z0-9]/g, '_')}`;

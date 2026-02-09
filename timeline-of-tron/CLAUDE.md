@@ -62,7 +62,7 @@ timeline-of-tron/
 ├── lib/                          # Vendored libraries (Chart.js, D3, Leaflet, Fuse.js)
 ├── db/
 │   ├── tron.db                   # SQLite database (996KB, 44+ tables, source of truth)
-│   └── api/                      # 128+ JSON endpoints (exported from tron.db)
+│   └── api/                      # 54 JSON endpoints (exported from tron.db)
 ├── data/
 │   ├── tron-content-db.json      # Master content database (89KB, 21 keys)
 │   └── lj_comments_data.json     # Raw LiveJournal comments (40KB)
@@ -98,7 +98,6 @@ Each room HTML page loads:
 |---------|---------|------|---------|
 | Chart.js | v4.5.1 | 208KB | Record Book, Dynasty, Atlas, Vault, Lobby, Constellation, ECD |
 | D3.js | v7 | ~280KB | Constellation, ECD |
-| D3 Sankey | v0.12.3 | ~6KB | (available, originally for Comeback Lab) |
 | Leaflet.js | v1.9.4 | ~148KB | Atlas |
 | Fuse.js | v7.0.0 | ~24KB | All rooms (global search) |
 
@@ -113,7 +112,7 @@ Each room HTML page loads:
 ## Data Layer
 
 ### JSON API Endpoints (`db/api/`)
-All data is pre-exported as static JSON (128+ files, 6,800+ records, ~2.3MB total). The `data-loader.js` module fetches and caches these.
+All data is pre-exported as static JSON (54 files in `db/api/`). The `data-loader.js` module fetches and caches these. Unused/superseded JSON files are archived in `archive/unused-json/`.
 
 **Key files by room:**
 
