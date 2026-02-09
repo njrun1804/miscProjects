@@ -148,16 +148,16 @@ export async function initConstellation() {
         'people.json',
         'person_arc.json',
         'person_timelines.json',
-        'people_highlights.json',
         'milestones_enriched.json',
         'co_occurrences.json'
     ]);
-    // ECD data (optional enrichment — don't block page if missing)
+    // Optional enrichment data — don't block page if missing
     try {
-        const ecdData = await loadMultiple(['ecd_players.json', 'ecd_awards_v2.json']);
-        data.ecd_players = ecdData.ecd_players;
-        data.ecd_awards_v2 = ecdData.ecd_awards_v2;
-    } catch (_) { /* ECD data unavailable — page still works */ }
+        const extras = await loadMultiple(['people_highlights.json', 'ecd_players.json', 'ecd_awards_v2.json']);
+        data.people_highlights = extras.people_highlights;
+        data.ecd_players = extras.ecd_players;
+        data.ecd_awards_v2 = extras.ecd_awards_v2;
+    } catch (_) { /* enrichment data unavailable — page still works */ }
 
     const constellation = data.relationship_constellation;
     profilesData = buildProfileMap(data.people_profiles);
