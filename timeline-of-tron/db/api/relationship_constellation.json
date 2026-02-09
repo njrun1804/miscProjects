@@ -14,7 +14,7 @@
       "total_mentions": 1,
       "peak_year": 2020,
       "highlight_count": 1,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_4",
@@ -38,7 +38,7 @@
       "total_mentions": 2,
       "peak_year": 2019,
       "highlight_count": 2,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_9",
@@ -74,7 +74,7 @@
       "total_mentions": 2,
       "peak_year": 2020,
       "highlight_count": 2,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_5",
@@ -146,7 +146,7 @@
       "total_mentions": 2,
       "peak_year": 2008,
       "highlight_count": 2,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_20",
@@ -182,7 +182,7 @@
       "total_mentions": 2,
       "peak_year": 2017,
       "highlight_count": 3,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_17",
@@ -218,7 +218,7 @@
       "total_mentions": 0,
       "peak_year": null,
       "highlight_count": 6,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_100",
@@ -242,7 +242,7 @@
       "total_mentions": 0,
       "peak_year": null,
       "highlight_count": 4,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_118",
@@ -374,7 +374,7 @@
       "total_mentions": 0,
       "peak_year": null,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_84",
@@ -446,7 +446,7 @@
       "total_mentions": 1,
       "peak_year": 2011,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_115",
@@ -554,7 +554,7 @@
       "total_mentions": 1,
       "peak_year": 2013,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_68",
@@ -566,7 +566,7 @@
       "total_mentions": 1,
       "peak_year": 2013,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_67",
@@ -578,7 +578,7 @@
       "total_mentions": 1,
       "peak_year": 2013,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_39",
@@ -710,7 +710,7 @@
       "total_mentions": 1,
       "peak_year": 2014,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_50",
@@ -722,7 +722,7 @@
       "total_mentions": 2,
       "peak_year": 2019,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_46",
@@ -794,7 +794,7 @@
       "total_mentions": 2,
       "peak_year": 2017,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_127",
@@ -818,7 +818,7 @@
       "total_mentions": 2,
       "peak_year": 2017,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_51",
@@ -866,7 +866,7 @@
       "total_mentions": 3,
       "peak_year": 2007,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_120",
@@ -926,7 +926,7 @@
       "total_mentions": 2,
       "peak_year": 2014,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_97",
@@ -950,7 +950,7 @@
       "total_mentions": 1,
       "peak_year": 2017,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_91",
@@ -962,7 +962,7 @@
       "total_mentions": 1,
       "peak_year": 2017,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_74",
@@ -1334,7 +1334,7 @@
       "total_mentions": 1,
       "peak_year": 2018,
       "highlight_count": 0,
-      "has_timeline": false
+      "has_timeline": true
     },
     {
       "id": "person_89",
@@ -1695,6 +1695,198 @@
       "weight": 1,
       "first_year": 2009,
       "co_occurrence_count": 1
+    },
+    {
+      "source": "person_2",
+      "target": "john",
+      "weight": 5,
+      "first_year": 2007,
+      "relationship_type": "family",
+      "hub_link": true
+    },
+    {
+      "source": "person_5",
+      "target": "john",
+      "weight": 2,
+      "first_year": 2010,
+      "relationship_type": "family",
+      "hub_link": true
+    },
+    {
+      "source": "person_6",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2020,
+      "relationship_type": "family",
+      "hub_link": true
+    },
+    {
+      "source": "person_7",
+      "target": "john",
+      "weight": 2,
+      "first_year": 2020,
+      "relationship_type": "family",
+      "hub_link": true
+    },
+    {
+      "source": "person_8",
+      "target": "john",
+      "weight": 2,
+      "first_year": 2019,
+      "relationship_type": "family",
+      "hub_link": true
+    },
+    {
+      "source": "person_9",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2021,
+      "relationship_type": "family",
+      "hub_link": true
+    },
+    {
+      "source": "person_10",
+      "target": "john",
+      "weight": 12,
+      "first_year": 2011,
+      "relationship_type": "partner",
+      "hub_link": true
+    },
+    {
+      "source": "person_11",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2022,
+      "relationship_type": "inner_circle",
+      "hub_link": true
+    },
+    {
+      "source": "person_12",
+      "target": "john",
+      "weight": 2,
+      "first_year": 2017,
+      "relationship_type": "inner_circle",
+      "hub_link": true
+    },
+    {
+      "source": "person_14",
+      "target": "john",
+      "weight": 2,
+      "first_year": 2011,
+      "relationship_type": "inner_circle",
+      "hub_link": true
+    },
+    {
+      "source": "person_15",
+      "target": "john",
+      "weight": 2,
+      "first_year": 2015,
+      "relationship_type": "inner_circle",
+      "hub_link": true
+    },
+    {
+      "source": "person_16",
+      "target": "john",
+      "weight": 4,
+      "first_year": 2008,
+      "relationship_type": "inner_circle",
+      "hub_link": true
+    },
+    {
+      "source": "person_17",
+      "target": "john",
+      "weight": 3,
+      "first_year": 2007,
+      "relationship_type": "inner_circle",
+      "hub_link": true
+    },
+    {
+      "source": "person_27",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2020,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_37",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2009,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_67",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2013,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_77",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2014,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_81",
+      "target": "john",
+      "weight": 2,
+      "first_year": 2014,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_82",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2018,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_83",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2017,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_87",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2020,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_91",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2017,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_63",
+      "target": "john",
+      "weight": 1,
+      "first_year": 2021,
+      "relationship_type": "other",
+      "hub_link": true
+    },
+    {
+      "source": "person_1",
+      "target": "john",
+      "weight": 8,
+      "first_year": 2004,
+      "relationship_type": "family",
+      "hub_link": true
     }
   ],
   "clusters": {

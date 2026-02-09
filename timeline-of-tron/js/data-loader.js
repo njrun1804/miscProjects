@@ -6,7 +6,7 @@ const API_BASE = 'db/api/';
 
 export async function loadData(filename) {
     if (DATA_CACHE[filename]) return DATA_CACHE[filename];
-    const resp = await fetch(API_BASE + filename);
+    const resp = await fetch(API_BASE + filename, { cache: 'no-cache' });
     if (!resp.ok) throw new Error(`Failed to load ${filename}: ${resp.status}`);
     const data = await resp.json();
     DATA_CACHE[filename] = data;

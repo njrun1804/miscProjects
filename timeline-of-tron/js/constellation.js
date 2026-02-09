@@ -189,8 +189,10 @@ function renderFiltersAndLegend(nodes) {
 function applyFilter(cat) {
     if (!svgNode || !svgLink) return;
     if (cat === 'all') {
-        svgNode.transition().duration(300).attr('opacity', 1);
-        svgLink.transition().duration(300).attr('opacity', 1);
+        svgNode.transition().duration(300)
+            .attr('opacity', d => d.hasContent ? 1 : 0.35);
+        svgLink.transition().duration(300)
+            .attr('opacity', d => d.hubLink ? 0.3 : 1);
     } else {
         svgNode.transition().duration(300)
             .attr('opacity', d => (d.category === cat || d.id === 'john') ? 1 : 0.08);
@@ -414,10 +416,12 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     const links = (constellation.links || []).map(l => ({
         source: l.source,
         target: l.target,
-        weight: l.weight || 1
+        weight: l.weight || 1,
+        hubLink: !!l.hub_link,
+        fromCoOccurrence: false
     })).filter(l => l.source !== l.target);
 
-    // Enrich with co-occurrence links
+    // Enrich with co-occurrence links not already in the data
     const existingLinkSet = new Set(links.map(l => [l.source, l.target].sort().join('|')));
     (coOccurrences || []).forEach(co => {
         const idA = nameToId[co.person_a];
@@ -430,25 +434,38 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
             source: idA,
             target: idB,
             weight: Math.min(co.co_occurrence_count || 1, 3),
-            fromCoOccurrence: true
+            fromCoOccurrence: true,
+            hubLink: false
         });
     });
 
     allNodes = nodes;
     allLinks = links;
 
+    // Hub links (person→John) get longer distance to create the spoke structure;
+    // peer links are shorter to cluster connected people together
     simulation = d3.forceSimulation(nodes)
-        .force('link', d3.forceLink(links).id(d => d.id).distance(80).strength(0.3))
-        .force('charge', d3.forceManyBody().strength(-30))
+        .force('link', d3.forceLink(links).id(d => d.id)
+            .distance(d => d.hubLink ? 120 : 60)
+            .strength(d => d.hubLink ? 0.15 : 0.4))
+        .force('charge', d3.forceManyBody().strength(-40))
         .force('center', d3.forceCenter(width / 2, height / 2))
-        .force('collide', d3.forceCollide(d => d.radius + 2));
+        .force('collide', d3.forceCollide(d => d.radius + 3));
 
+    // Hub links: thin, subtle rays from center; peer links: brighter
     svgLink = svg.append('g')
         .selectAll('line')
         .data(links)
         .join('line')
-        .attr('stroke', d => d.fromCoOccurrence ? 'rgba(201, 168, 76, 0.25)' : 'rgba(255,255,255,0.3)')
-        .attr('stroke-width', d => Math.min(d.weight, 3))
+        .attr('stroke', d => {
+            if (d.hubLink) return 'rgba(201, 168, 76, 0.12)';
+            if (d.fromCoOccurrence) return 'rgba(201, 168, 76, 0.25)';
+            return 'rgba(255,255,255,0.35)';
+        })
+        .attr('stroke-width', d => {
+            if (d.hubLink) return 0.5;
+            return Math.min(d.weight, 3);
+        })
         .attr('stroke-dasharray', d => d.fromCoOccurrence ? '3,3' : 'none');
 
     svgNode = svg.append('g')
@@ -579,15 +596,21 @@ function showPersonPanel(d) {
         ).join('')}</div>`;
     }
 
-    // Timeline events
+    // Timeline events — show more for people with rich profiles
     if (profile?.timeline?.length) {
-        html += `<div class="person-section-label">Key Moments</div>`;
-        html += `<div class="person-milestones">${profile.timeline.slice(0, 8).map(m =>
-            `<div class="person-milestone-item">
+        const maxEvents = profile.timeline.length > 12 ? 12 : profile.timeline.length;
+        html += `<div class="person-section-label">Key Moments (${profile.timeline.length})</div>`;
+        html += `<div class="person-milestones">${profile.timeline.slice(0, maxEvents).map(m => {
+            const eventText = m.event || m.text || m.milestone || '';
+            const withPerson = m.with ? ` <span class="person-co-with">with ${m.with}</span>` : '';
+            return `<div class="person-milestone-item">
                 <span class="person-milestone-year">${m.year || ''}</span>
-                ${m.event || m.text || m.milestone || ''}
-            </div>`
-        ).join('')}</div>`;
+                ${eventText}${withPerson}
+            </div>`;
+        }).join('')}</div>`;
+        if (profile.timeline.length > maxEvents) {
+            html += `<div class="person-highlight-item" style="font-size:11px;color:var(--lj-text-secondary)">+ ${profile.timeline.length - maxEvents} more events</div>`;
+        }
     }
 
     // Awards

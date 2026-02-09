@@ -234,7 +234,13 @@
       "total_mentions": 0,
       "peak_year": null
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2020,
+        "event": "Shocker Of The Year: COVID Test II; Laver Cup Tickets; Brian's Transfer",
+        "type": "award"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -366,7 +372,14 @@
       "total_mentions": 1,
       "peak_year": 2011
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2011,
+        "event": "Cousin Nick married Samantha (Jul 2-3)",
+        "type": "shared_moment",
+        "with": "Ma"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -449,9 +462,29 @@
         "event_type": "award"
       },
       {
+        "year": 2015,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2015,
+        "event": "Best Laughs winner",
+        "type": "award"
+      },
+      {
         "year": 2016,
         "event": "Spengeman-Mullins wedding",
         "event_type": "social"
+      },
+      {
+        "year": 2018,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2018,
+        "event": "Best Laughs winner",
+        "type": "award"
       }
     ],
     "highlights": [
@@ -528,7 +561,14 @@
       "total_mentions": 1,
       "peak_year": 2021
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2015,
+        "event": "Dan Spengeman: Comedian of the Year",
+        "type": "shared_moment",
+        "with": "Dan Spengeman"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -594,7 +634,53 @@
       "total_mentions": 2,
       "peak_year": 2008
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2008,
+        "event": "Diana DiBuccio: Comedian of the Year",
+        "type": "award"
+      },
+      {
+        "year": 2008,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2008,
+        "event": "Best Laughs winner",
+        "type": "award"
+      },
+      {
+        "year": 2014,
+        "event": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
+        "type": "social"
+      },
+      {
+        "year": 2019,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2019,
+        "event": "Best Laughs winner",
+        "type": "award"
+      },
+      {
+        "year": 2020,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2020,
+        "event": "Best Laughs winner",
+        "type": "award"
+      },
+      {
+        "year": 2022,
+        "event": "Best Laughs: Valerie Winston, Diana DiBuccio",
+        "type": "award"
+      }
+    ],
     "highlights": [
       "Best Laughs: 3-time winner (2008, 2019, 2020)",
       "Recurring presence at celebrations"
@@ -615,7 +701,7 @@
       {
         "with": "Valerie Winston (ValPal)",
         "year": 2014,
-        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
         "count": 2
       }
     ],
@@ -778,7 +864,14 @@
       "total_mentions": 1,
       "peak_year": 2020
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2020,
+        "event": "Grace & Megan graduate high school",
+        "type": "shared_moment",
+        "with": "Megan"
+      }
+    ],
     "highlights": [
       "Graduated high school (2020)"
     ],
@@ -850,7 +943,14 @@
       "total_mentions": 1,
       "peak_year": 2013
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2013,
+        "event": "Grandma Theresa passed away (Jun 10-15)",
+        "type": "shared_moment",
+        "with": "Grandma Irene"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -906,7 +1006,14 @@
       "total_mentions": 1,
       "peak_year": 2013
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2013,
+        "event": "Grandma Theresa passed away (Jun 10-15)",
+        "type": "shared_moment",
+        "with": "Grandma 'Mama' Blanca"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -957,7 +1064,14 @@
       "total_mentions": 1,
       "peak_year": 2013
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2013,
+        "event": "Grandma Theresa passed away (Jun 10-15)",
+        "type": "shared_moment",
+        "with": "Grandma 'Mama' Blanca"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -1248,7 +1362,14 @@
       "total_mentions": 1,
       "peak_year": 2014
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2014,
+        "event": "Johnny Nash: most influential friend of 2014",
+        "type": "shared_moment",
+        "with": "John Tronolone"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -1348,7 +1469,14 @@
       "total_mentions": 2,
       "peak_year": 2019
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2019,
+        "event": "Nephew Julian John Tronolone born (Aug 23)",
+        "type": "shared_moment",
+        "with": "John Tronolone"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -1388,7 +1516,14 @@
       "total_mentions": 2,
       "peak_year": 2019
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2019,
+        "event": "Nephew Julian John Tronolone born (Aug 23)",
+        "type": "shared_moment",
+        "with": "John Tronolone"
+      }
+    ],
     "highlights": [
       "1st birthday (2020)",
       "5th birthday (Aug 25, 2024)"
@@ -1515,7 +1650,29 @@
       "total_mentions": 2,
       "peak_year": 2017
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2008,
+        "event": "Came out in 2008; KMJ was 3rd person to know",
+        "type": "social"
+      },
+      {
+        "year": 2017,
+        "event": "Kevin & Leah engaged",
+        "type": "social"
+      },
+      {
+        "year": 2017,
+        "event": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "type": "shared_moment",
+        "with": "Kevin Adams"
+      },
+      {
+        "year": 2020,
+        "event": "Kevin & Leah married Feb 29 (leap day)",
+        "type": "milestone"
+      }
+    ],
     "highlights": [
       "Travel companions to Utah/Colorado",
       "10+ year friendship",
@@ -1601,7 +1758,20 @@
       "total_mentions": 2,
       "peak_year": 2017
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2017,
+        "event": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "type": "shared_moment",
+        "with": "Kevin & Leah (KMJ & LN)"
+      },
+      {
+        "year": 2020,
+        "event": "Kevin & Leah married Feb 29 (leap day)",
+        "type": "shared_moment",
+        "with": "Ma"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -1673,7 +1843,20 @@
       "total_mentions": 2,
       "peak_year": 2017
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2017,
+        "event": "Kevin & Leah engaged; Kevin & Leah married Feb 29 (leap day)",
+        "type": "shared_moment",
+        "with": "Kevin & Leah (KMJ & LN)"
+      },
+      {
+        "year": 2020,
+        "event": "Kevin & Leah married Feb 29 (leap day)",
+        "type": "shared_moment",
+        "with": "Ma"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -1789,7 +1972,14 @@
       "total_mentions": 3,
       "peak_year": 2007
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2007,
+        "event": "Lauren Winston turned 21 (Apr 13); Lauren Winston: Comedian of the Year",
+        "type": "shared_moment",
+        "with": "Lauren Winston"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -1860,14 +2050,30 @@
         "event_type": "social"
       },
       {
+        "year": 2007,
+        "event": "Lauren Winston turned 21 (Apr 13); Lauren Winston: Comedian of the Year",
+        "type": "shared_moment",
+        "with": "Lauren Stopa"
+      },
+      {
         "year": 2016,
         "event": "Lauren Winston: Comedian of the Year",
         "event_type": "award"
       },
       {
+        "year": 2016,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
         "year": 2021,
         "event": "Lauren Winston: Comedian of the Year",
         "event_type": "award"
+      },
+      {
+        "year": 2021,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
       }
     ],
     "highlights": [
@@ -2059,13 +2265,18 @@
         "event_type": "social"
       },
       {
+        "year": 2008,
+        "event": "Timeline Award: Videos of the Year: WrestleMania XXIV Intro and Ryan's Birthday Speech",
+        "type": "award"
+      },
+      {
         "year": 2009,
-        "event": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
+        "event": "WrestleMania 25 in Houston (5th WM) — 72,744 attendance",
         "event_type": "wwe"
       },
       {
         "year": 2009,
-        "event": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
+        "event": "SkyDive I at 10,000 feet (Aug 16) — 'maybe the happiest 24-span of my life'",
         "event_type": "social"
       },
       {
@@ -2124,9 +2335,19 @@
         "event_type": "social"
       },
       {
+        "year": 2011,
+        "event": "External: Bogart's 'Man of March' (Apr 1, sober)",
+        "type": "award"
+      },
+      {
         "year": 2012,
         "event": "Activities & Volunteer Coordinator promotion (May)",
         "event_type": "social"
+      },
+      {
+        "year": 2012,
+        "event": "Music Artist Of The Year: Mariah Carey",
+        "type": "award"
       },
       {
         "year": 2013,
@@ -2140,23 +2361,33 @@
       },
       {
         "year": 2013,
-        "event": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
+        "event": "Maryland wedding — gave speech, danced 180 minutes (Nov 7-9)",
         "event_type": "social"
       },
       {
         "year": 2013,
-        "event": "Pilates Round 1 \u2014 only male participant",
+        "event": "Pilates Round 1 — only male participant",
         "event_type": "social"
       },
       {
+        "year": 2013,
+        "event": "Music Artist Of The Year: Mariah Carey",
+        "type": "award"
+      },
+      {
         "year": 2014,
-        "event": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+        "event": "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
         "event_type": "travel"
       },
       {
         "year": 2014,
         "event": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
         "event_type": "social"
+      },
+      {
+        "year": 2014,
+        "event": "Music Artist Of The Year: Mariah Carey",
+        "type": "award"
       },
       {
         "year": 2015,
@@ -2169,8 +2400,18 @@
         "event_type": "award"
       },
       {
+        "year": 2015,
+        "event": "Comedian Of The Year: Dan Spengeman",
+        "type": "award"
+      },
+      {
+        "year": 2015,
+        "event": "Best Laughs: Dan Spengeman",
+        "type": "award"
+      },
+      {
         "year": 2016,
-        "event": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
+        "event": "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
         "event_type": "wwe"
       },
       {
@@ -2184,6 +2425,11 @@
         "event_type": "social"
       },
       {
+        "year": 2016,
+        "event": "Work: Manager of the Year",
+        "type": "award"
+      },
+      {
         "year": 2017,
         "event": "WrestleMania 33 (Apr 2)",
         "event_type": "wwe"
@@ -2195,18 +2441,28 @@
       },
       {
         "year": 2017,
-        "event": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
+        "event": "Broken left pinky — volleyball career paused (Mar 26)",
         "event_type": "social"
       },
       {
         "year": 2018,
-        "event": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "event": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
         "event_type": "travel"
       },
       {
         "year": 2018,
         "event": "Brother Michael married Maggie (Jun 29)",
         "event_type": "milestone"
+      },
+      {
+        "year": 2018,
+        "event": "Comedian Of The Year: Dan Spengeman",
+        "type": "award"
+      },
+      {
+        "year": 2018,
+        "event": "Best Laughs: Dan Spengeman",
+        "type": "award"
       },
       {
         "year": 2019,
@@ -2240,7 +2496,7 @@
       },
       {
         "year": 2020,
-        "event": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
+        "event": "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
         "event_type": "social"
       },
       {
@@ -2250,7 +2506,7 @@
       },
       {
         "year": 2020,
-        "event": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
+        "event": "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
         "event_type": "social"
       },
       {
@@ -2406,7 +2662,7 @@
       {
         "with": "Terra Bergquist",
         "year": 2018,
-        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
         "count": 1
       },
       {
@@ -2445,7 +2701,25 @@
       "total_mentions": 2,
       "peak_year": 2014
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2014,
+        "event": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30); Brother Michael married Maggie (Jun 29)",
+        "type": "shared_moment",
+        "with": "Ma"
+      },
+      {
+        "year": 2014,
+        "event": "Cornhole: Championship won with Pops at Maggie & Mike's inaugural gathering (Aug 30)",
+        "type": "sports"
+      },
+      {
+        "year": 2018,
+        "event": "Brother Michael married Maggie (Jun 29)",
+        "type": "shared_moment",
+        "with": "Michael"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -2522,7 +2796,14 @@
       "total_mentions": 1,
       "peak_year": 2017
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2017,
+        "event": "California trip 600+ miles for Matt & Gina wedding",
+        "type": "shared_moment",
+        "with": "Ma"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -2567,7 +2848,14 @@
       "total_mentions": 1,
       "peak_year": 2017
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2017,
+        "event": "California trip 600+ miles for Matt & Gina wedding",
+        "type": "shared_moment",
+        "with": "Ma"
+      }
+    ],
     "highlights": [],
     "connections": [
       {
@@ -2607,7 +2895,14 @@
       "total_mentions": 2,
       "peak_year": 2020
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2020,
+        "event": "Grace & Megan graduate high school",
+        "type": "shared_moment",
+        "with": "Grace"
+      }
+    ],
     "highlights": [
       "Brookdale graduation (2022)",
       "Graduated high school (2020)"
@@ -3153,7 +3448,7 @@
       },
       {
         "year": 2013,
-        "event": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+        "event": "Norwegian Breakaway — first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
         "event_type": "travel"
       },
       {
@@ -3175,6 +3470,11 @@
         "year": 2021,
         "event": "Alexandria Virginia work assignment (Sep 20-23)",
         "event_type": "social"
+      },
+      {
+        "year": 2021,
+        "event": "Shocker Of The Year: Sr. RCC promotion; Message From Rob Phillips; Stopa's Pregnancy Text; Tim's Stand-Up Text",
+        "type": "award"
       },
       {
         "year": 2022,
@@ -3271,7 +3571,18 @@
       "total_mentions": 0,
       "peak_year": null
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2011,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2012,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      }
+    ],
     "highlights": [
       "Tennis partner",
       "SummerSlam companion",
@@ -3673,14 +3984,21 @@
       "total_mentions": 1,
       "peak_year": 2018
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2018,
+        "event": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
+        "type": "shared_moment",
+        "with": "Ma"
+      }
+    ],
     "highlights": [],
     "connections": [],
     "co_occurrences": [
       {
         "with": "Ma",
         "year": 2018,
-        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
         "count": 1
       }
     ],
@@ -3713,6 +4031,16 @@
         "event_type": "social"
       },
       {
+        "year": 2009,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2009,
+        "event": "Best Laughs winner",
+        "type": "award"
+      },
+      {
         "year": 2014,
         "event": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
         "event_type": "social"
@@ -3721,6 +4049,21 @@
         "year": 2014,
         "event": "The Pops: Comedian of the Year (2nd straight year)",
         "event_type": "award"
+      },
+      {
+        "year": 2014,
+        "event": "Comedian Of The Year: The Pops (Darrell)",
+        "type": "award"
+      },
+      {
+        "year": 2017,
+        "event": "Comedian Of The Year winner",
+        "type": "award"
+      },
+      {
+        "year": 2017,
+        "event": "Best Laughs winner",
+        "type": "award"
       },
       {
         "year": 2019,
@@ -3904,7 +4247,18 @@
       "total_mentions": 0,
       "peak_year": null
     },
-    "timeline": [],
+    "timeline": [
+      {
+        "year": 2014,
+        "event": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
+        "type": "social"
+      },
+      {
+        "year": 2022,
+        "event": "Best Laughs: Valerie Winston, Diana DiBuccio",
+        "type": "award"
+      }
+    ],
     "highlights": [
       "Super Bowl LVII companion (2023)",
       "Appears across virtually every Timeline",
@@ -3922,7 +4276,7 @@
       {
         "with": "Diana DiBuccio",
         "year": 2014,
-        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
         "count": 2
       }
     ],
