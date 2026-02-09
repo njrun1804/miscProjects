@@ -22,13 +22,7 @@ const CATEGORY_ICONS = {
     personal: '\u{1F4DD}', writing: '\u270D', other: '\u25C6'
 };
 
-const EMOTION_COLORS = {
-    joy: '#4a6741', pride: '#c9a84c', love: '#d4a24e',
-    sadness: '#5a5a6e', anger: '#8b1a1a', nostalgia: '#6a4b8b',
-    neutral: '#888', humor: '#2e7d32', defiance: '#c0392b',
-    fear: '#4a2d6b', determination: '#1a5c8b', gratitude: '#4a6741',
-    reflection: '#5a5a6e'
-};
+// (Emotion color map removed — quotes no longer display emotion labels)
 
 const DOMAIN_COLORS = {
     health: '#c0392b', family: '#8b6914', identity: '#6a4b8b',
@@ -140,8 +134,6 @@ function renderStages(stages, maps) {
 
 // ─── HERO ─────────────────────────────────────────────────────────
 function heroHTML(i, s, years, yearThemes) {
-    const sentClass = s.avg_sentiment >= 0 ? 'positive' : 'negative';
-    const sentPrefix = s.avg_sentiment >= 0 ? '+' : '';
     const yearRange = years.length > 1
         ? `${years[0]}\u2013${years[years.length - 1]}`
         : `${years[0]}`;
@@ -160,14 +152,6 @@ function heroHTML(i, s, years, yearThemes) {
             <p class="stage-years">${yearRange}</p>
             ${themesBlock ? `<div class="stage-year-themes">${themesBlock}</div>` : ''}
             <div class="stage-pulse">
-                <div class="pulse-metric pulse-metric--${sentClass}">
-                    <span class="pulse-value">${sentPrefix}${s.avg_sentiment.toFixed(2)}</span>
-                    <span class="pulse-label">sentiment</span>
-                </div>
-                <div class="pulse-metric">
-                    <span class="pulse-value">${s.intensity_score.toFixed(0)}</span>
-                    <span class="pulse-label">intensity</span>
-                </div>
                 <div class="pulse-metric">
                     <span class="pulse-value">${s.milestone_count}</span>
                     <span class="pulse-label">milestones</span>
@@ -213,35 +197,27 @@ function narrativeHTML(s) {
 
 // ─── CALLOUT GENERATOR ────────────────────────────────────────────
 function generateCallout(s, i, yearThemes) {
-    // Stage-specific callouts
-    if (i === 0) {
-        return `Sentiment averaged ${s.avg_sentiment.toFixed(2)} across these three years. ${s.milestone_count} milestones. ${s.people_active_count} people. Not every foundation is built on happiness.`;
-    }
-    if (i === 1) {
-        return `One year. ${s.milestone_count} milestones. Intensity jumped to ${s.intensity_score.toFixed(0)}. Everything started moving at once.`;
-    }
-    if (i === 3) {
-        return `2009 wasn\u2019t the happiest year. It was the most alive. Sentiment: 0.076. But emotional range: \u22120.751 to +0.91. The greatest years aren\u2019t the calmest.`;
-    }
-    if (i === 5) {
-        return `The quiet years. Intensity dropped to ${s.intensity_score.toFixed(0)}. But sentiment hit +${s.avg_sentiment.toFixed(2)}\u2009\u2014\u2009the highest positive stretch. Sometimes the calm is the point.`;
-    }
-    if (i === 7) {
-        return `Post-surgery, post-stillness: ${s.milestone_count} milestones across ${s.year_end - s.year_start + 1} years. Travel resumed. Adventure resumed. Intensity: ${s.intensity_score.toFixed(0)}.`;
-    }
-    if (i === 8) {
-        return `${s.milestone_count} milestones. ${s.people_active_count} people still in the frame. 22 years of data. The timeline keeps going.`;
-    }
-
-    // Pattern-based
-    if (s.avg_sentiment > 0.18) {
-        return `Average sentiment: +${s.avg_sentiment.toFixed(2)}. The most positive era measured. Peak vulnerability follows peak joy.`;
-    }
-    const span = s.year_end - s.year_start + 1;
-    if (s.milestone_count >= 25 && span <= 3) {
-        return `${s.milestone_count} milestones in ${span} year${span > 1 ? 's' : ''}. Life was happening fast.`;
-    }
-    return null;
+    const callouts = [
+        // 0 — Ordinary World
+        `A car accident that left him afraid to drive. A family that fell apart. A 20-year-old with shingles and the beginning of something called EastCoastDodgeball. Not every foundation is built on steady ground\u2009\u2014\u2009some are built while everything underneath is shaking.`,
+        // 1 — Call to Adventure
+        `Twenty-seven bowling games in a single day. A surprise 50th for his father. Dodgeball hit triple digits. Everything he\u2019d been quietly building since 2004 caught fire all at once\u2009\u2014\u2009and he couldn\u2019t look away.`,
+        // 2 — Crossing the Threshold
+        `The year he came out. The year the 723-day relationship ended. Liberation Day. He wrote \u201CYeah I Said It\u201D and, for the first time, said exactly what he meant. There\u2019s a reason this stage is called the threshold\u2009\u2014\u2009once you cross, you can\u2019t go back.`,
+        // 3 — Tests, Allies & Enemies
+        `2009 wasn\u2019t the happiest year. It was the most alive. Skydiving at 10,000 feet, first concert ever at MSG, ECD retired after 171 events. Then graduation, a torn labrum, a career at Sunrise, and the Ro(b)mantic Era beginning on January 1st at Ocean Bay Diner. Three years of becoming someone new.`,
+        // 4 — Approach to Inmost Cave
+        `The Influlist. Merrie Melodies. He started naming things\u2009\u2014\u2009mapping where he came from, crediting who shaped him. The first cruise. DODGEBOWL 200. Grandma Theresa\u2019s passing. He was going deeper, and the writing was getting more intentional.`,
+        // 5 — The Ordeal
+        `He shook The Undertaker\u2019s hand at 4:10:18 PM on April 5th\u2009\u2014\u2009a 20-year dream fulfilled through five friends who made it happen. He turned 30. He\u2019d achieved everything he\u2019d set out to do. And the question nobody prepares you for: now what?`,
+        // 6 — The Road Back
+        `Quieter years on the outside. Cruises, table tennis records, Janet Jackson\u2019s dynasty. But 2017 ended with 14 staples in his spine and a body that finally said stop. Sometimes the road back isn\u2019t a road at all\u2009\u2014\u2009it\u2019s a hospital bed on December 15th.`,
+        // 7 — Resurrection
+        `Post-surgery, he went to the Mediterranean. Then Australia and New Zealand for 19 days\u2009\u2014\u2009\u201Cthe best, the longest, and the greatest.\u201D He became Uncle John. COVID forced a universal pause, but the muscle gain comeback and a 4th skydive said everything about who he was on the other side.`,
+        // 8 — Return with the Elixir
+        `The Grand Canyon. The Super Bowl. A 4,000-mile road trip across 16 states. Executive Director. Twenty-two years of documenting a life, and the timeline keeps going. Japan is booked. The elixir was never a destination\u2009\u2014\u2009it was the practice of paying attention.`
+    ];
+    return callouts[i] || null;
 }
 
 // ─── TURNING POINTS ───────────────────────────────────────────────
@@ -292,14 +268,10 @@ function quotesHTML(quotes) {
     if (!quotes.length) return '';
 
     const blocks = quotes.map(q => {
-        const emotionColor = EMOTION_COLORS[q.emotion] || EMOTION_COLORS.neutral;
         return `
             <blockquote class="arc-quote">
                 <p>\u201C${q.quote}\u201D</p>
-                <footer>
-                    ${q.emotion ? `<span class="quote-emotion" style="background:${emotionColor}">${q.emotion}</span>` : ''}
-                    ${q.context ? `<span class="quote-context">${q.context}</span>` : ''}
-                </footer>
+                ${q.context ? `<footer><span class="quote-context">${q.context}</span></footer>` : ''}
             </blockquote>
         `;
     }).join('');

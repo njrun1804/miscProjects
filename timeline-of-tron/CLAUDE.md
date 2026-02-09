@@ -23,7 +23,7 @@ All 8 phases are complete. The site is live and fully functional.
 | Post-rebuild | Room 8: ECD (East Coast Dodgeball community) | Complete |
 
 ### Old Site (Pre-Rebuild)
-The original single-page dashboard lives in `old-site/` after Phase 0 backup. The monolithic v1.0 backup is `tron_timeline_dashboard.html` (keep in root, never delete). `v2.html` is a standalone intermediate version (also kept as archive).
+The original single-page dashboard lives in `old-site/` after Phase 0 backup. The monolithic v1.0 backup is `tron_timeline_dashboard.html` (keep in root, never delete). `v2.html` is archived in `archive/`.
 
 ## Architecture
 
@@ -56,63 +56,27 @@ timeline-of-tron/
 ├── dynasty.html                  # Room 7: The Dynasty
 ├── ecd.html                      # Room 8: ECD (East Coast Dodgeball)
 ├── room0.html                    # Hidden Room: The Before
-├── v2.html                       # Intermediate standalone version (archive)
-├── css/
-│   ├── base.css                  # Shared: variables, reset, typography, nav, footer (679 lines)
-│   ├── lobby.css                 # Lobby styles (223 lines)
-│   ├── arc.css                   # Room 1: stage palettes, scroll animations (836 lines)
-│   ├── constellation.css         # Room 2: dark sky, star nodes, sidebar (1065 lines)
-│   ├── records.css               # Room 4: warm wood, parchment, gauges (852 lines)
-│   ├── atlas.css                 # Room 5: ocean blue, map styles (464 lines)
-│   ├── vault.css                 # Room 6: charcoal, glowing quotes (1103 lines)
-│   ├── dynasty.css               # Room 7: deep green, trophy gold (341 lines)
-│   ├── ecd.css                   # Room 8: ECD community, player network (1025 lines)
-│   └── room0.css                 # Room 0: near-black, minimal (172 lines)
-├── js/
-│   ├── data-loader.js            # Shared: fetch + cache JSON from db/api/ (exports loadData, loadMultiple)
-│   ├── nav.js                    # Shared: LJ header, room nav, footer (exports initNav)
-│   ├── search.js                 # Shared: Fuse.js global search across rooms
-│   ├── wormholes.js              # Shared: cross-room contextual links + clue planting
-│   ├── seismograph.js            # Lobby: animated sentiment canvas
-│   ├── room0.js                  # Room 0: clue tracking (localStorage), 7 clues
-│   ├── arc.js                    # Room 1: 9 hero's journey stages, sentiment line
-│   ├── constellation.js          # Room 2: D3 force simulation, 164 people, era coloring
-│   ├── records.js                # Room 4: obsession index, sports gauges, comebacks, intensity chart
-│   ├── atlas.js                  # Room 5: Leaflet map, travel eras, cruise streak
-│   ├── vault.js                  # Room 6: featured quote, year chapters, voice evolution, soundtrack
-│   ├── dynasty.js                # Room 7: career staircase, trophy case, WWE, traditions
-│   └── ecd.js                    # Room 8: 128 players, 171 events attended, D3 force bubbles, rivalries
-├── lib/
-│   ├── chart.js                  # Chart.js v4.5.1 (208KB, do NOT update without testing)
-│   ├── d3.min.js                 # D3.js v7 (~280KB)
-│   ├── d3-sankey.min.js          # D3 Sankey plugin v0.12.3 (~6KB)
-│   ├── leaflet.js                # Leaflet.js v1.9.4 (~148KB)
-│   ├── leaflet.css               # Leaflet styles (~15KB)
-│   └── fuse.min.js               # Fuse.js v7.0.0 (~24KB)
+├── tron_timeline_dashboard.html  # Original monolithic backup (NEVER DELETE)
+├── css/                          # Per-room stylesheets + shared base.css
+├── js/                           # Per-room modules + shared nav/search/wormholes
+├── lib/                          # Vendored libraries (Chart.js, D3, Leaflet, Fuse.js)
 ├── db/
 │   ├── tron.db                   # SQLite database (996KB, 44+ tables, source of truth)
-│   ├── api/                      # 128+ JSON endpoints (exported from tron.db)
-│   ├── viz/                      # 15 pre-generated visualization PNGs
-│   └── raw_ecd_posts/            # 603 raw ECD post files
+│   └── api/                      # 128+ JSON endpoints (exported from tron.db)
 ├── data/
 │   ├── tron-content-db.json      # Master content database (89KB, 21 keys)
 │   └── lj_comments_data.json     # Raw LiveJournal comments (40KB)
 ├── scripts/                      # 26 numbered data pipeline scripts + 2 export scripts
 ├── old-site/                     # Pre-rebuild backup of original dashboard
-├── archive/                      # Original source documents
-├── .claude/                      # Claude Code settings (permissions)
-├── .gitignore                    # Ignores .DS_Store, SQLite WAL/SHM, *.pyc
-├── CLAUDE.md                     # This file
-├── README.md                     # User-facing documentation
-├── REBUILD_IDEAS_V2.md           # Implementation guide (THE BUILD SPEC)
-├── REBUILD_IDEAS.md              # V1 ideas (archived reference, not the active spec)
-├── tron_timeline_dashboard.html  # Original monolithic backup (NEVER DELETE)
-├── v2.html                       # Intermediate standalone version (KEEP)
+├── archive/                      # Archived reports, temp scripts, old versions, source docs
 ├── ecd_scraper.py                # ECD LiveJournal scraper (multi-phase pipeline)
 ├── ecd_smart_parser.py           # 5-pass ECD post parser (52KB, largest script)
 ├── ecd_download_fast.py          # Multi-threaded ECD post downloader
 ├── enrich_constellation_data.py  # Constellation room data enrichment
-└── scrape_sidebar_events.py      # LJ sidebar event extractor
+├── scrape_sidebar_events.py      # LJ sidebar event extractor
+├── CLAUDE.md                     # This file
+├── README.md                     # User-facing documentation
+└── REBUILD_IDEAS_V2.md           # Implementation guide (THE BUILD SPEC)
 ```
 
 ### Script Loading (Per Room)
@@ -267,7 +231,7 @@ GitHub Pages auto-deploys in 1-2 minutes.
 - Use React, Vue, Svelte, or any JS framework
 - Add a backend server or API
 - Remove the LiveJournal aesthetic DNA
-- Delete `old-site/`, `tron_timeline_dashboard.html`, or `v2.html`
+- Delete `old-site/`, `tron_timeline_dashboard.html`, or `archive/`
 - Update Chart.js without thorough testing
 - Use CDN links for JS libraries (keep everything vendored/offline-capable)
 

@@ -183,8 +183,7 @@
     opacity: 0.45;
 }
 
-.pulse-metric--positive .pulse-value { color: #6adf6a; }
-.pulse-metric--negative .pulse-value { color: #e05050; }
+/* (sentiment-colored pulse values removed) */
 
 /* Light stage pulse overrides */
 .arc-stage[data-stage="ordinary-world"] .stage-pulse,
@@ -194,15 +193,7 @@
     border-color: rgba(0,0,0,0.1);
 }
 
-.arc-stage[data-stage="ordinary-world"] .pulse-metric--negative .pulse-value,
-.arc-stage[data-stage="return-elixir"] .pulse-metric--negative .pulse-value {
-    color: #b03030;
-}
-
-.arc-stage[data-stage="resurrection"] .pulse-metric--positive .pulse-value,
-.arc-stage[data-stage="call-to-adventure"] .pulse-metric--positive .pulse-value {
-    color: #2e7d32;
-}
+/* (light-stage sentiment pulse overrides removed) */
 
 /* ═══════════════════════════════════════════════════
    6. STAGE BODY & NARRATIVE
@@ -471,7 +462,7 @@
 .tl-entry:not(:last-child)::after {
     content: '';
     position: absolute;
-    left: 3.2rem;
+    left: 5.2rem;
     top: 1.5rem;
     bottom: -0.5rem;
     width: 1px;
@@ -481,11 +472,12 @@
 .tl-year {
     font-family: var(--font-mono);
     font-size: 0.8rem;
-    opacity: 0.45;
-    min-width: 2.5rem;
+    opacity: 0.55;
+    min-width: 4.5rem;
     text-align: right;
     padding-top: 2px;
     flex-shrink: 0;
+    white-space: nowrap;
 }
 
 .tl-dot {
@@ -499,8 +491,7 @@
     z-index: 1;
 }
 
-.tl-entry--positive .tl-dot { background: #6adf6a; }
-.tl-entry--negative .tl-dot { background: #e05050; }
+/* dots use a single neutral accent — no sentiment coloring */
 
 .tl-body {
     display: flex;
@@ -534,11 +525,7 @@
     background: rgba(0,0,0,0.15);
 }
 
-.arc-stage[data-stage="ordinary-world"] .tl-entry--positive .tl-dot,
-.arc-stage[data-stage="return-elixir"] .tl-entry--positive .tl-dot { background: #2e7d32; }
-
-.arc-stage[data-stage="ordinary-world"] .tl-entry--negative .tl-dot,
-.arc-stage[data-stage="return-elixir"] .tl-entry--negative .tl-dot { background: #b03030; }
+/* (sentiment-colored dot overrides removed) */
 
 /* ═══════════════════════════════════════════════════
    12. EPIC NUMBERS — big stat callouts
