@@ -1,5 +1,5 @@
 // js/constellation.js — Room 2: The Constellation (People + Relationships)
-// D3 force graph of 124 people as stars on a dark background
+// D3 force graph of 164 people as stars on a dark background
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
@@ -33,6 +33,48 @@ function getEraKey(firstYear) {
     return 'mature';
 }
 
+// Build a name→profile lookup from the people_profiles array
+function buildProfileMap(profilesArray) {
+    const map = {};
+    if (!Array.isArray(profilesArray)) return map;
+    profilesArray.forEach(entry => {
+        const name = entry?.person?.name;
+        if (name) {
+            map[name] = {
+                basic: entry.person,
+                highlights: entry.highlights || [],
+                timeline: entry.timeline_events || [],
+                co_occurrences: entry.co_occurrences || [],
+                connections: [],
+                awards: [],
+                songs: [],
+                lj_comments: []
+            };
+        }
+    });
+    return map;
+}
+
+// Build a name→people record lookup from people.json array
+function buildPeopleMap(peopleArray) {
+    const map = {};
+    if (!Array.isArray(peopleArray)) return map;
+    peopleArray.forEach(p => {
+        if (p.name) map[p.name] = p;
+    });
+    return map;
+}
+
+// Build a name→arc record lookup from person_arc.json array
+function buildArcMap(arcArray) {
+    const map = {};
+    if (!Array.isArray(arcArray)) return map;
+    arcArray.forEach(a => {
+        if (a.person) map[a.person] = a;
+    });
+    return map;
+}
+
 // Compute how much content a person actually has
 function getDataRichness(name, profile) {
     if (!profile) return { total: 0, timeline: 0, highlights: 0, awards: 0, connections: 0, coOccurrences: 0, songs: 0, ljComments: 0 };
@@ -56,12 +98,23 @@ function richnessSummary(r) {
     if (r.highlights) parts.push(`${r.highlights} highlight${r.highlights > 1 ? 's' : ''}`);
     if (r.awards) parts.push(`${r.awards} award${r.awards > 1 ? 's' : ''}`);
     if (r.songs) parts.push(`${r.songs} song${r.songs > 1 ? 's' : ''}`);
+    if (r.coOccurrences) parts.push(`${r.coOccurrences} shared moment${r.coOccurrences > 1 ? 's' : ''}`);
     return parts.join(', ');
 }
 
 // Format award category names nicely
 function formatAwardCategory(cat) {
     return cat.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+}
+
+// Parse "2005-2021" into { first: 2005, last: 2021 }
+function parseActiveYears(str) {
+    if (!str) return null;
+    const m = str.match(/(\d{4})\s*-\s*(\d{4})/);
+    if (m) return { first: parseInt(m[1]), last: parseInt(m[2]) };
+    const single = str.match(/(\d{4})/);
+    if (single) return { first: parseInt(single[1]), last: parseInt(single[1]) };
+    return null;
 }
 
 // Module-level refs so features can cross-communicate
@@ -71,20 +124,108 @@ let svgNode = null;
 let svgLink = null;
 let simulation = null;
 let profilesData = {};
+let peopleData = {};
+let arcData = {};
 let coOccurrencesData = [];
+let ecdPlayersData = {};
+let ecdAwardsData = [];
+
+// Build a name→ECD player lookup (case-insensitive matching for awards)
+function buildEcdPlayerMap(playersArray) {
+    const map = {};
+    if (!Array.isArray(playersArray)) return map;
+    playersArray.forEach(p => {
+        if (p.name) map[p.name] = p;
+    });
+    return map;
+}
 
 export async function initConstellation() {
+    // Core data (required)
     const data = await loadMultiple([
         'relationship_constellation.json',
         'people_profiles.json',
-        'quotes.json',
+        'people.json',
+        'person_arc.json',
+        'person_timelines.json',
+        'people_highlights.json',
         'milestones_enriched.json',
         'co_occurrences.json'
     ]);
+    // ECD data (optional enrichment — don't block page if missing)
+    try {
+        const ecdData = await loadMultiple(['ecd_players.json', 'ecd_awards_v2.json']);
+        data.ecd_players = ecdData.ecd_players;
+        data.ecd_awards_v2 = ecdData.ecd_awards_v2;
+    } catch (_) { /* ECD data unavailable — page still works */ }
 
     const constellation = data.relationship_constellation;
-    profilesData = data.people_profiles || {};
+    profilesData = buildProfileMap(data.people_profiles);
+    peopleData = buildPeopleMap(data.people);
+    arcData = buildArcMap(data.person_arc);
     coOccurrencesData = data.co_occurrences || [];
+    ecdPlayersData = buildEcdPlayerMap(data.ecd_players);
+    ecdAwardsData = data.ecd_awards_v2 || [];
+
+    // Enrich profiles with person_timelines data for people who have events there
+    // but not in people_profiles (covers more people)
+    const personTimelines = data.person_timelines || [];
+    personTimelines.forEach(evt => {
+        const name = evt.person_name;
+        if (!name) return;
+        if (!profilesData[name]) {
+            profilesData[name] = {
+                basic: peopleData[name] || { name },
+                highlights: [],
+                timeline: [],
+                co_occurrences: [],
+                connections: [],
+                awards: [],
+                songs: [],
+                lj_comments: []
+            };
+        }
+        // Avoid duplicates by checking if this event is already present
+        const existing = profilesData[name].timeline;
+        const isDupe = existing.some(e =>
+            e.year === evt.year && (e.event_description || e.event || '') === (evt.event_description || '')
+        );
+        if (!isDupe) {
+            existing.push({
+                year: evt.year,
+                event: evt.event_description,
+                event_type: evt.event_type
+            });
+        }
+    });
+
+    // Enrich profiles with people_highlights data
+    const peopleHighlights = data.people_highlights || [];
+    peopleHighlights.forEach(h => {
+        // Match by person_id to people.json
+        const person = (data.people || []).find(p => p.id === h.person_id);
+        if (!person) return;
+        const name = person.name;
+        if (!profilesData[name]) {
+            profilesData[name] = {
+                basic: peopleData[name] || { name },
+                highlights: [],
+                timeline: [],
+                co_occurrences: [],
+                connections: [],
+                awards: [],
+                songs: [],
+                lj_comments: []
+            };
+        }
+        const existing = profilesData[name].highlights;
+        const isDupe = existing.some(e =>
+            (e.highlight || e.text || '') === h.highlight
+        );
+        if (!isDupe) {
+            existing.push(h);
+        }
+    });
 
     if (!constellation || !constellation.nodes) return;
 
@@ -94,6 +235,55 @@ export async function initConstellation() {
     renderForceGraph(constellation, profilesData, coOccurrencesData);
     initSearchAutocomplete(constellation.nodes, profilesData);
     renderInnerCircleChart(data.milestones_enriched);
+}
+
+// Get the best first_year for a person by merging all sources
+function getBestFirstYear(node) {
+    const name = node.name;
+    const arc = arcData[name];
+    const person = peopleData[name];
+    const profile = profilesData[name];
+
+    // Try arc data first (most reliable for timeline mentions)
+    if (arc?.first_year && arc.first_year > 1900) return arc.first_year;
+    // Try people.json active_years
+    if (person?.active_years) {
+        const parsed = parseActiveYears(person.active_years);
+        if (parsed) return parsed.first;
+    }
+    // Try the constellation node itself (but skip 0 and birth_years like 1957)
+    if (node.first_year && node.first_year >= 2000) return node.first_year;
+    // Try profile basic
+    if (profile?.basic?.active_years) {
+        const parsed = parseActiveYears(profile.basic.active_years);
+        if (parsed) return parsed.first;
+    }
+    return null;
+}
+
+function getBestLastYear(node) {
+    const name = node.name;
+    const arc = arcData[name];
+    const person = peopleData[name];
+    if (arc?.last_year && arc.last_year > 1900) return arc.last_year;
+    if (person?.active_years) {
+        const parsed = parseActiveYears(person.active_years);
+        if (parsed) return parsed.last;
+    }
+    return null;
+}
+
+function getBestRelation(node) {
+    const name = node.name;
+    const person = peopleData[name];
+    const profile = profilesData[name];
+    return person?.relation || profile?.basic?.relation || node.relation || '';
+}
+
+function getBestConnection(node) {
+    const name = node.name;
+    const person = peopleData[name];
+    return person?.connection || '';
 }
 
 // ─── Featured People Cards ───────────────────────────────────────
@@ -108,26 +298,34 @@ function renderFeaturedCards(nodes, profiles) {
     const scored = nodes.map(n => {
         const profile = profiles[n.name];
         const r = getDataRichness(n.name, profile);
-        return { node: n, profile, richness: r };
-    }).filter(s => s.richness.total >= 5) // Only people with real content
-      .sort((a, b) => b.richness.total - a.richness.total)
+        const person = peopleData[n.name];
+        const ecdP = ecdPlayersData[n.name];
+        // Boost score with importance_score, connection text, and ECD mentions
+        const importanceBoost = Math.min((n.importance_score || 0) / 50, 3);
+        const connectionBoost = person?.connection ? 2 : 0;
+        const ecdBoost = ecdP ? Math.min(ecdP.total_mentions / 200, 3) : 0;
+        return { node: n, profile, richness: r, score: r.total + importanceBoost + connectionBoost + ecdBoost };
+    }).filter(s => s.score >= 3) // People with real content or significance
+      .sort((a, b) => b.score - a.score)
       .slice(0, 8);
 
     if (!scored.length) return;
 
     const cards = scored.map(({ node: n, profile, richness }) => {
-        const relation = n.relation || profile?.basic?.relation || '';
-        const firstYear = n.first_year || profile?.arc?.first_year;
-        const lastYear = n.last_year || profile?.arc?.last_year;
+        const relation = getBestRelation(n);
+        const firstYear = getBestFirstYear(n);
+        const lastYear = getBestLastYear(n);
         const yearSpan = firstYear && lastYear ? `${firstYear}–${lastYear}` :
                          firstYear ? `Since ${firstYear}` : '';
         const color = getEraColor(firstYear);
         const summary = richnessSummary(richness);
+        const connection = getBestConnection(n);
+        const connectionSnippet = connection ? connection.split('.')[0].split(';')[0] : '';
 
         return `<button class="featured-card" data-name="${n.name}" style="--card-accent: ${color}">
             <span class="featured-dot" style="background: ${color}"></span>
             <span class="featured-name">${n.name}</span>
-            <span class="featured-relation">${relation}</span>
+            <span class="featured-relation">${relation || connectionSnippet}</span>
             <span class="featured-years">${yearSpan}</span>
             ${summary ? `<span class="featured-depth">${summary}</span>` : ''}
         </button>`;
@@ -192,14 +390,14 @@ function applyFilter(cat) {
         svgNode.transition().duration(300)
             .attr('opacity', d => d.hasContent ? 1 : 0.35);
         svgLink.transition().duration(300)
-            .attr('opacity', d => d.hubLink ? 0.3 : 1);
+            .attr('opacity', d => d.isHub ? 0.12 : 0.35);
     } else {
         svgNode.transition().duration(300)
             .attr('opacity', d => (d.category === cat || d.id === 'john') ? 1 : 0.08);
         svgLink.transition().duration(300)
             .attr('opacity', l => {
-                const s = typeof l.source === 'object' ? l.source : allNodes.find(n => n.id === l.source);
-                const t = typeof l.target === 'object' ? l.target : allNodes.find(n => n.id === l.target);
+                const s = typeof l.source === 'object' ? l.source : allNodes.find(n => n.name === l.source);
+                const t = typeof l.target === 'object' ? l.target : allNodes.find(n => n.name === l.target);
                 return (s?.category === cat || t?.category === cat) ? 0.6 : 0.03;
             });
     }
@@ -212,10 +410,11 @@ function renderStatsBar(constellation) {
     if (!mount) return;
     const nodeCount = constellation.nodes.length + 1;
     const linkCount = (constellation.links || []).length;
-    const years = constellation.nodes.filter(n => n.first_year).map(n => n.first_year);
-    const minYear = years.length ? Math.min(...years) : 2004;
-    const maxYear = new Date().getFullYear();
-    mount.textContent = `${nodeCount} people · ${linkCount} connections · ${maxYear - minYear} years`;
+    const peopleTotalInDb = Object.keys(peopleData).length || nodeCount;
+    const withStories = Object.values(profilesData).filter(p =>
+        (p.timeline?.length || 0) + (p.highlights?.length || 0) + (p.co_occurrences?.length || 0) > 0
+    ).length;
+    mount.innerHTML = `<span>${peopleTotalInDb} people</span> · <span>${linkCount} connections</span> · <span>${withStories} with stories</span> · <span>22 years</span>`;
 }
 
 // ─── Search Autocomplete ─────────────────────────────────────────
@@ -225,16 +424,18 @@ function initSearchAutocomplete(nodes, profiles) {
     const input = wrapper?.querySelector('input');
     if (!wrapper || !input) return;
 
-    // Build searchable list, sorted by richness so best results come first
+    // Build searchable list with enriched data
     const searchList = nodes.map(n => {
         const profile = profiles[n.name];
         const r = getDataRichness(n.name, profile);
+        const relation = getBestRelation(n);
+        const connection = getBestConnection(n);
         return {
             name: n.name,
-            relation: n.relation || profile?.basic?.relation || '',
-            category: n.category || profile?.basic?.category || '',
-            id: n.id,
-            richness: r.total
+            relation,
+            connection,
+            category: n.category || '',
+            richness: r.total + (n.importance_score || 0) / 10
         };
     }).sort((a, b) => b.richness - a.richness);
 
@@ -252,7 +453,11 @@ function initSearchAutocomplete(nodes, profiles) {
         }
 
         const matches = searchList
-            .filter(p => p.name.toLowerCase().includes(q) || p.relation.toLowerCase().includes(q))
+            .filter(p =>
+                p.name.toLowerCase().includes(q) ||
+                p.relation.toLowerCase().includes(q) ||
+                p.connection.toLowerCase().includes(q)
+            )
             .slice(0, 8);
 
         if (!matches.length) {
@@ -262,12 +467,13 @@ function initSearchAutocomplete(nodes, profiles) {
             return;
         }
 
-        dropdown.innerHTML = matches.map(m =>
-            `<button class="search-result" data-name="${m.name}">
+        dropdown.innerHTML = matches.map(m => {
+            const subtitle = m.relation || (m.connection ? m.connection.split('.')[0].split(';')[0] : '') || m.category;
+            return `<button class="search-result" data-name="${m.name}">
                 <span class="search-result-name">${highlightMatch(m.name, q)}</span>
-                <span class="search-result-meta">${m.relation || m.category}</span>
-            </button>`
-        ).join('');
+                <span class="search-result-meta">${subtitle}</span>
+            </button>`;
+        }).join('');
         dropdown.style.display = 'block';
 
         if (svgNode) {
@@ -335,28 +541,28 @@ function focusNodeByName(name) {
 
     const connected = new Set();
     allLinks.forEach(l => {
-        const srcId = typeof l.source === 'object' ? l.source.id : l.source;
-        const tgtId = typeof l.target === 'object' ? l.target.id : l.target;
-        if (srcId === targetNode.id) connected.add(tgtId);
-        if (tgtId === targetNode.id) connected.add(srcId);
+        const srcName = typeof l.source === 'object' ? l.source.name : l.source;
+        const tgtName = typeof l.target === 'object' ? l.target.name : l.target;
+        if (srcName === targetNode.name) connected.add(tgtName);
+        if (tgtName === targetNode.name) connected.add(srcName);
     });
-    connected.add(targetNode.id);
+    connected.add(targetNode.name);
 
     svgNode.transition().duration(300)
-        .attr('opacity', n => connected.has(n.id) ? 1 : 0.1);
+        .attr('opacity', n => connected.has(n.name) ? 1 : 0.1);
     svgLink.transition().duration(300)
         .attr('opacity', l => {
-            const srcId = typeof l.source === 'object' ? l.source.id : l.source;
-            const tgtId = typeof l.target === 'object' ? l.target.id : l.target;
-            return (srcId === targetNode.id || tgtId === targetNode.id) ? 0.6 : 0.05;
+            const srcName = typeof l.source === 'object' ? l.source.name : l.source;
+            const tgtName = typeof l.target === 'object' ? l.target.name : l.target;
+            return (srcName === targetNode.name || tgtName === targetNode.name) ? 0.6 : 0.05;
         });
 
     showPersonPanel(targetNode);
 }
 
 function resetGraphOpacity() {
-    if (svgNode) svgNode.transition().duration(300).attr('opacity', 1);
-    if (svgLink) svgLink.transition().duration(300).attr('opacity', 1);
+    if (svgNode) svgNode.transition().duration(300).attr('opacity', d => d.hasContent ? 1 : 0.35);
+    if (svgLink) svgLink.transition().duration(300).attr('opacity', d => d.isHub ? 0.12 : 0.35);
 }
 
 // ─── Force Graph ─────────────────────────────────────────────────
@@ -379,63 +585,97 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .attr('class', 'constellation-tooltip')
         .style('display', 'none');
 
-    // Prepare nodes — size and opacity based on data richness
-    const nodes = constellation.nodes.map(n => {
+    // Prepare nodes — size and opacity based on data richness + importance
+    const nodes = constellation.nodes
+        .filter(n => n.name !== 'John Tronolone') // We add center node manually
+        .map(n => {
         const profile = profiles[n.name];
         const r = getDataRichness(n.name, profile);
-        const hasContent = r.total > 0;
-        // Nodes with content get normal sizing; empty shells are smaller and dimmer
-        const baseRadius = Math.sqrt(Math.max(n.total_mentions, 1)) * 3 + 4;
+        const person = peopleData[n.name];
+        const arc = arcData[n.name];
+        const firstYear = getBestFirstYear(n);
+        const lastYear = getBestLastYear(n);
+        const relation = getBestRelation(n);
+        const connection = getBestConnection(n);
+        const totalMentions = arc?.total_mentions || 0;
+        const importanceScore = n.importance_score || person?.importance_score || 0;
+        const ecdPlayer = ecdPlayersData[n.name];
+        const ecdMentions = ecdPlayer?.total_mentions || 0;
+
+        // Content = profile data + connection description + importance + ECD stats
+        const hasContent = r.total > 0 || !!connection || importanceScore >= 10 || ecdMentions > 0;
+
+        // Node radius: based on importance (primary) + mentions (secondary) + ECD (tertiary)
+        const baseRadius = Math.sqrt(Math.max(importanceScore, 1)) * 1.2 + 3;
+        const mentionBoost = Math.sqrt(totalMentions) * 0.5;
+        const ecdBoost = Math.sqrt(ecdMentions) * 0.15;
+        const radius = hasContent ? Math.max(baseRadius + mentionBoost + ecdBoost, 5) : Math.max(baseRadius * 0.5, 2.5);
+
         return {
             ...n,
-            radius: hasContent ? Math.max(baseRadius, 6) : Math.max(baseRadius * 0.6, 3),
-            color: getEraColor(n.first_year),
+            name: n.name,
+            radius: Math.min(radius, 20), // cap max radius
+            color: getEraColor(firstYear),
             richness: r,
-            hasContent
+            hasContent,
+            relation,
+            connection,
+            firstYear,
+            lastYear,
+            totalMentions,
+            importanceScore,
+            peakYear: arc?.peak_year || person?.peak_year || null,
+            activeYears: person?.active_years || '',
+            dominantTopic: person?.dominant_topic || ''
         };
     });
 
-    // Add center node (John)
+    // Add center node (the subject)
     nodes.unshift({
         id: 'john',
         name: 'John Tronolone',
         category: 'self',
-        total_mentions: 50,
         radius: 18,
         color: '#c9a84c',
         fx: width / 2,
         fy: height / 2,
         richness: { total: 999 },
-        hasContent: true
+        hasContent: true,
+        relation: '',
+        connection: '',
+        firstYear: 2004,
+        lastYear: 2026,
+        totalMentions: 999,
+        importanceScore: 999,
+        peakYear: null,
+        activeYears: '2004-2026',
+        dominantTopic: ''
     });
 
-    // Build name→id map for co-occurrence enrichment
-    const nameToId = {};
-    nodes.forEach(n => { nameToId[n.name] = n.id; });
-
+    // Links use names as source/target — D3 resolves via .id(d => d.name)
     const links = (constellation.links || []).map(l => ({
         source: l.source,
         target: l.target,
         weight: l.weight || 1,
-        hubLink: !!l.hub_link,
+        isHub: l.target === 'John Tronolone' || l.source === 'John Tronolone',
         fromCoOccurrence: false
     })).filter(l => l.source !== l.target);
 
     // Enrich with co-occurrence links not already in the data
     const existingLinkSet = new Set(links.map(l => [l.source, l.target].sort().join('|')));
+    const nodeNames = new Set(nodes.map(n => n.name));
     (coOccurrences || []).forEach(co => {
-        const idA = nameToId[co.person_a];
-        const idB = nameToId[co.person_b];
-        if (!idA || !idB || idA === idB) return;
-        const key = [idA, idB].sort().join('|');
+        if (!nodeNames.has(co.person_a) || !nodeNames.has(co.person_b)) return;
+        if (co.person_a === co.person_b) return;
+        const key = [co.person_a, co.person_b].sort().join('|');
         if (existingLinkSet.has(key)) return;
         existingLinkSet.add(key);
         links.push({
-            source: idA,
-            target: idB,
+            source: co.person_a,
+            target: co.person_b,
             weight: Math.min(co.co_occurrence_count || 1, 3),
             fromCoOccurrence: true,
-            hubLink: false
+            isHub: false
         });
     });
 
@@ -445,9 +685,9 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
     // Hub links (person→John) get longer distance to create the spoke structure;
     // peer links are shorter to cluster connected people together
     simulation = d3.forceSimulation(nodes)
-        .force('link', d3.forceLink(links).id(d => d.id)
-            .distance(d => d.hubLink ? 120 : 60)
-            .strength(d => d.hubLink ? 0.15 : 0.4))
+        .force('link', d3.forceLink(links).id(d => d.name)
+            .distance(d => d.isHub ? 120 : 60)
+            .strength(d => d.isHub ? 0.15 : 0.4))
         .force('charge', d3.forceManyBody().strength(-40))
         .force('center', d3.forceCenter(width / 2, height / 2))
         .force('collide', d3.forceCollide(d => d.radius + 3));
@@ -458,12 +698,12 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
         .data(links)
         .join('line')
         .attr('stroke', d => {
-            if (d.hubLink) return 'rgba(201, 168, 76, 0.12)';
+            if (d.isHub) return 'rgba(201, 168, 76, 0.12)';
             if (d.fromCoOccurrence) return 'rgba(201, 168, 76, 0.25)';
             return 'rgba(255,255,255,0.35)';
         })
         .attr('stroke-width', d => {
-            if (d.hubLink) return 0.5;
+            if (d.isHub) return 0.5;
             return Math.min(d.weight, 3);
         })
         .attr('stroke-dasharray', d => d.fromCoOccurrence ? '3,3' : 'none');
@@ -483,15 +723,28 @@ function renderForceGraph(constellation, profiles, coOccurrences) {
             .on('drag', dragged)
             .on('end', dragended));
 
-    // Hover — show richness signals
+    // Hover — show enriched info
     svgNode.on('mouseover', (event, d) => {
-        const profile = profiles[d.name];
-        const relation = d.relation || profile?.basic?.relation || '';
-        const yearSpan = d.first_year && d.last_year ? `${d.first_year}–${d.last_year}` :
-                         d.first_year ? `Since ${d.first_year}` : '';
+        const relation = d.relation;
+        const yearSpan = d.firstYear && d.lastYear ? `${d.firstYear}–${d.lastYear}` :
+                         d.firstYear ? `Since ${d.firstYear}` : '';
         const parts = [`<strong>${d.name}</strong>`];
         if (relation) parts.push(relation);
+        if (d.connection) {
+            const snippet = d.connection.split('.')[0].split(';')[0];
+            if (snippet && snippet !== relation) parts.push(`<span class="tooltip-connection">${snippet}</span>`);
+        }
         if (yearSpan) parts.push(yearSpan);
+        if (d.importanceScore > 0 && d.id !== 'john') {
+            parts.push(`<span class="tooltip-richness">Importance: ${Math.round(d.importanceScore)}</span>`);
+        }
+        const ecdP = ecdPlayersData[d.name];
+        if (ecdP) {
+            const w = ecdP.wins || 0;
+            const l = ecdP.losses || 0;
+            const rec = (w + l > 0) ? ` ${w}W–${l}L` : '';
+            parts.push(`<span class="tooltip-richness">ECD: ${ecdP.total_mentions.toLocaleString()} mentions${rec}</span>`);
+        }
         const summary = richnessSummary(d.richness);
         if (summary) parts.push(`<span class="tooltip-richness">${summary}</span>`);
 
@@ -549,79 +802,85 @@ function showPersonPanel(d) {
     if (!sidebar) return;
 
     const profile = profilesData[d.name] || null;
+    const person = peopleData[d.name] || null;
+    const arc = arcData[d.name] || null;
     const r = getDataRichness(d.name, profile);
 
     // Find connections from graph links
     const connected = [];
     allLinks.forEach(l => {
-        const srcId = typeof l.source === 'object' ? l.source.id : l.source;
-        const tgtId = typeof l.target === 'object' ? l.target.id : l.target;
-        if (srcId === d.id) {
-            const target = allNodes.find(n => n.id === tgtId);
+        const srcName = typeof l.source === 'object' ? l.source.name : l.source;
+        const tgtName = typeof l.target === 'object' ? l.target.name : l.target;
+        if (srcName === d.name) {
+            const target = allNodes.find(n => n.name === tgtName);
             if (target && target.name !== d.name) connected.push(target.name);
         }
-        if (tgtId === d.id) {
-            const source = allNodes.find(n => n.id === srcId);
+        if (tgtName === d.name) {
+            const source = allNodes.find(n => n.name === srcName);
             if (source && source.name !== d.name) connected.push(source.name);
         }
     });
 
-    // Also pull connections from profile data
-    if (profile?.connections?.length) {
-        profile.connections.forEach(c => {
-            const name = typeof c === 'string' ? c : (c.connected_to || c.name || c.person || '');
-            if (name && !connected.includes(name) && name !== d.name) {
-                connected.push(name);
-            }
-        });
-    }
-
-    // Build the sidebar HTML dynamically — only sections with content
-    const relation = d.relation || profile?.basic?.relation || '';
-    const category = d.category || profile?.basic?.category || '';
-    const yearText = d.first_year && d.last_year ? `${d.first_year} – ${d.last_year}` :
-                     d.first_year ? `Since ${d.first_year}` : '';
+    // Build the sidebar HTML dynamically
+    const relation = d.relation || getBestRelation(d);
+    const connection = d.connection || getBestConnection(d);
+    const category = d.category || person?.category || '';
+    const firstYear = d.firstYear || getBestFirstYear(d);
+    const lastYear = d.lastYear || getBestLastYear(d);
+    const yearText = firstYear && lastYear ? `${firstYear} – ${lastYear}` :
+                     firstYear ? `Since ${firstYear}` : '';
+    const peakYear = d.peakYear || arc?.peak_year || person?.peak_year;
+    const totalMentions = d.totalMentions || arc?.total_mentions || 0;
+    const importanceScore = d.importanceScore || person?.importance_score || 0;
 
     let html = `<button class="sidebar-close">&times;</button>`;
     html += `<h2 class="person-name">${d.name}</h2>`;
-    if (yearText) html += `<p class="person-years">${yearText}</p>`;
-    if (relation) html += `<p class="person-highlight">${relation}</p>`;
-    else if (category && category !== 'other') html += `<p class="person-highlight">${category.replace('_', ' ')}</p>`;
+    if (relation) html += `<p class="person-relation-tag">${relation}</p>`;
+    else if (category && category !== 'other') html += `<p class="person-relation-tag">${formatAwardCategory(category)}</p>`;
+
+    // Connection description — the story of this person
+    if (connection) {
+        html += `<p class="person-connection-desc">${connection}</p>`;
+    }
+
+    // Meta stats row
+    const metaParts = [];
+    if (yearText) metaParts.push(yearText);
+    if (peakYear) metaParts.push(`Peak: ${peakYear}`);
+    if (totalMentions > 0 && d.id !== 'john') metaParts.push(`${totalMentions} mention${totalMentions !== 1 ? 's' : ''}`);
+    if (importanceScore > 0 && d.id !== 'john') metaParts.push(`Score: ${Math.round(importanceScore)}`);
+    if (metaParts.length) {
+        html += `<div class="person-meta-row">${metaParts.join(' · ')}</div>`;
+    }
 
     // Connections (always show if any exist)
     if (connected.length) {
-        html += `<div class="person-section-label">Connections</div>`;
-        html += `<div class="person-connections">${connected.slice(0, 12).map(c =>
+        html += `<div class="person-section-label">Connections (${connected.length})</div>`;
+        html += `<div class="person-connections">${connected.slice(0, 16).map(c =>
             `<button class="connection-tag" data-name="${c}">${c}</button>`
         ).join('')}</div>`;
-    }
-
-    // Timeline events — show more for people with rich profiles
-    if (profile?.timeline?.length) {
-        const maxEvents = profile.timeline.length > 12 ? 12 : profile.timeline.length;
-        html += `<div class="person-section-label">Key Moments (${profile.timeline.length})</div>`;
-        html += `<div class="person-milestones">${profile.timeline.slice(0, maxEvents).map(m => {
-            const eventText = m.event || m.text || m.milestone || '';
-            const withPerson = m.with ? ` <span class="person-co-with">with ${m.with}</span>` : '';
-            return `<div class="person-milestone-item">
-                <span class="person-milestone-year">${m.year || ''}</span>
-                ${eventText}${withPerson}
-            </div>`;
-        }).join('')}</div>`;
-        if (profile.timeline.length > maxEvents) {
-            html += `<div class="person-highlight-item" style="font-size:11px;color:var(--lj-text-secondary)">+ ${profile.timeline.length - maxEvents} more events</div>`;
+        if (connected.length > 16) {
+            html += `<div class="person-more-note">+ ${connected.length - 16} more</div>`;
         }
     }
 
-    // Awards
-    if (profile?.awards?.length) {
-        html += `<div class="person-section-label">Awards</div>`;
-        html += `<div class="person-awards">${profile.awards.map(a =>
-            `<div class="person-award-item">
-                <span class="person-milestone-year">${a.year}</span>
-                ${formatAwardCategory(a.category)}${a.note ? ` — ${a.note}` : ''}
-            </div>`
-        ).join('')}</div>`;
+    // Timeline events
+    if (profile?.timeline?.length) {
+        const sorted = [...profile.timeline].sort((a, b) => (a.year || 0) - (b.year || 0));
+        const maxEvents = sorted.length > 15 ? 15 : sorted.length;
+        html += `<div class="person-section-label">Key Moments (${sorted.length})</div>`;
+        html += `<div class="person-milestones">${sorted.slice(0, maxEvents).map(m => {
+            const eventText = m.event || m.event_description || m.text || m.milestone || '';
+            const eventType = m.event_type || '';
+            const typeIcon = eventType === 'wwe' ? ' \u{1F3AD}' : eventType === 'milestone' ? ' \u{2B50}' : eventType === 'award' ? ' \u{1F3C6}' : '';
+            return `<div class="person-milestone-item">
+                <span class="person-milestone-year">${m.year || ''}</span>
+                ${eventText}${typeIcon}
+            </div>`;
+        }).join('')}</div>`;
+        if (sorted.length > maxEvents) {
+            html += `<div class="person-more-note">+ ${sorted.length - maxEvents} more events</div>`;
+        }
     }
 
     // Highlights
@@ -633,22 +892,13 @@ function showPersonPanel(d) {
         }).join('');
     }
 
-    // Songs
-    if (profile?.songs?.length) {
-        html += `<div class="person-section-label">Associated Songs</div>`;
-        html += profile.songs.map(s => {
-            const text = typeof s === 'string' ? s : `${s.title || s.song || ''} ${s.artist ? `by ${s.artist}` : ''} ${s.year ? `(${s.year})` : ''}`;
-            return `<div class="person-highlight-item">${text}</div>`;
-        }).join('');
-    }
-
     // Co-occurrence shared moments
     const coMatches = coOccurrencesData.filter(co =>
         (co.person_a === d.name || co.person_b === d.name) && co.context
     );
     if (coMatches.length) {
         html += `<div class="person-section-label">Shared Moments</div>`;
-        html += coMatches.slice(0, 5).map(co => {
+        html += coMatches.slice(0, 6).map(co => {
             const other = co.person_a === d.name ? co.person_b : co.person_a;
             return `<div class="person-co-item">
                 <span class="person-co-year">${co.year}</span>
@@ -658,7 +908,89 @@ function showPersonPanel(d) {
         }).join('');
     }
 
-    // LJ Comments
+    // ECD Dodgeball stats
+    const ecdPlayer = ecdPlayersData[d.name];
+    if (ecdPlayer) {
+        const wins = ecdPlayer.wins || 0;
+        const losses = ecdPlayer.losses || 0;
+        const record = (wins + losses > 0) ? `${wins}W–${losses}L` : '';
+        const winRate = (wins + losses > 0) ? Math.round((wins / (wins + losses)) * 100) : null;
+        const ecdEra = ecdPlayer.era_active || '';
+
+        // Find awards for this player (case-insensitive match)
+        const playerAwards = ecdAwardsData.filter(a =>
+            a.recipient && (
+                a.recipient === d.name ||
+                a.recipient.toLowerCase() === d.name.toLowerCase() ||
+                a.recipient.toLowerCase().startsWith(d.name.toLowerCase())
+            )
+        );
+        const hofInductee = playerAwards.some(a =>
+            a.award_type === 'Hall of Fame' || a.award_type === 'ECD Elite Inductee'
+        );
+
+        html += `<div class="person-section-label">ECDElite Dodgeball${hofInductee ? ' \u{1F3C6}' : ''}</div>`;
+
+        // Stats grid
+        html += `<div class="person-dodgeball-stats">`;
+        html += `<div class="dodgeball-stat"><span class="stat-label">Mentions</span><span class="stat-value">${ecdPlayer.total_mentions.toLocaleString()}</span></div>`;
+        html += `<div class="dodgeball-stat"><span class="stat-label">Posts</span><span class="stat-value">${ecdPlayer.post_count}</span></div>`;
+        if (record) {
+            html += `<div class="dodgeball-stat"><span class="stat-label">Record</span><span class="stat-value">${record}</span></div>`;
+        }
+        if (winRate !== null) {
+            html += `<div class="dodgeball-stat"><span class="stat-label">Win Rate</span><span class="stat-value">${winRate}%</span></div>`;
+        }
+        if (ecdEra) {
+            html += `<div class="dodgeball-stat"><span class="stat-label">Active Era</span><span class="stat-value">${ecdEra}</span></div>`;
+        }
+        if (ecdPlayer.peak_year) {
+            html += `<div class="dodgeball-stat"><span class="stat-label">Peak Year</span><span class="stat-value">${ecdPlayer.peak_year}</span></div>`;
+        }
+        html += `</div>`;
+
+        // Nicknames
+        let nicknames = [];
+        try {
+            nicknames = typeof ecdPlayer.nicknames === 'string' ? JSON.parse(ecdPlayer.nicknames) : (ecdPlayer.nicknames || []);
+        } catch (_) { /* ignore parse errors */ }
+        if (nicknames.length) {
+            html += `<div class="person-highlight-item" style="font-size:11px;color:var(--lj-text-secondary);margin-top:6px">aka ${nicknames.join(', ')}</div>`;
+        }
+
+        // Awards
+        if (playerAwards.length) {
+            html += playerAwards.map(a =>
+                `<div class="person-highlight-item">${a.award_type}${a.year ? ` (${a.year})` : ''}</div>`
+            ).join('');
+        }
+
+        if (hofInductee) {
+            html += `<div class="person-highlight-item" style="color:var(--room-accent)">Hall of Fame / ECD Elite Inductee</div>`;
+        }
+    }
+
+    // Awards (from profile)
+    if (profile?.awards?.length) {
+        html += `<div class="person-section-label">Awards</div>`;
+        html += `<div class="person-awards">${profile.awards.map(a =>
+            `<div class="person-award-item">
+                <span class="person-milestone-year">${a.year}</span>
+                ${formatAwardCategory(a.category)}${a.note ? ` — ${a.note}` : ''}
+            </div>`
+        ).join('')}</div>`;
+    }
+
+    // Songs (from profile)
+    if (profile?.songs?.length) {
+        html += `<div class="person-section-label">Associated Songs</div>`;
+        html += profile.songs.map(s => {
+            const text = typeof s === 'string' ? s : `${s.title || s.song || ''} ${s.artist ? `by ${s.artist}` : ''} ${s.year ? `(${s.year})` : ''}`;
+            return `<div class="person-highlight-item">${text}</div>`;
+        }).join('');
+    }
+
+    // LJ Comments (from profile)
     if (profile?.lj_comments?.length) {
         html += `<div class="person-section-label">LiveJournal Comments</div>`;
         html += profile.lj_comments.map(c => {
@@ -667,8 +999,8 @@ function showPersonPanel(d) {
         }).join('');
     }
 
-    // If absolutely nothing to show, say so gently
-    if (r.total === 0 && !connected.length) {
+    // If nothing to show, say so gently
+    if (r.total === 0 && !connected.length && !connection) {
         html += `<p class="sidebar-empty">This person appears in the timeline but doesn't have documented details yet.</p>`;
     }
 
