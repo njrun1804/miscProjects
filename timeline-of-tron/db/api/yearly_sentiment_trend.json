@@ -1,209 +1,117 @@
 [
   {
     "year": 2004,
-    "avg_sentiment": -0.438,
-    "sentiment_change_from_prev": null,
-    "direction": "stable",
-    "milestone_count": 2,
-    "dominant_emotion": null,
-    "intensity_score": 0.44
+    "count": 2,
+    "avg_sentiment": -0.4375
   },
   {
     "year": 2005,
-    "avg_sentiment": -0.181,
-    "sentiment_change_from_prev": 0.257,
-    "direction": "up",
-    "milestone_count": 2,
-    "dominant_emotion": null,
-    "intensity_score": 0.18
+    "count": 2,
+    "avg_sentiment": -0.1806
   },
   {
     "year": 2006,
-    "avg_sentiment": null,
-    "sentiment_change_from_prev": 0.181,
-    "direction": "up",
-    "milestone_count": 2,
-    "dominant_emotion": null,
-    "intensity_score": 0
+    "count": 2,
+    "avg_sentiment": 0.0
   },
   {
     "year": 2007,
-    "avg_sentiment": 0.069,
-    "sentiment_change_from_prev": 0.069,
-    "direction": "stable",
-    "milestone_count": 14,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.07
+    "count": 22,
+    "avg_sentiment": 0.01878181818181818
   },
   {
     "year": 2008,
-    "avg_sentiment": 0.072,
-    "sentiment_change_from_prev": 0.003,
-    "direction": "stable",
-    "milestone_count": 14,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.07
+    "count": 34,
+    "avg_sentiment": 0.1660470588235294
   },
   {
     "year": 2009,
-    "avg_sentiment": 0.1,
-    "sentiment_change_from_prev": 0.028,
-    "direction": "stable",
-    "milestone_count": 14,
-    "dominant_emotion": "joy",
-    "intensity_score": 0.1
+    "count": 26,
+    "avg_sentiment": 0.08587307692307695
   },
   {
     "year": 2010,
-    "avg_sentiment": 0.192,
-    "sentiment_change_from_prev": 0.091,
-    "direction": "stable",
-    "milestone_count": 10,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.19
+    "count": 13,
+    "avg_sentiment": 0.17005384615384617
   },
   {
     "year": 2011,
-    "avg_sentiment": -0.0,
-    "sentiment_change_from_prev": -0.192,
-    "direction": "down",
-    "milestone_count": 12,
-    "dominant_emotion": "pride",
-    "intensity_score": 0.0
+    "count": 17,
+    "avg_sentiment": 0.08076470588235295
   },
   {
     "year": 2012,
-    "avg_sentiment": 0.038,
-    "sentiment_change_from_prev": 0.038,
-    "direction": "stable",
-    "milestone_count": 8,
-    "dominant_emotion": null,
-    "intensity_score": 0.04
+    "count": 9,
+    "avg_sentiment": 0.033633333333333335
   },
   {
     "year": 2013,
-    "avg_sentiment": 0.006,
-    "sentiment_change_from_prev": -0.032,
-    "direction": "stable",
-    "milestone_count": 12,
-    "dominant_emotion": "joy",
-    "intensity_score": 0.01
+    "count": 23,
+    "avg_sentiment": 0.18352173913043482
   },
   {
     "year": 2014,
-    "avg_sentiment": 0.19,
-    "sentiment_change_from_prev": 0.184,
-    "direction": "up",
-    "milestone_count": 10,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.19
+    "count": 19,
+    "avg_sentiment": 0.08421578947368422
   },
   {
     "year": 2015,
-    "avg_sentiment": 0.083,
-    "sentiment_change_from_prev": -0.107,
-    "direction": "down",
-    "milestone_count": 4,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.08
+    "count": 6,
+    "avg_sentiment": 0.1285333333333333
   },
   {
     "year": 2016,
-    "avg_sentiment": 0.223,
-    "sentiment_change_from_prev": 0.14,
-    "direction": "up",
-    "milestone_count": 7,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.22
+    "count": 10,
+    "avg_sentiment": 0.25142999999999993
   },
   {
     "year": 2017,
-    "avg_sentiment": 0.048,
-    "sentiment_change_from_prev": -0.175,
-    "direction": "down",
-    "milestone_count": 13,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.05
+    "count": 19,
+    "avg_sentiment": 0.08502105263157894
   },
   {
     "year": 2018,
-    "avg_sentiment": 0.194,
-    "sentiment_change_from_prev": 0.145,
-    "direction": "up",
-    "milestone_count": 13,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.19
+    "count": 17,
+    "avg_sentiment": 0.17805882352941177
   },
   {
     "year": 2019,
-    "avg_sentiment": 0.128,
-    "sentiment_change_from_prev": -0.065,
-    "direction": "stable",
-    "milestone_count": 15,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.13
+    "count": 24,
+    "avg_sentiment": 0.23671666666666666
   },
   {
     "year": 2020,
-    "avg_sentiment": 0.088,
-    "sentiment_change_from_prev": -0.04,
-    "direction": "stable",
-    "milestone_count": 11,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.09
+    "count": 20,
+    "avg_sentiment": 0.18789999999999998
   },
   {
     "year": 2021,
-    "avg_sentiment": 0.091,
-    "sentiment_change_from_prev": 0.003,
-    "direction": "stable",
-    "milestone_count": 20,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.09
+    "count": 26,
+    "avg_sentiment": 0.10418461538461539
   },
   {
     "year": 2022,
-    "avg_sentiment": 0.07,
-    "sentiment_change_from_prev": -0.021,
-    "direction": "stable",
-    "milestone_count": 14,
-    "dominant_emotion": null,
-    "intensity_score": 0.07
+    "count": 14,
+    "avg_sentiment": 0.07019285714285714
   },
   {
     "year": 2023,
-    "avg_sentiment": 0.225,
-    "sentiment_change_from_prev": 0.155,
-    "direction": "up",
-    "milestone_count": 6,
-    "dominant_emotion": "neutral",
-    "intensity_score": 0.23
+    "count": 8,
+    "avg_sentiment": 0.24367500000000003
   },
   {
     "year": 2024,
-    "avg_sentiment": -0.048,
-    "sentiment_change_from_prev": -0.273,
-    "direction": "down",
-    "milestone_count": 11,
-    "dominant_emotion": null,
-    "intensity_score": 0.05
+    "count": 12,
+    "avg_sentiment": -0.04389166666666666
   },
   {
     "year": 2025,
-    "avg_sentiment": -0.058,
-    "sentiment_change_from_prev": -0.01,
-    "direction": "stable",
-    "milestone_count": 11,
-    "dominant_emotion": null,
-    "intensity_score": 0.06
+    "count": 12,
+    "avg_sentiment": -0.10078333333333334
   },
   {
     "year": 2026,
-    "avg_sentiment": null,
-    "sentiment_change_from_prev": 0.058,
-    "direction": "stable",
-    "milestone_count": 1,
-    "dominant_emotion": null,
-    "intensity_score": 0
+    "count": 2,
+    "avg_sentiment": 0.0
   }
 ]

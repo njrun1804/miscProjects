@@ -1,32 +1,5 @@
 [
   {
-    "id": 29,
-    "name": "Anonymous",
-    "comment_count": 4,
-    "first_year": 2007,
-    "last_year": 2008,
-    "years_active": 2,
-    "is_in_people_table": 0
-  },
-  {
-    "id": 7,
-    "name": "Jim Butler",
-    "comment_count": 2,
-    "first_year": 2008,
-    "last_year": 2012,
-    "years_active": 5,
-    "is_in_people_table": 1
-  },
-  {
-    "id": 10,
-    "name": "wwecoowner",
-    "comment_count": 2,
-    "first_year": 2019,
-    "last_year": 2021,
-    "years_active": 3,
-    "is_in_people_table": 0
-  },
-  {
     "id": 1,
     "name": "C. Adams",
     "comment_count": 1,
@@ -81,6 +54,15 @@
     "is_in_people_table": 0
   },
   {
+    "id": 7,
+    "name": "Jim Butler",
+    "comment_count": 2,
+    "first_year": 2008,
+    "last_year": 2012,
+    "years_active": 5,
+    "is_in_people_table": 1
+  },
+  {
     "id": 8,
     "name": "Pam D",
     "comment_count": 1,
@@ -96,6 +78,15 @@
     "first_year": 2021,
     "last_year": 2021,
     "years_active": 1,
+    "is_in_people_table": 0
+  },
+  {
+    "id": 10,
+    "name": "wwecoowner",
+    "comment_count": 2,
+    "first_year": 2019,
+    "last_year": 2021,
+    "years_active": 3,
     "is_in_people_table": 0
   },
   {
@@ -259,6 +250,15 @@
     "last_year": 2008,
     "years_active": 1,
     "is_in_people_table": 1
+  },
+  {
+    "id": 29,
+    "name": "Anonymous",
+    "comment_count": 4,
+    "first_year": 2007,
+    "last_year": 2008,
+    "years_active": 2,
+    "is_in_people_table": 0
   },
   {
     "id": 30,

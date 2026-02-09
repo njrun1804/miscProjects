@@ -3,642 +3,336 @@
     "person_a": "Lauren Stopa",
     "person_b": "Lauren Winston",
     "strength": 5,
-    "years_together": 0,
-    "shared_contexts": [
-      "27 bowling games in a single day",
-      "Started job at Ocean Township Recreation (Feb 27)",
-      "WrestleMania 23 in Detroit (3rd WM)",
-      "51st WWE event (Oct 29 Philadelphia)",
-      "DODGEBALL 100 \u2014 record 52 participants (Aug 18)"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2007
   },
   {
     "person_a": "Dan Spengeman",
     "person_b": "Ma",
     "strength": 5,
-    "years_together": 2,
-    "shared_contexts": [
-      "Kia Soul hits 20,000 miles (Dec 15)",
-      "USVI & Bahamas cruise (rated 10/10)",
-      "Janet Jackson first Artist of the Year win",
-      "Dan Spengeman: Comedian of the Year",
-      "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'"
-    ],
-    "first_year": 2015,
-    "last_year": 2016
+    "year": 2015
   },
   {
     "person_a": "Danny Sponge",
     "person_b": "Ma",
     "strength": 5,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2015
   },
   {
     "person_a": "Dan Spengeman",
     "person_b": "Danny Sponge",
     "strength": 5,
-    "years_together": 0,
-    "shared_contexts": [
-      "Kia Soul hits 20,000 miles (Dec 15)",
-      "USVI & Bahamas cruise (rated 10/10)",
-      "Janet Jackson first Artist of the Year win",
-      "Dan Spengeman: Comedian of the Year",
-      "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2015
   },
   {
     "person_a": "Ma",
     "person_b": "Michael",
     "strength": 2,
-    "years_together": 2,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": 2010,
-    "last_year": 2018
+    "year": 2010
   },
   {
     "person_a": "Diana DiBuccio",
     "person_b": "Valerie Winston (ValPal)",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2014
   },
   {
     "person_a": "Ma",
     "person_b": "Maggie",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2014
   },
   {
     "person_a": "Kevin & Leah (KMJ & LN)",
     "person_b": "Kevin Adams",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2017
   },
   {
     "person_a": "Kevin & Leah (KMJ & LN)",
     "person_b": "Kevin Megill (KMJ)",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2017
   },
   {
     "person_a": "Kevin Adams",
     "person_b": "Kevin Megill (KMJ)",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2017
   },
   {
     "person_a": "Ma",
     "person_b": "Matt (Physical Therapist)",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2017
   },
   {
     "person_a": "Ma",
     "person_b": "Matt (introduced Jul 3, 2019)",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2017
   },
   {
     "person_a": "Matt (Physical Therapist)",
     "person_b": "Matt (introduced Jul 3, 2019)",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2017
   },
   {
     "person_a": "Julia Dennabuam",
     "person_b": "Julian",
     "strength": 2,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2019
   },
   {
     "person_a": "Cousin Nick & Samantha",
     "person_b": "Ma",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2011
   },
   {
     "person_a": "Grandma Theresa",
     "person_b": "Ma",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2013
   },
   {
     "person_a": "Grandma Irene",
     "person_b": "Ma",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2013
   },
   {
     "person_a": "Grandma 'Mama' Blanca",
     "person_b": "Ma",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2013
   },
   {
     "person_a": "Grandma Irene",
     "person_b": "Grandma Theresa",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2013
   },
   {
     "person_a": "Grandma 'Mama' Blanca",
     "person_b": "Grandma Theresa",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2013
   },
   {
     "person_a": "Grandma 'Mama' Blanca",
     "person_b": "Grandma Irene",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2013
   },
   {
     "person_a": "Ma",
     "person_b": "Mike 'Sputz' Krott",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2014
   },
   {
     "person_a": "Maggie",
     "person_b": "Mike 'Sputz' Krott",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2014
   },
   {
     "person_a": "John Tronolone",
     "person_b": "Johnny Nash",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2014
   },
   {
     "person_a": "Ma",
     "person_b": "Terra Bergquist",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2018
   },
   {
     "person_a": "Maggie",
     "person_b": "Michael",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
-      "Won inaugural HERO of the Year (Jan 27)",
-      "Featured in Phillies PSA (Jun 10)",
-      "WrestleMania XXVI in Arizona (939 photos)",
-      "3rd skydive (Jul 18)"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2018
   },
   {
     "person_a": "John Tronolone",
     "person_b": "Julian",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2019
   },
   {
     "person_a": "John Tronolone",
     "person_b": "Julia Dennabuam",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2019
   },
   {
     "person_a": "Kevin & Leah (KMJ & LN)",
     "person_b": "Ma",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2020
   },
   {
     "person_a": "Kevin Adams",
     "person_b": "Ma",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2020
   },
   {
     "person_a": "Kevin Megill (KMJ)",
     "person_b": "Ma",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2020
   },
   {
     "person_a": "Grace",
     "person_b": "Megan",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2020
   },
   {
     "person_a": "Juan Londono (Muffin Man)",
     "person_b": "Steve and Stacey",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2009
   },
   {
     "person_a": "Juan Londono (Muffin Man)",
     "person_b": "Steve Pham",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2009
   },
   {
     "person_a": "Steve Pham",
     "person_b": "Steve and Stacey",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2009
   },
   {
     "person_a": "Phil Campanella",
     "person_b": "Rob",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "First meal with Rob at Ocean Bay Diner (Jan 1)",
-      "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
-      "Career at Sunrise Senior Living begins (Oct 31/Nov 1)",
-      "First speeding ticket (Sep 14)",
-      "Survivor Series at MSG \u2014 The Rock returns (Nov 20)"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "Rob",
     "person_b": "Lauren Stopa",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "First meal with Rob at Ocean Bay Diner (Jan 1)",
-      "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
-      "Career at Sunrise Senior Living begins (Oct 31/Nov 1)",
-      "First speeding ticket (Sep 14)",
-      "Survivor Series at MSG \u2014 The Rock returns (Nov 20)"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "Rob",
     "person_b": "Rob Phillips (Robert)",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "First meal with Rob at Ocean Bay Diner (Jan 1)",
-      "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
-      "Career at Sunrise Senior Living begins (Oct 31/Nov 1)",
-      "First speeding ticket (Sep 14)",
-      "Survivor Series at MSG \u2014 The Rock returns (Nov 20)"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "Phil Campanella",
     "person_b": "Lauren Stopa",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "Phil Campanella",
     "person_b": "Rob Phillips (Robert)",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "Rob Phillips (Robert)",
     "person_b": "Lauren Stopa",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "Ma",
     "person_b": "Ryan Letsche (RyGuy)",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2008
   },
   {
     "person_a": "Ma",
     "person_b": "Ryan Letsche",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [
-      "EastCoastDodgeball founded",
-      "Difficult period after WrestleMania attendance",
-      "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-      "FINS Friday gatherings ongoing since March 2006",
-      "27 bowling games in a single day"
-    ],
-    "first_year": null,
-    "last_year": null
+    "year": 2008
   },
   {
     "person_a": "Ryan Letsche",
     "person_b": "Ryan Letsche (RyGuy)",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2008
   },
   {
     "person_a": "1",
     "person_b": "10",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2011
   },
   {
     "person_a": "10",
     "person_b": "17",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "1",
     "person_b": "17",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2021
   },
   {
     "person_a": "1",
     "person_b": "2",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2008
   },
   {
     "person_a": "2",
     "person_b": "10",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2008
   },
   {
     "person_a": "1",
     "person_b": "13",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2012
   },
   {
     "person_a": "10",
     "person_b": "13",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2012
   },
   {
     "person_a": "4",
     "person_b": "10",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2022
   },
   {
     "person_a": "2",
     "person_b": "17",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2007
   },
   {
     "person_a": "1",
     "person_b": "15",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2015
   },
   {
     "person_a": "15",
     "person_b": "17",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2016
   },
   {
     "person_a": "1",
     "person_b": "5",
     "strength": 1,
-    "years_together": 0,
-    "shared_contexts": [],
-    "first_year": null,
-    "last_year": null
+    "year": 2010
   }
 ]

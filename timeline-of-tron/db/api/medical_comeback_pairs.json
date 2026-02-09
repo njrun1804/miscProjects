@@ -2,11 +2,11 @@
   {
     "id": 1,
     "medical_year": 2004,
-    "medical_event": "Life-altering car accident \u2014 panic attacks and anxiety",
+    "medical_event": "Life-altering car accident — panic attacks and anxiety",
     "severity": "major",
-    "comeback_year": 2005,
-    "comeback_event": "Launched ECD; began rebuilding",
-    "gap_months": 12,
+    "comeback_year": 2004,
+    "comeback_event": "Years-long recovery; became HERO of the Year advocate",
+    "gap_months": 0,
     "comeback_type": "community creation"
   },
   {
@@ -22,11 +22,11 @@
   {
     "id": 3,
     "medical_year": 2008,
-    "medical_event": "Car accident \u2014 rear-ended on West Park Avenue",
+    "medical_event": "Car accident — rear-ended on West Park Avenue",
     "severity": "major",
-    "comeback_year": 2009,
-    "comeback_event": "SkyDive I at 10,000 feet; 'maybe the happiest 24-span of my life'",
-    "gap_months": 10,
+    "comeback_year": 2008,
+    "comeback_event": "Came out in 2008; began 'most rewarding and refreshing' months",
+    "gap_months": 0,
     "comeback_type": "adventure"
   },
   {
@@ -34,9 +34,9 @@
     "medical_year": 2011,
     "medical_event": "Torn glenoid labrum confirmed via MRI",
     "severity": "moderate",
-    "comeback_year": 2012,
-    "comeback_event": "Continued sports; began career advancement at Sunrise",
-    "gap_months": 6,
+    "comeback_year": 2011,
+    "comeback_event": "Continued sports participation",
+    "gap_months": 0,
     "comeback_type": "resilience"
   },
   {
@@ -72,11 +72,11 @@
   {
     "id": 8,
     "medical_year": 2024,
-    "medical_event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
+    "medical_event": "Kidney stones — two hospitalizations (Dec 18 & 20)",
     "severity": "moderate",
-    "comeback_year": 2025,
-    "comeback_event": "Continued travel (Norway, Iceland); coastal cruise",
-    "gap_months": 2,
+    "comeback_year": 2024,
+    "comeback_event": "Continued travel (Norway, Iceland, Toronto, Montreal) & celebration",
+    "gap_months": 0,
     "comeback_type": "travel"
   }
 ]

@@ -1,453 +1,402 @@
-{
-  "themes": [
-    {
-      "theme": "reflection",
-      "count": 56,
-      "quotes": [
-        {
-          "quote": "Without any hesitation, I proudly proclaim that 2007 was undoubtedly the most colorful and eventful year of my life.",
-          "year": 2007,
-          "emotion": "pride"
-        },
-        {
-          "quote": "the beginning not of a temporary diet, but a desperate lifestyle alteration",
-          "year": 2007,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Some day you're gonna look back and be happy you recorded all of this stuff",
-          "year": 2007,
-          "emotion": "joy"
-        },
-        {
-          "quote": "half of these entries don't make any sense to the reader [or the writer, haha]",
-          "year": 2007,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Sometimes the door without a sign is the sign",
-          "year": 2007,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Conquered obstacles, dreams turned reality, fears for happy tears",
-          "year": 2008,
-          "emotion": "joy"
-        },
-        {
-          "quote": "2008: Rewarding, Refreshing, Heavenly. I Did It.",
-          "year": 2008,
-          "emotion": "pride"
-        },
-        {
-          "quote": "Life is Beautiful",
-          "year": 2008,
-          "emotion": "joy"
-        },
-        {
-          "quote": "I cannot and will not pass any negative sanction upon anything I've ever said because I know at one time, at that specific time, it's how I felt.",
-          "year": 2008,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Well written, John, but as usual, makes little sense to me. You are way too esoteric.",
-          "year": 2008,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "When Jim Butler calls you esoteric, well...that's just hilarious (pot, meet kettle)",
-          "year": 2008,
-          "emotion": "humor"
-        },
-        {
-          "quote": "Keep on evolving John!",
-          "year": 2008,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "The power of an internal desire liberated!",
-          "year": 2008,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Can't a guy just get tired?",
-          "year": 2008,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "The feeling of being in that spotlight was truly very special",
-          "year": 2008,
-          "emotion": "joy"
-        },
-        {
-          "quote": "someone crushed his acorn",
-          "year": 2008,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "regret ever regretting",
-          "year": 2008,
-          "emotion": "sadness"
-        },
-        {
-          "quote": "Sometimes it is hell trying to get to heaven.",
-          "year": 2009,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "You cannot fear death once you've touched heaven.",
-          "year": 2009,
-          "emotion": "fear"
-        },
-        {
-          "quote": "Walk the plank, take the jump, and still come up alive. What's a chance if you don't take it.",
-          "year": 2009,
-          "emotion": "determination"
-        },
-        {
-          "quote": "It wasn't something I was happy about doing, but it is something I'm happy I did.",
-          "year": 2009,
-          "emotion": "joy"
-        },
-        {
-          "quote": "You deserve a prize for being the last person on livejournal",
-          "year": 2009,
-          "emotion": "joy"
-        },
-        {
-          "quote": "you reminded me of a LOT of events that i have forgotten about",
-          "year": 2009,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "I finally came to the realization that I needed to move away from something that simply didn't make me happy anymore",
-          "year": 2009,
-          "emotion": "joy"
-        },
-        {
-          "quote": "0 = Regrets",
-          "year": 2010,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "the best + the most = .TWENTY '13.",
-          "year": 2013,
-          "emotion": "joy"
-        },
-        {
-          "quote": "If all keeps up, 2013 could honestly become the greatest year of my adulthood",
-          "year": 2013,
-          "emotion": "joy"
-        },
-        {
-          "quote": "just woke up from this dream.. but it wasn't a dream!!!",
-          "year": 2013,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "2010 and 2013 will no doubt stand the test of time. The only difference is that now, in '13, I've had someone to share all those amazing times.",
-          "year": 2013,
-          "emotion": "joy"
-        },
-        {
-          "quote": "He simply made being a wrestling fan acceptable, the 'in' thing.",
-          "year": 2013,
-          "emotion": "anger"
-        },
-        {
-          "quote": "I enjoy reading this every year",
-          "year": 2013,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Our time is precious and should occasionally be used to credit certain individuals who may have simply made even the smallest difference",
-          "year": 2013,
-          "emotion": "nostalgia"
-        },
-        {
-          "quote": "the committee has spoken, Darrell.",
-          "year": 2014,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "All that keeps running through my head is 'I finally did it.' I never, ever thought the day would come.",
-          "year": 2014,
-          "emotion": "pride"
-        },
-        {
-          "quote": "The Epic Handshake, and then some.. 2|0'1|4.",
-          "year": 2014,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Well you guys just made his dream come true.",
-          "year": 2014,
-          "emotion": "anger"
-        },
-        {
-          "quote": "He's gonna have a heart attack and die on stage.",
-          "year": 2014,
-          "emotion": "love"
-        },
-        {
-          "quote": "OMG. Pam, if you got it, he will DIE!",
-          "year": 2014,
-          "emotion": "sadness"
-        },
-        {
-          "quote": "having kids would be a good idea, except that I'm not willing to give up my life",
-          "year": 2015,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Oh my god you're such a huge dork. I read the whole blog!",
-          "year": 2016,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "I Just Want To Wake Up. (I Did!)",
-          "year": 2017,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "1997, 2007, 2015, and now 2017. My personal SummerSlam story, some 20 years long, complete.",
-          "year": 2017,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "patience & gratitude",
-          "year": 2018,
-          "emotion": "joy"
-        },
-        {
-          "quote": "Life, Rejoined. . M M 1 8 .",
-          "year": 2018,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Halfway to 70",
-          "year": 2019,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "best. longest. most. greatest.",
-          "year": 2019,
-          "emotion": "joy"
-        },
-        {
-          "quote": "2020, challenge accepted",
-          "year": 2019,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "a lot of people say dont think of the past, but i feel like the past totally motivates to outdo it",
-          "year": 2019,
-          "emotion": "nostalgia"
-        },
-        {
-          "quote": "the record is the record. next question.",
-          "year": 2020,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "JTP only you would call 2020 great",
-          "year": 2020,
-          "emotion": "joy"
-        },
-        {
-          "quote": "So energizing to sense the energy you bring to life",
-          "year": 2020,
-          "emotion": "joy"
-        },
-        {
-          "quote": "oh my gosh! i am so honored to have made multiple appearances!",
-          "year": 2020,
-          "emotion": "anger"
-        },
-        {
-          "quote": "Shit I need to do this. It's so cool",
-          "year": 2020,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "it's called dedication. look it up.",
-          "year": 2021,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "the notebook doesn't lie, ValPal.",
-          "year": 2021,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "you're welcome for the immortality.",
-          "year": 2021,
-          "emotion": "neutral"
-        }
-      ]
-    },
-    {
-      "theme": "relationships",
-      "count": 7,
-      "quotes": [
-        {
-          "quote": "Family First...Friendship takes two, not one.",
-          "year": 2008,
-          "emotion": "love"
-        },
-        {
-          "quote": "the best yet...showcased all the cool times...and gave every true friend their moment",
-          "year": 2008,
-          "emotion": "joy"
-        },
-        {
-          "quote": "I really love how you are who you are regardless of what others think. You really possess something that many strive to obtain but are never able to, due to insecurities and expectations.",
-          "year": 2008,
-          "emotion": "defiance"
-        },
-        {
-          "quote": "I love your writing style...it's like, you say what you wanna say and you don't care what anyone thinks.",
-          "year": 2008,
-          "emotion": "love"
-        },
-        {
-          "quote": "Friends, Family, Freedom. The Greatest Year Ever. 2009.",
-          "year": 2009,
-          "emotion": "joy"
-        },
-        {
-          "quote": "In love, and unashamed by it and for whom it's for",
-          "year": 2011,
-          "emotion": "pride"
-        },
-        {
-          "quote": "My friends got their ladies, they're all having babies, but I just want to have some fun.",
-          "year": 2020,
-          "emotion": "sadness"
-        }
-      ]
-    },
-    {
-      "theme": "adventure",
-      "count": 7,
-      "quotes": [
-        {
-          "quote": "10 Years After The First .. 20 Years To Meet The Man.",
-          "year": 2014,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "When you enjoy the journeys, the destinations magnify",
-          "year": 2014,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "unquestionably, the greatest WWE experience of all-time",
-          "year": 2016,
-          "emotion": "joy"
-        },
-        {
-          "quote": "THE GREAT ADVENTURE 2.0.1.7",
-          "year": 2017,
-          "emotion": "joy"
-        },
-        {
-          "quote": "the best, the longest, and the greatest",
-          "year": 2019,
-          "emotion": "joy"
-        },
-        {
-          "quote": "job doesn't get easier unless yours does first",
-          "year": 2020,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "the most spectacular day I've ever experienced",
-          "year": 2023,
-          "emotion": "neutral"
-        }
-      ]
-    },
-    {
-      "theme": "identity",
-      "count": 3,
-      "quotes": [
-        {
-          "quote": "I said exactly what I needed to say; now I look back with a smile.",
-          "year": 2008,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "Inner joy. Endless privilege and pleasure. I've never felt happier to be alive than here and now.",
-          "year": 2008,
-          "emotion": "joy"
-        },
-        {
-          "quote": "What am I getting myself into?",
-          "year": 2019,
-          "emotion": "neutral"
-        }
-      ]
-    },
-    {
-      "theme": "growth",
-      "count": 2,
-      "quotes": [
-        {
-          "quote": "My oh my, how the times have changed. A full tank. No Angel. Triple digits. Reconciliation.",
-          "year": 2007,
-          "emotion": "neutral"
-        },
-        {
-          "quote": "I got tired of kissin' ass",
-          "year": 2009,
-          "emotion": "sadness"
-        }
-      ]
-    },
-    {
-      "theme": "resilience",
-      "count": 1,
-      "quotes": [
-        {
-          "quote": "not a death sentence, living proof",
-          "year": 2020,
-          "emotion": "neutral"
-        }
-      ]
-    },
-    {
-      "theme": "health",
-      "count": 1,
-      "quotes": [
-        {
-          "quote": "Baby is here. Everyone healthy and safe.",
-          "year": 2021,
-          "emotion": "joy"
-        }
-      ]
-    },
-    {
-      "theme": "celebration",
-      "count": 1,
-      "quotes": [
-        {
-          "quote": "the beauty in finality. The wonder of commencement.",
-          "year": 2013,
-          "emotion": "joy"
-        }
-      ]
-    },
-    {
-      "theme": "career",
-      "count": 1,
-      "quotes": [
-        {
-          "quote": "Life went from 9.5 to 9.7 in 10m, 37s",
-          "year": 2021,
-          "emotion": "neutral"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "keyword": "trip",
+    "frequency": 1.0
+  },
+  {
+    "keyword": "period wrestlemania",
+    "frequency": 0.5676
+  },
+  {
+    "keyword": "period",
+    "frequency": 0.5676
+  },
+  {
+    "keyword": "attendance",
+    "frequency": 0.5016
+  },
+  {
+    "keyword": "30th",
+    "frequency": 0.492
+  },
+  {
+    "keyword": "ongoing",
+    "frequency": 0.4902
+  },
+  {
+    "keyword": "ongoing march",
+    "frequency": 0.4902
+  },
+  {
+    "keyword": "70",
+    "frequency": 0.4332
+  },
+  {
+    "keyword": "dodgeball",
+    "frequency": 0.3927
+  },
+  {
+    "keyword": "10",
+    "frequency": 0.3629
+  },
+  {
+    "keyword": "30",
+    "frequency": 0.3613
+  },
+  {
+    "keyword": "wwe experience",
+    "frequency": 0.3452
+  },
+  {
+    "keyword": "experience",
+    "frequency": 0.3452
+  },
+  {
+    "keyword": "experience time",
+    "frequency": 0.3452
+  },
+  {
+    "keyword": "greatest wwe",
+    "frequency": 0.3452
+  },
+  {
+    "keyword": "day ve",
+    "frequency": 0.3336
+  },
+  {
+    "keyword": "spectacular day",
+    "frequency": 0.3336
+  },
+  {
+    "keyword": "experienced",
+    "frequency": 0.3336
+  },
+  {
+    "keyword": "ve experienced",
+    "frequency": 0.3336
+  },
+  {
+    "keyword": "spectacular",
+    "frequency": 0.3336
+  },
+  {
+    "keyword": "wrestlemania",
+    "frequency": 0.3226
+  },
+  {
+    "keyword": "day",
+    "frequency": 0.3205
+  },
+  {
+    "keyword": "longest",
+    "frequency": 0.3204
+  },
+  {
+    "keyword": "time",
+    "frequency": 0.305
+  },
+  {
+    "keyword": "project begins",
+    "frequency": 0.3017
+  },
+  {
+    "keyword": "panic",
+    "frequency": 0.3017
+  },
+  {
+    "keyword": "panic attacks",
+    "frequency": 0.3017
+  },
+  {
+    "keyword": "resulting panic",
+    "frequency": 0.3017
+  },
+  {
+    "keyword": "resulting",
+    "frequency": 0.3017
+  },
+  {
+    "keyword": "project",
+    "frequency": 0.3017
+  },
+  {
+    "keyword": "2008",
+    "frequency": 0.299
+  },
+  {
+    "keyword": "game",
+    "frequency": 0.2977
+  },
+  {
+    "keyword": "2013",
+    "frequency": 0.2932
+  },
+  {
+    "keyword": "hero",
+    "frequency": 0.2924
+  },
+  {
+    "keyword": "graduated",
+    "frequency": 0.2924
+  },
+  {
+    "keyword": "university",
+    "frequency": 0.2924
+  },
+  {
+    "keyword": "year",
+    "frequency": 0.2753
+  },
+  {
+    "keyword": "croatia",
+    "frequency": 0.2738
+  },
+  {
+    "keyword": "14",
+    "frequency": 0.2672
+  },
+  {
+    "keyword": "ve",
+    "frequency": 0.2672
+  },
+  {
+    "keyword": "car accident",
+    "frequency": 0.2666
+  },
+  {
+    "keyword": "accident",
+    "frequency": 0.2666
+  },
+  {
+    "keyword": "car",
+    "frequency": 0.2666
+  },
+  {
+    "keyword": "regrets",
+    "frequency": 0.2583
+  },
+  {
+    "keyword": "25",
+    "frequency": 0.2579
+  },
+  {
+    "keyword": "greatest",
+    "frequency": 0.2544
+  },
+  {
+    "keyword": "000 miles",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "rated",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "rated 10",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "jackson",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "kia",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "kia soul",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "soul",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "spengeman",
+    "frequency": 0.2503
+  },
+  {
+    "keyword": "story",
+    "frequency": 0.243
+  },
+  {
+    "keyword": "summerslam",
+    "frequency": 0.243
+  },
+  {
+    "keyword": "complete",
+    "frequency": 0.243
+  },
+  {
+    "keyword": "volleyball",
+    "frequency": 0.243
+  },
+  {
+    "keyword": "begins",
+    "frequency": 0.2423
+  },
+  {
+    "keyword": "begins",
+    "frequency": 0.2417
+  },
+  {
+    "keyword": "tronolone",
+    "frequency": 0.2403
+  },
+  {
+    "keyword": "longest greatest",
+    "frequency": 0.2403
+  },
+  {
+    "keyword": "best longest",
+    "frequency": 0.2403
+  },
+  {
+    "keyword": "23",
+    "frequency": 0.2362
+  },
+  {
+    "keyword": "hell",
+    "frequency": 0.2333
+  },
+  {
+    "keyword": "heaven",
+    "frequency": 0.2333
+  },
+  {
+    "keyword": "100",
+    "frequency": 0.2307
+  },
+  {
+    "keyword": "vegas",
+    "frequency": 0.23
+  },
+  {
+    "keyword": "pops",
+    "frequency": 0.223
+  },
+  {
+    "keyword": "trip",
+    "frequency": 0.2208
+  },
+  {
+    "keyword": "20",
+    "frequency": 0.2195
+  },
+  {
+    "keyword": "ecd",
+    "frequency": 0.2186
+  },
+  {
+    "keyword": "road trip",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "passed nj",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "raised",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "raised boro",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "promotion passed",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "16 states",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "people 700",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "road",
+    "frequency": 0.2182
+  },
+  {
+    "keyword": "year",
+    "frequency": 0.2179
+  },
+  {
+    "keyword": "dec",
+    "frequency": 0.2165
+  },
+  {
+    "keyword": "living",
+    "frequency": 0.2156
+  },
+  {
+    "keyword": "dodgeball",
+    "frequency": 0.2135
+  },
+  {
+    "keyword": "wwe",
+    "frequency": 0.2079
+  },
+  {
+    "keyword": "happy",
+    "frequency": 0.2062
+  },
+  {
+    "keyword": "30",
+    "frequency": 0.2052
+  },
+  {
+    "keyword": "oct 21",
+    "frequency": 0.2051
+  },
+  {
+    "keyword": "place armes",
+    "frequency": 0.2051
+  },
+  {
+    "keyword": "place",
+    "frequency": 0.2051
+  },
+  {
+    "keyword": "passed oct",
+    "frequency": 0.2051
+  },
+  {
+    "keyword": "personal best",
+    "frequency": 0.2051
+  },
+  {
+    "keyword": "18 20",
+    "frequency": 0.2051
+  },
+  {
+    "keyword": "pm age",
+    "frequency": 0.2051
+  },
+  {
+    "keyword": "27",
+    "frequency": 0.2042
+  },
+  {
+    "keyword": "lbs",
+    "frequency": 0.2032
+  },
+  {
+    "keyword": "oct 13",
+    "frequency": 0.2031
+  },
+  {
+    "keyword": "reopened world",
+    "frequency": 0.2031
+  },
+  {
+    "keyword": "reached",
+    "frequency": 0.2031
+  },
+  {
+    "keyword": "record 18",
+    "frequency": 0.2031
+  }
+]

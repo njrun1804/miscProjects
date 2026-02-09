@@ -1,562 +1,642 @@
 [
   {
-    "id": 22,
-    "person_name": "Dan Spengeman",
-    "year": 2015,
-    "event_description": "Dan Spengeman: Comedian of the Year",
-    "event_type": "award"
-  },
-  {
-    "id": 23,
-    "person_name": "Dan Spengeman",
-    "year": 2016,
-    "event_description": "Spengeman-Mullins wedding",
-    "event_type": "social"
-  },
-  {
-    "id": 24,
-    "person_name": "Diana",
-    "year": 2008,
-    "event_description": "Diana DiBuccio: Comedian of the Year",
-    "event_type": "award"
-  },
-  {
-    "id": 25,
-    "person_name": "Diana",
-    "year": 2014,
-    "event_description": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
-    "event_type": "social"
-  },
-  {
-    "id": 80,
-    "person_name": "Grammy Nancy",
-    "year": 2022,
-    "event_description": "Gram's 90th birthday",
-    "event_type": "milestone"
-  },
-  {
-    "id": 21,
-    "person_name": "Kevin & Leah",
-    "year": 2008,
-    "event_description": "Came out in 2008; KMJ was 3rd person to know",
-    "event_type": "social"
-  },
-  {
-    "id": 19,
-    "person_name": "Kevin & Leah",
-    "year": 2017,
-    "event_description": "Kevin & Leah engaged",
-    "event_type": "social"
-  },
-  {
-    "id": 20,
-    "person_name": "Kevin & Leah",
-    "year": 2020,
-    "event_description": "Kevin & Leah married Feb 29 (leap day)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 26,
-    "person_name": "Lauren Winston",
-    "year": 2007,
-    "event_description": "Lauren Winston turned 21 (Apr 13)",
-    "event_type": "social"
-  },
-  {
-    "id": 27,
-    "person_name": "Lauren Winston",
-    "year": 2016,
-    "event_description": "Lauren Winston: Comedian of the Year",
-    "event_type": "award"
-  },
-  {
-    "id": 28,
-    "person_name": "Lauren Winston",
-    "year": 2021,
-    "event_description": "Lauren Winston: Comedian of the Year",
-    "event_type": "award"
-  },
-  {
     "id": 29,
     "person_name": "Ma",
     "year": 2005,
     "event_description": "Difficult period after WrestleMania attendance",
-    "event_type": "wwe"
+    "event_type": "wwe",
+    "category": "family"
   },
   {
     "id": 30,
     "person_name": "Ma",
     "year": 2006,
     "event_description": "FINS Friday gatherings ongoing since March 2006",
-    "event_type": "social"
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 26,
+    "person_name": "Lauren Winston",
+    "year": 2007,
+    "event_description": "Lauren Winston turned 21 (Apr 13)",
+    "event_type": "social",
+    "category": "inner_circle"
   },
   {
     "id": 31,
     "person_name": "Ma",
     "year": 2007,
     "event_description": "WrestleMania 23 in Detroit (3rd WM)",
-    "event_type": "wwe"
+    "event_type": "wwe",
+    "category": "family"
   },
   {
     "id": 32,
     "person_name": "Ma",
     "year": 2007,
     "event_description": "Moved back to Mom's permanently (Jul 1)",
-    "event_type": "social"
-  },
-  {
-    "id": 33,
-    "person_name": "Ma",
-    "year": 2008,
-    "event_description": "WrestleMania XXIV in Florida (4th WM)",
-    "event_type": "wwe"
-  },
-  {
-    "id": 34,
-    "person_name": "Ma",
-    "year": 2008,
-    "event_description": "First semester of Health Studies completed at MU (May 8)",
-    "event_type": "social"
-  },
-  {
-    "id": 35,
-    "person_name": "Ma",
-    "year": 2009,
-    "event_description": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
-    "event_type": "wwe"
-  },
-  {
-    "id": 36,
-    "person_name": "Ma",
-    "year": 2009,
-    "event_description": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
-    "event_type": "social"
-  },
-  {
-    "id": 37,
-    "person_name": "Ma",
-    "year": 2009,
-    "event_description": "Inducted into Eta Sigma Gamma at MU (Dec 16)",
-    "event_type": "social"
-  },
-  {
-    "id": 38,
-    "person_name": "Ma",
-    "year": 2009,
-    "event_description": "Bowling 255 during a snowstorm (Mar 1)",
-    "event_type": "social"
-  },
-  {
-    "id": 74,
-    "person_name": "Ma",
-    "year": 2009,
-    "event_description": "Grandmother's 77th birthday (Nov 13)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 39,
-    "person_name": "Ma",
-    "year": 2010,
-    "event_description": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 40,
-    "person_name": "Ma",
-    "year": 2010,
-    "event_description": "WrestleMania XXVI in Arizona (939 photos)",
-    "event_type": "wwe"
-  },
-  {
-    "id": 41,
-    "person_name": "Ma",
-    "year": 2010,
-    "event_description": "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
-    "event_type": "social"
-  },
-  {
-    "id": 42,
-    "person_name": "Ma",
-    "year": 2010,
-    "event_description": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
-    "event_type": "social"
-  },
-  {
-    "id": 43,
-    "person_name": "Ma",
-    "year": 2010,
-    "event_description": "Brother Michael graduated from Kean University (May 13)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 44,
-    "person_name": "Ma",
-    "year": 2011,
-    "event_description": "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
-    "event_type": "social"
-  },
-  {
-    "id": 45,
-    "person_name": "Ma",
-    "year": 2011,
-    "event_description": "Cousin Nick married Samantha (Jul 2-3)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 46,
-    "person_name": "Ma",
-    "year": 2011,
-    "event_description": "Fell from a pickup truck (May 21)",
-    "event_type": "social"
-  },
-  {
-    "id": 47,
-    "person_name": "Ma",
-    "year": 2012,
-    "event_description": "Activities & Volunteer Coordinator promotion (May)",
-    "event_type": "social"
-  },
-  {
-    "id": 48,
-    "person_name": "Ma",
-    "year": 2013,
-    "event_description": "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
-    "event_type": "wwe"
-  },
-  {
-    "id": 49,
-    "person_name": "Ma",
-    "year": 2013,
-    "event_description": "Grandma Theresa passed away (Jun 10-15)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 50,
-    "person_name": "Ma",
-    "year": 2013,
-    "event_description": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
-    "event_type": "social"
-  },
-  {
-    "id": 51,
-    "person_name": "Ma",
-    "year": 2013,
-    "event_description": "Pilates Round 1 \u2014 only male participant",
-    "event_type": "social"
-  },
-  {
-    "id": 52,
-    "person_name": "Ma",
-    "year": 2014,
-    "event_description": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
-    "event_type": "travel"
-  },
-  {
-    "id": 53,
-    "person_name": "Ma",
-    "year": 2014,
-    "event_description": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
-    "event_type": "social"
-  },
-  {
-    "id": 54,
-    "person_name": "Ma",
-    "year": 2015,
-    "event_description": "USVI & Bahamas cruise (rated 10/10)",
-    "event_type": "travel"
-  },
-  {
-    "id": 55,
-    "person_name": "Ma",
-    "year": 2015,
-    "event_description": "Dan Spengeman: Comedian of the Year",
-    "event_type": "award"
-  },
-  {
-    "id": 56,
-    "person_name": "Ma",
-    "year": 2016,
-    "event_description": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
-    "event_type": "wwe"
-  },
-  {
-    "id": 57,
-    "person_name": "Ma",
-    "year": 2016,
-    "event_description": "Manager of the Year award",
-    "event_type": "award"
-  },
-  {
-    "id": 58,
-    "person_name": "Ma",
-    "year": 2016,
-    "event_description": "Spengeman-Mullins wedding",
-    "event_type": "social"
-  },
-  {
-    "id": 59,
-    "person_name": "Ma",
-    "year": 2017,
-    "event_description": "WrestleMania 33 (Apr 2)",
-    "event_type": "wwe"
-  },
-  {
-    "id": 60,
-    "person_name": "Ma",
-    "year": 2017,
-    "event_description": "California trip 600+ miles for Matt & Gina wedding",
-    "event_type": "travel"
-  },
-  {
-    "id": 61,
-    "person_name": "Ma",
-    "year": 2017,
-    "event_description": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
-    "event_type": "social"
-  },
-  {
-    "id": 62,
-    "person_name": "Ma",
-    "year": 2018,
-    "event_description": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
-    "event_type": "travel"
-  },
-  {
-    "id": 63,
-    "person_name": "Ma",
-    "year": 2018,
-    "event_description": "Brother Michael married Maggie (Jun 29)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 64,
-    "person_name": "Ma",
-    "year": 2019,
-    "event_description": "1,000th CHA game vs Pops Tronolone (May 22)",
-    "event_type": "social"
-  },
-  {
-    "id": 65,
-    "person_name": "Ma",
-    "year": 2019,
-    "event_description": "7th Major ECD championship (Aug 17)",
-    "event_type": "ecd"
-  },
-  {
-    "id": 66,
-    "person_name": "Ma",
-    "year": 2019,
-    "event_description": "Wisconsin Trip 1: Moore-Tronolone wedding (May 31-Jun 2)",
-    "event_type": "travel"
-  },
-  {
-    "id": 67,
-    "person_name": "Ma",
-    "year": 2019,
-    "event_description": "Weezer concert at sold-out MSG (Mar 12)",
-    "event_type": "social"
-  },
-  {
-    "id": 68,
-    "person_name": "Ma",
-    "year": 2020,
-    "event_description": "Kevin & Leah married Feb 29 (leap day)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 69,
-    "person_name": "Ma",
-    "year": 2020,
-    "event_description": "90th WWE event (Mar 8, 17th with RL)",
-    "event_type": "wwe"
-  },
-  {
-    "id": 70,
-    "person_name": "Ma",
-    "year": 2020,
-    "event_description": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
-    "event_type": "social"
-  },
-  {
-    "id": 71,
-    "person_name": "Ma",
-    "year": 2020,
-    "event_description": "Assisted Living Manager at Sunrise of Jackson (started Sep 28)",
-    "event_type": "social"
-  },
-  {
-    "id": 75,
-    "person_name": "Ma",
-    "year": 2020,
-    "event_description": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
-    "event_type": "social"
-  },
-  {
-    "id": 72,
-    "person_name": "Ma",
-    "year": 2021,
-    "event_description": "218-round ping pong match",
-    "event_type": "social"
-  },
-  {
-    "id": 73,
-    "person_name": "Ma",
-    "year": 2024,
-    "event_description": "Spain trip (Lisbon, Madrid)",
-    "event_type": "travel"
-  },
-  {
-    "id": 76,
-    "person_name": "Ma",
-    "year": 2024,
-    "event_description": "Grandmother passed (Oct 21, 11:57 PM, age 92)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 77,
-    "person_name": "Ma",
-    "year": 2025,
-    "event_description": "Mother's 70th birthday",
-    "event_type": "milestone"
-  },
-  {
-    "id": 78,
-    "person_name": "Michael",
-    "year": 2010,
-    "event_description": "Brother Michael graduated from Kean University (May 13)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 79,
-    "person_name": "Michael",
-    "year": 2018,
-    "event_description": "Brother Michael married Maggie (Jun 29)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 17,
-    "person_name": "RL (Letsche)",
-    "year": 2012,
-    "event_description": "ECD reopened with 'WORLD TOUR' (Apr 7)",
-    "event_type": "ecd"
-  },
-  {
-    "id": 18,
-    "person_name": "RL (Letsche)",
-    "year": 2020,
-    "event_description": "90th WWE event (Mar 8, 17th with RL)",
-    "event_type": "wwe"
-  },
-  {
-    "id": 4,
-    "person_name": "Rob",
-    "year": 2008,
-    "event_description": "Car accident on West Park Avenue (Nov 4)",
-    "event_type": "social"
-  },
-  {
-    "id": 2,
-    "person_name": "Rob",
-    "year": 2011,
-    "event_description": "First meal with Rob at Ocean Bay Diner (Jan 1)",
-    "event_type": "social"
-  },
-  {
-    "id": 5,
-    "person_name": "Rob",
-    "year": 2011,
-    "event_description": "RK's 22nd birthday (Dec 14)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 6,
-    "person_name": "Rob",
-    "year": 2012,
-    "event_description": "Record 18 rounds at Orchard Park (Oct 13)",
-    "event_type": "social"
-  },
-  {
-    "id": 7,
-    "person_name": "Rob",
-    "year": 2013,
-    "event_description": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
-    "event_type": "travel"
-  },
-  {
-    "id": 8,
-    "person_name": "Rob",
-    "year": 2019,
-    "event_description": "RK's 30th birthday in Atlantic City (Dec 15-16)",
-    "event_type": "milestone"
-  },
-  {
-    "id": 3,
-    "person_name": "Rob",
-    "year": 2021,
-    "event_description": "10-year anniversary with Rob (Jan 15)",
-    "event_type": "social"
-  },
-  {
-    "id": 9,
-    "person_name": "Rob",
-    "year": 2021,
-    "event_description": "Danny won inaugural 'RK Quiz' (Dec 11)",
-    "event_type": "social"
-  },
-  {
-    "id": 10,
-    "person_name": "Rob",
-    "year": 2021,
-    "event_description": "Alexandria Virginia work assignment (Sep 20-23)",
-    "event_type": "social"
-  },
-  {
-    "id": 11,
-    "person_name": "Rob",
-    "year": 2022,
-    "event_description": "Connecticut work assignment (Sunrise Wilton)",
-    "event_type": "social"
+    "event_type": "social",
+    "category": "family"
   },
   {
     "id": 16,
     "person_name": "The Pops",
     "year": 2007,
     "event_description": "Dad's surprise 50th birthday (Jul 29)",
-    "event_type": "milestone"
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 24,
+    "person_name": "Diana",
+    "year": 2008,
+    "event_description": "Diana DiBuccio: Comedian of the Year",
+    "event_type": "award",
+    "category": null
+  },
+  {
+    "id": 21,
+    "person_name": "Kevin & Leah",
+    "year": 2008,
+    "event_description": "Came out in 2008; KMJ was 3rd person to know",
+    "event_type": "social",
+    "category": null
+  },
+  {
+    "id": 33,
+    "person_name": "Ma",
+    "year": 2008,
+    "event_description": "WrestleMania XXIV in Florida (4th WM)",
+    "event_type": "wwe",
+    "category": "family"
+  },
+  {
+    "id": 34,
+    "person_name": "Ma",
+    "year": 2008,
+    "event_description": "First semester of Health Studies completed at MU (May 8)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 4,
+    "person_name": "Rob",
+    "year": 2008,
+    "event_description": "Car accident on West Park Avenue (Nov 4)",
+    "event_type": "social",
+    "category": "partner"
   },
   {
     "id": 12,
     "person_name": "The Pops",
     "year": 2008,
     "event_description": "First beer shared with The Pops (Aug 21)",
-    "event_type": "social"
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 35,
+    "person_name": "Ma",
+    "year": 2009,
+    "event_description": "WrestleMania 25 in Houston (5th WM) — 72,744 attendance",
+    "event_type": "wwe",
+    "category": "family"
+  },
+  {
+    "id": 36,
+    "person_name": "Ma",
+    "year": 2009,
+    "event_description": "SkyDive I at 10,000 feet (Aug 16) — 'maybe the happiest 24-span of my life'",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 37,
+    "person_name": "Ma",
+    "year": 2009,
+    "event_description": "Inducted into Eta Sigma Gamma at MU (Dec 16)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 38,
+    "person_name": "Ma",
+    "year": 2009,
+    "event_description": "Bowling 255 during a snowstorm (Mar 1)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 74,
+    "person_name": "Ma",
+    "year": 2009,
+    "event_description": "Grandmother's 77th birthday (Nov 13)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 39,
+    "person_name": "Ma",
+    "year": 2010,
+    "event_description": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 40,
+    "person_name": "Ma",
+    "year": 2010,
+    "event_description": "WrestleMania XXVI in Arizona (939 photos)",
+    "event_type": "wwe",
+    "category": "family"
+  },
+  {
+    "id": 41,
+    "person_name": "Ma",
+    "year": 2010,
+    "event_description": "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 42,
+    "person_name": "Ma",
+    "year": 2010,
+    "event_description": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 43,
+    "person_name": "Ma",
+    "year": 2010,
+    "event_description": "Brother Michael graduated from Kean University (May 13)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 78,
+    "person_name": "Michael",
+    "year": 2010,
+    "event_description": "Brother Michael graduated from Kean University (May 13)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 44,
+    "person_name": "Ma",
+    "year": 2011,
+    "event_description": "Relationship begins Jan 15 (the 'Ro(b)mantic Era')",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 45,
+    "person_name": "Ma",
+    "year": 2011,
+    "event_description": "Cousin Nick married Samantha (Jul 2-3)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 46,
+    "person_name": "Ma",
+    "year": 2011,
+    "event_description": "Fell from a pickup truck (May 21)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 2,
+    "person_name": "Rob",
+    "year": 2011,
+    "event_description": "First meal with Rob at Ocean Bay Diner (Jan 1)",
+    "event_type": "social",
+    "category": "partner"
+  },
+  {
+    "id": 5,
+    "person_name": "Rob",
+    "year": 2011,
+    "event_description": "RK's 22nd birthday (Dec 14)",
+    "event_type": "milestone",
+    "category": "partner"
+  },
+  {
+    "id": 47,
+    "person_name": "Ma",
+    "year": 2012,
+    "event_description": "Activities & Volunteer Coordinator promotion (May)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 17,
+    "person_name": "RL (Letsche)",
+    "year": 2012,
+    "event_description": "ECD reopened with 'WORLD TOUR' (Apr 7)",
+    "event_type": "ecd",
+    "category": "inner_circle"
+  },
+  {
+    "id": 6,
+    "person_name": "Rob",
+    "year": 2012,
+    "event_description": "Record 18 rounds at Orchard Park (Oct 13)",
+    "event_type": "social",
+    "category": "partner"
+  },
+  {
+    "id": 48,
+    "person_name": "Ma",
+    "year": 2013,
+    "event_description": "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
+    "event_type": "wwe",
+    "category": "family"
+  },
+  {
+    "id": 49,
+    "person_name": "Ma",
+    "year": 2013,
+    "event_description": "Grandma Theresa passed away (Jun 10-15)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 50,
+    "person_name": "Ma",
+    "year": 2013,
+    "event_description": "Maryland wedding — gave speech, danced 180 minutes (Nov 7-9)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 51,
+    "person_name": "Ma",
+    "year": 2013,
+    "event_description": "Pilates Round 1 — only male participant",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 7,
+    "person_name": "Rob",
+    "year": 2013,
+    "event_description": "Norwegian Breakaway — first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+    "event_type": "travel",
+    "category": "partner"
+  },
+  {
+    "id": 25,
+    "person_name": "Diana",
+    "year": 2014,
+    "event_description": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
+    "event_type": "social",
+    "category": null
+  },
+  {
+    "id": 52,
+    "person_name": "Ma",
+    "year": 2014,
+    "event_description": "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+    "event_type": "travel",
+    "category": "family"
+  },
+  {
+    "id": 53,
+    "person_name": "Ma",
+    "year": 2014,
+    "event_description": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
+    "event_type": "social",
+    "category": "family"
   },
   {
     "id": 13,
     "person_name": "The Pops",
     "year": 2014,
     "event_description": "Cornhole Championship won with Pops at Maggie & Mike's (Aug 30)",
-    "event_type": "social"
+    "event_type": "social",
+    "category": "family"
   },
   {
     "id": 14,
     "person_name": "The Pops",
     "year": 2014,
     "event_description": "The Pops: Comedian of the Year (2nd straight year)",
-    "event_type": "award"
+    "event_type": "award",
+    "category": "family"
+  },
+  {
+    "id": 1,
+    "person_name": "Valerie",
+    "year": 2014,
+    "event_description": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
+    "event_type": "social",
+    "category": null
+  },
+  {
+    "id": 22,
+    "person_name": "Dan Spengeman",
+    "year": 2015,
+    "event_description": "Dan Spengeman: Comedian of the Year",
+    "event_type": "award",
+    "category": "inner_circle"
+  },
+  {
+    "id": 54,
+    "person_name": "Ma",
+    "year": 2015,
+    "event_description": "USVI & Bahamas cruise (rated 10/10)",
+    "event_type": "travel",
+    "category": "family"
+  },
+  {
+    "id": 55,
+    "person_name": "Ma",
+    "year": 2015,
+    "event_description": "Dan Spengeman: Comedian of the Year",
+    "event_type": "award",
+    "category": "family"
+  },
+  {
+    "id": 23,
+    "person_name": "Dan Spengeman",
+    "year": 2016,
+    "event_description": "Spengeman-Mullins wedding",
+    "event_type": "social",
+    "category": "inner_circle"
+  },
+  {
+    "id": 27,
+    "person_name": "Lauren Winston",
+    "year": 2016,
+    "event_description": "Lauren Winston: Comedian of the Year",
+    "event_type": "award",
+    "category": "inner_circle"
+  },
+  {
+    "id": 56,
+    "person_name": "Ma",
+    "year": 2016,
+    "event_description": "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
+    "event_type": "wwe",
+    "category": "family"
+  },
+  {
+    "id": 57,
+    "person_name": "Ma",
+    "year": 2016,
+    "event_description": "Manager of the Year award",
+    "event_type": "award",
+    "category": "family"
+  },
+  {
+    "id": 58,
+    "person_name": "Ma",
+    "year": 2016,
+    "event_description": "Spengeman-Mullins wedding",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 19,
+    "person_name": "Kevin & Leah",
+    "year": 2017,
+    "event_description": "Kevin & Leah engaged",
+    "event_type": "social",
+    "category": null
+  },
+  {
+    "id": 59,
+    "person_name": "Ma",
+    "year": 2017,
+    "event_description": "WrestleMania 33 (Apr 2)",
+    "event_type": "wwe",
+    "category": "family"
+  },
+  {
+    "id": 60,
+    "person_name": "Ma",
+    "year": 2017,
+    "event_description": "California trip 600+ miles for Matt & Gina wedding",
+    "event_type": "travel",
+    "category": "family"
+  },
+  {
+    "id": 61,
+    "person_name": "Ma",
+    "year": 2017,
+    "event_description": "Broken left pinky — volleyball career paused (Mar 26)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 62,
+    "person_name": "Ma",
+    "year": 2018,
+    "event_description": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
+    "event_type": "travel",
+    "category": "family"
+  },
+  {
+    "id": 63,
+    "person_name": "Ma",
+    "year": 2018,
+    "event_description": "Brother Michael married Maggie (Jun 29)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 79,
+    "person_name": "Michael",
+    "year": 2018,
+    "event_description": "Brother Michael married Maggie (Jun 29)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 64,
+    "person_name": "Ma",
+    "year": 2019,
+    "event_description": "1,000th CHA game vs Pops Tronolone (May 22)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 65,
+    "person_name": "Ma",
+    "year": 2019,
+    "event_description": "7th Major ECD championship (Aug 17)",
+    "event_type": "ecd",
+    "category": "family"
+  },
+  {
+    "id": 66,
+    "person_name": "Ma",
+    "year": 2019,
+    "event_description": "Wisconsin Trip 1: Moore-Tronolone wedding (May 31-Jun 2)",
+    "event_type": "travel",
+    "category": "family"
+  },
+  {
+    "id": 67,
+    "person_name": "Ma",
+    "year": 2019,
+    "event_description": "Weezer concert at sold-out MSG (Mar 12)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 8,
+    "person_name": "Rob",
+    "year": 2019,
+    "event_description": "RK's 30th birthday in Atlantic City (Dec 15-16)",
+    "event_type": "milestone",
+    "category": "partner"
   },
   {
     "id": 15,
     "person_name": "The Pops",
     "year": 2019,
     "event_description": "1,000th CHA game vs Pops Tronolone (May 22)",
-    "event_type": "social"
+    "event_type": "social",
+    "category": "family"
   },
   {
-    "id": 1,
-    "person_name": "Valerie",
-    "year": 2014,
-    "event_description": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
-    "event_type": "social"
+    "id": 20,
+    "person_name": "Kevin & Leah",
+    "year": 2020,
+    "event_description": "Kevin & Leah married Feb 29 (leap day)",
+    "event_type": "milestone",
+    "category": null
+  },
+  {
+    "id": 68,
+    "person_name": "Ma",
+    "year": 2020,
+    "event_description": "Kevin & Leah married Feb 29 (leap day)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 69,
+    "person_name": "Ma",
+    "year": 2020,
+    "event_description": "90th WWE event (Mar 8, 17th with RL)",
+    "event_type": "wwe",
+    "category": "family"
+  },
+  {
+    "id": 70,
+    "person_name": "Ma",
+    "year": 2020,
+    "event_description": "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 71,
+    "person_name": "Ma",
+    "year": 2020,
+    "event_description": "Assisted Living Manager at Sunrise of Jackson (started Sep 28)",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 75,
+    "person_name": "Ma",
+    "year": 2020,
+    "event_description": "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 18,
+    "person_name": "RL (Letsche)",
+    "year": 2020,
+    "event_description": "90th WWE event (Mar 8, 17th with RL)",
+    "event_type": "wwe",
+    "category": "inner_circle"
+  },
+  {
+    "id": 28,
+    "person_name": "Lauren Winston",
+    "year": 2021,
+    "event_description": "Lauren Winston: Comedian of the Year",
+    "event_type": "award",
+    "category": "inner_circle"
+  },
+  {
+    "id": 72,
+    "person_name": "Ma",
+    "year": 2021,
+    "event_description": "218-round ping pong match",
+    "event_type": "social",
+    "category": "family"
+  },
+  {
+    "id": 3,
+    "person_name": "Rob",
+    "year": 2021,
+    "event_description": "10-year anniversary with Rob (Jan 15)",
+    "event_type": "social",
+    "category": "partner"
+  },
+  {
+    "id": 9,
+    "person_name": "Rob",
+    "year": 2021,
+    "event_description": "Danny won inaugural 'RK Quiz' (Dec 11)",
+    "event_type": "social",
+    "category": "partner"
+  },
+  {
+    "id": 10,
+    "person_name": "Rob",
+    "year": 2021,
+    "event_description": "Alexandria Virginia work assignment (Sep 20-23)",
+    "event_type": "social",
+    "category": "partner"
+  },
+  {
+    "id": 80,
+    "person_name": "Grammy Nancy",
+    "year": 2022,
+    "event_description": "Gram's 90th birthday",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 11,
+    "person_name": "Rob",
+    "year": 2022,
+    "event_description": "Connecticut work assignment (Sunrise Wilton)",
+    "event_type": "social",
+    "category": "partner"
+  },
+  {
+    "id": 73,
+    "person_name": "Ma",
+    "year": 2024,
+    "event_description": "Spain trip (Lisbon, Madrid)",
+    "event_type": "travel",
+    "category": "family"
+  },
+  {
+    "id": 76,
+    "person_name": "Ma",
+    "year": 2024,
+    "event_description": "Grandmother passed (Oct 21, 11:57 PM, age 92)",
+    "event_type": "milestone",
+    "category": "family"
+  },
+  {
+    "id": 77,
+    "person_name": "Ma",
+    "year": 2025,
+    "event_description": "Mother's 70th birthday",
+    "event_type": "milestone",
+    "category": "family"
   }
 ]

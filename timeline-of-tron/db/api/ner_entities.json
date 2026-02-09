@@ -1,13 +1,5 @@
 [
   {
-    "id": 308,
-    "source_table": "quotes",
-    "source_id": 19,
-    "entity_text": "2009",
-    "entity_label": "DATE",
-    "year": null
-  },
-  {
     "id": 309,
     "source_table": "quotes",
     "source_id": 23,
@@ -16,292 +8,124 @@
     "year": null
   },
   {
-    "id": 344,
-    "source_table": "fun_facts",
-    "source_id": 12,
-    "entity_text": "38",
-    "entity_label": "DATE",
-    "year": null
-  },
-  {
-    "id": 395,
-    "source_table": "fun_facts",
-    "source_id": 38,
-    "entity_text": "age 20",
-    "entity_label": "DATE",
-    "year": null
-  },
-  {
-    "id": 307,
+    "id": 314,
     "source_table": "quotes",
-    "source_id": 19,
-    "entity_text": "The Greatest Year Ever",
-    "entity_label": "EVENT",
-    "year": null
+    "source_id": 26,
+    "entity_text": "'13",
+    "entity_label": "DATE",
+    "year": 2013
   },
   {
-    "id": 424,
-    "source_table": "fun_facts",
-    "source_id": 53,
-    "entity_text": "Author",
-    "entity_label": "GPE",
-    "year": null
-  },
-  {
-    "id": 336,
-    "source_table": "fun_facts",
-    "source_id": 9,
-    "entity_text": "East Coast Dodgeball",
-    "entity_label": "LOC",
-    "year": null
-  },
-  {
-    "id": 306,
-    "source_table": "quotes",
-    "source_id": 19,
-    "entity_text": "Friends, Family, Freedom",
-    "entity_label": "ORG",
-    "year": null
-  },
-  {
-    "id": 323,
-    "source_table": "fun_facts",
-    "source_id": 1,
-    "entity_text": "Undertaker",
-    "entity_label": "ORG",
-    "year": null
-  },
-  {
-    "id": 334,
-    "source_table": "fun_facts",
-    "source_id": 8,
-    "entity_text": "Timeline",
-    "entity_label": "ORG",
-    "year": null
-  },
-  {
-    "id": 335,
-    "source_table": "fun_facts",
-    "source_id": 8,
-    "entity_text": "LiveJournal",
-    "entity_label": "ORG",
-    "year": null
-  },
-  {
-    "id": 343,
-    "source_table": "fun_facts",
-    "source_id": 12,
-    "entity_text": "Major League",
-    "entity_label": "ORG",
-    "year": null
-  },
-  {
-    "id": 437,
-    "source_table": "fun_facts",
-    "source_id": 60,
-    "entity_text": "VHS",
-    "entity_label": "ORG",
-    "year": null
-  },
-  {
-    "id": 438,
-    "source_table": "fun_facts",
-    "source_id": 60,
-    "entity_text": "Royal Rumble",
-    "entity_label": "ORG",
-    "year": null
-  },
-  {
-    "id": 333,
-    "source_table": "fun_facts",
-    "source_id": 7,
-    "entity_text": "Angela Hibbert",
-    "entity_label": "PERSON",
-    "year": null
-  },
-  {
-    "id": 337,
-    "source_table": "fun_facts",
-    "source_id": 9,
-    "entity_text": "WrestleJohnMania XXVI'",
-    "entity_label": "PERSON",
-    "year": null
-  },
-  {
-    "id": 423,
-    "source_table": "fun_facts",
-    "source_id": 52,
-    "entity_text": "Timline",
-    "entity_label": "PERSON",
-    "year": null
-  },
-  {
-    "id": 436,
-    "source_table": "fun_facts",
-    "source_id": 60,
-    "entity_text": "Amorino",
-    "entity_label": "PERSON",
-    "year": null
-  },
-  {
-    "id": 1,
+    "id": 109,
     "source_table": "milestones",
-    "source_id": 1,
-    "entity_text": "LiveJournal",
-    "entity_label": "ORG",
-    "year": 2004
-  },
-  {
-    "id": 2,
-    "source_table": "milestones",
-    "source_id": 4,
-    "entity_text": "WrestleMania",
-    "entity_label": "ORG",
-    "year": 2005
-  },
-  {
-    "id": 3,
-    "source_table": "milestones",
-    "source_id": 5,
-    "entity_text": "70",
+    "source_id": 88,
+    "entity_text": "'2010",
     "entity_label": "DATE",
-    "year": 2006
+    "year": 2013
   },
   {
-    "id": 4,
+    "id": 205,
     "source_table": "milestones",
-    "source_id": 5,
-    "entity_text": "Dec 30",
+    "source_id": 150,
+    "entity_text": "'2020",
     "entity_label": "DATE",
-    "year": 2006
+    "year": 2019
   },
   {
-    "id": 6,
+    "id": 78,
     "source_table": "milestones",
-    "source_id": 6,
-    "entity_text": "Friday",
+    "source_id": 57,
+    "entity_text": "(Jan 1",
     "entity_label": "DATE",
-    "year": 2006
+    "year": 2011
   },
   {
-    "id": 7,
+    "id": 248,
     "source_table": "milestones",
-    "source_id": 6,
-    "entity_text": "March 2006",
+    "source_id": 172,
+    "entity_text": "1,000+",
     "entity_label": "DATE",
-    "year": 2006
+    "year": 2021
   },
   {
-    "id": 392,
+    "id": 104,
+    "source_table": "milestones",
+    "source_id": 81,
+    "entity_text": "10-15",
+    "entity_label": "DATE",
+    "year": 2013
+  },
+  {
+    "id": 242,
+    "source_table": "milestones",
+    "source_id": 171,
+    "entity_text": "10-year",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 204,
+    "source_table": "milestones",
+    "source_id": 149,
+    "entity_text": "100+ years",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 132,
+    "source_table": "milestones",
+    "source_id": 103,
+    "entity_text": "100,000+",
+    "entity_label": "DATE",
+    "year": 2016
+  },
+  {
+    "id": 71,
+    "source_table": "milestones",
+    "source_id": 55,
+    "entity_text": "10th Anniversary",
+    "entity_label": "DATE",
+    "year": 2010
+  },
+  {
+    "id": 148,
+    "source_table": "milestones",
+    "source_id": 114,
+    "entity_text": "12-Year Anniversary",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 368,
     "source_table": "fun_facts",
-    "source_id": 37,
-    "entity_text": "May 2006",
+    "source_id": 24,
+    "entity_text": "13, 2009",
     "entity_label": "DATE",
-    "year": 2006
+    "year": 2009
   },
   {
-    "id": 393,
+    "id": 399,
     "source_table": "fun_facts",
-    "source_id": 37,
-    "entity_text": "September 2, 2007",
+    "source_id": 41,
+    "entity_text": "14, 2018",
     "entity_label": "DATE",
-    "year": 2006
+    "year": 2018
   },
   {
-    "id": 394,
-    "source_table": "fun_facts",
-    "source_id": 37,
-    "entity_text": "roughly 16 months",
-    "entity_label": "DATE",
-    "year": 2006
-  },
-  {
-    "id": 5,
+    "id": 274,
     "source_table": "milestones",
-    "source_id": 6,
-    "entity_text": "FINS",
-    "entity_label": "ORG",
-    "year": 2006
+    "source_id": 192,
+    "entity_text": "15-year",
+    "entity_label": "DATE",
+    "year": 2023
   },
   {
-    "id": 8,
+    "id": 213,
     "source_table": "milestones",
-    "source_id": 7,
-    "entity_text": "a single day",
+    "source_id": 151,
+    "entity_text": "17 days Jan-Feb",
     "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 13,
-    "source_table": "milestones",
-    "source_id": 10,
-    "entity_text": "Oct 29",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 15,
-    "source_table": "milestones",
-    "source_id": 12,
-    "entity_text": "23",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 18,
-    "source_table": "milestones",
-    "source_id": 15,
-    "entity_text": "Nov 19",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 20,
-    "source_table": "milestones",
-    "source_id": 16,
-    "entity_text": "Dec 12",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 21,
-    "source_table": "milestones",
-    "source_id": 17,
-    "entity_text": "one week",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 23,
-    "source_table": "milestones",
-    "source_id": 18,
-    "entity_text": "21",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 24,
-    "source_table": "milestones",
-    "source_id": 19,
-    "entity_text": "age 20",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 304,
-    "source_table": "quotes",
-    "source_id": 12,
-    "entity_text": "2007",
-    "entity_label": "DATE",
-    "year": 2007
-  },
-  {
-    "id": 348,
-    "source_table": "fun_facts",
-    "source_id": 15,
-    "entity_text": "a single day",
-    "entity_label": "DATE",
-    "year": 2007
+    "year": 2020
   },
   {
     "id": 396,
@@ -312,132 +136,68 @@
     "year": 2007
   },
   {
-    "id": 398,
-    "source_table": "fun_facts",
-    "source_id": 40,
-    "entity_text": "December 12, 2007",
+    "id": 289,
+    "source_table": "milestones",
+    "source_id": 201,
+    "entity_text": "180+",
     "entity_label": "DATE",
-    "year": 2007
+    "year": 2024
   },
   {
-    "id": 9,
+    "id": 181,
     "source_table": "milestones",
-    "source_id": 8,
-    "entity_text": "Ocean Township Recreation",
-    "entity_label": "FAC",
-    "year": 2007
-  },
-  {
-    "id": 11,
-    "source_table": "milestones",
-    "source_id": 9,
-    "entity_text": "Detroit",
-    "entity_label": "GPE",
-    "year": 2007
-  },
-  {
-    "id": 14,
-    "source_table": "milestones",
-    "source_id": 10,
-    "entity_text": "Philadelphia",
-    "entity_label": "GPE",
-    "year": 2007
-  },
-  {
-    "id": 10,
-    "source_table": "milestones",
-    "source_id": 9,
-    "entity_text": "WrestleMania 23",
-    "entity_label": "ORG",
-    "year": 2007
-  },
-  {
-    "id": 12,
-    "source_table": "milestones",
-    "source_id": 10,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2007
-  },
-  {
-    "id": 17,
-    "source_table": "milestones",
-    "source_id": 15,
-    "entity_text": "MU Co-Ed Dodgeball League",
-    "entity_label": "ORG",
-    "year": 2007
-  },
-  {
-    "id": 19,
-    "source_table": "milestones",
-    "source_id": 16,
-    "entity_text": "WWE Stock",
-    "entity_label": "ORG",
-    "year": 2007
-  },
-  {
-    "id": 397,
-    "source_table": "fun_facts",
-    "source_id": 40,
-    "entity_text": "WWE Stock",
-    "entity_label": "ORG",
-    "year": 2007
-  },
-  {
-    "id": 16,
-    "source_table": "milestones",
-    "source_id": 14,
-    "entity_text": "Mom",
-    "entity_label": "PERSON",
-    "year": 2007
-  },
-  {
-    "id": 22,
-    "source_table": "milestones",
-    "source_id": 18,
-    "entity_text": "Lauren Winston",
-    "entity_label": "PERSON",
-    "year": 2007
-  },
-  {
-    "id": 29,
-    "source_table": "milestones",
-    "source_id": 21,
-    "entity_text": "May 8)",
+    "source_id": 136,
+    "entity_text": "19 days",
     "entity_label": "DATE",
-    "year": 2008
+    "year": 2019
   },
   {
-    "id": 31,
-    "source_table": "milestones",
-    "source_id": 22,
-    "entity_text": "Jan 27",
-    "entity_label": "DATE",
-    "year": 2008
-  },
-  {
-    "id": 33,
-    "source_table": "milestones",
-    "source_id": 24,
-    "entity_text": "3-Year Anniversary",
-    "entity_label": "DATE",
-    "year": 2008
-  },
-  {
-    "id": 34,
-    "source_table": "milestones",
-    "source_id": 25,
-    "entity_text": "24",
-    "entity_label": "DATE",
-    "year": 2008
-  },
-  {
-    "id": 40,
-    "source_table": "milestones",
+    "id": 315,
+    "source_table": "quotes",
     "source_id": 29,
-    "entity_text": "Nov 4",
+    "entity_text": "1997, 2007,",
     "entity_label": "DATE",
-    "year": 2008
+    "year": 2017
+  },
+  {
+    "id": 164,
+    "source_table": "milestones",
+    "source_id": 123,
+    "entity_text": "2 weeks",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 239,
+    "source_table": "milestones",
+    "source_id": 170,
+    "entity_text": "20 years",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 329,
+    "source_table": "fun_facts",
+    "source_id": 5,
+    "entity_text": "20 years",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 151,
+    "source_table": "milestones",
+    "source_id": 116,
+    "entity_text": "20-year",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 304,
+    "source_table": "quotes",
+    "source_id": 12,
+    "entity_text": "2007",
+    "entity_label": "DATE",
+    "year": 2007
   },
   {
     "id": 41,
@@ -456,212 +216,12 @@
     "year": 2008
   },
   {
-    "id": 425,
-    "source_table": "fun_facts",
-    "source_id": 54,
-    "entity_text": "Jan 22, 2008",
-    "entity_label": "DATE",
-    "year": 2008
-  },
-  {
     "id": 433,
     "source_table": "fun_facts",
     "source_id": 59,
     "entity_text": "2008",
     "entity_label": "DATE",
     "year": 2008
-  },
-  {
-    "id": 36,
-    "source_table": "milestones",
-    "source_id": 26,
-    "entity_text": "the Year",
-    "entity_label": "EVENT",
-    "year": 2008
-  },
-  {
-    "id": 26,
-    "source_table": "milestones",
-    "source_id": 20,
-    "entity_text": "Florida",
-    "entity_label": "GPE",
-    "year": 2008
-  },
-  {
-    "id": 43,
-    "source_table": "milestones",
-    "source_id": 31,
-    "entity_text": "Atlantic City",
-    "entity_label": "GPE",
-    "year": 2008
-  },
-  {
-    "id": 39,
-    "source_table": "milestones",
-    "source_id": 29,
-    "entity_text": "West Park Avenue",
-    "entity_label": "LOC",
-    "year": 2008
-  },
-  {
-    "id": 25,
-    "source_table": "milestones",
-    "source_id": 20,
-    "entity_text": "WrestleMania XXIV",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 27,
-    "source_table": "milestones",
-    "source_id": 21,
-    "entity_text": "Health Studies",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 28,
-    "source_table": "milestones",
-    "source_id": 21,
-    "entity_text": "MU",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 30,
-    "source_table": "milestones",
-    "source_id": 22,
-    "entity_text": "Royal Rumble",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 32,
-    "source_table": "milestones",
-    "source_id": 24,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 38,
-    "source_table": "milestones",
-    "source_id": 28,
-    "entity_text": "The Pops",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 42,
-    "source_table": "milestones",
-    "source_id": 30,
-    "entity_text": "KMJ",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 44,
-    "source_table": "milestones",
-    "source_id": 32,
-    "entity_text": "Deactivated Facebook",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 432,
-    "source_table": "fun_facts",
-    "source_id": 59,
-    "entity_text": "KMJ",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 434,
-    "source_table": "fun_facts",
-    "source_id": 59,
-    "entity_text": "MarinaGrille",
-    "entity_label": "ORG",
-    "year": 2008
-  },
-  {
-    "id": 35,
-    "source_table": "milestones",
-    "source_id": 26,
-    "entity_text": "Diana DiBuccio: Comedian",
-    "entity_label": "PERSON",
-    "year": 2008
-  },
-  {
-    "id": 37,
-    "source_table": "milestones",
-    "source_id": 27,
-    "entity_text": "Tom Petty '",
-    "entity_label": "PERSON",
-    "year": 2008
-  },
-  {
-    "id": 435,
-    "source_table": "fun_facts",
-    "source_id": 59,
-    "entity_text": "Brick NJ",
-    "entity_label": "PERSON",
-    "year": 2008
-  },
-  {
-    "id": 46,
-    "source_table": "milestones",
-    "source_id": 33,
-    "entity_text": "40 months",
-    "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 49,
-    "source_table": "milestones",
-    "source_id": 36,
-    "entity_text": "Oct 11",
-    "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 55,
-    "source_table": "milestones",
-    "source_id": 39,
-    "entity_text": "Dec 16",
-    "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 56,
-    "source_table": "milestones",
-    "source_id": 40,
-    "entity_text": "multi-day",
-    "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 57,
-    "source_table": "milestones",
-    "source_id": 41,
-    "entity_text": "Mar 1",
-    "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 61,
-    "source_table": "milestones",
-    "source_id": 43,
-    "entity_text": "Nov 13",
-    "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 63,
-    "source_table": "milestones",
-    "source_id": 45,
-    "entity_text": "all year",
-    "entity_label": "DATE",
-    "year": 2009
   },
   {
     "id": 64,
@@ -672,20 +232,12 @@
     "year": 2009
   },
   {
-    "id": 368,
-    "source_table": "fun_facts",
-    "source_id": 24,
-    "entity_text": "13, 2009",
+    "id": 308,
+    "source_table": "quotes",
+    "source_id": 19,
+    "entity_text": "2009",
     "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 369,
-    "source_table": "fun_facts",
-    "source_id": 25,
-    "entity_text": "Dec 23, 2009",
-    "entity_label": "DATE",
-    "year": 2009
+    "year": null
   },
   {
     "id": 377,
@@ -704,258 +256,18 @@
     "year": 2009
   },
   {
-    "id": 422,
-    "source_table": "fun_facts",
-    "source_id": 51,
-    "entity_text": "2013",
+    "id": 312,
+    "source_table": "quotes",
+    "source_id": 26,
+    "entity_text": "2010",
     "entity_label": "DATE",
-    "year": 2009
+    "year": 2013
   },
   {
-    "id": 431,
+    "id": 382,
     "source_table": "fun_facts",
-    "source_id": 58,
-    "entity_text": "Dec 27, 2009",
-    "entity_label": "DATE",
-    "year": 2009
-  },
-  {
-    "id": 52,
-    "source_table": "milestones",
-    "source_id": 38,
-    "entity_text": "U.S. Open Tennis Championships",
-    "entity_label": "EVENT",
-    "year": 2009
-  },
-  {
-    "id": 430,
-    "source_table": "fun_facts",
-    "source_id": 58,
-    "entity_text": "Giants Stadium",
-    "entity_label": "FAC",
-    "year": 2009
-  },
-  {
-    "id": 48,
-    "source_table": "milestones",
-    "source_id": 34,
-    "entity_text": "Houston",
-    "entity_label": "GPE",
-    "year": 2009
-  },
-  {
-    "id": 363,
-    "source_table": "fun_facts",
-    "source_id": 24,
-    "entity_text": "India",
-    "entity_label": "GPE",
-    "year": 2009
-  },
-  {
-    "id": 364,
-    "source_table": "fun_facts",
-    "source_id": 24,
-    "entity_text": "Estelle",
-    "entity_label": "GPE",
-    "year": 2009
-  },
-  {
-    "id": 45,
-    "source_table": "milestones",
-    "source_id": 33,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 47,
-    "source_table": "milestones",
-    "source_id": 34,
-    "entity_text": "WrestleMania 25",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 53,
-    "source_table": "milestones",
-    "source_id": 39,
-    "entity_text": "Eta",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 54,
-    "source_table": "milestones",
-    "source_id": 39,
-    "entity_text": "MU",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 58,
-    "source_table": "milestones",
-    "source_id": 42,
-    "entity_text": "WinterBall",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 62,
-    "source_table": "milestones",
-    "source_id": 44,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 370,
-    "source_table": "fun_facts",
-    "source_id": 26,
-    "entity_text": "Smalls",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 371,
-    "source_table": "fun_facts",
-    "source_id": 26,
-    "entity_text": "Dennabuam",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 372,
-    "source_table": "fun_facts",
-    "source_id": 26,
-    "entity_text": "Canzanella, Letsche,",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 373,
-    "source_table": "fun_facts",
-    "source_id": 26,
-    "entity_text": "Jacobs",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 376,
-    "source_table": "fun_facts",
-    "source_id": 26,
-    "entity_text": "Adams (Oct 11, 2009",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 428,
-    "source_table": "fun_facts",
-    "source_id": 58,
-    "entity_text": "Carolina Panthers",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 429,
-    "source_table": "fun_facts",
-    "source_id": 58,
-    "entity_text": "Giants",
-    "entity_label": "ORG",
-    "year": 2009
-  },
-  {
-    "id": 50,
-    "source_table": "milestones",
-    "source_id": 37,
-    "entity_text": "John Legend",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 51,
-    "source_table": "milestones",
-    "source_id": 37,
-    "entity_text": "Kanye West",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 59,
-    "source_table": "milestones",
-    "source_id": 42,
-    "entity_text": "Melissa Kerr",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 60,
-    "source_table": "milestones",
-    "source_id": 43,
-    "entity_text": "Grandmother",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 362,
-    "source_table": "fun_facts",
-    "source_id": 24,
-    "entity_text": "John Legend",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 365,
-    "source_table": "fun_facts",
-    "source_id": 24,
-    "entity_text": "Buju Banton",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 366,
-    "source_table": "fun_facts",
-    "source_id": 24,
-    "entity_text": "Rick Ross",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 367,
-    "source_table": "fun_facts",
-    "source_id": 24,
-    "entity_text": "Kanye West",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 374,
-    "source_table": "fun_facts",
-    "source_id": 26,
-    "entity_text": "Basista",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 375,
-    "source_table": "fun_facts",
-    "source_id": 26,
-    "entity_text": "Hoppe",
-    "entity_label": "PERSON",
-    "year": 2009
-  },
-  {
-    "id": 71,
-    "source_table": "milestones",
-    "source_id": 55,
-    "entity_text": "10th Anniversary",
-    "entity_label": "DATE",
-    "year": 2010
-  },
-  {
-    "id": 75,
-    "source_table": "milestones",
-    "source_id": 56,
-    "entity_text": "May 13",
+    "source_id": 30,
+    "entity_text": "2010",
     "entity_label": "DATE",
     "year": 2010
   },
@@ -968,364 +280,12 @@
     "year": 2010
   },
   {
-    "id": 382,
-    "source_table": "fun_facts",
-    "source_id": 30,
-    "entity_text": "2010",
-    "entity_label": "DATE",
-    "year": 2010
-  },
-  {
-    "id": 68,
-    "source_table": "milestones",
-    "source_id": 50,
-    "entity_text": "Arizona",
-    "entity_label": "GPE",
-    "year": 2010
-  },
-  {
-    "id": 65,
-    "source_table": "milestones",
-    "source_id": 47,
-    "entity_text": "Graduated Monmouth University",
-    "entity_label": "ORG",
-    "year": 2010
-  },
-  {
-    "id": 66,
-    "source_table": "milestones",
-    "source_id": 47,
-    "entity_text": "GPA",
-    "entity_label": "ORG",
-    "year": 2010
-  },
-  {
-    "id": 69,
-    "source_table": "milestones",
-    "source_id": 52,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2010
-  },
-  {
-    "id": 70,
-    "source_table": "milestones",
-    "source_id": 53,
-    "entity_text": "Farnkopf",
-    "entity_label": "ORG",
-    "year": 2010
-  },
-  {
-    "id": 72,
-    "source_table": "milestones",
-    "source_id": 55,
-    "entity_text": "Trump Taj Mahal",
-    "entity_label": "ORG",
-    "year": 2010
-  },
-  {
-    "id": 74,
-    "source_table": "milestones",
-    "source_id": 56,
-    "entity_text": "Kean University",
-    "entity_label": "ORG",
-    "year": 2010
-  },
-  {
-    "id": 67,
-    "source_table": "milestones",
-    "source_id": 50,
-    "entity_text": "WrestleMania XXVI",
-    "entity_label": "PERSON",
-    "year": 2010
-  },
-  {
-    "id": 73,
-    "source_table": "milestones",
-    "source_id": 56,
-    "entity_text": "Michael",
-    "entity_label": "PERSON",
-    "year": 2010
-  },
-  {
-    "id": 380,
-    "source_table": "fun_facts",
-    "source_id": 29,
-    "entity_text": "Dan Farnkopf",
-    "entity_label": "PERSON",
-    "year": 2010
-  },
-  {
-    "id": 381,
-    "source_table": "fun_facts",
-    "source_id": 29,
-    "entity_text": "Vitamin Waters",
-    "entity_label": "PERSON",
-    "year": 2010
-  },
-  {
-    "id": 78,
-    "source_table": "milestones",
-    "source_id": 57,
-    "entity_text": "(Jan 1",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 79,
-    "source_table": "milestones",
-    "source_id": 59,
-    "entity_text": "Oct 31/Nov 1",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 81,
-    "source_table": "milestones",
-    "source_id": 61,
-    "entity_text": "Nov 20",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 83,
-    "source_table": "milestones",
-    "source_id": 62,
-    "entity_text": "Feb 19",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 84,
-    "source_table": "milestones",
-    "source_id": 64,
-    "entity_text": "27-28",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 88,
-    "source_table": "milestones",
-    "source_id": 67,
-    "entity_text": "May 21",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 90,
-    "source_table": "milestones",
-    "source_id": 68,
-    "entity_text": "Dec 14",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 338,
-    "source_table": "fun_facts",
-    "source_id": 10,
-    "entity_text": "September 14, 2011",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 426,
-    "source_table": "fun_facts",
-    "source_id": 55,
-    "entity_text": "May 21, 2011",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 427,
-    "source_table": "fun_facts",
-    "source_id": 56,
-    "entity_text": "23, 2011",
-    "entity_label": "DATE",
-    "year": 2011
-  },
-  {
-    "id": 77,
-    "source_table": "milestones",
-    "source_id": 57,
-    "entity_text": "Ocean Bay Diner",
-    "entity_label": "FAC",
-    "year": 2011
-  },
-  {
-    "id": 85,
-    "source_table": "milestones",
-    "source_id": 65,
-    "entity_text": "ECDElite Hall of Fame",
-    "entity_label": "FAC",
-    "year": 2011
-  },
-  {
-    "id": 80,
-    "source_table": "milestones",
-    "source_id": 61,
-    "entity_text": "MSG",
-    "entity_label": "ORG",
-    "year": 2011
-  },
-  {
-    "id": 82,
-    "source_table": "milestones",
-    "source_id": 62,
-    "entity_text": "WinterBall",
-    "entity_label": "ORG",
-    "year": 2011
-  },
-  {
-    "id": 89,
-    "source_table": "milestones",
-    "source_id": 68,
-    "entity_text": "RK",
-    "entity_label": "ORG",
-    "year": 2011
-  },
-  {
-    "id": 76,
-    "source_table": "milestones",
-    "source_id": 57,
-    "entity_text": "Rob",
-    "entity_label": "PERSON",
-    "year": 2011
-  },
-  {
-    "id": 86,
-    "source_table": "milestones",
-    "source_id": 66,
-    "entity_text": "Cousin Nick",
-    "entity_label": "PERSON",
-    "year": 2011
-  },
-  {
-    "id": 87,
-    "source_table": "milestones",
-    "source_id": 66,
-    "entity_text": "Samantha",
-    "entity_label": "PERSON",
-    "year": 2011
-  },
-  {
-    "id": 95,
-    "source_table": "milestones",
-    "source_id": 71,
-    "entity_text": "Oct 13",
-    "entity_label": "DATE",
-    "year": 2012
-  },
-  {
-    "id": 96,
-    "source_table": "milestones",
-    "source_id": 73,
-    "entity_text": "May",
-    "entity_label": "DATE",
-    "year": 2012
-  },
-  {
-    "id": 379,
-    "source_table": "fun_facts",
-    "source_id": 28,
-    "entity_text": "November 2012",
-    "entity_label": "DATE",
-    "year": 2012
-  },
-  {
     "id": 384,
     "source_table": "fun_facts",
     "source_id": 32,
     "entity_text": "2012",
     "entity_label": "DATE",
     "year": 2012
-  },
-  {
-    "id": 94,
-    "source_table": "milestones",
-    "source_id": 71,
-    "entity_text": "Orchard Park (",
-    "entity_label": "FAC",
-    "year": 2012
-  },
-  {
-    "id": 91,
-    "source_table": "milestones",
-    "source_id": 69,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2012
-  },
-  {
-    "id": 92,
-    "source_table": "milestones",
-    "source_id": 69,
-    "entity_text": "TOUR",
-    "entity_label": "ORG",
-    "year": 2012
-  },
-  {
-    "id": 93,
-    "source_table": "milestones",
-    "source_id": 70,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2012
-  },
-  {
-    "id": 97,
-    "source_table": "milestones",
-    "source_id": 75,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2012
-  },
-  {
-    "id": 378,
-    "source_table": "fun_facts",
-    "source_id": 28,
-    "entity_text": "Vehicle SUS15H",
-    "entity_label": "ORG",
-    "year": 2012
-  },
-  {
-    "id": 98,
-    "source_table": "milestones",
-    "source_id": 76,
-    "entity_text": "Stratton Vermont",
-    "entity_label": "PERSON",
-    "year": 2012
-  },
-  {
-    "id": 104,
-    "source_table": "milestones",
-    "source_id": 81,
-    "entity_text": "10-15",
-    "entity_label": "DATE",
-    "year": 2013
-  },
-  {
-    "id": 105,
-    "source_table": "milestones",
-    "source_id": 82,
-    "entity_text": "one year",
-    "entity_label": "DATE",
-    "year": 2013
-  },
-  {
-    "id": 107,
-    "source_table": "milestones",
-    "source_id": 85,
-    "entity_text": "29",
-    "entity_label": "DATE",
-    "year": 2013
-  },
-  {
-    "id": 109,
-    "source_table": "milestones",
-    "source_id": 88,
-    "entity_text": "'2010",
-    "entity_label": "DATE",
-    "year": 2013
   },
   {
     "id": 110,
@@ -1344,34 +304,10 @@
     "year": 2013
   },
   {
-    "id": 311,
-    "source_table": "quotes",
-    "source_id": 24,
-    "entity_text": "the greatest year",
-    "entity_label": "DATE",
-    "year": 2013
-  },
-  {
-    "id": 312,
-    "source_table": "quotes",
-    "source_id": 26,
-    "entity_text": "2010",
-    "entity_label": "DATE",
-    "year": 2013
-  },
-  {
     "id": 313,
     "source_table": "quotes",
     "source_id": 26,
     "entity_text": "2013",
-    "entity_label": "DATE",
-    "year": 2013
-  },
-  {
-    "id": 314,
-    "source_table": "quotes",
-    "source_id": 26,
-    "entity_text": "'13",
     "entity_label": "DATE",
     "year": 2013
   },
@@ -1392,130 +328,18 @@
     "year": 2013
   },
   {
-    "id": 391,
+    "id": 422,
     "source_table": "fun_facts",
-    "source_id": 36,
-    "entity_text": "Oct 22, 2013",
+    "source_id": 51,
+    "entity_text": "2013",
     "entity_label": "DATE",
-    "year": 2013
-  },
-  {
-    "id": 106,
-    "source_table": "milestones",
-    "source_id": 84,
-    "entity_text": "VT",
-    "entity_label": "GPE",
-    "year": 2013
-  },
-  {
-    "id": 108,
-    "source_table": "milestones",
-    "source_id": 86,
-    "entity_text": "Maryland",
-    "entity_label": "GPE",
-    "year": 2013
-  },
-  {
-    "id": 387,
-    "source_table": "fun_facts",
-    "source_id": 34,
-    "entity_text": "Maryland",
-    "entity_label": "GPE",
-    "year": 2013
-  },
-  {
-    "id": 100,
-    "source_table": "milestones",
-    "source_id": 79,
-    "entity_text": "WrestleMania 29",
-    "entity_label": "ORG",
-    "year": 2013
-  },
-  {
-    "id": 101,
-    "source_table": "milestones",
-    "source_id": 79,
-    "entity_text": "NJ",
-    "entity_label": "ORG",
-    "year": 2013
-  },
-  {
-    "id": 102,
-    "source_table": "milestones",
-    "source_id": 80,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2013
-  },
-  {
-    "id": 390,
-    "source_table": "fun_facts",
-    "source_id": 35,
-    "entity_text": "Joe & Gina",
-    "entity_label": "ORG",
-    "year": 2013
-  },
-  {
-    "id": 99,
-    "source_table": "milestones",
-    "source_id": 78,
-    "entity_text": "Norwegian Breakaway",
-    "entity_label": "PERSON",
-    "year": 2013
-  },
-  {
-    "id": 103,
-    "source_table": "milestones",
-    "source_id": 81,
-    "entity_text": "Grandma Theresa",
-    "entity_label": "PERSON",
-    "year": 2013
-  },
-  {
-    "id": 388,
-    "source_table": "fun_facts",
-    "source_id": 35,
-    "entity_text": "Played Batman",
-    "entity_label": "PERSON",
-    "year": 2013
-  },
-  {
-    "id": 111,
-    "source_table": "milestones",
-    "source_id": 92,
-    "entity_text": "Jan 11-13",
-    "entity_label": "DATE",
-    "year": 2014
-  },
-  {
-    "id": 119,
-    "source_table": "milestones",
-    "source_id": 94,
-    "entity_text": "30s",
-    "entity_label": "DATE",
-    "year": 2014
+    "year": 2009
   },
   {
     "id": 123,
     "source_table": "milestones",
     "source_id": 96,
     "entity_text": "2014",
-    "entity_label": "DATE",
-    "year": 2014
-  },
-  {
-    "id": 124,
-    "source_table": "milestones",
-    "source_id": 98,
-    "entity_text": "2nd straight year",
-    "entity_label": "DATE",
-    "year": 2014
-  },
-  {
-    "id": 353,
-    "source_table": "fun_facts",
-    "source_id": 17,
-    "entity_text": "2014-2020",
     "entity_label": "DATE",
     "year": 2014
   },
@@ -1528,188 +352,20 @@
     "year": 2014
   },
   {
-    "id": 113,
-    "source_table": "milestones",
-    "source_id": 93,
-    "entity_text": "Jamaica",
-    "entity_label": "GPE",
-    "year": 2014
-  },
-  {
-    "id": 114,
-    "source_table": "milestones",
-    "source_id": 93,
-    "entity_text": "Grand Cayman",
-    "entity_label": "GPE",
-    "year": 2014
-  },
-  {
-    "id": 112,
-    "source_table": "milestones",
-    "source_id": 93,
-    "entity_text": "Norwegian Epic",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 115,
-    "source_table": "milestones",
-    "source_id": 93,
-    "entity_text": "Cozumel",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 118,
-    "source_table": "milestones",
-    "source_id": 94,
-    "entity_text": "Pam",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 120,
-    "source_table": "milestones",
-    "source_id": 95,
-    "entity_text": "Pops at",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 121,
-    "source_table": "milestones",
-    "source_id": 95,
-    "entity_text": "Maggie & Mike's",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 303,
-    "source_table": "quotes",
-    "source_id": 11,
-    "entity_text": "Darrell",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 352,
+    "id": 353,
     "source_table": "fun_facts",
     "source_id": 17,
-    "entity_text": "Kevin & Leah's",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 385,
-    "source_table": "fun_facts",
-    "source_id": 33,
-    "entity_text": "WrestleMania",
-    "entity_label": "ORG",
-    "year": 2014
-  },
-  {
-    "id": 116,
-    "source_table": "milestones",
-    "source_id": 94,
-    "entity_text": "Diana",
-    "entity_label": "PERSON",
-    "year": 2014
-  },
-  {
-    "id": 117,
-    "source_table": "milestones",
-    "source_id": 94,
-    "entity_text": "Valerie",
-    "entity_label": "PERSON",
-    "year": 2014
-  },
-  {
-    "id": 122,
-    "source_table": "milestones",
-    "source_id": 96,
-    "entity_text": "Johnny Nash",
-    "entity_label": "PERSON",
-    "year": 2014
-  },
-  {
-    "id": 126,
-    "source_table": "milestones",
-    "source_id": 99,
-    "entity_text": "Dec 15",
+    "entity_text": "2014-2020",
     "entity_label": "DATE",
-    "year": 2015
+    "year": 2014
   },
   {
-    "id": 346,
-    "source_table": "fun_facts",
-    "source_id": 13,
-    "entity_text": "December 15, 2015",
+    "id": 316,
+    "source_table": "quotes",
+    "source_id": 29,
+    "entity_text": "2015",
     "entity_label": "DATE",
-    "year": 2015
-  },
-  {
-    "id": 130,
-    "source_table": "milestones",
-    "source_id": 102,
-    "entity_text": "the Year",
-    "entity_label": "EVENT",
-    "year": 2015
-  },
-  {
-    "id": 125,
-    "source_table": "milestones",
-    "source_id": 99,
-    "entity_text": "Kia Soul",
-    "entity_label": "ORG",
-    "year": 2015
-  },
-  {
-    "id": 127,
-    "source_table": "milestones",
-    "source_id": 100,
-    "entity_text": "USVI & Bahamas",
-    "entity_label": "ORG",
-    "year": 2015
-  },
-  {
-    "id": 128,
-    "source_table": "milestones",
-    "source_id": 101,
-    "entity_text": "Janet Jackson",
-    "entity_label": "PERSON",
-    "year": 2015
-  },
-  {
-    "id": 129,
-    "source_table": "milestones",
-    "source_id": 102,
-    "entity_text": "Dan Spengeman",
-    "entity_label": "PERSON",
-    "year": 2015
-  },
-  {
-    "id": 345,
-    "source_table": "fun_facts",
-    "source_id": 13,
-    "entity_text": "The Kia Soul",
-    "entity_label": "PERSON",
-    "year": 2015
-  },
-  {
-    "id": 132,
-    "source_table": "milestones",
-    "source_id": 103,
-    "entity_text": "100,000+",
-    "entity_label": "DATE",
-    "year": 2016
-  },
-  {
-    "id": 134,
-    "source_table": "milestones",
-    "source_id": 104,
-    "entity_text": "the Year",
-    "entity_label": "DATE",
-    "year": 2016
+    "year": 2017
   },
   {
     "id": 341,
@@ -1728,142 +384,6 @@
     "year": 2016
   },
   {
-    "id": 138,
-    "source_table": "milestones",
-    "source_id": 109,
-    "entity_text": "the Year",
-    "entity_label": "EVENT",
-    "year": 2016
-  },
-  {
-    "id": 340,
-    "source_table": "fun_facts",
-    "source_id": 11,
-    "entity_text": "Texas",
-    "entity_label": "GPE",
-    "year": 2016
-  },
-  {
-    "id": 131,
-    "source_table": "milestones",
-    "source_id": 103,
-    "entity_text": "WrestleMania 32",
-    "entity_label": "ORG",
-    "year": 2016
-  },
-  {
-    "id": 133,
-    "source_table": "milestones",
-    "source_id": 103,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2016
-  },
-  {
-    "id": 136,
-    "source_table": "milestones",
-    "source_id": 108,
-    "entity_text": "St. Lucia/Dominica/Antigua",
-    "entity_label": "ORG",
-    "year": 2016
-  },
-  {
-    "id": 301,
-    "source_table": "quotes",
-    "source_id": 4,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2016
-  },
-  {
-    "id": 339,
-    "source_table": "fun_facts",
-    "source_id": 11,
-    "entity_text": "WrestleMania 32",
-    "entity_label": "ORG",
-    "year": 2016
-  },
-  {
-    "id": 342,
-    "source_table": "fun_facts",
-    "source_id": 11,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2016
-  },
-  {
-    "id": 135,
-    "source_table": "milestones",
-    "source_id": 107,
-    "entity_text": "Spengeman-Mullins",
-    "entity_label": "PERSON",
-    "year": 2016
-  },
-  {
-    "id": 137,
-    "source_table": "milestones",
-    "source_id": 109,
-    "entity_text": "Lauren Winston",
-    "entity_label": "PERSON",
-    "year": 2016
-  },
-  {
-    "id": 144,
-    "source_table": "milestones",
-    "source_id": 112,
-    "entity_text": "Dec 15",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 146,
-    "source_table": "milestones",
-    "source_id": 113,
-    "entity_text": "Dec 26",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 148,
-    "source_table": "milestones",
-    "source_id": 114,
-    "entity_text": "12-Year Anniversary",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 151,
-    "source_table": "milestones",
-    "source_id": 116,
-    "entity_text": "20-year",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 154,
-    "source_table": "milestones",
-    "source_id": 119,
-    "entity_text": "45:43 (Jan 15",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 315,
-    "source_table": "quotes",
-    "source_id": 29,
-    "entity_text": "1997, 2007,",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 316,
-    "source_table": "quotes",
-    "source_id": 29,
-    "entity_text": "2015",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
     "id": 317,
     "source_table": "quotes",
     "source_id": 29,
@@ -1872,234 +392,10 @@
     "year": 2017
   },
   {
-    "id": 319,
-    "source_table": "quotes",
-    "source_id": 29,
-    "entity_text": "some 20 years",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 349,
-    "source_table": "fun_facts",
-    "source_id": 16,
-    "entity_text": "December",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 351,
-    "source_table": "fun_facts",
-    "source_id": 16,
-    "entity_text": "April (2017-2018",
-    "entity_label": "DATE",
-    "year": 2017
-  },
-  {
-    "id": 140,
-    "source_table": "milestones",
-    "source_id": 111,
-    "entity_text": "Alaska",
-    "entity_label": "GPE",
-    "year": 2017
-  },
-  {
-    "id": 141,
-    "source_table": "milestones",
-    "source_id": 111,
-    "entity_text": "Seattle",
-    "entity_label": "GPE",
-    "year": 2017
-  },
-  {
-    "id": 152,
-    "source_table": "milestones",
-    "source_id": 117,
-    "entity_text": "California",
-    "entity_label": "GPE",
-    "year": 2017
-  },
-  {
-    "id": 350,
-    "source_table": "fun_facts",
-    "source_id": 16,
-    "entity_text": "Mediterranean",
-    "entity_label": "LOC",
-    "year": 2017
-  },
-  {
-    "id": 139,
-    "source_table": "milestones",
-    "source_id": 110,
-    "entity_text": "Kevin & Leah",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 145,
-    "source_table": "milestones",
-    "source_id": 112,
-    "entity_text": "Riverview",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 147,
-    "source_table": "milestones",
-    "source_id": 114,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 149,
-    "source_table": "milestones",
-    "source_id": 115,
-    "entity_text": "WrestleMania 33",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 150,
-    "source_table": "milestones",
-    "source_id": 116,
-    "entity_text": "SummerSlam",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 153,
-    "source_table": "milestones",
-    "source_id": 117,
-    "entity_text": "Matt & Gina",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 157,
-    "source_table": "milestones",
-    "source_id": 121,
-    "entity_text": "Silver League Champions",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 318,
-    "source_table": "quotes",
-    "source_id": 29,
-    "entity_text": "SummerSlam",
-    "entity_label": "ORG",
-    "year": 2017
-  },
-  {
-    "id": 142,
-    "source_table": "milestones",
-    "source_id": 111,
-    "entity_text": "Mendenhall Glacier",
-    "entity_label": "PERSON",
-    "year": 2017
-  },
-  {
-    "id": 143,
-    "source_table": "milestones",
-    "source_id": 112,
-    "entity_text": "L5-S1",
-    "entity_label": "PERSON",
-    "year": 2017
-  },
-  {
-    "id": 155,
-    "source_table": "milestones",
-    "source_id": 120,
-    "entity_text": "Broken",
-    "entity_label": "PERSON",
-    "year": 2017
-  },
-  {
-    "id": 156,
-    "source_table": "milestones",
-    "source_id": 120,
-    "entity_text": "Mar",
-    "entity_label": "PERSON",
-    "year": 2017
-  },
-  {
-    "id": 164,
-    "source_table": "milestones",
-    "source_id": 123,
-    "entity_text": "2 weeks",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 170,
-    "source_table": "milestones",
-    "source_id": 126,
-    "entity_text": "Oct 22",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 171,
-    "source_table": "milestones",
-    "source_id": 127,
-    "entity_text": "Dec 23",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 174,
-    "source_table": "milestones",
-    "source_id": 130,
-    "entity_text": "6 years",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 176,
-    "source_table": "milestones",
-    "source_id": 132,
-    "entity_text": "Nov 26",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 399,
-    "source_table": "fun_facts",
-    "source_id": 41,
-    "entity_text": "14, 2018",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 402,
-    "source_table": "fun_facts",
-    "source_id": 42,
-    "entity_text": "May 7, 2018",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 405,
-    "source_table": "fun_facts",
-    "source_id": 43,
-    "entity_text": "Sep 2018",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
     "id": 408,
     "source_table": "fun_facts",
     "source_id": 45,
     "entity_text": "2018",
-    "entity_label": "DATE",
-    "year": 2018
-  },
-  {
-    "id": 409,
-    "source_table": "fun_facts",
-    "source_id": 46,
-    "entity_text": "6 consecutive years",
     "entity_label": "DATE",
     "year": 2018
   },
@@ -2120,298 +416,10 @@
     "year": 2018
   },
   {
-    "id": 169,
-    "source_table": "milestones",
-    "source_id": 126,
-    "entity_text": "Sunrise of Wall",
-    "entity_label": "FAC",
-    "year": 2018
-  },
-  {
-    "id": 159,
-    "source_table": "milestones",
-    "source_id": 123,
-    "entity_text": "Slovenia",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 160,
-    "source_table": "milestones",
-    "source_id": 123,
-    "entity_text": "Italy",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 161,
-    "source_table": "milestones",
-    "source_id": 123,
-    "entity_text": "Greece",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 162,
-    "source_table": "milestones",
-    "source_id": 123,
-    "entity_text": "Malta",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 163,
-    "source_table": "milestones",
-    "source_id": 123,
-    "entity_text": "Croatia",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 165,
-    "source_table": "milestones",
-    "source_id": 124,
-    "entity_text": "Croatia",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 177,
-    "source_table": "milestones",
-    "source_id": 133,
-    "entity_text": "New Hampshire",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 404,
+    "id": 420,
     "source_table": "fun_facts",
-    "source_id": 43,
-    "entity_text": "New Hampshire",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 411,
-    "source_table": "fun_facts",
-    "source_id": 47,
-    "entity_text": "Croatia",
-    "entity_label": "GPE",
-    "year": 2018
-  },
-  {
-    "id": 158,
-    "source_table": "milestones",
-    "source_id": 123,
-    "entity_text": "Mediterranean",
-    "entity_label": "LOC",
-    "year": 2018
-  },
-  {
-    "id": 412,
-    "source_table": "fun_facts",
-    "source_id": 47,
-    "entity_text": "Mediterranean",
-    "entity_label": "LOC",
-    "year": 2018
-  },
-  {
-    "id": 168,
-    "source_table": "milestones",
-    "source_id": 126,
-    "entity_text": "Reminiscence Coordinator",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 175,
-    "source_table": "milestones",
-    "source_id": 131,
-    "entity_text": "Sisters",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 178,
-    "source_table": "milestones",
-    "source_id": 135,
-    "entity_text": "Fever 100.3",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 179,
-    "source_table": "milestones",
-    "source_id": 135,
-    "entity_text": "NYE",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 320,
-    "source_table": "quotes",
-    "source_id": 31,
-    "entity_text": "patience & gratitude",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 400,
-    "source_table": "fun_facts",
-    "source_id": 42,
-    "entity_text": "Captain 'Tight Lines'",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 401,
-    "source_table": "fun_facts",
-    "source_id": 42,
-    "entity_text": "Tyler",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 407,
-    "source_table": "fun_facts",
-    "source_id": 45,
-    "entity_text": "NYE",
-    "entity_label": "ORG",
-    "year": 2018
-  },
-  {
-    "id": 166,
-    "source_table": "milestones",
-    "source_id": 125,
-    "entity_text": "Michael",
-    "entity_label": "PERSON",
-    "year": 2018
-  },
-  {
-    "id": 167,
-    "source_table": "milestones",
-    "source_id": 125,
-    "entity_text": "Maggie",
-    "entity_label": "PERSON",
-    "year": 2018
-  },
-  {
-    "id": 172,
-    "source_table": "milestones",
-    "source_id": 129,
-    "entity_text": "Arthur Knott",
-    "entity_label": "PERSON",
-    "year": 2018
-  },
-  {
-    "id": 173,
-    "source_table": "milestones",
-    "source_id": 129,
-    "entity_text": "Artie",
-    "entity_label": "PERSON",
-    "year": 2018
-  },
-  {
-    "id": 403,
-    "source_table": "fun_facts",
-    "source_id": 43,
-    "entity_text": "Harry",
-    "entity_label": "PERSON",
-    "year": 2018
-  },
-  {
-    "id": 406,
-    "source_table": "fun_facts",
-    "source_id": 44,
-    "entity_text": "Buck",
-    "entity_label": "PERSON",
-    "year": 2018
-  },
-  {
-    "id": 181,
-    "source_table": "milestones",
-    "source_id": 136,
-    "entity_text": "19 days",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 182,
-    "source_table": "milestones",
-    "source_id": 136,
-    "entity_text": "Jan 12-31",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 187,
-    "source_table": "milestones",
-    "source_id": 139,
-    "entity_text": "May 22",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 190,
-    "source_table": "milestones",
-    "source_id": 141,
-    "entity_text": "May 31",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 193,
-    "source_table": "milestones",
-    "source_id": 142,
-    "entity_text": "78,000+",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 196,
-    "source_table": "milestones",
-    "source_id": 143,
-    "entity_text": "Mar 12",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 199,
-    "source_table": "milestones",
-    "source_id": 146,
-    "entity_text": "Nov 23",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 202,
-    "source_table": "milestones",
-    "source_id": 148,
-    "entity_text": "Dec 15-16",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 204,
-    "source_table": "milestones",
-    "source_id": 149,
-    "entity_text": "100+ years",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 205,
-    "source_table": "milestones",
-    "source_id": 150,
-    "entity_text": "'2020",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 206,
-    "source_table": "milestones",
-    "source_id": 150,
-    "entity_text": "Dec 31",
+    "source_id": 50,
+    "entity_text": "2019",
     "entity_label": "DATE",
     "year": 2019
   },
@@ -2422,246 +430,6 @@
     "entity_text": "2020",
     "entity_label": "DATE",
     "year": 2019
-  },
-  {
-    "id": 414,
-    "source_table": "fun_facts",
-    "source_id": 48,
-    "entity_text": "31, 2019",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 416,
-    "source_table": "fun_facts",
-    "source_id": 49,
-    "entity_text": "78,000+",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 417,
-    "source_table": "fun_facts",
-    "source_id": 49,
-    "entity_text": "Sep 2019",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 419,
-    "source_table": "fun_facts",
-    "source_id": 50,
-    "entity_text": "May 31",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 420,
-    "source_table": "fun_facts",
-    "source_id": 50,
-    "entity_text": "2019",
-    "entity_label": "DATE",
-    "year": 2019
-  },
-  {
-    "id": 192,
-    "source_table": "milestones",
-    "source_id": 142,
-    "entity_text": "Lambeau Field",
-    "entity_label": "FAC",
-    "year": 2019
-  },
-  {
-    "id": 415,
-    "source_table": "fun_facts",
-    "source_id": 49,
-    "entity_text": "Lambeau Field",
-    "entity_label": "FAC",
-    "year": 2019
-  },
-  {
-    "id": 189,
-    "source_table": "milestones",
-    "source_id": 141,
-    "entity_text": "Wisconsin",
-    "entity_label": "GPE",
-    "year": 2019
-  },
-  {
-    "id": 191,
-    "source_table": "milestones",
-    "source_id": 142,
-    "entity_text": "Wisconsin",
-    "entity_label": "GPE",
-    "year": 2019
-  },
-  {
-    "id": 201,
-    "source_table": "milestones",
-    "source_id": 148,
-    "entity_text": "Atlantic City",
-    "entity_label": "GPE",
-    "year": 2019
-  },
-  {
-    "id": 203,
-    "source_table": "milestones",
-    "source_id": 149,
-    "entity_text": "U.S.",
-    "entity_label": "GPE",
-    "year": 2019
-  },
-  {
-    "id": 418,
-    "source_table": "fun_facts",
-    "source_id": 50,
-    "entity_text": "Wisconsin",
-    "entity_label": "GPE",
-    "year": 2019
-  },
-  {
-    "id": 180,
-    "source_table": "milestones",
-    "source_id": 136,
-    "entity_text": "Australia & New Zealand",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 185,
-    "source_table": "milestones",
-    "source_id": 139,
-    "entity_text": "CHA",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 186,
-    "source_table": "milestones",
-    "source_id": 139,
-    "entity_text": "Pops Tronolone",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 188,
-    "source_table": "milestones",
-    "source_id": 140,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 195,
-    "source_table": "milestones",
-    "source_id": 143,
-    "entity_text": "MSG",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 197,
-    "source_table": "milestones",
-    "source_id": 144,
-    "entity_text": "DC Pride Weekend",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 198,
-    "source_table": "milestones",
-    "source_id": 145,
-    "entity_text": "Halfway",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 200,
-    "source_table": "milestones",
-    "source_id": 148,
-    "entity_text": "RK",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 321,
-    "source_table": "quotes",
-    "source_id": 33,
-    "entity_text": "Halfway",
-    "entity_label": "ORG",
-    "year": 2019
-  },
-  {
-    "id": 183,
-    "source_table": "milestones",
-    "source_id": 137,
-    "entity_text": "Nephew Julian John Tronolone",
-    "entity_label": "PERSON",
-    "year": 2019
-  },
-  {
-    "id": 184,
-    "source_table": "milestones",
-    "source_id": 138,
-    "entity_text": "John",
-    "entity_label": "PERSON",
-    "year": 2019
-  },
-  {
-    "id": 194,
-    "source_table": "milestones",
-    "source_id": 143,
-    "entity_text": "Weezer",
-    "entity_label": "PERSON",
-    "year": 2019
-  },
-  {
-    "id": 213,
-    "source_table": "milestones",
-    "source_id": 151,
-    "entity_text": "17 days Jan-Feb",
-    "entity_label": "DATE",
-    "year": 2020
-  },
-  {
-    "id": 217,
-    "source_table": "milestones",
-    "source_id": 153,
-    "entity_text": "8, 17th",
-    "entity_label": "DATE",
-    "year": 2020
-  },
-  {
-    "id": 221,
-    "source_table": "milestones",
-    "source_id": 156,
-    "entity_text": "Oct 3",
-    "entity_label": "DATE",
-    "year": 2020
-  },
-  {
-    "id": 224,
-    "source_table": "milestones",
-    "source_id": 159,
-    "entity_text": "Dec 12",
-    "entity_label": "DATE",
-    "year": 2020
-  },
-  {
-    "id": 226,
-    "source_table": "milestones",
-    "source_id": 160,
-    "entity_text": "Dec 31",
-    "entity_label": "DATE",
-    "year": 2020
-  },
-  {
-    "id": 227,
-    "source_table": "milestones",
-    "source_id": 161,
-    "entity_text": "36",
-    "entity_label": "DATE",
-    "year": 2020
   },
   {
     "id": 358,
@@ -2680,198 +448,6 @@
     "year": 2020
   },
   {
-    "id": 208,
-    "source_table": "milestones",
-    "source_id": 151,
-    "entity_text": "Singapore",
-    "entity_label": "GPE",
-    "year": 2020
-  },
-  {
-    "id": 209,
-    "source_table": "milestones",
-    "source_id": 151,
-    "entity_text": "Thailand",
-    "entity_label": "GPE",
-    "year": 2020
-  },
-  {
-    "id": 210,
-    "source_table": "milestones",
-    "source_id": 151,
-    "entity_text": "Cambodia",
-    "entity_label": "GPE",
-    "year": 2020
-  },
-  {
-    "id": 211,
-    "source_table": "milestones",
-    "source_id": 151,
-    "entity_text": "Vietnam",
-    "entity_label": "GPE",
-    "year": 2020
-  },
-  {
-    "id": 212,
-    "source_table": "milestones",
-    "source_id": 151,
-    "entity_text": "Hong Kong",
-    "entity_label": "GPE",
-    "year": 2020
-  },
-  {
-    "id": 207,
-    "source_table": "milestones",
-    "source_id": 151,
-    "entity_text": "Asian",
-    "entity_label": "NORP",
-    "year": 2020
-  },
-  {
-    "id": 214,
-    "source_table": "milestones",
-    "source_id": 152,
-    "entity_text": "Kevin & Leah",
-    "entity_label": "ORG",
-    "year": 2020
-  },
-  {
-    "id": 215,
-    "source_table": "milestones",
-    "source_id": 153,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
-    "year": 2020
-  },
-  {
-    "id": 222,
-    "source_table": "milestones",
-    "source_id": 157,
-    "entity_text": "Grace & Megan",
-    "entity_label": "ORG",
-    "year": 2020
-  },
-  {
-    "id": 223,
-    "source_table": "milestones",
-    "source_id": 158,
-    "entity_text": "ECD",
-    "entity_label": "ORG",
-    "year": 2020
-  },
-  {
-    "id": 225,
-    "source_table": "milestones",
-    "source_id": 160,
-    "entity_text": "Pasta Passion & Pistols",
-    "entity_label": "ORG",
-    "year": 2020
-  },
-  {
-    "id": 216,
-    "source_table": "milestones",
-    "source_id": 153,
-    "entity_text": "Mar",
-    "entity_label": "PERSON",
-    "year": 2020
-  },
-  {
-    "id": 218,
-    "source_table": "milestones",
-    "source_id": 153,
-    "entity_text": "RL",
-    "entity_label": "PERSON",
-    "year": 2020
-  },
-  {
-    "id": 219,
-    "source_table": "milestones",
-    "source_id": 154,
-    "entity_text": "Mar",
-    "entity_label": "PERSON",
-    "year": 2020
-  },
-  {
-    "id": 220,
-    "source_table": "milestones",
-    "source_id": 155,
-    "entity_text": "Jackson",
-    "entity_label": "PERSON",
-    "year": 2020
-  },
-  {
-    "id": 357,
-    "source_table": "fun_facts",
-    "source_id": 20,
-    "entity_text": "Mommy Kerr's",
-    "entity_label": "PERSON",
-    "year": 2020
-  },
-  {
-    "id": 229,
-    "source_table": "milestones",
-    "source_id": 165,
-    "entity_text": "Dec 23, 6:25am",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 237,
-    "source_table": "milestones",
-    "source_id": 169,
-    "entity_text": "568-day",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 239,
-    "source_table": "milestones",
-    "source_id": 170,
-    "entity_text": "20 years",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 242,
-    "source_table": "milestones",
-    "source_id": 171,
-    "entity_text": "10-year",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 244,
-    "source_table": "milestones",
-    "source_id": 171,
-    "entity_text": "Jan 15",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 248,
-    "source_table": "milestones",
-    "source_id": 172,
-    "entity_text": "1,000+",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 253,
-    "source_table": "milestones",
-    "source_id": 175,
-    "entity_text": "Dec 11",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 254,
-    "source_table": "milestones",
-    "source_id": 176,
-    "entity_text": "Dec 12",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
     "id": 325,
     "source_table": "fun_facts",
     "source_id": 3,
@@ -2880,26 +456,10 @@
     "year": 2021
   },
   {
-    "id": 326,
-    "source_table": "fun_facts",
-    "source_id": 4,
-    "entity_text": "568 days",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
     "id": 328,
     "source_table": "fun_facts",
     "source_id": 4,
     "entity_text": "2021",
-    "entity_label": "DATE",
-    "year": 2021
-  },
-  {
-    "id": 329,
-    "source_table": "fun_facts",
-    "source_id": 5,
-    "entity_text": "20 years",
     "entity_label": "DATE",
     "year": 2021
   },
@@ -2920,6 +480,702 @@
     "year": 2021
   },
   {
+    "id": 356,
+    "source_table": "fun_facts",
+    "source_id": 19,
+    "entity_text": "2022",
+    "entity_label": "DATE",
+    "year": 2022
+  },
+  {
+    "id": 361,
+    "source_table": "fun_facts",
+    "source_id": 23,
+    "entity_text": "2024",
+    "entity_label": "DATE",
+    "year": 2024
+  },
+  {
+    "id": 297,
+    "source_table": "milestones",
+    "source_id": 208,
+    "entity_text": "20th Anniversary",
+    "entity_label": "DATE",
+    "year": 2025
+  },
+  {
+    "id": 23,
+    "source_table": "milestones",
+    "source_id": 18,
+    "entity_text": "21",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 15,
+    "source_table": "milestones",
+    "source_id": 12,
+    "entity_text": "23",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 427,
+    "source_table": "fun_facts",
+    "source_id": 56,
+    "entity_text": "23, 2011",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 34,
+    "source_table": "milestones",
+    "source_id": 25,
+    "entity_text": "24",
+    "entity_label": "DATE",
+    "year": 2008
+  },
+  {
+    "id": 84,
+    "source_table": "milestones",
+    "source_id": 64,
+    "entity_text": "27-28",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 107,
+    "source_table": "milestones",
+    "source_id": 85,
+    "entity_text": "29",
+    "entity_label": "DATE",
+    "year": 2013
+  },
+  {
+    "id": 124,
+    "source_table": "milestones",
+    "source_id": 98,
+    "entity_text": "2nd straight year",
+    "entity_label": "DATE",
+    "year": 2014
+  },
+  {
+    "id": 33,
+    "source_table": "milestones",
+    "source_id": 24,
+    "entity_text": "3-Year Anniversary",
+    "entity_label": "DATE",
+    "year": 2008
+  },
+  {
+    "id": 119,
+    "source_table": "milestones",
+    "source_id": 94,
+    "entity_text": "30s",
+    "entity_label": "DATE",
+    "year": 2014
+  },
+  {
+    "id": 414,
+    "source_table": "fun_facts",
+    "source_id": 48,
+    "entity_text": "31, 2019",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 227,
+    "source_table": "milestones",
+    "source_id": 161,
+    "entity_text": "36",
+    "entity_label": "DATE",
+    "year": 2020
+  },
+  {
+    "id": 344,
+    "source_table": "fun_facts",
+    "source_id": 12,
+    "entity_text": "38",
+    "entity_label": "DATE",
+    "year": null
+  },
+  {
+    "id": 46,
+    "source_table": "milestones",
+    "source_id": 33,
+    "entity_text": "40 months",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 154,
+    "source_table": "milestones",
+    "source_id": 119,
+    "entity_text": "45:43 (Jan 15",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 326,
+    "source_table": "fun_facts",
+    "source_id": 4,
+    "entity_text": "568 days",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 237,
+    "source_table": "milestones",
+    "source_id": 169,
+    "entity_text": "568-day",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 409,
+    "source_table": "fun_facts",
+    "source_id": 46,
+    "entity_text": "6 consecutive years",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 174,
+    "source_table": "milestones",
+    "source_id": 130,
+    "entity_text": "6 years",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 3,
+    "source_table": "milestones",
+    "source_id": 5,
+    "entity_text": "70",
+    "entity_label": "DATE",
+    "year": 2006
+  },
+  {
+    "id": 193,
+    "source_table": "milestones",
+    "source_id": 142,
+    "entity_text": "78,000+",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 416,
+    "source_table": "fun_facts",
+    "source_id": 49,
+    "entity_text": "78,000+",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 217,
+    "source_table": "milestones",
+    "source_id": 153,
+    "entity_text": "8, 17th",
+    "entity_label": "DATE",
+    "year": 2020
+  },
+  {
+    "id": 351,
+    "source_table": "fun_facts",
+    "source_id": 16,
+    "entity_text": "April (2017-2018",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 253,
+    "source_table": "milestones",
+    "source_id": 175,
+    "entity_text": "Dec 11",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 20,
+    "source_table": "milestones",
+    "source_id": 16,
+    "entity_text": "Dec 12",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 224,
+    "source_table": "milestones",
+    "source_id": 159,
+    "entity_text": "Dec 12",
+    "entity_label": "DATE",
+    "year": 2020
+  },
+  {
+    "id": 254,
+    "source_table": "milestones",
+    "source_id": 176,
+    "entity_text": "Dec 12",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 90,
+    "source_table": "milestones",
+    "source_id": 68,
+    "entity_text": "Dec 14",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 126,
+    "source_table": "milestones",
+    "source_id": 99,
+    "entity_text": "Dec 15",
+    "entity_label": "DATE",
+    "year": 2015
+  },
+  {
+    "id": 144,
+    "source_table": "milestones",
+    "source_id": 112,
+    "entity_text": "Dec 15",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 202,
+    "source_table": "milestones",
+    "source_id": 148,
+    "entity_text": "Dec 15-16",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 55,
+    "source_table": "milestones",
+    "source_id": 39,
+    "entity_text": "Dec 16",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 273,
+    "source_table": "milestones",
+    "source_id": 191,
+    "entity_text": "Dec 18",
+    "entity_label": "DATE",
+    "year": 2023
+  },
+  {
+    "id": 288,
+    "source_table": "milestones",
+    "source_id": 200,
+    "entity_text": "Dec 18",
+    "entity_label": "DATE",
+    "year": 2024
+  },
+  {
+    "id": 171,
+    "source_table": "milestones",
+    "source_id": 127,
+    "entity_text": "Dec 23",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 369,
+    "source_table": "fun_facts",
+    "source_id": 25,
+    "entity_text": "Dec 23, 2009",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 229,
+    "source_table": "milestones",
+    "source_id": 165,
+    "entity_text": "Dec 23, 6:25am",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 146,
+    "source_table": "milestones",
+    "source_id": 113,
+    "entity_text": "Dec 26",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 431,
+    "source_table": "fun_facts",
+    "source_id": 58,
+    "entity_text": "Dec 27, 2009",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 4,
+    "source_table": "milestones",
+    "source_id": 5,
+    "entity_text": "Dec 30",
+    "entity_label": "DATE",
+    "year": 2006
+  },
+  {
+    "id": 206,
+    "source_table": "milestones",
+    "source_id": 150,
+    "entity_text": "Dec 31",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 226,
+    "source_table": "milestones",
+    "source_id": 160,
+    "entity_text": "Dec 31",
+    "entity_label": "DATE",
+    "year": 2020
+  },
+  {
+    "id": 349,
+    "source_table": "fun_facts",
+    "source_id": 16,
+    "entity_text": "December",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 398,
+    "source_table": "fun_facts",
+    "source_id": 40,
+    "entity_text": "December 12, 2007",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 346,
+    "source_table": "fun_facts",
+    "source_id": 13,
+    "entity_text": "December 15, 2015",
+    "entity_label": "DATE",
+    "year": 2015
+  },
+  {
+    "id": 83,
+    "source_table": "milestones",
+    "source_id": 62,
+    "entity_text": "Feb 19",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 6,
+    "source_table": "milestones",
+    "source_id": 6,
+    "entity_text": "Friday",
+    "entity_label": "DATE",
+    "year": 2006
+  },
+  {
+    "id": 111,
+    "source_table": "milestones",
+    "source_id": 92,
+    "entity_text": "Jan 11-13",
+    "entity_label": "DATE",
+    "year": 2014
+  },
+  {
+    "id": 182,
+    "source_table": "milestones",
+    "source_id": 136,
+    "entity_text": "Jan 12-31",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 244,
+    "source_table": "milestones",
+    "source_id": 171,
+    "entity_text": "Jan 15",
+    "entity_label": "DATE",
+    "year": 2021
+  },
+  {
+    "id": 425,
+    "source_table": "fun_facts",
+    "source_id": 54,
+    "entity_text": "Jan 22, 2008",
+    "entity_label": "DATE",
+    "year": 2008
+  },
+  {
+    "id": 31,
+    "source_table": "milestones",
+    "source_id": 22,
+    "entity_text": "Jan 27",
+    "entity_label": "DATE",
+    "year": 2008
+  },
+  {
+    "id": 57,
+    "source_table": "milestones",
+    "source_id": 41,
+    "entity_text": "Mar 1",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 196,
+    "source_table": "milestones",
+    "source_id": 143,
+    "entity_text": "Mar 12",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 7,
+    "source_table": "milestones",
+    "source_id": 6,
+    "entity_text": "March 2006",
+    "entity_label": "DATE",
+    "year": 2006
+  },
+  {
+    "id": 96,
+    "source_table": "milestones",
+    "source_id": 73,
+    "entity_text": "May",
+    "entity_label": "DATE",
+    "year": 2012
+  },
+  {
+    "id": 75,
+    "source_table": "milestones",
+    "source_id": 56,
+    "entity_text": "May 13",
+    "entity_label": "DATE",
+    "year": 2010
+  },
+  {
+    "id": 392,
+    "source_table": "fun_facts",
+    "source_id": 37,
+    "entity_text": "May 2006",
+    "entity_label": "DATE",
+    "year": 2006
+  },
+  {
+    "id": 88,
+    "source_table": "milestones",
+    "source_id": 67,
+    "entity_text": "May 21",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 426,
+    "source_table": "fun_facts",
+    "source_id": 55,
+    "entity_text": "May 21, 2011",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 187,
+    "source_table": "milestones",
+    "source_id": 139,
+    "entity_text": "May 22",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 190,
+    "source_table": "milestones",
+    "source_id": 141,
+    "entity_text": "May 31",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 419,
+    "source_table": "fun_facts",
+    "source_id": 50,
+    "entity_text": "May 31",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 402,
+    "source_table": "fun_facts",
+    "source_id": 42,
+    "entity_text": "May 7, 2018",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 29,
+    "source_table": "milestones",
+    "source_id": 21,
+    "entity_text": "May 8)",
+    "entity_label": "DATE",
+    "year": 2008
+  },
+  {
+    "id": 61,
+    "source_table": "milestones",
+    "source_id": 43,
+    "entity_text": "Nov 13",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 18,
+    "source_table": "milestones",
+    "source_id": 15,
+    "entity_text": "Nov 19",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 81,
+    "source_table": "milestones",
+    "source_id": 61,
+    "entity_text": "Nov 20",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 199,
+    "source_table": "milestones",
+    "source_id": 146,
+    "entity_text": "Nov 23",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 176,
+    "source_table": "milestones",
+    "source_id": 132,
+    "entity_text": "Nov 26",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 40,
+    "source_table": "milestones",
+    "source_id": 29,
+    "entity_text": "Nov 4",
+    "entity_label": "DATE",
+    "year": 2008
+  },
+  {
+    "id": 379,
+    "source_table": "fun_facts",
+    "source_id": 28,
+    "entity_text": "November 2012",
+    "entity_label": "DATE",
+    "year": 2012
+  },
+  {
+    "id": 49,
+    "source_table": "milestones",
+    "source_id": 36,
+    "entity_text": "Oct 11",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 95,
+    "source_table": "milestones",
+    "source_id": 71,
+    "entity_text": "Oct 13",
+    "entity_label": "DATE",
+    "year": 2012
+  },
+  {
+    "id": 286,
+    "source_table": "milestones",
+    "source_id": 199,
+    "entity_text": "Oct 21",
+    "entity_label": "DATE",
+    "year": 2024
+  },
+  {
+    "id": 170,
+    "source_table": "milestones",
+    "source_id": 126,
+    "entity_text": "Oct 22",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 391,
+    "source_table": "fun_facts",
+    "source_id": 36,
+    "entity_text": "Oct 22, 2013",
+    "entity_label": "DATE",
+    "year": 2013
+  },
+  {
+    "id": 13,
+    "source_table": "milestones",
+    "source_id": 10,
+    "entity_text": "Oct 29",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 221,
+    "source_table": "milestones",
+    "source_id": 156,
+    "entity_text": "Oct 3",
+    "entity_label": "DATE",
+    "year": 2020
+  },
+  {
+    "id": 79,
+    "source_table": "milestones",
+    "source_id": 59,
+    "entity_text": "Oct 31/Nov 1",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 405,
+    "source_table": "fun_facts",
+    "source_id": 43,
+    "entity_text": "Sep 2018",
+    "entity_label": "DATE",
+    "year": 2018
+  },
+  {
+    "id": 417,
+    "source_table": "fun_facts",
+    "source_id": 49,
+    "entity_text": "Sep 2019",
+    "entity_label": "DATE",
+    "year": 2019
+  },
+  {
+    "id": 338,
+    "source_table": "fun_facts",
+    "source_id": 10,
+    "entity_text": "September 14, 2011",
+    "entity_label": "DATE",
+    "year": 2011
+  },
+  {
+    "id": 393,
+    "source_table": "fun_facts",
+    "source_id": 37,
+    "entity_text": "September 2, 2007",
+    "entity_label": "DATE",
+    "year": 2006
+  },
+  {
     "id": 360,
     "source_table": "fun_facts",
     "source_id": 22,
@@ -2928,26 +1184,130 @@
     "year": 2021
   },
   {
-    "id": 230,
+    "id": 8,
     "source_table": "milestones",
-    "source_id": 166,
-    "entity_text": "Survivor Series",
+    "source_id": 7,
+    "entity_text": "a single day",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 348,
+    "source_table": "fun_facts",
+    "source_id": 15,
+    "entity_text": "a single day",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 24,
+    "source_table": "milestones",
+    "source_id": 19,
+    "entity_text": "age 20",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 395,
+    "source_table": "fun_facts",
+    "source_id": 38,
+    "entity_text": "age 20",
+    "entity_label": "DATE",
+    "year": null
+  },
+  {
+    "id": 287,
+    "source_table": "milestones",
+    "source_id": 199,
+    "entity_text": "age 92",
+    "entity_label": "DATE",
+    "year": 2024
+  },
+  {
+    "id": 63,
+    "source_table": "milestones",
+    "source_id": 45,
+    "entity_text": "all year",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 56,
+    "source_table": "milestones",
+    "source_id": 40,
+    "entity_text": "multi-day",
+    "entity_label": "DATE",
+    "year": 2009
+  },
+  {
+    "id": 21,
+    "source_table": "milestones",
+    "source_id": 17,
+    "entity_text": "one week",
+    "entity_label": "DATE",
+    "year": 2007
+  },
+  {
+    "id": 105,
+    "source_table": "milestones",
+    "source_id": 82,
+    "entity_text": "one year",
+    "entity_label": "DATE",
+    "year": 2013
+  },
+  {
+    "id": 277,
+    "source_table": "milestones",
+    "source_id": 193,
+    "entity_text": "one year",
+    "entity_label": "DATE",
+    "year": 2023
+  },
+  {
+    "id": 394,
+    "source_table": "fun_facts",
+    "source_id": 37,
+    "entity_text": "roughly 16 months",
+    "entity_label": "DATE",
+    "year": 2006
+  },
+  {
+    "id": 319,
+    "source_table": "quotes",
+    "source_id": 29,
+    "entity_text": "some 20 years",
+    "entity_label": "DATE",
+    "year": 2017
+  },
+  {
+    "id": 134,
+    "source_table": "milestones",
+    "source_id": 104,
+    "entity_text": "the Year",
+    "entity_label": "DATE",
+    "year": 2016
+  },
+  {
+    "id": 311,
+    "source_table": "quotes",
+    "source_id": 24,
+    "entity_text": "the greatest year",
+    "entity_label": "DATE",
+    "year": 2013
+  },
+  {
+    "id": 298,
+    "source_table": "milestones",
+    "source_id": 209,
+    "entity_text": "ECD Bowl Weekend",
     "entity_label": "EVENT",
-    "year": 2021
+    "year": 2025
   },
   {
     "id": 238,
     "source_table": "milestones",
     "source_id": 169,
     "entity_text": "Laver Cup",
-    "entity_label": "EVENT",
-    "year": 2021
-  },
-  {
-    "id": 250,
-    "source_table": "milestones",
-    "source_id": 173,
-    "entity_text": "the Year",
     "entity_label": "EVENT",
     "year": 2021
   },
@@ -2960,172 +1320,60 @@
     "year": 2021
   },
   {
-    "id": 232,
+    "id": 270,
     "source_table": "milestones",
-    "source_id": 167,
-    "entity_text": "Stratosphere",
-    "entity_label": "FAC",
-    "year": 2021
+    "source_id": 190,
+    "entity_text": "Super Bowl LVII",
+    "entity_label": "EVENT",
+    "year": 2023
   },
   {
-    "id": 245,
-    "source_table": "milestones",
-    "source_id": 172,
-    "entity_text": "Grand Canyon/Vegas",
-    "entity_label": "FAC",
-    "year": 2021
-  },
-  {
-    "id": 331,
-    "source_table": "fun_facts",
-    "source_id": 5,
-    "entity_text": "Madison Square Garden",
-    "entity_label": "FAC",
-    "year": 2021
-  },
-  {
-    "id": 233,
-    "source_table": "milestones",
-    "source_id": 167,
-    "entity_text": "Las Vegas",
-    "entity_label": "GPE",
-    "year": 2021
-  },
-  {
-    "id": 246,
-    "source_table": "milestones",
-    "source_id": 172,
-    "entity_text": "Colorado",
-    "entity_label": "GPE",
-    "year": 2021
-  },
-  {
-    "id": 247,
-    "source_table": "milestones",
-    "source_id": 172,
-    "entity_text": "Boston",
-    "entity_label": "GPE",
-    "year": 2021
-  },
-  {
-    "id": 231,
+    "id": 230,
     "source_table": "milestones",
     "source_id": 166,
-    "entity_text": "WWE",
-    "entity_label": "ORG",
+    "entity_text": "Survivor Series",
+    "entity_label": "EVENT",
     "year": 2021
   },
   {
-    "id": 234,
-    "source_table": "milestones",
-    "source_id": 168,
-    "entity_text": "Resident Care Coordinator",
-    "entity_label": "ORG",
-    "year": 2021
-  },
-  {
-    "id": 240,
-    "source_table": "milestones",
-    "source_id": 170,
-    "entity_text": "Rangers",
-    "entity_label": "ORG",
-    "year": 2021
-  },
-  {
-    "id": 241,
-    "source_table": "milestones",
-    "source_id": 170,
-    "entity_text": "MSG",
-    "entity_label": "ORG",
-    "year": 2021
-  },
-  {
-    "id": 251,
-    "source_table": "milestones",
-    "source_id": 174,
-    "entity_text": "Tour de Friends",
-    "entity_label": "ORG",
-    "year": 2021
-  },
-  {
-    "id": 302,
+    "id": 307,
     "source_table": "quotes",
-    "source_id": 7,
-    "entity_text": "ValPal",
-    "entity_label": "ORG",
-    "year": 2021
-  },
-  {
-    "id": 330,
-    "source_table": "fun_facts",
-    "source_id": 5,
-    "entity_text": "Rangers",
-    "entity_label": "ORG",
-    "year": 2021
-  },
-  {
-    "id": 228,
-    "source_table": "milestones",
-    "source_id": 165,
-    "entity_text": "Nephew Lawrence",
-    "entity_label": "PERSON",
-    "year": 2021
-  },
-  {
-    "id": 235,
-    "source_table": "milestones",
-    "source_id": 168,
-    "entity_text": "Jul 11",
-    "entity_label": "PERSON",
-    "year": 2021
-  },
-  {
-    "id": 236,
-    "source_table": "milestones",
-    "source_id": 168,
-    "entity_text": "Jul 23",
-    "entity_label": "PERSON",
-    "year": 2021
-  },
-  {
-    "id": 243,
-    "source_table": "milestones",
-    "source_id": 171,
-    "entity_text": "Rob",
-    "entity_label": "PERSON",
-    "year": 2021
-  },
-  {
-    "id": 249,
-    "source_table": "milestones",
-    "source_id": 173,
-    "entity_text": "Lauren Winston",
-    "entity_label": "PERSON",
-    "year": 2021
-  },
-  {
-    "id": 252,
-    "source_table": "milestones",
-    "source_id": 175,
-    "entity_text": "Danny",
-    "entity_label": "PERSON",
-    "year": 2021
-  },
-  {
-    "id": 255,
-    "source_table": "milestones",
-    "source_id": 178,
-    "entity_text": "Alexandria Virginia",
-    "entity_label": "PERSON",
-    "year": 2021
-  },
-  {
-    "id": 356,
-    "source_table": "fun_facts",
     "source_id": 19,
-    "entity_text": "2022",
-    "entity_label": "DATE",
-    "year": 2022
+    "entity_text": "The Greatest Year Ever",
+    "entity_label": "EVENT",
+    "year": null
+  },
+  {
+    "id": 52,
+    "source_table": "milestones",
+    "source_id": 38,
+    "entity_text": "U.S. Open Tennis Championships",
+    "entity_label": "EVENT",
+    "year": 2009
+  },
+  {
+    "id": 36,
+    "source_table": "milestones",
+    "source_id": 26,
+    "entity_text": "the Year",
+    "entity_label": "EVENT",
+    "year": 2008
+  },
+  {
+    "id": 130,
+    "source_table": "milestones",
+    "source_id": 102,
+    "entity_text": "the Year",
+    "entity_label": "EVENT",
+    "year": 2015
+  },
+  {
+    "id": 138,
+    "source_table": "milestones",
+    "source_id": 109,
+    "entity_text": "the Year",
+    "entity_label": "EVENT",
+    "year": 2016
   },
   {
     "id": 262,
@@ -3136,236 +1384,20 @@
     "year": 2022
   },
   {
-    "id": 258,
-    "source_table": "milestones",
-    "source_id": 181,
-    "entity_text": "Megan",
-    "entity_label": "GPE",
-    "year": 2022
-  },
-  {
-    "id": 259,
-    "source_table": "milestones",
-    "source_id": 181,
-    "entity_text": "Brookdale",
-    "entity_label": "GPE",
-    "year": 2022
-  },
-  {
-    "id": 260,
-    "source_table": "milestones",
-    "source_id": 182,
-    "entity_text": "California",
-    "entity_label": "GPE",
-    "year": 2022
-  },
-  {
-    "id": 261,
-    "source_table": "milestones",
-    "source_id": 182,
-    "entity_text": "Oregon",
-    "entity_label": "GPE",
-    "year": 2022
-  },
-  {
-    "id": 263,
-    "source_table": "milestones",
-    "source_id": 182,
-    "entity_text": "Portland",
-    "entity_label": "GPE",
-    "year": 2022
-  },
-  {
-    "id": 267,
-    "source_table": "milestones",
-    "source_id": 187,
-    "entity_text": "Connecticut",
-    "entity_label": "GPE",
-    "year": 2022
-  },
-  {
-    "id": 256,
-    "source_table": "milestones",
-    "source_id": 179,
-    "entity_text": "Knicks",
-    "entity_label": "ORG",
-    "year": 2022
-  },
-  {
-    "id": 257,
-    "source_table": "milestones",
-    "source_id": 180,
-    "entity_text": "MSG",
-    "entity_label": "ORG",
-    "year": 2022
-  },
-  {
-    "id": 265,
-    "source_table": "milestones",
-    "source_id": 185,
-    "entity_text": "Gram",
-    "entity_label": "ORG",
-    "year": 2022
-  },
-  {
-    "id": 266,
-    "source_table": "milestones",
-    "source_id": 186,
-    "entity_text": "ECD FallFest",
-    "entity_label": "ORG",
-    "year": 2022
-  },
-  {
-    "id": 269,
-    "source_table": "milestones",
-    "source_id": 189,
-    "entity_text": "Hall of Fame",
-    "entity_label": "ORG",
-    "year": 2022
-  },
-  {
-    "id": 264,
-    "source_table": "milestones",
-    "source_id": 184,
-    "entity_text": "PSU White Out",
-    "entity_label": "PERSON",
-    "year": 2022
-  },
-  {
-    "id": 268,
-    "source_table": "milestones",
-    "source_id": 187,
-    "entity_text": "Sunrise Wilton",
-    "entity_label": "PERSON",
-    "year": 2022
-  },
-  {
-    "id": 355,
-    "source_table": "fun_facts",
-    "source_id": 19,
-    "entity_text": "Rooney",
-    "entity_label": "PERSON",
-    "year": 2022
-  },
-  {
-    "id": 273,
-    "source_table": "milestones",
-    "source_id": 191,
-    "entity_text": "Dec 18",
-    "entity_label": "DATE",
-    "year": 2023
-  },
-  {
-    "id": 274,
-    "source_table": "milestones",
-    "source_id": 192,
-    "entity_text": "15-year",
-    "entity_label": "DATE",
-    "year": 2023
-  },
-  {
-    "id": 277,
-    "source_table": "milestones",
-    "source_id": 193,
-    "entity_text": "one year",
-    "entity_label": "DATE",
-    "year": 2023
-  },
-  {
-    "id": 270,
-    "source_table": "milestones",
-    "source_id": 190,
-    "entity_text": "Super Bowl LVII",
-    "entity_label": "EVENT",
-    "year": 2023
-  },
-  {
-    "id": 271,
-    "source_table": "milestones",
-    "source_id": 190,
-    "entity_text": "Phoenix",
-    "entity_label": "GPE",
-    "year": 2023
-  },
-  {
-    "id": 275,
-    "source_table": "milestones",
-    "source_id": 193,
-    "entity_text": "Aladdin",
-    "entity_label": "GPE",
-    "year": 2023
-  },
-  {
-    "id": 276,
-    "source_table": "milestones",
-    "source_id": 193,
-    "entity_text": "Chicago",
-    "entity_label": "GPE",
-    "year": 2023
-  },
-  {
-    "id": 272,
-    "source_table": "milestones",
-    "source_id": 191,
-    "entity_text": "Mill Creek Court",
-    "entity_label": "ORG",
-    "year": 2023
-  },
-  {
-    "id": 286,
-    "source_table": "milestones",
-    "source_id": 199,
-    "entity_text": "Oct 21",
-    "entity_label": "DATE",
-    "year": 2024
-  },
-  {
-    "id": 287,
-    "source_table": "milestones",
-    "source_id": 199,
-    "entity_text": "age 92",
-    "entity_label": "DATE",
-    "year": 2024
-  },
-  {
-    "id": 288,
-    "source_table": "milestones",
-    "source_id": 200,
-    "entity_text": "Dec 18",
-    "entity_label": "DATE",
-    "year": 2024
-  },
-  {
-    "id": 289,
-    "source_table": "milestones",
-    "source_id": 201,
-    "entity_text": "180+",
-    "entity_label": "DATE",
-    "year": 2024
-  },
-  {
-    "id": 361,
-    "source_table": "fun_facts",
-    "source_id": 23,
-    "entity_text": "2024",
-    "entity_label": "DATE",
-    "year": 2024
-  },
-  {
-    "id": 283,
-    "source_table": "milestones",
-    "source_id": 195,
-    "entity_text": "Iceland Sky Lagoon",
-    "entity_label": "FAC",
-    "year": 2024
-  },
-  {
     "id": 290,
     "source_table": "milestones",
     "source_id": 202,
     "entity_text": "Broadway",
     "entity_label": "FAC",
     "year": 2024
+  },
+  {
+    "id": 85,
+    "source_table": "milestones",
+    "source_id": 65,
+    "entity_text": "ECDElite Hall of Fame",
+    "entity_label": "FAC",
+    "year": 2011
   },
   {
     "id": 291,
@@ -3376,12 +1408,324 @@
     "year": 2024
   },
   {
-    "id": 278,
+    "id": 430,
+    "source_table": "fun_facts",
+    "source_id": 58,
+    "entity_text": "Giants Stadium",
+    "entity_label": "FAC",
+    "year": 2009
+  },
+  {
+    "id": 245,
     "source_table": "milestones",
-    "source_id": 194,
-    "entity_text": "Spain",
-    "entity_label": "GPE",
+    "source_id": 172,
+    "entity_text": "Grand Canyon/Vegas",
+    "entity_label": "FAC",
+    "year": 2021
+  },
+  {
+    "id": 283,
+    "source_table": "milestones",
+    "source_id": 195,
+    "entity_text": "Iceland Sky Lagoon",
+    "entity_label": "FAC",
     "year": 2024
+  },
+  {
+    "id": 192,
+    "source_table": "milestones",
+    "source_id": 142,
+    "entity_text": "Lambeau Field",
+    "entity_label": "FAC",
+    "year": 2019
+  },
+  {
+    "id": 415,
+    "source_table": "fun_facts",
+    "source_id": 49,
+    "entity_text": "Lambeau Field",
+    "entity_label": "FAC",
+    "year": 2019
+  },
+  {
+    "id": 331,
+    "source_table": "fun_facts",
+    "source_id": 5,
+    "entity_text": "Madison Square Garden",
+    "entity_label": "FAC",
+    "year": 2021
+  },
+  {
+    "id": 77,
+    "source_table": "milestones",
+    "source_id": 57,
+    "entity_text": "Ocean Bay Diner",
+    "entity_label": "FAC",
+    "year": 2011
+  },
+  {
+    "id": 9,
+    "source_table": "milestones",
+    "source_id": 8,
+    "entity_text": "Ocean Township Recreation",
+    "entity_label": "FAC",
+    "year": 2007
+  },
+  {
+    "id": 94,
+    "source_table": "milestones",
+    "source_id": 71,
+    "entity_text": "Orchard Park (",
+    "entity_label": "FAC",
+    "year": 2012
+  },
+  {
+    "id": 232,
+    "source_table": "milestones",
+    "source_id": 167,
+    "entity_text": "Stratosphere",
+    "entity_label": "FAC",
+    "year": 2021
+  },
+  {
+    "id": 169,
+    "source_table": "milestones",
+    "source_id": 126,
+    "entity_text": "Sunrise of Wall",
+    "entity_label": "FAC",
+    "year": 2018
+  },
+  {
+    "id": 275,
+    "source_table": "milestones",
+    "source_id": 193,
+    "entity_text": "Aladdin",
+    "entity_label": "GPE",
+    "year": 2023
+  },
+  {
+    "id": 140,
+    "source_table": "milestones",
+    "source_id": 111,
+    "entity_text": "Alaska",
+    "entity_label": "GPE",
+    "year": 2017
+  },
+  {
+    "id": 68,
+    "source_table": "milestones",
+    "source_id": 50,
+    "entity_text": "Arizona",
+    "entity_label": "GPE",
+    "year": 2010
+  },
+  {
+    "id": 43,
+    "source_table": "milestones",
+    "source_id": 31,
+    "entity_text": "Atlantic City",
+    "entity_label": "GPE",
+    "year": 2008
+  },
+  {
+    "id": 201,
+    "source_table": "milestones",
+    "source_id": 148,
+    "entity_text": "Atlantic City",
+    "entity_label": "GPE",
+    "year": 2019
+  },
+  {
+    "id": 424,
+    "source_table": "fun_facts",
+    "source_id": 53,
+    "entity_text": "Author",
+    "entity_label": "GPE",
+    "year": null
+  },
+  {
+    "id": 247,
+    "source_table": "milestones",
+    "source_id": 172,
+    "entity_text": "Boston",
+    "entity_label": "GPE",
+    "year": 2021
+  },
+  {
+    "id": 259,
+    "source_table": "milestones",
+    "source_id": 181,
+    "entity_text": "Brookdale",
+    "entity_label": "GPE",
+    "year": 2022
+  },
+  {
+    "id": 152,
+    "source_table": "milestones",
+    "source_id": 117,
+    "entity_text": "California",
+    "entity_label": "GPE",
+    "year": 2017
+  },
+  {
+    "id": 260,
+    "source_table": "milestones",
+    "source_id": 182,
+    "entity_text": "California",
+    "entity_label": "GPE",
+    "year": 2022
+  },
+  {
+    "id": 210,
+    "source_table": "milestones",
+    "source_id": 151,
+    "entity_text": "Cambodia",
+    "entity_label": "GPE",
+    "year": 2020
+  },
+  {
+    "id": 276,
+    "source_table": "milestones",
+    "source_id": 193,
+    "entity_text": "Chicago",
+    "entity_label": "GPE",
+    "year": 2023
+  },
+  {
+    "id": 246,
+    "source_table": "milestones",
+    "source_id": 172,
+    "entity_text": "Colorado",
+    "entity_label": "GPE",
+    "year": 2021
+  },
+  {
+    "id": 267,
+    "source_table": "milestones",
+    "source_id": 187,
+    "entity_text": "Connecticut",
+    "entity_label": "GPE",
+    "year": 2022
+  },
+  {
+    "id": 163,
+    "source_table": "milestones",
+    "source_id": 123,
+    "entity_text": "Croatia",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 165,
+    "source_table": "milestones",
+    "source_id": 124,
+    "entity_text": "Croatia",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 411,
+    "source_table": "fun_facts",
+    "source_id": 47,
+    "entity_text": "Croatia",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 11,
+    "source_table": "milestones",
+    "source_id": 9,
+    "entity_text": "Detroit",
+    "entity_label": "GPE",
+    "year": 2007
+  },
+  {
+    "id": 364,
+    "source_table": "fun_facts",
+    "source_id": 24,
+    "entity_text": "Estelle",
+    "entity_label": "GPE",
+    "year": 2009
+  },
+  {
+    "id": 26,
+    "source_table": "milestones",
+    "source_id": 20,
+    "entity_text": "Florida",
+    "entity_label": "GPE",
+    "year": 2008
+  },
+  {
+    "id": 114,
+    "source_table": "milestones",
+    "source_id": 93,
+    "entity_text": "Grand Cayman",
+    "entity_label": "GPE",
+    "year": 2014
+  },
+  {
+    "id": 161,
+    "source_table": "milestones",
+    "source_id": 123,
+    "entity_text": "Greece",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 212,
+    "source_table": "milestones",
+    "source_id": 151,
+    "entity_text": "Hong Kong",
+    "entity_label": "GPE",
+    "year": 2020
+  },
+  {
+    "id": 48,
+    "source_table": "milestones",
+    "source_id": 34,
+    "entity_text": "Houston",
+    "entity_label": "GPE",
+    "year": 2009
+  },
+  {
+    "id": 363,
+    "source_table": "fun_facts",
+    "source_id": 24,
+    "entity_text": "India",
+    "entity_label": "GPE",
+    "year": 2009
+  },
+  {
+    "id": 160,
+    "source_table": "milestones",
+    "source_id": 123,
+    "entity_text": "Italy",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 113,
+    "source_table": "milestones",
+    "source_id": 93,
+    "entity_text": "Jamaica",
+    "entity_label": "GPE",
+    "year": 2014
+  },
+  {
+    "id": 299,
+    "source_table": "milestones",
+    "source_id": 211,
+    "entity_text": "Japan",
+    "entity_label": "GPE",
+    "year": 2026
+  },
+  {
+    "id": 233,
+    "source_table": "milestones",
+    "source_id": 167,
+    "entity_text": "Las Vegas",
+    "entity_label": "GPE",
+    "year": 2021
   },
   {
     "id": 279,
@@ -3400,12 +1744,148 @@
     "year": 2024
   },
   {
+    "id": 162,
+    "source_table": "milestones",
+    "source_id": 123,
+    "entity_text": "Malta",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 108,
+    "source_table": "milestones",
+    "source_id": 86,
+    "entity_text": "Maryland",
+    "entity_label": "GPE",
+    "year": 2013
+  },
+  {
+    "id": 387,
+    "source_table": "fun_facts",
+    "source_id": 34,
+    "entity_text": "Maryland",
+    "entity_label": "GPE",
+    "year": 2013
+  },
+  {
+    "id": 258,
+    "source_table": "milestones",
+    "source_id": 181,
+    "entity_text": "Megan",
+    "entity_label": "GPE",
+    "year": 2022
+  },
+  {
+    "id": 177,
+    "source_table": "milestones",
+    "source_id": 133,
+    "entity_text": "New Hampshire",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 404,
+    "source_table": "fun_facts",
+    "source_id": 43,
+    "entity_text": "New Hampshire",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
     "id": 281,
     "source_table": "milestones",
     "source_id": 195,
     "entity_text": "Norway",
     "entity_label": "GPE",
     "year": 2024
+  },
+  {
+    "id": 261,
+    "source_table": "milestones",
+    "source_id": 182,
+    "entity_text": "Oregon",
+    "entity_label": "GPE",
+    "year": 2022
+  },
+  {
+    "id": 14,
+    "source_table": "milestones",
+    "source_id": 10,
+    "entity_text": "Philadelphia",
+    "entity_label": "GPE",
+    "year": 2007
+  },
+  {
+    "id": 271,
+    "source_table": "milestones",
+    "source_id": 190,
+    "entity_text": "Phoenix",
+    "entity_label": "GPE",
+    "year": 2023
+  },
+  {
+    "id": 263,
+    "source_table": "milestones",
+    "source_id": 182,
+    "entity_text": "Portland",
+    "entity_label": "GPE",
+    "year": 2022
+  },
+  {
+    "id": 141,
+    "source_table": "milestones",
+    "source_id": 111,
+    "entity_text": "Seattle",
+    "entity_label": "GPE",
+    "year": 2017
+  },
+  {
+    "id": 208,
+    "source_table": "milestones",
+    "source_id": 151,
+    "entity_text": "Singapore",
+    "entity_label": "GPE",
+    "year": 2020
+  },
+  {
+    "id": 159,
+    "source_table": "milestones",
+    "source_id": 123,
+    "entity_text": "Slovenia",
+    "entity_label": "GPE",
+    "year": 2018
+  },
+  {
+    "id": 278,
+    "source_table": "milestones",
+    "source_id": 194,
+    "entity_text": "Spain",
+    "entity_label": "GPE",
+    "year": 2024
+  },
+  {
+    "id": 340,
+    "source_table": "fun_facts",
+    "source_id": 11,
+    "entity_text": "Texas",
+    "entity_label": "GPE",
+    "year": 2016
+  },
+  {
+    "id": 209,
+    "source_table": "milestones",
+    "source_id": 151,
+    "entity_text": "Thailand",
+    "entity_label": "GPE",
+    "year": 2020
+  },
+  {
+    "id": 300,
+    "source_table": "milestones",
+    "source_id": 211,
+    "entity_text": "Tokyo",
+    "entity_label": "GPE",
+    "year": 2026
   },
   {
     "id": 284,
@@ -3416,44 +1896,84 @@
     "year": 2024
   },
   {
-    "id": 292,
+    "id": 203,
     "source_table": "milestones",
-    "source_id": 204,
-    "entity_text": "Julian",
-    "entity_label": "NORP",
-    "year": 2024
+    "source_id": 149,
+    "entity_text": "U.S.",
+    "entity_label": "GPE",
+    "year": 2019
   },
   {
-    "id": 282,
+    "id": 106,
     "source_table": "milestones",
-    "source_id": 195,
-    "entity_text": "Akureyri",
-    "entity_label": "PERSON",
-    "year": 2024
+    "source_id": 84,
+    "entity_text": "VT",
+    "entity_label": "GPE",
+    "year": 2013
   },
   {
-    "id": 285,
+    "id": 211,
     "source_table": "milestones",
-    "source_id": 196,
-    "entity_text": "Niagara Falls",
-    "entity_label": "PERSON",
-    "year": 2024
+    "source_id": 151,
+    "entity_text": "Vietnam",
+    "entity_label": "GPE",
+    "year": 2020
   },
   {
-    "id": 297,
+    "id": 189,
     "source_table": "milestones",
-    "source_id": 208,
-    "entity_text": "20th Anniversary",
-    "entity_label": "DATE",
-    "year": 2025
+    "source_id": 141,
+    "entity_text": "Wisconsin",
+    "entity_label": "GPE",
+    "year": 2019
   },
   {
-    "id": 298,
+    "id": 191,
     "source_table": "milestones",
-    "source_id": 209,
-    "entity_text": "ECD Bowl Weekend",
-    "entity_label": "EVENT",
-    "year": 2025
+    "source_id": 142,
+    "entity_text": "Wisconsin",
+    "entity_label": "GPE",
+    "year": 2019
+  },
+  {
+    "id": 418,
+    "source_table": "fun_facts",
+    "source_id": 50,
+    "entity_text": "Wisconsin",
+    "entity_label": "GPE",
+    "year": 2019
+  },
+  {
+    "id": 336,
+    "source_table": "fun_facts",
+    "source_id": 9,
+    "entity_text": "East Coast Dodgeball",
+    "entity_label": "LOC",
+    "year": null
+  },
+  {
+    "id": 158,
+    "source_table": "milestones",
+    "source_id": 123,
+    "entity_text": "Mediterranean",
+    "entity_label": "LOC",
+    "year": 2018
+  },
+  {
+    "id": 350,
+    "source_table": "fun_facts",
+    "source_id": 16,
+    "entity_text": "Mediterranean",
+    "entity_label": "LOC",
+    "year": 2017
+  },
+  {
+    "id": 412,
+    "source_table": "fun_facts",
+    "source_id": 47,
+    "entity_text": "Mediterranean",
+    "entity_label": "LOC",
+    "year": 2018
   },
   {
     "id": 294,
@@ -3464,12 +1984,1076 @@
     "year": 2025
   },
   {
+    "id": 39,
+    "source_table": "milestones",
+    "source_id": 29,
+    "entity_text": "West Park Avenue",
+    "entity_label": "LOC",
+    "year": 2008
+  },
+  {
+    "id": 207,
+    "source_table": "milestones",
+    "source_id": 151,
+    "entity_text": "Asian",
+    "entity_label": "NORP",
+    "year": 2020
+  },
+  {
+    "id": 292,
+    "source_table": "milestones",
+    "source_id": 204,
+    "entity_text": "Julian",
+    "entity_label": "NORP",
+    "year": 2024
+  },
+  {
+    "id": 376,
+    "source_table": "fun_facts",
+    "source_id": 26,
+    "entity_text": "Adams (Oct 11, 2009",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 180,
+    "source_table": "milestones",
+    "source_id": 136,
+    "entity_text": "Australia & New Zealand",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 185,
+    "source_table": "milestones",
+    "source_id": 139,
+    "entity_text": "CHA",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 372,
+    "source_table": "fun_facts",
+    "source_id": 26,
+    "entity_text": "Canzanella, Letsche,",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 400,
+    "source_table": "fun_facts",
+    "source_id": 42,
+    "entity_text": "Captain 'Tight Lines'",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 428,
+    "source_table": "fun_facts",
+    "source_id": 58,
+    "entity_text": "Carolina Panthers",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 115,
+    "source_table": "milestones",
+    "source_id": 93,
+    "entity_text": "Cozumel",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 197,
+    "source_table": "milestones",
+    "source_id": 144,
+    "entity_text": "DC Pride Weekend",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 303,
+    "source_table": "quotes",
+    "source_id": 11,
+    "entity_text": "Darrell",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 44,
+    "source_table": "milestones",
+    "source_id": 32,
+    "entity_text": "Deactivated Facebook",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 371,
+    "source_table": "fun_facts",
+    "source_id": 26,
+    "entity_text": "Dennabuam",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 32,
+    "source_table": "milestones",
+    "source_id": 24,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 45,
+    "source_table": "milestones",
+    "source_id": 33,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 69,
+    "source_table": "milestones",
+    "source_id": 52,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2010
+  },
+  {
+    "id": 91,
+    "source_table": "milestones",
+    "source_id": 69,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2012
+  },
+  {
+    "id": 93,
+    "source_table": "milestones",
+    "source_id": 70,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2012
+  },
+  {
+    "id": 147,
+    "source_table": "milestones",
+    "source_id": 114,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 188,
+    "source_table": "milestones",
+    "source_id": 140,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 223,
+    "source_table": "milestones",
+    "source_id": 158,
+    "entity_text": "ECD",
+    "entity_label": "ORG",
+    "year": 2020
+  },
+  {
+    "id": 266,
+    "source_table": "milestones",
+    "source_id": 186,
+    "entity_text": "ECD FallFest",
+    "entity_label": "ORG",
+    "year": 2022
+  },
+  {
+    "id": 53,
+    "source_table": "milestones",
+    "source_id": 39,
+    "entity_text": "Eta",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 5,
+    "source_table": "milestones",
+    "source_id": 6,
+    "entity_text": "FINS",
+    "entity_label": "ORG",
+    "year": 2006
+  },
+  {
+    "id": 70,
+    "source_table": "milestones",
+    "source_id": 53,
+    "entity_text": "Farnkopf",
+    "entity_label": "ORG",
+    "year": 2010
+  },
+  {
+    "id": 178,
+    "source_table": "milestones",
+    "source_id": 135,
+    "entity_text": "Fever 100.3",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 306,
+    "source_table": "quotes",
+    "source_id": 19,
+    "entity_text": "Friends, Family, Freedom",
+    "entity_label": "ORG",
+    "year": null
+  },
+  {
+    "id": 66,
+    "source_table": "milestones",
+    "source_id": 47,
+    "entity_text": "GPA",
+    "entity_label": "ORG",
+    "year": 2010
+  },
+  {
+    "id": 429,
+    "source_table": "fun_facts",
+    "source_id": 58,
+    "entity_text": "Giants",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 222,
+    "source_table": "milestones",
+    "source_id": 157,
+    "entity_text": "Grace & Megan",
+    "entity_label": "ORG",
+    "year": 2020
+  },
+  {
+    "id": 65,
+    "source_table": "milestones",
+    "source_id": 47,
+    "entity_text": "Graduated Monmouth University",
+    "entity_label": "ORG",
+    "year": 2010
+  },
+  {
+    "id": 265,
+    "source_table": "milestones",
+    "source_id": 185,
+    "entity_text": "Gram",
+    "entity_label": "ORG",
+    "year": 2022
+  },
+  {
+    "id": 198,
+    "source_table": "milestones",
+    "source_id": 145,
+    "entity_text": "Halfway",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 321,
+    "source_table": "quotes",
+    "source_id": 33,
+    "entity_text": "Halfway",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 269,
+    "source_table": "milestones",
+    "source_id": 189,
+    "entity_text": "Hall of Fame",
+    "entity_label": "ORG",
+    "year": 2022
+  },
+  {
+    "id": 27,
+    "source_table": "milestones",
+    "source_id": 21,
+    "entity_text": "Health Studies",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 373,
+    "source_table": "fun_facts",
+    "source_id": 26,
+    "entity_text": "Jacobs",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 390,
+    "source_table": "fun_facts",
+    "source_id": 35,
+    "entity_text": "Joe & Gina",
+    "entity_label": "ORG",
+    "year": 2013
+  },
+  {
+    "id": 42,
+    "source_table": "milestones",
+    "source_id": 30,
+    "entity_text": "KMJ",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 432,
+    "source_table": "fun_facts",
+    "source_id": 59,
+    "entity_text": "KMJ",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 74,
+    "source_table": "milestones",
+    "source_id": 56,
+    "entity_text": "Kean University",
+    "entity_label": "ORG",
+    "year": 2010
+  },
+  {
+    "id": 139,
+    "source_table": "milestones",
+    "source_id": 110,
+    "entity_text": "Kevin & Leah",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 214,
+    "source_table": "milestones",
+    "source_id": 152,
+    "entity_text": "Kevin & Leah",
+    "entity_label": "ORG",
+    "year": 2020
+  },
+  {
+    "id": 352,
+    "source_table": "fun_facts",
+    "source_id": 17,
+    "entity_text": "Kevin & Leah's",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 125,
+    "source_table": "milestones",
+    "source_id": 99,
+    "entity_text": "Kia Soul",
+    "entity_label": "ORG",
+    "year": 2015
+  },
+  {
+    "id": 256,
+    "source_table": "milestones",
+    "source_id": 179,
+    "entity_text": "Knicks",
+    "entity_label": "ORG",
+    "year": 2022
+  },
+  {
+    "id": 1,
+    "source_table": "milestones",
+    "source_id": 1,
+    "entity_text": "LiveJournal",
+    "entity_label": "ORG",
+    "year": 2004
+  },
+  {
+    "id": 335,
+    "source_table": "fun_facts",
+    "source_id": 8,
+    "entity_text": "LiveJournal",
+    "entity_label": "ORG",
+    "year": null
+  },
+  {
+    "id": 80,
+    "source_table": "milestones",
+    "source_id": 61,
+    "entity_text": "MSG",
+    "entity_label": "ORG",
+    "year": 2011
+  },
+  {
+    "id": 195,
+    "source_table": "milestones",
+    "source_id": 143,
+    "entity_text": "MSG",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 241,
+    "source_table": "milestones",
+    "source_id": 170,
+    "entity_text": "MSG",
+    "entity_label": "ORG",
+    "year": 2021
+  },
+  {
+    "id": 257,
+    "source_table": "milestones",
+    "source_id": 180,
+    "entity_text": "MSG",
+    "entity_label": "ORG",
+    "year": 2022
+  },
+  {
+    "id": 28,
+    "source_table": "milestones",
+    "source_id": 21,
+    "entity_text": "MU",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 54,
+    "source_table": "milestones",
+    "source_id": 39,
+    "entity_text": "MU",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 17,
+    "source_table": "milestones",
+    "source_id": 15,
+    "entity_text": "MU Co-Ed Dodgeball League",
+    "entity_label": "ORG",
+    "year": 2007
+  },
+  {
+    "id": 121,
+    "source_table": "milestones",
+    "source_id": 95,
+    "entity_text": "Maggie & Mike's",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 343,
+    "source_table": "fun_facts",
+    "source_id": 12,
+    "entity_text": "Major League",
+    "entity_label": "ORG",
+    "year": null
+  },
+  {
+    "id": 434,
+    "source_table": "fun_facts",
+    "source_id": 59,
+    "entity_text": "MarinaGrille",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 153,
+    "source_table": "milestones",
+    "source_id": 117,
+    "entity_text": "Matt & Gina",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 272,
+    "source_table": "milestones",
+    "source_id": 191,
+    "entity_text": "Mill Creek Court",
+    "entity_label": "ORG",
+    "year": 2023
+  },
+  {
+    "id": 101,
+    "source_table": "milestones",
+    "source_id": 79,
+    "entity_text": "NJ",
+    "entity_label": "ORG",
+    "year": 2013
+  },
+  {
     "id": 293,
     "source_table": "milestones",
     "source_id": 205,
     "entity_text": "NJ",
     "entity_label": "ORG",
     "year": 2025
+  },
+  {
+    "id": 179,
+    "source_table": "milestones",
+    "source_id": 135,
+    "entity_text": "NYE",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 407,
+    "source_table": "fun_facts",
+    "source_id": 45,
+    "entity_text": "NYE",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 112,
+    "source_table": "milestones",
+    "source_id": 93,
+    "entity_text": "Norwegian Epic",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 118,
+    "source_table": "milestones",
+    "source_id": 94,
+    "entity_text": "Pam",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 225,
+    "source_table": "milestones",
+    "source_id": 160,
+    "entity_text": "Pasta Passion & Pistols",
+    "entity_label": "ORG",
+    "year": 2020
+  },
+  {
+    "id": 186,
+    "source_table": "milestones",
+    "source_id": 139,
+    "entity_text": "Pops Tronolone",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 120,
+    "source_table": "milestones",
+    "source_id": 95,
+    "entity_text": "Pops at",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 89,
+    "source_table": "milestones",
+    "source_id": 68,
+    "entity_text": "RK",
+    "entity_label": "ORG",
+    "year": 2011
+  },
+  {
+    "id": 200,
+    "source_table": "milestones",
+    "source_id": 148,
+    "entity_text": "RK",
+    "entity_label": "ORG",
+    "year": 2019
+  },
+  {
+    "id": 240,
+    "source_table": "milestones",
+    "source_id": 170,
+    "entity_text": "Rangers",
+    "entity_label": "ORG",
+    "year": 2021
+  },
+  {
+    "id": 330,
+    "source_table": "fun_facts",
+    "source_id": 5,
+    "entity_text": "Rangers",
+    "entity_label": "ORG",
+    "year": 2021
+  },
+  {
+    "id": 168,
+    "source_table": "milestones",
+    "source_id": 126,
+    "entity_text": "Reminiscence Coordinator",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 234,
+    "source_table": "milestones",
+    "source_id": 168,
+    "entity_text": "Resident Care Coordinator",
+    "entity_label": "ORG",
+    "year": 2021
+  },
+  {
+    "id": 145,
+    "source_table": "milestones",
+    "source_id": 112,
+    "entity_text": "Riverview",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 30,
+    "source_table": "milestones",
+    "source_id": 22,
+    "entity_text": "Royal Rumble",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 438,
+    "source_table": "fun_facts",
+    "source_id": 60,
+    "entity_text": "Royal Rumble",
+    "entity_label": "ORG",
+    "year": null
+  },
+  {
+    "id": 157,
+    "source_table": "milestones",
+    "source_id": 121,
+    "entity_text": "Silver League Champions",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 175,
+    "source_table": "milestones",
+    "source_id": 131,
+    "entity_text": "Sisters",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 370,
+    "source_table": "fun_facts",
+    "source_id": 26,
+    "entity_text": "Smalls",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 136,
+    "source_table": "milestones",
+    "source_id": 108,
+    "entity_text": "St. Lucia/Dominica/Antigua",
+    "entity_label": "ORG",
+    "year": 2016
+  },
+  {
+    "id": 150,
+    "source_table": "milestones",
+    "source_id": 116,
+    "entity_text": "SummerSlam",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 318,
+    "source_table": "quotes",
+    "source_id": 29,
+    "entity_text": "SummerSlam",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 92,
+    "source_table": "milestones",
+    "source_id": 69,
+    "entity_text": "TOUR",
+    "entity_label": "ORG",
+    "year": 2012
+  },
+  {
+    "id": 38,
+    "source_table": "milestones",
+    "source_id": 28,
+    "entity_text": "The Pops",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 334,
+    "source_table": "fun_facts",
+    "source_id": 8,
+    "entity_text": "Timeline",
+    "entity_label": "ORG",
+    "year": null
+  },
+  {
+    "id": 251,
+    "source_table": "milestones",
+    "source_id": 174,
+    "entity_text": "Tour de Friends",
+    "entity_label": "ORG",
+    "year": 2021
+  },
+  {
+    "id": 72,
+    "source_table": "milestones",
+    "source_id": 55,
+    "entity_text": "Trump Taj Mahal",
+    "entity_label": "ORG",
+    "year": 2010
+  },
+  {
+    "id": 401,
+    "source_table": "fun_facts",
+    "source_id": 42,
+    "entity_text": "Tyler",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 127,
+    "source_table": "milestones",
+    "source_id": 100,
+    "entity_text": "USVI & Bahamas",
+    "entity_label": "ORG",
+    "year": 2015
+  },
+  {
+    "id": 323,
+    "source_table": "fun_facts",
+    "source_id": 1,
+    "entity_text": "Undertaker",
+    "entity_label": "ORG",
+    "year": null
+  },
+  {
+    "id": 437,
+    "source_table": "fun_facts",
+    "source_id": 60,
+    "entity_text": "VHS",
+    "entity_label": "ORG",
+    "year": null
+  },
+  {
+    "id": 302,
+    "source_table": "quotes",
+    "source_id": 7,
+    "entity_text": "ValPal",
+    "entity_label": "ORG",
+    "year": 2021
+  },
+  {
+    "id": 378,
+    "source_table": "fun_facts",
+    "source_id": 28,
+    "entity_text": "Vehicle SUS15H",
+    "entity_label": "ORG",
+    "year": 2012
+  },
+  {
+    "id": 12,
+    "source_table": "milestones",
+    "source_id": 10,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2007
+  },
+  {
+    "id": 62,
+    "source_table": "milestones",
+    "source_id": 44,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 97,
+    "source_table": "milestones",
+    "source_id": 75,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2012
+  },
+  {
+    "id": 102,
+    "source_table": "milestones",
+    "source_id": 80,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2013
+  },
+  {
+    "id": 133,
+    "source_table": "milestones",
+    "source_id": 103,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2016
+  },
+  {
+    "id": 215,
+    "source_table": "milestones",
+    "source_id": 153,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2020
+  },
+  {
+    "id": 231,
+    "source_table": "milestones",
+    "source_id": 166,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2021
+  },
+  {
+    "id": 301,
+    "source_table": "quotes",
+    "source_id": 4,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2016
+  },
+  {
+    "id": 342,
+    "source_table": "fun_facts",
+    "source_id": 11,
+    "entity_text": "WWE",
+    "entity_label": "ORG",
+    "year": 2016
+  },
+  {
+    "id": 19,
+    "source_table": "milestones",
+    "source_id": 16,
+    "entity_text": "WWE Stock",
+    "entity_label": "ORG",
+    "year": 2007
+  },
+  {
+    "id": 397,
+    "source_table": "fun_facts",
+    "source_id": 40,
+    "entity_text": "WWE Stock",
+    "entity_label": "ORG",
+    "year": 2007
+  },
+  {
+    "id": 58,
+    "source_table": "milestones",
+    "source_id": 42,
+    "entity_text": "WinterBall",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 82,
+    "source_table": "milestones",
+    "source_id": 62,
+    "entity_text": "WinterBall",
+    "entity_label": "ORG",
+    "year": 2011
+  },
+  {
+    "id": 2,
+    "source_table": "milestones",
+    "source_id": 4,
+    "entity_text": "WrestleMania",
+    "entity_label": "ORG",
+    "year": 2005
+  },
+  {
+    "id": 385,
+    "source_table": "fun_facts",
+    "source_id": 33,
+    "entity_text": "WrestleMania",
+    "entity_label": "ORG",
+    "year": 2014
+  },
+  {
+    "id": 10,
+    "source_table": "milestones",
+    "source_id": 9,
+    "entity_text": "WrestleMania 23",
+    "entity_label": "ORG",
+    "year": 2007
+  },
+  {
+    "id": 47,
+    "source_table": "milestones",
+    "source_id": 34,
+    "entity_text": "WrestleMania 25",
+    "entity_label": "ORG",
+    "year": 2009
+  },
+  {
+    "id": 100,
+    "source_table": "milestones",
+    "source_id": 79,
+    "entity_text": "WrestleMania 29",
+    "entity_label": "ORG",
+    "year": 2013
+  },
+  {
+    "id": 131,
+    "source_table": "milestones",
+    "source_id": 103,
+    "entity_text": "WrestleMania 32",
+    "entity_label": "ORG",
+    "year": 2016
+  },
+  {
+    "id": 339,
+    "source_table": "fun_facts",
+    "source_id": 11,
+    "entity_text": "WrestleMania 32",
+    "entity_label": "ORG",
+    "year": 2016
+  },
+  {
+    "id": 149,
+    "source_table": "milestones",
+    "source_id": 115,
+    "entity_text": "WrestleMania 33",
+    "entity_label": "ORG",
+    "year": 2017
+  },
+  {
+    "id": 25,
+    "source_table": "milestones",
+    "source_id": 20,
+    "entity_text": "WrestleMania XXIV",
+    "entity_label": "ORG",
+    "year": 2008
+  },
+  {
+    "id": 320,
+    "source_table": "quotes",
+    "source_id": 31,
+    "entity_text": "patience & gratitude",
+    "entity_label": "ORG",
+    "year": 2018
+  },
+  {
+    "id": 282,
+    "source_table": "milestones",
+    "source_id": 195,
+    "entity_text": "Akureyri",
+    "entity_label": "PERSON",
+    "year": 2024
+  },
+  {
+    "id": 255,
+    "source_table": "milestones",
+    "source_id": 178,
+    "entity_text": "Alexandria Virginia",
+    "entity_label": "PERSON",
+    "year": 2021
+  },
+  {
+    "id": 436,
+    "source_table": "fun_facts",
+    "source_id": 60,
+    "entity_text": "Amorino",
+    "entity_label": "PERSON",
+    "year": null
+  },
+  {
+    "id": 333,
+    "source_table": "fun_facts",
+    "source_id": 7,
+    "entity_text": "Angela Hibbert",
+    "entity_label": "PERSON",
+    "year": null
+  },
+  {
+    "id": 172,
+    "source_table": "milestones",
+    "source_id": 129,
+    "entity_text": "Arthur Knott",
+    "entity_label": "PERSON",
+    "year": 2018
+  },
+  {
+    "id": 173,
+    "source_table": "milestones",
+    "source_id": 129,
+    "entity_text": "Artie",
+    "entity_label": "PERSON",
+    "year": 2018
+  },
+  {
+    "id": 374,
+    "source_table": "fun_facts",
+    "source_id": 26,
+    "entity_text": "Basista",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 435,
+    "source_table": "fun_facts",
+    "source_id": 59,
+    "entity_text": "Brick NJ",
+    "entity_label": "PERSON",
+    "year": 2008
+  },
+  {
+    "id": 155,
+    "source_table": "milestones",
+    "source_id": 120,
+    "entity_text": "Broken",
+    "entity_label": "PERSON",
+    "year": 2017
+  },
+  {
+    "id": 406,
+    "source_table": "fun_facts",
+    "source_id": 44,
+    "entity_text": "Buck",
+    "entity_label": "PERSON",
+    "year": 2018
+  },
+  {
+    "id": 365,
+    "source_table": "fun_facts",
+    "source_id": 24,
+    "entity_text": "Buju Banton",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 86,
+    "source_table": "milestones",
+    "source_id": 66,
+    "entity_text": "Cousin Nick",
+    "entity_label": "PERSON",
+    "year": 2011
+  },
+  {
+    "id": 380,
+    "source_table": "fun_facts",
+    "source_id": 29,
+    "entity_text": "Dan Farnkopf",
+    "entity_label": "PERSON",
+    "year": 2010
+  },
+  {
+    "id": 129,
+    "source_table": "milestones",
+    "source_id": 102,
+    "entity_text": "Dan Spengeman",
+    "entity_label": "PERSON",
+    "year": 2015
+  },
+  {
+    "id": 252,
+    "source_table": "milestones",
+    "source_id": 175,
+    "entity_text": "Danny",
+    "entity_label": "PERSON",
+    "year": 2021
   },
   {
     "id": 295,
@@ -3480,6 +3064,22 @@
     "year": 2025
   },
   {
+    "id": 116,
+    "source_table": "milestones",
+    "source_id": 94,
+    "entity_text": "Diana",
+    "entity_label": "PERSON",
+    "year": 2014
+  },
+  {
+    "id": 35,
+    "source_table": "milestones",
+    "source_id": 26,
+    "entity_text": "Diana DiBuccio: Comedian",
+    "entity_label": "PERSON",
+    "year": 2008
+  },
+  {
     "id": 296,
     "source_table": "milestones",
     "source_id": 206,
@@ -3488,19 +3088,403 @@
     "year": 2025
   },
   {
-    "id": 299,
+    "id": 103,
     "source_table": "milestones",
-    "source_id": 211,
-    "entity_text": "Japan",
-    "entity_label": "GPE",
-    "year": 2026
+    "source_id": 81,
+    "entity_text": "Grandma Theresa",
+    "entity_label": "PERSON",
+    "year": 2013
   },
   {
-    "id": 300,
+    "id": 60,
     "source_table": "milestones",
-    "source_id": 211,
-    "entity_text": "Tokyo",
-    "entity_label": "GPE",
-    "year": 2026
+    "source_id": 43,
+    "entity_text": "Grandmother",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 403,
+    "source_table": "fun_facts",
+    "source_id": 43,
+    "entity_text": "Harry",
+    "entity_label": "PERSON",
+    "year": 2018
+  },
+  {
+    "id": 375,
+    "source_table": "fun_facts",
+    "source_id": 26,
+    "entity_text": "Hoppe",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 220,
+    "source_table": "milestones",
+    "source_id": 155,
+    "entity_text": "Jackson",
+    "entity_label": "PERSON",
+    "year": 2020
+  },
+  {
+    "id": 128,
+    "source_table": "milestones",
+    "source_id": 101,
+    "entity_text": "Janet Jackson",
+    "entity_label": "PERSON",
+    "year": 2015
+  },
+  {
+    "id": 184,
+    "source_table": "milestones",
+    "source_id": 138,
+    "entity_text": "John",
+    "entity_label": "PERSON",
+    "year": 2019
+  },
+  {
+    "id": 50,
+    "source_table": "milestones",
+    "source_id": 37,
+    "entity_text": "John Legend",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 362,
+    "source_table": "fun_facts",
+    "source_id": 24,
+    "entity_text": "John Legend",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 122,
+    "source_table": "milestones",
+    "source_id": 96,
+    "entity_text": "Johnny Nash",
+    "entity_label": "PERSON",
+    "year": 2014
+  },
+  {
+    "id": 235,
+    "source_table": "milestones",
+    "source_id": 168,
+    "entity_text": "Jul 11",
+    "entity_label": "PERSON",
+    "year": 2021
+  },
+  {
+    "id": 236,
+    "source_table": "milestones",
+    "source_id": 168,
+    "entity_text": "Jul 23",
+    "entity_label": "PERSON",
+    "year": 2021
+  },
+  {
+    "id": 51,
+    "source_table": "milestones",
+    "source_id": 37,
+    "entity_text": "Kanye West",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 367,
+    "source_table": "fun_facts",
+    "source_id": 24,
+    "entity_text": "Kanye West",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 143,
+    "source_table": "milestones",
+    "source_id": 112,
+    "entity_text": "L5-S1",
+    "entity_label": "PERSON",
+    "year": 2017
+  },
+  {
+    "id": 22,
+    "source_table": "milestones",
+    "source_id": 18,
+    "entity_text": "Lauren Winston",
+    "entity_label": "PERSON",
+    "year": 2007
+  },
+  {
+    "id": 137,
+    "source_table": "milestones",
+    "source_id": 109,
+    "entity_text": "Lauren Winston",
+    "entity_label": "PERSON",
+    "year": 2016
+  },
+  {
+    "id": 167,
+    "source_table": "milestones",
+    "source_id": 125,
+    "entity_text": "Maggie",
+    "entity_label": "PERSON",
+    "year": 2018
+  },
+  {
+    "id": 156,
+    "source_table": "milestones",
+    "source_id": 120,
+    "entity_text": "Mar",
+    "entity_label": "PERSON",
+    "year": 2017
+  },
+  {
+    "id": 216,
+    "source_table": "milestones",
+    "source_id": 153,
+    "entity_text": "Mar",
+    "entity_label": "PERSON",
+    "year": 2020
+  },
+  {
+    "id": 219,
+    "source_table": "milestones",
+    "source_id": 154,
+    "entity_text": "Mar",
+    "entity_label": "PERSON",
+    "year": 2020
+  },
+  {
+    "id": 59,
+    "source_table": "milestones",
+    "source_id": 42,
+    "entity_text": "Melissa Kerr",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 142,
+    "source_table": "milestones",
+    "source_id": 111,
+    "entity_text": "Mendenhall Glacier",
+    "entity_label": "PERSON",
+    "year": 2017
+  },
+  {
+    "id": 73,
+    "source_table": "milestones",
+    "source_id": 56,
+    "entity_text": "Michael",
+    "entity_label": "PERSON",
+    "year": 2010
+  },
+  {
+    "id": 166,
+    "source_table": "milestones",
+    "source_id": 125,
+    "entity_text": "Michael",
+    "entity_label": "PERSON",
+    "year": 2018
+  },
+  {
+    "id": 16,
+    "source_table": "milestones",
+    "source_id": 14,
+    "entity_text": "Mom",
+    "entity_label": "PERSON",
+    "year": 2007
+  },
+  {
+    "id": 357,
+    "source_table": "fun_facts",
+    "source_id": 20,
+    "entity_text": "Mommy Kerr's",
+    "entity_label": "PERSON",
+    "year": 2020
+  },
+  {
+    "id": 183,
+    "source_table": "milestones",
+    "source_id": 137,
+    "entity_text": "Nephew Julian John Tronolone",
+    "entity_label": "PERSON",
+    "year": 2019
+  },
+  {
+    "id": 228,
+    "source_table": "milestones",
+    "source_id": 165,
+    "entity_text": "Nephew Lawrence",
+    "entity_label": "PERSON",
+    "year": 2021
+  },
+  {
+    "id": 285,
+    "source_table": "milestones",
+    "source_id": 196,
+    "entity_text": "Niagara Falls",
+    "entity_label": "PERSON",
+    "year": 2024
+  },
+  {
+    "id": 99,
+    "source_table": "milestones",
+    "source_id": 78,
+    "entity_text": "Norwegian Breakaway",
+    "entity_label": "PERSON",
+    "year": 2013
+  },
+  {
+    "id": 264,
+    "source_table": "milestones",
+    "source_id": 184,
+    "entity_text": "PSU White Out",
+    "entity_label": "PERSON",
+    "year": 2022
+  },
+  {
+    "id": 388,
+    "source_table": "fun_facts",
+    "source_id": 35,
+    "entity_text": "Played Batman",
+    "entity_label": "PERSON",
+    "year": 2013
+  },
+  {
+    "id": 218,
+    "source_table": "milestones",
+    "source_id": 153,
+    "entity_text": "RL",
+    "entity_label": "PERSON",
+    "year": 2020
+  },
+  {
+    "id": 366,
+    "source_table": "fun_facts",
+    "source_id": 24,
+    "entity_text": "Rick Ross",
+    "entity_label": "PERSON",
+    "year": 2009
+  },
+  {
+    "id": 76,
+    "source_table": "milestones",
+    "source_id": 57,
+    "entity_text": "Rob",
+    "entity_label": "PERSON",
+    "year": 2011
+  },
+  {
+    "id": 243,
+    "source_table": "milestones",
+    "source_id": 171,
+    "entity_text": "Rob",
+    "entity_label": "PERSON",
+    "year": 2021
+  },
+  {
+    "id": 355,
+    "source_table": "fun_facts",
+    "source_id": 19,
+    "entity_text": "Rooney",
+    "entity_label": "PERSON",
+    "year": 2022
+  },
+  {
+    "id": 87,
+    "source_table": "milestones",
+    "source_id": 66,
+    "entity_text": "Samantha",
+    "entity_label": "PERSON",
+    "year": 2011
+  },
+  {
+    "id": 135,
+    "source_table": "milestones",
+    "source_id": 107,
+    "entity_text": "Spengeman-Mullins",
+    "entity_label": "PERSON",
+    "year": 2016
+  },
+  {
+    "id": 98,
+    "source_table": "milestones",
+    "source_id": 76,
+    "entity_text": "Stratton Vermont",
+    "entity_label": "PERSON",
+    "year": 2012
+  },
+  {
+    "id": 268,
+    "source_table": "milestones",
+    "source_id": 187,
+    "entity_text": "Sunrise Wilton",
+    "entity_label": "PERSON",
+    "year": 2022
+  },
+  {
+    "id": 345,
+    "source_table": "fun_facts",
+    "source_id": 13,
+    "entity_text": "The Kia Soul",
+    "entity_label": "PERSON",
+    "year": 2015
+  },
+  {
+    "id": 423,
+    "source_table": "fun_facts",
+    "source_id": 52,
+    "entity_text": "Timline",
+    "entity_label": "PERSON",
+    "year": null
+  },
+  {
+    "id": 37,
+    "source_table": "milestones",
+    "source_id": 27,
+    "entity_text": "Tom Petty '",
+    "entity_label": "PERSON",
+    "year": 2008
+  },
+  {
+    "id": 117,
+    "source_table": "milestones",
+    "source_id": 94,
+    "entity_text": "Valerie",
+    "entity_label": "PERSON",
+    "year": 2014
+  },
+  {
+    "id": 381,
+    "source_table": "fun_facts",
+    "source_id": 29,
+    "entity_text": "Vitamin Waters",
+    "entity_label": "PERSON",
+    "year": 2010
+  },
+  {
+    "id": 194,
+    "source_table": "milestones",
+    "source_id": 143,
+    "entity_text": "Weezer",
+    "entity_label": "PERSON",
+    "year": 2019
+  },
+  {
+    "id": 337,
+    "source_table": "fun_facts",
+    "source_id": 9,
+    "entity_text": "WrestleJohnMania XXVI'",
+    "entity_label": "PERSON",
+    "year": null
+  },
+  {
+    "id": 67,
+    "source_table": "milestones",
+    "source_id": 50,
+    "entity_text": "WrestleMania XXVI",
+    "entity_label": "PERSON",
+    "year": 2010
   }
 ]

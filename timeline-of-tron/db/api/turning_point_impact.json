@@ -1,1189 +1,223 @@
 [
   {
-    "year": 2004,
+    "id": 1,
+    "turning_point_year": 2004,
     "event": "Car accident causing panic attacks and anxiety",
     "type": "contaminated",
     "domain": "health",
-    "from_state": "carefree youth",
-    "to_state": "anxiety and physical recovery",
-    "milestones_before": [],
-    "milestones_after": [
-      {
-        "milestone": "EastCoastDodgeball founded",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Difficult period after WrestleMania attendance",
-        "vader_compound": -0.3612
-      }
-    ],
-    "sentiment_before": null,
-    "sentiment_after": -0.181,
-    "people_involved": []
+    "before_sentiment": -0.4375,
+    "after_sentiment": 0.033555555555555554,
+    "sentiment_shift": 0.47105555555555556,
+    "before_people_count": 1,
+    "after_people_count": 3,
+    "before_key_topic": "Topic 8: jul, 29, birthday, married",
+    "after_key_topic": "Topic 5: dec, 15, 18, 12",
+    "shock_magnitude": 2.4710555555555556,
+    "recovery_months": 6,
+    "narrative_summary": "Car accident causing panic attacks and anxiety: shift from Topic 8: jul, 29, birthday, married to Topic 5: dec, 15, 18, 12, positive sentiment trajectory."
   },
   {
-    "year": 2005,
+    "id": 2,
+    "turning_point_year": 2005,
     "event": "Family estrangement, near-anorexia",
     "type": "contaminated",
     "domain": "family",
-    "from_state": "family stability",
-    "to_state": "temporary orphan, mental health crisis",
-    "milestones_before": [
-      {
-        "milestone": "Timeline project begins on LiveJournal (Jul 29)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Life-altering car accident resulting in panic attacks and anxiety",
-        "vader_compound": -0.875
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "FINS Friday gatherings ongoing since March 2006",
-        "vader_compound": 0.0
-      }
-    ],
-    "sentiment_before": -0.438,
-    "sentiment_after": null,
-    "people_involved": [
-      "Ma"
-    ]
+    "before_sentiment": -0.30905,
+    "after_sentiment": 0.06578999999999999,
+    "sentiment_shift": 0.37483999999999995,
+    "before_people_count": 1,
+    "after_people_count": 3,
+    "before_key_topic": "Topic 8: jul, 29, birthday, married",
+    "after_key_topic": "Topic 5: dec, 15, 18, 12",
+    "shock_magnitude": 2.37484,
+    "recovery_months": 6,
+    "narrative_summary": "Family estrangement, near-anorexia: shift from Topic 8: jul, 29, birthday, married to Topic 5: dec, 15, 18, 12, positive sentiment trajectory."
   },
   {
-    "year": 2006,
+    "id": 3,
+    "turning_point_year": 2006,
     "event": "723-day relationship begins (Nov 21)",
     "type": "stable",
     "domain": "relationship",
-    "from_state": "single",
-    "to_state": "partnered",
-    "milestones_before": [
-      {
-        "milestone": "EastCoastDodgeball founded",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Difficult period after WrestleMania attendance",
-        "vader_compound": -0.3612
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "MU Co-Ed Dodgeball League championship (Nov 19, PondScum)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "Dad's surprise 50th birthday (Jul 29)",
-        "vader_compound": 0.2732
-      },
-      {
-        "milestone": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'",
-        "vader_compound": 0.0516
-      },
-      {
-        "milestone": "27 bowling games in a single day",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Started job at Ocean Township Recreation (Feb 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania 23 in Detroit (3rd WM)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "51st WWE event (Oct 29 Philadelphia)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 23 (Sep 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Moved back to Mom's permanently (Jul 1)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WWE Stock purchased (Dec 12)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "20+ hours of tennis in one week",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Lauren Winston turned 21 (Apr 13)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Contracted Shingles at age 20",
-        "vader_compound": 0.0
-      }
-    ],
-    "sentiment_before": -0.181,
-    "sentiment_after": 0.069,
-    "people_involved": [
-      "Ma"
-    ]
+    "before_sentiment": -0.20603333333333332,
+    "after_sentiment": 0.08048095238095236,
+    "sentiment_shift": 0.28651428571428567,
+    "before_people_count": 2,
+    "after_people_count": 4,
+    "before_key_topic": "Topic 8: jul, 29, birthday, married",
+    "after_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "shock_magnitude": 1.2865142857142857,
+    "recovery_months": 6,
+    "narrative_summary": "723-day relationship begins (Nov 21): shift from Topic 8: jul, 29, birthday, married to Topic 2: year, comedian, anniversary, ecd, positive sentiment trajectory."
   },
   {
-    "year": 2007,
+    "id": 4,
+    "turning_point_year": 2007,
     "event": "Family reconciliation, ECD golden age",
     "type": "redemptive",
     "domain": "family",
-    "from_state": "estranged",
-    "to_state": "rebuilt family bonds",
-    "milestones_before": [
-      {
-        "milestone": "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "FINS Friday gatherings ongoing since March 2006",
-        "vader_compound": 0.0
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "First semester of Health Studies completed at MU (May 8)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "Diana DiBuccio: Comedian of the Year",
-        "vader_compound": 0.3818
-      },
-      {
-        "milestone": "First beer shared with The Pops (Aug 21)",
-        "vader_compound": 0.34
-      },
-      {
-        "milestone": "Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 near-anorexia. Letsche friendship repaired at Rumble '08. First appearance of 'The power of an internal desire liberated!' \u2014 March 2008.",
-        "vader_compound": 0.2714
-      },
-      {
-        "milestone": "Song of the Year: Tom Petty 'Runnin Down a Dream'",
-        "vader_compound": 0.0516
-      },
-      {
-        "milestone": "WrestleMania XXIV in Florida (4th WM)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Royal Rumble at MSG (Jan 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "DODGEBALL 150 (Aug 9)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "ECD 3-Year Anniversary (Sep 6)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 24 (Sep 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Came out in 2008; KMJ was 3rd person to know",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "FAB4 Atlantic City trips began",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Deactivated Facebook after 4-hour paper incident",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Car accident on West Park Avenue (Nov 4)",
-        "vader_compound": -0.4767
-      }
-    ],
-    "sentiment_before": null,
-    "sentiment_after": 0.072,
-    "people_involved": [
-      "The Pops",
-      "Lauren Winston",
-      "Ma"
-    ]
+    "before_sentiment": 0.033555555555555554,
+    "after_sentiment": 0.11406842105263158,
+    "sentiment_shift": 0.08051286549707604,
+    "before_people_count": 3,
+    "after_people_count": 3,
+    "before_key_topic": "Topic 5: dec, 15, 18, 12",
+    "after_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "shock_magnitude": 0.08051286549707604,
+    "recovery_months": 6,
+    "narrative_summary": "Family reconciliation, ECD golden age: shift from Topic 5: dec, 15, 18, 12 to Topic 2: year, comedian, anniversary, ecd, positive sentiment trajectory."
   },
   {
-    "year": 2008,
-    "event": "Coming out \u2014 'The power of an internal desire liberated!'",
+    "id": 5,
+    "turning_point_year": 2008,
+    "event": "Coming out — 'The power of an internal desire liberated!'",
     "type": "redemptive",
     "domain": "identity",
-    "from_state": "concealed identity",
-    "to_state": "authentic self",
-    "milestones_before": [
-      {
-        "milestone": "MU Co-Ed Dodgeball League championship (Nov 19, PondScum)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "Dad's surprise 50th birthday (Jul 29)",
-        "vader_compound": 0.2732
-      },
-      {
-        "milestone": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'",
-        "vader_compound": 0.0516
-      },
-      {
-        "milestone": "27 bowling games in a single day",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Started job at Ocean Township Recreation (Feb 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania 23 in Detroit (3rd WM)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "51st WWE event (Oct 29 Philadelphia)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 23 (Sep 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Moved back to Mom's permanently (Jul 1)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WWE Stock purchased (Dec 12)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "20+ hours of tennis in one week",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Lauren Winston turned 21 (Apr 13)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Contracted Shingles at age 20",
-        "vader_compound": 0.0
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
-        "vader_compound": 0.6369
-      },
-      {
-        "milestone": "'The Greatest Year Ever. 2009.'",
-        "vader_compound": 0.6369
-      },
-      {
-        "milestone": "U.S. Open Tennis Championships attended (Sep 7)",
-        "vader_compound": 0.4939
-      },
-      {
-        "milestone": "Retired from ECD after 171 events and 40 months (Jan 3)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "SkyDive II 'Cloud Nine' with 9 people (Oct 11)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "First concert ever: John Legend at MSG with Kanye West (Aug 13)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Inducted into Eta Sigma Gamma at MU (Dec 16)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 25 \u2014 multi-day celebration (Sep 25-27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Bowling 255 during a snowstorm (Mar 1)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WinterBall with Melissa Kerr (Feb 21)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Grandmother's 77th birthday (Nov 13)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "62nd WWE event (Hell In A Cell Oct 4)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "28 beers consumed all year; 101 dates posted; 0 regrets",
-        "vader_compound": -0.3612
-      }
-    ],
-    "sentiment_before": 0.069,
-    "sentiment_after": 0.1,
-    "people_involved": [
-      "Rob",
-      "The Pops",
-      "Kevin & Leah",
-      "Diana",
-      "Ma"
-    ]
+    "before_sentiment": 0.06578999999999999,
+    "after_sentiment": 0.09223055555555555,
+    "sentiment_shift": 0.026440555555555564,
+    "before_people_count": 3,
+    "after_people_count": 4,
+    "before_key_topic": "Topic 5: dec, 15, 18, 12",
+    "after_key_topic": "Topic 8: jul, 29, birthday, married",
+    "shock_magnitude": 0.3597738888888889,
+    "recovery_months": 6,
+    "narrative_summary": "Coming out — 'The power of an internal desire liberated!': shift from Topic 5: dec, 15, 18, 12 to Topic 8: jul, 29, birthday, married, positive sentiment trajectory."
   },
   {
-    "year": 2008,
+    "id": 6,
+    "turning_point_year": 2008,
     "event": "Relationship ends (Jun 10), liberation follows",
     "type": "redemptive",
     "domain": "relationship",
-    "from_state": "723-day relationship",
-    "to_state": "freedom and self-discovery",
-    "milestones_before": [
-      {
-        "milestone": "MU Co-Ed Dodgeball League championship (Nov 19, PondScum)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "Dad's surprise 50th birthday (Jul 29)",
-        "vader_compound": 0.2732
-      },
-      {
-        "milestone": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'",
-        "vader_compound": 0.0516
-      },
-      {
-        "milestone": "27 bowling games in a single day",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Started job at Ocean Township Recreation (Feb 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania 23 in Detroit (3rd WM)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "51st WWE event (Oct 29 Philadelphia)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 23 (Sep 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Moved back to Mom's permanently (Jul 1)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WWE Stock purchased (Dec 12)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "20+ hours of tennis in one week",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Lauren Winston turned 21 (Apr 13)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Contracted Shingles at age 20",
-        "vader_compound": 0.0
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
-        "vader_compound": 0.6369
-      },
-      {
-        "milestone": "'The Greatest Year Ever. 2009.'",
-        "vader_compound": 0.6369
-      },
-      {
-        "milestone": "U.S. Open Tennis Championships attended (Sep 7)",
-        "vader_compound": 0.4939
-      },
-      {
-        "milestone": "Retired from ECD after 171 events and 40 months (Jan 3)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "SkyDive II 'Cloud Nine' with 9 people (Oct 11)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "First concert ever: John Legend at MSG with Kanye West (Aug 13)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Inducted into Eta Sigma Gamma at MU (Dec 16)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 25 \u2014 multi-day celebration (Sep 25-27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Bowling 255 during a snowstorm (Mar 1)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WinterBall with Melissa Kerr (Feb 21)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Grandmother's 77th birthday (Nov 13)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "62nd WWE event (Hell In A Cell Oct 4)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "28 beers consumed all year; 101 dates posted; 0 regrets",
-        "vader_compound": -0.3612
-      }
-    ],
-    "sentiment_before": 0.069,
-    "sentiment_after": 0.1,
-    "people_involved": [
-      "Rob",
-      "The Pops",
-      "Kevin & Leah",
-      "Diana",
-      "Ma"
-    ]
+    "before_sentiment": 0.06578999999999999,
+    "after_sentiment": 0.09223055555555555,
+    "sentiment_shift": 0.026440555555555564,
+    "before_people_count": 3,
+    "after_people_count": 4,
+    "before_key_topic": "Topic 5: dec, 15, 18, 12",
+    "after_key_topic": "Topic 8: jul, 29, birthday, married",
+    "shock_magnitude": 0.3597738888888889,
+    "recovery_months": 6,
+    "narrative_summary": "Relationship ends (Jun 10), liberation follows: shift from Topic 5: dec, 15, 18, 12 to Topic 8: jul, 29, birthday, married, positive sentiment trajectory."
   },
   {
-    "year": 2009,
+    "id": 7,
+    "turning_point_year": 2009,
     "event": "ECD retirement after 171 events",
     "type": "redemptive",
     "domain": "community",
-    "from_state": "dodgeball leader",
-    "to_state": "legacy secured, new freedom",
-    "milestones_before": [
-      {
-        "milestone": "First semester of Health Studies completed at MU (May 8)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "Diana DiBuccio: Comedian of the Year",
-        "vader_compound": 0.3818
-      },
-      {
-        "milestone": "First beer shared with The Pops (Aug 21)",
-        "vader_compound": 0.34
-      },
-      {
-        "milestone": "Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 near-anorexia. Letsche friendship repaired at Rumble '08. First appearance of 'The power of an internal desire liberated!' \u2014 March 2008.",
-        "vader_compound": 0.2714
-      },
-      {
-        "milestone": "Song of the Year: Tom Petty 'Runnin Down a Dream'",
-        "vader_compound": 0.0516
-      },
-      {
-        "milestone": "WrestleMania XXIV in Florida (4th WM)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Royal Rumble at MSG (Jan 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "DODGEBALL 150 (Aug 9)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "ECD 3-Year Anniversary (Sep 6)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 24 (Sep 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Came out in 2008; KMJ was 3rd person to know",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "FAB4 Atlantic City trips began",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Deactivated Facebook after 4-hour paper incident",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Car accident on West Park Avenue (Nov 4)",
-        "vader_compound": -0.4767
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "Won inaugural HERO of the Year (Jan 27)",
-        "vader_compound": 0.8415
-      },
-      {
-        "milestone": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
-        "vader_compound": 0.6523
-      },
-      {
-        "milestone": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "Brother Michael graduated from Kean University (May 13)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "18 lbs gained, 3 alcoholic beverages, 0 regrets",
-        "vader_compound": 0.0258
-      },
-      {
-        "milestone": "Featured in Phillies PSA (Jun 10)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania XXVI in Arizona (939 photos)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "3rd skydive (Jul 18)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "ECD 5th Year Anniversary (Sep 11)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
-        "vader_compound": 0.0
-      }
-    ],
-    "sentiment_before": 0.072,
-    "sentiment_after": 0.192,
-    "people_involved": [
-      "Ma"
-    ]
+    "before_sentiment": 0.08048095238095236,
+    "after_sentiment": 0.07388333333333334,
+    "sentiment_shift": -0.006597619047619019,
+    "before_people_count": 4,
+    "after_people_count": 2,
+    "before_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "after_key_topic": "Topic 6: wwe, event, oct, mar",
+    "shock_magnitude": 0.506597619047619,
+    "recovery_months": 6,
+    "narrative_summary": "ECD retirement after 171 events: shift from Topic 2: year, comedian, anniversary, ecd to Topic 6: wwe, event, oct, mar, negative sentiment trajectory."
   },
   {
-    "year": 2011,
+    "id": 8,
+    "turning_point_year": 2011,
     "event": "Torn glenoid labrum / surgery",
     "type": "contaminated",
     "domain": "health",
-    "from_state": "physical peak",
-    "to_state": "surgical recovery",
-    "milestones_before": [
-      {
-        "milestone": "Won inaugural HERO of the Year (Jan 27)",
-        "vader_compound": 0.8415
-      },
-      {
-        "milestone": "HERO Campaign 10th Anniversary at Trump Taj Mahal (Jul 22)",
-        "vader_compound": 0.6523
-      },
-      {
-        "milestone": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "Brother Michael graduated from Kean University (May 13)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "18 lbs gained, 3 alcoholic beverages, 0 regrets",
-        "vader_compound": 0.0258
-      },
-      {
-        "milestone": "Featured in Phillies PSA (Jun 10)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania XXVI in Arizona (939 photos)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "3rd skydive (Jul 18)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "ECD 5th Year Anniversary (Sep 11)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Tennis match vs Farnkopf: 6 hours 7 minutes 3 seconds (Sep 21)",
-        "vader_compound": 0.0
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "Record 18 rounds at Orchard Park (Oct 13)",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "SUS15H reached 190,000 miles (Nov)",
-        "vader_compound": 0.1027
-      },
-      {
-        "milestone": "ECD reopened with 'WORLD TOUR' (Apr 7)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "ECD 7th birthday + 500th player (Sep 1)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Employee of the Month (Jan)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Activities & Volunteer Coordinator promotion (May)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "71st WWE event",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Stratton Vermont ski trip continues",
-        "vader_compound": 0.0
-      }
-    ],
-    "sentiment_before": 0.192,
-    "sentiment_after": 0.038,
-    "people_involved": [
-      "Rob",
-      "Ma"
-    ]
+    "before_sentiment": 0.09223055555555555,
+    "after_sentiment": 0.07567333333333333,
+    "sentiment_shift": -0.016557222222222223,
+    "before_people_count": 4,
+    "after_people_count": 5,
+    "before_key_topic": "Topic 8: jul, 29, birthday, married",
+    "after_key_topic": "Topic 6: wwe, event, oct, mar",
+    "shock_magnitude": 0.2665572222222222,
+    "recovery_months": 6,
+    "narrative_summary": "Torn glenoid labrum / surgery: shift from Topic 8: jul, 29, birthday, married to Topic 6: wwe, event, oct, mar, negative sentiment trajectory."
   },
   {
-    "year": 2014,
-    "event": "Undertaker handshake \u2014 20-year dream fulfilled",
+    "id": 9,
+    "turning_point_year": 2014,
+    "event": "Undertaker handshake — 20-year dream fulfilled",
     "type": "redemptive",
     "domain": "identity",
-    "from_state": "lifelong dream",
-    "to_state": "dream realized through friendship",
-    "milestones_before": [
-      {
-        "milestone": "'Table 7' Era begins (Jun 8)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "DODGEBOWL 200 \u2014 era-ending extravaganza (Aug 10, FIVE star rating)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WWE event #75 (Sep 3)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Grandma Theresa passed away (Jun 10-15)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "5 weddings attended in one year",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "5th consecutive VT skiing trip (Jan 6-9)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Turned 29 (Sep 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Pilates Round 1 \u2014 only male participant",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "'2010 and 2013 will no doubt stand the test of time'",
-        "vader_compound": -0.5719
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "Janet Jackson first Artist of the Year win",
-        "vader_compound": 0.5859
-      },
-      {
-        "milestone": "Dan Spengeman: Comedian of the Year",
-        "vader_compound": 0.3818
-      },
-      {
-        "milestone": "USVI & Bahamas cruise (rated 10/10)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Kia Soul hits 20,000 miles (Dec 15)",
-        "vader_compound": -0.6369
-      }
-    ],
-    "sentiment_before": 0.006,
-    "sentiment_after": 0.083,
-    "people_involved": [
-      "Valerie",
-      "The Pops",
-      "Diana",
-      "Ma"
-    ]
+    "before_sentiment": 0.07567333333333333,
+    "after_sentiment": 0.10506666666666666,
+    "sentiment_shift": 0.029393333333333327,
+    "before_people_count": 5,
+    "after_people_count": 5,
+    "before_key_topic": "Topic 6: wwe, event, oct, mar",
+    "after_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "shock_magnitude": 0.029393333333333327,
+    "recovery_months": 6,
+    "narrative_summary": "Undertaker handshake — 20-year dream fulfilled: shift from Topic 6: wwe, event, oct, mar to Topic 2: year, comedian, anniversary, ecd, positive sentiment trajectory."
   },
   {
-    "year": 2017,
+    "id": 10,
+    "turning_point_year": 2017,
     "event": "Spinal surgery",
     "type": "contaminated",
     "domain": "health",
-    "from_state": "active lifestyle",
-    "to_state": "forced stillness and recovery",
-    "milestones_before": [
-      {
-        "milestone": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
-        "vader_compound": 0.6369
-      },
-      {
-        "milestone": "Manager of the Year award",
-        "vader_compound": 0.5423
-      },
-      {
-        "milestone": "Lauren Winston: Comedian of the Year",
-        "vader_compound": 0.3818
-      },
-      {
-        "milestone": "Table tennis: 62-4 (93.9%)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Cornhole: 254-98, 38 cornholios",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Spengeman-Mullins wedding",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "St. Lucia/Dominica/Antigua cruise",
-        "vader_compound": 0.0
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
-        "vader_compound": 0.7506
-      },
-      {
-        "milestone": "Best tennis comeback: won from 0-6 deficit (Dec 23)",
-        "vader_compound": 0.7351
-      },
-      {
-        "milestone": "Won Weezer tickets as 94.3 radio 9th caller (Nov 26)",
-        "vader_compound": 0.5719
-      },
-      {
-        "milestone": "Engagement ring purchased in Croatia",
-        "vader_compound": 0.4588
-      },
-      {
-        "milestone": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Brother Michael married Maggie (Jun 29)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Reminiscence Coordinator role at Sunrise of Wall (started Oct 22)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Became a pickleball believer (Aug 16)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Arthur Knott (Artie) passed away (Feb 2)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "6th cruise in 6 years",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "New Hampshire trip (Sep 19-22)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "34th birthday (Sep 27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Fever 100.3 on NYE",
-        "vader_compound": 0.0
-      }
-    ],
-    "sentiment_before": 0.223,
-    "sentiment_after": 0.194,
-    "people_involved": [
-      "Kevin & Leah",
-      "Ma"
-    ]
+    "before_sentiment": 0.10506666666666666,
+    "after_sentiment": 0.13863076923076922,
+    "sentiment_shift": 0.03356410256410257,
+    "before_people_count": 5,
+    "after_people_count": 6,
+    "before_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "after_key_topic": "Topic 5: dec, 15, 18, 12",
+    "shock_magnitude": 0.2335641025641026,
+    "recovery_months": 6,
+    "narrative_summary": "Spinal surgery: shift from Topic 2: year, comedian, anniversary, ecd to Topic 5: dec, 15, 18, 12, positive sentiment trajectory."
   },
   {
-    "year": 2018,
+    "id": 11,
+    "turning_point_year": 2018,
     "event": "Mediterranean cruise post-surgery",
     "type": "redemptive",
     "domain": "health",
-    "from_state": "surgical recovery",
-    "to_state": "adventure resumes",
-    "milestones_before": [
-      {
-        "milestone": "Silver League Champions volleyball (Aug 30)",
-        "vader_compound": 0.5267
-      },
-      {
-        "milestone": "Kevin & Leah engaged",
-        "vader_compound": 0.4019
-      },
-      {
-        "milestone": "Cornhole: 27-2 record on cruise",
-        "vader_compound": 0.2
-      },
-      {
-        "milestone": "Escape Room completed in 45:43 (Jan 15)",
-        "vader_compound": 0.1779
-      },
-      {
-        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "14 staples removed (Dec 26)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "ECD 12-Year Anniversary (Sep 2)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "WrestleMania 33 (Apr 2)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "SummerSlam 20-year personal story complete (Aug 20)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "California trip 600+ miles for Matt & Gina wedding",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Father's 60th birthday (Jul 29)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
-        "vader_compound": -0.2
-      },
-      {
-        "milestone": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
-        "vader_compound": -0.4767
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
-        "vader_compound": 0.8555
-      },
-      {
-        "milestone": "7th Major ECD championship (Aug 17)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "U.S. Open: Nadal vs Medvedev final, 3rd longest in 100+ years (Sep 8)",
-        "vader_compound": 0.4404
-      },
-      {
-        "milestone": "DC Pride Weekend (Jun 22-24)",
-        "vader_compound": 0.34
-      },
-      {
-        "milestone": "'2020, challenge accepted' (Dec 31)",
-        "vader_compound": 0.34
-      },
-      {
-        "milestone": "Nephew Julian John Tronolone born (Aug 23)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Became Uncle John",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "1,000th CHA game vs Pops Tronolone (May 22)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Wisconsin Trip 1: Moore-Tronolone wedding (May 31-Jun 2)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Wisconsin Trip 2: Lambeau Field 78,000+ (Sep 20-23)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Weezer concert at sold-out MSG (Mar 12)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "35th birthday \u2014 'Halfway to 70' (Sep 25-27)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Strep throat + kidney stone removal",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "RK's 30th birthday in Atlantic City (Dec 15-16)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Inaugural 'Steal Bingo' (Nov 23)",
-        "vader_compound": -0.4939
-      }
-    ],
-    "sentiment_before": 0.048,
-    "sentiment_after": 0.128,
-    "people_involved": [
-      "Ma",
-      "Michael"
-    ]
+    "before_sentiment": 0.14264242424242424,
+    "after_sentiment": 0.10237826086956525,
+    "sentiment_shift": -0.040264163372858985,
+    "before_people_count": 6,
+    "after_people_count": 7,
+    "before_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "after_key_topic": "Topic 5: dec, 15, 18, 12",
+    "shock_magnitude": 0.20693083003952564,
+    "recovery_months": 6,
+    "narrative_summary": "Mediterranean cruise post-surgery: shift from Topic 2: year, comedian, anniversary, ecd to Topic 5: dec, 15, 18, 12, negative sentiment trajectory."
   },
   {
-    "year": 2022,
+    "id": 12,
+    "turning_point_year": 2022,
     "event": "Engagement",
     "type": "redemptive",
     "domain": "relationship",
-    "from_state": "single",
-    "to_state": "committed partnership",
-    "milestones_before": [
-      {
-        "milestone": "Sr. Resident Care Coordinator promotion (applied Jul 11, accepted Jul 23)",
-        "vader_compound": 0.6486
-      },
-      {
-        "milestone": "Danny won inaugural 'RK Quiz' (Dec 11)",
-        "vader_compound": 0.5719
-      },
-      {
-        "milestone": "Tour de Friends events (Feb-Apr)",
-        "vader_compound": 0.4767
-      },
-      {
-        "milestone": "Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos)",
-        "vader_compound": 0.4588
-      },
-      {
-        "milestone": "Arizona trip: Grand Canyon, Sedona, Flagstaff",
-        "vader_compound": 0.4588
-      },
-      {
-        "milestone": "25th consecutive Survivor Series \u2014 91st WWE event",
-        "vader_compound": 0.3612
-      },
-      {
-        "milestone": "Year rated 9.8/10",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "218-round ping pong match",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "8.6 lbs shrimp + 7.3 lbs crab meat consumed",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Nephew Lawrence born (Dec 23, 6:25am)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Jumped from Stratosphere in Las Vegas",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "568-day wait for Laver Cup tickets",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "20 years between Rangers games at MSG",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "YogaSix Class 101 standing splits (Dec 12)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "37th birthday (Sep 24-28)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Alexandria Virginia work assignment (Sep 20-23)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Ft. Lauderdale wedding attendance (May 13-18)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Washington D.C. visit (October)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "10-year anniversary with Rob (Jan 15)",
-        "vader_compound": -0.5574
-      },
-      {
-        "milestone": "Death Valley visited (Mar 16-20)",
-        "vader_compound": -0.5994
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "Six Flags Great Adventure visits (multiple)",
-        "vader_compound": 0.7506
-      },
-      {
-        "milestone": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced'",
-        "vader_compound": 0.5994
-      },
-      {
-        "milestone": "Closed on house at Mill Creek Court (Dec 18)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "15-year anniversary of 'personal liberation day'",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Broadway: Hadestown, Aladdin, Chicago (3 shows in one year)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Executive Director role began at Media, PA location (July)",
-        "vader_compound": 0.0
-      }
-    ],
-    "sentiment_before": 0.091,
-    "sentiment_after": 0.225,
-    "people_involved": [
-      "Rob",
-      "Grammy Nancy"
-    ]
+    "before_sentiment": 0.0837711111111111,
+    "after_sentiment": 0.0066357142857142925,
+    "sentiment_shift": -0.07713539682539682,
+    "before_people_count": 6,
+    "after_people_count": 2,
+    "before_key_topic": "Topic 3: trip, ski, 000, road",
+    "after_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "shock_magnitude": 0.7438020634920635,
+    "recovery_months": 6,
+    "narrative_summary": "Engagement: shift from Topic 3: trip, ski, 000, road to Topic 2: year, comedian, anniversary, ecd, negative sentiment trajectory."
   },
   {
-    "year": 2025,
+    "id": 13,
+    "turning_point_year": 2025,
     "event": "Relationship transition",
     "type": "contaminated",
     "domain": "relationship",
-    "from_state": "engaged",
-    "to_state": "single (resilient)",
-    "milestones_before": [
-      {
-        "milestone": "Spain trip (Lisbon, Madrid)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Norway cruise (Alesund, Akureyri, Iceland Sky Lagoon)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Toronto (CN Tower 1,815 ft, Niagara Falls)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Montreal (Place d'Armes, MTLaTABLE)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "30 blue crabs caught (personal best)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Grandmother passed (Oct 21, 11:57 PM, age 92)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Kidney stones (Dec 18 & 20 hospitalizations)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Bowling 180+ average",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Fenwick Island/Delaware trip",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Julian's 5th birthday (Aug 25)",
-        "vader_compound": 0.0
-      },
-      {
-        "milestone": "Wicked on Broadway",
-        "vader_compound": -0.5267
-      }
-    ],
-    "milestones_after": [
-      {
-        "milestone": "Japan trip (booked \u2014 Tokyo bound)",
-        "vader_compound": 0.0
-      }
-    ],
-    "sentiment_before": -0.048,
-    "sentiment_after": null,
-    "people_involved": [
-      "Ma"
-    ]
+    "before_sentiment": 0.0066357142857142925,
+    "after_sentiment": 0.0,
+    "sentiment_shift": -0.0066357142857142925,
+    "before_people_count": 2,
+    "after_people_count": 0,
+    "before_key_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "after_key_topic": "Topic 3: trip, ski, 000, road",
+    "shock_magnitude": 1.0066357142857143,
+    "recovery_months": 3,
+    "narrative_summary": "Relationship transition: shift from Topic 2: year, comedian, anniversary, ecd to Topic 3: trip, ski, 000, road, negative sentiment trajectory."
   }
 ]

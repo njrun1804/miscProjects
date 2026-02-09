@@ -1,922 +1,1290 @@
 [
   {
     "year": 2004,
-    "topic_id": 0,
-    "weight": 0.0
-  },
-  {
-    "year": 2004,
-    "topic_id": 1,
-    "weight": 0.0076
-  },
-  {
-    "year": 2004,
-    "topic_id": 2,
-    "weight": 0.0027
-  },
-  {
-    "year": 2004,
-    "topic_id": 3,
-    "weight": 0.0
-  },
-  {
-    "year": 2004,
-    "topic_id": 4,
-    "weight": 0.0
-  },
-  {
-    "year": 2004,
-    "topic_id": 5,
-    "weight": 0.0
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.9331,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
     "year": 2004,
     "topic_id": 6,
-    "weight": 0.0567
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.0567,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2004,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0076,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2004,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0027,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2004,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2004,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2004,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2004,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2005,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.5288,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2005,
     "topic_id": 7,
-    "weight": 0.9331
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.3146,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2005,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.128,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2005,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0286,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
     "year": 2005,
     "topic_id": 0,
-    "weight": 0.0
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2005,
     "topic_id": 1,
-    "weight": 0.0
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2005,
-    "topic_id": 2,
-    "weight": 0.0286
-  },
-  {
-    "year": 2005,
     "topic_id": 3,
-    "weight": 0.0
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2005,
     "topic_id": 4,
-    "weight": 0.0
-  },
-  {
-    "year": 2005,
-    "topic_id": 5,
-    "weight": 0.128
-  },
-  {
-    "year": 2005,
-    "topic_id": 6,
-    "weight": 0.5288
-  },
-  {
-    "year": 2005,
-    "topic_id": 7,
-    "weight": 0.3146
-  },
-  {
-    "year": 2006,
-    "topic_id": 0,
-    "weight": 0.0156
-  },
-  {
-    "year": 2006,
-    "topic_id": 1,
-    "weight": 0.0
-  },
-  {
-    "year": 2006,
-    "topic_id": 2,
-    "weight": 0.1221
-  },
-  {
-    "year": 2006,
-    "topic_id": 3,
-    "weight": 0.0
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
   },
   {
     "year": 2006,
     "topic_id": 4,
-    "weight": 0.5871
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.5871,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2006,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.2752,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2006,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.1221,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2006,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0156,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2006,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2006,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2006,
     "topic_id": 5,
-    "weight": 0.0
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2006,
-    "topic_id": 6,
-    "weight": 0.2752
-  },
-  {
-    "year": 2006,
     "topic_id": 7,
-    "weight": 0.0
-  },
-  {
-    "year": 2007,
-    "topic_id": 0,
-    "weight": 0.1536
-  },
-  {
-    "year": 2007,
-    "topic_id": 1,
-    "weight": 0.0258
-  },
-  {
-    "year": 2007,
-    "topic_id": 2,
-    "weight": 0.007
-  },
-  {
-    "year": 2007,
-    "topic_id": 3,
-    "weight": 0.0034
-  },
-  {
-    "year": 2007,
-    "topic_id": 4,
-    "weight": 0.1246
-  },
-  {
-    "year": 2007,
-    "topic_id": 5,
-    "weight": 0.1925
-  },
-  {
-    "year": 2007,
-    "topic_id": 6,
-    "weight": 0.1901
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
     "year": 2007,
     "topic_id": 7,
-    "weight": 0.303
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.303,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2007,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.1925,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2007,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.1901,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2007,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1536,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2007,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.1246,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2007,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0258,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2007,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.007,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2007,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0034,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2008,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.427,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2008,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.3007,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2008,
     "topic_id": 0,
-    "weight": 0.1825
-  },
-  {
-    "year": 2008,
-    "topic_id": 1,
-    "weight": 0.427
-  },
-  {
-    "year": 2008,
-    "topic_id": 2,
-    "weight": 0.01
-  },
-  {
-    "year": 2008,
-    "topic_id": 3,
-    "weight": 0.0001
-  },
-  {
-    "year": 2008,
-    "topic_id": 4,
-    "weight": 0.035
-  },
-  {
-    "year": 2008,
-    "topic_id": 5,
-    "weight": 0.009
-  },
-  {
-    "year": 2008,
-    "topic_id": 6,
-    "weight": 0.3007
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1825,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2008,
     "topic_id": 7,
-    "weight": 0.0356
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0356,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2008,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.035,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2008,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.01,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2008,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.009,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2008,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0001,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2009,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.2557,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2009,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.2172,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2009,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.1863,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2009,
     "topic_id": 0,
-    "weight": 0.1317
-  },
-  {
-    "year": 2009,
-    "topic_id": 1,
-    "weight": 0.1863
-  },
-  {
-    "year": 2009,
-    "topic_id": 2,
-    "weight": 0.0136
-  },
-  {
-    "year": 2009,
-    "topic_id": 3,
-    "weight": 0.0179
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1317,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2009,
     "topic_id": 4,
-    "weight": 0.1018
-  },
-  {
-    "year": 2009,
-    "topic_id": 5,
-    "weight": 0.2172
-  },
-  {
-    "year": 2009,
-    "topic_id": 6,
-    "weight": 0.2557
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.1018,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
   },
   {
     "year": 2009,
     "topic_id": 7,
-    "weight": 0.0759
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0759,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
-    "year": 2010,
-    "topic_id": 0,
-    "weight": 0.1202
-  },
-  {
-    "year": 2010,
-    "topic_id": 1,
-    "weight": 0.297
-  },
-  {
-    "year": 2010,
-    "topic_id": 2,
-    "weight": 0.0345
-  },
-  {
-    "year": 2010,
+    "year": 2009,
     "topic_id": 3,
-    "weight": 0.0242
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0179,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
-    "year": 2010,
-    "topic_id": 4,
-    "weight": 0.112
-  },
-  {
-    "year": 2010,
-    "topic_id": 5,
-    "weight": 0.0089
-  },
-  {
-    "year": 2010,
-    "topic_id": 6,
-    "weight": 0.0919
+    "year": 2009,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0136,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
     "year": 2010,
     "topic_id": 7,
-    "weight": 0.3114
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.3114,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2010,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.297,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2010,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1202,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2010,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.112,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2010,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.0919,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2010,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0345,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2010,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0242,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2010,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0089,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2011,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.2993,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2011,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.235,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2011,
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.222,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
     "year": 2011,
     "topic_id": 0,
-    "weight": 0.1193
-  },
-  {
-    "year": 2011,
-    "topic_id": 1,
-    "weight": 0.0289
-  },
-  {
-    "year": 2011,
-    "topic_id": 2,
-    "weight": 0.0254
-  },
-  {
-    "year": 2011,
-    "topic_id": 3,
-    "weight": 0.0139
-  },
-  {
-    "year": 2011,
-    "topic_id": 4,
-    "weight": 0.235
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1193,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2011,
     "topic_id": 5,
-    "weight": 0.0563
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0563,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2011,
-    "topic_id": 6,
-    "weight": 0.2993
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0289,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2011,
-    "topic_id": 7,
-    "weight": 0.222
-  },
-  {
-    "year": 2012,
-    "topic_id": 0,
-    "weight": 0.0911
-  },
-  {
-    "year": 2012,
-    "topic_id": 1,
-    "weight": 0.0683
-  },
-  {
-    "year": 2012,
     "topic_id": 2,
-    "weight": 0.2408
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0254,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
-    "year": 2012,
+    "year": 2011,
     "topic_id": 3,
-    "weight": 0.013
-  },
-  {
-    "year": 2012,
-    "topic_id": 4,
-    "weight": 0.0806
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0139,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2012,
     "topic_id": 5,
-    "weight": 0.3164
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.3164,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2012,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.2408,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2012,
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.1047,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2012,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0911,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2012,
     "topic_id": 6,
-    "weight": 0.0852
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.0852,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2012,
-    "topic_id": 7,
-    "weight": 0.1047
-  },
-  {
-    "year": 2013,
-    "topic_id": 0,
-    "weight": 0.1443
-  },
-  {
-    "year": 2013,
-    "topic_id": 1,
-    "weight": 0.1366
-  },
-  {
-    "year": 2013,
-    "topic_id": 2,
-    "weight": 0.1039
-  },
-  {
-    "year": 2013,
-    "topic_id": 3,
-    "weight": 0.1076
-  },
-  {
-    "year": 2013,
     "topic_id": 4,
-    "weight": 0.0741
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0806,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2012,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0683,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2012,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.013,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2013,
     "topic_id": 5,
-    "weight": 0.1942
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.1942,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2013,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1443,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2013,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.1366,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2013,
     "topic_id": 6,
-    "weight": 0.1277
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.1277,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2013,
     "topic_id": 7,
-    "weight": 0.1115
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.1115,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2013,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.1076,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2013,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.1039,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2013,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0741,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2014,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.2784,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2014,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.2351,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2014,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.1865,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2014,
     "topic_id": 0,
-    "weight": 0.1315
-  },
-  {
-    "year": 2014,
-    "topic_id": 1,
-    "weight": 0.2351
-  },
-  {
-    "year": 2014,
-    "topic_id": 2,
-    "weight": 0.0104
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1315,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2014,
     "topic_id": 3,
-    "weight": 0.1172
-  },
-  {
-    "year": 2014,
-    "topic_id": 4,
-    "weight": 0.2784
-  },
-  {
-    "year": 2014,
-    "topic_id": 5,
-    "weight": 0.0105
-  },
-  {
-    "year": 2014,
-    "topic_id": 6,
-    "weight": 0.1865
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.1172,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2014,
     "topic_id": 7,
-    "weight": 0.0304
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0304,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2014,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0105,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2014,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0104,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2015,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.5355,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2015,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.1994,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2015,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.1902,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2015,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.0485,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2015,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0264,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
     "year": 2015,
     "topic_id": 0,
-    "weight": 0.0
-  },
-  {
-    "year": 2015,
-    "topic_id": 1,
-    "weight": 0.5355
-  },
-  {
-    "year": 2015,
-    "topic_id": 2,
-    "weight": 0.0264
-  },
-  {
-    "year": 2015,
-    "topic_id": 3,
-    "weight": 0.1902
-  },
-  {
-    "year": 2015,
-    "topic_id": 4,
-    "weight": 0.1994
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2015,
     "topic_id": 5,
-    "weight": 0.0
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2015,
-    "topic_id": 6,
-    "weight": 0.0485
-  },
-  {
-    "year": 2015,
     "topic_id": 7,
-    "weight": 0.0
-  },
-  {
-    "year": 2016,
-    "topic_id": 0,
-    "weight": 0.0056
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
     "year": 2016,
     "topic_id": 1,
-    "weight": 0.3985
-  },
-  {
-    "year": 2016,
-    "topic_id": 2,
-    "weight": 0.0369
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.3985,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2016,
     "topic_id": 3,
-    "weight": 0.3402
-  },
-  {
-    "year": 2016,
-    "topic_id": 4,
-    "weight": 0.0404
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.3402,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2016,
     "topic_id": 5,
-    "weight": 0.1201
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.1201,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2016,
     "topic_id": 6,
-    "weight": 0.0577
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.0577,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2016,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0404,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2016,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0369,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2016,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0056,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2016,
     "topic_id": 7,
-    "weight": 0.0007
-  },
-  {
-    "year": 2017,
-    "topic_id": 0,
-    "weight": 0.0475
-  },
-  {
-    "year": 2017,
-    "topic_id": 1,
-    "weight": 0.1325
-  },
-  {
-    "year": 2017,
-    "topic_id": 2,
-    "weight": 0.0678
-  },
-  {
-    "year": 2017,
-    "topic_id": 3,
-    "weight": 0.1889
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0007,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
     "year": 2017,
     "topic_id": 4,
-    "weight": 0.2304
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.2304,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2017,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.1889,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2017,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.1601,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2017,
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.157,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2017,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.1325,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2017,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0678,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2017,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0475,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2017,
     "topic_id": 5,
-    "weight": 0.0157
-  },
-  {
-    "year": 2017,
-    "topic_id": 6,
-    "weight": 0.1601
-  },
-  {
-    "year": 2017,
-    "topic_id": 7,
-    "weight": 0.157
-  },
-  {
-    "year": 2018,
-    "topic_id": 0,
-    "weight": 0.1601
-  },
-  {
-    "year": 2018,
-    "topic_id": 1,
-    "weight": 0.0006
-  },
-  {
-    "year": 2018,
-    "topic_id": 2,
-    "weight": 0.0779
-  },
-  {
-    "year": 2018,
-    "topic_id": 3,
-    "weight": 0.2455
-  },
-  {
-    "year": 2018,
-    "topic_id": 4,
-    "weight": 0.1177
-  },
-  {
-    "year": 2018,
-    "topic_id": 5,
-    "weight": 0.0354
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0157,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2018,
     "topic_id": 6,
-    "weight": 0.2467
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.2467,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2018,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.2455,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2018,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1601,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2018,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.1177,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
   },
   {
     "year": 2018,
     "topic_id": 7,
-    "weight": 0.116
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.116,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
-    "year": 2019,
-    "topic_id": 0,
-    "weight": 0.152
-  },
-  {
-    "year": 2019,
-    "topic_id": 1,
-    "weight": 0.0232
-  },
-  {
-    "year": 2019,
+    "year": 2018,
     "topic_id": 2,
-    "weight": 0.1751
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0779,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
-    "year": 2019,
-    "topic_id": 3,
-    "weight": 0.0111
+    "year": 2018,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0354,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2018,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0006,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2019,
     "topic_id": 4,
-    "weight": 0.2919
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.2919,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2019,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.2519,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2019,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.1751,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2019,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.152,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2019,
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0718,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2019,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0232,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2019,
     "topic_id": 5,
-    "weight": 0.023
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.023,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2019,
-    "topic_id": 6,
-    "weight": 0.2519
-  },
-  {
-    "year": 2019,
-    "topic_id": 7,
-    "weight": 0.0718
-  },
-  {
-    "year": 2020,
-    "topic_id": 0,
-    "weight": 0.1634
-  },
-  {
-    "year": 2020,
-    "topic_id": 1,
-    "weight": 0.0281
-  },
-  {
-    "year": 2020,
-    "topic_id": 2,
-    "weight": 0.0083
-  },
-  {
-    "year": 2020,
     "topic_id": 3,
-    "weight": 0.0093
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0111,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2020,
     "topic_id": 4,
-    "weight": 0.2504
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.2504,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
   },
   {
     "year": 2020,
     "topic_id": 5,
-    "weight": 0.2086
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.2086,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2020,
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.178,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2020,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1634,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2020,
     "topic_id": 6,
-    "weight": 0.154
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.154,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2020,
-    "topic_id": 7,
-    "weight": 0.178
-  },
-  {
-    "year": 2021,
-    "topic_id": 0,
-    "weight": 0.0762
-  },
-  {
-    "year": 2021,
     "topic_id": 1,
-    "weight": 0.2141
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0281,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
-    "year": 2021,
-    "topic_id": 2,
-    "weight": 0.1329
-  },
-  {
-    "year": 2021,
+    "year": 2020,
     "topic_id": 3,
-    "weight": 0.0328
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0093,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2020,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0083,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
     "year": 2021,
     "topic_id": 4,
-    "weight": 0.2446
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.2446,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2021,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.2141,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2021,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.1329,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2021,
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.1067,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2021,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.0993,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2021,
     "topic_id": 5,
-    "weight": 0.0935
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0935,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2021,
-    "topic_id": 6,
-    "weight": 0.0993
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0762,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2021,
-    "topic_id": 7,
-    "weight": 0.1067
-  },
-  {
-    "year": 2022,
-    "topic_id": 0,
-    "weight": 0.0642
-  },
-  {
-    "year": 2022,
-    "topic_id": 1,
-    "weight": 0.0962
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0328,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2022,
     "topic_id": 2,
-    "weight": 0.4826
-  },
-  {
-    "year": 2022,
-    "topic_id": 3,
-    "weight": 0.0
-  },
-  {
-    "year": 2022,
-    "topic_id": 4,
-    "weight": 0.0283
-  },
-  {
-    "year": 2022,
-    "topic_id": 5,
-    "weight": 0.0485
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.4826,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
     "year": 2022,
     "topic_id": 6,
-    "weight": 0.1606
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.1606,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2022,
     "topic_id": 7,
-    "weight": 0.1196
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.1196,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
-    "year": 2023,
+    "year": 2022,
+    "topic_id": 1,
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0962,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
+  },
+  {
+    "year": 2022,
     "topic_id": 0,
-    "weight": 0.0268
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0642,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
+  },
+  {
+    "year": 2022,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0485,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2022,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0283,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2022,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2023,
     "topic_id": 1,
-    "weight": 0.5108
-  },
-  {
-    "year": 2023,
-    "topic_id": 2,
-    "weight": 0.0001
-  },
-  {
-    "year": 2023,
-    "topic_id": 3,
-    "weight": 0.0063
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.5108,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2023,
     "topic_id": 4,
-    "weight": 0.3882
-  },
-  {
-    "year": 2023,
-    "topic_id": 5,
-    "weight": 0.0022
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.3882,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
   },
   {
     "year": 2023,
     "topic_id": 6,
-    "weight": 0.043
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.043,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2023,
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0268,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2023,
     "topic_id": 7,
-    "weight": 0.0224
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0224,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2023,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0063,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2023,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0022,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2023,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.0001,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
     "year": 2024,
-    "topic_id": 0,
-    "weight": 0.0206
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.4081,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2024,
+    "topic_id": 3,
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.1941,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
+  },
+  {
+    "year": 2024,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.1388,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2024,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.1356,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2024,
+    "topic_id": 7,
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0498,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   },
   {
     "year": 2024,
     "topic_id": 1,
-    "weight": 0.0296
-  },
-  {
-    "year": 2024,
-    "topic_id": 2,
-    "weight": 0.4081
-  },
-  {
-    "year": 2024,
-    "topic_id": 3,
-    "weight": 0.1941
-  },
-  {
-    "year": 2024,
-    "topic_id": 4,
-    "weight": 0.1356
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0296,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2024,
     "topic_id": 5,
-    "weight": 0.0234
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0234,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2024,
-    "topic_id": 6,
-    "weight": 0.1388
-  },
-  {
-    "year": 2024,
-    "topic_id": 7,
-    "weight": 0.0498
+    "topic_id": 0,
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0206,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2025,
     "topic_id": 0,
-    "weight": 0.1945
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.1945,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2025,
     "topic_id": 1,
-    "weight": 0.1942
-  },
-  {
-    "year": 2025,
-    "topic_id": 2,
-    "weight": 0.1372
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.1942,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2025,
     "topic_id": 3,
-    "weight": 0.1513
-  },
-  {
-    "year": 2025,
-    "topic_id": 4,
-    "weight": 0.0102
-  },
-  {
-    "year": 2025,
-    "topic_id": 5,
-    "weight": 0.0471
-  },
-  {
-    "year": 2025,
-    "topic_id": 6,
-    "weight": 0.1235
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.1513,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2025,
     "topic_id": 7,
-    "weight": 0.1418
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.1418,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
+  },
+  {
+    "year": 2025,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 0.1372,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
+  },
+  {
+    "year": 2025,
+    "topic_id": 6,
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.1235,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
+  },
+  {
+    "year": 2025,
+    "topic_id": 5,
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0471,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
+  },
+  {
+    "year": 2025,
+    "topic_id": 4,
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0102,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
+  },
+  {
+    "year": 2026,
+    "topic_id": 2,
+    "topic_name": "Topic 3: trip, ski, 000, road",
+    "weight": 1.0,
+    "keywords": "trip, ski, 000, road, wedding, canyon, grand, wisconsin"
   },
   {
     "year": 2026,
     "topic_id": 0,
-    "weight": 0.0
+    "topic_name": "Topic 1: sep, 27, turned, birthday",
+    "weight": 0.0,
+    "keywords": "sep, 27, turned, birthday, 24, 25, 28, ecd"
   },
   {
     "year": 2026,
     "topic_id": 1,
-    "weight": 0.0
-  },
-  {
-    "year": 2026,
-    "topic_id": 2,
-    "weight": 1.0
+    "topic_name": "Topic 2: year, comedian, anniversary, ecd",
+    "weight": 0.0,
+    "keywords": "year, comedian, anniversary, ecd, winston, lauren, 10, jan"
   },
   {
     "year": 2026,
     "topic_id": 3,
-    "weight": 0.0
+    "topic_name": "Topic 4: cruise, croatia, years, 10",
+    "weight": 0.0,
+    "keywords": "cruise, croatia, years, 10, norwegian, cornhole, oct, 28"
   },
   {
     "year": 2026,
     "topic_id": 4,
-    "weight": 0.0
+    "topic_name": "Topic 5: dec, 15, 18, 12",
+    "weight": 0.0,
+    "keywords": "dec, 15, 18, 12, rk, 31, 14, tennis"
   },
   {
     "year": 2026,
     "topic_id": 5,
-    "weight": 0.0
+    "topic_name": "Topic 6: wwe, event, oct, mar",
+    "weight": 0.0,
+    "keywords": "wwe, event, oct, mar, 90th, survivor, series, consecutive"
   },
   {
     "year": 2026,
     "topic_id": 6,
-    "weight": 0.0
+    "topic_name": "Topic 7: aug, 16, dodgeball, 21",
+    "weight": 0.0,
+    "keywords": "aug, 16, dodgeball, 21, 20, confirmed, pops, 30"
   },
   {
     "year": 2026,
     "topic_id": 7,
-    "weight": 0.0
+    "topic_name": "Topic 8: jul, 29, birthday, married",
+    "weight": 0.0,
+    "keywords": "jul, 29, birthday, married, moved, begins, 22, timeline"
   }
 ]

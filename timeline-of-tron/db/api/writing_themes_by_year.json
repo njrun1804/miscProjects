@@ -1,1858 +1,1103 @@
-[
-  {
-    "year": 2004,
-    "top_keywords": [
-      {
-        "keyword": "project begins",
-        "tfidf": 0.3017
-      },
-      {
-        "keyword": "panic",
-        "tfidf": 0.3017
-      },
-      {
-        "keyword": "panic attacks",
-        "tfidf": 0.3017
-      },
-      {
-        "keyword": "resulting panic",
-        "tfidf": 0.3017
-      },
-      {
-        "keyword": "resulting",
-        "tfidf": 0.3017
-      },
-      {
-        "keyword": "project",
-        "tfidf": 0.3017
-      },
-      {
-        "keyword": "car accident",
-        "tfidf": 0.2666
-      },
-      {
-        "keyword": "accident",
-        "tfidf": 0.2666
-      },
-      {
-        "keyword": "car",
-        "tfidf": 0.2666
-      },
-      {
-        "keyword": "begins",
-        "tfidf": 0.2417
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.9331
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.0567
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0076
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0027
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 14.25,
-      "word_count": 8,
-      "vocab_richness": 1.0
+{
+  "2004": [
+    {
+      "year": 2004,
+      "theme": "project begins",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "panic",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "panic attacks",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "resulting panic",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "resulting",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "project",
+      "tfidf_score": 0.3017
+    },
+    {
+      "year": 2004,
+      "theme": "car accident",
+      "tfidf_score": 0.2666
+    },
+    {
+      "year": 2004,
+      "theme": "accident",
+      "tfidf_score": 0.2666
+    },
+    {
+      "year": 2004,
+      "theme": "car",
+      "tfidf_score": 0.2666
+    },
+    {
+      "year": 2004,
+      "theme": "begins",
+      "tfidf_score": 0.2417
     }
-  },
-  {
-    "year": 2005,
-    "top_keywords": [
-      {
-        "keyword": "period wrestlemania",
-        "tfidf": 0.5676
-      },
-      {
-        "keyword": "period",
-        "tfidf": 0.5676
-      },
-      {
-        "keyword": "attendance",
-        "tfidf": 0.5016
-      },
-      {
-        "keyword": "wrestlemania",
-        "tfidf": 0.3226
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.5288
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.3146
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.128
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0286
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0
-      }
-    ],
-    "writing_stats": {
-      "grade_level": null,
-      "word_count": null,
-      "vocab_richness": null
+  ],
+  "2005": [
+    {
+      "year": 2005,
+      "theme": "period wrestlemania",
+      "tfidf_score": 0.5676
+    },
+    {
+      "year": 2005,
+      "theme": "period",
+      "tfidf_score": 0.5676
+    },
+    {
+      "year": 2005,
+      "theme": "attendance",
+      "tfidf_score": 0.5016
+    },
+    {
+      "year": 2005,
+      "theme": "wrestlemania",
+      "tfidf_score": 0.3226
     }
-  },
-  {
-    "year": 2006,
-    "top_keywords": [
-      {
-        "keyword": "ongoing",
-        "tfidf": 0.4902
-      },
-      {
-        "keyword": "ongoing march",
-        "tfidf": 0.4902
-      },
-      {
-        "keyword": "70",
-        "tfidf": 0.4332
-      },
-      {
-        "keyword": "dodgeball",
-        "tfidf": 0.3927
-      },
-      {
-        "keyword": "30",
-        "tfidf": 0.3613
-      },
-      {
-        "keyword": "dec",
-        "tfidf": 0.2165
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.5871
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.2752
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.1221
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0156
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 15.15,
-      "word_count": 11,
-      "vocab_richness": 0.909
+  ],
+  "2006": [
+    {
+      "year": 2006,
+      "theme": "ongoing",
+      "tfidf_score": 0.4902
+    },
+    {
+      "year": 2006,
+      "theme": "ongoing march",
+      "tfidf_score": 0.4902
+    },
+    {
+      "year": 2006,
+      "theme": "70",
+      "tfidf_score": 0.4332
+    },
+    {
+      "year": 2006,
+      "theme": "dodgeball",
+      "tfidf_score": 0.3927
+    },
+    {
+      "year": 2006,
+      "theme": "30",
+      "tfidf_score": 0.3613
+    },
+    {
+      "year": 2006,
+      "theme": "dec",
+      "tfidf_score": 0.2165
     }
-  },
-  {
-    "year": 2007,
-    "top_keywords": [
-      {
-        "keyword": "dodgeball",
-        "tfidf": 0.2135
-      },
-      {
-        "keyword": "27",
-        "tfidf": 0.2042
-      },
-      {
-        "keyword": "23",
-        "tfidf": 0.1825
-      },
-      {
-        "keyword": "29",
-        "tfidf": 0.1707
-      },
-      {
-        "keyword": "jul",
-        "tfidf": 0.1707
-      },
-      {
-        "keyword": "20",
-        "tfidf": 0.1605
-      },
-      {
-        "keyword": "wwe",
-        "tfidf": 0.1605
-      },
-      {
-        "keyword": "turned",
-        "tfidf": 0.1605
-      },
-      {
-        "keyword": "oct 29",
-        "tfidf": 0.1333
-      },
-      {
-        "keyword": "philadelphia dodgeball",
-        "tfidf": 0.1333
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.303
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.1925
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.1901
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1536
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.1246
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0258
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.007
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0034
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 16.81,
-      "word_count": 9,
-      "vocab_richness": 0.739
+  ],
+  "2007": [
+    {
+      "year": 2007,
+      "theme": "dodgeball",
+      "tfidf_score": 0.2135
+    },
+    {
+      "year": 2007,
+      "theme": "27",
+      "tfidf_score": 0.2042
+    },
+    {
+      "year": 2007,
+      "theme": "23",
+      "tfidf_score": 0.1825
+    },
+    {
+      "year": 2007,
+      "theme": "29",
+      "tfidf_score": 0.1707
+    },
+    {
+      "year": 2007,
+      "theme": "jul",
+      "tfidf_score": 0.1707
+    },
+    {
+      "year": 2007,
+      "theme": "20",
+      "tfidf_score": 0.1605
+    },
+    {
+      "year": 2007,
+      "theme": "wwe",
+      "tfidf_score": 0.1605
+    },
+    {
+      "year": 2007,
+      "theme": "turned",
+      "tfidf_score": 0.1605
+    },
+    {
+      "year": 2007,
+      "theme": "oct 29",
+      "tfidf_score": 0.1333
+    },
+    {
+      "year": 2007,
+      "theme": "philadelphia dodgeball",
+      "tfidf_score": 0.1333
     }
-  },
-  {
-    "year": 2008,
-    "top_keywords": [
-      {
-        "keyword": "2008",
-        "tfidf": 0.299
-      },
-      {
-        "keyword": "year",
-        "tfidf": 0.2179
-      },
-      {
-        "keyword": "turned",
-        "tfidf": 0.1801
-      },
-      {
-        "keyword": "27",
-        "tfidf": 0.1527
-      },
-      {
-        "keyword": "refreshing",
-        "tfidf": 0.1495
-      },
-      {
-        "keyword": "petty",
-        "tfidf": 0.1495
-      },
-      {
-        "keyword": "pops aug",
-        "tfidf": 0.1495
-      },
-      {
-        "keyword": "person",
-        "tfidf": 0.1495
-      },
-      {
-        "keyword": "person know",
-        "tfidf": 0.1495
-      },
-      {
-        "keyword": "refreshing heavenly",
-        "tfidf": 0.1495
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.427
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.3007
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1825
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.0356
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.035
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.01
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.009
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0001
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 8.15,
-      "word_count": 10,
-      "vocab_richness": 0.745
+  ],
+  "2008": [
+    {
+      "year": 2008,
+      "theme": "2008",
+      "tfidf_score": 0.299
+    },
+    {
+      "year": 2008,
+      "theme": "year",
+      "tfidf_score": 0.2179
+    },
+    {
+      "year": 2008,
+      "theme": "turned",
+      "tfidf_score": 0.1801
+    },
+    {
+      "year": 2008,
+      "theme": "27",
+      "tfidf_score": 0.1527
+    },
+    {
+      "year": 2008,
+      "theme": "refreshing",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "petty",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "pops aug",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "person",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "person know",
+      "tfidf_score": 0.1495
+    },
+    {
+      "year": 2008,
+      "theme": "refreshing heavenly",
+      "tfidf_score": 0.1495
     }
-  },
-  {
-    "year": 2009,
-    "top_keywords": [
-      {
-        "keyword": "25",
-        "tfidf": 0.2579
-      },
-      {
-        "keyword": "hell",
-        "tfidf": 0.2333
-      },
-      {
-        "keyword": "heaven",
-        "tfidf": 0.2333
-      },
-      {
-        "keyword": "happy",
-        "tfidf": 0.2062
-      },
-      {
-        "keyword": "skydive",
-        "tfidf": 0.1869
-      },
-      {
-        "keyword": "16",
-        "tfidf": 0.1598
-      },
-      {
-        "keyword": "13",
-        "tfidf": 0.1494
-      },
-      {
-        "keyword": "oct",
-        "tfidf": 0.1405
-      },
-      {
-        "keyword": "171",
-        "tfidf": 0.1166
-      },
-      {
-        "keyword": "16 maybe",
-        "tfidf": 0.1166
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.2557
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.2172
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.1863
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1317
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.1018
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.0759
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0179
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0136
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 16.24,
-      "word_count": 11,
-      "vocab_richness": 0.716
+  ],
+  "2009": [
+    {
+      "year": 2009,
+      "theme": "25",
+      "tfidf_score": 0.2579
+    },
+    {
+      "year": 2009,
+      "theme": "hell",
+      "tfidf_score": 0.2333
+    },
+    {
+      "year": 2009,
+      "theme": "heaven",
+      "tfidf_score": 0.2333
+    },
+    {
+      "year": 2009,
+      "theme": "happy",
+      "tfidf_score": 0.2062
+    },
+    {
+      "year": 2009,
+      "theme": "skydive",
+      "tfidf_score": 0.1869
+    },
+    {
+      "year": 2009,
+      "theme": "16",
+      "tfidf_score": 0.1598
+    },
+    {
+      "year": 2009,
+      "theme": "13",
+      "tfidf_score": 0.1494
+    },
+    {
+      "year": 2009,
+      "theme": "oct",
+      "tfidf_score": 0.1405
+    },
+    {
+      "year": 2009,
+      "theme": "171",
+      "tfidf_score": 0.1166
+    },
+    {
+      "year": 2009,
+      "theme": "16 maybe",
+      "tfidf_score": 0.1166
     }
-  },
-  {
-    "year": 2010,
-    "top_keywords": [
-      {
-        "keyword": "hero",
-        "tfidf": 0.2924
-      },
-      {
-        "keyword": "graduated",
-        "tfidf": 0.2924
-      },
-      {
-        "keyword": "university",
-        "tfidf": 0.2924
-      },
-      {
-        "keyword": "regrets",
-        "tfidf": 0.2583
-      },
-      {
-        "keyword": "anniversary",
-        "tfidf": 0.1873
-      },
-      {
-        "keyword": "jul",
-        "tfidf": 0.1873
-      },
-      {
-        "keyword": "18",
-        "tfidf": 0.1761
-      },
-      {
-        "keyword": "regrets hero",
-        "tfidf": 0.1462
-      },
-      {
-        "keyword": "18 ecd",
-        "tfidf": 0.1462
-      },
-      {
-        "keyword": "phillies",
-        "tfidf": 0.1462
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.3114
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.297
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1202
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.112
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.0919
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0345
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0242
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0089
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 20.35,
-      "word_count": 8,
-      "vocab_richness": 0.728
+  ],
+  "2010": [
+    {
+      "year": 2010,
+      "theme": "hero",
+      "tfidf_score": 0.2924
+    },
+    {
+      "year": 2010,
+      "theme": "graduated",
+      "tfidf_score": 0.2924
+    },
+    {
+      "year": 2010,
+      "theme": "university",
+      "tfidf_score": 0.2924
+    },
+    {
+      "year": 2010,
+      "theme": "regrets",
+      "tfidf_score": 0.2583
+    },
+    {
+      "year": 2010,
+      "theme": "anniversary",
+      "tfidf_score": 0.1873
+    },
+    {
+      "year": 2010,
+      "theme": "jul",
+      "tfidf_score": 0.1873
+    },
+    {
+      "year": 2010,
+      "theme": "18",
+      "tfidf_score": 0.1761
+    },
+    {
+      "year": 2010,
+      "theme": "regrets hero",
+      "tfidf_score": 0.1462
+    },
+    {
+      "year": 2010,
+      "theme": "18 ecd",
+      "tfidf_score": 0.1462
+    },
+    {
+      "year": 2010,
+      "theme": "phillies",
+      "tfidf_score": 0.1462
     }
-  },
-  {
-    "year": 2011,
-    "top_keywords": [
-      {
-        "keyword": "14",
-        "tfidf": 0.2672
-      },
-      {
-        "keyword": "begins",
-        "tfidf": 0.2423
-      },
-      {
-        "keyword": "nov",
-        "tfidf": 0.1719
-      },
-      {
-        "keyword": "rock",
-        "tfidf": 0.1512
-      },
-      {
-        "keyword": "rock returns",
-        "tfidf": 0.1512
-      },
-      {
-        "keyword": "18 cousin",
-        "tfidf": 0.1512
-      },
-      {
-        "keyword": "rk 22nd",
-        "tfidf": 0.1512
-      },
-      {
-        "keyword": "rob ocean",
-        "tfidf": 0.1512
-      },
-      {
-        "keyword": "relationship begins",
-        "tfidf": 0.1512
-      },
-      {
-        "keyword": "ro",
-        "tfidf": 0.1512
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.2993
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.235
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.222
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1193
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0563
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0289
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0254
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0139
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 51.5,
-      "word_count": 7,
-      "vocab_richness": 0.814
+  ],
+  "2011": [
+    {
+      "year": 2011,
+      "theme": "14",
+      "tfidf_score": 0.2672
+    },
+    {
+      "year": 2011,
+      "theme": "begins",
+      "tfidf_score": 0.2423
+    },
+    {
+      "year": 2011,
+      "theme": "nov",
+      "tfidf_score": 0.1719
+    },
+    {
+      "year": 2011,
+      "theme": "rock",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "rock returns",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "18 cousin",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "rk 22nd",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "rob ocean",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "relationship begins",
+      "tfidf_score": 0.1512
+    },
+    {
+      "year": 2011,
+      "theme": "ro",
+      "tfidf_score": 0.1512
     }
-  },
-  {
-    "year": 2012,
-    "top_keywords": [
-      {
-        "keyword": "ecd",
-        "tfidf": 0.2186
-      },
-      {
-        "keyword": "oct 13",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "reopened world",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "reached",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "record 18",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "park oct",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "promotion sus15h",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "reopened",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "reached 190",
-        "tfidf": 0.2031
-      },
-      {
-        "keyword": "orchard park",
-        "tfidf": 0.2031
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.3164
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.2408
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.1047
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0911
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.0852
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.0806
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0683
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.013
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 30.64,
-      "word_count": 7,
-      "vocab_richness": 0.915
+  ],
+  "2012": [
+    {
+      "year": 2012,
+      "theme": "ecd",
+      "tfidf_score": 0.2186
+    },
+    {
+      "year": 2012,
+      "theme": "oct 13",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reopened world",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reached",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "record 18",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "park oct",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "promotion sus15h",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reopened",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "reached 190",
+      "tfidf_score": 0.2031
+    },
+    {
+      "year": 2012,
+      "theme": "orchard park",
+      "tfidf_score": 0.2031
     }
-  },
-  {
-    "year": 2013,
-    "top_keywords": [
-      {
-        "keyword": "2013",
-        "tfidf": 0.2932
-      },
-      {
-        "keyword": "stand test",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "doubt",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "rating",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "2013 doubt",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "2010 2013",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "2010",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "stand",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "star",
-        "tfidf": 0.1954
-      },
-      {
-        "keyword": "star rating",
-        "tfidf": 0.1954
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.1942
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1443
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.1366
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.1277
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.1115
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.1076
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.1039
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.0741
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 13.1,
-      "word_count": 10,
-      "vocab_richness": 0.741
+  ],
+  "2013": [
+    {
+      "year": 2013,
+      "theme": "2013",
+      "tfidf_score": 0.2932
+    },
+    {
+      "year": 2013,
+      "theme": "stand test",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "doubt",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "rating",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "2013 doubt",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "2010 2013",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "2010",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "stand",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "star",
+      "tfidf_score": 0.1954
+    },
+    {
+      "year": 2013,
+      "theme": "star rating",
+      "tfidf_score": 0.1954
     }
-  },
-  {
-    "year": 2014,
-    "top_keywords": [
-      {
-        "keyword": "30th",
-        "tfidf": 0.492
-      },
-      {
-        "keyword": "pops",
-        "tfidf": 0.223
-      },
-      {
-        "keyword": "30",
-        "tfidf": 0.2052
-      },
-      {
-        "keyword": "pam",
-        "tfidf": 0.1392
-      },
-      {
-        "keyword": "pops maggie",
-        "tfidf": 0.1392
-      },
-      {
-        "keyword": "oceanport",
-        "tfidf": 0.1392
-      },
-      {
-        "keyword": "oceanport sep",
-        "tfidf": 0.1392
-      },
-      {
-        "keyword": "pam 30th",
-        "tfidf": 0.1392
-      },
-      {
-        "keyword": "pm ct",
-        "tfidf": 0.1392
-      },
-      {
-        "keyword": "ride dec",
-        "tfidf": 0.1392
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.2784
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.2351
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.1865
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1315
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.1172
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.0304
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0105
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0104
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 7.77,
-      "word_count": 9,
-      "vocab_richness": 0.856
+  ],
+  "2014": [
+    {
+      "year": 2014,
+      "theme": "30th",
+      "tfidf_score": 0.492
+    },
+    {
+      "year": 2014,
+      "theme": "pops",
+      "tfidf_score": 0.223
+    },
+    {
+      "year": 2014,
+      "theme": "30",
+      "tfidf_score": 0.2052
+    },
+    {
+      "year": 2014,
+      "theme": "pam",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "pops maggie",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "oceanport",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "oceanport sep",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "pam 30th",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "pm ct",
+      "tfidf_score": 0.1392
+    },
+    {
+      "year": 2014,
+      "theme": "ride dec",
+      "tfidf_score": 0.1392
     }
-  },
-  {
-    "year": 2015,
-    "top_keywords": [
-      {
-        "keyword": "10",
-        "tfidf": 0.3629
-      },
-      {
-        "keyword": "year",
-        "tfidf": 0.2753
-      },
-      {
-        "keyword": "000 miles",
-        "tfidf": 0.2503
-      },
-      {
-        "keyword": "rated",
-        "tfidf": 0.2503
-      },
-      {
-        "keyword": "rated 10",
-        "tfidf": 0.2503
-      },
-      {
-        "keyword": "jackson",
-        "tfidf": 0.2503
-      },
-      {
-        "keyword": "kia",
-        "tfidf": 0.2503
-      },
-      {
-        "keyword": "kia soul",
-        "tfidf": 0.2503
-      },
-      {
-        "keyword": "soul",
-        "tfidf": 0.2503
-      },
-      {
-        "keyword": "spengeman",
-        "tfidf": 0.2503
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.5355
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.1994
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.1902
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.0485
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0264
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 22.9,
-      "word_count": 10,
-      "vocab_richness": 0.85
+  ],
+  "2015": [
+    {
+      "year": 2015,
+      "theme": "10",
+      "tfidf_score": 0.3629
+    },
+    {
+      "year": 2015,
+      "theme": "year",
+      "tfidf_score": 0.2753
+    },
+    {
+      "year": 2015,
+      "theme": "000 miles",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "rated",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "rated 10",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "jackson",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "kia",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "kia soul",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "soul",
+      "tfidf_score": 0.2503
+    },
+    {
+      "year": 2015,
+      "theme": "spengeman",
+      "tfidf_score": 0.2503
     }
-  },
-  {
-    "year": 2016,
-    "top_keywords": [
-      {
-        "keyword": "wwe experience",
-        "tfidf": 0.3452
-      },
-      {
-        "keyword": "experience",
-        "tfidf": 0.3452
-      },
-      {
-        "keyword": "experience time",
-        "tfidf": 0.3452
-      },
-      {
-        "keyword": "greatest wwe",
-        "tfidf": 0.3452
-      },
-      {
-        "keyword": "time",
-        "tfidf": 0.305
-      },
-      {
-        "keyword": "greatest",
-        "tfidf": 0.2544
-      },
-      {
-        "keyword": "wwe",
-        "tfidf": 0.2079
-      },
-      {
-        "keyword": "year",
-        "tfidf": 0.1677
-      },
-      {
-        "keyword": "award",
-        "tfidf": 0.1525
-      },
-      {
-        "keyword": "winston comedian",
-        "tfidf": 0.1525
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.3985
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.3402
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.1201
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.0577
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.0404
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0369
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0056
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.0007
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 10.15,
-      "word_count": 6,
-      "vocab_richness": 0.73
+  ],
+  "2016": [
+    {
+      "year": 2016,
+      "theme": "wwe experience",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "experience",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "experience time",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "greatest wwe",
+      "tfidf_score": 0.3452
+    },
+    {
+      "year": 2016,
+      "theme": "time",
+      "tfidf_score": 0.305
+    },
+    {
+      "year": 2016,
+      "theme": "greatest",
+      "tfidf_score": 0.2544
+    },
+    {
+      "year": 2016,
+      "theme": "wwe",
+      "tfidf_score": 0.2079
+    },
+    {
+      "year": 2016,
+      "theme": "year",
+      "tfidf_score": 0.1677
+    },
+    {
+      "year": 2016,
+      "theme": "award",
+      "tfidf_score": 0.1525
+    },
+    {
+      "year": 2016,
+      "theme": "winston comedian",
+      "tfidf_score": 0.1525
     }
-  },
-  {
-    "year": 2017,
-    "top_keywords": [
-      {
-        "keyword": "story",
-        "tfidf": 0.243
-      },
-      {
-        "keyword": "summerslam",
-        "tfidf": 0.243
-      },
-      {
-        "keyword": "complete",
-        "tfidf": 0.243
-      },
-      {
-        "keyword": "volleyball",
-        "tfidf": 0.243
-      },
-      {
-        "keyword": "20",
-        "tfidf": 0.2195
-      },
-      {
-        "keyword": "26",
-        "tfidf": 0.1947
-      },
-      {
-        "keyword": "personal",
-        "tfidf": 0.1947
-      },
-      {
-        "keyword": "cruise",
-        "tfidf": 0.1463
-      },
-      {
-        "keyword": "15",
-        "tfidf": 0.1381
-      },
-      {
-        "keyword": "paused mar",
-        "tfidf": 0.1215
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.2304
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.1889
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.1601
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.157
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.1325
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0678
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0475
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0157
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 13.41,
-      "word_count": 7,
-      "vocab_richness": 0.886
+  ],
+  "2017": [
+    {
+      "year": 2017,
+      "theme": "story",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "summerslam",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "complete",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "volleyball",
+      "tfidf_score": 0.243
+    },
+    {
+      "year": 2017,
+      "theme": "20",
+      "tfidf_score": 0.2195
+    },
+    {
+      "year": 2017,
+      "theme": "26",
+      "tfidf_score": 0.1947
+    },
+    {
+      "year": 2017,
+      "theme": "personal",
+      "tfidf_score": 0.1947
+    },
+    {
+      "year": 2017,
+      "theme": "cruise",
+      "tfidf_score": 0.1463
+    },
+    {
+      "year": 2017,
+      "theme": "15",
+      "tfidf_score": 0.1381
+    },
+    {
+      "year": 2017,
+      "theme": "paused mar",
+      "tfidf_score": 0.1215
     }
-  },
-  {
-    "year": 2018,
-    "top_keywords": [
-      {
-        "keyword": "croatia",
-        "tfidf": 0.2738
-      },
-      {
-        "keyword": "22",
-        "tfidf": 0.2018
-      },
-      {
-        "keyword": "won",
-        "tfidf": 0.2018
-      },
-      {
-        "keyword": "16",
-        "tfidf": 0.1875
-      },
-      {
-        "keyword": "cruise",
-        "tfidf": 0.1649
-      },
-      {
-        "keyword": "27",
-        "tfidf": 0.1398
-      },
-      {
-        "keyword": "16 arthur",
-        "tfidf": 0.1369
-      },
-      {
-        "keyword": "pickleball",
-        "tfidf": 0.1369
-      },
-      {
-        "keyword": "ring purchased",
-        "tfidf": 0.1369
-      },
-      {
-        "keyword": "ring",
-        "tfidf": 0.1369
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.2467
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.2455
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1601
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.1177
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.116
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0779
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0354
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0006
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 14.55,
-      "word_count": 8,
-      "vocab_richness": 0.753
+  ],
+  "2018": [
+    {
+      "year": 2018,
+      "theme": "croatia",
+      "tfidf_score": 0.2738
+    },
+    {
+      "year": 2018,
+      "theme": "22",
+      "tfidf_score": 0.2018
+    },
+    {
+      "year": 2018,
+      "theme": "won",
+      "tfidf_score": 0.2018
+    },
+    {
+      "year": 2018,
+      "theme": "16",
+      "tfidf_score": 0.1875
+    },
+    {
+      "year": 2018,
+      "theme": "cruise",
+      "tfidf_score": 0.1649
+    },
+    {
+      "year": 2018,
+      "theme": "27",
+      "tfidf_score": 0.1398
+    },
+    {
+      "year": 2018,
+      "theme": "16 arthur",
+      "tfidf_score": 0.1369
+    },
+    {
+      "year": 2018,
+      "theme": "pickleball",
+      "tfidf_score": 0.1369
+    },
+    {
+      "year": 2018,
+      "theme": "ring purchased",
+      "tfidf_score": 0.1369
+    },
+    {
+      "year": 2018,
+      "theme": "ring",
+      "tfidf_score": 0.1369
     }
-  },
-  {
-    "year": 2019,
-    "top_keywords": [
-      {
-        "keyword": "longest",
-        "tfidf": 0.3204
-      },
-      {
-        "keyword": "tronolone",
-        "tfidf": 0.2403
-      },
-      {
-        "keyword": "longest greatest",
-        "tfidf": 0.2403
-      },
-      {
-        "keyword": "best longest",
-        "tfidf": 0.2403
-      },
-      {
-        "keyword": "best",
-        "tfidf": 0.1925
-      },
-      {
-        "keyword": "31",
-        "tfidf": 0.1925
-      },
-      {
-        "keyword": "greatest",
-        "tfidf": 0.1771
-      },
-      {
-        "keyword": "23",
-        "tfidf": 0.1645
-      },
-      {
-        "keyword": "wisconsin",
-        "tfidf": 0.1602
-      },
-      {
-        "keyword": "halfway 70",
-        "tfidf": 0.1602
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.2919
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.2519
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.1751
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.152
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.0718
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0232
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.023
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0111
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 19.2,
-      "word_count": 7,
-      "vocab_richness": 0.789
+  ],
+  "2019": [
+    {
+      "year": 2019,
+      "theme": "longest",
+      "tfidf_score": 0.3204
+    },
+    {
+      "year": 2019,
+      "theme": "tronolone",
+      "tfidf_score": 0.2403
+    },
+    {
+      "year": 2019,
+      "theme": "longest greatest",
+      "tfidf_score": 0.2403
+    },
+    {
+      "year": 2019,
+      "theme": "best longest",
+      "tfidf_score": 0.2403
+    },
+    {
+      "year": 2019,
+      "theme": "best",
+      "tfidf_score": 0.1925
+    },
+    {
+      "year": 2019,
+      "theme": "31",
+      "tfidf_score": 0.1925
+    },
+    {
+      "year": 2019,
+      "theme": "greatest",
+      "tfidf_score": 0.1771
+    },
+    {
+      "year": 2019,
+      "theme": "23",
+      "tfidf_score": 0.1645
+    },
+    {
+      "year": 2019,
+      "theme": "wisconsin",
+      "tfidf_score": 0.1602
+    },
+    {
+      "year": 2019,
+      "theme": "halfway 70",
+      "tfidf_score": 0.1602
     }
-  },
-  {
-    "year": 2020,
-    "top_keywords": [
-      {
-        "keyword": "living",
-        "tfidf": 0.2156
-      },
-      {
-        "keyword": "skydive",
-        "tfidf": 0.1955
-      },
-      {
-        "keyword": "mar",
-        "tfidf": 0.1798
-      },
-      {
-        "keyword": "record",
-        "tfidf": 0.1671
-      },
-      {
-        "keyword": "feb",
-        "tfidf": 0.1563
-      },
-      {
-        "keyword": "16 muscle",
-        "tfidf": 0.122
-      },
-      {
-        "keyword": "passion pistols",
-        "tfidf": 0.122
-      },
-      {
-        "keyword": "pasta",
-        "tfidf": 0.122
-      },
-      {
-        "keyword": "pasta passion",
-        "tfidf": 0.122
-      },
-      {
-        "keyword": "question friends",
-        "tfidf": 0.122
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.2504
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.2086
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.178
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1634
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.154
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0281
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0093
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0083
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 14.46,
-      "word_count": 9,
-      "vocab_richness": 0.843
+  ],
+  "2020": [
+    {
+      "year": 2020,
+      "theme": "living",
+      "tfidf_score": 0.2156
+    },
+    {
+      "year": 2020,
+      "theme": "skydive",
+      "tfidf_score": 0.1955
+    },
+    {
+      "year": 2020,
+      "theme": "mar",
+      "tfidf_score": 0.1798
+    },
+    {
+      "year": 2020,
+      "theme": "record",
+      "tfidf_score": 0.1671
+    },
+    {
+      "year": 2020,
+      "theme": "feb",
+      "tfidf_score": 0.1563
+    },
+    {
+      "year": 2020,
+      "theme": "16 muscle",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "passion pistols",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "pasta",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "pasta passion",
+      "tfidf_score": 0.122
+    },
+    {
+      "year": 2020,
+      "theme": "question friends",
+      "tfidf_score": 0.122
     }
-  },
-  {
-    "year": 2021,
-    "top_keywords": [
-      {
-        "keyword": "23",
-        "tfidf": 0.2362
-      },
-      {
-        "keyword": "vegas",
-        "tfidf": 0.23
-      },
-      {
-        "keyword": "lbs",
-        "tfidf": 0.2032
-      },
-      {
-        "keyword": "year",
-        "tfidf": 0.1676
-      },
-      {
-        "keyword": "11",
-        "tfidf": 0.1575
-      },
-      {
-        "keyword": "dec",
-        "tfidf": 0.1523
-      },
-      {
-        "keyword": "10",
-        "tfidf": 0.1473
-      },
-      {
-        "keyword": "jul",
-        "tfidf": 0.1473
-      },
-      {
-        "keyword": "20",
-        "tfidf": 0.1385
-      },
-      {
-        "keyword": "pong",
-        "tfidf": 0.115
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.2446
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.2141
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.1329
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.1067
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.0993
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0935
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0762
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0328
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 8.12,
-      "word_count": 7,
-      "vocab_richness": 0.787
+  ],
+  "2021": [
+    {
+      "year": 2021,
+      "theme": "23",
+      "tfidf_score": 0.2362
+    },
+    {
+      "year": 2021,
+      "theme": "vegas",
+      "tfidf_score": 0.23
+    },
+    {
+      "year": 2021,
+      "theme": "lbs",
+      "tfidf_score": 0.2032
+    },
+    {
+      "year": 2021,
+      "theme": "year",
+      "tfidf_score": 0.1676
+    },
+    {
+      "year": 2021,
+      "theme": "11",
+      "tfidf_score": 0.1575
+    },
+    {
+      "year": 2021,
+      "theme": "dec",
+      "tfidf_score": 0.1523
+    },
+    {
+      "year": 2021,
+      "theme": "10",
+      "tfidf_score": 0.1473
+    },
+    {
+      "year": 2021,
+      "theme": "jul",
+      "tfidf_score": 0.1473
+    },
+    {
+      "year": 2021,
+      "theme": "20",
+      "tfidf_score": 0.1385
+    },
+    {
+      "year": 2021,
+      "theme": "pong",
+      "tfidf_score": 0.115
     }
-  },
-  {
-    "year": 2022,
-    "top_keywords": [
-      {
-        "keyword": "game",
-        "tfidf": 0.2977
-      },
-      {
-        "keyword": "100",
-        "tfidf": 0.2307
-      },
-      {
-        "keyword": "playoff run",
-        "tfidf": 0.1685
-      },
-      {
-        "keyword": "oregon",
-        "tfidf": 0.1685
-      },
-      {
-        "keyword": "rangers playoff",
-        "tfidf": 0.1685
-      },
-      {
-        "keyword": "psu",
-        "tfidf": 0.1685
-      },
-      {
-        "keyword": "psu white",
-        "tfidf": 0.1685
-      },
-      {
-        "keyword": "ot",
-        "tfidf": 0.1685
-      },
-      {
-        "keyword": "oregon vacation",
-        "tfidf": 0.1685
-      },
-      {
-        "keyword": "ot game",
-        "tfidf": 0.1685
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.4826
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.1606
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.1196
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0962
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0642
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0485
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.0283
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 34.32,
-      "word_count": 4,
-      "vocab_richness": 0.946
+  ],
+  "2022": [
+    {
+      "year": 2022,
+      "theme": "game",
+      "tfidf_score": 0.2977
+    },
+    {
+      "year": 2022,
+      "theme": "100",
+      "tfidf_score": 0.2307
+    },
+    {
+      "year": 2022,
+      "theme": "playoff run",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "oregon",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "rangers playoff",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "psu",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "psu white",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "ot",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "oregon vacation",
+      "tfidf_score": 0.1685
+    },
+    {
+      "year": 2022,
+      "theme": "ot game",
+      "tfidf_score": 0.1685
     }
-  },
-  {
-    "year": 2023,
-    "top_keywords": [
-      {
-        "keyword": "day ve",
-        "tfidf": 0.3336
-      },
-      {
-        "keyword": "spectacular day",
-        "tfidf": 0.3336
-      },
-      {
-        "keyword": "experienced",
-        "tfidf": 0.3336
-      },
-      {
-        "keyword": "ve experienced",
-        "tfidf": 0.3336
-      },
-      {
-        "keyword": "spectacular",
-        "tfidf": 0.3336
-      },
-      {
-        "keyword": "day",
-        "tfidf": 0.3205
-      },
-      {
-        "keyword": "ve",
-        "tfidf": 0.2672
-      },
-      {
-        "keyword": "phoenix spectacular",
-        "tfidf": 0.1668
-      },
-      {
-        "keyword": "phoenix",
-        "tfidf": 0.1668
-      },
-      {
-        "keyword": "personal liberation",
-        "tfidf": 0.1668
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.5108
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.3882
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.043
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0268
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.0224
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.0063
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0022
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.0001
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 27.96,
-      "word_count": 8,
-      "vocab_richness": 0.897
+  ],
+  "2023": [
+    {
+      "year": 2023,
+      "theme": "day ve",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "spectacular day",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "experienced",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "ve experienced",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "spectacular",
+      "tfidf_score": 0.3336
+    },
+    {
+      "year": 2023,
+      "theme": "day",
+      "tfidf_score": 0.3205
+    },
+    {
+      "year": 2023,
+      "theme": "ve",
+      "tfidf_score": 0.2672
+    },
+    {
+      "year": 2023,
+      "theme": "phoenix spectacular",
+      "tfidf_score": 0.1668
+    },
+    {
+      "year": 2023,
+      "theme": "phoenix",
+      "tfidf_score": 0.1668
+    },
+    {
+      "year": 2023,
+      "theme": "personal liberation",
+      "tfidf_score": 0.1668
     }
-  },
-  {
-    "year": 2024,
-    "top_keywords": [
-      {
-        "keyword": "trip",
-        "tfidf": 0.2208
-      },
-      {
-        "keyword": "oct 21",
-        "tfidf": 0.2051
-      },
-      {
-        "keyword": "place armes",
-        "tfidf": 0.2051
-      },
-      {
-        "keyword": "place",
-        "tfidf": 0.2051
-      },
-      {
-        "keyword": "passed oct",
-        "tfidf": 0.2051
-      },
-      {
-        "keyword": "personal best",
-        "tfidf": 0.2051
-      },
-      {
-        "keyword": "18 20",
-        "tfidf": 0.2051
-      },
-      {
-        "keyword": "pm age",
-        "tfidf": 0.2051
-      },
-      {
-        "keyword": "julian",
-        "tfidf": 0.1812
-      },
-      {
-        "keyword": "tower",
-        "tfidf": 0.1812
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.4081
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.1941
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.1388
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.1356
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.0498
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.0296
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0234
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.0206
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 28.65,
-      "word_count": 5,
-      "vocab_richness": 0.953
+  ],
+  "2024": [
+    {
+      "year": 2024,
+      "theme": "trip",
+      "tfidf_score": 0.2208
+    },
+    {
+      "year": 2024,
+      "theme": "oct 21",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "place armes",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "place",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "passed oct",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "personal best",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "18 20",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "pm age",
+      "tfidf_score": 0.2051
+    },
+    {
+      "year": 2024,
+      "theme": "julian",
+      "tfidf_score": 0.1812
+    },
+    {
+      "year": 2024,
+      "theme": "tower",
+      "tfidf_score": 0.1812
     }
-  },
-  {
-    "year": 2025,
-    "top_keywords": [
-      {
-        "keyword": "road trip",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "passed nj",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "raised",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "raised boro",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "promotion passed",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "16 states",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "people 700",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "road",
-        "tfidf": 0.2182
-      },
-      {
-        "keyword": "tower",
-        "tfidf": 0.1929
-      },
-      {
-        "keyword": "mother",
-        "tfidf": 0.1929
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0.1945
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0.1942
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0.1513
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0.1418
-      },
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 0.1372
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0.1235
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0.0471
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0.0102
-      }
-    ],
-    "writing_stats": {
-      "grade_level": 35.05,
-      "word_count": 6,
-      "vocab_richness": 0.914
+  ],
+  "2025": [
+    {
+      "year": 2025,
+      "theme": "road trip",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "passed nj",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "raised",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "raised boro",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "promotion passed",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "16 states",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "people 700",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "road",
+      "tfidf_score": 0.2182
+    },
+    {
+      "year": 2025,
+      "theme": "tower",
+      "tfidf_score": 0.1929
+    },
+    {
+      "year": 2025,
+      "theme": "mother",
+      "tfidf_score": 0.1929
     }
-  },
-  {
-    "year": 2026,
-    "top_keywords": [
-      {
-        "keyword": "trip",
-        "tfidf": 1.0
-      }
-    ],
-    "topic_weights": [
-      {
-        "topic": "Topic 3: trip, ski, 000, road",
-        "weight": 1.0
-      },
-      {
-        "topic": "Topic 1: sep, 27, turned, birthday",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 2: year, comedian, anniversary, ecd",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 4: cruise, croatia, years, 10",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 5: dec, 15, 18, 12",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 6: wwe, event, oct, mar",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 7: aug, 16, dodgeball, 21",
-        "weight": 0
-      },
-      {
-        "topic": "Topic 8: jul, 29, birthday, married",
-        "weight": 0
-      }
-    ],
-    "writing_stats": {
-      "grade_level": null,
-      "word_count": null,
-      "vocab_richness": null
+  ],
+  "2026": [
+    {
+      "year": 2026,
+      "theme": "trip",
+      "tfidf_score": 1.0
     }
-  }
-]
+  ]
+}

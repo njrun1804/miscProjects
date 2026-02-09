@@ -1,21 +1,30 @@
 [
   {
-    "person": "Tim Moore",
-    "first_year": 2004,
-    "last_year": 2025,
-    "span": 21,
-    "total_mentions": 5,
-    "peak_year": 2004,
+    "person": "Arthur Knott (Artie)",
+    "first_year": 2018,
+    "last_year": 2018,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2018,
     "peak_mentions": 1
   },
   {
-    "person": "The Pops",
-    "first_year": 2006,
-    "last_year": 2025,
-    "span": 19,
-    "total_mentions": 31,
-    "peak_year": 2008,
-    "peak_mentions": 4
+    "person": "Blake",
+    "first_year": 2020,
+    "last_year": 2020,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2020,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Cousin Nick & Samantha",
+    "first_year": 2011,
+    "last_year": 2011,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2011,
+    "peak_mentions": 1
   },
   {
     "person": "Dan Farnkopf",
@@ -36,21 +45,57 @@
     "peak_mentions": 2
   },
   {
-    "person": "Lauren Stopa",
-    "first_year": 2007,
+    "person": "Danny Sponge",
+    "first_year": 2021,
     "last_year": 2021,
-    "span": 14,
-    "total_mentions": 3,
-    "peak_year": 2007,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2021,
     "peak_mentions": 1
   },
   {
-    "person": "Lauren Winston",
-    "first_year": 2007,
-    "last_year": 2021,
-    "span": 14,
-    "total_mentions": 3,
-    "peak_year": 2007,
+    "person": "Diana DiBuccio",
+    "first_year": 2008,
+    "last_year": 2014,
+    "span": 6,
+    "total_mentions": 2,
+    "peak_year": 2008,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Grace",
+    "first_year": 2020,
+    "last_year": 2020,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2020,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Grandma 'Mama' Blanca",
+    "first_year": 2013,
+    "last_year": 2013,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2013,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Grandma Irene",
+    "first_year": 2013,
+    "last_year": 2013,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2013,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Grandma Theresa",
+    "first_year": 2013,
+    "last_year": 2013,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2013,
     "peak_mentions": 1
   },
   {
@@ -63,48 +108,12 @@
     "peak_mentions": 2
   },
   {
-    "person": "Rob",
-    "first_year": 2011,
-    "last_year": 2021,
-    "span": 10,
-    "total_mentions": 2,
-    "peak_year": 2011,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Rob Phillips (Robert)",
-    "first_year": 2011,
-    "last_year": 2021,
-    "span": 10,
-    "total_mentions": 2,
-    "peak_year": 2011,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Tom Macaluso",
-    "first_year": 2008,
-    "last_year": 2017,
-    "span": 9,
-    "total_mentions": 2,
-    "peak_year": 2008,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Michael",
-    "first_year": 2010,
-    "last_year": 2018,
-    "span": 8,
-    "total_mentions": 2,
-    "peak_year": 2010,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Diana DiBuccio",
-    "first_year": 2008,
+    "person": "Johnny Nash",
+    "first_year": 2014,
     "last_year": 2014,
-    "span": 6,
-    "total_mentions": 2,
-    "peak_year": 2008,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2014,
     "peak_mentions": 1
   },
   {
@@ -123,24 +132,6 @@
     "span": 5,
     "total_mentions": 2,
     "peak_year": 2019,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Maggie",
-    "first_year": 2014,
-    "last_year": 2018,
-    "span": 4,
-    "total_mentions": 2,
-    "peak_year": 2014,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Phil Campanella",
-    "first_year": 2007,
-    "last_year": 2010,
-    "span": 3,
-    "total_mentions": 2,
-    "peak_year": 2007,
     "peak_mentions": 1
   },
   {
@@ -189,101 +180,38 @@
     "peak_mentions": 1
   },
   {
-    "person": "Megan",
-    "first_year": 2020,
-    "last_year": 2022,
-    "span": 2,
+    "person": "Lauren Stopa",
+    "first_year": 2007,
+    "last_year": 2021,
+    "span": 14,
+    "total_mentions": 3,
+    "peak_year": 2007,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Lauren Winston",
+    "first_year": 2007,
+    "last_year": 2021,
+    "span": 14,
+    "total_mentions": 3,
+    "peak_year": 2007,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Lawrence",
+    "first_year": 2021,
+    "last_year": 2021,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2021,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Maggie",
+    "first_year": 2014,
+    "last_year": 2018,
+    "span": 4,
     "total_mentions": 2,
-    "peak_year": 2020,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Melissa Kerr",
-    "first_year": 2009,
-    "last_year": 2009,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2009,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Cousin Nick & Samantha",
-    "first_year": 2011,
-    "last_year": 2011,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2011,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Grandma 'Mama' Blanca",
-    "first_year": 2013,
-    "last_year": 2013,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2013,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Grandma Irene",
-    "first_year": 2013,
-    "last_year": 2013,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2013,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Grandma Theresa",
-    "first_year": 2013,
-    "last_year": 2013,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2013,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Ray Marzarella",
-    "first_year": 2014,
-    "last_year": 2014,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2014,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Valerie Winston (ValPal",
-    "first_year": 2014,
-    "last_year": 2014,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2014,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Mike 'Sputz' Krott",
-    "first_year": 2014,
-    "last_year": 2014,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2014,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Mike Krott",
-    "first_year": 2014,
-    "last_year": 2014,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2014,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Johnny Nash",
-    "first_year": 2014,
-    "last_year": 2014,
-    "span": 0,
-    "total_mentions": 1,
     "peak_year": 2014,
     "peak_mentions": 1
   },
@@ -306,6 +234,87 @@
     "peak_mentions": 1
   },
   {
+    "person": "Megan",
+    "first_year": 2020,
+    "last_year": 2022,
+    "span": 2,
+    "total_mentions": 2,
+    "peak_year": 2020,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Melissa Kerr",
+    "first_year": 2009,
+    "last_year": 2009,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2009,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Michael",
+    "first_year": 2010,
+    "last_year": 2018,
+    "span": 8,
+    "total_mentions": 2,
+    "peak_year": 2010,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Mike 'Sputz' Krott",
+    "first_year": 2014,
+    "last_year": 2014,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2014,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Mike Krott",
+    "first_year": 2014,
+    "last_year": 2014,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2014,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Phil Campanella",
+    "first_year": 2007,
+    "last_year": 2010,
+    "span": 3,
+    "total_mentions": 2,
+    "peak_year": 2007,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Ray Marzarella",
+    "first_year": 2014,
+    "last_year": 2014,
+    "span": 0,
+    "total_mentions": 1,
+    "peak_year": 2014,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Rob",
+    "first_year": 2011,
+    "last_year": 2021,
+    "span": 10,
+    "total_mentions": 2,
+    "peak_year": 2011,
+    "peak_mentions": 1
+  },
+  {
+    "person": "Rob Phillips (Robert)",
+    "first_year": 2011,
+    "last_year": 2021,
+    "span": 10,
+    "total_mentions": 2,
+    "peak_year": 2011,
+    "peak_mentions": 1
+  },
+  {
     "person": "Terra Bergquist",
     "first_year": 2018,
     "last_year": 2018,
@@ -315,48 +324,39 @@
     "peak_mentions": 1
   },
   {
-    "person": "Arthur Knott (Artie)",
-    "first_year": 2018,
-    "last_year": 2018,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2018,
+    "person": "The Pops",
+    "first_year": 2006,
+    "last_year": 2025,
+    "span": 19,
+    "total_mentions": 31,
+    "peak_year": 2008,
+    "peak_mentions": 4
+  },
+  {
+    "person": "Tim Moore",
+    "first_year": 2004,
+    "last_year": 2025,
+    "span": 21,
+    "total_mentions": 5,
+    "peak_year": 2004,
     "peak_mentions": 1
   },
   {
-    "person": "Grace",
-    "first_year": 2020,
-    "last_year": 2020,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2020,
+    "person": "Tom Macaluso",
+    "first_year": 2008,
+    "last_year": 2017,
+    "span": 9,
+    "total_mentions": 2,
+    "peak_year": 2008,
     "peak_mentions": 1
   },
   {
-    "person": "Blake",
-    "first_year": 2020,
-    "last_year": 2020,
+    "person": "Valerie Winston (ValPal",
+    "first_year": 2014,
+    "last_year": 2014,
     "span": 0,
     "total_mentions": 1,
-    "peak_year": 2020,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Lawrence",
-    "first_year": 2021,
-    "last_year": 2021,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2021,
-    "peak_mentions": 1
-  },
-  {
-    "person": "Danny Sponge",
-    "first_year": 2021,
-    "last_year": 2021,
-    "span": 0,
-    "total_mentions": 1,
-    "peak_year": 2021,
+    "peak_year": 2014,
     "peak_mentions": 1
   }
 ]

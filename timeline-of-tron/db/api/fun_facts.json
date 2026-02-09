@@ -85,7 +85,7 @@
   },
   {
     "id": 13,
-    "fact": "The Kia Soul hit 20,000 miles on December 15, 2015 \u2014 of course this was noted",
+    "fact": "The Kia Soul hit 20,000 miles on December 15, 2015 — of course this was noted",
     "year": 2015,
     "category": "vehicle",
     "sentiment_polarity": 0.0
@@ -197,7 +197,7 @@
   },
   {
     "id": 29,
-    "fact": "Tennis match vs Dan Farnkopf lasted 6 hours, 7 minutes, 3 seconds \u2014 consumed 3 waters, 2 Vitamin Waters, 5 energy bars (Sep 21, 2010)",
+    "fact": "Tennis match vs Dan Farnkopf lasted 6 hours, 7 minutes, 3 seconds — consumed 3 waters, 2 Vitamin Waters, 5 energy bars (Sep 21, 2010)",
     "year": 2010,
     "category": "sports",
     "sentiment_polarity": 0.0
@@ -253,7 +253,7 @@
   },
   {
     "id": 37,
-    "fact": "First haircut since May 2006 was gotten September 2, 2007 \u2014 roughly 16 months between haircuts",
+    "fact": "First haircut since May 2006 was gotten September 2, 2007 — roughly 16 months between haircuts",
     "year": 2006,
     "category": "misc",
     "sentiment_polarity": 0.075
@@ -351,7 +351,7 @@
   },
   {
     "id": 51,
-    "fact": "Called 2009 'The Greatest Year Ever' \u2014 then 2013 contested it",
+    "fact": "Called 2009 'The Greatest Year Ever' — then 2013 contested it",
     "year": 2009,
     "category": "misc",
     "sentiment_polarity": 1.0
@@ -400,7 +400,7 @@
   },
   {
     "id": 58,
-    "fact": "Carolina Panthers obliterated Giants 41-9 at the final game ever at Giants Stadium \u2014 19th row center, 78,809 attendance (Dec 27, 2009)",
+    "fact": "Carolina Panthers obliterated Giants 41-9 at the final game ever at Giants Stadium — 19th row center, 78,809 attendance (Dec 27, 2009)",
     "year": 2009,
     "category": "misc",
     "sentiment_polarity": -0.1667

@@ -1,2023 +1,1672 @@
 {
-  "center": {
-    "name": "John Tronolone",
-    "id": "john"
-  },
   "nodes": [
     {
-      "id": "person_6",
-      "name": "Grace",
-      "category": "family",
-      "relation": "Sister",
-      "first_year": 2020,
-      "last_year": 2020,
-      "total_mentions": 1,
-      "peak_year": 2020,
-      "highlight_count": 1,
-      "has_timeline": true
-    },
-    {
-      "id": "person_4",
-      "name": "Grammy Nancy",
-      "category": "family",
-      "relation": "Grandmother",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 3,
-      "has_timeline": true
-    },
-    {
-      "id": "person_8",
-      "name": "Julian",
-      "category": "family",
-      "relation": "Nephew (Michael's son)",
-      "first_year": 2019,
-      "last_year": 2024,
-      "total_mentions": 2,
-      "peak_year": 2019,
-      "highlight_count": 2,
-      "has_timeline": true
-    },
-    {
-      "id": "person_9",
-      "name": "Lawrence",
-      "category": "family",
-      "relation": "Nephew (Michael's son)",
-      "first_year": 2021,
-      "last_year": 2021,
-      "total_mentions": 1,
-      "peak_year": 2021,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_1",
+      "id": 1,
       "name": "Ma",
       "category": "family",
-      "relation": "Mother",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 1,
-      "has_timeline": true
+      "first_year": 0,
+      "importance_score": 257.0
     },
     {
-      "id": "person_7",
-      "name": "Megan",
-      "category": "family",
-      "relation": "Sister",
-      "first_year": 2020,
-      "last_year": 2022,
-      "total_mentions": 2,
-      "peak_year": 2020,
-      "highlight_count": 2,
-      "has_timeline": true
+      "id": 99,
+      "name": "John Tronolone",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 78.0
     },
     {
-      "id": "person_5",
-      "name": "Michael",
-      "category": "family",
-      "relation": "Brother",
-      "first_year": 2010,
-      "last_year": 2018,
-      "total_mentions": 2,
-      "peak_year": 2010,
-      "highlight_count": 1,
-      "has_timeline": true
-    },
-    {
-      "id": "person_3",
-      "name": "StepPa",
-      "category": "family",
-      "relation": "Stepfather",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_2",
-      "name": "The Pops",
-      "category": "family",
-      "relation": "Father",
-      "first_year": 2006,
-      "last_year": 2025,
-      "total_mentions": 31,
-      "peak_year": 2008,
-      "highlight_count": 2,
-      "has_timeline": true
-    },
-    {
-      "id": "person_126",
-      "name": "Victoria Grace Tronolone",
-      "category": "family",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_15",
+      "id": 15,
       "name": "Dan Spengeman",
       "category": "inner_circle",
-      "relation": "",
-      "first_year": 2005,
-      "last_year": 2021,
-      "total_mentions": 8,
-      "peak_year": 2021,
-      "highlight_count": 3,
-      "has_timeline": true
+      "first_year": 0,
+      "importance_score": 38.0
     },
     {
-      "id": "person_16",
-      "name": "Diana DiBuccio",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": 2008,
-      "last_year": 2014,
-      "total_mentions": 2,
-      "peak_year": 2008,
-      "highlight_count": 2,
-      "has_timeline": true
-    },
-    {
-      "id": "person_20",
-      "name": "JesseKay Paz",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 1,
-      "has_timeline": false
-    },
-    {
-      "id": "person_19",
-      "name": "Juan Londono (Muffin Man)",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 5,
-      "has_timeline": false
-    },
-    {
-      "id": "person_12",
-      "name": "Kevin & Leah (KMJ & LN)",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": 2017,
-      "last_year": 2020,
-      "total_mentions": 2,
-      "peak_year": 2017,
-      "highlight_count": 3,
-      "has_timeline": true
-    },
-    {
-      "id": "person_17",
-      "name": "Lauren Winston",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": 2007,
-      "last_year": 2021,
-      "total_mentions": 3,
-      "peak_year": 2007,
-      "highlight_count": 1,
-      "has_timeline": true
-    },
-    {
-      "id": "person_13",
-      "name": "RL (Letsche)",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 2,
-      "has_timeline": true
-    },
-    {
-      "id": "person_14",
-      "name": "Rupert",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 6,
-      "has_timeline": true
-    },
-    {
-      "id": "person_100",
-      "name": "Ryan Letsche",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 5,
-      "has_timeline": false
-    },
-    {
-      "id": "person_11",
-      "name": "Valerie Winston (ValPal)",
-      "category": "inner_circle",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 4,
-      "has_timeline": true
-    },
-    {
-      "id": "person_118",
-      "name": "Aimee",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_62",
-      "name": "Alison Bertsch",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_22",
-      "name": "Angela Hibbert",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_82",
-      "name": "Arthur Knott (Artie)",
-      "category": "other",
-      "relation": "",
-      "first_year": 2018,
-      "last_year": 2018,
-      "total_mentions": 1,
-      "peak_year": 2018,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_53",
-      "name": "Ashley Hoppe",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_33",
-      "name": "Aunt Darlene",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_106",
-      "name": "Bethany Schon",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_87",
-      "name": "Blake",
-      "category": "other",
-      "relation": "",
-      "first_year": 2020,
-      "last_year": 2020,
-      "total_mentions": 1,
-      "peak_year": 2020,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_45",
-      "name": "Bobby Vetrano",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_66",
-      "name": "Bojana Beric (Prof. Beric)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_27",
-      "name": "Brian",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_84",
-      "name": "Buck",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_23",
-      "name": "Chef Lanza",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_43",
-      "name": "Chris Adams",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_40",
-      "name": "Chris Arbach (Topher)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_79",
-      "name": "Chris James",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_70",
-      "name": "Cousin Nick & Samantha",
-      "category": "other",
-      "relation": "",
-      "first_year": 2011,
-      "last_year": 2011,
-      "total_mentions": 1,
-      "peak_year": 2011,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_115",
-      "name": "D Turner",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_61",
-      "name": "Dan Farnkopf",
-      "category": "other",
-      "relation": "",
-      "first_year": 2005,
-      "last_year": 2021,
-      "total_mentions": 7,
-      "peak_year": 2021,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_113",
-      "name": "Dave Eldracher",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_24",
-      "name": "Dr. Wenslauskas",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_94",
-      "name": "Edwards",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_105",
-      "name": "Ellen Carter",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_95",
-      "name": "Fitz",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_102",
-      "name": "Gerald Lewis",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_69",
-      "name": "Grandma 'Mama' Blanca",
-      "category": "other",
-      "relation": "",
-      "first_year": 2013,
-      "last_year": 2013,
-      "total_mentions": 1,
-      "peak_year": 2013,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_68",
-      "name": "Grandma Irene",
-      "category": "other",
-      "relation": "",
-      "first_year": 2013,
-      "last_year": 2013,
-      "total_mentions": 1,
-      "peak_year": 2013,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_67",
-      "name": "Grandma Theresa",
-      "category": "other",
-      "relation": "",
-      "first_year": 2013,
-      "last_year": 2013,
-      "total_mentions": 1,
-      "peak_year": 2013,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_39",
-      "name": "Grant Cornero (GrantMan)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_110",
-      "name": "Greg",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_86",
-      "name": "Holden",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_36",
-      "name": "Jackie Amorino",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_65",
-      "name": "Jake Mauro",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_41",
-      "name": "James Butler (Boofer)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_29",
-      "name": "Japheth",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_111",
-      "name": "Jesse D",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_119",
-      "name": "Jill (Toilet Paper)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_49",
-      "name": "Joe Corcione (Giuseppe NJ)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_77",
-      "name": "Johnny Nash",
-      "category": "other",
-      "relation": "",
-      "first_year": 2014,
-      "last_year": 2014,
-      "total_mentions": 1,
-      "peak_year": 2014,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_50",
-      "name": "Julia Dennabuam",
-      "category": "other",
-      "relation": "",
-      "first_year": 2019,
-      "last_year": 2024,
-      "total_mentions": 2,
-      "peak_year": 2019,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_46",
-      "name": "Justin Pierce",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_117",
-      "name": "Kathryn Kitty Nogueira",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_54",
-      "name": "Katie Grand",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_21",
-      "name": "Kenny Stetz",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_107",
-      "name": "Kevin Abrams",
-      "category": "other",
-      "relation": "",
-      "first_year": 2017,
-      "last_year": 2020,
-      "total_mentions": 2,
-      "peak_year": 2017,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_42",
-      "name": "Kevin Adams",
-      "category": "other",
-      "relation": "",
-      "first_year": 2017,
-      "last_year": 2020,
-      "total_mentions": 2,
-      "peak_year": 2017,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_127",
-      "name": "Kevin Grand",
-      "category": "other",
-      "relation": "",
-      "first_year": 2017,
-      "last_year": 2020,
-      "total_mentions": 2,
-      "peak_year": 2017,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_44",
-      "name": "Kevin Megill (KMJ)",
-      "category": "other",
-      "relation": "",
-      "first_year": 2017,
-      "last_year": 2020,
-      "total_mentions": 2,
-      "peak_year": 2017,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_51",
-      "name": "Kimmy Canzanella",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_124",
-      "name": "Kristen (Cocoa's Mommy)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_57",
-      "name": "Kristen Driscoll",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_63",
-      "name": "Lauren Stopa",
-      "category": "other",
-      "relation": "",
-      "first_year": 2007,
-      "last_year": 2021,
-      "total_mentions": 3,
-      "peak_year": 2007,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_120",
-      "name": "Lenny",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_114",
-      "name": "Liam Yochum",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_80",
-      "name": "Lindsay & Kyle Szcakstza",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_73",
-      "name": "Lisa",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_81",
-      "name": "Maggie",
-      "category": "other",
-      "relation": "",
-      "first_year": 2014,
-      "last_year": 2018,
-      "total_mentions": 2,
-      "peak_year": 2014,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_97",
-      "name": "Marty",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_83",
-      "name": "Matt (Physical Therapist)",
-      "category": "other",
-      "relation": "",
-      "first_year": 2017,
-      "last_year": 2017,
-      "total_mentions": 1,
-      "peak_year": 2017,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_91",
-      "name": "Matt (introduced Jul 3, 2019)",
-      "category": "other",
-      "relation": "",
-      "first_year": 2017,
-      "last_year": 2017,
-      "total_mentions": 1,
-      "peak_year": 2017,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_74",
-      "name": "Megill",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_37",
-      "name": "Melissa Kerr",
-      "category": "other",
-      "relation": "",
-      "first_year": 2009,
-      "last_year": 2009,
-      "total_mentions": 1,
-      "peak_year": 2009,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_125",
-      "name": "Michelle (Olive Garden Route 35)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_56",
-      "name": "Michelle Mullins (Muffins)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_109",
-      "name": "Mike Krott",
-      "category": "other",
-      "relation": "",
-      "first_year": 2014,
-      "last_year": 2014,
-      "total_mentions": 1,
-      "peak_year": 2014,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_25",
-      "name": "Mr. Mak",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_35",
-      "name": "Mrs. Amorino",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_30",
-      "name": "Mrs. Brennessel",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_85",
-      "name": "Murtha 'The Machine'",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_104",
-      "name": "NeonGreen Johnnie",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_64",
-      "name": "P-A-M-U-L-A (Pamula)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_121",
-      "name": "Pancho",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_28",
-      "name": "Pete and Larry",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_34",
-      "name": "Phil Campanella",
-      "category": "other",
-      "relation": "",
-      "first_year": 2007,
-      "last_year": 2010,
-      "total_mentions": 2,
-      "peak_year": 2007,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_128",
-      "name": "Punter Wolf",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_72",
-      "name": "RK (Rob Knott)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_101",
-      "name": "Ray Marzarella",
-      "category": "other",
-      "relation": "",
-      "first_year": 2014,
-      "last_year": 2014,
-      "total_mentions": 1,
-      "peak_year": 2014,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_116",
-      "name": "Robert Phillips",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_112",
-      "name": "RyGuy (Brody's Big Brother)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_123",
-      "name": "Sabu Avakian",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_52",
-      "name": "Sascha Basista",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_78",
-      "name": "Sean",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_93",
-      "name": "Shane",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_103",
-      "name": "Steph (Otis Spunkmeyer Cookies)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_90",
-      "name": "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_122",
-      "name": "Steve Kass",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_47",
-      "name": "Steve Pham",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_31",
-      "name": "Steve and Stacey",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_129",
-      "name": "T. Adams (Greek)",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_108",
-      "name": "TJ Auchinleck",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_58",
-      "name": "Terra Bergquist",
-      "category": "other",
-      "relation": "",
-      "first_year": 2018,
-      "last_year": 2018,
-      "total_mentions": 1,
-      "peak_year": 2018,
-      "highlight_count": 0,
-      "has_timeline": true
-    },
-    {
-      "id": "person_89",
-      "name": "Thomas",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_71",
-      "name": "Tim Moore",
-      "category": "other",
-      "relation": "",
-      "first_year": 2004,
-      "last_year": 2025,
-      "total_mentions": 5,
-      "peak_year": 2004,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_55",
-      "name": "Tom Macaluso",
-      "category": "other",
-      "relation": "",
-      "first_year": 2008,
-      "last_year": 2017,
-      "total_mentions": 2,
-      "peak_year": 2008,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_88",
-      "name": "Tommy & Johnny",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_38",
-      "name": "Travis Mills",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_92",
-      "name": "Tyler Ponte",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_76",
-      "name": "Vicki Oliver",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_26",
-      "name": "Walaa",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_75",
-      "name": "Wolf",
-      "category": "other",
-      "relation": "",
-      "first_year": null,
-      "last_year": null,
-      "total_mentions": 0,
-      "peak_year": null,
-      "highlight_count": 0,
-      "has_timeline": false
-    },
-    {
-      "id": "person_10",
+      "id": 10,
       "name": "Rob",
       "category": "partner",
-      "relation": "",
-      "first_year": 2011,
-      "last_year": 2021,
-      "total_mentions": 2,
-      "peak_year": 2011,
-      "highlight_count": 2,
-      "has_timeline": true
+      "first_year": 0,
+      "importance_score": 37.0
+    },
+    {
+      "id": 2,
+      "name": "The Pops",
+      "category": "family",
+      "first_year": 1957,
+      "importance_score": 35.0
+    },
+    {
+      "id": 63,
+      "name": "Lauren Stopa",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 31.0
+    },
+    {
+      "id": 17,
+      "name": "Lauren Winston",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 27.0
+    },
+    {
+      "id": 5,
+      "name": "Michael",
+      "category": "family",
+      "first_year": 1987,
+      "importance_score": 26.0
+    },
+    {
+      "id": 59,
+      "name": "Danny Sponge",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 22.0
+    },
+    {
+      "id": 71,
+      "name": "Tim Moore",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 21.0
+    },
+    {
+      "id": 16,
+      "name": "Diana DiBuccio",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 20.0
+    },
+    {
+      "id": 81,
+      "name": "Maggie",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 20.0
+    },
+    {
+      "id": 8,
+      "name": "Julian",
+      "category": "family",
+      "first_year": 0,
+      "importance_score": 19.0
+    },
+    {
+      "id": 61,
+      "name": "Dan Farnkopf",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 16.0
+    },
+    {
+      "id": 12,
+      "name": "Kevin & Leah (KMJ & LN)",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 15.0
+    },
+    {
+      "id": 42,
+      "name": "Kevin Adams",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 13.0
+    },
+    {
+      "id": 44,
+      "name": "Kevin Megill (KMJ)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 13.0
+    },
+    {
+      "id": 7,
+      "name": "Megan",
+      "category": "family",
+      "first_year": 0,
+      "importance_score": 12.0
+    },
+    {
+      "id": 34,
+      "name": "Phil Campanella",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 11.0
+    },
+    {
+      "id": 50,
+      "name": "Julia Dennabuam",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 11.0
+    },
+    {
+      "id": 67,
+      "name": "Grandma Theresa",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 10.0
+    },
+    {
+      "id": 9,
+      "name": "Lawrence",
+      "category": "family",
+      "first_year": 0,
+      "importance_score": 9.0
+    },
+    {
+      "id": 55,
+      "name": "Tom Macaluso",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 9.0
+    },
+    {
+      "id": 83,
+      "name": "Matt (Physical Therapist)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 9.0
+    },
+    {
+      "id": 91,
+      "name": "Matt (introduced Jul 3, 2019)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 9.0
+    },
+    {
+      "id": 19,
+      "name": "Juan Londono (Muffin Man)",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 7.0
+    },
+    {
+      "id": 100,
+      "name": "Ryan Letsche",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 7.0
+    },
+    {
+      "id": 6,
+      "name": "Grace",
+      "category": "family",
+      "first_year": 0,
+      "importance_score": 6.0
+    },
+    {
+      "id": 23,
+      "name": "Chef Lanza",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 6.0
+    },
+    {
+      "id": 68,
+      "name": "Grandma Irene",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 6.0
+    },
+    {
+      "id": 69,
+      "name": "Grandma 'Mama' Blanca",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 6.0
+    },
+    {
+      "id": 77,
+      "name": "Johnny Nash",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 6.0
+    },
+    {
+      "id": 11,
+      "name": "Valerie Winston (ValPal)",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 5.0
+    },
+    {
+      "id": 31,
+      "name": "Steve and Stacey",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 5.0
+    },
+    {
+      "id": 47,
+      "name": "Steve Pham",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 5.0
+    },
+    {
+      "id": 74,
+      "name": "Megill",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 4.0
+    },
+    {
+      "id": 82,
+      "name": "Arthur Knott (Artie)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 4.0
+    },
+    {
+      "id": 87,
+      "name": "Blake",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 4.0
+    },
+    {
+      "id": 131,
+      "name": "Kevin Megill",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 4.0
+    },
+    {
+      "id": 26,
+      "name": "Walaa",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 3.0
+    },
+    {
+      "id": 37,
+      "name": "Melissa Kerr",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 3.0
+    },
+    {
+      "id": 107,
+      "name": "Kevin Abrams",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 3.0
+    },
+    {
+      "id": 127,
+      "name": "Kevin Grand",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 3.0
+    },
+    {
+      "id": 14,
+      "name": "Rupert",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 2.0
+    },
+    {
+      "id": 58,
+      "name": "Terra Bergquist",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 2.0
+    },
+    {
+      "id": 70,
+      "name": "Cousin Nick & Samantha",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 2.0
+    },
+    {
+      "id": 93,
+      "name": "Shane",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 2.0
+    },
+    {
+      "id": 94,
+      "name": "Edwards",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 2.0
+    },
+    {
+      "id": 109,
+      "name": "Mike Krott",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 2.0
+    },
+    {
+      "id": 27,
+      "name": "Brian",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 1.0
+    },
+    {
+      "id": 3,
+      "name": "StepPa",
+      "category": "family",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 4,
+      "name": "Grammy Nancy",
+      "category": "family",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 13,
+      "name": "RL (Letsche)",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 20,
+      "name": "JesseKay Paz",
+      "category": "inner_circle",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 21,
+      "name": "Kenny Stetz",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 22,
+      "name": "Angela Hibbert",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 24,
+      "name": "Dr. Wenslauskas",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 25,
+      "name": "Mr. Mak",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 28,
+      "name": "Pete and Larry",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 29,
+      "name": "Japheth",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 30,
+      "name": "Mrs. Brennessel",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 33,
+      "name": "Aunt Darlene",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 35,
+      "name": "Mrs. Amorino",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 36,
+      "name": "Jackie Amorino",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 38,
+      "name": "Travis Mills",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 39,
+      "name": "Grant Cornero (GrantMan)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 40,
+      "name": "Chris Arbach (Topher)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 41,
+      "name": "James Butler (Boofer)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 43,
+      "name": "Chris Adams",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 45,
+      "name": "Bobby Vetrano",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 46,
+      "name": "Justin Pierce",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 49,
+      "name": "Joe Corcione (Giuseppe NJ)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 51,
+      "name": "Kimmy Canzanella",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 52,
+      "name": "Sascha Basista",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 53,
+      "name": "Ashley Hoppe",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 54,
+      "name": "Katie Grand",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 56,
+      "name": "Michelle Mullins (Muffins)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 57,
+      "name": "Kristen Driscoll",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 62,
+      "name": "Alison Bertsch",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 64,
+      "name": "P-A-M-U-L-A (Pamula)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 65,
+      "name": "Jake Mauro",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 66,
+      "name": "Bojana Beric (Prof. Beric)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 72,
+      "name": "RK (Rob Knott)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 73,
+      "name": "Lisa",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 75,
+      "name": "Wolf",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 76,
+      "name": "Vicki Oliver",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 78,
+      "name": "Sean",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 79,
+      "name": "Chris James",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 80,
+      "name": "Lindsay & Kyle Szcakstza",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 84,
+      "name": "Buck",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 85,
+      "name": "Murtha 'The Machine'",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 86,
+      "name": "Holden",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 88,
+      "name": "Tommy & Johnny",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 89,
+      "name": "Thomas",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 90,
+      "name": "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 92,
+      "name": "Tyler Ponte",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 95,
+      "name": "Fitz",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 97,
+      "name": "Marty",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 101,
+      "name": "Ray Marzarella",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 102,
+      "name": "Gerald Lewis",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 103,
+      "name": "Steph (Otis Spunkmeyer Cookies)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 104,
+      "name": "NeonGreen Johnnie",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 105,
+      "name": "Ellen Carter",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 106,
+      "name": "Bethany Schon",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 108,
+      "name": "TJ Auchinleck",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 110,
+      "name": "Greg",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 111,
+      "name": "Jesse D",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 112,
+      "name": "RyGuy (Brody's Big Brother)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 113,
+      "name": "Dave Eldracher",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 114,
+      "name": "Liam Yochum",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 115,
+      "name": "D Turner",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 116,
+      "name": "Robert Phillips",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 117,
+      "name": "Kathryn Kitty Nogueira",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 118,
+      "name": "Aimee",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 119,
+      "name": "Jill (Toilet Paper)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 120,
+      "name": "Lenny",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 121,
+      "name": "Pancho",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 122,
+      "name": "Steve Kass",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 123,
+      "name": "Sabu Avakian",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 124,
+      "name": "Kristen (Cocoa's Mommy)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 125,
+      "name": "Michelle (Olive Garden Route 35)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 126,
+      "name": "Victoria Grace Tronolone",
+      "category": "family",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 128,
+      "name": "Punter Wolf",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 129,
+      "name": "T. Adams (Greek)",
+      "category": "other",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 130,
+      "name": "Lauren Freda",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 132,
+      "name": "Mike Edwards",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 133,
+      "name": "Juan Londono",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 134,
+      "name": "Michael Krott",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 135,
+      "name": "Kevin Fitzpatrick",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 136,
+      "name": "Valerie Winston",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 137,
+      "name": "Tom Adams",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 138,
+      "name": "Sara DeCuir",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 139,
+      "name": "Lenny Herrera",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 140,
+      "name": "Steve Adams",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 141,
+      "name": "Justin Wolf",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 142,
+      "name": "Derek Carty",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 143,
+      "name": "Travis",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 144,
+      "name": "Ryan McCrorey",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 145,
+      "name": "Lima",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 146,
+      "name": "Zach Katz",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 147,
+      "name": "Kathryn Nogueira",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 148,
+      "name": "Michelle Mullins",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 149,
+      "name": "Robert Brown",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 150,
+      "name": "Matt Brown",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 151,
+      "name": "Rob Pellecchia",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 152,
+      "name": "Joanice",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 153,
+      "name": "Eamon Fitzpatrick",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 154,
+      "name": "Michael Rosinski",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 155,
+      "name": "Pam D'Luhy",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 156,
+      "name": "Dan Karen",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 157,
+      "name": "Jon Yochum",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 158,
+      "name": "Ashley",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 159,
+      "name": "Aimee Savoth",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 160,
+      "name": "Julia Dennebaum",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 161,
+      "name": "Ryan Rafferty",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 162,
+      "name": "Katie",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 163,
+      "name": "Godynick",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 164,
+      "name": "Sara De",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 165,
+      "name": "Grant Cornero",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 166,
+      "name": "Joe Kelly",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 167,
+      "name": "Joey Smalls",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 168,
+      "name": "Mari Travassos",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 169,
+      "name": "Christina Guarino",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
+      "id": 170,
+      "name": "Mike Butler",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
     }
   ],
   "links": [
     {
-      "source": "person_70",
-      "target": "person_1",
-      "weight": 1,
-      "first_year": 2011,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_15",
-      "target": "person_1",
+      "source": "The Pops",
+      "target": "John Tronolone",
       "weight": 5,
-      "first_year": 2015,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_16",
-      "target": "person_11",
-      "weight": 2,
-      "first_year": 2014,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_6",
-      "target": "person_7",
-      "weight": 1,
-      "first_year": 2020,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_69",
-      "target": "person_68",
-      "weight": 1,
-      "first_year": 2013,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_69",
-      "target": "person_67",
-      "weight": 1,
-      "first_year": 2013,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_69",
-      "target": "person_1",
-      "weight": 1,
-      "first_year": 2013,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_68",
-      "target": "person_67",
-      "weight": 1,
-      "first_year": 2013,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_68",
-      "target": "person_1",
-      "weight": 1,
-      "first_year": 2013,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_67",
-      "target": "person_1",
-      "weight": 1,
-      "first_year": 2013,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_19",
-      "target": "person_47",
-      "weight": 1,
-      "first_year": 2009,
-      "co_occurrence_count": 2
-    },
-    {
-      "source": "person_19",
-      "target": "person_31",
-      "weight": 1,
-      "first_year": 2009,
-      "co_occurrence_count": 2
-    },
-    {
-      "source": "person_50",
-      "target": "person_8",
-      "weight": 2,
-      "first_year": 2019,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_12",
-      "target": "person_42",
-      "weight": 2,
-      "first_year": 2017,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_12",
-      "target": "person_44",
-      "weight": 2,
-      "first_year": 2017,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_12",
-      "target": "person_1",
-      "weight": 1,
-      "first_year": 2020,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_42",
-      "target": "person_44",
-      "weight": 2,
-      "first_year": 2017,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_42",
-      "target": "person_1",
-      "weight": 1,
-      "first_year": 2020,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_44",
-      "target": "person_1",
-      "weight": 1,
-      "first_year": 2020,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_63",
-      "target": "person_17",
-      "weight": 5,
-      "first_year": 2007,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_1",
-      "target": "person_81",
-      "weight": 2,
-      "first_year": 2014,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_1",
-      "target": "person_83",
-      "weight": 2,
-      "first_year": 2017,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_1",
-      "target": "person_91",
-      "weight": 2,
-      "first_year": 2017,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_1",
-      "target": "person_5",
-      "weight": 2,
-      "first_year": 2010,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_1",
-      "target": "person_109",
-      "weight": 1,
-      "first_year": 2014,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_1",
-      "target": "person_100",
-      "weight": 1,
-      "first_year": 2008,
-      "co_occurrence_count": 2
-    },
-    {
-      "source": "person_1",
-      "target": "person_58",
-      "weight": 1,
-      "first_year": 2018,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_81",
-      "target": "person_5",
-      "weight": 1,
-      "first_year": 2018,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_81",
-      "target": "person_109",
-      "weight": 1,
-      "first_year": 2014,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_83",
-      "target": "person_91",
-      "weight": 2,
-      "first_year": 2017,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_34",
-      "target": "person_63",
-      "weight": 1,
-      "first_year": 2021,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_34",
-      "target": "person_10",
-      "weight": 1,
-      "first_year": 2021,
-      "co_occurrence_count": 2
-    },
-    {
-      "source": "person_10",
-      "target": "person_63",
-      "weight": 1,
-      "first_year": 2021,
-      "co_occurrence_count": 2
-    },
-    {
-      "source": "person_47",
-      "target": "person_31",
-      "weight": 1,
-      "first_year": 2009,
-      "co_occurrence_count": 1
-    },
-    {
-      "source": "person_2",
-      "target": "john",
-      "weight": 5,
-      "first_year": 2007,
       "relationship_type": "family",
-      "hub_link": true
+      "years_span": 11
     },
     {
-      "source": "person_5",
-      "target": "john",
+      "source": "Michael",
+      "target": "John Tronolone",
       "weight": 2,
-      "first_year": 2010,
       "relationship_type": "family",
-      "hub_link": true
+      "years_span": 9
     },
     {
-      "source": "person_6",
-      "target": "john",
+      "source": "Grace",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2020,
       "relationship_type": "family",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_7",
-      "target": "john",
+      "source": "Megan",
+      "target": "John Tronolone",
       "weight": 2,
-      "first_year": 2020,
       "relationship_type": "family",
-      "hub_link": true
+      "years_span": 3
     },
     {
-      "source": "person_8",
-      "target": "john",
+      "source": "Julian",
+      "target": "John Tronolone",
       "weight": 2,
-      "first_year": 2019,
       "relationship_type": "family",
-      "hub_link": true
+      "years_span": 6
     },
     {
-      "source": "person_9",
-      "target": "john",
+      "source": "Lawrence",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2021,
       "relationship_type": "family",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_10",
-      "target": "john",
+      "source": "Rob",
+      "target": "John Tronolone",
       "weight": 12,
-      "first_year": 2011,
       "relationship_type": "partner",
-      "hub_link": true
+      "years_span": 15
     },
     {
-      "source": "person_11",
-      "target": "john",
+      "source": "Valerie Winston (ValPal)",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2022,
       "relationship_type": "inner_circle",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_12",
-      "target": "john",
+      "source": "Kevin & Leah (KMJ & LN)",
+      "target": "John Tronolone",
       "weight": 2,
-      "first_year": 2017,
       "relationship_type": "inner_circle",
-      "hub_link": true
+      "years_span": 4
     },
     {
-      "source": "person_14",
-      "target": "john",
+      "source": "Rupert",
+      "target": "John Tronolone",
       "weight": 2,
-      "first_year": 2011,
       "relationship_type": "inner_circle",
-      "hub_link": true
+      "years_span": 2
     },
     {
-      "source": "person_15",
-      "target": "john",
+      "source": "Dan Spengeman",
+      "target": "John Tronolone",
       "weight": 2,
-      "first_year": 2015,
       "relationship_type": "inner_circle",
-      "hub_link": true
+      "years_span": 4
     },
     {
-      "source": "person_16",
-      "target": "john",
+      "source": "Diana DiBuccio",
+      "target": "John Tronolone",
       "weight": 4,
-      "first_year": 2008,
       "relationship_type": "inner_circle",
-      "hub_link": true
+      "years_span": 15
     },
     {
-      "source": "person_17",
-      "target": "john",
+      "source": "Lauren Winston",
+      "target": "John Tronolone",
       "weight": 3,
-      "first_year": 2007,
       "relationship_type": "inner_circle",
-      "hub_link": true
+      "years_span": 15
     },
     {
-      "source": "person_27",
-      "target": "john",
+      "source": "Brian",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2020,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_37",
-      "target": "john",
+      "source": "Melissa Kerr",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2009,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_67",
-      "target": "john",
-      "weight": 1,
-      "first_year": 2013,
-      "relationship_type": "other",
-      "hub_link": true
-    },
-    {
-      "source": "person_77",
-      "target": "john",
-      "weight": 1,
-      "first_year": 2014,
-      "relationship_type": "other",
-      "hub_link": true
-    },
-    {
-      "source": "person_81",
-      "target": "john",
+      "source": "Danny Sponge",
+      "target": "John Tronolone",
       "weight": 2,
-      "first_year": 2014,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 4
     },
     {
-      "source": "person_82",
-      "target": "john",
+      "source": "Grandma Theresa",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2018,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_83",
-      "target": "john",
+      "source": "Johnny Nash",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2017,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_87",
-      "target": "john",
+      "source": "Maggie",
+      "target": "John Tronolone",
+      "weight": 2,
+      "relationship_type": "other",
+      "years_span": 5
+    },
+    {
+      "source": "Arthur Knott (Artie)",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2020,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_91",
-      "target": "john",
+      "source": "Matt (Physical Therapist)",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2017,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_63",
-      "target": "john",
+      "source": "Blake",
+      "target": "John Tronolone",
       "weight": 1,
-      "first_year": 2021,
       "relationship_type": "other",
-      "hub_link": true
+      "years_span": 1
     },
     {
-      "source": "person_1",
-      "target": "john",
+      "source": "Matt (introduced Jul 3, 2019)",
+      "target": "John Tronolone",
+      "weight": 1,
+      "relationship_type": "other",
+      "years_span": 1
+    },
+    {
+      "source": "Lauren Stopa",
+      "target": "John Tronolone",
+      "weight": 1,
+      "relationship_type": "other",
+      "years_span": 1
+    },
+    {
+      "source": "Rob",
+      "target": "John Tronolone",
+      "weight": 1,
+      "relationship_type": "other",
+      "years_span": 1
+    },
+    {
+      "source": "John Tronolone",
+      "target": "John Tronolone",
+      "weight": 1,
+      "relationship_type": "inner_circle",
+      "years_span": 1
+    },
+    {
+      "source": "Ma",
+      "target": "John Tronolone",
       "weight": 8,
-      "first_year": 2004,
       "relationship_type": "family",
-      "hub_link": true
+      "years_span": 22
+    },
+    {
+      "source": "Lauren Stopa",
+      "target": "Lauren Winston",
+      "weight": 5,
+      "relationship_type": "co-occurrence",
+      "years_span": 15
+    },
+    {
+      "source": "Ma",
+      "target": "Michael",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 9
+    },
+    {
+      "source": "Cousin Nick & Samantha",
+      "target": "Ma",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Grandma Theresa",
+      "target": "Ma",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Grandma Irene",
+      "target": "Ma",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Grandma 'Mama' Blanca",
+      "target": "Ma",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Grandma Irene",
+      "target": "Grandma Theresa",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Grandma 'Mama' Blanca",
+      "target": "Grandma Theresa",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Grandma 'Mama' Blanca",
+      "target": "Grandma Irene",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Diana DiBuccio",
+      "target": "Valerie Winston (ValPal)",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 9
+    },
+    {
+      "source": "Ma",
+      "target": "Mike Krott",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Ma",
+      "target": "Maggie",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 5
+    },
+    {
+      "source": "Maggie",
+      "target": "Mike Krott",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "John Tronolone",
+      "target": "Johnny Nash",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Dan Spengeman",
+      "target": "Ma",
+      "weight": 5,
+      "relationship_type": "co-occurrence",
+      "years_span": 4
+    },
+    {
+      "source": "Danny Sponge",
+      "target": "Ma",
+      "weight": 5,
+      "relationship_type": "co-occurrence",
+      "years_span": 4
+    },
+    {
+      "source": "Dan Spengeman",
+      "target": "Danny Sponge",
+      "weight": 5,
+      "relationship_type": "co-occurrence",
+      "years_span": 4
+    },
+    {
+      "source": "Kevin & Leah (KMJ & LN)",
+      "target": "Kevin Adams",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 4
+    },
+    {
+      "source": "Kevin & Leah (KMJ & LN)",
+      "target": "Kevin Megill (KMJ)",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 4
+    },
+    {
+      "source": "Kevin Adams",
+      "target": "Kevin Megill (KMJ)",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 4
+    },
+    {
+      "source": "Ma",
+      "target": "Matt (Physical Therapist)",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Ma",
+      "target": "Matt (introduced Jul 3, 2019)",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Matt (Physical Therapist)",
+      "target": "Matt (introduced Jul 3, 2019)",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Ma",
+      "target": "Terra Bergquist",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Maggie",
+      "target": "Michael",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Julia Dennabuam",
+      "target": "Julian",
+      "weight": 2,
+      "relationship_type": "co-occurrence",
+      "years_span": 6
+    },
+    {
+      "source": "John Tronolone",
+      "target": "Julian",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "John Tronolone",
+      "target": "Julia Dennabuam",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Kevin & Leah (KMJ & LN)",
+      "target": "Ma",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Kevin Adams",
+      "target": "Ma",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Kevin Megill (KMJ)",
+      "target": "Ma",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Grace",
+      "target": "Megan",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Juan Londono (Muffin Man)",
+      "target": "Steve and Stacey",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Juan Londono (Muffin Man)",
+      "target": "Steve Pham",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Juan Londono (Muffin Man)",
+      "target": "Juan Londono (Muffin Man)",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Steve Pham",
+      "target": "Steve and Stacey",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Juan Londono (Muffin Man)",
+      "target": "Steve and Stacey",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Juan Londono (Muffin Man)",
+      "target": "Steve Pham",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Phil Campanella",
+      "target": "Rob",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Rob",
+      "target": "Lauren Stopa",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Rob",
+      "target": "Rob",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Phil Campanella",
+      "target": "Lauren Stopa",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Phil Campanella",
+      "target": "Rob",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Rob",
+      "target": "Lauren Stopa",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Ma",
+      "target": "Ryan Letsche",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Ma",
+      "target": "Ryan Letsche",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
+      "source": "Ryan Letsche",
+      "target": "Ryan Letsche",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
     }
-  ],
-  "clusters": {
-    "family": [
-      "Grace",
-      "Grammy Nancy",
-      "Julian",
-      "Lawrence",
-      "Ma",
-      "Megan",
-      "Michael",
-      "StepPa",
-      "The Pops",
-      "Victoria Grace Tronolone"
-    ],
-    "inner_circle": [
-      "Dan Spengeman",
-      "Diana DiBuccio",
-      "JesseKay Paz",
-      "Juan Londono (Muffin Man)",
-      "Kevin & Leah (KMJ & LN)",
-      "Lauren Winston",
-      "RL (Letsche)",
-      "Rupert",
-      "Ryan Letsche",
-      "Valerie Winston (ValPal)"
-    ],
-    "partner": [
-      "Rob"
-    ],
-    "other": [
-      "Aimee",
-      "Alison Bertsch",
-      "Angela Hibbert",
-      "Arthur Knott (Artie)",
-      "Ashley Hoppe",
-      "Aunt Darlene",
-      "Bethany Schon",
-      "Blake",
-      "Bobby Vetrano",
-      "Bojana Beric (Prof. Beric)",
-      "Brian",
-      "Buck",
-      "Chef Lanza",
-      "Chris Adams",
-      "Chris Arbach (Topher)",
-      "Chris James",
-      "Cousin Nick & Samantha",
-      "D Turner",
-      "Dan Farnkopf",
-      "Dave Eldracher",
-      "Dr. Wenslauskas",
-      "Edwards",
-      "Ellen Carter",
-      "Fitz",
-      "Gerald Lewis",
-      "Grandma 'Mama' Blanca",
-      "Grandma Irene",
-      "Grandma Theresa",
-      "Grant Cornero (GrantMan)",
-      "Greg",
-      "Holden",
-      "Jackie Amorino",
-      "Jake Mauro",
-      "James Butler (Boofer)",
-      "Japheth",
-      "Jesse D",
-      "Jill (Toilet Paper)",
-      "Joe Corcione (Giuseppe NJ)",
-      "Johnny Nash",
-      "Julia Dennabuam",
-      "Justin Pierce",
-      "Kathryn Kitty Nogueira",
-      "Katie Grand",
-      "Kenny Stetz",
-      "Kevin Abrams",
-      "Kevin Adams",
-      "Kevin Grand",
-      "Kevin Megill (KMJ)",
-      "Kimmy Canzanella",
-      "Kristen (Cocoa's Mommy)",
-      "Kristen Driscoll",
-      "Lauren Stopa",
-      "Lenny",
-      "Liam Yochum",
-      "Lindsay & Kyle Szcakstza",
-      "Lisa",
-      "Maggie",
-      "Marty",
-      "Matt (Physical Therapist)",
-      "Matt (introduced Jul 3, 2019)",
-      "Megill",
-      "Melissa Kerr",
-      "Michelle (Olive Garden Route 35)",
-      "Michelle Mullins (Muffins)",
-      "Mike Krott",
-      "Mr. Mak",
-      "Mrs. Amorino",
-      "Mrs. Brennessel",
-      "Murtha 'The Machine'",
-      "NeonGreen Johnnie",
-      "P-A-M-U-L-A (Pamula)",
-      "Pancho",
-      "Pete and Larry",
-      "Phil Campanella",
-      "Punter Wolf",
-      "RK (Rob Knott)",
-      "Ray Marzarella",
-      "Robert Phillips",
-      "RyGuy (Brody's Big Brother)",
-      "Sabu Avakian",
-      "Sascha Basista",
-      "Sean",
-      "Shane",
-      "Steph (Otis Spunkmeyer Cookies)",
-      "Stephanie, Amanda, L. Dolma, Annie, Elizabeth, Patricia, Janet",
-      "Steve Kass",
-      "Steve Pham",
-      "Steve and Stacey",
-      "T. Adams (Greek)",
-      "TJ Auchinleck",
-      "Terra Bergquist",
-      "Thomas",
-      "Tim Moore",
-      "Tom Macaluso",
-      "Tommy & Johnny",
-      "Travis Mills",
-      "Tyler Ponte",
-      "Vicki Oliver",
-      "Walaa",
-      "Wolf"
-    ]
-  }
+  ]
 }

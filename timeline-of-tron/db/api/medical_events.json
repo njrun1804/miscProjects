@@ -2,7 +2,7 @@
   {
     "id": 1,
     "year": 2004,
-    "event": "Life-altering car accident \u2014 panic attacks and anxiety",
+    "event": "Life-altering car accident — panic attacks and anxiety",
     "category": "trauma",
     "severity": "major",
     "recovery_note": "Years-long recovery; became HERO of the Year advocate",
@@ -46,7 +46,7 @@
   {
     "id": 5,
     "year": 2008,
-    "event": "Car accident \u2014 rear-ended on West Park Avenue (Nov 4)",
+    "event": "Car accident — rear-ended on West Park Avenue (Nov 4)",
     "category": "trauma",
     "severity": "major",
     "recovery_note": "Came out in 2008; began 'most rewarding and refreshing' months",
@@ -90,7 +90,7 @@
   {
     "id": 9,
     "year": 2017,
-    "event": "Two epidural injections (Nov 10, Dec 8 \u2014 second failed)",
+    "event": "Two epidural injections (Nov 10, Dec 8 — second failed)",
     "category": "spinal",
     "severity": "moderate",
     "recovery_note": "Spinal microdiscectomy surgery (Dec 15). Post-surgery reflection: 'I Just Want To Wake Up. (I Did!)'",
@@ -123,7 +123,7 @@
   {
     "id": 12,
     "year": 2020,
-    "event": "Medical quarantine (Mar 26 \u2013 Apr 16); gained 3 lbs solid muscle",
+    "event": "Medical quarantine (Mar 26 – Apr 16); gained 3 lbs solid muscle",
     "category": "illness",
     "severity": "moderate",
     "recovery_note": "Gained 3 lbs solid muscle, biked to Highlands/Asbury Park/Sea Bright/Rumson/Deal",
@@ -134,7 +134,7 @@
   {
     "id": 13,
     "year": 2024,
-    "event": "Kidney stones \u2014 two hospitalizations (Dec 18 & 20)",
+    "event": "Kidney stones — two hospitalizations (Dec 18 & 20)",
     "category": "illness",
     "severity": "moderate",
     "recovery_note": "Continued travel (Norway, Iceland, Toronto, Montreal) & celebration",

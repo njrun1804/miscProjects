@@ -1,250 +1,288 @@
 {
-  "lifers": [
+  "regular": [
     {
-      "name": "Tim Moore",
-      "span": 21,
-      "first_year": 2004,
-      "last_year": 2025
-    },
-    {
-      "name": "The Pops",
-      "span": 19,
+      "person": "The Pops",
       "first_year": 2006,
-      "last_year": 2025
+      "last_year": 2025,
+      "span": 19,
+      "peak_year": 2008
     },
     {
-      "name": "Dan Farnkopf",
-      "span": 16,
+      "person": "Dan Farnkopf",
       "first_year": 2005,
-      "last_year": 2021
-    },
-    {
-      "name": "Dan Spengeman",
+      "last_year": 2021,
       "span": 16,
+      "peak_year": 2021
+    },
+    {
+      "person": "Dan Spengeman",
       "first_year": 2005,
-      "last_year": 2021
+      "last_year": 2021,
+      "span": 16,
+      "peak_year": 2021
     },
     {
-      "name": "Lauren Stopa",
-      "span": 14,
+      "person": "Lauren Stopa",
       "first_year": 2007,
-      "last_year": 2021
-    },
-    {
-      "name": "Lauren Winston",
+      "last_year": 2021,
       "span": 14,
-      "first_year": 2007,
-      "last_year": 2021
+      "peak_year": 2007
     },
     {
-      "name": "John Tronolone",
-      "span": 10,
+      "person": "Lauren Winston",
+      "first_year": 2007,
+      "last_year": 2021,
+      "span": 14,
+      "peak_year": 2007
+    },
+    {
+      "person": "John Tronolone",
       "first_year": 2009,
-      "last_year": 2019
+      "last_year": 2019,
+      "span": 10,
+      "peak_year": 2019
     },
     {
-      "name": "Rob",
-      "span": 10,
+      "person": "Rob",
       "first_year": 2011,
-      "last_year": 2021
+      "last_year": 2021,
+      "span": 10,
+      "peak_year": 2011
     },
     {
-      "name": "Rob Phillips (Robert)",
-      "span": 10,
+      "person": "Rob Phillips (Robert)",
       "first_year": 2011,
-      "last_year": 2021
+      "last_year": 2021,
+      "span": 10,
+      "peak_year": 2011
+    },
+    {
+      "person": "Tom Macaluso",
+      "first_year": 2008,
+      "last_year": 2017,
+      "span": 9,
+      "peak_year": 2008
+    },
+    {
+      "person": "Michael",
+      "first_year": 2010,
+      "last_year": 2018,
+      "span": 8,
+      "peak_year": 2010
+    },
+    {
+      "person": "Diana DiBuccio",
+      "first_year": 2008,
+      "last_year": 2014,
+      "span": 6,
+      "peak_year": 2008
+    },
+    {
+      "person": "Julia Dennabuam",
+      "first_year": 2019,
+      "last_year": 2024,
+      "span": 5,
+      "peak_year": 2019
+    },
+    {
+      "person": "Julian",
+      "first_year": 2019,
+      "last_year": 2024,
+      "span": 5,
+      "peak_year": 2019
     }
   ],
   "seasonal": [
     {
-      "name": "Tom Macaluso",
-      "span": 9,
-      "first_year": 2008,
-      "last_year": 2017
-    },
-    {
-      "name": "Michael",
-      "span": 8,
-      "first_year": 2010,
-      "last_year": 2018
-    },
-    {
-      "name": "Diana DiBuccio",
-      "span": 6,
-      "first_year": 2008,
-      "last_year": 2014
-    },
-    {
-      "name": "Julia Dennabuam",
-      "span": 5,
-      "first_year": 2019,
-      "last_year": 2024
-    },
-    {
-      "name": "Julian",
-      "span": 5,
-      "first_year": 2019,
-      "last_year": 2024
-    }
-  ],
-  "recurring": [
-    {
-      "name": "Maggie",
+      "person": "Maggie",
+      "first_year": 2014,
+      "last_year": 2018,
       "span": 4,
-      "first_year": 2014,
-      "last_year": 2018
+      "peak_year": 2014
     },
     {
-      "name": "Phil Campanella",
-      "span": 3,
+      "person": "Phil Campanella",
       "first_year": 2007,
-      "last_year": 2010
-    },
-    {
-      "name": "Kevin & Leah (KMJ & LN)",
+      "last_year": 2010,
       "span": 3,
-      "first_year": 2017,
-      "last_year": 2020
+      "peak_year": 2007
     },
     {
-      "name": "Kevin Abrams",
+      "person": "Kevin & Leah (KMJ & LN)",
+      "first_year": 2017,
+      "last_year": 2020,
       "span": 3,
-      "first_year": 2017,
-      "last_year": 2020
+      "peak_year": 2017
     },
     {
-      "name": "Kevin Adams",
+      "person": "Kevin Abrams",
+      "first_year": 2017,
+      "last_year": 2020,
       "span": 3,
-      "first_year": 2017,
-      "last_year": 2020
+      "peak_year": 2017
     },
     {
-      "name": "Kevin Grand",
+      "person": "Kevin Adams",
+      "first_year": 2017,
+      "last_year": 2020,
       "span": 3,
-      "first_year": 2017,
-      "last_year": 2020
+      "peak_year": 2017
     },
     {
-      "name": "Kevin Megill (KMJ)",
+      "person": "Kevin Grand",
+      "first_year": 2017,
+      "last_year": 2020,
       "span": 3,
-      "first_year": 2017,
-      "last_year": 2020
+      "peak_year": 2017
     },
     {
-      "name": "Megan",
-      "span": 2,
+      "person": "Kevin Megill (KMJ)",
+      "first_year": 2017,
+      "last_year": 2020,
+      "span": 3,
+      "peak_year": 2017
+    },
+    {
+      "person": "Megan",
       "first_year": 2020,
-      "last_year": 2022
+      "last_year": 2022,
+      "span": 2,
+      "peak_year": 2020
+    },
+    {
+      "person": "Melissa Kerr",
+      "first_year": 2009,
+      "last_year": 2009,
+      "span": 0,
+      "peak_year": 2009
+    },
+    {
+      "person": "Cousin Nick & Samantha",
+      "first_year": 2011,
+      "last_year": 2011,
+      "span": 0,
+      "peak_year": 2011
+    },
+    {
+      "person": "Grandma 'Mama' Blanca",
+      "first_year": 2013,
+      "last_year": 2013,
+      "span": 0,
+      "peak_year": 2013
+    },
+    {
+      "person": "Grandma Irene",
+      "first_year": 2013,
+      "last_year": 2013,
+      "span": 0,
+      "peak_year": 2013
+    },
+    {
+      "person": "Grandma Theresa",
+      "first_year": 2013,
+      "last_year": 2013,
+      "span": 0,
+      "peak_year": 2013
+    },
+    {
+      "person": "Ray Marzarella",
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "peak_year": 2014
+    },
+    {
+      "person": "Valerie Winston (ValPal",
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "peak_year": 2014
+    },
+    {
+      "person": "Mike 'Sputz' Krott",
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "peak_year": 2014
+    },
+    {
+      "person": "Mike Krott",
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "peak_year": 2014
+    },
+    {
+      "person": "Johnny Nash",
+      "first_year": 2014,
+      "last_year": 2014,
+      "span": 0,
+      "peak_year": 2014
+    },
+    {
+      "person": "Matt (Physical Therapist)",
+      "first_year": 2017,
+      "last_year": 2017,
+      "span": 0,
+      "peak_year": 2017
+    },
+    {
+      "person": "Matt (introduced Jul 3, 2019)",
+      "first_year": 2017,
+      "last_year": 2017,
+      "span": 0,
+      "peak_year": 2017
+    },
+    {
+      "person": "Terra Bergquist",
+      "first_year": 2018,
+      "last_year": 2018,
+      "span": 0,
+      "peak_year": 2018
+    },
+    {
+      "person": "Arthur Knott (Artie)",
+      "first_year": 2018,
+      "last_year": 2018,
+      "span": 0,
+      "peak_year": 2018
+    },
+    {
+      "person": "Grace",
+      "first_year": 2020,
+      "last_year": 2020,
+      "span": 0,
+      "peak_year": 2020
+    },
+    {
+      "person": "Blake",
+      "first_year": 2020,
+      "last_year": 2020,
+      "span": 0,
+      "peak_year": 2020
+    },
+    {
+      "person": "Lawrence",
+      "first_year": 2021,
+      "last_year": 2021,
+      "span": 0,
+      "peak_year": 2021
+    },
+    {
+      "person": "Danny Sponge",
+      "first_year": 2021,
+      "last_year": 2021,
+      "span": 0,
+      "peak_year": 2021
     }
   ],
-  "cameos": [
+  "sustained": [
     {
-      "name": "Melissa Kerr",
-      "span": 0,
-      "first_year": 2009,
-      "last_year": 2009
-    },
-    {
-      "name": "Cousin Nick & Samantha",
-      "span": 0,
-      "first_year": 2011,
-      "last_year": 2011
-    },
-    {
-      "name": "Grandma 'Mama' Blanca",
-      "span": 0,
-      "first_year": 2013,
-      "last_year": 2013
-    },
-    {
-      "name": "Grandma Irene",
-      "span": 0,
-      "first_year": 2013,
-      "last_year": 2013
-    },
-    {
-      "name": "Grandma Theresa",
-      "span": 0,
-      "first_year": 2013,
-      "last_year": 2013
-    },
-    {
-      "name": "Ray Marzarella",
-      "span": 0,
-      "first_year": 2014,
-      "last_year": 2014
-    },
-    {
-      "name": "Valerie Winston (ValPal",
-      "span": 0,
-      "first_year": 2014,
-      "last_year": 2014
-    },
-    {
-      "name": "Mike 'Sputz' Krott",
-      "span": 0,
-      "first_year": 2014,
-      "last_year": 2014
-    },
-    {
-      "name": "Mike Krott",
-      "span": 0,
-      "first_year": 2014,
-      "last_year": 2014
-    },
-    {
-      "name": "Johnny Nash",
-      "span": 0,
-      "first_year": 2014,
-      "last_year": 2014
-    },
-    {
-      "name": "Matt (Physical Therapist)",
-      "span": 0,
-      "first_year": 2017,
-      "last_year": 2017
-    },
-    {
-      "name": "Matt (introduced Jul 3, 2019)",
-      "span": 0,
-      "first_year": 2017,
-      "last_year": 2017
-    },
-    {
-      "name": "Terra Bergquist",
-      "span": 0,
-      "first_year": 2018,
-      "last_year": 2018
-    },
-    {
-      "name": "Arthur Knott (Artie)",
-      "span": 0,
-      "first_year": 2018,
-      "last_year": 2018
-    },
-    {
-      "name": "Grace",
-      "span": 0,
-      "first_year": 2020,
-      "last_year": 2020
-    },
-    {
-      "name": "Blake",
-      "span": 0,
-      "first_year": 2020,
-      "last_year": 2020
-    },
-    {
-      "name": "Lawrence",
-      "span": 0,
-      "first_year": 2021,
-      "last_year": 2021
-    },
-    {
-      "name": "Danny Sponge",
-      "span": 0,
-      "first_year": 2021,
-      "last_year": 2021
+      "person": "Tim Moore",
+      "first_year": 2004,
+      "last_year": 2025,
+      "span": 21,
+      "peak_year": 2004
     }
   ]
 }

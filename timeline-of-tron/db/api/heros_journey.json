@@ -4,8 +4,15 @@
     "year_start": 2004,
     "year_end": 2006,
     "years": "[2004, 2005, 2006]",
-    "description": "Pre-transformation John. HS \u2192 early college. Family tension, 723-day relationship, early ECD involvement. Building the foundation.",
-    "avg_sentiment": -0.1977
+    "description": "Pre-transformation John. HS → early college. Family tension, 723-day relationship, early ECD involvement. Building the foundation.",
+    "avg_sentiment": -0.1977,
+    "milestone_count": 6,
+    "people_active_count": 6,
+    "career_milestones": "Monmouth University Student, EastCoastDodgeball Founder",
+    "era_name": "The Founding,Era of Transition (2005-2005),Era of Transition (2006-2006)",
+    "dominant_topic": "Topic 8: jul, 29, birthday, married",
+    "intensity_score": 11.736600000000001,
+    "quote_count": 0
   },
   {
     "stage": "Call to Adventure",
@@ -13,7 +20,14 @@
     "year_end": 2007,
     "years": "[2007]",
     "description": "Reconciliation begins. 'My oh my, how the times have changed.' Crazy Chili Dog post signals inner restlessness.",
-    "avg_sentiment": 0.0868
+    "avg_sentiment": 0.0868,
+    "milestone_count": 14,
+    "people_active_count": 5,
+    "career_milestones": "Recreation Worker",
+    "era_name": "The Rise",
+    "dominant_topic": "Topic 8: jul, 29, birthday, married",
+    "intensity_score": 24.843600000000002,
+    "quote_count": 6
   },
   {
     "stage": "Crossing the Threshold",
@@ -21,7 +35,14 @@
     "year_end": 2008,
     "years": "[2008]",
     "description": "The year everything changed. Coming out ('the power of an internal desire liberated!'). ECD peak. New identity forged. Yeah I Said It: 'I've never felt happier to be alive.'",
-    "avg_sentiment": 0.0827
+    "avg_sentiment": 0.0827,
+    "milestone_count": 14,
+    "people_active_count": 3,
+    "career_milestones": "",
+    "era_name": "Era of Intense Activity (2008-2008)",
+    "dominant_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "intensity_score": 32.469,
+    "quote_count": 18
   },
   {
     "stage": "Tests, Allies & Enemies",
@@ -29,7 +50,14 @@
     "year_end": 2011,
     "years": "[2009, 2010, 2011]",
     "description": "Post-threshold navigation. ECD retirement (171 events, legacy secured). College graduation. Career launch at Sunrise. Torn labrum surgery. New friendships forming.",
-    "avg_sentiment": 0.1075
+    "avg_sentiment": 0.1075,
+    "milestone_count": 36,
+    "people_active_count": 12,
+    "career_milestones": "Intern, Life Enrichment Manager",
+    "era_name": "Era of Intense Activity (2009-2009),The Golden Era,Era of Intense Activity (2011-2011)",
+    "dominant_topic": "Topic 7: aug, 16, dodgeball, 21",
+    "intensity_score": 12.905866666666668,
+    "quote_count": 11
   },
   {
     "stage": "Approach to Inmost Cave",
@@ -37,23 +65,44 @@
     "year_end": 2013,
     "years": "[2012, 2013]",
     "description": "Deepening identity. The Influlist (crediting origins). Merrie Melodies (mapping friendships to music). Career advancing. WrestleMania streaks continuing.",
-    "avg_sentiment": 0.0436
+    "avg_sentiment": 0.0436,
+    "milestone_count": 20,
+    "people_active_count": 8,
+    "career_milestones": "Activities & Volunteer Coordinator",
+    "era_name": "Era of Intense Activity (2012-2012),Era of Intense Activity (2013-2013)",
+    "dominant_topic": "Topic 6: wwe, event, oct, mar",
+    "intensity_score": 8.6303,
+    "quote_count": 8
   },
   {
     "stage": "The Ordeal",
     "year_start": 2014,
     "year_end": 2014,
     "years": "[2014]",
-    "description": "The most documented year. Undertaker handshake (20-year dream fulfilled through 5 friends). Peak joy. But also peak vulnerability \u2014 everything desired has been achieved. Now what?",
-    "avg_sentiment": 0.2099
+    "description": "The most documented year. Undertaker handshake (20-year dream fulfilled through 5 friends). Peak joy. But also peak vulnerability — everything desired has been achieved. Now what?",
+    "avg_sentiment": 0.2099,
+    "milestone_count": 10,
+    "people_active_count": 9,
+    "career_milestones": "",
+    "era_name": "Turbulence",
+    "dominant_topic": "Topic 5: dec, 15, 18, 12",
+    "intensity_score": 8.5374,
+    "quote_count": 8
   },
   {
     "stage": "The Road Back",
     "year_start": 2015,
     "year_end": 2017,
     "years": "[2015, 2016, 2017]",
-    "description": "Quieter years. 2015 under-documented. 2017: spinal surgery \u2014 the body rebels. Physical ordeal forces reassessment.",
-    "avg_sentiment": 0.1259
+    "description": "Quieter years. 2015 under-documented. 2017: spinal surgery — the body rebels. Physical ordeal forces reassessment.",
+    "avg_sentiment": 0.1259,
+    "milestone_count": 24,
+    "people_active_count": 16,
+    "career_milestones": "Manager of the Year Award",
+    "era_name": "Era of Intense Activity (2015-2015),Era of Intense Activity (2016-2016),The Crucible",
+    "dominant_topic": "Topic 2: year, comedian, anniversary, ecd",
+    "intensity_score": 9.350466666666668,
+    "quote_count": 6
   },
   {
     "stage": "Resurrection",
@@ -61,7 +110,14 @@
     "year_end": 2020,
     "years": "[2018, 2019, 2020]",
     "description": "Post-surgery comeback. Mediterranean cruise. 1,000th CHA game. COVID forces universal pause. Inner strength tested differently.",
-    "avg_sentiment": 0.1489
+    "avg_sentiment": 0.1489,
+    "milestone_count": 39,
+    "people_active_count": 18,
+    "career_milestones": "Reminiscence Coordinator, Assisted Living Manager",
+    "era_name": "Era of Intense Activity (2018-2018),Renaissance,Era of Intense Activity (2020-2020)",
+    "dominant_topic": "Topic 5: dec, 15, 18, 12",
+    "intensity_score": 12.570733333333331,
+    "quote_count": 16
   },
   {
     "stage": "Return with the Elixir",
@@ -69,6 +125,13 @@
     "year_end": 2026,
     "years": "[2021, 2022, 2023, 2024, 2025, 2026]",
     "description": "The mature chapter. Engagement. Executive Director promotion. 20th WrestleMania. Relationship transition in 2025. The elixir is wisdom: 'When you enjoy the journeys, the destinations magnify.'",
-    "avg_sentiment": 0.0636
+    "avg_sentiment": 0.0636,
+    "milestone_count": 63,
+    "people_active_count": 15,
+    "career_milestones": "Sr. Resident Care Coordinator, Executive Director",
+    "era_name": "Era of Intense Activity (2021-2021),The Summit,Era of Intense Activity (2023-2023),Era of Intense Activity (2024-2024),Era of Intense Activity (2025-2025),New Horizons",
+    "dominant_topic": "Topic 3: trip, ski, 000, road",
+    "intensity_score": 4.782733333333333,
+    "quote_count": 6
   }
 ]
