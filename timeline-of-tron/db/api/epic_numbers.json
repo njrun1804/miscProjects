@@ -3,42 +3,42 @@
     "id": 1,
     "stat": "Bowling Games in One Day",
     "value": "27",
-    "unit": null,
+    "unit": "games",
     "year": 2007
   },
   {
     "id": 2,
     "stat": "Ping Pong Rounds in One Match",
     "value": "218",
-    "unit": null,
+    "unit": "rounds",
     "year": 2021
   },
   {
     "id": 3,
     "stat": "Cornholios in One Season",
     "value": "38",
-    "unit": null,
+    "unit": "cornholios",
     "year": 2016
   },
   {
     "id": 4,
     "stat": "Blue Claws Caught in One Trip",
     "value": "30",
-    "unit": null,
+    "unit": "crabs",
     "year": 2024
   },
   {
     "id": 5,
     "stat": "Shrimp Consumed at One Event (lbs)",
     "value": "8.6",
-    "unit": null,
+    "unit": "lbs",
     "year": 2021
   },
   {
     "id": 6,
     "stat": "Crab Meat Consumed at One Event (lbs)",
     "value": "7.3",
-    "unit": null,
+    "unit": "lbs",
     "year": 2021
   },
   {
@@ -59,7 +59,7 @@
     "id": 9,
     "stat": "Years Between Rangers Games at MSG",
     "value": "20",
-    "unit": null,
+    "unit": "years",
     "year": 2021
   },
   {
@@ -73,29 +73,29 @@
     "id": 11,
     "stat": "CHA Games vs Pops Tronolone",
     "value": "1000",
-    "unit": null,
+    "unit": "games",
     "year": 2019
   },
   {
     "id": 12,
     "stat": "Photos from Utah/Colorado Trip",
     "value": "1,000+",
-    "unit": null,
+    "unit": "photos",
     "year": 2021
   },
   {
     "id": 13,
     "stat": "WrestleMania Photos (Arizona)",
     "value": "939",
-    "unit": null,
+    "unit": "photos",
     "year": 2010
   },
   {
     "id": 14,
     "stat": "ECD Events Before Retirement",
     "value": "171",
-    "unit": null,
-    "year": 2009
+    "unit": "events",
+    "year": null
   },
   {
     "id": 15,
@@ -115,14 +115,14 @@
     "id": 17,
     "stat": "Consecutive Bowling 205+ Games",
     "value": "2",
-    "unit": null,
+    "unit": "games",
     "year": 2010
   },
   {
     "id": 18,
     "stat": "Cornhole Record on Cruise",
     "value": "27-2",
-    "unit": null,
+    "unit": "W-L",
     "year": 2017
   }
 ]

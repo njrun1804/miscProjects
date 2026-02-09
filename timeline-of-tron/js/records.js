@@ -86,7 +86,6 @@ function renderSportsGauges(sports) {
         <div class="gauge-wrap">
             <canvas id="gauge${i}"></canvas>
             <div class="gauge-label">${rec.sport}</div>
-            <div class="gauge-record">${rec.wins}W \u2013 ${rec.losses}L</div>
         </div>
     `).join('');
 

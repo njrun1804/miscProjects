@@ -72,14 +72,6 @@
     "note": null
   },
   {
-    "id": 10,
-    "sport": "Bowling",
-    "year": 2024,
-    "stat_type": "note",
-    "stat_value": "",
-    "note": null
-  },
-  {
     "id": 11,
     "sport": "Tennis",
     "year": null,
@@ -94,14 +86,6 @@
     "stat_type": "note",
     "stat_value": "Became a believer in 2018",
     "note": "Became a believer in 2018"
-  },
-  {
-    "id": 13,
-    "sport": "Crabbing",
-    "year": null,
-    "stat_type": "note",
-    "stat_value": "",
-    "note": null
   },
   {
     "id": 14,
