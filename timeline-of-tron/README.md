@@ -1,129 +1,75 @@
-# The Timeline of Tron — A 22-Year Statistical Almanac
+# The Timeline of Tron
 
-A retro LiveJournal-styled dashboard showcasing 22 years of life statistics (2004–2025) with interactive charts and visualizations.
+A 22-year personal data autobiography (2004-2026) built as a multi-room interactive experience with a retro LiveJournal aesthetic.
 
-## 🚀 Quick Start
+## Quick Start
 
-Simply open `index.html` in your browser to view the dashboard.
+Open `index.html` in a browser. No build step, no dependencies to install.
 
-## 📁 Project Structure
-
-```
-miscProjects/
-├── index.html                          # Main HTML file (modular version)
-├── tron_timeline_dashboard.html        # Original single-file version (backup)
-├── css/
-│   └── styles.css                      # All CSS styles (505 lines)
-├── js/
-│   ├── data.js                         # Data arrays (81 lines)
-│   ├── charts.js                       # Chart.js configurations (306 lines)
-│   └── app.js                          # Interactive functions (85 lines)
-└── lib/
-    └── chart.js                        # Chart.js library v4.5.1 (local copy)
-```
-
-## ✨ Features
-
-- **LiveJournal-Inspired Design**: Retro aesthetic with vintage styling
-- **Interactive Charts**: Powered by Chart.js
-  - Sports records (stacked bar)
-  - Career progression (line chart)
-  - WWE events timeline
-  - Travel scope by year
-  - Awards distribution (doughnut)
-  - Traditions longevity
-- **Sortable Travel Table**: Click column headers to sort
-- **Section Filtering**: Jump to specific sections (Stats, Career, WWE, Travel, etc.)
-- **Responsive Design**: Works on desktop and mobile
-
-## 📊 Data Categories
-
-- **Stats**: KPIs, sports records, epic single-event numbers
-- **Career**: 15-year progression from Intern to Executive Director
-- **WWE**: 91+ events attended, 29 consecutive Survivor Series years
-- **Travel**: 20+ countries across 5 continents
-- **Cast**: Recurring characters and lifers
-- **Awards**: Music Artist and Comedian of the Year traditions
-- **Comebacks**: Resilience arcs (2017–2024)
-
-## 🛠️ Technical Details
-
-### Dependencies
-- **Chart.js v4.5.1**: Local copy in `lib/chart.js` (no CDN required)
-- **Google Fonts**: Courier Prime, Georgia, Trebuchet MS (via CDN)
-
-### Load Order
-Scripts must load in this specific order:
-1. `lib/chart.js` (Chart.js library)
-2. `js/data.js` (data arrays)
-3. `js/charts.js` (chart configurations)
-4. `js/app.js` (interactive functions)
-
-### Offline Support
-The dashboard works fully offline thanks to:
-- Local Chart.js copy (no external JS dependencies)
-- Embedded CSS styles
-- Inline SVG background patterns
-
-Only Google Fonts require an internet connection (with system font fallbacks).
-
-## 🎨 Color Palette
-
-The retro LiveJournal theme uses:
-- **Background**: `#e8e0d0` (warm cream)
-- **Panels**: `#f5f0e6` (off-white)
-- **Header**: `#4a6741` (forest green)
-- **Accent Red**: `#8b1a1a` (WWE/sports)
-- **Accent Blue**: `#1a4a8b` (travel)
-- **Gold**: `#c9a84c` (milestones)
-
-## 📝 Editing Data
-
-To update statistics or add new data:
-
-1. **Edit Data**: Modify `js/data.js` to update stats, travel destinations, or career milestones
-2. **Edit Charts**: Adjust chart configurations in `js/charts.js`
-3. **Edit Styles**: Customize appearance in `css/styles.css`
-4. **Edit Content**: Update HTML structure in `index.html`
-
-## 🌐 Deployment
-
-### GitHub Pages
-1. Push to GitHub
-2. Enable GitHub Pages in repository settings
-3. Set source to `main` branch
-4. Access at: `https://[username].github.io/miscProjects/`
-
-### Local Server
+For local development with data loading:
 ```bash
-# Python 3
 python -m http.server 8000
-
-# Node.js
-npx http-server
 ```
 
-## 🏆 Statistics Highlights
+## The Rooms
 
-- **22+ Years** of Timelines
-- **91+ WWE Events** Attended
-- **20+ Countries** Visited
-- **93.9% Win Rate** at Table Tennis
-- **254+ Cornhole Games** Won
-- **21+ Years** of East Coast Dodgeball
-- **5 Career Promotions** (Intern → Executive Director)
+| Room | Page | Description |
+|------|------|-------------|
+| The Lobby | `index.html` | Hero section, seismograph, room cards, friend voices |
+| The Arc | `arc.html` | Hero's journey in 9 stages with sentiment timeline |
+| The Constellation | `constellation.html` | D3 force graph of 164 people across eras |
+| The Record Book | `records.html` | Sports gauges, obsession index, comebacks, streaks |
+| The Atlas | `atlas.html` | Leaflet map, travel eras, cruise streak, recovery stories |
+| The Vault | `vault.html` | 79 quotes, voice evolution, then & now pairs, soundtrack |
+| The Dynasty | `dynasty.html` | Career staircase, trophy case, WWE timeline, traditions |
+| ECD | `ecd.html` | 128 players, 168 events, 21 years of dodgeball |
+| The Before | `room0.html` | Hidden room — find 7 clues across other rooms to unlock |
 
-## 📜 Version History
+## Architecture
 
-- **v2.0** (2025-02-08): Modular refactor - Separated into CSS/JS modules
-- **v1.0** (2025-01-XX): Initial single-file dashboard
+- **Frontend**: Vanilla HTML/CSS/JS with ES modules — no frameworks, no build process
+- **Data**: 54 static JSON files in `db/api/`, loaded via `js/data-loader.js`
+- **Libraries**: Chart.js, D3.js, Leaflet, Fuse.js (all vendored in `lib/`)
+- **Source of truth**: SQLite database (`db/tron.db`, 44+ tables)
 
-## 📄 License
+## Project Structure
 
-Personal project - All rights reserved
+```
+timeline-of-tron/
+├── *.html              # 9 room pages + 1 monolithic backup
+├── css/                # Per-room stylesheets + shared base.css
+├── js/                 # Per-room modules + shared nav/search/wormholes
+├── lib/                # Vendored libraries (Chart.js, D3, Leaflet, Fuse.js)
+├── db/api/             # 54 JSON data endpoints
+├── db/tron.db          # SQLite database (source of truth)
+├── data/               # Master content DB + LJ comments
+├── scripts/            # 26-step data pipeline + 2 export scripts
+├── old-site/           # Pre-rebuild v1 backup
+└── archive/            # Archived reports, temp scripts, unused JSON
+```
+
+## Deployment
+
+Push to `main` — GitHub Pages auto-deploys in 1-2 minutes.
+
+**Live**: https://njrun1804.github.io/miscProjects/timeline-of-tron/
+
+## Statistics Highlights
+
+- **22+ Years** of timelines (2004-2026)
+- **164 People** documented across the full arc
+- **91+ WWE Events** attended, 29-year Survivor Series streak
+- **20+ Countries** visited across 5 continents
+- **93.9% Win Rate** at table tennis
+- **128 Players** in 21 years of East Coast Dodgeball
+- **14 Medical Events**, 100% comeback rate
+
+## Version History
+
+- **V2 Rebuild** (Feb 2026): Multi-room museum experience, 8 themed rooms, 26-step data pipeline
+- **v2.0** (Feb 2025): Modular refactor from monolithic HTML
+- **v1.0** (Jan 2025): Original single-file dashboard
 
 ---
 
-**Keep counting everything, John.**
-
-*This dashboard has outlived MySpace, Vine, Google+, and Friendster — just like the Timelines themselves.*
+**Keep counting everything.**

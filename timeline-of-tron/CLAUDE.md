@@ -127,7 +127,7 @@ All data is pre-exported as static JSON (54 files in `db/api/`). The `data-loade
 | Dynasty | `career.json`, `awards_enriched.json`, `awards_categories.json`, `traditions.json`, `wwe_events.json` |
 | ECD | `ecd_stats_dashboard.json`, `ecd_sentiment_timeline.json`, `ecd_attendance_trends.json`, `ecd_community_narrative.json`, `ecd_player_network.json`, `ecd_players_full.json`, `ecd_match_results.json`, `ecd_rivalries.json`, `ecd_emotion_distribution.json`, `ecd_highlights.json`, `ecd_awards_full.json`, `ecd_fundraisers.json` |
 
-**Full API index**: See `db/api/INDEX.md` for all 128+ endpoints with record counts, file sizes, and field documentation.
+**Full API index**: See `db/api/INDEX.md` for all endpoints organized by room.
 
 ### Content Database (`data/`)
 - **`tron-content-db.json`** (~89KB) — Master content reservoir with 21 top-level keys. Use to source new content without re-scraping.
@@ -290,7 +290,7 @@ GitHub Pages auto-deploys in 1-2 minutes.
 - 8 phases executed to completion
 - Each room = different lens on the same 22-year arc
 - 26-step data processing pipeline built for enrichment
-- 128+ JSON API endpoints exported from SQLite
+- 54 active JSON API endpoints exported from SQLite (64 more archived)
 
 ### Version 2.2 (Feb 8, 2026)
 - Created `data/tron-content-db.json` — comprehensive content database (89KB, 21 keys)
