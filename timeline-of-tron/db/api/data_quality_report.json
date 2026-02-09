@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-02-09T12:19:21.051849",
+  "generated_at": "2026-02-09T13:43:33.105396",
   "tables": {
     "_deleted_records_backup": {
       "id": {
@@ -327,8 +327,8 @@
       },
       "date": {
         "type": "TEXT",
-        "null_count": 0,
-        "null_percentage": 0.0
+        "null_count": 131,
+        "null_percentage": 59.01
       },
       "year": {
         "type": "INTEGER",
@@ -436,8 +436,8 @@
       },
       "player_id": {
         "type": "INTEGER",
-        "null_count": 106,
-        "null_percentage": 100.0
+        "null_count": 0,
+        "null_percentage": 0.0
       },
       "year": {
         "type": "INTEGER",
@@ -1908,8 +1908,8 @@
       },
       "person_id": {
         "type": "INTEGER",
-        "null_count": 1193,
-        "null_percentage": 96.83
+        "null_count": 71,
+        "null_percentage": 5.76
       },
       "year": {
         "type": "INTEGER",

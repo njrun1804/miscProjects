@@ -240,16 +240,6 @@
     "years_span": 1
   },
   {
-    "id": 25,
-    "person_name": "Rob",
-    "connected_to": "John Tronolone",
-    "relationship_type": "other",
-    "weight": 1,
-    "first_year": 2021,
-    "last_year": 2021,
-    "years_span": 1
-  },
-  {
     "id": 26,
     "person_name": "John Tronolone",
     "connected_to": "John Tronolone",
@@ -630,26 +620,6 @@
     "years_span": 1
   },
   {
-    "id": 64,
-    "person_name": "Juan Londono (Muffin Man)",
-    "connected_to": "Steve and Stacey",
-    "relationship_type": "co-occurrence",
-    "weight": 1,
-    "first_year": 2009,
-    "last_year": 2009,
-    "years_span": 1
-  },
-  {
-    "id": 65,
-    "person_name": "Juan Londono (Muffin Man)",
-    "connected_to": "Steve Pham",
-    "relationship_type": "co-occurrence",
-    "weight": 1,
-    "first_year": 2009,
-    "last_year": 2009,
-    "years_span": 1
-  },
-  {
     "id": 66,
     "person_name": "Phil Campanella",
     "connected_to": "Rob",
@@ -690,37 +660,7 @@
     "years_span": 1
   },
   {
-    "id": 70,
-    "person_name": "Phil Campanella",
-    "connected_to": "Rob",
-    "relationship_type": "co-occurrence",
-    "weight": 1,
-    "first_year": 2021,
-    "last_year": 2021,
-    "years_span": 1
-  },
-  {
-    "id": 71,
-    "person_name": "Rob",
-    "connected_to": "Lauren Stopa",
-    "relationship_type": "co-occurrence",
-    "weight": 1,
-    "first_year": 2021,
-    "last_year": 2021,
-    "years_span": 1
-  },
-  {
     "id": 72,
-    "person_name": "Ma",
-    "connected_to": "Ryan Letsche",
-    "relationship_type": "co-occurrence",
-    "weight": 1,
-    "first_year": 2008,
-    "last_year": 2008,
-    "years_span": 1
-  },
-  {
-    "id": 73,
     "person_name": "Ma",
     "connected_to": "Ryan Letsche",
     "relationship_type": "co-occurrence",

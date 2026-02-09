@@ -11,7 +11,7 @@
     "id": 2,
     "name": "Sunrise of Jackson",
     "location_type": "Workplace",
-    "note": "Current employer \u2014 Executive Director",
+    "note": "Current employer — Executive Director",
     "latitude": 39.0159893,
     "longitude": -94.3790067
   },
@@ -20,8 +20,8 @@
     "name": "Sunrise of Wall",
     "location_type": "Former workplace",
     "note": null,
-    "latitude": 40.1584,
-    "longitude": -74.0677
+    "latitude": 49.2921519,
+    "longitude": -123.0493391
   },
   {
     "id": 4,
@@ -44,8 +44,8 @@
     "name": "Mill Creek Court",
     "location_type": "Home",
     "note": "Closed Dec 18, 2023",
-    "latitude": 40.2,
-    "longitude": -74.05
+    "latitude": 53.4602179,
+    "longitude": -113.3926321
   },
   {
     "id": 7,
@@ -132,8 +132,8 @@
     "name": "Front St. Trattoria",
     "location_type": "Restaurant",
     "note": "Birthday dinners",
-    "latitude": 40.3487,
-    "longitude": -74.0662
+    "latitude": 54.945985,
+    "longitude": -1.6788733
   },
   {
     "id": 18,
@@ -164,8 +164,8 @@
     "name": "Snap Fitness",
     "location_type": "Gym",
     "note": "1.16 miles from home (joined Mar 10, 2010)",
-    "latitude": 40.18,
-    "longitude": -74.06
+    "latitude": 19.3611207,
+    "longitude": -99.2894035
   },
   {
     "id": 22,
@@ -196,8 +196,8 @@
     "name": "11 Sandburg",
     "location_type": "Residence",
     "note": "Home base for various events",
-    "latitude": 40.22,
-    "longitude": -74.01
+    "latitude": 53.9319149,
+    "longitude": 9.7445058
   },
   {
     "id": 26,

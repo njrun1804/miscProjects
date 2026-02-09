@@ -759,37 +759,37 @@
   "attendance_trends": [
     {
       "year": 2005,
-      "event_count": 21,
-      "avg_attendance": 83.83333333333333
+      "event_count": 19,
+      "avg_attendance": 64.6
     },
     {
       "year": 2006,
-      "event_count": 43,
-      "avg_attendance": 36.27272727272727
+      "event_count": 51,
+      "avg_attendance": 51.9375
     },
     {
       "year": 2007,
-      "event_count": 55,
-      "avg_attendance": 34.63157894736842
+      "event_count": 51,
+      "avg_attendance": 26.68421052631579
     },
     {
       "year": 2008,
-      "event_count": 55,
-      "avg_attendance": 25.0
+      "event_count": 50,
+      "avg_attendance": 25.4375
     },
     {
       "year": 2009,
-      "event_count": 2,
-      "avg_attendance": 36.5
+      "event_count": 1,
+      "avg_attendance": 40.0
     },
     {
       "year": 2010,
-      "event_count": 5,
+      "event_count": 7,
       "avg_attendance": 37.0
     },
     {
       "year": 2011,
-      "event_count": 4,
+      "event_count": 7,
       "avg_attendance": 24.0
     },
     {
@@ -799,7 +799,7 @@
     },
     {
       "year": 2013,
-      "event_count": 7,
+      "event_count": 8,
       "avg_attendance": null
     },
     {
@@ -809,7 +809,7 @@
     },
     {
       "year": 2015,
-      "event_count": 5,
+      "event_count": 3,
       "avg_attendance": 25.0
     },
     {

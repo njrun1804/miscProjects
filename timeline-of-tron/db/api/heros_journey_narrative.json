@@ -5,7 +5,7 @@
       "year_start": 2004,
       "year_end": 2006,
       "years": "[2004, 2005, 2006]",
-      "description": "Pre-transformation John. HS \u2192 early college. Family tension, 723-day relationship, early ECD involvement. Building the foundation.",
+      "description": "Pre-transformation John. HS → early college. Family tension, 723-day relationship, early ECD involvement. Building the foundation.",
       "avg_sentiment": -0.1977,
       "milestone_count": 6,
       "people_active_count": 6,
@@ -34,7 +34,7 @@
       {
         "id": 2,
         "year": 2004,
-        "milestone": "Life-altering car accident resulting in panic attacks and anxiety (Aug)",
+        "milestone": "Life-altering car accident resulting in panic attacks and anxiety",
         "category": "vehicle",
         "vader_compound": -0.875,
         "sentiment_adjusted": 0.041666666666666664,
@@ -49,7 +49,7 @@
       {
         "id": 3,
         "year": 2005,
-        "milestone": "EastCoastDodgeball founded (Aug 16)",
+        "milestone": "EastCoastDodgeball founded",
         "category": "ecd",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3666666666666667,
@@ -64,7 +64,7 @@
       {
         "id": 4,
         "year": 2005,
-        "milestone": "Difficult period after WrestleMania attendance (Apr)",
+        "milestone": "Difficult period after WrestleMania attendance",
         "category": "wwe",
         "vader_compound": -0.3612,
         "sentiment_adjusted": 0.21293333333333334,
@@ -79,7 +79,7 @@
       {
         "id": 5,
         "year": 2006,
-        "milestone": "DODGEBALL 70 (Dec 30) \u2014 music experiment with dance anthems",
+        "milestone": "DODGEBALL 70 (Dec 30) — music experiment with dance anthems",
         "category": "ecd",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -345,7 +345,7 @@
       {
         "id": 7,
         "year": 2007,
-        "milestone": "27 bowling games in a single day (Apr)",
+        "milestone": "27 bowling games in a single day",
         "category": "sports",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -375,7 +375,7 @@
       {
         "id": 9,
         "year": 2007,
-        "milestone": "WrestleMania 23 in Detroit (3rd WM) (Apr 1)",
+        "milestone": "WrestleMania 23 in Detroit (3rd WM)",
         "category": "wwe",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -405,7 +405,7 @@
       {
         "id": 11,
         "year": 2007,
-        "milestone": "DODGEBALL 100 \u2014 record 52 participants (Aug 18)",
+        "milestone": "DODGEBALL 100 — record 52 participants (Aug 18)",
         "category": "ecd",
         "vader_compound": 0.2,
         "sentiment_adjusted": 0.43333333333333335,
@@ -495,7 +495,7 @@
       {
         "id": 17,
         "year": 2007,
-        "milestone": "20+ hours of tennis in one week (summer)",
+        "milestone": "20+ hours of tennis in one week",
         "category": "sports",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -525,7 +525,7 @@
       {
         "id": 19,
         "year": 2007,
-        "milestone": "Contracted Shingles at age 20 (spring)",
+        "milestone": "Contracted Shingles at age 20",
         "category": "health",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -540,7 +540,7 @@
       {
         "id": 226,
         "year": 2007,
-        "milestone": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.' (Oct)",
+        "milestone": "Crazy Chili Dog post: dense esoteric reflection on reconciliation, Team Paul (Bobbo + Jimmy), and personal growth. 'My oh my, how the times have changed.'",
         "category": "writing",
         "vader_compound": 0.0516,
         "sentiment_adjusted": 0.35053333333333336,
@@ -750,7 +750,7 @@
       {
         "id": 20,
         "year": 2008,
-        "milestone": "WrestleMania XXIV in Florida (4th WM) (Mar 30)",
+        "milestone": "WrestleMania XXIV in Florida (4th WM)",
         "category": "wwe",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -840,7 +840,7 @@
       {
         "id": 26,
         "year": 2008,
-        "milestone": "Diana DiBuccio: Comedian of the Year (Dec)",
+        "milestone": "Diana DiBuccio: Comedian of the Year",
         "category": "music_awards",
         "vader_compound": 0.3818,
         "sentiment_adjusted": 0.46059999999999995,
@@ -855,7 +855,7 @@
       {
         "id": 27,
         "year": 2008,
-        "milestone": "Song of the Year: Tom Petty 'Runnin Down a Dream' (Dec)",
+        "milestone": "Song of the Year: Tom Petty 'Runnin Down a Dream'",
         "category": "music_awards",
         "vader_compound": 0.0516,
         "sentiment_adjusted": 0.35053333333333336,
@@ -900,7 +900,7 @@
       {
         "id": 30,
         "year": 2008,
-        "milestone": "Came out in 2008; KMJ was 3rd person to know (fall)",
+        "milestone": "Came out in 2008; KMJ was 3rd person to know",
         "category": "personal",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -915,7 +915,7 @@
       {
         "id": 31,
         "year": 2008,
-        "milestone": "FAB4 Atlantic City trips began (summer)",
+        "milestone": "FAB4 Atlantic City trips began",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -930,7 +930,7 @@
       {
         "id": 32,
         "year": 2008,
-        "milestone": "Deactivated Facebook after 4-hour paper incident (spring)",
+        "milestone": "Deactivated Facebook after 4-hour paper incident",
         "category": "personal",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -945,7 +945,7 @@
       {
         "id": 227,
         "year": 2008,
-        "milestone": "Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 near-anorexia. Letsche friendship repaired at Rumble '08. First appearance of 'The power of an internal desire liberated!' \u2014 March 2008.",
+        "milestone": "Yeah I Said It post: raw honest reflection. Reveals 2004 car accident caused panic attacks, 2005 near-anorexia. Letsche friendship repaired at Rumble '08. First appearance of 'The power of an internal desire liberated!' — March 2008.",
         "category": "personal",
         "vader_compound": 0.2714,
         "sentiment_adjusted": 0.45713333333333334,
@@ -1102,7 +1102,7 @@
       {
         "id": 77,
         "quote": "regret ever regretting",
-        "context": "Yeah I Said It, Mar 2008 \u2014 credited to Kevin Megill",
+        "context": "Yeah I Said It, Mar 2008 — credited to Kevin Megill",
         "year": 2008,
         "sentiment_score": 0.0,
         "vader_compound": -0.6705,
@@ -1112,7 +1112,7 @@
       {
         "id": 78,
         "quote": "Inner joy. Endless privilege and pleasure. I've never felt happier to be alive than here and now.",
-        "context": "Yeah I Said It, Mar 2008 \u2014 written weeks before coming out",
+        "context": "Yeah I Said It, Mar 2008 — written weeks before coming out",
         "year": 2008,
         "sentiment_score": 0.1938,
         "vader_compound": 0.8697,
@@ -1143,7 +1143,7 @@
     "turning_points": [
       {
         "year": 2008,
-        "event": "Coming out \u2014 'The power of an internal desire liberated!'",
+        "event": "Coming out — 'The power of an internal desire liberated!'",
         "type": "redemptive",
         "domain": "identity",
         "from_state": "concealed identity",
@@ -1287,7 +1287,7 @@
       {
         "id": 34,
         "year": 2009,
-        "milestone": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance (Apr 5)",
+        "milestone": "WrestleMania 25 in Houston (5th WM) — 72,744 attendance",
         "category": "wwe",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -1302,7 +1302,7 @@
       {
         "id": 35,
         "year": 2009,
-        "milestone": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
+        "milestone": "SkyDive I at 10,000 feet (Aug 16) — 'maybe the happiest 24-span of my life'",
         "category": "sports",
         "vader_compound": 0.6369,
         "sentiment_adjusted": 0.5456333333333333,
@@ -1377,7 +1377,7 @@
       {
         "id": 40,
         "year": 2009,
-        "milestone": "Turned 25 \u2014 multi-day celebration (Sep 25-27)",
+        "milestone": "Turned 25 — multi-day celebration (Sep 25-27)",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -1452,7 +1452,7 @@
       {
         "id": 45,
         "year": 2009,
-        "milestone": "28 beers consumed all year; 101 dates posted; 0 regrets (Dec)",
+        "milestone": "28 beers consumed all year; 101 dates posted; 0 regrets",
         "category": "other",
         "vader_compound": -0.3612,
         "sentiment_adjusted": 0.21293333333333334,
@@ -1467,7 +1467,7 @@
       {
         "id": 46,
         "year": 2009,
-        "milestone": "'The Greatest Year Ever. 2009.' (Dec)",
+        "milestone": "'The Greatest Year Ever. 2009.'",
         "category": "other",
         "vader_compound": 0.6369,
         "sentiment_adjusted": 0.5456333333333333,
@@ -1482,7 +1482,7 @@
       {
         "id": 47,
         "year": 2010,
-        "milestone": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative) (May)",
+        "milestone": "Graduated Monmouth University (3.66 major GPA, 3.49 cumulative)",
         "category": "education",
         "vader_compound": 0.2,
         "sentiment_adjusted": 0.39999999999999997,
@@ -1527,7 +1527,7 @@
       {
         "id": 50,
         "year": 2010,
-        "milestone": "WrestleMania XXVI in Arizona (939 photos) (Mar 28)",
+        "milestone": "WrestleMania XXVI in Arizona (939 photos)",
         "category": "wwe",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -1587,7 +1587,7 @@
       {
         "id": 54,
         "year": 2010,
-        "milestone": "18 lbs gained, 3 alcoholic beverages, 0 regrets (Dec)",
+        "milestone": "18 lbs gained, 3 alcoholic beverages, 0 regrets",
         "category": "other",
         "vader_compound": 0.0258,
         "sentiment_adjusted": 0.34193333333333337,
@@ -1692,7 +1692,7 @@
       {
         "id": 61,
         "year": 2011,
-        "milestone": "Survivor Series at MSG \u2014 The Rock returns (Nov 20)",
+        "milestone": "Survivor Series at MSG — The Rock returns (Nov 20)",
         "category": "wwe",
         "vader_compound": 0.3612,
         "sentiment_adjusted": 0.4537333333333333,
@@ -1737,7 +1737,7 @@
       {
         "id": 64,
         "year": 2011,
-        "milestone": "Hurricane Irene \u2014 La Quinta Suites (Aug 27-28)",
+        "milestone": "Hurricane Irene — La Quinta Suites (Aug 27-28)",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2265,7 +2265,7 @@
       {
         "id": 75,
         "year": 2012,
-        "milestone": "71st WWE event (Apr)",
+        "milestone": "71st WWE event",
         "category": "wwe",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2280,7 +2280,7 @@
       {
         "id": 76,
         "year": 2012,
-        "milestone": "Stratton Vermont ski trip continues (Jan)",
+        "milestone": "Stratton Vermont ski trip continues",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2295,7 +2295,7 @@
       {
         "id": 77,
         "year": 2013,
-        "milestone": "DODGEBOWL 200 \u2014 era-ending extravaganza (Aug 10, FIVE star rating)",
+        "milestone": "DODGEBOWL 200 — era-ending extravaganza (Aug 10, FIVE star rating)",
         "category": "ecd",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2310,7 +2310,7 @@
       {
         "id": 78,
         "year": 2013,
-        "milestone": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+        "milestone": "Norwegian Breakaway — first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.39999999999999997,
@@ -2325,7 +2325,7 @@
       {
         "id": 79,
         "year": 2013,
-        "milestone": "WrestleMania 29 at-home NJ (8th WM); 21-0 record (Apr 7)",
+        "milestone": "WrestleMania 29 at-home NJ (8th WM); 21-0 record",
         "category": "wwe",
         "vader_compound": 0.2,
         "sentiment_adjusted": 0.43333333333333335,
@@ -2370,7 +2370,7 @@
       {
         "id": 82,
         "year": 2013,
-        "milestone": "5 weddings attended in one year (summer\u2013fall)",
+        "milestone": "5 weddings attended in one year",
         "category": "social",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2430,7 +2430,7 @@
       {
         "id": 86,
         "year": 2013,
-        "milestone": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
+        "milestone": "Maryland wedding — gave speech, danced 180 minutes (Nov 7-9)",
         "category": "social",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2445,7 +2445,7 @@
       {
         "id": 87,
         "year": 2013,
-        "milestone": "Pilates Round 1 \u2014 only male participant (spring)",
+        "milestone": "Pilates Round 1 — only male participant",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2460,7 +2460,7 @@
       {
         "id": 88,
         "year": 2013,
-        "milestone": "'2010 and 2013 will no doubt stand the test of time' (Dec)",
+        "milestone": "'2010 and 2013 will no doubt stand the test of time'",
         "category": "other",
         "vader_compound": -0.5719,
         "sentiment_adjusted": 0.14270000000000002,
@@ -2507,7 +2507,7 @@
       {
         "id": 25,
         "quote": "just woke up from this dream.. but it wasn't a dream!!!",
-        "context": "Aug 12, 2013 \u2014 WM XXX tickets secured",
+        "context": "Aug 12, 2013 — WM XXX tickets secured",
         "year": 2013,
         "sentiment_score": 0.0,
         "vader_compound": -0.4563,
@@ -2717,7 +2717,7 @@
       "year_start": 2014,
       "year_end": 2014,
       "years": "[2014]",
-      "description": "The most documented year. Undertaker handshake (20-year dream fulfilled through 5 friends). Peak joy. But also peak vulnerability \u2014 everything desired has been achieved. Now what?",
+      "description": "The most documented year. Undertaker handshake (20-year dream fulfilled through 5 friends). Peak joy. But also peak vulnerability — everything desired has been achieved. Now what?",
       "avg_sentiment": 0.2099,
       "milestone_count": 10,
       "people_active_count": 9,
@@ -2731,7 +2731,7 @@
       {
         "id": 89,
         "year": 2014,
-        "milestone": "Turned 30 \u2014 the 'BIG 3-0' (Sep 27)",
+        "milestone": "Turned 30 — the 'BIG 3-0'",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2791,7 +2791,7 @@
       {
         "id": 93,
         "year": 2014,
-        "milestone": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+        "milestone": "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
         "category": "travel",
         "vader_compound": 0.4588,
         "sentiment_adjusted": 0.4862666666666667,
@@ -2806,7 +2806,7 @@
       {
         "id": 94,
         "year": 2014,
-        "milestone": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s (Sep\u2013Oct)",
+        "milestone": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -2836,7 +2836,7 @@
       {
         "id": 96,
         "year": 2014,
-        "milestone": "Johnny Nash: most influential friend of 2014 (Dec)",
+        "milestone": "Johnny Nash: most influential friend of 2014",
         "category": "other",
         "vader_compound": 0.7698,
         "sentiment_adjusted": 0.5899333333333333,
@@ -2866,7 +2866,7 @@
       {
         "id": 98,
         "year": 2014,
-        "milestone": "The Pops: Comedian of the Year (2nd straight year) (Dec)",
+        "milestone": "The Pops: Comedian of the Year (2nd straight year)",
         "category": "family",
         "vader_compound": 0.5423,
         "sentiment_adjusted": 0.5141,
@@ -2893,7 +2893,7 @@
       {
         "id": 27,
         "quote": "All that keeps running through my head is 'I finally did it.' I never, ever thought the day would come.",
-        "context": "Apr 10, 2014 \u2014 meeting The Undertaker",
+        "context": "Apr 10, 2014 — meeting The Undertaker",
         "year": 2014,
         "sentiment_score": 0.0,
         "vader_compound": 0.0,
@@ -2933,7 +2933,7 @@
       {
         "id": 72,
         "quote": "Well you guys just made his dream come true.",
-        "context": "Diana DiBuccio, Jan 28, 2014 \u2014 after securing Undertaker meet-and-greet tickets",
+        "context": "Diana DiBuccio, Jan 28, 2014 — after securing Undertaker meet-and-greet tickets",
         "year": 2014,
         "sentiment_score": 0.35,
         "vader_compound": 0.7096,
@@ -2964,7 +2964,7 @@
     "turning_points": [
       {
         "year": 2014,
-        "event": "Undertaker handshake \u2014 20-year dream fulfilled",
+        "event": "Undertaker handshake — 20-year dream fulfilled",
         "type": "redemptive",
         "domain": "identity",
         "from_state": "lifelong dream",
@@ -3059,7 +3059,7 @@
       "year_start": 2015,
       "year_end": 2017,
       "years": "[2015, 2016, 2017]",
-      "description": "Quieter years. 2015 under-documented. 2017: spinal surgery \u2014 the body rebels. Physical ordeal forces reassessment.",
+      "description": "Quieter years. 2015 under-documented. 2017: spinal surgery — the body rebels. Physical ordeal forces reassessment.",
       "avg_sentiment": 0.1259,
       "milestone_count": 24,
       "people_active_count": 16,
@@ -3088,7 +3088,7 @@
       {
         "id": 100,
         "year": 2015,
-        "milestone": "USVI & Bahamas cruise (rated 10/10) (Dec)",
+        "milestone": "USVI & Bahamas cruise (rated 10/10)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3103,7 +3103,7 @@
       {
         "id": 101,
         "year": 2015,
-        "milestone": "Janet Jackson first Artist of the Year win (Dec)",
+        "milestone": "Janet Jackson first Artist of the Year win",
         "category": "music_awards",
         "vader_compound": 0.5859,
         "sentiment_adjusted": 0.5619666666666666,
@@ -3118,7 +3118,7 @@
       {
         "id": 102,
         "year": 2015,
-        "milestone": "Dan Spengeman: Comedian of the Year (Dec)",
+        "milestone": "Dan Spengeman: Comedian of the Year",
         "category": "music_awards",
         "vader_compound": 0.3818,
         "sentiment_adjusted": 0.46059999999999995,
@@ -3133,7 +3133,7 @@
       {
         "id": 103,
         "year": 2016,
-        "milestone": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time' (Apr 3)",
+        "milestone": "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
         "category": "wwe",
         "vader_compound": 0.6369,
         "sentiment_adjusted": 0.5456333333333333,
@@ -3148,7 +3148,7 @@
       {
         "id": 104,
         "year": 2016,
-        "milestone": "Manager of the Year award (Dec)",
+        "milestone": "Manager of the Year award",
         "category": "career",
         "vader_compound": 0.5423,
         "sentiment_adjusted": 0.5141,
@@ -3163,7 +3163,7 @@
       {
         "id": 105,
         "year": 2016,
-        "milestone": "Table tennis: 62-4 (93.9%) (Dec)",
+        "milestone": "Table tennis: 62-4 (93.9%)",
         "category": "sports",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3178,7 +3178,7 @@
       {
         "id": 106,
         "year": 2016,
-        "milestone": "Cornhole: 254-98, 38 cornholios (Dec)",
+        "milestone": "Cornhole: 254-98, 38 cornholios",
         "category": "sports",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3193,7 +3193,7 @@
       {
         "id": 107,
         "year": 2016,
-        "milestone": "Spengeman-Mullins wedding (summer)",
+        "milestone": "Spengeman-Mullins wedding",
         "category": "social",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3208,7 +3208,7 @@
       {
         "id": 108,
         "year": 2016,
-        "milestone": "St. Lucia/Dominica/Antigua cruise (Dec)",
+        "milestone": "St. Lucia/Dominica/Antigua cruise",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3223,7 +3223,7 @@
       {
         "id": 109,
         "year": 2016,
-        "milestone": "Lauren Winston: Comedian of the Year (Dec)",
+        "milestone": "Lauren Winston: Comedian of the Year",
         "category": "music_awards",
         "vader_compound": 0.3818,
         "sentiment_adjusted": 0.46059999999999995,
@@ -3238,7 +3238,7 @@
       {
         "id": 110,
         "year": 2017,
-        "milestone": "Kevin & Leah engaged (spring)",
+        "milestone": "Kevin & Leah engaged",
         "category": "other",
         "vader_compound": 0.4019,
         "sentiment_adjusted": 0.4673,
@@ -3253,7 +3253,7 @@
       {
         "id": 111,
         "year": 2017,
-        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier) (Jul)",
+        "milestone": "Alaska cruise + Seattle (Mendenhall Glacier)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3268,7 +3268,7 @@
       {
         "id": 112,
         "year": 2017,
-        "milestone": "L5-S1 herniation \u2192 microdiscectomy surgery (Dec 15) at Riverview hospital",
+        "milestone": "L5-S1 herniation → microdiscectomy surgery (Dec 15) at Riverview hospital",
         "category": "health",
         "vader_compound": -0.2,
         "sentiment_adjusted": 0.26666666666666666,
@@ -3343,7 +3343,7 @@
       {
         "id": 117,
         "year": 2017,
-        "milestone": "California trip 600+ miles for Matt & Gina wedding (summer)",
+        "milestone": "California trip 600+ miles for Matt & Gina wedding",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3388,7 +3388,7 @@
       {
         "id": 120,
         "year": 2017,
-        "milestone": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
+        "milestone": "Broken left pinky — volleyball career paused (Mar 26)",
         "category": "career",
         "vader_compound": -0.4767,
         "sentiment_adjusted": 0.1411,
@@ -3418,7 +3418,7 @@
       {
         "id": 122,
         "year": 2017,
-        "milestone": "Cornhole: 27-2 record on cruise (Jul)",
+        "milestone": "Cornhole: 27-2 record on cruise",
         "category": "travel",
         "vader_compound": 0.2,
         "sentiment_adjusted": 0.43333333333333335,
@@ -3728,7 +3728,7 @@
       {
         "id": 123,
         "year": 2018,
-        "milestone": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks) (Jun\u2013Jul)",
+        "milestone": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3743,7 +3743,7 @@
       {
         "id": 124,
         "year": 2018,
-        "milestone": "Engagement ring purchased in Croatia (Jun\u2013Jul)",
+        "milestone": "Engagement ring purchased in Croatia",
         "category": "relationship",
         "vader_compound": 0.4588,
         "sentiment_adjusted": 0.4862666666666667,
@@ -3833,7 +3833,7 @@
       {
         "id": 130,
         "year": 2018,
-        "milestone": "6th cruise in 6 years (Jun\u2013Jul)",
+        "milestone": "6th cruise in 6 years",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3848,7 +3848,7 @@
       {
         "id": 131,
         "year": 2018,
-        "milestone": "Sisters turned 16 \u2014 Six Flags Great Adventure (Aug 27)",
+        "milestone": "Sisters turned 16 — Six Flags Great Adventure (Aug 27)",
         "category": "family",
         "vader_compound": 0.7506,
         "sentiment_adjusted": 0.5835333333333333,
@@ -3908,7 +3908,7 @@
       {
         "id": 135,
         "year": 2018,
-        "milestone": "Fever 100.3 on NYE (Dec 31)",
+        "milestone": "Fever 100.3 on NYE",
         "category": "health",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -3923,7 +3923,7 @@
       {
         "id": 136,
         "year": 2019,
-        "milestone": "Australia & New Zealand \u2014 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
+        "milestone": "Australia & New Zealand — 'the best, the longest, and the greatest' (19 days, Jan 12-31)",
         "category": "travel",
         "vader_compound": 0.8555,
         "sentiment_adjusted": 0.6185,
@@ -3953,7 +3953,7 @@
       {
         "id": 138,
         "year": 2019,
-        "milestone": "Became Uncle John (Aug 23)",
+        "milestone": "Became Uncle John",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -4058,7 +4058,7 @@
       {
         "id": 145,
         "year": 2019,
-        "milestone": "35th birthday \u2014 'Halfway to 70' (Sep 25-27)",
+        "milestone": "35th birthday — 'Halfway to 70' (Sep 25-27)",
         "category": "social",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -4088,7 +4088,7 @@
       {
         "id": 147,
         "year": 2019,
-        "milestone": "Strep throat + kidney stone removal (Aug\u2013Sep)",
+        "milestone": "Strep throat + kidney stone removal",
         "category": "health",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -4193,7 +4193,7 @@
       {
         "id": 154,
         "year": 2020,
-        "milestone": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
+        "milestone": "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
         "category": "health",
         "vader_compound": 0.5267,
         "sentiment_adjusted": 0.5089,
@@ -4223,7 +4223,7 @@
       {
         "id": 156,
         "year": 2020,
-        "milestone": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
+        "milestone": "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
         "category": "sports",
         "vader_compound": 0.4215,
         "sentiment_adjusted": 0.47383333333333333,
@@ -4238,7 +4238,7 @@
       {
         "id": 157,
         "year": 2020,
-        "milestone": "Grace & Megan graduate high school (Jun)",
+        "milestone": "Grace & Megan graduate high school",
         "category": "family",
         "vader_compound": 0.4215,
         "sentiment_adjusted": 0.47383333333333333,
@@ -4298,7 +4298,7 @@
       {
         "id": 161,
         "year": 2020,
-        "milestone": "Turned 36 (Sep 27) \u2014 skydive + birthday combined",
+        "milestone": "Turned 36 (Sep 27) — skydive + birthday combined",
         "category": "sports",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -4742,7 +4742,7 @@
       {
         "id": 162,
         "year": 2021,
-        "milestone": "Year rated 9.8/10 (Dec)",
+        "milestone": "Year rated 9.8/10",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -4802,7 +4802,7 @@
       {
         "id": 166,
         "year": 2021,
-        "milestone": "25th consecutive Survivor Series \u2014 91st WWE event (Nov 21)",
+        "milestone": "25th consecutive Survivor Series — 91st WWE event",
         "category": "wwe",
         "vader_compound": 0.3612,
         "sentiment_adjusted": 0.4537333333333333,
@@ -4817,7 +4817,7 @@
       {
         "id": 167,
         "year": 2021,
-        "milestone": "Jumped from Stratosphere in Las Vegas (Mar)",
+        "milestone": "Jumped from Stratosphere in Las Vegas",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -4892,7 +4892,7 @@
       {
         "id": 172,
         "year": 2021,
-        "milestone": "Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos) (Mar 16\u201320)",
+        "milestone": "Grand Canyon/Vegas/Utah/Colorado/Boston trip (1,000+ photos)",
         "category": "travel",
         "vader_compound": 0.4588,
         "sentiment_adjusted": 0.4862666666666667,
@@ -4982,7 +4982,7 @@
       {
         "id": 222,
         "year": 2021,
-        "milestone": "Arizona trip: Grand Canyon, Sedona, Flagstaff (Mar)",
+        "milestone": "Arizona trip: Grand Canyon, Sedona, Flagstaff",
         "category": "travel",
         "vader_compound": 0.4588,
         "sentiment_adjusted": 0.4862666666666667,
@@ -5057,7 +5057,7 @@
       {
         "id": 180,
         "year": 2022,
-        "milestone": "Rangers playoff run (triple-OT game at MSG) (May\u2013Jun)",
+        "milestone": "Rangers playoff run (triple-OT game at MSG)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5072,7 +5072,7 @@
       {
         "id": 181,
         "year": 2022,
-        "milestone": "Megan's Brookdale graduation (May)",
+        "milestone": "Megan's Brookdale graduation",
         "category": "family",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5087,7 +5087,7 @@
       {
         "id": 182,
         "year": 2022,
-        "milestone": "California/Oregon vacation (Golden Gate, Redwoods, Portland) (summer)",
+        "milestone": "California/Oregon vacation (Golden Gate, Redwoods, Portland)",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5102,7 +5102,7 @@
       {
         "id": 183,
         "year": 2022,
-        "milestone": "Five Boro Bike Tour (40 miles) (May)",
+        "milestone": "Five Boro Bike Tour (40 miles)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5117,7 +5117,7 @@
       {
         "id": 184,
         "year": 2022,
-        "milestone": "PSU White Out football weekend (Oct)",
+        "milestone": "PSU White Out football weekend",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5147,7 +5147,7 @@
       {
         "id": 186,
         "year": 2022,
-        "milestone": "ECD FallFest (Nov)",
+        "milestone": "ECD FallFest",
         "category": "ecd",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5192,7 +5192,7 @@
       {
         "id": 189,
         "year": 2022,
-        "milestone": "Undertaker inducted into Hall of Fame (Apr 1)",
+        "milestone": "Undertaker inducted into Hall of Fame",
         "category": "wwe",
         "vader_compound": 0.4404,
         "sentiment_adjusted": 0.4801333333333333,
@@ -5207,7 +5207,7 @@
       {
         "id": 217,
         "year": 2022,
-        "milestone": "Hunter Mountain NY ski trip (winter) (Jan\u2013Feb)",
+        "milestone": "Hunter Mountain NY ski trip (winter)",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5237,7 +5237,7 @@
       {
         "id": 219,
         "year": 2022,
-        "milestone": "Yankees game attended (summer)",
+        "milestone": "Yankees game attended",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5252,7 +5252,7 @@
       {
         "id": 190,
         "year": 2023,
-        "milestone": "Super Bowl LVII in Phoenix \u2014 'most spectacular day I've ever experienced' (Feb 12)",
+        "milestone": "Super Bowl LVII in Phoenix — 'most spectacular day I've ever experienced'",
         "category": "entertainment",
         "vader_compound": 0.5994,
         "sentiment_adjusted": 0.5331333333333333,
@@ -5282,7 +5282,7 @@
       {
         "id": 192,
         "year": 2023,
-        "milestone": "15-year anniversary of 'personal liberation day' (fall)",
+        "milestone": "15-year anniversary of 'personal liberation day'",
         "category": "relationship",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5327,7 +5327,7 @@
       {
         "id": 221,
         "year": 2023,
-        "milestone": "Six Flags Great Adventure visits (multiple) (summer)",
+        "milestone": "Six Flags Great Adventure visits (multiple)",
         "category": "other",
         "vader_compound": 0.7506,
         "sentiment_adjusted": 0.5835333333333333,
@@ -5342,7 +5342,7 @@
       {
         "id": 194,
         "year": 2024,
-        "milestone": "Spain trip (Lisbon, Madrid) (spring)",
+        "milestone": "Spain trip (Lisbon, Madrid)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5357,7 +5357,7 @@
       {
         "id": 195,
         "year": 2024,
-        "milestone": "Norway cruise (Alesund, Akureyri, Iceland Sky Lagoon) (summer)",
+        "milestone": "Norway cruise (Alesund, Akureyri, Iceland Sky Lagoon)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5402,7 +5402,7 @@
       {
         "id": 198,
         "year": 2024,
-        "milestone": "30 blue crabs caught (personal best) (summer)",
+        "milestone": "30 blue crabs caught (personal best)",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5477,7 +5477,7 @@
       {
         "id": 203,
         "year": 2024,
-        "milestone": "Fenwick Island/Delaware trip (summer)",
+        "milestone": "Fenwick Island/Delaware trip",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5522,7 +5522,7 @@
       {
         "id": 206,
         "year": 2025,
-        "milestone": "4,000-mile Midwest road trip (16 states: Rushmore, Devils Tower, Gateway Arch, Badlands) (Jul)",
+        "milestone": "4,000-mile Midwest road trip (16 states: Rushmore, Devils Tower, Gateway Arch, Badlands)",
         "category": "travel",
         "vader_compound": -0.5719,
         "sentiment_adjusted": 0.14270000000000002,
@@ -5552,7 +5552,7 @@
       {
         "id": 208,
         "year": 2025,
-        "milestone": "20th Anniversary celebration (Sep 27)",
+        "milestone": "20th Anniversary celebration",
         "category": "relationship",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5567,7 +5567,7 @@
       {
         "id": 209,
         "year": 2025,
-        "milestone": "ECD Bowl Weekend (57 people, $1,700+ raised) (Feb 8)",
+        "milestone": "ECD Bowl Weekend (57 people, $1,700+ raised)",
         "category": "ecd",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5582,7 +5582,7 @@
       {
         "id": 210,
         "year": 2025,
-        "milestone": "Five Boro Bike Tour medal finish (May)",
+        "milestone": "Five Boro Bike Tour medal finish",
         "category": "sports",
         "vader_compound": 0.4767,
         "sentiment_adjusted": 0.49223333333333336,
@@ -5627,7 +5627,7 @@
       {
         "id": 214,
         "year": 2025,
-        "milestone": "Anniversary XX celebration \u2014 20-year Timeline milestone (Sep 27)",
+        "milestone": "Anniversary XX celebration — 20-year Timeline milestone (Sep 27)",
         "category": "other",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5672,7 +5672,7 @@
       {
         "id": 211,
         "year": 2026,
-        "milestone": "Japan trip (booked \u2014 Tokyo bound)",
+        "milestone": "Japan trip (booked — Tokyo bound)",
         "category": "travel",
         "vader_compound": 0.0,
         "sentiment_adjusted": 0.3333333333333333,
@@ -5831,7 +5831,7 @@
         "year": 2025,
         "title": "Executive Director",
         "employer": "Sunrise of Jackson",
-        "milestone": "Passed NJ certification exam \u2014 the top job",
+        "milestone": "Passed NJ certification exam — the top job",
         "career_level": 5,
         "vader_compound": 0.2023,
         "vader_pos": 0.205

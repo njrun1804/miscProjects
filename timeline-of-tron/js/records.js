@@ -15,7 +15,8 @@ export async function initRecords() {
         'entertainment.json',
         'year_intensity_breakdown.json',
         'ecd_match_results.json',
-        'expanded_comebacks.json'
+        'expanded_comebacks.json',
+        'year_similarity.json'
     ]);
 
     renderObsessionIndex(data.epic_numbers);
@@ -25,6 +26,7 @@ export async function initRecords() {
     renderStreakStories(data.streaks);
     renderIntensityChart(data.year_intensity_breakdown);
     renderComebacks(data.expanded_comebacks);
+    renderYearEchoes(data.year_similarity);
     renderEntertainment(data.entertainment);
     renderRecordWall(data.fun_facts);
 }
@@ -65,6 +67,7 @@ function renderSportsGauges(sports) {
     // Group flat stat rows by sport name
     const grouped = {};
     sportsData.forEach(row => {
+        if (!row || !row.sport) return;
         if (!grouped[row.sport]) grouped[row.sport] = {};
         if (row.stat_type === 'wins') grouped[row.sport].wins = parseInt(row.stat_value) || 0;
         if (row.stat_type === 'losses') grouped[row.sport].losses = parseInt(row.stat_value) || 0;
@@ -147,6 +150,7 @@ function renderAthleticArchives(sports) {
     // Group by sport, collect stories/notes
     const grouped = {};
     sportsData.forEach(row => {
+        if (!row || !row.sport) return;
         if (!grouped[row.sport]) grouped[row.sport] = { stats: {}, notes: [], years: [] };
         if (row.stat_type === 'note' && (row.note || row.stat_value)) {
             const text = row.note || row.stat_value;
@@ -543,6 +547,50 @@ function renderComebacks(comebacks) {
 /* ============================
    ENTERTAINMENT
    ============================ */
+/* ============================
+   YEARS THAT ECHO
+   ============================ */
+function renderYearEchoes(similarities) {
+    const grid = document.querySelector('.echo-grid');
+    if (!grid) return;
+
+    const items = Array.isArray(similarities) ? similarities : [];
+    if (!items.length) return;
+
+    // Show the most interesting echoes: high similarity + large year gap
+    // Score = similarity * log(gap) to favor distant rhymes
+    const scored = items
+        .filter(s => s.similarity > 0.08)
+        .map(s => {
+            const gap = Math.abs(s.year2 - s.year1);
+            return { ...s, gap, score: s.similarity * Math.log2(1 + gap) };
+        })
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 8);
+
+    grid.innerHTML = scored.map(s => {
+        const pct = Math.round(s.similarity * 100);
+        const barWidth = Math.round((s.similarity / 0.25) * 100); // 25% is max
+
+        return `
+            <div class="echo-card">
+                <div class="echo-card__years">
+                    <span class="echo-card__year">${s.year1}</span>
+                    <span class="echo-card__connector">
+                        <span class="echo-card__gap">${s.gap} yrs</span>
+                        <span class="echo-card__line"></span>
+                    </span>
+                    <span class="echo-card__year">${s.year2}</span>
+                </div>
+                <div class="echo-card__bar">
+                    <div class="echo-card__bar-fill" style="width:${barWidth}%"></div>
+                </div>
+                <div class="echo-card__similarity">${pct}% similar</div>
+            </div>
+        `;
+    }).join('');
+}
+
 function renderEntertainment(entertainment) {
     const grid = document.querySelector('.entertainment-grid');
     if (!grid) return;

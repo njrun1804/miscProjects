@@ -1488,6 +1488,18 @@
     "influence_period": ""
   },
   {
+    "id": 131,
+    "name": "Kevin Megill",
+    "category": "ecd_player",
+    "relation": "ECD Player",
+    "connection": "Dodgeball player, 691 mentions across 178 posts",
+    "importance_score": 4.0,
+    "peak_year": 2008,
+    "active_years": "",
+    "dominant_topic": "",
+    "influence_period": ""
+  },
+  {
     "id": 132,
     "name": "Mike Edwards",
     "category": "ecd_player",
@@ -1819,6 +1831,18 @@
     "connection": "Dodgeball player, 20 mentions across 14 posts",
     "importance_score": 0.0,
     "peak_year": null,
+    "active_years": "",
+    "dominant_topic": "",
+    "influence_period": ""
+  },
+  {
+    "id": 160,
+    "name": "Julia Dennebaum",
+    "category": "ecd_player",
+    "relation": "ECD Player",
+    "connection": "Dodgeball player, 16 mentions across 6 posts",
+    "importance_score": 0.0,
+    "peak_year": 2019,
     "active_years": "",
     "dominant_topic": "",
     "influence_period": ""

@@ -61,7 +61,8 @@ export async function initVault() {
         'life_chapters.json',
         'turning_points_detailed.json',
         'insights_full.json',
-        'people_profiles.json'
+        'people_profiles.json',
+        'writing_themes_by_year.json'
     ]);
 
     const quotes = data.quotes || [];
@@ -72,13 +73,14 @@ export async function initVault() {
     const turningPoints = data.turning_points_detailed || [];
     const insights = data.insights_full || [];
     const profiles = data.people_profiles || [];
+    const writingThemes = data.writing_themes_by_year || {};
 
     renderFeaturedQuote(quotes);
     initSearch(quotes);
     renderFilters(quotes);
     renderQuoteWall(quotes, keywords, chapters, turningPoints);
     renderPairs(quotes);
-    renderEvolution(evolution);
+    renderEvolution(evolution, writingThemes);
     renderPeople(quotes, profiles);
     renderInsights(insights);
     renderSoundtrack(songs);
@@ -404,7 +406,7 @@ function renderPairs(quotes) {
 
 // ── Voice Evolution ──
 
-function renderEvolution(evolution) {
+function renderEvolution(evolution, writingThemes) {
     const container = document.querySelector('.vault-evolution-timeline');
     if (!container) return;
 
@@ -415,11 +417,25 @@ function renderEvolution(evolution) {
     const maxWords = Math.max(...meaningful.map(e => e.total_words));
     const maxRange = Math.max(...meaningful.map(e => e.emotional_range || 0));
 
+    // Helper: extract top meaningful themes for a year
+    function getYearThemes(year) {
+        const yearThemes = writingThemes[String(year)];
+        if (!Array.isArray(yearThemes)) return [];
+        return yearThemes
+            .filter(t => t.theme && t.theme.length >= 4 && !/^\d+$/.test(t.theme) && t.tfidf_score > 0.12)
+            .slice(0, 3)
+            .map(t => t.theme);
+    }
+
     container.innerHTML = meaningful.map(e => {
         const note = VOICE_NOTES[e.year] || '';
         const wordsWidth = Math.round((e.total_words / maxWords) * 100);
         const rangeWidth = Math.round(((e.emotional_range || 0) / maxRange) * 100);
         const richness = Math.round((e.vocabulary_richness || 0) * 100);
+        const themes = getYearThemes(e.year);
+        const themeTags = themes.length
+            ? `<div class="vault-evo-themes">${themes.map(t => `<span class="vault-evo-theme">${t}</span>`).join('')}</div>`
+            : '';
 
         return `
             <div class="vault-evo-row${note ? ' vault-evo-row--notable' : ''}">
@@ -441,6 +457,7 @@ function renderEvolution(evolution) {
                         <span class="vault-evo-value">${richness}%</span>
                     </div>
                 </div>
+                ${themeTags}
                 ${note ? `<div class="vault-evo-note">${note}</div>` : ''}
             </div>
         `;

@@ -1,43 +1,43 @@
 [
   {
     "year": 2005,
-    "events": 21,
-    "avg_attendance": 83.83333333333333,
-    "peak_attendance": 180
+    "events": 19,
+    "avg_attendance": 64.6,
+    "peak_attendance": 147
   },
   {
     "year": 2006,
-    "events": 43,
-    "avg_attendance": 36.27272727272727,
+    "events": 51,
+    "avg_attendance": 51.9375,
     "peak_attendance": 190
   },
   {
     "year": 2007,
-    "events": 55,
-    "avg_attendance": 34.63157894736842,
-    "peak_attendance": 180
+    "events": 51,
+    "avg_attendance": 26.68421052631579,
+    "peak_attendance": 51
   },
   {
     "year": 2008,
-    "events": 55,
-    "avg_attendance": 25.0,
+    "events": 50,
+    "avg_attendance": 25.4375,
     "peak_attendance": 39
   },
   {
     "year": 2009,
-    "events": 2,
-    "avg_attendance": 36.5,
+    "events": 1,
+    "avg_attendance": 40.0,
     "peak_attendance": 40
   },
   {
     "year": 2010,
-    "events": 5,
+    "events": 7,
     "avg_attendance": 37.0,
     "peak_attendance": 41
   },
   {
     "year": 2011,
-    "events": 4,
+    "events": 7,
     "avg_attendance": 24.0,
     "peak_attendance": 24
   },
@@ -49,7 +49,7 @@
   },
   {
     "year": 2013,
-    "events": 7,
+    "events": 8,
     "avg_attendance": null,
     "peak_attendance": null
   },
@@ -61,7 +61,7 @@
   },
   {
     "year": 2015,
-    "events": 5,
+    "events": 3,
     "avg_attendance": 25.0,
     "peak_attendance": 29
   },

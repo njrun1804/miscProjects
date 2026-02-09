@@ -66,7 +66,7 @@
   },
   {
     "year": 2010,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 20.35,
     "avg_word_count": 8.9,
     "vocabulary_richness": 0.728,
     "avg_sentence_length": 41.0,
@@ -79,7 +79,7 @@
   },
   {
     "year": 2011,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 51.5,
     "avg_word_count": 7.6,
     "vocabulary_richness": 0.814,
     "avg_sentence_length": 127.0,
@@ -92,7 +92,7 @@
   },
   {
     "year": 2012,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 30.64,
     "avg_word_count": 7.1,
     "vocabulary_richness": 0.9155,
     "avg_sentence_length": 69.0,
@@ -131,7 +131,7 @@
   },
   {
     "year": 2015,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 22.9,
     "avg_word_count": 10.0,
     "vocabulary_richness": 0.85,
     "avg_sentence_length": 58.0,
@@ -222,7 +222,7 @@
   },
   {
     "year": 2022,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 34.32,
     "avg_word_count": 4.9,
     "vocabulary_richness": 0.9459,
     "avg_sentence_length": 74.0,
@@ -235,7 +235,7 @@
   },
   {
     "year": 2023,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 27.96,
     "avg_word_count": 8.3,
     "vocabulary_richness": 0.8966,
     "avg_sentence_length": 57.0,
@@ -248,7 +248,7 @@
   },
   {
     "year": 2024,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 28.65,
     "avg_word_count": 5.3,
     "vocabulary_richness": 0.9531,
     "avg_sentence_length": 63.0,
@@ -261,7 +261,7 @@
   },
   {
     "year": 2025,
-    "avg_grade_level": 20.0,
+    "avg_grade_level": 35.05,
     "avg_word_count": 6.4,
     "vocabulary_richness": 0.9143,
     "avg_sentence_length": 68.0,

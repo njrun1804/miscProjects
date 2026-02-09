@@ -4,14 +4,14 @@
     "event_count": 79,
     "avg_attendance": 48.391304347826086,
     "start_year": 2005,
-    "end_year": 2009
+    "end_year": 2013
   },
   {
     "era": "Golden Age",
     "event_count": 20,
     "avg_attendance": 27.375,
     "start_year": 2005,
-    "end_year": 2013
+    "end_year": 2011
   },
   {
     "era": "Growth Era",
@@ -25,7 +25,7 @@
     "event_count": 12,
     "avg_attendance": 38.0,
     "start_year": 2008,
-    "end_year": 2015
+    "end_year": 2013
   },
   {
     "era": "Legacy Era",

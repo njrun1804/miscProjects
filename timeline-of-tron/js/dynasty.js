@@ -104,7 +104,7 @@ function renderWWETimeline(events) {
     const sorted = [...events].sort((a, b) => (a.year || 0) - (b.year || 0));
 
     container.innerHTML = sorted.map(e => {
-        const hasCount = e.cumulative_events;
+        const countVal = e.cumulative_events;
         return `
             <div class="wwe-event">
                 <div class="wwe-event__year">${e.year}</div>
@@ -112,7 +112,7 @@ function renderWWETimeline(events) {
                     <div class="wwe-event__label">${e.label}</div>
                     ${e.note ? `<div class="wwe-event__note">${e.note}</div>` : ''}
                 </div>
-                ${hasCount ? `<div class="wwe-event__count">#${hasCount}</div>` : ''}
+                ${countVal != null ? `<div class="wwe-event__count">#${countVal}</div>` : ''}
             </div>
         `;
     }).join('');

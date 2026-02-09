@@ -71,7 +71,7 @@
   },
   {
     "filename": "ecd_attendance_trends.json",
-    "size_bytes": 2124,
+    "size_bytes": 2103,
     "record_count": 21
   },
   {
@@ -106,12 +106,12 @@
   },
   {
     "filename": "ecd_events.json",
-    "size_bytes": 73594,
+    "size_bytes": 72546,
     "record_count": 222
   },
   {
     "filename": "ecd_events_full.json",
-    "size_bytes": 73594,
+    "size_bytes": 72546,
     "record_count": 222
   },
   {
@@ -151,7 +151,7 @@
   },
   {
     "filename": "ecd_players_full.json",
-    "size_bytes": 41680,
+    "size_bytes": 42042,
     "record_count": 128
   },
   {
@@ -191,7 +191,7 @@
   },
   {
     "filename": "ecd_stats_dashboard.json",
-    "size_bytes": 19007,
+    "size_bytes": 18987,
     "record_count": 1
   },
   {
@@ -201,7 +201,7 @@
   },
   {
     "filename": "ecd_timeline.json",
-    "size_bytes": 73594,
+    "size_bytes": 72546,
     "record_count": 222
   },
   {
@@ -386,18 +386,18 @@
   },
   {
     "filename": "relationship_constellation.json",
-    "size_bytes": 35238,
+    "size_bytes": 34278,
     "record_count": 1
   },
   {
     "filename": "relationship_graph.json",
-    "size_bytes": 16159,
-    "record_count": 74
+    "size_bytes": 14851,
+    "record_count": 68
   },
   {
     "filename": "relationship_graph_full.json",
-    "size_bytes": 16159,
-    "record_count": 74
+    "size_bytes": 14851,
+    "record_count": 68
   },
   {
     "filename": "schema_info.json",
@@ -456,7 +456,7 @@
   },
   {
     "filename": "topic_person_timeline.json",
-    "size_bytes": 311686,
+    "size_bytes": 309290,
     "record_count": 1232
   },
   {

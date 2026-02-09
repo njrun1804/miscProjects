@@ -266,6 +266,13 @@
     "peak_year": 2020
   },
   {
+    "id": 131,
+    "name": "Kevin Megill",
+    "category": "ecd_player",
+    "importance_score": 4.0,
+    "peak_year": 2008
+  },
+  {
     "id": 26,
     "name": "Walaa",
     "category": "other",
@@ -1062,6 +1069,13 @@
     "category": "ecd_player",
     "importance_score": 0.0,
     "peak_year": null
+  },
+  {
+    "id": 160,
+    "name": "Julia Dennebaum",
+    "category": "ecd_player",
+    "importance_score": 0.0,
+    "peak_year": 2019
   },
   {
     "id": 161,

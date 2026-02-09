@@ -66,14 +66,14 @@
         "id": 35,
         "person_name": "Ma",
         "year": 2009,
-        "event_description": "WrestleMania 25 in Houston (5th WM) \u2014 72,744 attendance",
+        "event_description": "WrestleMania 25 in Houston (5th WM) — 72,744 attendance",
         "event_type": "wwe"
       },
       {
         "id": 36,
         "person_name": "Ma",
         "year": 2009,
-        "event_description": "SkyDive I at 10,000 feet (Aug 16) \u2014 'maybe the happiest 24-span of my life'",
+        "event_description": "SkyDive I at 10,000 feet (Aug 16) — 'maybe the happiest 24-span of my life'",
         "event_type": "social"
       },
       {
@@ -178,21 +178,21 @@
         "id": 50,
         "person_name": "Ma",
         "year": 2013,
-        "event_description": "Maryland wedding \u2014 gave speech, danced 180 minutes (Nov 7-9)",
+        "event_description": "Maryland wedding — gave speech, danced 180 minutes (Nov 7-9)",
         "event_type": "social"
       },
       {
         "id": 51,
         "person_name": "Ma",
         "year": 2013,
-        "event_description": "Pilates Round 1 \u2014 only male participant",
+        "event_description": "Pilates Round 1 — only male participant",
         "event_type": "social"
       },
       {
         "id": 52,
         "person_name": "Ma",
         "year": 2014,
-        "event_description": "Norwegian Epic cruise II \u2014 Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
+        "event_description": "Norwegian Epic cruise II — Jamaica, Grand Cayman, Cozumel (Dec 6-15)",
         "event_type": "travel"
       },
       {
@@ -220,7 +220,7 @@
         "id": 56,
         "person_name": "Ma",
         "year": 2016,
-        "event_description": "WrestleMania 32 (100,000+) \u2014 'greatest WWE experience of all-time'",
+        "event_description": "WrestleMania 32 (100,000+) — 'greatest WWE experience of all-time'",
         "event_type": "wwe"
       },
       {
@@ -255,14 +255,14 @@
         "id": 61,
         "person_name": "Ma",
         "year": 2017,
-        "event_description": "Broken left pinky \u2014 volleyball career paused (Mar 26)",
+        "event_description": "Broken left pinky — volleyball career paused (Mar 26)",
         "event_type": "social"
       },
       {
         "id": 62,
         "person_name": "Ma",
         "year": 2018,
-        "event_description": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "event_description": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
         "event_type": "travel"
       },
       {
@@ -318,7 +318,7 @@
         "id": 70,
         "person_name": "Ma",
         "year": 2020,
-        "event_description": "Medical quarantine (Mar 26 \u2013 Apr 16) + muscle gain comeback",
+        "event_description": "Medical quarantine (Mar 26 – Apr 16) + muscle gain comeback",
         "event_type": "social"
       },
       {
@@ -332,7 +332,7 @@
         "id": 75,
         "person_name": "Ma",
         "year": 2020,
-        "event_description": "4th skydive (Oct 3, mother witnessed) \u2014 'easiest of the freefalls'",
+        "event_description": "4th skydive (Oct 3, mother witnessed) — 'easiest of the freefalls'",
         "event_type": "social"
       },
       {
@@ -402,7 +402,7 @@
         "person_a": "Ma",
         "person_b": "Terra Bergquist",
         "year": 2018,
-        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
         "co_occurrence_count": 1
       },
       {
@@ -652,7 +652,7 @@
         "id": 7,
         "person_name": "Rob",
         "year": 2013,
-        "event_description": "Norwegian Breakaway \u2014 first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
+        "event_description": "Norwegian Breakaway — first cruise ever, first with RK (Sep 8-15, FIVE star rating)",
         "event_type": "travel"
       },
       {
@@ -1008,7 +1008,7 @@
         "person_a": "Diana DiBuccio",
         "person_b": "Valerie Winston (ValPal)",
         "year": 2014,
-        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
         "co_occurrence_count": 2
       }
     ]
@@ -1813,7 +1813,7 @@
         "person_a": "Diana DiBuccio",
         "person_b": "Valerie Winston (ValPal)",
         "year": 2014,
-        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th \u2014 trend of 30s",
+        "context": "Diana's 30th, Valerie's 30th, Pam's 30th, author's 30th — trend of 30s",
         "co_occurrence_count": 2
       }
     ]
@@ -1932,6 +1932,23 @@
       "active_years": "2020-2020",
       "dominant_topic": "Topic 5: dec, 15, 18, 12",
       "influence_period": "Era of Intense Activity (2020-2020)"
+    },
+    "highlights": [],
+    "timeline_events": [],
+    "co_occurrences": []
+  },
+  {
+    "person": {
+      "id": 131,
+      "name": "Kevin Megill",
+      "category": "ecd_player",
+      "relation": "ECD Player",
+      "connection": "Dodgeball player, 691 mentions across 178 posts",
+      "importance_score": 4.0,
+      "peak_year": 2008,
+      "active_years": "",
+      "dominant_topic": "",
+      "influence_period": ""
     },
     "highlights": [],
     "timeline_events": [],
@@ -2074,7 +2091,7 @@
         "person_a": "Ma",
         "person_b": "Terra Bergquist",
         "year": 2018,
-        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia \u2014 5 countries, 2 weeks)",
+        "context": "Mediterranean cruise (Slovenia, Italy, Greece, Malta, Croatia — 5 countries, 2 weeks)",
         "co_occurrence_count": 1
       }
     ]
@@ -2145,7 +2162,7 @@
       "name": "Mike Krott",
       "category": "other",
       "relation": null,
-      "connection": "'Gotta Want It!' \u2014 support staff; Super Bowl host; uplifting conversations; London Porter Stout",
+      "connection": "'Gotta Want It!' — support staff; Super Bowl host; uplifting conversations; London Porter Stout",
       "importance_score": 2.0,
       "peak_year": 2014,
       "active_years": "2014-2014",
@@ -2320,7 +2337,7 @@
       "name": "Angela Hibbert",
       "category": "other",
       "relation": null,
-      "connection": "Badminton partner \u2014 18,000 seconds (5 hours)",
+      "connection": "Badminton partner — 18,000 seconds (5 hours)",
       "importance_score": 0.0,
       "peak_year": null,
       "active_years": "",
@@ -2779,7 +2796,7 @@
       "name": "RK (Rob Knott)",
       "category": "other",
       "relation": null,
-      "connection": "Partner \u2014 see partner section for full details",
+      "connection": "Partner — see partner section for full details",
       "importance_score": 0.0,
       "peak_year": null,
       "active_years": "",
@@ -3306,7 +3323,7 @@
       "name": "Aimee",
       "category": "other",
       "relation": null,
-      "connection": "Confronted by John \u2014 'no one had the brass to do it'",
+      "connection": "Confronted by John — 'no one had the brass to do it'",
       "importance_score": 0.0,
       "peak_year": null,
       "active_years": "",
@@ -3972,6 +3989,23 @@
       "connection": "Dodgeball player, 20 mentions across 14 posts",
       "importance_score": 0.0,
       "peak_year": null,
+      "active_years": "",
+      "dominant_topic": "",
+      "influence_period": ""
+    },
+    "highlights": [],
+    "timeline_events": [],
+    "co_occurrences": []
+  },
+  {
+    "person": {
+      "id": 160,
+      "name": "Julia Dennebaum",
+      "category": "ecd_player",
+      "relation": "ECD Player",
+      "connection": "Dodgeball player, 16 mentions across 6 posts",
+      "importance_score": 0.0,
+      "peak_year": 2019,
       "active_years": "",
       "dominant_topic": "",
       "influence_period": ""

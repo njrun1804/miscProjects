@@ -267,6 +267,13 @@
       "importance_score": 4.0
     },
     {
+      "id": 131,
+      "name": "Kevin Megill",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 4.0
+    },
+    {
       "id": 26,
       "name": "Walaa",
       "category": "other",
@@ -1065,6 +1072,13 @@
       "importance_score": 0.0
     },
     {
+      "id": 160,
+      "name": "Julia Dennebaum",
+      "category": "ecd_player",
+      "first_year": 0,
+      "importance_score": 0.0
+    },
+    {
       "id": 161,
       "name": "Ryan Rafferty",
       "category": "ecd_player",
@@ -1305,10 +1319,10 @@
       "years_span": 1
     },
     {
-      "source": "Rob",
+      "source": "John Tronolone",
       "target": "John Tronolone",
       "weight": 1,
-      "relationship_type": "other",
+      "relationship_type": "inner_circle",
       "years_span": 1
     },
     {
@@ -1557,6 +1571,13 @@
       "years_span": 1
     },
     {
+      "source": "Juan Londono (Muffin Man)",
+      "target": "Juan Londono (Muffin Man)",
+      "weight": 1,
+      "relationship_type": "co-occurrence",
+      "years_span": 1
+    },
+    {
       "source": "Steve Pham",
       "target": "Steve and Stacey",
       "weight": 1,
@@ -1564,20 +1585,6 @@
       "years_span": 1
     },
     {
-      "source": "Juan Londono (Muffin Man)",
-      "target": "Steve and Stacey",
-      "weight": 1,
-      "relationship_type": "co-occurrence",
-      "years_span": 1
-    },
-    {
-      "source": "Juan Londono (Muffin Man)",
-      "target": "Steve Pham",
-      "weight": 1,
-      "relationship_type": "co-occurrence",
-      "years_span": 1
-    },
-    {
       "source": "Phil Campanella",
       "target": "Rob",
       "weight": 1,
@@ -1592,21 +1599,14 @@
       "years_span": 1
     },
     {
-      "source": "Phil Campanella",
-      "target": "Lauren Stopa",
-      "weight": 1,
-      "relationship_type": "co-occurrence",
-      "years_span": 1
-    },
-    {
-      "source": "Phil Campanella",
+      "source": "Rob",
       "target": "Rob",
       "weight": 1,
       "relationship_type": "co-occurrence",
       "years_span": 1
     },
     {
-      "source": "Rob",
+      "source": "Phil Campanella",
       "target": "Lauren Stopa",
       "weight": 1,
       "relationship_type": "co-occurrence",
@@ -1620,14 +1620,7 @@
       "years_span": 1
     },
     {
-      "source": "Ma",
-      "target": "Ryan Letsche",
-      "weight": 1,
-      "relationship_type": "co-occurrence",
-      "years_span": 1
-    },
-    {
-      "source": "Ma",
+      "source": "Ryan Letsche",
       "target": "Ryan Letsche",
       "weight": 1,
       "relationship_type": "co-occurrence",

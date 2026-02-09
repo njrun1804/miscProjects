@@ -12,8 +12,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2005-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 5,
+    "active_years": "2005,2006,2007,2008,2010"
   },
   {
     "id": 2,
@@ -28,8 +28,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2007,2008"
   },
   {
     "id": 3,
@@ -60,8 +60,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2007,2008"
   },
   {
     "id": 5,
@@ -76,8 +76,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2006-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2006,2010"
   },
   {
     "id": 6,
@@ -92,8 +92,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2006-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2006,2008"
   },
   {
     "id": 7,
@@ -108,8 +108,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2007,2010"
   },
   {
     "id": 8,
@@ -124,8 +124,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2006-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2006,2007,2008"
   },
   {
     "id": 9,
@@ -140,8 +140,8 @@
     "peak_year": 2010,
     "is_hof": 0,
     "era_active": "2006-2016",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 5,
+    "active_years": "2006,2007,2008,2010,2016"
   },
   {
     "id": 10,
@@ -172,8 +172,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2006-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 4,
+    "active_years": "2006,2007,2008,2010"
   },
   {
     "id": 12,
@@ -188,8 +188,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2005-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2005,2007,2008"
   },
   {
     "id": 13,
@@ -204,8 +204,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2005-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 4,
+    "active_years": "2005,2006,2007,2008"
   },
   {
     "id": 14,
@@ -220,8 +220,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2006-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 4,
+    "active_years": "2006,2007,2008,2010"
   },
   {
     "id": 15,
@@ -236,8 +236,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2007,2009,2010"
   },
   {
     "id": 16,
@@ -252,8 +252,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2007,2010"
   },
   {
     "id": 17,
@@ -268,8 +268,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2007-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2007,2008"
   },
   {
     "id": 18,
@@ -300,8 +300,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2006-2011",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2006,2011"
   },
   {
     "id": 20,
@@ -316,8 +316,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2005-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2005,2008"
   },
   {
     "id": 21,
@@ -348,8 +348,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2012",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2007,2008,2012"
   },
   {
     "id": 23,
@@ -364,8 +364,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2005-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2005,2007,2008"
   },
   {
     "id": 24,
@@ -380,8 +380,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2005-2007",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2005,2006,2007"
   },
   {
     "id": 25,
@@ -412,8 +412,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2006-2006",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2006"
   },
   {
     "id": 27,
@@ -460,8 +460,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2008,2010"
   },
   {
     "id": 30,
@@ -476,8 +476,8 @@
     "peak_year": 2012,
     "is_hof": 0,
     "era_active": "2012-2012",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2012"
   },
   {
     "id": 31,
@@ -492,8 +492,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2007",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2007"
   },
   {
     "id": 32,
@@ -524,8 +524,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2006-2007",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2006,2007"
   },
   {
     "id": 34,
@@ -540,8 +540,8 @@
     "peak_year": 2005,
     "is_hof": 0,
     "era_active": "2005-2005",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2005"
   },
   {
     "id": 35,
@@ -556,8 +556,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   },
   {
     "id": 36,
@@ -588,8 +588,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   },
   {
     "id": 38,
@@ -652,8 +652,8 @@
     "peak_year": 2010,
     "is_hof": 0,
     "era_active": "2010-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2010"
   },
   {
     "id": 42,
@@ -684,8 +684,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2007",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2007"
   },
   {
     "id": 44,
@@ -700,8 +700,8 @@
     "peak_year": 2010,
     "is_hof": 0,
     "era_active": "2007-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2007,2008,2010"
   },
   {
     "id": 45,
@@ -780,8 +780,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2007-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2007,2008"
   },
   {
     "id": 50,
@@ -796,8 +796,8 @@
     "peak_year": 2005,
     "is_hof": 0,
     "era_active": "2005-2007",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2005,2006,2007"
   },
   {
     "id": 51,
@@ -812,8 +812,8 @@
     "peak_year": 2005,
     "is_hof": 0,
     "era_active": "2005-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 3,
+    "active_years": "2005,2007,2010"
   },
   {
     "id": 52,
@@ -828,8 +828,8 @@
     "peak_year": 2009,
     "is_hof": 0,
     "era_active": "2009-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2009,2010"
   },
   {
     "id": 53,
@@ -844,8 +844,8 @@
     "peak_year": 2005,
     "is_hof": 0,
     "era_active": "2005-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2005,2010"
   },
   {
     "id": 54,
@@ -892,8 +892,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2006-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 2,
+    "active_years": "2006,2010"
   },
   {
     "id": 57,
@@ -924,8 +924,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   },
   {
     "id": 59,
@@ -940,8 +940,8 @@
     "peak_year": 2007,
     "is_hof": 0,
     "era_active": "2007-2007",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2007"
   },
   {
     "id": 60,
@@ -956,8 +956,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2006-2006",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2006"
   },
   {
     "id": 61,
@@ -972,8 +972,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   },
   {
     "id": 62,
@@ -988,8 +988,8 @@
     "peak_year": 2010,
     "is_hof": 0,
     "era_active": "2010-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2010"
   },
   {
     "id": 63,
@@ -1052,8 +1052,8 @@
     "peak_year": 2006,
     "is_hof": 0,
     "era_active": "2006-2006",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2006"
   },
   {
     "id": 67,
@@ -1084,8 +1084,8 @@
     "peak_year": 2011,
     "is_hof": 0,
     "era_active": "2011-2011",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2011"
   },
   {
     "id": 69,
@@ -1100,8 +1100,8 @@
     "peak_year": 2010,
     "is_hof": 0,
     "era_active": "2010-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2010"
   },
   {
     "id": 70,
@@ -1180,8 +1180,8 @@
     "peak_year": 2010,
     "is_hof": 0,
     "era_active": "2010-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2010"
   },
   {
     "id": 75,
@@ -1196,8 +1196,8 @@
     "peak_year": 2005,
     "is_hof": 0,
     "era_active": "2005-2005",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2005"
   },
   {
     "id": 76,
@@ -1260,13 +1260,29 @@
     "peak_year": 2005,
     "is_hof": 0,
     "era_active": "2005-2005",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2005"
   },
   {
     "id": 80,
     "name": "Michael Butler",
     "total_mentions": 2,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
+    "id": 81,
+    "name": "Legend Kevin Megill",
+    "total_mentions": 1,
     "post_count": 1,
     "wins": 0,
     "losses": 0,
@@ -1296,6 +1312,22 @@
     "active_years": null
   },
   {
+    "id": 83,
+    "name": "Dan Spengeman's",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
     "id": 84,
     "name": "Jason Teitelbaum",
     "total_mentions": 1,
@@ -1308,12 +1340,28 @@
     "peak_year": 2010,
     "is_hof": 0,
     "era_active": "2010-2010",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2010"
   },
   {
     "id": 85,
     "name": "Kylie Casteling",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
+    "id": 86,
+    "name": "Justin Wolf's",
     "total_mentions": 1,
     "post_count": 1,
     "wins": 0,
@@ -1472,6 +1520,22 @@
     "active_years": null
   },
   {
+    "id": 96,
+    "name": "Ocean Road Park",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
     "id": 97,
     "name": "Jim Bulter",
     "total_mentions": 1,
@@ -1484,8 +1548,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   },
   {
     "id": 98,
@@ -1500,8 +1564,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   },
   {
     "id": 99,
@@ -1570,6 +1634,70 @@
   {
     "id": 103,
     "name": "Mark Enwistle",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
+    "id": 104,
+    "name": "Matt Brown It's",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
+    "id": 105,
+    "name": "Kevin Adams It's",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
+    "id": 106,
+    "name": "Chris Adams As",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
+    "id": 107,
+    "name": "Justin Pierce Yet",
     "total_mentions": 1,
     "post_count": 1,
     "wins": 0,
@@ -1760,6 +1888,38 @@
     "active_years": null
   },
   {
+    "id": 119,
+    "name": "Cobra Ki",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 1,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": 2007,
+    "last_year": 2007,
+    "peak_year": 2007,
+    "is_hof": 0,
+    "era_active": "2007-2007",
+    "player_years_count": 1,
+    "active_years": "2007"
+  },
+  {
+    "id": 120,
+    "name": "Strike Force",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 1,
+    "nicknames": "[]",
+    "first_year": 2007,
+    "last_year": 2007,
+    "peak_year": 2007,
+    "is_hof": 0,
+    "era_active": "2007-2007",
+    "player_years_count": 1,
+    "active_years": "2007"
+  },
+  {
     "id": 121,
     "name": "Wolf No",
     "total_mentions": 1,
@@ -1824,6 +1984,22 @@
     "active_years": null
   },
   {
+    "id": 125,
+    "name": "Joey Smalls's",
+    "total_mentions": 1,
+    "post_count": 1,
+    "wins": 0,
+    "losses": 0,
+    "nicknames": "[]",
+    "first_year": null,
+    "last_year": null,
+    "peak_year": null,
+    "is_hof": 0,
+    "era_active": null,
+    "player_years_count": 0,
+    "active_years": null
+  },
+  {
     "id": 126,
     "name": "Bob Cornero",
     "total_mentions": 1,
@@ -1836,8 +2012,8 @@
     "peak_year": 2016,
     "is_hof": 0,
     "era_active": "2016-2016",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2016"
   },
   {
     "id": 127,
@@ -1852,8 +2028,8 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   },
   {
     "id": 128,
@@ -1868,7 +2044,7 @@
     "peak_year": 2008,
     "is_hof": 0,
     "era_active": "2008-2008",
-    "player_years_count": 0,
-    "active_years": null
+    "player_years_count": 1,
+    "active_years": "2008"
   }
 ]
