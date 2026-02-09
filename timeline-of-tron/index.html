@@ -77,6 +77,13 @@
                 </a>
             </div>
         </section>
+
+        <!-- Friend Voices -->
+        <section class="lobby-voices">
+            <h2 class="lobby-voices-title">What They Said</h2>
+            <p class="lobby-voices-subtitle">Comments from the LiveJournal posts, 2007&ndash;2021</p>
+            <div class="voices-grid"></div>
+        </section>
     </main>
 
     <!-- LJ Footer (injected by nav.js) -->
@@ -86,6 +93,7 @@
     <script type="module">
         import { initNav } from './js/nav.js';
         import { checkRoom0Reveal } from './js/room0.js';
+        import { loadData } from './js/data-loader.js';
         import './js/search.js';
         import './js/seismograph.js';
 
@@ -98,6 +106,27 @@
 
         // Check if all 5 clues found — reveal Room 0 link
         checkRoom0Reveal();
+
+        // Friend voices from LJ comments
+        loadData('lj_comments.json').then(comments => {
+            const grid = document.querySelector('.voices-grid');
+            if (!grid || !comments || !comments.length) return;
+
+            const best = comments
+                .filter(c => c.excerpt && c.excerpt.length > 10 && c.commenter !== 'spam commenters' && c.commenter !== 'Anonymous')
+                .sort(() => Math.random() - 0.5)
+                .slice(0, 8);
+
+            grid.innerHTML = best.map(c => `
+                <div class="voice-card">
+                    <div class="voice-card__text">&ldquo;${c.excerpt}&rdquo;</div>
+                    <div class="voice-card__meta">
+                        <span class="voice-card__name">${c.commenter}</span>
+                        <span class="voice-card__year">${c.year || ''}</span>
+                    </div>
+                </div>
+            `).join('');
+        }).catch(() => {});
     </script>
 </body>
 </html>

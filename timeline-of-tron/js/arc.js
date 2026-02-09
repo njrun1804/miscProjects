@@ -83,11 +83,6 @@ function renderStages(stages) {
             </blockquote>
         ` : '';
 
-        // People
-        const peopleHTML = stage.people_active.slice(0, 8).map(p =>
-            `<span class="stage-person">${p}</span>`
-        ).join('');
-
         // Special callout for stage 4 (Tests, Allies — 2009-2011)
         let calloutHTML = '';
         if (i === 3) {
@@ -109,7 +104,6 @@ function renderStages(stages) {
                 <div class="stage-milestones">${milestonesHTML}</div>
                 ${turningPointsHTML ? `<div class="stage-turning-points">${turningPointsHTML}</div>` : ''}
                 ${quoteHTML}
-                <div class="stage-people">${peopleHTML}</div>
             </div>
         `;
 

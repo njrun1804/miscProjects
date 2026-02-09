@@ -78,19 +78,106 @@
     line-height: 1.6;
 }
 
-/* Recovery clock */
-.comeback-clock-section {
+/* Recovery Patterns */
+.comeback-patterns-section {
     margin-top: var(--space-xl);
-    text-align: center;
 }
 
-.comeback-clock-section h2 {
+.comeback-patterns-section h2 {
+    text-align: center;
     margin-bottom: var(--space-md);
 }
 
-.comeback-clock {
-    max-width: 400px;
+.recovery-patterns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 900px;
     margin: 0 auto;
+}
+
+.recovery-group {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-left: 4px solid var(--group-color, var(--room-accent));
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.recovery-group__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--lj-border);
+}
+
+.recovery-group__type {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--group-color, var(--room-accent));
+}
+
+.recovery-group__stats {
+    display: flex;
+    gap: 16px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.recovery-group__items {
+    padding: 4px 0;
+}
+
+.recovery-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 18px;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(208, 208, 208, 0.3);
+    transition: background 0.15s;
+}
+
+.recovery-item:last-child {
+    border-bottom: none;
+}
+
+.recovery-item:hover {
+    background: rgba(46, 125, 50, 0.04);
+}
+
+.recovery-item__year {
+    font-family: var(--font-mono);
+    font-weight: 700;
+    color: #8b1a1a;
+    min-width: 36px;
+}
+
+.recovery-item__crisis {
+    color: var(--room-text);
+    flex: 1;
+}
+
+.recovery-item__arrow {
+    color: var(--room-accent);
+    font-weight: bold;
+}
+
+.recovery-item__outcome {
+    color: var(--room-accent);
+    flex: 1;
+}
+
+.recovery-item__gap {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+    min-width: 36px;
+    text-align: right;
 }
 
 /* Callout */
@@ -107,4 +194,8 @@
 @media (max-width: 768px) {
     .comeback-sankey { min-height: 300px; }
     .comeback-headline-stat { font-size: 2rem; }
+    .recovery-item { flex-wrap: wrap; gap: 6px; }
+    .recovery-item__crisis,
+    .recovery-item__outcome { flex: none; width: 100%; }
+    .recovery-group__header { flex-direction: column; gap: 4px; align-items: flex-start; }
 }

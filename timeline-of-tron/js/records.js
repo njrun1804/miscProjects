@@ -1,5 +1,5 @@
 // js/records.js — Room 4: The Record Book
-// Obsession Index, Sports Gauges, Streak Tracker, Record Wall
+// Obsession Index, Sports Gauges, Streak Stories, Entertainment, Record Wall
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
@@ -10,12 +10,14 @@ export async function initRecords() {
         'fun_facts.json',
         'streaks.json',
         'sports.json',
-        'epic_numbers.json'
+        'epic_numbers.json',
+        'entertainment.json'
     ]);
 
     renderObsessionIndex(data.epic_numbers);
     renderSportsGauges(data.sports);
-    renderStreakTracker(data.streaks);
+    renderStreakStories(data.streaks);
+    renderEntertainment(data.entertainment);
     renderRecordWall(data.fun_facts);
 }
 
@@ -25,7 +27,6 @@ function renderObsessionIndex(epicNumbers) {
 
     const items = Array.isArray(epicNumbers) ? epicNumbers : [];
 
-    // Precision-tracked stats with their measurement type
     const obsessions = items.map(item => ({
         value: item.value + (item.unit ? ' ' + item.unit : ''),
         label: item.stat,
@@ -45,7 +46,6 @@ function renderObsessionIndex(epicNumbers) {
 function renderSportsGauges(sports) {
     const sportsData = Array.isArray(sports) ? sports : [];
 
-    // Use known records if data doesn't have them
     const records = sportsData.length ? sportsData : [
         { sport: 'Table Tennis', wins: 62, losses: 4, winRate: 93.9 },
         { sport: 'Cornhole', wins: 254, losses: 98, winRate: 72.2 },
@@ -87,12 +87,10 @@ function renderSportsGauges(sports) {
                     ctx.save();
                     ctx.textAlign = 'center';
 
-                    // Win rate
                     ctx.font = "bold 24px 'Courier Prime', monospace";
                     ctx.fillStyle = '#2c1810';
                     ctx.fillText(`${rate}%`, width / 2, height - 30);
 
-                    // Record
                     ctx.font = "12px 'Courier Prime', monospace";
                     ctx.fillStyle = '#6b5840';
                     ctx.fillText(`${wins}W – ${losses}L`, width / 2, height - 12);
@@ -104,55 +102,74 @@ function renderSportsGauges(sports) {
     });
 }
 
-function renderStreakTracker(streaks) {
-    const canvas = document.getElementById('streakChart');
-    if (!canvas || typeof Chart === 'undefined') return;
+function renderStreakStories(streaks) {
+    const container = document.querySelector('.streak-stories');
+    if (!container) return;
 
     const items = Array.isArray(streaks) ? streaks : [];
     if (!items.length) return;
 
-    const labels = items.map(s => s.name || s.streak || s.tradition || 'Unknown');
-    const durations = items.map(s => s.years || s.duration || s.count || 0);
-    const colors = items.map(s =>
-        (s.status === 'broken' || s.active === false) ? '#8b1a1a' : '#4a6741'
-    );
+    const sorted = [...items].sort((a, b) => (b.length || 0) - (a.length || 0));
 
-    new Chart(canvas, {
-        type: 'bar',
-        data: {
-            labels: labels,
-            datasets: [{
-                label: 'Duration (years)',
-                data: durations,
-                backgroundColor: colors,
-                borderRadius: 2
-            }]
-        },
-        options: {
-            indexAxis: 'y',
-            responsive: true,
-            plugins: {
-                legend: { display: false },
-                title: {
-                    display: true,
-                    text: 'Streak Tracker (green = active, red = broken)',
-                    color: '#2c1810',
-                    font: { family: "'Courier Prime', monospace", size: 13 }
-                }
-            },
-            scales: {
-                x: {
-                    ticks: { color: '#6b5840', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(180,168,140,0.4)' },
-                    title: { display: true, text: 'Years', color: '#6b5840' }
-                },
-                y: {
-                    ticks: { color: '#2c1810', font: { family: "'Courier Prime', monospace", size: 11 } },
-                    grid: { display: false }
-                }
-            }
-        }
-    });
+    container.innerHTML = sorted.map(s => {
+        const name = s.description || s.name || s.streak || 'Unknown';
+        const len = s.length || s.years || s.duration || 0;
+        const active = s.still_active === 1 || s.active === true;
+        const start = s.start_year || '';
+        const end = s.end_year || '';
+        const category = s.category || '';
+        const yearRange = start ? `${start}–${active ? 'present' : end}` : '';
+
+        return `
+            <div class="streak-card ${active ? 'streak-card--active' : 'streak-card--broken'}">
+                <div class="streak-card__duration">${len}<span class="streak-card__unit">${len === 62 ? ' wins' : ' yrs'}</span></div>
+                <div class="streak-card__info">
+                    <div class="streak-card__name">${name}</div>
+                    <div class="streak-card__meta">
+                        <span class="streak-card__years">${yearRange}</span>
+                        <span class="streak-card__status">${active ? 'ACTIVE' : 'BROKEN'}</span>
+                        <span class="streak-card__category">${category}</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+function renderEntertainment(entertainment) {
+    const grid = document.querySelector('.entertainment-grid');
+    if (!grid) return;
+
+    const items = Array.isArray(entertainment) ? entertainment : [];
+    if (!items.length) return;
+
+    const typeIcons = {
+        'concert': '\u266B',
+        'broadway': '\u2605',
+        'sporting event': '\u26BD',
+        'activity': '\u26A1',
+        'appearance': '\u{1F4F7}'
+    };
+
+    const sorted = [...items].sort((a, b) => (a.year || 0) - (b.year || 0));
+
+    grid.innerHTML = sorted.map(e => {
+        const icon = typeIcons[e.event_type] || '\u2606';
+        const type = e.event_type || '';
+        return `
+            <div class="entertainment-card" data-type="${type}">
+                <div class="entertainment-card__icon">${icon}</div>
+                <div class="entertainment-card__info">
+                    <div class="entertainment-card__name">${e.show_name}</div>
+                    <div class="entertainment-card__meta">
+                        <span class="entertainment-card__year">${e.year}</span>
+                        <span class="entertainment-card__type">${type}</span>
+                    </div>
+                    ${e.note ? `<div class="entertainment-card__note">${e.note}</div>` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
 }
 
 function renderRecordWall(funFacts) {

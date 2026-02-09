@@ -153,53 +153,72 @@
 .emotion--defiance    { color: #d08050; border-color: #d08050; }
 .emotion--neutral     { color: #8a8a9a; border-color: #8a8a9a; }
 
-/* Voice Timeline section */
-.vault-voice-section {
+/* Soundtrack section */
+.vault-soundtrack-section {
     margin-top: var(--space-xl);
     padding-top: var(--space-lg);
     border-top: 1px solid var(--lj-border);
 }
 
-.vault-voice-section h2 {
+.vault-soundtrack-section h2 {
     text-align: center;
     margin-bottom: var(--space-md);
 }
 
-.vault-voice-chart {
-    max-width: 900px;
-    margin: 0 auto;
+.vault-soundtrack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
 }
 
-.vault-voice-callout {
-    max-width: 600px;
-    margin: var(--space-lg) auto;
-    text-align: center;
-    font-style: italic;
-    font-size: 13px;
+.vault-song-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vault-song-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(201, 168, 76, 0.15);
+}
+
+.vault-song-card__song {
+    font-family: var(--font-mono);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.vault-song-card__artist {
+    font-family: var(--font-sans);
+    font-size: 12px;
     color: var(--lj-text-secondary);
-    line-height: 1.6;
+    margin-top: 2px;
 }
 
-/* Keyword river */
-.vault-keywords-section {
-    margin-top: var(--space-xl);
-    padding-top: var(--space-lg);
-    border-top: 1px solid var(--lj-border);
+.vault-song-card__person {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--room-text);
+    margin-top: 10px;
 }
 
-.vault-keywords-section h2 {
-    text-align: center;
-    margin-bottom: var(--space-md);
+.vault-song-card__story {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--room-text);
+    line-height: 1.5;
+    margin-top: 8px;
+    font-style: italic;
 }
 
-.vault-keyword-river {
-    width: 100%;
-    min-height: 300px;
-}
-
-.vault-keyword-river svg {
-    width: 100%;
-    height: 100%;
+.vault-song-card__year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-top: 8px;
 }
 
 /* Annotation */
@@ -217,4 +236,5 @@
     .vault-quote-wall { grid-template-columns: 1fr; }
     .vault-filters { gap: 6px; }
     .vault-filter { font-size: 10px; padding: 4px 10px; }
+    .vault-soundtrack-grid { grid-template-columns: 1fr; }
 }

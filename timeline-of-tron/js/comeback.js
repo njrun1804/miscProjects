@@ -17,7 +17,7 @@ export async function initComeback() {
 
     renderHeadlineStat(comebacks);
     renderSankey(comebacks);
-    renderRecoveryClock(comebacks);
+    renderRecoveryPatterns(comebacks);
 }
 
 function renderHeadlineStat(comebacks) {
@@ -201,70 +201,57 @@ function showDetailDirect(cb) {
     detail.classList.add('active');
 }
 
-function renderRecoveryClock(comebacks) {
-    const canvas = document.getElementById('recoveryClock');
-    if (!canvas || typeof Chart === 'undefined') return;
+function renderRecoveryPatterns(comebacks) {
+    const container = document.querySelector('.recovery-patterns');
+    if (!container) return;
 
-    // Group by crisis type, get average recovery time
+    // Group by recovery type
     const groups = {};
     comebacks.forEach(c => {
-        const type = categorizeCrisis(c);
-        if (!groups[type]) groups[type] = [];
-        groups[type].push(c.gap_months);
+        const recovery = categorizeRecovery(c);
+        if (!groups[recovery]) groups[recovery] = [];
+        groups[recovery].push(c);
     });
 
-    const labels = Object.keys(groups);
-    const avgMonths = labels.map(l => {
-        const vals = groups[l];
-        return vals.reduce((s, v) => s + v, 0) / vals.length;
-    });
+    // Sort groups by count (most common recovery type first)
+    const sorted = Object.entries(groups).sort((a, b) => b[1].length - a[1].length);
 
-    new Chart(canvas, {
-        type: 'polarArea',
-        data: {
-            labels: labels,
-            datasets: [{
-                data: avgMonths,
-                backgroundColor: [
-                    'rgba(139, 26, 26, 0.6)',
-                    'rgba(106, 75, 139, 0.6)',
-                    'rgba(26, 74, 139, 0.6)',
-                    'rgba(46, 125, 50, 0.6)',
-                    'rgba(201, 168, 76, 0.6)',
-                    'rgba(26, 92, 92, 0.6)'
-                ],
-                borderColor: '#d0d0d0',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    position: 'bottom',
-                    labels: {
-                        color: '#1a1a2e',
-                        font: { family: "'Courier Prime', monospace", size: 11 }
-                    }
-                },
-                title: {
-                    display: true,
-                    text: 'Average Recovery Time by Crisis Type (months)',
-                    color: '#1a1a2e',
-                    font: { family: "'Courier Prime', monospace", size: 13 }
-                }
-            },
-            scales: {
-                r: {
-                    ticks: {
-                        color: '#5a5a6e',
-                        font: { family: "'Courier Prime', monospace", size: 10 }
-                    },
-                    grid: { color: 'rgba(0,0,0,0.1)' }
-                }
-            }
-        }
-    });
+    const colorMap = {
+        'Travel/Adventure': '#1a5c8b',
+        'Community Creation': '#2e7d32',
+        'Physical Fitness': '#8b6914',
+        'Career Growth': '#6a4b8b',
+        'Family Bonds': '#c47a8a',
+        'Resilience': '#5a5a6e'
+    };
+
+    container.innerHTML = sorted.map(([type, items]) => {
+        const color = colorMap[type] || '#5a5a6e';
+        const avgMonths = items.reduce((s, c) => s + (c.gap_months || 0), 0) / items.length;
+
+        const itemsHTML = items.map(c => `
+            <div class="recovery-item">
+                <span class="recovery-item__year">${c.medical_year}</span>
+                <span class="recovery-item__crisis">${c.medical_event}</span>
+                <span class="recovery-item__arrow">&rarr;</span>
+                <span class="recovery-item__outcome">${c.comeback_event}</span>
+                <span class="recovery-item__gap">${c.gap_months}mo</span>
+            </div>
+        `).join('');
+
+        return `
+            <div class="recovery-group" style="--group-color: ${color}">
+                <div class="recovery-group__header">
+                    <div class="recovery-group__type">${type}</div>
+                    <div class="recovery-group__stats">
+                        <span>${items.length} comeback${items.length > 1 ? 's' : ''}</span>
+                        <span>avg ${avgMonths.toFixed(1)}mo recovery</span>
+                    </div>
+                </div>
+                <div class="recovery-group__items">${itemsHTML}</div>
+            </div>
+        `;
+    }).join('');
 }
 
 function categorizeCrisis(c) {

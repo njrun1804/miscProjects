@@ -1,5 +1,5 @@
-// js/vault.js — Room 6: The Vault (Quotes + Writing Evolution + Keyword River)
-// Quote wall with emotion filters, voice timeline, keyword visualization
+// js/vault.js — Room 6: The Vault (Quotes + Soundtrack)
+// Quote wall with emotion filters, song-person connections
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
@@ -7,27 +7,22 @@ import { initWormholes } from './wormholes.js';
 export async function initVault() {
     const data = await loadMultiple([
         'quotes.json',
-        'writing_evolution.json',
-        'year_keywords.json',
+        'song_person_map.json',
         'emotion_distribution.json'
     ]);
 
     const quotes = data.quotes || [];
-    const writing = data.writing_evolution || [];
-    const keywords = data.year_keywords || [];
-    const emotions = data.emotion_distribution || {};
+    const songs = data.song_person_map || [];
 
     renderFilters(quotes);
     renderQuoteWall(quotes);
-    renderVoiceTimeline(writing);
-    renderKeywordCloud(keywords);
+    renderSoundtrack(songs);
 }
 
 function renderFilters(quotes) {
     const container = document.querySelector('.vault-filters');
     if (!container) return;
 
-    // Get unique emotions
     const emotionCounts = {};
     quotes.forEach(q => {
         const e = q.emotion || 'neutral';
@@ -95,119 +90,21 @@ function renderQuoteWall(quotes) {
     }).join('');
 }
 
-function renderVoiceTimeline(writing) {
-    const canvas = document.getElementById('voiceChart');
-    if (!canvas || typeof Chart === 'undefined' || !writing.length) return;
+function renderSoundtrack(songs) {
+    const grid = document.querySelector('.vault-soundtrack-grid');
+    if (!grid || !songs.length) return;
 
-    const years = writing.map(w => w.year);
-    const gradeLevel = writing.map(w => w.avg_grade_level || 0);
-    const richness = writing.map(w => w.vocabulary_richness || 0);
-    const wordCount = writing.map(w => w.total_words || 0);
+    const sorted = [...songs].sort((a, b) => (a.year_of_connection || 0) - (b.year_of_connection || 0));
 
-    new Chart(canvas, {
-        type: 'line',
-        data: {
-            labels: years,
-            datasets: [
-                {
-                    label: 'Grade Level',
-                    data: gradeLevel,
-                    borderColor: '#c9a84c',
-                    backgroundColor: 'rgba(201, 168, 76, 0.1)',
-                    yAxisID: 'y',
-                    tension: 0.3,
-                    pointRadius: 3,
-                    pointBackgroundColor: '#c9a84c'
-                },
-                {
-                    label: 'Vocabulary Richness',
-                    data: richness,
-                    borderColor: '#6a8fb0',
-                    backgroundColor: 'rgba(106, 143, 176, 0.1)',
-                    yAxisID: 'y1',
-                    tension: 0.3,
-                    pointRadius: 3,
-                    pointBackgroundColor: '#6a8fb0'
-                }
-            ]
-        },
-        options: {
-            responsive: true,
-            interaction: { mode: 'index', intersect: false },
-            plugins: {
-                legend: {
-                    labels: {
-                        color: '#d4d0c8',
-                        font: { family: "'Courier Prime', monospace", size: 11 }
-                    }
-                },
-                title: {
-                    display: true,
-                    text: 'The Evolving Voice',
-                    color: '#d4d0c8',
-                    font: { family: "'Courier Prime', monospace", size: 14 }
-                }
-            },
-            scales: {
-                x: {
-                    ticks: { color: '#8a8a9a', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(58,58,90,0.3)' }
-                },
-                y: {
-                    type: 'linear',
-                    position: 'left',
-                    title: { display: true, text: 'Grade Level', color: '#c9a84c' },
-                    ticks: { color: '#c9a84c', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(58,58,90,0.3)' }
-                },
-                y1: {
-                    type: 'linear',
-                    position: 'right',
-                    title: { display: true, text: 'Vocabulary Richness', color: '#6a8fb0' },
-                    ticks: { color: '#6a8fb0', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { drawOnChartArea: false },
-                    min: 0, max: 1
-                }
-            }
-        }
-    });
-}
-
-function renderKeywordCloud(keywords) {
-    const container = document.querySelector('.vault-keyword-river');
-    if (!container || !keywords.length) return;
-
-    // Group keywords by year, pick top 8 per year
-    const byYear = {};
-    keywords.forEach(k => {
-        if (!byYear[k.year]) byYear[k.year] = [];
-        byYear[k.year].push(k);
-    });
-
-    const years = Object.keys(byYear).sort();
-
-    // Render as a flowing tag grid instead of D3 stream (simpler, no d3-shape needed)
-    let html = '<div style="display:flex; flex-direction:column; gap:12px;">';
-
-    years.forEach(year => {
-        const top = byYear[year]
-            .sort((a, b) => (b.tfidf_score || 0) - (a.tfidf_score || 0))
-            .slice(0, 8);
-
-        html += `
-            <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                <span style="font-family:var(--font-mono); font-size:12px; color:var(--room-accent); min-width:40px; font-weight:700;">${year}</span>
-                ${top.map(k => {
-                    const size = 10 + k.tfidf_score * 14;
-                    const opacity = 0.5 + k.tfidf_score * 0.5;
-                    return `<span style="font-family:var(--font-sans); font-size:${size}px; color:var(--room-text); opacity:${opacity}; padding:2px 6px; background:rgba(201,168,76,${k.tfidf_score * 0.2}); border-radius:3px;">${k.keyword}</span>`;
-                }).join('')}
-            </div>
-        `;
-    });
-
-    html += '</div>';
-    container.innerHTML = html;
+    grid.innerHTML = sorted.map(s => `
+        <div class="vault-song-card">
+            <div class="vault-song-card__song">${s.song}</div>
+            <div class="vault-song-card__artist">${s.artist}</div>
+            <div class="vault-song-card__person">${s.person}</div>
+            <div class="vault-song-card__story">${s.story}</div>
+            <div class="vault-song-card__year">${s.year_of_connection || ''}</div>
+        </div>
+    `).join('');
 }
 
 // Auto-init

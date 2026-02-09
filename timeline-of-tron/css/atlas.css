@@ -136,6 +136,101 @@
     line-height: 1.6;
 }
 
+/* Cruise Log */
+.atlas-cruise-section {
+    margin-top: var(--space-xl);
+}
+
+.atlas-cruise-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.cruise-log {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cruise-card {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 16px;
+    transition: background 0.15s;
+}
+
+.cruise-card:hover {
+    background: rgba(26, 92, 139, 0.04);
+}
+
+.cruise-card__number {
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--room-accent);
+    min-width: 36px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.cruise-card__info {
+    flex: 1;
+}
+
+.cruise-card__header {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.cruise-card__year {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.cruise-card__ship {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--room-text);
+}
+
+.cruise-card__duration {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.cruise-card__destinations {
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--room-text);
+    margin-top: 4px;
+}
+
+.cruise-card__highlight {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.cruise-card__rating {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--room-accent);
+    font-weight: 700;
+    margin-top: 4px;
+}
+
 /* Frequency section */
 .atlas-frequency {
     margin-top: var(--space-xl);
@@ -185,4 +280,5 @@
     .atlas-stats-bar { gap: var(--space-lg); }
     .atlas-stat__value { font-size: 1.5rem; }
     .atlas-controls { flex-direction: column; align-items: stretch; }
+    .cruise-card__header { flex-direction: column; gap: 2px; }
 }

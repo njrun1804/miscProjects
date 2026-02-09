@@ -1,5 +1,5 @@
 // js/dynasty.js — Room 7: The Dynasty (Career, Awards, ECD, Traditions)
-// Career staircase, trophy case, ECD chart, traditions grid
+// Career staircase, trophy case, ECD dynasty sections, traditions grid
 
 import { loadMultiple } from './data-loader.js';
 import { initWormholes } from './wormholes.js';
@@ -10,14 +10,20 @@ export async function initDynasty() {
         'career.json',
         'awards_enriched.json',
         'awards_categories.json',
-        'ecd_events.json',
+        'ecd_stats_dashboard.json',
+        'ecd_community_narrative.json',
+        'ecd_match_results.json',
         'traditions.json',
-        'streaks.json'
+        'wwe_events.json'
     ]);
 
     renderStaircase(data.career || []);
     renderTrophyCase(data.awards_enriched || [], data.awards_categories || []);
-    renderECD(data.ecd_events || []);
+    renderECDStats(data.ecd_stats_dashboard || {});
+    renderCommunityArc(data.ecd_community_narrative || []);
+    renderLeaderboard((data.ecd_stats_dashboard || {}).top_players || []);
+    renderRivalries(data.ecd_match_results || []);
+    renderWWETimeline(data.wwe_events || []);
     renderTraditions(data.traditions || []);
 }
 
@@ -45,7 +51,6 @@ function renderTrophyCase(awards, categories) {
     const container = document.querySelector('.trophy-categories');
     if (!container) return;
 
-    // Group awards by category
     const grouped = {};
     awards.forEach(a => {
         const cat = a.category || 'other';
@@ -53,9 +58,7 @@ function renderTrophyCase(awards, categories) {
         grouped[cat].push(a);
     });
 
-    // Sort each group by year descending
     Object.values(grouped).forEach(arr => arr.sort((a, b) => (b.year || 0) - (a.year || 0)));
-
     const catNames = Object.keys(grouped).sort();
 
     container.addEventListener('click', (e) => {
@@ -66,7 +69,6 @@ function renderTrophyCase(awards, categories) {
     container.innerHTML = catNames.map(cat => {
         const items = grouped[cat];
         const displayName = cat.replace(/_/g, ' ');
-
         return `
             <div class="trophy-category">
                 <div class="trophy-category__header">
@@ -90,90 +92,218 @@ function renderTrophyCase(awards, categories) {
     }).join('');
 }
 
-function renderECD(events) {
-    const canvas = document.getElementById('ecdChart');
-    if (!canvas || typeof Chart === 'undefined' || !events.length) return;
+// --- ECD SECTIONS ---
 
-    // Extract yearly event counts from dates
-    const yearCounts = {};
-    events.forEach(e => {
-        const year = e.year || (e.date && typeof e.date === 'string' ? parseInt(e.date.slice(0, 4)) : null);
-        if (!year) return;
-        yearCounts[year] = (yearCounts[year] || 0) + 1;
-    });
+function renderECDStats(dashboard) {
+    const container = document.querySelector('.ecd-stats-bar');
+    if (!container) return;
 
-    const years = Object.keys(yearCounts).sort();
-    const counts = years.map(y => yearCounts[y]);
+    const players = dashboard.player_count || 0;
+    const events = dashboard.event_count || 0;
+    const raised = dashboard.fundraiser_total || 0;
 
-    // Running total
-    let cumulative = 0;
-    const running = counts.map(c => { cumulative += c; return cumulative; });
+    container.innerHTML = `
+        <div class="ecd-stat"><span class="ecd-stat__value">${players}</span><span class="ecd-stat__label">Players</span></div>
+        <div class="ecd-stat"><span class="ecd-stat__value">${events}</span><span class="ecd-stat__label">Events</span></div>
+        <div class="ecd-stat"><span class="ecd-stat__value">20</span><span class="ecd-stat__label">Years</span></div>
+        <div class="ecd-stat"><span class="ecd-stat__value">190</span><span class="ecd-stat__label">Peak Attendance</span></div>
+        <div class="ecd-stat"><span class="ecd-stat__value">$${raised.toLocaleString()}</span><span class="ecd-stat__label">Raised</span></div>
+    `;
+}
 
-    new Chart(canvas, {
-        type: 'bar',
-        data: {
-            labels: years,
-            datasets: [
-                {
-                    label: 'Events per Year',
-                    data: counts,
-                    backgroundColor: 'rgba(201, 168, 76, 0.6)',
-                    borderColor: '#c9a84c',
-                    borderWidth: 1,
-                    borderRadius: 2,
-                    order: 2
-                },
-                {
-                    label: 'Cumulative Events',
-                    data: running,
-                    type: 'line',
-                    borderColor: '#7aaa7a',
-                    backgroundColor: 'rgba(122, 170, 122, 0.1)',
-                    fill: true,
-                    tension: 0.3,
-                    pointRadius: 3,
-                    pointBackgroundColor: '#7aaa7a',
-                    yAxisID: 'y1',
-                    order: 1
-                }
-            ]
+function renderCommunityArc(narrative) {
+    const container = document.querySelector('.ecd-community-arc');
+    if (!container || !narrative.length) return;
+
+    const eras = [
+        {
+            name: 'The Founding',
+            years: '2005',
+            players: 12,
+            matches: 7,
+            desc: 'Twelve pioneers. Seven matches. A community born from a simple idea: throw balls at your friends.'
         },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    labels: {
-                        color: '#d4dcd0',
-                        font: { family: "'Courier Prime', monospace", size: 11 }
-                    }
-                },
-                title: {
-                    display: true,
-                    text: 'EastCoastDodgeball: The Dynasty',
-                    color: '#d4dcd0',
-                    font: { family: "'Courier Prime', monospace", size: 14 }
-                }
-            },
-            scales: {
-                x: {
-                    ticks: { color: '#8a9a8a', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(58,90,58,0.3)' }
-                },
-                y: {
-                    position: 'left',
-                    title: { display: true, text: 'Events/Year', color: '#c9a84c' },
-                    ticks: { color: '#c9a84c', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { color: 'rgba(58,90,58,0.3)' }
-                },
-                y1: {
-                    position: 'right',
-                    title: { display: true, text: 'Cumulative', color: '#7aaa7a' },
-                    ticks: { color: '#7aaa7a', font: { family: "'Courier Prime', monospace", size: 10 } },
-                    grid: { drawOnChartArea: false }
-                }
-            }
+        {
+            name: 'The Growth',
+            years: '2006',
+            players: 16,
+            matches: 11,
+            desc: 'Word spread. 51 events in one year. Peak attendance hit 190. The WrestleMania-style event names began.'
+        },
+        {
+            name: 'The Golden Age',
+            years: '2007\u20132008',
+            players: 26,
+            matches: 59,
+            desc: '26 players, 59 matches, the most competitive era. Rivalries intensified. Nicknames were earned, not given.'
+        },
+        {
+            name: 'The Revival',
+            years: '2009\u20132010',
+            players: 19,
+            matches: 15,
+            desc: '2009: the gap year. Two players remained. Then 2010 brought an 850% comeback \u2014 19 players returned for one last run.'
+        },
+        {
+            name: 'Legacy Mode',
+            years: '2011\u20132025',
+            desc: 'The competition ended but the community didn\u2019t. Anniversary posts, retrospectives, and in 2025: the ProBowl raised $1,720 for Lauren & Emma.'
         }
+    ];
+
+    container.innerHTML = `
+        <div class="ecd-arc-timeline">
+            ${eras.map(era => `
+                <div class="ecd-arc-card">
+                    <div class="ecd-arc-card__header">
+                        <span class="ecd-arc-card__name">${era.name}</span>
+                        <span class="ecd-arc-card__years">${era.years}</span>
+                    </div>
+                    <div class="ecd-arc-card__desc">${era.desc}</div>
+                    ${era.players || era.matches ? `
+                        <div class="ecd-arc-card__stats">
+                            ${era.players ? `<span>${era.players} players</span>` : ''}
+                            ${era.matches ? `<span>${era.matches} matches</span>` : ''}
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('<div class="ecd-arc-arrow">\u2192</div>')}
+        </div>
+    `;
+}
+
+function renderLeaderboard(players) {
+    const container = document.querySelector('.ecd-leaderboard');
+    if (!container || !players.length) return;
+
+    const top = players.slice(0, 20);
+
+    container.innerHTML = `
+        <div class="ecd-leaderboard-table">
+            <div class="ecd-lb-header">
+                <span class="ecd-lb-col ecd-lb-rank">#</span>
+                <span class="ecd-lb-col ecd-lb-name">Player</span>
+                <span class="ecd-lb-col ecd-lb-nickname">Alias</span>
+                <span class="ecd-lb-col ecd-lb-record">W-L</span>
+                <span class="ecd-lb-col ecd-lb-mentions">Mentions</span>
+                <span class="ecd-lb-col ecd-lb-era">Era</span>
+            </div>
+            ${top.map((p, i) => {
+                const bestNick = pickBestNickname(p.nicknames, p.name);
+                const record = (p.wins || p.losses) ? `${p.wins || 0}-${p.losses || 0}` : '\u2014';
+                return `
+                    <div class="ecd-lb-row${i < 3 ? ' ecd-lb-row--top3' : ''}">
+                        <span class="ecd-lb-col ecd-lb-rank">${i + 1}</span>
+                        <span class="ecd-lb-col ecd-lb-name">${p.name}</span>
+                        <span class="ecd-lb-col ecd-lb-nickname">${bestNick ? '\u201C' + bestNick + '\u201D' : ''}</span>
+                        <span class="ecd-lb-col ecd-lb-record">${record}</span>
+                        <span class="ecd-lb-col ecd-lb-mentions">${p.total_mentions.toLocaleString()}</span>
+                        <span class="ecd-lb-col ecd-lb-era">${p.era_active || '\u2014'}</span>
+                    </div>
+                `;
+            }).join('')}
+        </div>
+    `;
+}
+
+function pickBestNickname(raw, realName) {
+    if (!raw) return '';
+    try {
+        const arr = JSON.parse(raw);
+        // Prefer nicknames that are actual aliases (start with "the"/"The" or are clearly different from real name)
+        const firstName = realName.split(' ')[0].toLowerCase();
+        const lastName = realName.split(' ').pop().toLowerCase();
+        const real = arr.filter(n => {
+            const lower = n.toLowerCase();
+            return lower !== firstName && lower !== lastName && !lower.includes(firstName + ' ') && lower !== realName.toLowerCase();
+        });
+        // Prefer "The X" style nicknames
+        const titled = real.filter(n => n.startsWith('the ') || n.startsWith('The '));
+        if (titled.length) return titled[0].replace(/^the /i, 'The ');
+        return real.length ? real[0] : '';
+    } catch {
+        return '';
+    }
+}
+
+function renderRivalries(matches) {
+    const container = document.querySelector('.ecd-rivalries');
+    if (!container || !matches.length) return;
+
+    // Build head-to-head records
+    const h2h = {};
+    matches.forEach(m => {
+        const pair = [m.winner, m.loser].sort();
+        const key = pair.join(' | ');
+        if (!h2h[key]) {
+            h2h[key] = { p1: pair[0], p2: pair[1], records: {}, total: 0, years: new Set(), scores: [] };
+            h2h[key].records[pair[0]] = 0;
+            h2h[key].records[pair[1]] = 0;
+        }
+        h2h[key].records[m.winner]++;
+        h2h[key].total++;
+        if (m.year) h2h[key].years.add(m.year);
+        if (m.score) h2h[key].scores.push(m.score);
     });
+
+    // Multi-match rivalries first, then notable single matches
+    const multi = Object.values(h2h)
+        .filter(r => r.total >= 2)
+        .sort((a, b) => b.total - a.total);
+
+    const singles = Object.values(h2h)
+        .filter(r => r.total === 1 && r.scores.length)
+        .sort((a, b) => {
+            const aScore = a.scores[0].split('-').reduce((s, n) => s + parseInt(n) || 0, 0);
+            const bScore = b.scores[0].split('-').reduce((s, n) => s + parseInt(n) || 0, 0);
+            return bScore - aScore;
+        });
+
+    const all = [...multi.slice(0, 10), ...singles.slice(0, 5)];
+
+    container.innerHTML = all.map(r => {
+        const years = [...r.years].sort();
+        const yearStr = years.length === 1 ? String(years[0]) : `${years[0]}\u2013${years[years.length - 1]}`;
+        const p1w = r.records[r.p1];
+        const p2w = r.records[r.p2];
+
+        return `
+            <div class="ecd-rivalry-card">
+                <div class="ecd-rivalry-card__matchup">
+                    <span class="${p1w >= p2w ? 'ecd-rivalry-winner' : ''}">${r.p1}</span>
+                    <span class="ecd-rivalry-vs">${r.total > 1 ? 'vs' : 'def.'}</span>
+                    <span class="${p2w > p1w ? 'ecd-rivalry-winner' : ''}">${r.p2}</span>
+                </div>
+                <div class="ecd-rivalry-card__details">
+                    <span class="ecd-rivalry-record">${p1w}-${p2w}</span>
+                    ${r.total > 1 ? `<span class="ecd-rivalry-count">${r.total} matches</span>` : ''}
+                    ${r.scores.length === 1 ? `<span class="ecd-rivalry-score">${r.scores[0]}</span>` : ''}
+                    <span class="ecd-rivalry-year">${yearStr}</span>
+                </div>
+            </div>
+        `;
+    }).join('');
+}
+
+function renderWWETimeline(events) {
+    const container = document.querySelector('.wwe-timeline');
+    if (!container || !events.length) return;
+
+    const sorted = [...events].sort((a, b) => (a.year || 0) - (b.year || 0));
+
+    container.innerHTML = sorted.map(e => {
+        const hasCount = e.cumulative_events;
+        return `
+            <div class="wwe-event">
+                <div class="wwe-event__year">${e.year}</div>
+                <div class="wwe-event__content">
+                    <div class="wwe-event__label">${e.label}</div>
+                    ${e.note ? `<div class="wwe-event__note">${e.note}</div>` : ''}
+                </div>
+                ${hasCount ? `<div class="wwe-event__count">#${hasCount}</div>` : ''}
+            </div>
+        `;
+    }).join('');
 }
 
 function renderTraditions(traditions) {

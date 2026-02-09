@@ -8,16 +8,19 @@ export async function initAtlas() {
     const data = await loadMultiple([
         'travel.json',
         'location_frequency.json',
-        'medical_events.json'
+        'medical_events.json',
+        'cruise_detail.json'
     ]);
 
     const travel = data.travel || [];
     const frequency = data.location_frequency || [];
     const medical = data.medical_events || [];
+    const cruises = data.cruise_detail || [];
 
     renderStats(travel);
     const map = renderMap(travel, medical);
     if (map) initScrubber(map, travel);
+    renderCruiseLog(cruises);
     renderFrequency(frequency);
 }
 
@@ -172,6 +175,38 @@ function renderFrequency(frequency) {
             <div class="freq-card__years">${(f.years || []).join(', ')}</div>
         </div>
     `).join('');
+}
+
+function renderCruiseLog(cruises) {
+    const container = document.querySelector('.cruise-log');
+    if (!container) return;
+
+    const items = Array.isArray(cruises) ? cruises : [];
+    if (!items.length) return;
+
+    const sorted = [...items].sort((a, b) => (a.year || 0) - (b.year || 0));
+
+    container.innerHTML = sorted.map(c => {
+        const stars = c.rating || '';
+        const ship = c.ship_name || 'Unknown ship';
+        const duration = c.duration_days ? `${c.duration_days} days` : '';
+
+        return `
+            <div class="cruise-card">
+                <div class="cruise-card__number">#${c.cruise_number}</div>
+                <div class="cruise-card__info">
+                    <div class="cruise-card__header">
+                        <span class="cruise-card__year">${c.year}</span>
+                        <span class="cruise-card__ship">${ship}</span>
+                        ${duration ? `<span class="cruise-card__duration">${duration}</span>` : ''}
+                    </div>
+                    <div class="cruise-card__destinations">${c.destinations}</div>
+                    ${c.highlight ? `<div class="cruise-card__highlight">${c.highlight}</div>` : ''}
+                    ${stars ? `<div class="cruise-card__rating">${stars}</div>` : ''}
+                </div>
+            </div>
+        `;
+    }).join('');
 }
 
 // Auto-init
