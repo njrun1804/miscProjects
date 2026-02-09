@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Atlas — Timeline of Tron</title>
-    <meta name="description" content="34 trips. 20+ countries. 5 continents. An interactive map colored by sentiment with recovery trip tracking.">
+    <meta name="description" content="34 trips. 20+ countries. 5 continents. How the travel radius expanded over 20 years.">
     <meta property="og:title" content="The Atlas — Timeline of Tron">
-    <meta property="og:description" content="34 trips. 20+ countries. 5 continents. Recovery by travel.">
+    <meta property="og:description" content="34 trips. 20+ countries. 5 continents. The world got bigger.">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="lib/leaflet.css">
     <link rel="stylesheet" href="css/atlas.css">
@@ -17,45 +17,51 @@
     <main class="room-main">
         <section class="atlas-hero">
             <h1 class="room-title">The Atlas</h1>
-            <p class="room-subtitle">34 trips. 20+ countries. 5 continents. Recovery by travel.</p>
+            <p class="room-subtitle">20 years of going further.</p>
         </section>
 
-        <!-- Stats Bar -->
+        <!-- Big Numbers -->
         <div class="atlas-stats-bar"></div>
 
-        <!-- Map Controls -->
-        <div class="atlas-controls">
-            <button id="recoveryToggle" class="atlas-recovery-toggle">
-                Recovery Trips
-            </button>
-            <div class="atlas-scrubber">
-                <label for="yearSlider">Timeline:</label>
-                <input type="range" id="yearSlider" min="2004" max="2026" value="2026">
-                <span id="yearDisplay">2004–2026</span>
+        <!-- Travel Eras -->
+        <section class="atlas-eras">
+            <h2 class="section-heading">The Expanding Radius</h2>
+            <div class="atlas-eras-flow"></div>
+        </section>
+
+        <!-- Map + Scrubber -->
+        <section class="atlas-map-section">
+            <div class="atlas-controls">
+                <div class="atlas-scrubber">
+                    <label for="yearSlider">Timeline:</label>
+                    <input type="range" id="yearSlider" min="2004" max="2026" value="2026">
+                    <span id="yearDisplay">2004–2026</span>
+                </div>
             </div>
-        </div>
+            <div id="atlasMap" class="atlas-map"></div>
+        </section>
 
-        <!-- Leaflet Map -->
-        <div id="atlasMap" class="atlas-map"></div>
-
-        <!-- Callout -->
-        <div class="atlas-callout">
-            <p><em>"The travel radius expands with each comeback. Domestic to international. Weekend to weeks. Solo to shared."</em></p>
-        </div>
-
-        <!-- Cruise Log -->
+        <!-- The Cruise Streak -->
         <section class="atlas-cruise-section">
-            <h2 class="section-heading">The Cruise Log</h2>
-            <p class="section-subtitle" style="text-align:center; color:var(--lj-text-secondary); font-size:13px; margin-bottom:var(--space-lg);">
-                6 cruises. 6 consecutive years. 2013–2018. From Bermuda to the Mediterranean.
-            </p>
+            <h2 class="section-heading">The Cruise Streak</h2>
+            <p class="section-subtitle">6 cruises. 6 consecutive years. 2013–2018.</p>
             <div class="cruise-log"></div>
         </section>
 
-        <!-- Frequency Grid -->
-        <section class="atlas-frequency">
-            <h2 class="section-heading">Repeat Destinations</h2>
-            <div class="atlas-frequency-grid"></div>
+        <!-- Recovery by Travel -->
+        <section class="atlas-recovery-section">
+            <h2 class="section-heading">Recovery by Travel</h2>
+            <p class="section-subtitle">Every setback led somewhere new.</p>
+            <div class="recovery-stories"></div>
+            <div class="atlas-callout">
+                <p><em>"The travel radius expands with each comeback. Domestic to international. Weekend to weeks. Solo to shared."</em></p>
+            </div>
+        </section>
+
+        <!-- The Big Trips -->
+        <section class="atlas-big-trips">
+            <h2 class="section-heading">The Trips That Changed Everything</h2>
+            <div class="big-trips-grid"></div>
         </section>
     </main>
 

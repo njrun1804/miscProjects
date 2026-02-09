@@ -1,6 +1,6 @@
 /*
  * THE TIMELINE OF TRON — Room 5: The Atlas
- * Ocean blue, Leaflet map, travel pins
+ * Ocean blue, narrative-driven travel story
  */
 
 .room-atlas {
@@ -12,12 +12,7 @@
     --lj-text-secondary: #5a6a7a;
 }
 
-.atlas-main {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: var(--space-lg) 24px;
-}
-
+/* --- Hero --- */
 .atlas-hero {
     text-align: center;
     margin-bottom: var(--space-lg);
@@ -25,6 +20,7 @@
 
 .atlas-hero h1 { color: var(--room-accent); }
 
+/* --- Stats Bar --- */
 .atlas-stats-bar {
     display: flex;
     justify-content: center;
@@ -33,9 +29,7 @@
     margin: var(--space-md) 0 var(--space-lg);
 }
 
-.atlas-stat {
-    text-align: center;
-}
+.atlas-stat { text-align: center; }
 
 .atlas-stat__value {
     font-family: var(--font-mono);
@@ -54,49 +48,127 @@
     margin-top: 4px;
 }
 
-/* Map container */
-.atlas-map-wrap {
-    position: relative;
+/* --- Travel Eras --- */
+.atlas-eras {
+    margin-top: var(--space-xl);
+}
+
+.atlas-eras h2 {
+    text-align: center;
     margin-bottom: var(--space-lg);
+}
+
+.atlas-eras-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.era-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-left: 4px solid var(--room-accent);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    transition: background 0.15s;
+}
+
+.era-card:hover {
+    background: rgba(26, 92, 139, 0.03);
+}
+
+.era--intl { border-left-color: #1a5c8b; }
+.era--domestic { border-left-color: #7a8a9a; }
+.era--both { border-left-color: #4a7a6a; }
+
+.era-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+}
+
+.era-card__name {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.era-card__years {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+}
+
+.era-card__desc {
+    font-size: 13px;
+    color: var(--room-text);
+    line-height: 1.6;
+}
+
+.era-card__footer {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.era-card__count {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.era-card__tags {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.era-tag {
+    font-family: var(--font-mono);
+    font-size: 10px;
+    color: var(--lj-text-secondary);
+    background: rgba(26, 92, 139, 0.06);
+    border: 1px solid var(--lj-border);
+    border-radius: 2px;
+    padding: 1px 6px;
+}
+
+.era-arrow {
+    display: flex;
+    justify-content: center;
+    padding: 6px 0;
+    font-size: 18px;
+    color: var(--lj-text-secondary);
+    opacity: 0.35;
+}
+
+/* --- Map --- */
+.atlas-map-section {
+    margin-top: var(--space-xl);
 }
 
 .atlas-map {
     width: 100%;
-    height: 500px;
+    height: 420px;
     border: 1px solid var(--lj-border);
     border-radius: var(--radius);
     z-index: 1;
 }
 
-/* Controls above map */
 .atlas-controls {
     display: flex;
     align-items: center;
     gap: 12px;
     margin-bottom: 12px;
-    flex-wrap: wrap;
 }
 
-.atlas-toggle {
-    font-family: var(--font-sans);
-    font-size: 12px;
-    padding: 6px 14px;
-    border: 1px solid var(--lj-border);
-    background: var(--room-panel);
-    color: var(--room-text);
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.15s;
-}
-
-.atlas-toggle:hover,
-.atlas-toggle.active {
-    background: var(--room-accent);
-    color: #fff;
-    border-color: var(--room-accent);
-}
-
-/* Timeline scrubber */
 .atlas-scrubber {
     flex: 1;
     display: flex;
@@ -117,15 +189,196 @@
     accent-color: var(--room-accent);
 }
 
-.atlas-scrubber .scrubber-year {
+#yearDisplay {
     font-family: var(--font-mono);
     font-size: 13px;
     font-weight: 700;
     color: var(--room-accent);
-    min-width: 70px;
+    min-width: 80px;
 }
 
-/* Callout */
+/* Map popups */
+.atlas-popup__dest {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a2a3a;
+}
+
+.atlas-popup__year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: #5a6a7a;
+    margin-top: 2px;
+}
+
+.atlas-popup__highlight {
+    font-size: 12px;
+    color: #1a2a3a;
+    margin-top: 6px;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+/* --- Cruise Streak --- */
+.atlas-cruise-section {
+    margin-top: var(--space-xl);
+}
+
+.atlas-cruise-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--lj-text-secondary);
+    font-size: 13px;
+    margin-bottom: var(--space-lg);
+}
+
+.cruise-log {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cruise-step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    transition: background 0.15s;
+}
+
+.cruise-step:hover {
+    background: rgba(26, 92, 139, 0.03);
+}
+
+.cruise-step__year {
+    font-family: var(--font-mono);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--room-accent);
+    min-width: 48px;
+    text-align: center;
+    opacity: 0.6;
+}
+
+.cruise-step__body { flex: 1; }
+
+.cruise-step__dest {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--room-text);
+}
+
+.cruise-step__meta {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--lj-text-secondary);
+    margin-top: 2px;
+}
+
+.cruise-step__highlight {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+    margin-top: 4px;
+}
+
+.cruise-step__rating {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--room-accent);
+    margin-top: 4px;
+}
+
+.cruise-arrow {
+    display: flex;
+    justify-content: center;
+    padding: 4px 0;
+    font-size: 16px;
+    color: var(--lj-text-secondary);
+    opacity: 0.3;
+}
+
+/* --- Recovery Stories --- */
+.atlas-recovery-section {
+    margin-top: var(--space-xl);
+}
+
+.atlas-recovery-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-sm);
+}
+
+.recovery-stories {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.recovery-card {
+    background: var(--room-panel);
+    border: 1px solid var(--lj-border);
+    border-left: 4px solid #2e7d32;
+    border-radius: var(--radius);
+    padding: 14px 18px;
+}
+
+.recovery-card__year {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    color: #2e7d32;
+    margin-bottom: 6px;
+}
+
+.recovery-card__body {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.recovery-card__crisis {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: #8b3a3a;
+}
+
+.recovery-card__arrow {
+    font-size: 16px;
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.recovery-card__trips {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--room-accent);
+}
+
+.recovery-card__insight {
+    font-size: 12px;
+    color: var(--lj-text-secondary);
+    font-style: italic;
+    margin-top: 8px;
+    line-height: 1.5;
+}
+
+/* --- Callout --- */
 .atlas-callout {
     max-width: 700px;
     margin: var(--space-xl) auto;
@@ -136,149 +389,76 @@
     line-height: 1.6;
 }
 
-/* Cruise Log */
-.atlas-cruise-section {
+/* --- Big Trips --- */
+.atlas-big-trips {
     margin-top: var(--space-xl);
 }
 
-.atlas-cruise-section h2 {
-    text-align: center;
-    margin-bottom: var(--space-md);
-}
-
-.cruise-log {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.cruise-card {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    background: var(--room-panel);
-    border: 1px solid var(--lj-border);
-    border-radius: var(--radius);
-    padding: 16px;
-    transition: background 0.15s;
-}
-
-.cruise-card:hover {
-    background: rgba(26, 92, 139, 0.04);
-}
-
-.cruise-card__number {
-    font-family: var(--font-mono);
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--room-accent);
-    min-width: 36px;
-    text-align: center;
-    opacity: 0.5;
-}
-
-.cruise-card__info {
-    flex: 1;
-}
-
-.cruise-card__header {
-    display: flex;
-    gap: 12px;
-    align-items: baseline;
-    flex-wrap: wrap;
-}
-
-.cruise-card__year {
-    font-family: var(--font-mono);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--room-accent);
-}
-
-.cruise-card__ship {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--room-text);
-}
-
-.cruise-card__duration {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--lj-text-secondary);
-}
-
-.cruise-card__destinations {
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--room-text);
-    margin-top: 4px;
-}
-
-.cruise-card__highlight {
-    font-size: 12px;
-    color: var(--lj-text-secondary);
-    font-style: italic;
-    margin-top: 4px;
-}
-
-.cruise-card__rating {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--room-accent);
-    font-weight: 700;
-    margin-top: 4px;
-}
-
-/* Frequency section */
-.atlas-frequency {
-    margin-top: var(--space-xl);
-}
-
-.atlas-frequency h2 {
+.atlas-big-trips h2 {
     text-align: center;
     margin-bottom: var(--space-lg);
 }
 
-.atlas-frequency-grid {
+.big-trips-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 12px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.freq-card {
+.big-trip-card {
     background: var(--room-panel);
     border: 1px solid var(--lj-border);
-    border-left: 3px solid var(--room-accent);
     border-radius: var(--radius);
-    padding: 12px;
+    padding: 20px;
+    transition: background 0.15s;
 }
 
-.freq-card__dest {
+.big-trip-card:hover {
+    background: rgba(26, 92, 139, 0.03);
+}
+
+.big-trip-card__tagline {
     font-family: var(--font-mono);
-    font-size: 14px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--room-accent);
+    margin-bottom: 4px;
+}
+
+.big-trip-card__dest {
+    font-family: var(--font-mono);
+    font-size: 15px;
     font-weight: 700;
     color: var(--room-text);
+    line-height: 1.3;
 }
 
-.freq-card__count {
+.big-trip-card__meta {
     font-family: var(--font-mono);
-    font-size: 12px;
-    color: var(--room-accent);
-    margin-top: 2px;
-}
-
-.freq-card__years {
     font-size: 11px;
     color: var(--lj-text-secondary);
     margin-top: 4px;
 }
 
+.big-trip-card__detail {
+    font-size: 13px;
+    color: var(--room-text);
+    line-height: 1.5;
+    margin-top: 8px;
+}
+
+/* --- Responsive --- */
 @media (max-width: 768px) {
-    .atlas-map { height: 350px; }
+    .atlas-map { height: 300px; }
     .atlas-stats-bar { gap: var(--space-lg); }
     .atlas-stat__value { font-size: 1.5rem; }
     .atlas-controls { flex-direction: column; align-items: stretch; }
-    .cruise-card__header { flex-direction: column; gap: 2px; }
+    .recovery-card__body { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .big-trips-grid { grid-template-columns: 1fr; }
+    .cruise-step { flex-direction: column; gap: 4px; }
+    .cruise-step__year { text-align: left; }
 }
